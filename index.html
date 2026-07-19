@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#121214">
+<title>Гитарный тюнер</title>
+<style>
+ * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+ html, body {
+ margin: 0; height: 100%;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+ background: #121214; color: #e1e1e6;
+ -webkit-user-select: none; user-select: none;
+ }
+ body {
+ display: flex; flex-direction: column; align-items: center; justify-content: center;
+ padding: 16px; min-height: 100vh; min-height: 100dvh;
+ }
+ .container {
+ background: #1e1e24; padding: 22px; border-radius: 20px;
+ width: 100%; max-width: 460px; border: 1px solid #2e2e38;
+ box-shadow: 0 8px 32px rgba(0,0,0,.45);
+ }
+ h1 { margin: 0 0 16px; font-size: 20px; color: #fff; text-align: center; }
+ label { display: block; margin-bottom: 6px; color: #8f8f9d; font-size: 13px; }
+ select {
+ width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #3e3e4a;
+ background: #2a2a32; color: #fff; font-size: 16px; outline: none; appearance: none;
+ background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238f8f9d' viewBox='0 0 16 16'><path d='M4 6l4 4 4-4z'/></svg>");
+ background-repeat: no-repeat; background-position: right 14px center;
+ }
+ select:focus { border-color: #04d361; }
+ .desc { color: #6a6a76; font-size: 12px; margin-top: 8px; min-height: 15px; line-height: 1.35; }
+
+ .strings-guide { display: flex; justify-content: space-between; gap: 6px; margin: 16px 0; }
+ .string-note {
+ flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
+ padding: 8px 0; border-radius: 10px; background: #141416; border: 1px solid transparent;
+ transition: all .15s;
+ }
+ .string-note.active { background: #04d3611a; border-color: #04d361; }
+ .string-num { color: #6a6a76; font-size: 10px; }
+ .string-name { font-weight: 700; font-size: 15px; font-family: ui-monospace, monospace; }
+ .string-note.active .string-name { color: #04d361; }
+
+ .display {
+ background: #141416; border-radius: 16px; padding: 22px 16px 18px;
+ text-align: center; margin: 16px 0;
+ }
+ .note { font-size: 68px; font-weight: 800; line-height: 1; color: #4a4a54; letter-spacing: -2px; }
+ .note.on { color: #fff; }
+ .octave { font-size: 22px; font-weight: 600; color: #8f8f9d; vertical-align: super; margin-left: 2px; }
+ .freq { color: #6a6a76; font-size: 13px; margin-top: 6px; font-family: ui-monospace, monospace; min-height: 16px; }
+
+ .meter-wrap { position: relative; height: 64px; margin-top: 14px; }
+ .scale {
+ position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between;
+ padding: 0 4px; color: #4a4a54; font-size: 11px;
+ }
+ .track {
+ position: absolute; top: 50%; left: 0; right: 0; height: 6px; transform: translateY(-50%);
+ background: #24242c; border-radius: 3px;
+ }
+ .center-tick {
+ position: absolute; top: 50%; left: 50%; width: 3px; height: 26px;
+ transform: translate(-50%,-50%); background: #04d361; border-radius: 2px; opacity: .5;
+ }
+ .needle {
+ position: absolute; top: 50%; left: 50%; width: 5px; height: 40px;
+ transform: translate(-50%,-50%); background: #8f8f9d; border-radius: 3px;
+ transition: left .08s ease-out, background .1s;
+ }
+ .needle.good { background: #04d361; box-shadow: 0 0 14px #04d361; }
+ .needle.low { background: #2196f3; }
+ .needle.high { background: #ff9800; }
+
+ .cents { text-align: center; font-size: 15px; color: #8f8f9d; margin-top: 8px; min-height: 20px; font-weight: 600; }
+ .cents.good { color: #04d361; }
+
+ button {
+ width: 100%; padding: 16px; margin-top: 18px; border: none; border-radius: 12px;
+ background: #04d361; color: #001b0d; font-size: 17px; font-weight: 700; cursor: pointer;
+ transition: background .15s;
+ }
+ button:active { background: #06e86c; }
+ button.on { background: #e02041; color: #fff; }
+
+ .status { text-align: center; color: #6a6a76; font-size: 12px; margin-top: 10px; min-height: 15px; }
+</style>
+</head>
+<body>
+<div class="container">
+ <h1>🎸 Гитарный тюнер</h1>
+
+ <label for="tuning">Строй</label>
+ <select id="tuning">
+ <option value="E2,A2,D3,G3,B3,E4" data-desc="Классический строй. Большинство песен.">E Standard — E A D G B E</option>
+ <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="На полтона ниже. Hendrix, Guns N' Roses, куча метала.">Eb Standard — D# G# C# F# A# D#</option>
+ <option value="D2,G2,C3,F3,A3,D4" data-desc="На тон ниже стандарта. Плотнее и тяжелее.">D Standard — D G C F A D</option>
+ <option value="C#2,F#2,B2,E3,G#3,C#4" data-desc="На полтора тона ниже.">C# Standard — C# F# B E G# C#</option>
+ <option value="C2,F2,A#2,D#3,G3,C4" data-desc="На два тона ниже. Тяжёлый низ.">C Standard — C F A# D# G C</option>
+ <option value="B1,F#2,B2,E3,G#3,C#4" data-desc="🔥 Slipknot — Vermilion Pt. 2 (и почти весь Vol. 3). Drop B: 6-я струна опущена до B, очень низкий и тяжёлый строй.">Slipknot — Vermilion Pt. 2 (Drop B)</option>
+ </select>
+ <div class="desc" id="desc"></div>
+
+ <div class="strings-guide" id="guide"></div>
+
+ <div class="display">
+ <div><span class="note" id="note">–</span><span class="octave" id="octave"></span></div>
+ <div class="freq" id="freq"></div>
+ <div class="meter-wrap">
+ <div class="track"></div>
+ <div class="scale"><span>♭ -50</span><span>0</span><span>+50 ♯</span></div>
+ <div class="center-tick"></div>
+ <div class="needle" id="needle" style="display:none"></div>
+ </div>
+ <div class="cents" id="cents">Нажмите «Старт» и сыграйте струну</div>
+ </div>
+
+ <button id="start">Старт</button>
+ <div class="status" id="status">Нужен доступ к микрофону</div>
+</div>
+
+<script>
+const NOTES = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+const $ = id => document.getElementById(id);
+const tuningSel = $("tuning"), guide = $("guide"), descEl = $("desc");
+const noteEl = $("note"), octEl = $("octave"), freqEl = $("freq");
+const needle = $("needle"), centsEl = $("cents"), statusEl = $("status"), startBtn = $("start");
+
+let audioCtx, analyser, stream, rafId, wakeLock = null;
+let running = false;
+let smooth = null;
+
+function tuningNotes() { return tuningSel.value.split(","); }
+function tuningDesc() { return tuningSel.selectedOptions[0].dataset.desc || ""; }
+
+function freqOfName(name) {
+ const m = name.match(/^([A-G]#?)(\d)$/);
+ const idx = NOTES.indexOf(m[1]);
+ const midi = idx + (parseInt(m[2]) + 1) * 12;
+ return 440 * Math.pow(2, (midi - 69) / 12);
+}
+
+function renderGuide(activeName) {
+ const notes = tuningNotes();
+ guide.innerHTML = "";
+ notes.forEach((n, i) => {
+ const name = n.replace(/\d/, "");
+ const d = document.createElement("div");
+ d.className = "string-note" + (n === activeName ? " active" : "");
+ d.innerHTML = `<span class="string-num">${notes.length - i}</span><span class="string-name">${name}</span>`;
+ guide.appendChild(d);
+ });
+}
+function refreshTuning() { renderGuide(null); descEl.textContent = tuningDesc(); }
+tuningSel.addEventListener("change", refreshTuning);
+refreshTuning();
+
+function autoCorrelate(buf, sr) {
+ const N = buf.length;
+ let rms = 0;
+ for (let i = 0; i < N; i++) rms += buf[i] * buf[i];
+ rms = Math.sqrt(rms / N);
+ if (rms < 0.008) return -1;
+
+ let r1 = 0, r2 = N - 1;
+ const thr = 0.2;
+ for (let i = 0; i < N / 2; i++) if (Math.abs(buf[i]) < thr) { r1 = i; break; }
+ for (let i = 1; i < N / 2; i++) if (Math.abs(buf[N - i]) < thr) { r2 = N - i; break; }
+
+ const b = buf.slice(r1, r2), n = b.length;
+ const c = new Float32Array(n);
+ for (let i = 0; i < n; i++)
+ for (let j = 0; j < n - i; j++) c[i] += b[j] * b[j + i];
+
+ let d = 0; while (d < n - 1 && c[d] > c[d + 1]) d++;
+ let max = -1, pos = -1;
+ for (let i = d; i < n; i++) if (c[i] > max) { max = c[i]; pos = i; }
+ if (pos <= 0) return -1;
+
+ const x1 = c[pos - 1] || 0, x2 = c[pos], x3 = c[pos + 1] || 0;
+ const a = (x1 + x3 - 2 * x2) / 2, bb = (x3 - x1) / 2;
+ let T = pos; if (a) T = pos - bb / (2 * a);
+ return sr / T;
+}
+
+function loop() {
+ const buf = new Float32Array(analyser.fftSize);
+ analyser.getFloatTimeDomainData(buf);
+ let f = autoCorrelate(buf, audioCtx.sampleRate);
+
+ if (f > 55 && f < 1200) {
+ smooth = smooth ? smooth * 0.8 + f * 0.2 : f;
+ f = smooth;
+
+ const midi = Math.round(12 * Math.log2(f / 440) + 69);
+ const name = NOTES[(midi % 12 + 12) % 12];
+ const octave = Math.floor(midi / 12) - 1;
+ const targetHz = 440 * Math.pow(2, (midi - 69) / 12);
+ const cents = Math.round(1200 * Math.log2(f / targetHz));
+
+ noteEl.textContent = name;
+ noteEl.classList.add("on");
+ octEl.textContent = octave;
+ freqEl.textContent = f.toFixed(1) + " Гц";
+
+ let x = 50 + (Math.max(-50, Math.min(50, cents)) / 50) * 46;
+ needle.style.display = "block";
+ needle.style.left = x + "%";
+ needle.className = "needle";
+
+ if (Math.abs(cents) <= 4) {
+ needle.classList.add("good");
+ centsEl.textContent = "✓ Идеально";
+ centsEl.classList.add("good");
+ } else {
+ needle.classList.add(cents > 0 ? "high" : "low");
+ centsEl.textContent = cents > 0 ? `Выше на +${cents} ц. — ослабь` : `Ниже на ${cents} ц. — подтяни`;
+ centsEl.classList.remove("good");
+ }
+ renderGuide(name + octave);
+ } else {
+ smooth = null;
+ }
+ rafId = requestAnimationFrame(loop);
+}
+
+async function start() {
+ try {
+ stream = await navigator.mediaDevices.getUserMedia({
+ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false }
+ });
+ audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+ if (audioCtx.state === "suspended") await audioCtx.resume();
+ analyser = audioCtx.createAnalyser();
+ analyser.fftSize = 4096;
+ audioCtx.createMediaStreamSource(stream).connect(analyser);
+
+ try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
+
+ running = true;
+ startBtn.textContent = "Стоп";
+ startBtn.classList.add("on");
+ statusEl.textContent = "Слушаю… дёргай струну";
+ loop();
+ } catch (err) {
+ statusEl.textContent = "Нет доступа к микрофону: " + err.message;
+ }
+}
+
+function stop() {
+ running = false;
+ cancelAnimationFrame(rafId);
+ if (stream) stream.getTracks().forEach(t => t.stop());
+ if (audioCtx) audioCtx.close();
+ if (wakeLock) { wakeLock.release(); wakeLock = null; }
+ startBtn.textContent = "Старт";
+ startBtn.classList.remove("on");
+ statusEl.textContent = "Остановлено";
+ noteEl.textContent = "–"; noteEl.classList.remove("on");
+ octEl.textContent = ""; freqEl.textContent = "";
+ needle.style.display = "none";
+ centsEl.textContent = "Нажмите «Старт» и сыграйте струну";
+ centsEl.classList.remove("good");
+ renderGuide(null);
+}
+
+startBtn.addEventListener("click", () => running ? stop() : start());
+
+document.addEventListener("visibilitychange", async () => {
+ if (running && document.visibilityState === "visible") {
+ try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
+ }
+});
+</script>
+</body>
+</html>
