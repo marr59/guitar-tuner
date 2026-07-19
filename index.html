@@ -153,7 +153,7 @@ let lockedStringIdx = null; // null = auto, 0-5 = manual lock
 
 // ── Tuning helpers ───────────────────────────────────────────────
 function tuningNotes() { return tuningSel.value.split(","); }
-function tuningDesc()  { return tuningSel.selectedOptions[0].dataset.desc || ""; }
+function tuningDesc() { return tuningSel.selectedOptions[0].dataset.desc || ""; }
 
 function noteNameToHz(name) {
  const m = name.match(/^([A-G]#?)(\d)$/);
@@ -177,24 +177,34 @@ function nearestString(freq) {
  const target = strings[bestIdx];
  return {
  stringIdx: bestIdx,
- noteName:  target.replace(/\d/, ""),
- octave:    parseInt(target.match(/\d/)[0]),
- targetHz:  noteNameToHz(target),
- rawCents:  bestCents,
+ noteName: target.replace(/\d/, ""),
+ octave: parseInt(target.match(/\d/)[0]),
+ targetHz: noteNameToHz(target),
+ rawCents: bestCents,
  };
 }
 
 // When user has locked a string, compute cents relative to that string only.
+// Fold a frequency into the same octave as the target, so an octave
+// harmonic (common on low strings like B1) still reads against the target.
+function foldToOctave(freq, targetHz) {
+ if (!targetHz) return freq;
+ while (freq > targetHz * 1.5) freq /= 2;
+ while (freq < targetHz / 1.5) freq *= 2;
+ return freq;
+}
 function lockedStringInfo(freq) {
  const strings = tuningNotes();
  const target = strings[lockedStringIdx];
  const hz = noteNameToHz(target);
+ const folded = foldToOctave(freq, hz);
  return {
  stringIdx: lockedStringIdx,
- noteName:  target.replace(/\d/, ""),
- octave:    parseInt(target.match(/\d/)[0]),
- targetHz:  hz,
- rawCents:  hz ? 1200 * Math.log2(freq / hz) : 0,
+ noteName: target.replace(/\d/, ""),
+ octave: parseInt(target.match(/\d/)[0]),
+ targetHz: hz,
+ foldedHz: folded,
+ rawCents: hz ? 1200 * Math.log2(folded / hz) : 0,
  };
 }
 
@@ -281,9 +291,16 @@ function medianRaw() {
 function loop() {
  const buf = new Float32Array(analyser.fftSize);
  analyser.getFloatTimeDomainData(buf);
+
+ // Input level (for diagnostics — tells us if the mic is actually feeding audio)
+ let lvl = 0;
+ for (let i = 0; i < buf.length; i++) lvl += buf[i] * buf[i];
+ lvl = Math.sqrt(lvl / buf.length);
+
  const rawFreq = autoCorrelate(buf, audioCtx.sampleRate);
 
  if (rawFreq > 30 && rawFreq < 1400) {
+ statusEl.textContent = "Listening…";
  // Push into ring buffer
  rawBuf.push(rawFreq);
  if (rawBuf.length > RAW_BUF) rawBuf.shift();
@@ -305,7 +322,7 @@ function loop() {
  noteEl.textContent = info.noteName;
  noteEl.classList.add("on");
  octEl.textContent = info.octave;
- freqEl.textContent = freq.toFixed(1) + " Hz";
+ freqEl.textContent = (info.foldedHz || freq).toFixed(1) + " Hz";
 
  const x = 50 + (Math.max(-50, Math.min(50, cents)) / 50) * 46;
  needle.style.display = "block";
@@ -328,9 +345,11 @@ function loop() {
 
  renderGuide(info.stringIdx);
  } else {
- // Signal lost — don't snap back immediately, let buffer drain
+ // No clear pitch — let buffer drain, keep smoothCents to avoid snap
  rawBuf = [];
- // Keep smoothCents to avoid snap
+ statusEl.textContent = (lvl < 0.003)
+ ? "No signal — mic not picking up. Check permission / play louder"
+ : "Play one clear string…";
  }
 
  rafId = requestAnimationFrame(loop);
@@ -343,10 +362,18 @@ async function start() {
  audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false }
  });
  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
- if (audioCtx.state === "suspended") await audioCtx.resume();
  analyser = audioCtx.createAnalyser();
  analyser.fftSize = 4096;
- audioCtx.createMediaStreamSource(stream).connect(analyser);
+ const src = audioCtx.createMediaStreamSource(stream);
+ // iOS Safari will NOT pull data from a MediaStreamSource unless the graph
+ // reaches the destination. Route analyser → muted gain → destination so
+ // audio flows (the gain of 0 prevents any mic-to-speaker feedback).
+ const mute = audioCtx.createGain();
+ mute.gain.value = 0;
+ src.connect(analyser);
+ analyser.connect(mute);
+ mute.connect(audioCtx.destination);
+ if (audioCtx.state === "suspended") await audioCtx.resume();
 
  try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
 
