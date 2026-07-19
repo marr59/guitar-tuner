@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#121214">
-<title>Гитарный тюнер</title>
+<title>Guitar Tuner</title>
 <style>
  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
  html, body {
@@ -33,20 +33,26 @@
  select:focus { border-color: #04d361; }
  .desc { color: #6a6a76; font-size: 12px; margin-top: 8px; min-height: 15px; line-height: 1.35; }
 
- .strings-guide { display: flex; justify-content: space-between; gap: 6px; margin: 16px 0; }
+ .strings-guide { display: flex; justify-content: space-between; gap: 6px; margin: 16px 0 4px; }
  .string-note {
  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
  padding: 8px 0; border-radius: 10px; background: #141416; border: 1px solid transparent;
- transition: all .15s;
+ transition: all .15s; cursor: pointer;
  }
+ .string-note:active { opacity: 0.7; }
  .string-note.active { background: #04d3611a; border-color: #04d361; }
+ .string-note.locked { background: #f59e0b1a; border-color: #f59e0b; }
+ .string-note.locked .string-name { color: #f59e0b; }
+ .string-note.active.locked { background: #04d3611a; border-color: #04d361; }
+ .string-note.active.locked .string-name { color: #04d361; }
  .string-num { color: #6a6a76; font-size: 10px; }
  .string-name { font-weight: 700; font-size: 15px; font-family: ui-monospace, monospace; }
  .string-note.active .string-name { color: #04d361; }
+ .mode-hint { text-align: center; font-size: 11px; color: #6a6a76; margin-bottom: 12px; min-height: 14px; }
 
  .display {
  background: #141416; border-radius: 16px; padding: 22px 16px 18px;
- text-align: center; margin: 16px 0;
+ text-align: center; margin-bottom: 16px;
  }
  .note { font-size: 68px; font-weight: 800; line-height: 1; color: #4a4a54; letter-spacing: -2px; }
  .note.on { color: #fff; }
@@ -69,7 +75,7 @@
  .needle {
  position: absolute; top: 50%; left: 50%; width: 5px; height: 40px;
  transform: translate(-50%,-50%); background: #8f8f9d; border-radius: 3px;
- transition: left .08s ease-out, background .1s;
+ transition: left .12s ease-out, background .15s;
  }
  .needle.good { background: #04d361; box-shadow: 0 0 14px #04d361; }
  .needle.low { background: #2196f3; }
@@ -79,7 +85,7 @@
  .cents.good { color: #04d361; }
 
  button {
- width: 100%; padding: 16px; margin-top: 18px; border: none; border-radius: 12px;
+ width: 100%; padding: 16px; margin-top: 4px; border: none; border-radius: 12px;
  background: #04d361; color: #001b0d; font-size: 17px; font-weight: 700; cursor: pointer;
  transition: background .15s;
  }
@@ -91,21 +97,22 @@
 </head>
 <body>
 <div class="container">
- <h1>🎸 Гитарный тюнер</h1>
+ <h1>🎸 Guitar Tuner</h1>
 
- <label for="tuning">Строй</label>
+ <label for="tuning">Tuning</label>
  <select id="tuning">
- <option value="E2,A2,D3,G3,B3,E4" data-desc="Классический строй. Большинство песен.">E Standard — E A D G B E</option>
- <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="На полтона ниже. Hendrix, Guns N' Roses, куча метала.">Eb Standard — D# G# C# F# A# D#</option>
- <option value="D2,G2,C3,F3,A3,D4" data-desc="На тон ниже стандарта. Плотнее и тяжелее.">D Standard — D G C F A D</option>
- <option value="C#2,F#2,B2,E3,G#3,C#4" data-desc="На полтора тона ниже.">C# Standard — C# F# B E G# C#</option>
- <option value="C2,F2,A#2,D#3,G3,C4" data-desc="На два тона ниже. Тяжёлый низ.">C Standard — C F A# D# G C</option>
- <option value="B1,E2,A2,D3,F#3,B3" data-desc="Baritone строй. На два с половиной тона ниже стандарта. Doom, sludge, djent.">B Standard (Baritone) — B E A D F# B</option>
- <option value="B1,F#2,B2,E3,G#3,C#4" data-desc="🔥 Slipknot — Vermilion Pt. 2 (и почти весь Vol. 3). Drop B: 6-я струна опущена до B, очень низкий и тяжёлый строй.">Slipknot — Vermilion Pt. 2 (Drop B)</option>
+ <option value="E2,A2,D3,G3,B3,E4" data-desc="Standard tuning. Works for most songs.">E Standard — E A D G B E</option>
+ <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="Half step down. Hendrix, Guns N' Roses, a lot of metal.">Eb Standard — D# G# C# F# A# D#</option>
+ <option value="D2,G2,C3,F3,A3,D4" data-desc="Full step down from standard. Fuller, heavier sound.">D Standard — D G C F A D</option>
+ <option value="C#2,F#2,B2,E3,G#3,C#4" data-desc="Step and a half down.">C# Standard — C# F# B E G# C#</option>
+ <option value="C2,F2,A#2,D#3,G3,C4" data-desc="Two full steps down. Heavy low end.">C Standard — C F A# D# G C</option>
+ <option value="B1,E2,A2,D3,F#3,B3" data-desc="Baritone tuning. Two and a half steps down. Doom, sludge, djent.">B Standard (Baritone) — B E A D F# B</option>
+ <option value="B1,F#2,B2,E3,G#3,C#4" data-desc="🔥 Slipknot — Vermilion Pt. 2 (and most of Vol. 3). Drop B: 6th string dropped to B, very low and heavy.">Slipknot — Vermilion Pt. 2 (Drop B)</option>
  </select>
  <div class="desc" id="desc"></div>
 
  <div class="strings-guide" id="guide"></div>
+ <div class="mode-hint" id="modeHint">Tap a string to lock it</div>
 
  <div class="display">
  <div><span class="note" id="note">–</span><span class="octave" id="octave"></span></div>
@@ -116,49 +123,125 @@
  <div class="center-tick"></div>
  <div class="needle" id="needle" style="display:none"></div>
  </div>
- <div class="cents" id="cents">Нажмите «Старт» и сыграйте струну</div>
+ <div class="cents" id="cents">Press Start and play a string</div>
  </div>
 
- <button id="start">Старт</button>
- <div class="status" id="status">Нужен доступ к микрофону</div>
+ <button id="start">Start</button>
+ <div class="status" id="status">Microphone access required</div>
 </div>
 
 <script>
 const NOTES = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
 const $ = id => document.getElementById(id);
-const tuningSel = $("tuning"), guide = $("guide"), descEl = $("desc");
+const tuningSel = $("tuning"), guide = $("guide"), descEl = $("desc"), modeHint = $("modeHint");
 const noteEl = $("note"), octEl = $("octave"), freqEl = $("freq");
 const needle = $("needle"), centsEl = $("cents"), statusEl = $("status"), startBtn = $("start");
 
 let audioCtx, analyser, stream, rafId, wakeLock = null;
 let running = false;
-let smooth = null;
 
+// ── Smoothing state ──────────────────────────────────────────────
+// Circular buffer of raw frequency readings for median filtering
+const RAW_BUF = 6;
+let rawBuf = [];
+// Smoothed cents (EWM, heavy)
+let smoothCents = null;
+const CENTS_ALPHA = 0.1; // 90% history weight → very stable needle
+
+// ── String selection ─────────────────────────────────────────────
+let lockedStringIdx = null; // null = auto, 0-5 = manual lock
+
+// ── Tuning helpers ───────────────────────────────────────────────
 function tuningNotes() { return tuningSel.value.split(","); }
-function tuningDesc() { return tuningSel.selectedOptions[0].dataset.desc || ""; }
+function tuningDesc()  { return tuningSel.selectedOptions[0].dataset.desc || ""; }
 
-function freqOfName(name) {
+function noteNameToHz(name) {
  const m = name.match(/^([A-G]#?)(\d)$/);
+ if (!m) return null;
  const idx = NOTES.indexOf(m[1]);
  const midi = idx + (parseInt(m[2]) + 1) * 12;
  return 440 * Math.pow(2, (midi - 69) / 12);
 }
 
-function renderGuide(activeName) {
+// Find the closest string in the current tuning to the detected frequency.
+// Returns { stringIdx, noteName, octave, targetHz, rawCents }
+function nearestString(freq) {
+ const strings = tuningNotes();
+ let bestIdx = 0, bestCents = Infinity;
+ for (let i = 0; i < strings.length; i++) {
+ const hz = noteNameToHz(strings[i]);
+ if (!hz) continue;
+ const c = 1200 * Math.log2(freq / hz);
+ if (Math.abs(c) < Math.abs(bestCents)) { bestCents = c; bestIdx = i; }
+ }
+ const target = strings[bestIdx];
+ return {
+ stringIdx: bestIdx,
+ noteName:  target.replace(/\d/, ""),
+ octave:    parseInt(target.match(/\d/)[0]),
+ targetHz:  noteNameToHz(target),
+ rawCents:  bestCents,
+ };
+}
+
+// When user has locked a string, compute cents relative to that string only.
+function lockedStringInfo(freq) {
+ const strings = tuningNotes();
+ const target = strings[lockedStringIdx];
+ const hz = noteNameToHz(target);
+ return {
+ stringIdx: lockedStringIdx,
+ noteName:  target.replace(/\d/, ""),
+ octave:    parseInt(target.match(/\d/)[0]),
+ targetHz:  hz,
+ rawCents:  hz ? 1200 * Math.log2(freq / hz) : 0,
+ };
+}
+
+// ── Render string guide ──────────────────────────────────────────
+function renderGuide(activeIdx) {
  const notes = tuningNotes();
  guide.innerHTML = "";
  notes.forEach((n, i) => {
  const name = n.replace(/\d/, "");
  const d = document.createElement("div");
- d.className = "string-note" + (n === activeName ? " active" : "");
+ const isActive = i === activeIdx;
+ const isLocked = i === lockedStringIdx;
+ d.className = "string-note" + (isActive ? " active" : "") + (isLocked ? " locked" : "");
  d.innerHTML = `<span class="string-num">${notes.length - i}</span><span class="string-name">${name}</span>`;
+ d.addEventListener("click", () => {
+ lockedStringIdx = (lockedStringIdx === i) ? null : i;
+ smoothCents = null; // reset smooth on lock change
+ rawBuf = [];
+ renderGuide(activeIdx);
+ updateModeHint();
+ });
  guide.appendChild(d);
  });
 }
-function refreshTuning() { renderGuide(null); descEl.textContent = tuningDesc(); }
+
+function updateModeHint() {
+ if (lockedStringIdx === null) {
+ modeHint.textContent = "Auto mode — tap a string to lock";
+ } else {
+ const notes = tuningNotes();
+ const name = notes[lockedStringIdx].replace(/\d/, "");
+ modeHint.textContent = `Locked to string ${tuningNotes().length - lockedStringIdx} (${name}) — tap again to unlock`;
+ }
+}
+
+function refreshTuning() {
+ lockedStringIdx = null;
+ smoothCents = null;
+ rawBuf = [];
+ renderGuide(null);
+ descEl.textContent = tuningDesc();
+ updateModeHint();
+}
 tuningSel.addEventListener("change", refreshTuning);
 refreshTuning();
 
+// ── Pitch detection (autocorrelation) ───────────────────────────
 function autoCorrelate(buf, sr) {
  const N = buf.length;
  let rms = 0;
@@ -187,47 +270,73 @@ function autoCorrelate(buf, sr) {
  return sr / T;
 }
 
+// Median of current raw buffer
+function medianRaw() {
+ if (!rawBuf.length) return null;
+ const s = [...rawBuf].sort((a, b) => a - b);
+ return s[Math.floor(s.length / 2)];
+}
+
+// ── Analysis loop ────────────────────────────────────────────────
 function loop() {
  const buf = new Float32Array(analyser.fftSize);
  analyser.getFloatTimeDomainData(buf);
- let f = autoCorrelate(buf, audioCtx.sampleRate);
+ const rawFreq = autoCorrelate(buf, audioCtx.sampleRate);
 
- if (f > 55 && f < 1200) {
- smooth = smooth ? smooth * 0.8 + f * 0.2 : f;
- f = smooth;
+ if (rawFreq > 30 && rawFreq < 1400) {
+ // Push into ring buffer
+ rawBuf.push(rawFreq);
+ if (rawBuf.length > RAW_BUF) rawBuf.shift();
 
- const midi = Math.round(12 * Math.log2(f / 440) + 69);
- const name = NOTES[(midi % 12 + 12) % 12];
- const octave = Math.floor(midi / 12) - 1;
- const targetHz = 440 * Math.pow(2, (midi - 69) / 12);
- const cents = Math.round(1200 * Math.log2(f / targetHz));
+ const freq = medianRaw();
 
- noteEl.textContent = name;
+ // Get string match (tuning-aware or locked)
+ const info = (lockedStringIdx !== null) ? lockedStringInfo(freq) : nearestString(freq);
+
+ // EWM smooth cents (very stable)
+ if (smoothCents === null) {
+ smoothCents = info.rawCents;
+ } else {
+ smoothCents = smoothCents * (1 - CENTS_ALPHA) + info.rawCents * CENTS_ALPHA;
+ }
+ const cents = Math.round(smoothCents);
+
+ // Update display
+ noteEl.textContent = info.noteName;
  noteEl.classList.add("on");
- octEl.textContent = octave;
- freqEl.textContent = f.toFixed(1) + " Гц";
+ octEl.textContent = info.octave;
+ freqEl.textContent = freq.toFixed(1) + " Hz";
 
- let x = 50 + (Math.max(-50, Math.min(50, cents)) / 50) * 46;
+ const x = 50 + (Math.max(-50, Math.min(50, cents)) / 50) * 46;
  needle.style.display = "block";
  needle.style.left = x + "%";
  needle.className = "needle";
 
  if (Math.abs(cents) <= 4) {
  needle.classList.add("good");
- centsEl.textContent = "✓ Идеально";
+ centsEl.textContent = "✓ In tune";
  centsEl.classList.add("good");
+ } else if (cents > 0) {
+ needle.classList.add("high");
+ centsEl.textContent = `+${cents}¢ — too high, loosen`;
+ centsEl.classList.remove("good");
  } else {
- needle.classList.add(cents > 0 ? "high" : "low");
- centsEl.textContent = cents > 0 ? `Выше на +${cents} ц. — ослабь` : `Ниже на ${cents} ц. — подтяни`;
+ needle.classList.add("low");
+ centsEl.textContent = `${cents}¢ — too low, tighten`;
  centsEl.classList.remove("good");
  }
- renderGuide(name + octave);
+
+ renderGuide(info.stringIdx);
  } else {
- smooth = null;
+ // Signal lost — don't snap back immediately, let buffer drain
+ rawBuf = [];
+ // Keep smoothCents to avoid snap
  }
+
  rafId = requestAnimationFrame(loop);
 }
 
+// ── Start / Stop ─────────────────────────────────────────────────
 async function start() {
  try {
  stream = await navigator.mediaDevices.getUserMedia({
@@ -242,12 +351,12 @@ async function start() {
  try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
 
  running = true;
- startBtn.textContent = "Стоп";
+ startBtn.textContent = "Stop";
  startBtn.classList.add("on");
- statusEl.textContent = "Слушаю… дёргай струну";
+ statusEl.textContent = "Listening… play a string";
  loop();
  } catch (err) {
- statusEl.textContent = "Нет доступа к микрофону: " + err.message;
+ statusEl.textContent = "Microphone access denied: " + err.message;
  }
 }
 
@@ -257,13 +366,14 @@ function stop() {
  if (stream) stream.getTracks().forEach(t => t.stop());
  if (audioCtx) audioCtx.close();
  if (wakeLock) { wakeLock.release(); wakeLock = null; }
- startBtn.textContent = "Старт";
+ rawBuf = []; smoothCents = null;
+ startBtn.textContent = "Start";
  startBtn.classList.remove("on");
- statusEl.textContent = "Остановлено";
+ statusEl.textContent = "Stopped";
  noteEl.textContent = "–"; noteEl.classList.remove("on");
  octEl.textContent = ""; freqEl.textContent = "";
  needle.style.display = "none";
- centsEl.textContent = "Нажмите «Старт» и сыграйте струну";
+ centsEl.textContent = "Press Start and play a string";
  centsEl.classList.remove("good");
  renderGuide(null);
 }
