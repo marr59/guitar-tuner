@@ -3,415 +3,416 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#121214">
+<meta name="theme-color" content="#0C0E13">
 <title>Guitar Tuner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
- * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
- html, body {
- margin: 0; height: 100%;
- font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
- background: #121214; color: #e1e1e6;
- -webkit-user-select: none; user-select: none;
- }
- body {
- display: flex; flex-direction: column; align-items: center; justify-content: center;
- padding: 16px; min-height: 100vh; min-height: 100dvh;
- }
- .container {
- background: #1e1e24; padding: 22px; border-radius: 20px;
- width: 100%; max-width: 460px; border: 1px solid #2e2e38;
- box-shadow: 0 8px 32px rgba(0,0,0,.45);
- }
- h1 { margin: 0 0 16px; font-size: 20px; color: #fff; text-align: center; }
- label { display: block; margin-bottom: 6px; color: #8f8f9d; font-size: 13px; }
- select {
- width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #3e3e4a;
- background: #2a2a32; color: #fff; font-size: 16px; outline: none; appearance: none;
- background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238f8f9d' viewBox='0 0 16 16'><path d='M4 6l4 4 4-4z'/></svg>");
- background-repeat: no-repeat; background-position: right 14px center;
- }
- select:focus { border-color: #04d361; }
- .desc { color: #6a6a76; font-size: 12px; margin-top: 8px; min-height: 15px; line-height: 1.35; }
+  :root{
+    --ink:#0C0E13; --ink2:#0A0B10;
+    --panel:rgba(255,255,255,.035); --border:rgba(255,255,255,.09);
+    --text:#EAECF2; --muted:#727A8A; --muted2:#4A5160;
+    --mint:#37E0B0; --amber:#FFB44E; --blue:#4EA8FF;
+    --disp:'Space Grotesk',-apple-system,system-ui,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;height:100%}
+  body{
+    font-family:var(--disp); color:var(--text);
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(55,224,176,.06), transparent 55%),
+      linear-gradient(180deg,#0C0E13 0%,#0A0B10 100%);
+    background-attachment:fixed;
+    display:flex; align-items:center; justify-content:center;
+    padding:18px; min-height:100dvh; -webkit-user-select:none; user-select:none;
+  }
+  .app{
+    width:100%; max-width:460px; position:relative;
+    background:var(--panel); border:1px solid var(--border);
+    border-radius:26px; padding:22px 20px 20px;
+    box-shadow:0 30px 80px -20px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.04);
+    backdrop-filter:blur(8px);
+  }
+  .brand{
+    display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;
+  }
+  .brand h1{
+    font-size:15px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+    margin:0; color:var(--muted);
+  }
+  .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--muted2);transition:background .3s, box-shadow .3s}
+  .brand .dot.live{background:var(--mint);box-shadow:0 0 12px var(--mint)}
 
- .strings-guide { display: flex; justify-content: space-between; gap: 6px; margin: 16px 0 4px; }
- .string-note {
- flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
- padding: 8px 0; border-radius: 10px; background: #141416; border: 1px solid transparent;
- transition: all .15s; cursor: pointer;
- }
- .string-note:active { opacity: 0.7; }
- .string-note.active { background: #04d3611a; border-color: #04d361; }
- .string-note.locked { background: #f59e0b1a; border-color: #f59e0b; }
- .string-note.locked .string-name { color: #f59e0b; }
- .string-note.active.locked { background: #04d3611a; border-color: #04d361; }
- .string-note.active.locked .string-name { color: #04d361; }
- .string-num { color: #6a6a76; font-size: 10px; }
- .string-name { font-weight: 700; font-size: 15px; font-family: ui-monospace, monospace; }
- .string-note.active .string-name { color: #04d361; }
- .mode-hint { text-align: center; font-size: 11px; color: #6a6a76; margin-bottom: 12px; min-height: 14px; }
+  .field{position:relative}
+  select{
+    width:100%; padding:14px 16px; border-radius:14px;
+    border:1px solid var(--border); background:rgba(255,255,255,.02); color:var(--text);
+    font-family:var(--disp); font-size:15px; font-weight:500; outline:none; appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23727A8A' viewBox='0 0 16 16'><path d='M4 6l4 4 4-4z'/></svg>");
+    background-repeat:no-repeat; background-position:right 16px center;
+  }
+  select:focus{border-color:rgba(55,224,176,.5)}
+  .desc{color:var(--muted); font-size:12.5px; line-height:1.4; margin:9px 4px 0; min-height:16px}
 
- .display {
- background: #141416; border-radius: 16px; padding: 22px 16px 18px;
- text-align: center; margin-bottom: 16px;
- }
- .note { font-size: 68px; font-weight: 800; line-height: 1; color: #4a4a54; letter-spacing: -2px; }
- .note.on { color: #fff; }
- .octave { font-size: 22px; font-weight: 600; color: #8f8f9d; vertical-align: super; margin-left: 2px; }
- .freq { color: #6a6a76; font-size: 13px; margin-top: 6px; font-family: ui-monospace, monospace; min-height: 16px; }
+  .stage{
+    position:relative; height:230px; margin:16px 0 6px;
+    border-radius:20px; overflow:hidden;
+    background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.18));
+    border:1px solid var(--border);
+  }
+  #wave{position:absolute; inset:0; width:100%; height:100%; display:block}
+  .readout{
+    position:absolute; inset:0; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; pointer-events:none;
+  }
+  .note{
+    font-family:var(--disp); font-weight:600; font-size:96px; line-height:.9;
+    letter-spacing:-.03em; color:#fff; text-shadow:0 6px 40px rgba(0,0,0,.5);
+    transition:opacity .25s; opacity:.35;
+  }
+  .note .oct{font-size:30px; font-weight:500; color:var(--muted); vertical-align:super; margin-left:3px}
+  .note.on{opacity:1}
+  .readline{
+    display:flex; gap:14px; align-items:baseline; margin-top:8px;
+    font-family:var(--mono); font-size:13px; color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .cents{font-weight:500; letter-spacing:.02em}
 
- .meter-wrap { position: relative; height: 64px; margin-top: 14px; }
- .scale {
- position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between;
- padding: 0 4px; color: #4a4a54; font-size: 11px;
- }
- .track {
- position: absolute; top: 50%; left: 0; right: 0; height: 6px; transform: translateY(-50%);
- background: #24242c; border-radius: 3px;
- }
- .center-tick {
- position: absolute; top: 50%; left: 50%; width: 3px; height: 26px;
- transform: translate(-50%,-50%); background: #04d361; border-radius: 2px; opacity: .5;
- }
- .needle {
- position: absolute; top: 50%; left: 50%; width: 5px; height: 40px;
- transform: translate(-50%,-50%); background: #8f8f9d; border-radius: 3px;
- transition: left .12s ease-out, background .15s;
- }
- .needle.good { background: #04d361; box-shadow: 0 0 14px #04d361; }
- .needle.low { background: #2196f3; }
- .needle.high { background: #ff9800; }
+  .meter{position:relative; height:34px; margin:2px 6px 4px}
+  .meter .rail{position:absolute; top:50%; left:0; right:0; height:2px; transform:translateY(-50%);
+    background:linear-gradient(90deg, transparent, rgba(255,255,255,.14) 15%, rgba(255,255,255,.14) 85%, transparent)}
+  .meter .mid{position:absolute; top:50%; left:50%; width:2px; height:16px; transform:translate(-50%,-50%);
+    background:rgba(255,255,255,.35); border-radius:2px}
+  .meter .dot{position:absolute; top:50%; left:50%; width:12px; height:12px; border-radius:50%;
+    transform:translate(-50%,-50%); background:var(--muted); opacity:0;
+    transition:background .12s, box-shadow .12s, opacity .2s}
+  .meter .dot.on{opacity:1}
+  .meter .lbl{position:absolute; top:calc(50% + 12px); font-family:var(--mono); font-size:10px; color:var(--muted2)}
+  .meter .lbl.l{left:2px} .meter .lbl.r{right:2px}
 
- .cents { text-align: center; font-size: 15px; color: #8f8f9d; margin-top: 8px; min-height: 20px; font-weight: 600; }
- .cents.good { color: #04d361; }
+  .strings{display:flex; gap:7px; margin:14px 0 0}
+  .str{
+    flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;
+    padding:11px 0 9px; border-radius:14px; cursor:pointer;
+    background:rgba(255,255,255,.025); border:1px solid var(--border);
+    transition:transform .12s, background .18s, border-color .18s, box-shadow .18s;
+  }
+  .str:active{transform:scale(.95)}
+  .str .n{font-family:var(--mono); font-size:10px; color:var(--muted2)}
+  .str .nm{font-family:var(--disp); font-weight:600; font-size:16px; color:var(--text)}
+  .str.active{background:rgba(55,224,176,.1); border-color:rgba(55,224,176,.45)}
+  .str.active .nm{color:var(--mint)}
+  .str.locked{background:rgba(255,180,78,.12); border-color:rgba(255,180,78,.55); box-shadow:0 0 0 1px rgba(255,180,78,.15)}
+  .str.locked .nm{color:var(--amber)}
+  .str.ring{animation:ring .5s ease}
+  @keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,255,255,.25)}100%{box-shadow:0 0 0 14px rgba(255,255,255,0)}}
 
- button {
- width: 100%; padding: 16px; margin-top: 4px; border: none; border-radius: 12px;
- background: #04d361; color: #001b0d; font-size: 17px; font-weight: 700; cursor: pointer;
- transition: background .15s;
- }
- button:active { background: #06e86c; }
- button.on { background: #e02041; color: #fff; }
+  .hint{text-align:center; color:var(--muted2); font-family:var(--mono); font-size:11px; margin:12px 0 0}
 
- .status { text-align: center; color: #6a6a76; font-size: 12px; margin-top: 10px; min-height: 15px; }
+  button.start{
+    width:100%; margin-top:16px; padding:16px; border:none; border-radius:16px; cursor:pointer;
+    font-family:var(--disp); font-size:16px; font-weight:600; letter-spacing:.01em;
+    color:#04140F; background:linear-gradient(180deg,#4BEEC1,#2FCFA1);
+    box-shadow:0 10px 30px -8px rgba(55,224,176,.5); transition:filter .15s, transform .1s;
+  }
+  button.start:active{transform:translateY(1px)}
+  button.start.on{
+    color:#FFD9DE; background:rgba(224,32,65,.14); border:1px solid rgba(224,32,65,.5);
+    box-shadow:none;
+  }
+  @media (prefers-reduced-motion:reduce){ .str.ring{animation:none} }
 </style>
 </head>
 <body>
-<div class="container">
- <h1>🎸 Guitar Tuner</h1>
+<div class="app">
+  <div class="brand"><h1>Tuner</h1><span class="dot" id="live"></span></div>
 
- <label for="tuning">Tuning</label>
- <select id="tuning">
- <option value="E2,A2,D3,G3,B3,E4" data-desc="Standard tuning. Works for most songs.">E Standard — E A D G B E</option>
- <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="Half step down. Hendrix, Guns N' Roses, a lot of metal.">Eb Standard — D# G# C# F# A# D#</option>
- <option value="D2,G2,C3,F3,A3,D4" data-desc="Full step down from standard. Fuller, heavier sound.">D Standard — D G C F A D</option>
- <option value="C#2,F#2,B2,E3,G#3,C#4" data-desc="Step and a half down.">C# Standard — C# F# B E G# C#</option>
- <option value="C2,F2,A#2,D#3,G3,C4" data-desc="Two full steps down. Heavy low end.">C Standard — C F A# D# G C</option>
- <option value="B1,E2,A2,D3,F#3,B3" data-desc="Baritone tuning. Two and a half steps down. Doom, sludge, djent.">B Standard (Baritone) — B E A D F# B</option>
- <option value="B1,F#2,B2,E3,G#3,C#4" data-desc="🔥 Slipknot — Vermilion Pt. 2 (and most of Vol. 3). Drop B: 6th string dropped to B, very low and heavy.">Slipknot — Vermilion Pt. 2 (Drop B)</option>
- </select>
- <div class="desc" id="desc"></div>
+  <div class="field">
+    <select id="tuning">
+      <option value="E2,A2,D3,G3,B3,E4"       data-desc="Standard tuning. Most songs live here.">E Standard · E A D G B E</option>
+      <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="Half step down. Hendrix, Guns N' Roses, lots of metal.">E♭ Standard · D# G# C# F# A# D#</option>
+      <option value="D2,G2,C3,F3,A3,D4"       data-desc="Whole step down. Thicker, heavier body.">D Standard · D G C F A D</option>
+      <option value="C#2,F#2,B2,E3,G#3,C#4"   data-desc="Minor third down. Dark and low.">C# Standard · C# F# B E G# C#</option>
+      <option value="C2,F2,A#2,D#3,G3,C4"     data-desc="Two whole steps down. Heavy low end.">C Standard · C F A# D# G C</option>
+      <option value="B1,F#2,B2,E3,G#3,C#4"    data-desc="Slipknot — Vermilion Pt. 2 (and most of Vol. 3). Drop B: very low, very heavy. Tap the low B to lock it.">Slipknot · Vermilion Pt. 2 · Drop B</option>
+    </select>
+  </div>
+  <div class="desc" id="desc"></div>
 
- <div class="strings-guide" id="guide"></div>
- <div class="mode-hint" id="modeHint">Tap a string to lock it</div>
+  <div class="stage">
+    <canvas id="wave"></canvas>
+    <div class="readout">
+      <div class="note" id="note">–</div>
+      <div class="readline"><span id="freq">—</span><span class="cents" id="cents">Press start</span></div>
+    </div>
+  </div>
 
- <div class="display">
- <div><span class="note" id="note">–</span><span class="octave" id="octave"></span></div>
- <div class="freq" id="freq"></div>
- <div class="meter-wrap">
- <div class="track"></div>
- <div class="scale"><span>♭ -50</span><span>0</span><span>+50 ♯</span></div>
- <div class="center-tick"></div>
- <div class="needle" id="needle" style="display:none"></div>
- </div>
- <div class="cents" id="cents">Press Start and play a string</div>
- </div>
+  <div class="meter">
+    <div class="rail"></div><div class="mid"></div>
+    <div class="dot" id="dot"></div>
+    <span class="lbl l">♭ −50</span><span class="lbl r">+50 ♯</span>
+  </div>
 
- <button id="start">Start</button>
- <div class="status" id="status">Microphone access required</div>
+  <div class="strings" id="guide"></div>
+  <div class="hint" id="hint">Tap a string to hear it &amp; lock the target</div>
+
+  <button class="start" id="start">Start</button>
 </div>
 
 <script>
-const NOTES = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
-const $ = id => document.getElementById(id);
-const tuningSel = $("tuning"), guide = $("guide"), descEl = $("desc"), modeHint = $("modeHint");
-const noteEl = $("note"), octEl = $("octave"), freqEl = $("freq");
-const needle = $("needle"), centsEl = $("cents"), statusEl = $("status"), startBtn = $("start");
+const NOTES=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+const $=id=>document.getElementById(id);
+const tuningSel=$("tuning"),guide=$("guide"),descEl=$("desc"),hint=$("hint");
+const noteEl=$("note"),freqEl=$("freq"),centsEl=$("cents"),dot=$("dot"),live=$("live");
+const startBtn=$("start"),cv=$("wave"),ctx2d=cv.getContext("2d");
 
-let audioCtx, analyser, stream, rafId, wakeLock = null;
-let running = false;
+let audioCtx=null,analyser=null,stream=null,running=false,rafId=null;
+let lockedStringIdx=null;
 
-// ── Smoothing state ──────────────────────────────────────────────
-// Circular buffer of raw frequency readings for median filtering
-const RAW_BUF = 6;
-let rawBuf = [];
-// Smoothed cents (EWM, heavy)
-let smoothCents = null;
-const CENTS_ALPHA = 0.1; // 90% history weight → very stable needle
+// smoothing
+const RAW_BUF=5; let rawBuf=[];
+let targetCents=0, displayCents=0, hasSignal=false, lostFrames=0;
+let curNote="–", curOct="", curHz=0;
+let refUntil=0;                       // suppress mic display while a reference tone rings
+const reduceMotion=matchMedia("(prefers-reduced-motion:reduce)").matches;
 
-// ── String selection ─────────────────────────────────────────────
-let lockedStringIdx = null; // null = auto, 0-5 = manual lock
-
-// ── Tuning helpers ───────────────────────────────────────────────
-function tuningNotes() { return tuningSel.value.split(","); }
-function tuningDesc() { return tuningSel.selectedOptions[0].dataset.desc || ""; }
-
-function noteNameToHz(name) {
- const m = name.match(/^([A-G]#?)(\d)$/);
- if (!m) return null;
- const idx = NOTES.indexOf(m[1]);
- const midi = idx + (parseInt(m[2]) + 1) * 12;
- return 440 * Math.pow(2, (midi - 69) / 12);
+// ── tuning helpers ──
+const tuningNotes=()=>tuningSel.value.split(",");
+const tuningDesc=()=>tuningSel.selectedOptions[0].dataset.desc||"";
+function noteNameToHz(name){
+  const m=name.match(/^([A-G]#?)(\d)$/); if(!m) return null;
+  const midi=NOTES.indexOf(m[1])+(parseInt(m[2])+1)*12;
+  return 440*Math.pow(2,(midi-69)/12);
+}
+function foldToOctave(f,t){ if(!t) return f; while(f>t*1.5)f/=2; while(f<t/1.5)f*=2; return f; }
+function nearestString(freq){
+  const s=tuningNotes(); let bi=0,bc=Infinity;
+  for(let i=0;i<s.length;i++){ const hz=noteNameToHz(s[i]); if(!hz)continue;
+    const c=1200*Math.log2(freq/hz); if(Math.abs(c)<Math.abs(bc)){bc=c;bi=i;} }
+  const t=s[bi];
+  return {idx:bi,name:t.replace(/\d/,""),oct:t.match(/\d/)[0],hz:noteNameToHz(t),cents:bc,shownHz:freq};
+}
+function lockedInfo(freq){
+  const t=tuningNotes()[lockedStringIdx], hz=noteNameToHz(t), fold=foldToOctave(freq,hz);
+  return {idx:lockedStringIdx,name:t.replace(/\d/,""),oct:t.match(/\d/)[0],hz,cents:hz?1200*Math.log2(fold/hz):0,shownHz:fold};
 }
 
-// Find the closest string in the current tuning to the detected frequency.
-// Returns { stringIdx, noteName, octave, targetHz, rawCents }
-function nearestString(freq) {
- const strings = tuningNotes();
- let bestIdx = 0, bestCents = Infinity;
- for (let i = 0; i < strings.length; i++) {
- const hz = noteNameToHz(strings[i]);
- if (!hz) continue;
- const c = 1200 * Math.log2(freq / hz);
- if (Math.abs(c) < Math.abs(bestCents)) { bestCents = c; bestIdx = i; }
- }
- const target = strings[bestIdx];
- return {
- stringIdx: bestIdx,
- noteName: target.replace(/\d/, ""),
- octave: parseInt(target.match(/\d/)[0]),
- targetHz: noteNameToHz(target),
- rawCents: bestCents,
- };
+// ── audio context (shared by mic + reference) ──
+function ensureAudio(){
+  if(!audioCtx||audioCtx.state==="closed"){
+    audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  }
+  if(audioCtx.state==="suspended") audioCtx.resume();
+  return audioCtx;
+}
+// plucked-string reference tone (additive partials + decaying lowpass)
+function playReference(hz){
+  const ac=ensureAudio(), t=ac.currentTime;
+  const master=ac.createGain();
+  master.gain.setValueAtTime(0,t);
+  master.gain.linearRampToValueAtTime(0.9,t+0.006);
+  master.gain.exponentialRampToValueAtTime(0.0007,t+1.9);
+  const lp=ac.createBiquadFilter(); lp.type="lowpass";
+  lp.frequency.setValueAtTime(Math.min(7000,hz*9),t);
+  lp.frequency.exponentialRampToValueAtTime(Math.max(700,hz*3),t+1.3);
+  master.connect(lp); lp.connect(ac.destination);
+  [[1,1],[2,.5],[3,.28],[4,.14],[5,.07]].forEach(([m,a])=>{
+    const o=ac.createOscillator(); o.type="sine"; o.frequency.value=hz*m;
+    const g=ac.createGain(); g.gain.value=a; o.connect(g); g.connect(master);
+    o.start(t); o.stop(t+2);
+  });
+  refUntil=performance.now()+1300;
 }
 
-// When user has locked a string, compute cents relative to that string only.
-// Fold a frequency into the same octave as the target, so an octave
-// harmonic (common on low strings like B1) still reads against the target.
-function foldToOctave(freq, targetHz) {
- if (!targetHz) return freq;
- while (freq > targetHz * 1.5) freq /= 2;
- while (freq < targetHz / 1.5) freq *= 2;
- return freq;
+// ── string guide (tap = hear + lock) ──
+function renderGuide(activeIdx){
+  const notes=tuningNotes(); guide.innerHTML="";
+  notes.forEach((n,i)=>{
+    const nm=n.replace(/\d/,"");
+    const d=document.createElement("div");
+    d.className="str"+(i===activeIdx?" active":"")+(i===lockedStringIdx?" locked":"");
+    d.innerHTML=`<span class="n">${notes.length-i}</span><span class="nm">${nm}</span>`;
+    d.addEventListener("click",()=>{
+      playReference(noteNameToHz(n));
+      lockedStringIdx=(lockedStringIdx===i)?null:i;
+      rawBuf=[];
+      d.classList.remove("ring"); void d.offsetWidth; d.classList.add("ring");
+      renderGuide(activeIdx); updateHint();
+    });
+    guide.appendChild(d);
+  });
 }
-function lockedStringInfo(freq) {
- const strings = tuningNotes();
- const target = strings[lockedStringIdx];
- const hz = noteNameToHz(target);
- const folded = foldToOctave(freq, hz);
- return {
- stringIdx: lockedStringIdx,
- noteName: target.replace(/\d/, ""),
- octave: parseInt(target.match(/\d/)[0]),
- targetHz: hz,
- foldedHz: folded,
- rawCents: hz ? 1200 * Math.log2(folded / hz) : 0,
- };
+function updateHint(){
+  if(lockedStringIdx===null){ hint.textContent="Tap a string to hear it & lock the target"; }
+  else{ const notes=tuningNotes(); const nm=notes[lockedStringIdx].replace(/\d/,"");
+    hint.textContent=`Locked · string ${notes.length-lockedStringIdx} (${nm}) — tap again to release`; }
 }
-
-// ── Render string guide ──────────────────────────────────────────
-function renderGuide(activeIdx) {
- const notes = tuningNotes();
- guide.innerHTML = "";
- notes.forEach((n, i) => {
- const name = n.replace(/\d/, "");
- const d = document.createElement("div");
- const isActive = i === activeIdx;
- const isLocked = i === lockedStringIdx;
- d.className = "string-note" + (isActive ? " active" : "") + (isLocked ? " locked" : "");
- d.innerHTML = `<span class="string-num">${notes.length - i}</span><span class="string-name">${name}</span>`;
- d.addEventListener("click", () => {
- lockedStringIdx = (lockedStringIdx === i) ? null : i;
- smoothCents = null; // reset smooth on lock change
- rawBuf = [];
- renderGuide(activeIdx);
- updateModeHint();
- });
- guide.appendChild(d);
- });
+function refreshTuning(){
+  lockedStringIdx=null; rawBuf=[]; targetCents=0; displayCents=0;
+  renderGuide(-1); descEl.textContent=tuningDesc(); updateHint();
 }
+tuningSel.addEventListener("change",refreshTuning);
 
-function updateModeHint() {
- if (lockedStringIdx === null) {
- modeHint.textContent = "Auto mode — tap a string to lock";
- } else {
- const notes = tuningNotes();
- const name = notes[lockedStringIdx].replace(/\d/, "");
- modeHint.textContent = `Locked to string ${tuningNotes().length - lockedStringIdx} (${name}) — tap again to unlock`;
- }
+// ── pitch detection ──
+function autoCorrelate(buf,sr){
+  const N=buf.length; let rms=0;
+  for(let i=0;i<N;i++) rms+=buf[i]*buf[i];
+  rms=Math.sqrt(rms/N); if(rms<0.008) return -1;
+  let r1=0,r2=N-1; const thr=0.2;
+  for(let i=0;i<N/2;i++) if(Math.abs(buf[i])<thr){r1=i;break;}
+  for(let i=1;i<N/2;i++) if(Math.abs(buf[N-i])<thr){r2=N-i;break;}
+  const b=buf.slice(r1,r2),n=b.length; const c=new Float32Array(n);
+  for(let i=0;i<n;i++) for(let j=0;j<n-i;j++) c[i]+=b[j]*b[j+i];
+  let d=0; while(d<n-1&&c[d]>c[d+1])d++;
+  let mx=-1,pos=-1; for(let i=d;i<n;i++) if(c[i]>mx){mx=c[i];pos=i;}
+  if(pos<=0) return -1;
+  const x1=c[pos-1]||0,x2=c[pos],x3=c[pos+1]||0;
+  const a=(x1+x3-2*x2)/2,bb=(x3-x1)/2; let T=pos; if(a)T=pos-bb/(2*a);
+  return sr/T;
 }
+function medianRaw(){ if(!rawBuf.length)return null; const s=[...rawBuf].sort((a,b)=>a-b); return s[s.length>>1]; }
 
-function refreshTuning() {
- lockedStringIdx = null;
- smoothCents = null;
- rawBuf = [];
- renderGuide(null);
- descEl.textContent = tuningDesc();
- updateModeHint();
-}
-tuningSel.addEventListener("change", refreshTuning);
-refreshTuning();
+const abuf=()=>new Float32Array(analyser.fftSize);
+let scratch=null;
+function analyze(){
+  if(!analyser) return;
+  if(!scratch||scratch.length!==analyser.fftSize) scratch=abuf();
+  analyser.getFloatTimeDomainData(scratch);
 
-// ── Pitch detection (autocorrelation) ───────────────────────────
-function autoCorrelate(buf, sr) {
- const N = buf.length;
- let rms = 0;
- for (let i = 0; i < N; i++) rms += buf[i] * buf[i];
- rms = Math.sqrt(rms / N);
- if (rms < 0.008) return -1;
+  // input level for diagnostics
+  let lvl=0; for(let i=0;i<scratch.length;i++) lvl+=scratch[i]*scratch[i];
+  lvl=Math.sqrt(lvl/scratch.length);
 
- let r1 = 0, r2 = N - 1;
- const thr = 0.2;
- for (let i = 0; i < N / 2; i++) if (Math.abs(buf[i]) < thr) { r1 = i; break; }
- for (let i = 1; i < N / 2; i++) if (Math.abs(buf[N - i]) < thr) { r2 = N - i; break; }
+  if(performance.now()<refUntil){ centsEl.textContent="♪ reference"; return; }
 
- const b = buf.slice(r1, r2), n = b.length;
- const c = new Float32Array(n);
- for (let i = 0; i < n; i++)
- for (let j = 0; j < n - i; j++) c[i] += b[j] * b[j + i];
-
- let d = 0; while (d < n - 1 && c[d] > c[d + 1]) d++;
- let max = -1, pos = -1;
- for (let i = d; i < n; i++) if (c[i] > max) { max = c[i]; pos = i; }
- if (pos <= 0) return -1;
-
- const x1 = c[pos - 1] || 0, x2 = c[pos], x3 = c[pos + 1] || 0;
- const a = (x1 + x3 - 2 * x2) / 2, bb = (x3 - x1) / 2;
- let T = pos; if (a) T = pos - bb / (2 * a);
- return sr / T;
+  const raw=autoCorrelate(scratch,audioCtx.sampleRate);
+  if(raw>30&&raw<1400){
+    rawBuf.push(raw); if(rawBuf.length>RAW_BUF) rawBuf.shift();
+    const freq=medianRaw();
+    const info=(lockedStringIdx!==null)?lockedInfo(freq):nearestString(freq);
+    targetCents=Math.max(-60,Math.min(60,info.cents));
+    curNote=info.name; curOct=info.oct; curHz=info.shownHz;
+    hasSignal=true; lostFrames=0;
+    renderGuide(info.idx);
+  }else{
+    if(++lostFrames>18){ hasSignal=false; }
+    centsEl.textContent = lvl<0.003 ? "no signal — check mic" : "play a string…";
+  }
 }
 
-// Median of current raw buffer
-function medianRaw() {
- if (!rawBuf.length) return null;
- const s = [...rawBuf].sort((a, b) => a - b);
- return s[Math.floor(s.length / 2)];
+// ── waveform render (spring-smoothed, 60fps) ──
+let phase=0, beatPhase=0, dpr=1;
+function resize(){
+  dpr=Math.min(window.devicePixelRatio||1,2);
+  cv.width=cv.clientWidth*dpr; cv.height=cv.clientHeight*dpr;
+}
+window.addEventListener("resize",resize);
+function lerp(a,b,t){return a+(b-a)*t;}
+function stateColor(c){
+  const inTune=[55,224,176], flat=[78,168,255], sharp=[255,180,78];
+  const t=Math.min(Math.abs(c)/40,1); const base=c>0?sharp:flat;
+  return inTune.map((v,i)=>Math.round(lerp(v,base[i],t)));
+}
+function draw(){
+  const W=cv.width,H=cv.height,cy=H/2;
+  ctx2d.clearRect(0,0,W,H);
+  const good=Math.abs(displayCents)<=4;
+  const col=stateColor(displayCents), rgb=`${col[0]},${col[1]},${col[2]}`;
+
+  // motion scales with how far off we are; in tune → nearly still & clean
+  const off=Math.min(Math.abs(displayCents)/50,1);
+  if(!reduceMotion){ phase+=0.02+off*0.09*Math.sign(displayCents||1); beatPhase+=0.015+off*0.03; }
+  const beatK=off*7;                                   // acoustic-beat nodes when detuned
+  const amp=H*(good?0.16:0.11+off*0.10);
+  const vShift=-(Math.max(-50,Math.min(50,displayCents))/50)*(H*0.22); // sharp↑ flat↓
+
+  // soft glow band
+  const grad=ctx2d.createLinearGradient(0,cy+vShift-amp*2,0,cy+vShift+amp*2);
+  grad.addColorStop(0,`rgba(${rgb},0)`); grad.addColorStop(.5,`rgba(${rgb},${good?0.14:0.08})`); grad.addColorStop(1,`rgba(${rgb},0)`);
+  ctx2d.fillStyle=grad; ctx2d.fillRect(0,cy+vShift-amp*2,W,amp*4);
+
+  ctx2d.lineWidth=Math.max(2,2.4*dpr);
+  ctx2d.strokeStyle=`rgb(${rgb})`;
+  ctx2d.shadowBlur=good?18*dpr:6*dpr; ctx2d.shadowColor=`rgba(${rgb},${good?0.9:0.4})`;
+  ctx2d.beginPath();
+  const k=(Math.PI*2)/(W)* (3.2);                       // ~3 cycles across width
+  for(let px=0;px<=W;px+=2){
+    const x=px;
+    const env=0.45+0.55*Math.abs(Math.cos(px*beatK/W*Math.PI - beatPhase)); // beat envelope
+    const y=cy+vShift+Math.sin(px*k+phase)*amp*env;
+    px===0?ctx2d.moveTo(x,y):ctx2d.lineTo(x,y);
+  }
+  ctx2d.stroke();
+  ctx2d.shadowBlur=0;
+
+  // center reference line
+  ctx2d.strokeStyle="rgba(255,255,255,.06)"; ctx2d.lineWidth=1*dpr;
+  ctx2d.beginPath(); ctx2d.moveTo(0,cy); ctx2d.lineTo(W,cy); ctx2d.stroke();
 }
 
-// ── Analysis loop ────────────────────────────────────────────────
-function loop() {
- const buf = new Float32Array(analyser.fftSize);
- analyser.getFloatTimeDomainData(buf);
+function frame(){
+  // spring the visual toward the detected target
+  displayCents+=(targetCents-displayCents)*0.14;
+  if(running) analyzeThrottle();
+  draw();
 
- // Input level (for diagnostics — tells us if the mic is actually feeding audio)
- let lvl = 0;
- for (let i = 0; i < buf.length; i++) lvl += buf[i] * buf[i];
- lvl = Math.sqrt(lvl / buf.length);
-
- const rawFreq = autoCorrelate(buf, audioCtx.sampleRate);
-
- if (rawFreq > 30 && rawFreq < 1400) {
- statusEl.textContent = "Listening…";
- // Push into ring buffer
- rawBuf.push(rawFreq);
- if (rawBuf.length > RAW_BUF) rawBuf.shift();
-
- const freq = medianRaw();
-
- // Get string match (tuning-aware or locked)
- const info = (lockedStringIdx !== null) ? lockedStringInfo(freq) : nearestString(freq);
-
- // EWM smooth cents (very stable)
- if (smoothCents === null) {
- smoothCents = info.rawCents;
- } else {
- smoothCents = smoothCents * (1 - CENTS_ALPHA) + info.rawCents * CENTS_ALPHA;
- }
- const cents = Math.round(smoothCents);
-
- // Update display
- noteEl.textContent = info.noteName;
- noteEl.classList.add("on");
- octEl.textContent = info.octave;
- freqEl.textContent = (info.foldedHz || freq).toFixed(1) + " Hz";
-
- const x = 50 + (Math.max(-50, Math.min(50, cents)) / 50) * 46;
- needle.style.display = "block";
- needle.style.left = x + "%";
- needle.className = "needle";
-
- if (Math.abs(cents) <= 4) {
- needle.classList.add("good");
- centsEl.textContent = "✓ In tune";
- centsEl.classList.add("good");
- } else if (cents > 0) {
- needle.classList.add("high");
- centsEl.textContent = `+${cents}¢ — too high, loosen`;
- centsEl.classList.remove("good");
- } else {
- needle.classList.add("low");
- centsEl.textContent = `${cents}¢ — too low, tighten`;
- centsEl.classList.remove("good");
- }
-
- renderGuide(info.stringIdx);
- } else {
- // No clear pitch — let buffer drain, keep smoothCents to avoid snap
- rawBuf = [];
- statusEl.textContent = (lvl < 0.003)
- ? "No signal — mic not picking up. Check permission / play louder"
- : "Play one clear string…";
- }
-
- rafId = requestAnimationFrame(loop);
+  // readout
+  if(hasSignal){
+    noteEl.classList.add("on");
+    noteEl.innerHTML=curNote+(curOct?`<span class="oct">${curOct}</span>`:"");
+    freqEl.textContent=curHz.toFixed(1)+" Hz";
+    if(performance.now()>=refUntil){
+      const c=Math.round(displayCents);
+      const col=stateColor(displayCents);
+      if(Math.abs(displayCents)<=4){ centsEl.textContent="in tune"; centsEl.style.color=`rgb(${col})`; }
+      else { centsEl.textContent=(c>0?`+${c}`:`${c}`)+"¢ "+(c>0?"loosen":"tighten"); centsEl.style.color="var(--muted)"; }
+      dot.classList.add("on");
+      dot.style.left=(50+Math.max(-50,Math.min(50,displayCents))/50*46)+"%";
+      dot.style.background=`rgb(${col})`;
+      dot.style.boxShadow=Math.abs(displayCents)<=4?`0 0 14px rgb(${col})`:"none";
+    }
+  }else{
+    noteEl.classList.remove("on"); noteEl.textContent="–";
+    freqEl.textContent="—"; dot.classList.remove("on");
+  }
+  rafId=requestAnimationFrame(frame);
 }
 
-// ── Start / Stop ─────────────────────────────────────────────────
-async function start() {
- try {
- stream = await navigator.mediaDevices.getUserMedia({
- audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false }
- });
- audioCtx = new (window.AudioContext || window.webkitAudioContext)();
- analyser = audioCtx.createAnalyser();
- analyser.fftSize = 4096;
- const src = audioCtx.createMediaStreamSource(stream);
- // iOS Safari will NOT pull data from a MediaStreamSource unless the graph
- // reaches the destination. Route analyser → muted gain → destination so
- // audio flows (the gain of 0 prevents any mic-to-speaker feedback).
- const mute = audioCtx.createGain();
- mute.gain.value = 0;
- src.connect(analyser);
- analyser.connect(mute);
- mute.connect(audioCtx.destination);
- if (audioCtx.state === "suspended") await audioCtx.resume();
+// throttle heavy autocorrelation to ~every 3rd frame
+let fc=0; function analyzeThrottle(){ if((fc++%3)===0) analyze(); }
 
- try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
-
- running = true;
- startBtn.textContent = "Stop";
- startBtn.classList.add("on");
- statusEl.textContent = "Listening… play a string";
- loop();
- } catch (err) {
- statusEl.textContent = "Microphone access denied: " + err.message;
- }
+// ── start / stop ──
+async function start(){
+  try{
+    stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
+    ensureAudio();
+    analyser=audioCtx.createAnalyser(); analyser.fftSize=4096;
+    const src=audioCtx.createMediaStreamSource(stream);
+    // iOS Safari won't pull from a MediaStreamSource unless the graph reaches
+    // destination — route through a muted gain (0) so audio flows, no feedback.
+    const mute=audioCtx.createGain(); mute.gain.value=0;
+    src.connect(analyser); analyser.connect(mute); mute.connect(audioCtx.destination);
+    if(audioCtx.state==="suspended") await audioCtx.resume();
+    try{ await navigator.wakeLock.request("screen"); }catch(e){}
+    running=true; live.classList.add("live");
+    startBtn.textContent="Stop"; startBtn.classList.add("on");
+    if(!rafId) frame();
+  }catch(err){ centsEl.textContent="mic blocked: "+err.message; }
 }
-
-function stop() {
- running = false;
- cancelAnimationFrame(rafId);
- if (stream) stream.getTracks().forEach(t => t.stop());
- if (audioCtx) audioCtx.close();
- if (wakeLock) { wakeLock.release(); wakeLock = null; }
- rawBuf = []; smoothCents = null;
- startBtn.textContent = "Start";
- startBtn.classList.remove("on");
- statusEl.textContent = "Stopped";
- noteEl.textContent = "–"; noteEl.classList.remove("on");
- octEl.textContent = ""; freqEl.textContent = "";
- needle.style.display = "none";
- centsEl.textContent = "Press Start and play a string";
- centsEl.classList.remove("good");
- renderGuide(null);
+function stop(){
+  running=false; hasSignal=false; live.classList.remove("live");
+  if(stream) stream.getTracks().forEach(t=>t.stop());
+  analyser=null; rawBuf=[]; targetCents=0;
+  startBtn.textContent="Start"; startBtn.classList.remove("on");
+  centsEl.textContent="Press start"; centsEl.style.color="var(--muted)";
 }
+startBtn.addEventListener("click",()=>running?stop():start());
 
-startBtn.addEventListener("click", () => running ? stop() : start());
-
-document.addEventListener("visibilitychange", async () => {
- if (running && document.visibilityState === "visible") {
- try { wakeLock = await navigator.wakeLock.request("screen"); } catch (e) {}
- }
-});
+// keep visuals alive from load (idle wave), analysis only when running
+resize(); refreshTuning(); frame();
 </script>
 </body>
 </html>
