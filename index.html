@@ -342,6 +342,7 @@ let library=[];
 let active=null;
 let selIdx=0;
 let advanceAt=0;   // timestamp when auto-advance should fire (0 = not armed)
+let advanceDir=1;  // +1 toward string 1, -1 toward string 6
 let allDone=false; // all strings tuned flag
 
 function loadLib(){ try{ library=JSON.parse(store.get(LIB_KEY)||"[]"); }catch(e){ library=[]; } }
@@ -358,7 +359,7 @@ const strLabel=arr=>arr.map(bare).join(" ");
 
 /* ── active tuning ── */
 function setActive(t,{silent=false}={}){
-  active=t; selIdx=0; allDone=false; advanceAt=0; resetReadings();
+  active=t; selIdx=0; allDone=false; advanceAt=0; advanceDir=1; resetReadings();
   $("curTitle").textContent=t.title;
   $("curStrings").textContent=strLabel(t.strings);
   let d=t.desc||t.note||"";
@@ -583,6 +584,18 @@ function frame(){
   if(running && (fc++%4===0)) analyze();
   draw();
 
+  // Advance timer runs independently — a note that fades before the delay
+  // fires must not silently abort the transition.
+  if(active && advanceAt>0 && performance.now()>=advanceAt){
+    const next=selIdx+advanceDir;
+    advanceAt=0;
+    if(next>=0 && next<active.strings.length){
+      selIdx=next; allDone=false; resetReadings(); renderGuide(); updateHint();
+    }
+  } else if(advanceAt===-1 && inTuneSince && performance.now()-inTuneSince>1200){
+    advanceAt=0; allDone=true; updateHint(); toast("All strings tuned!");
+  }
+
   const tgt=active?active.strings[selIdx]:null;
   const noteEl=$("note"), checkEl=$("check"), centsEl=$("cents");
   noteEl.innerHTML=tgt?bare(tgt)+`<span class="oct">${(tgt.match(/-?\d/)||[""])[0]}</span>`:"–";
@@ -601,23 +614,15 @@ function frame(){
       if(!inTuneSince) inTuneSince=now;
       if(!dinged && now-inTuneSince>350 && now>=refUntil){
         playDing(); dinged=true;
-        if(autoAdvance && active && selIdx<active.strings.length-1) advanceAt=now+1200;
-        else if(autoAdvance && active && selIdx===active.strings.length-1) advanceAt=-1; // all done flag
-      }
-      // auto-advance: fire if still in tune
-      if(advanceAt>0 && now>=advanceAt && Math.abs(displayCents)<=4){
-        advanceAt=0;
-        const next=selIdx+1;
-        selIdx=next; allDone=false; resetReadings(); renderGuide(); updateHint();
-        // no playReference — don't interrupt the player
-      } else if(advanceAt===-1 && now-inTuneSince>1400){
-        advanceAt=0; allDone=true;
-        updateHint(); toast("All strings tuned!");
+        if(autoAdvance && active){
+          const next=selIdx+advanceDir;
+          advanceAt=(next>=0 && next<active.strings.length)?now+900:-1;
+        }
       }
     }else{
       checkEl.classList.remove("on"); noteEl.classList.remove("tuned");
-      inTuneSince=0; advanceAt=0;
-      if(Math.abs(displayCents)>12) dinged=false;
+      inTuneSince=0;
+      if(Math.abs(displayCents)>15){ advanceAt=0; dinged=false; }
       centsEl.textContent=(c>0?"+"+c:c)+"¢ "+(c>0?"loosen":"tighten");
       centsEl.style.color="var(--muted)";
     }
@@ -643,7 +648,14 @@ function renderGuide(){
     const d=document.createElement("div");
     d.className="str"+(i===selIdx?" sel":"");
     d.innerHTML=`<span class="n">${S.length-i}</span><span class="nm">${bare(n)}</span>`;
-    d.onclick=()=>{ selIdx=i; allDone=false; advanceAt=0; resetReadings(); renderGuide(); updateHint(); playReference(noteToHz(n)); };
+    d.onclick=()=>{
+      const last=active.strings.length-1;
+      if(i===0) advanceDir=1;
+      else if(i===last) advanceDir=-1;
+      else if(i!==selIdx) advanceDir=i>selIdx?1:-1;
+      selIdx=i; allDone=false; advanceAt=0; resetReadings();
+      renderGuide(); updateHint(); playReference(noteToHz(n));
+    };
     g.appendChild(d);
   });
 }
