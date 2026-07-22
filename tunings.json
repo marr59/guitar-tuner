@@ -1,25 +1,191 @@
 {
   "schema": 1,
   "updated": "2026-07-22",
-  "note": "Shared tuning catalog. strings[] is ordered low -> high and may be any length (4-8+), so 7/8-string guitars, bass and ukulele drop in without schema changes.",
-
+  "note": "Shared tuning catalogue. strings[] is ordered low -> high and may be any length (4-8+), so 7/8-string guitars, bass and ukulele drop in without schema changes. Focus is ALTERNATE tunings: songs played in plain E standard are deliberately not catalogued. confidence=high means cross-checked against multiple sources; medium means commonly cited but worth confirming by ear. Where sources genuinely disagree, both readings are offered as variants.",
   "tunings": [
-    { "id": "std-e",  "name": "E Standard",  "instrument": "guitar6", "strings": ["E2","A2","D3","G3","B3","E4"],       "desc": "Standard tuning. Most songs live here." },
-    { "id": "std-eb", "name": "E♭ Standard", "instrument": "guitar6", "strings": ["D#2","G#2","C#3","F#3","A#3","D#4"], "desc": "Half step down. Hendrix, Guns N' Roses, lots of metal." },
-    { "id": "std-d",  "name": "D Standard",  "instrument": "guitar6", "strings": ["D2","G2","C3","F3","A3","D4"],       "desc": "Whole step down. Thicker, heavier body." },
-    { "id": "std-cs", "name": "C# Standard", "instrument": "guitar6", "strings": ["C#2","F#2","B2","E3","G#3","C#4"],   "desc": "Minor third down. Dark and low." },
-    { "id": "std-c",  "name": "C Standard",  "instrument": "guitar6", "strings": ["C2","F2","A#2","D#3","G3","C4"],     "desc": "Two whole steps down. Heavy low end." },
-
-    { "id": "drop-d", "name": "Drop D", "instrument": "guitar6", "strings": ["D2","A2","D3","G3","B3","E4"],     "desc": "Low E dropped to D. One-finger power chords." },
-    { "id": "drop-c", "name": "Drop C", "instrument": "guitar6", "strings": ["C2","G2","C3","F3","A3","D4"],     "desc": "D standard with the 6th dropped to C." },
-    { "id": "drop-b", "name": "Drop B", "instrument": "guitar6", "strings": ["B1","F#2","B2","E3","G#3","C#4"],  "desc": "Very low and heavy. Slipknot Vol. 3 territory." },
-
-    { "id": "dadgad", "name": "DADGAD",  "instrument": "guitar6", "strings": ["D2","A2","D3","G3","A3","D4"],    "desc": "Modal, droning, open. Celtic and Zeppelin." },
-    { "id": "open-d", "name": "Open D",  "instrument": "guitar6", "strings": ["D2","A2","D3","F#3","A3","D4"],   "desc": "Strums an open D major. Slide favourite." },
-    { "id": "open-e", "name": "Open E",  "instrument": "guitar6", "strings": ["E2","B2","E3","G#3","B3","E4"],   "desc": "Open D shapes at standard pitch. Bottleneck blues." },
-    { "id": "open-g", "name": "Open G",  "instrument": "guitar6", "strings": ["D2","G2","D3","G3","B3","D4"],    "desc": "Keith Richards territory (he drops the 6th string entirely)." }
+    {
+      "id": "std-e",
+      "name": "E Standard",
+      "instrument": "guitar6",
+      "strings": [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "desc": "Standard tuning. Most songs live here."
+    },
+    {
+      "id": "std-eb",
+      "name": "E♭ Standard",
+      "instrument": "guitar6",
+      "strings": [
+        "D#2",
+        "G#2",
+        "C#3",
+        "F#3",
+        "A#3",
+        "D#4"
+      ],
+      "desc": "Half step down. Hendrix, Guns N' Roses, lots of metal."
+    },
+    {
+      "id": "std-d",
+      "name": "D Standard",
+      "instrument": "guitar6",
+      "strings": [
+        "D2",
+        "G2",
+        "C3",
+        "F3",
+        "A3",
+        "D4"
+      ],
+      "desc": "Whole step down. Thicker, heavier body."
+    },
+    {
+      "id": "std-cs",
+      "name": "C# Standard",
+      "instrument": "guitar6",
+      "strings": [
+        "C#2",
+        "F#2",
+        "B2",
+        "E3",
+        "G#3",
+        "C#4"
+      ],
+      "desc": "Minor third down. Dark and low."
+    },
+    {
+      "id": "std-c",
+      "name": "C Standard",
+      "instrument": "guitar6",
+      "strings": [
+        "C2",
+        "F2",
+        "A#2",
+        "D#3",
+        "G3",
+        "C4"
+      ],
+      "desc": "Two whole steps down. Heavy low end."
+    },
+    {
+      "id": "drop-d",
+      "name": "Drop D",
+      "instrument": "guitar6",
+      "strings": [
+        "D2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4"
+      ],
+      "desc": "Low E dropped to D. One-finger power chords."
+    },
+    {
+      "id": "drop-c",
+      "name": "Drop C",
+      "instrument": "guitar6",
+      "strings": [
+        "C2",
+        "G2",
+        "C3",
+        "F3",
+        "A3",
+        "D4"
+      ],
+      "desc": "D standard with the 6th dropped to C."
+    },
+    {
+      "id": "drop-b",
+      "name": "Drop B",
+      "instrument": "guitar6",
+      "strings": [
+        "B1",
+        "F#2",
+        "B2",
+        "E3",
+        "G#3",
+        "C#4"
+      ],
+      "desc": "Very low and heavy. Slipknot Vol. 3 territory."
+    },
+    {
+      "id": "dadgad",
+      "name": "DADGAD",
+      "instrument": "guitar6",
+      "strings": [
+        "D2",
+        "A2",
+        "D3",
+        "G3",
+        "A3",
+        "D4"
+      ],
+      "desc": "Modal, droning, open. Celtic and Zeppelin."
+    },
+    {
+      "id": "open-d",
+      "name": "Open D",
+      "instrument": "guitar6",
+      "strings": [
+        "D2",
+        "A2",
+        "D3",
+        "F#3",
+        "A3",
+        "D4"
+      ],
+      "desc": "Strums an open D major. Slide favourite."
+    },
+    {
+      "id": "open-e",
+      "name": "Open E",
+      "instrument": "guitar6",
+      "strings": [
+        "E2",
+        "B2",
+        "E3",
+        "G#3",
+        "B3",
+        "E4"
+      ],
+      "desc": "Open D shapes at standard pitch. Bottleneck blues."
+    },
+    {
+      "id": "open-g",
+      "name": "Open G",
+      "instrument": "guitar6",
+      "strings": [
+        "D2",
+        "G2",
+        "D3",
+        "G3",
+        "B3",
+        "D4"
+      ],
+      "desc": "Keith Richards territory (he drops the 6th string entirely)."
+    },
+    {
+      "id": "drop-cs",
+      "name": "Drop C#",
+      "instrument": "guitar6",
+      "strings": [
+        "C#2",
+        "G#2",
+        "C#3",
+        "F#3",
+        "A#3",
+        "D#4"
+      ],
+      "desc": "E♭ standard with the 6th string dropped to C#."
+    }
   ],
-
   "songs": [
     {
       "id": "slipknot-vermilion-2",
@@ -28,10 +194,26 @@
       "confidence": "high",
       "verified": true,
       "variants": [
-        { "label": "Studio (Vol. 3)", "tuningId": "drop-b", "strings": ["B1","F#2","B2","E3","G#3","C#4"], "capo": 0,
-          "note": "Vol. 3: (The Subliminal Verses) was tracked in Drop B. Many tabs are written in E standard for convenience — the record is not." }
+        {
+          "label": "Studio (Vol. 3)",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Vol. 3: (The Subliminal Verses) was tracked in Drop B. Many tabs are written in E standard for convenience — the record is not."
+        }
       ],
-      "sources": ["Band/album tuning references", "Cross-checked against tab sites"]
+      "sources": [
+        "Band/album tuning references",
+        "Cross-checked against tab sites"
+      ],
+      "album": "Vol. 3: (The Subliminal Verses)"
     },
     {
       "id": "brother-dege-too-old",
@@ -40,10 +222,27 @@
       "confidence": "high",
       "verified": true,
       "variants": [
-        { "label": "Studio", "tuningId": "open-e", "strings": ["E2","B2","E3","G#3","B3","E4"], "capo": 3,
-          "note": "Open E with a capo at fret 3 (sounds as open G). Played with a slide/bottleneck." }
+        {
+          "label": "Studio",
+          "tuningId": "open-e",
+          "strings": [
+            "E2",
+            "B2",
+            "E3",
+            "G#3",
+            "B3",
+            "E4"
+          ],
+          "capo": 3,
+          "note": "Open E with a capo at fret 3 (sounds as open G). Played with a slide/bottleneck."
+        }
       ],
-      "sources": ["Ultimate-Guitar tab header (E B E G# B E)", "GuitareTab lesson notes", "Galago Music transcription"]
+      "sources": [
+        "Ultimate-Guitar tab header (E B E G# B E)",
+        "GuitareTab lesson notes",
+        "Galago Music transcription"
+      ],
+      "album": "Folk Songs of the American Longhair"
     },
     {
       "id": "nirvana-come-as-you-are",
@@ -52,12 +251,40 @@
       "confidence": "high",
       "verified": true,
       "variants": [
-        { "label": "Studio (Nevermind)", "tuningId": "std-d",  "strings": ["D2","G2","C3","F3","A3","D4"],       "capo": 0,
-          "note": "Original recording is a whole step down, D standard. No capo." },
-        { "label": "Live",               "tuningId": "std-eb", "strings": ["D#2","G#2","C#3","F#3","A#3","D#4"], "capo": 0,
-          "note": "Live, Nirvana usually tuned only a half step down. Played identically." }
+        {
+          "label": "Studio (Nevermind)",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Original recording is a whole step down, D standard. No capo."
+        },
+        {
+          "label": "Live",
+          "tuningId": "std-eb",
+          "strings": [
+            "D#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ],
+          "capo": 0,
+          "note": "Live, Nirvana usually tuned only a half step down. Played identically."
+        }
       ],
-      "sources": ["TrueFire lesson", "GuitarLessons365 lesson", "Ultimate-Guitar tab notes"]
+      "sources": [
+        "TrueFire lesson",
+        "GuitarLessons365 lesson",
+        "Ultimate-Guitar tab notes"
+      ]
     },
     {
       "id": "led-zeppelin-kashmir",
@@ -66,10 +293,24 @@
       "confidence": "high",
       "verified": false,
       "variants": [
-        { "label": "Studio", "tuningId": "dadgad", "strings": ["D2","A2","D3","G3","A3","D4"], "capo": 0,
-          "note": "Page's signature DADGAD drone. The riff relies on the open D/A strings ringing." }
+        {
+          "label": "Studio",
+          "tuningId": "dadgad",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Page's signature DADGAD drone. The riff relies on the open D/A strings ringing."
+        }
       ],
-      "sources": ["Widely documented Jimmy Page tuning"]
+      "sources": [
+        "Widely documented Jimmy Page tuning"
+      ]
     },
     {
       "id": "ratm-killing-in-the-name",
@@ -78,10 +319,24 @@
       "confidence": "high",
       "verified": false,
       "variants": [
-        { "label": "Studio", "tuningId": "drop-d", "strings": ["D2","A2","D3","G3","B3","E4"], "capo": 0,
-          "note": "Drop D. The main riff is built on the dropped 6th string." }
+        {
+          "label": "Studio",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Drop D. The main riff is built on the dropped 6th string."
+        }
       ],
-      "sources": ["Widely documented"]
+      "sources": [
+        "Widely documented"
+      ]
     },
     {
       "id": "stones-honky-tonk-women",
@@ -90,10 +345,24 @@
       "confidence": "medium",
       "verified": false,
       "variants": [
-        { "label": "Keith Richards (5-string)", "tuningId": "open-g", "strings": ["G2","D3","G3","B3","D4"], "capo": 0,
-          "note": "Keith removes the low 6th string entirely and plays open G on five strings. On a normal 6-string, tune to open G and ignore the 6th." }
+        {
+          "label": "Keith Richards (5-string)",
+          "tuningId": null,
+          "strings": [
+            "G2",
+            "D3",
+            "G3",
+            "B3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Open G on FIVE strings: Keith removes the low 6th entirely. On a normal six-string, tune to open G and simply ignore the 6th string. Intentionally not identical to the six-string open-g entry.",
+          "derivedFrom": "open-g"
+        }
       ],
-      "sources": ["Well documented Keith Richards setup"]
+      "sources": [
+        "Well documented Keith Richards setup"
+      ]
     },
     {
       "id": "doors-riders-on-the-storm",
@@ -102,10 +371,24 @@
       "confidence": "high",
       "verified": false,
       "variants": [
-        { "label": "Studio", "tuningId": "std-e", "strings": ["E2","A2","D3","G3","B3","E4"], "capo": 0,
-          "note": "Standard tuning — no retune needed." }
+        {
+          "label": "Studio",
+          "tuningId": "std-e",
+          "strings": [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Standard tuning — no retune needed."
+        }
       ],
-      "sources": ["Standard tuning, widely transcribed"]
+      "sources": [
+        "Standard tuning, widely transcribed"
+      ]
     },
     {
       "id": "hendrix-voodoo-child",
@@ -114,10 +397,24 @@
       "confidence": "high",
       "verified": false,
       "variants": [
-        { "label": "Studio", "tuningId": "std-eb", "strings": ["D#2","G#2","C#3","F#3","A#3","D#4"], "capo": 0,
-          "note": "Hendrix almost always tuned a half step down." }
+        {
+          "label": "Studio",
+          "tuningId": "std-eb",
+          "strings": [
+            "D#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ],
+          "capo": 0,
+          "note": "Hendrix almost always tuned a half step down."
+        }
       ],
-      "sources": ["Widely documented Hendrix practice"]
+      "sources": [
+        "Widely documented Hendrix practice"
+      ]
     },
     {
       "id": "soad-chop-suey",
@@ -126,22 +423,599 @@
       "confidence": "medium",
       "verified": false,
       "variants": [
-        { "label": "Studio", "tuningId": "drop-c", "strings": ["C2","G2","C3","F3","A3","D4"], "capo": 0,
-          "note": "Drop C. Verify by ear against the record — SOAD used several low tunings across albums." }
+        {
+          "label": "Studio",
+          "tuningId": "drop-c",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Drop C. Verify by ear against the record — SOAD used several low tunings across albums."
+        }
       ],
-      "sources": ["Commonly cited; not independently verified"]
+      "sources": [
+        "Commonly cited; not independently verified"
+      ]
     },
     {
       "id": "slipknot-duality",
       "song": "Duality",
       "artist": "Slipknot",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio (Vol. 3)",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Same Vol. 3 sessions as Vermilion Pt. 2."
+        }
+      ],
+      "sources": [
+        "Same album as Vermilion Pt. 2"
+      ],
+      "album": "Vol. 3: (The Subliminal Verses)"
+    },
+    {
+      "id": "slipknot-before-i-forget",
+      "song": "Before I Forget",
+      "artist": "Slipknot",
+      "album": "Vol. 3: (The Subliminal Verses)",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Tabs are often written in E standard for convenience; the record is not."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab headers list B F# B E G# C# for this era"
+      ]
+    },
+    {
+      "id": "slipknot-psychosocial",
+      "song": "Psychosocial",
+      "artist": "Slipknot",
+      "album": "All Hope Is Gone",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Tabs are often written in E standard for convenience; the record is not."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab headers list B F# B E G# C# for this era"
+      ]
+    },
+    {
+      "id": "slipknot-all-hope-is-gone",
+      "song": "All Hope Is Gone",
+      "artist": "Slipknot",
+      "album": "All Hope Is Gone",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Tabs are often written in E standard for convenience; the record is not."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab headers list B F# B E G# C# for this era"
+      ]
+    },
+    {
+      "id": "slipknot-dead-memories",
+      "song": "Dead Memories",
+      "artist": "Slipknot",
+      "album": "All Hope Is Gone",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Tabs are often written in E standard for convenience; the record is not."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab headers list B F# B E G# C# for this era"
+      ]
+    },
+    {
+      "id": "slipknot-unsainted",
+      "song": "Unsainted",
+      "artist": "Slipknot",
+      "album": "We Are Not Your Kind",
       "confidence": "medium",
       "verified": false,
       "variants": [
-        { "label": "Studio (Vol. 3)", "tuningId": "drop-b", "strings": ["B1","F#2","B2","E3","G#3","C#4"], "capo": 0,
-          "note": "Same Vol. 3 sessions as Vermilion, so Drop B. Worth confirming by ear." }
+        {
+          "label": "Studio",
+          "tuningId": "drop-b",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ],
+          "capo": 0,
+          "note": "Drop B. Tabs are often written in E standard for convenience; the record is not."
+        }
       ],
-      "sources": ["Same album as Vermilion Pt. 2"]
+      "sources": [
+        "Ultimate-Guitar tab headers list B F# B E G# C# for this era"
+      ]
+    },
+    {
+      "id": "metallica-sad-but-true",
+      "song": "Sad but True",
+      "artist": "Metallica",
+      "album": "Metallica (Black Album)",
+      "confidence": "high",
+      "verified": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "D standard. Written and demoed in E standard, then dropped a whole step on Bob Rock's suggestion."
+        }
+      ],
+      "sources": [
+        "Wikipedia: Sad but True",
+        "Metallica guitar column transcription"
+      ]
+    },
+    {
+      "id": "metallica-thing-that-should-not-be",
+      "song": "The Thing That Should Not Be",
+      "artist": "Metallica",
+      "album": "Master of Puppets",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "D standard (most cited)",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Sources disagree: many transcriptions say D standard, older ones say Drop D, and Kirk Hammett has been quoted saying C#. Check by ear against the record."
+        },
+        {
+          "label": "Drop D (alternate)",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Some published tabs use Drop D instead."
+        }
+      ],
+      "sources": [
+        "Conflicting Ultimate-Guitar tabs",
+        "Metallica tuning guides"
+      ]
+    },
+    {
+      "id": "metallica-devils-dance",
+      "song": "Devil's Dance",
+      "artist": "Metallica",
+      "album": "ReLoad",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "D standard."
+        }
+      ],
+      "sources": [
+        "Metallica tuning guides"
+      ]
+    },
+    {
+      "id": "metallica-dream-no-more",
+      "song": "Dream No More",
+      "artist": "Metallica",
+      "album": "Hardwired... to Self-Destruct",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "D standard."
+        }
+      ],
+      "sources": [
+        "Metallica tuning guides"
+      ]
+    },
+    {
+      "id": "metallica-whiskey-in-the-jar",
+      "song": "Whiskey in the Jar",
+      "artist": "Metallica",
+      "album": "Garage Inc.",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "std-d",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "D standard."
+        }
+      ],
+      "sources": [
+        "Metallica tuning guides"
+      ]
+    },
+    {
+      "id": "metallica-god-that-failed",
+      "song": "The God That Failed",
+      "artist": "Metallica",
+      "album": "Metallica (Black Album)",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "std-eb",
+          "strings": [
+            "D#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ],
+          "capo": 0,
+          "note": "E♭ standard — the odd one out on an album that is mostly E standard."
+        }
+      ],
+      "sources": [
+        "Metallica tuning guides"
+      ]
+    },
+    {
+      "id": "metallica-house-jack-built",
+      "song": "The House Jack Built",
+      "artist": "Metallica",
+      "album": "Load",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-cs",
+          "strings": [
+            "C#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ],
+          "capo": 0,
+          "note": "Load is E♭ standard throughout except this track, which drops the 6th string to C#."
+        }
+      ],
+      "sources": [
+        "Metallica guitar column"
+      ]
+    },
+    {
+      "id": "rammstein-sonne",
+      "song": "Sonne",
+      "artist": "Rammstein",
+      "album": "Mutter",
+      "confidence": "high",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Drop D."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header D A D G B E",
+        "GuitarLessons365 lesson"
+      ]
+    },
+    {
+      "id": "rammstein-ich-will",
+      "song": "Ich Will",
+      "artist": "Rammstein",
+      "album": "Mutter",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Drop D."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header D A D G B E",
+        "GuitarLessons365 lesson"
+      ]
+    },
+    {
+      "id": "rammstein-rein-raus",
+      "song": "Rein Raus",
+      "artist": "Rammstein",
+      "album": "Mutter",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Drop D."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header D A D G B E",
+        "GuitarLessons365 lesson"
+      ]
+    },
+    {
+      "id": "rammstein-rammlied",
+      "song": "Rammlied",
+      "artist": "Rammstein",
+      "album": "Liebe ist für alle da",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Drop D."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header D A D G B E",
+        "GuitarLessons365 lesson"
+      ]
+    },
+    {
+      "id": "rammstein-du-hast",
+      "song": "Du Hast",
+      "artist": "Rammstein",
+      "album": "Sehnsucht",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Drop D",
+          "tuningId": "drop-d",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "Playable either way; several tabbers note the band plays it in Drop D."
+        },
+        {
+          "label": "E standard",
+          "tuningId": "std-e",
+          "strings": [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ],
+          "capo": 0,
+          "note": "The riff sits on the low strings and also works unmodified in standard tuning."
+        }
+      ],
+      "sources": [
+        "Conflicting Ultimate-Guitar tabs",
+        "Bass tab notes the band plays Drop D"
+      ]
+    },
+    {
+      "id": "rammstein-wo-bist-du",
+      "song": "Wo Bist Du",
+      "artist": "Rammstein",
+      "album": "Rosenrot",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-c",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Drop C — the heavier low tuning of Rammstein's later records."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header C G C F A D"
+      ]
+    },
+    {
+      "id": "rammstein-deutschland",
+      "song": "Deutschland",
+      "artist": "Rammstein",
+      "album": "Rammstein (2019)",
+      "confidence": "medium",
+      "verified": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "tuningId": "drop-c",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ],
+          "capo": 0,
+          "note": "Drop C — the heavier low tuning of Rammstein's later records."
+        }
+      ],
+      "sources": [
+        "Ultimate-Guitar tab header C G C F A D"
+      ]
     }
   ]
 }
