@@ -10,8 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0C0E13; --ink2:#0A0B10;
-    --panel:rgba(255,255,255,.035); --border:rgba(255,255,255,.09);
+    --ink:#0C0E13; --panel:rgba(255,255,255,.035); --border:rgba(255,255,255,.09);
     --text:#EAECF2; --muted:#727A8A; --muted2:#4A5160;
     --mint:#37E0B0; --amber:#FFB44E; --blue:#4EA8FF;
     --disp:'Space Grotesk',-apple-system,system-ui,sans-serif;
@@ -21,200 +20,253 @@
   html,body{margin:0;height:100%}
   body{
     font-family:var(--disp); color:var(--text);
-    background:
-      radial-gradient(120% 80% at 50% -10%, rgba(55,224,176,.06), transparent 55%),
-      linear-gradient(180deg,#0C0E13 0%,#0A0B10 100%);
+    background:radial-gradient(120% 80% at 50% -10%, rgba(55,224,176,.06), transparent 55%),
+               linear-gradient(180deg,#0C0E13 0%,#0A0B10 100%);
     background-attachment:fixed;
-    display:flex; align-items:center; justify-content:center;
+    display:flex; align-items:flex-start; justify-content:center;
     padding:18px; min-height:100dvh; -webkit-user-select:none; user-select:none;
   }
   .app{
-    width:100%; max-width:460px; position:relative;
-    background:var(--panel); border:1px solid var(--border);
-    border-radius:26px; padding:22px 20px 20px;
+    width:100%; max-width:460px; background:var(--panel); border:1px solid var(--border);
+    border-radius:26px; padding:20px; margin:auto;
     box-shadow:0 30px 80px -20px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.04);
     backdrop-filter:blur(8px);
   }
-  .brand{
-    display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;
-  }
-  .brand h1{
-    font-size:15px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
-    margin:0; color:var(--muted);
-  }
-  .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--muted2);transition:background .3s, box-shadow .3s}
-  .brand .dot.live{background:var(--mint);box-shadow:0 0 12px var(--mint)}
+  .brand{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px}
+  .brand h1{font-size:15px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; margin:0; color:var(--muted)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--muted2);transition:.3s}
+  .dot.live{background:var(--mint);box-shadow:0 0 12px var(--mint)}
 
-  .field{position:relative}
-  select{
-    width:100%; padding:14px 16px; border-radius:14px;
-    border:1px solid var(--border); background:rgba(255,255,255,.02); color:var(--text);
-    font-family:var(--disp); font-size:15px; font-weight:500; outline:none; appearance:none;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23727A8A' viewBox='0 0 16 16'><path d='M4 6l4 4 4-4z'/></svg>");
-    background-repeat:no-repeat; background-position:right 16px center;
-  }
-  select:focus{border-color:rgba(55,224,176,.5)}
-  .desc{color:var(--muted); font-size:12.5px; line-height:1.4; margin:9px 4px 0; min-height:16px}
+  .tabs{display:flex; gap:4px; padding:4px; background:rgba(0,0,0,.25); border-radius:14px; margin-bottom:16px}
+  .tab{flex:1; padding:10px; border:none; border-radius:11px; background:transparent; cursor:pointer;
+       font-family:var(--disp); font-size:13.5px; font-weight:600; color:var(--muted); transition:.18s}
+  .tab.on{background:rgba(255,255,255,.07); color:var(--text)}
 
-  .stage{
-    position:relative; height:230px; margin:16px 0 6px;
-    border-radius:20px; overflow:hidden;
-    background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.18));
-    border:1px solid var(--border);
-  }
+  .view{display:none} .view.on{display:block}
+
+  /* ── tuner ── */
+  .now{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:4px}
+  .now .t{font-size:17px; font-weight:600}
+  .now .a{font-size:12px; color:var(--muted); font-family:var(--mono)}
+  .desc{color:var(--muted); font-size:12.5px; line-height:1.4; margin:6px 2px 0; min-height:16px}
+  .badge{display:inline-block; padding:2px 7px; border-radius:6px; font-family:var(--mono); font-size:10px;
+         background:rgba(255,180,78,.14); color:var(--amber); margin-left:6px}
+
+  .stage{position:relative; height:210px; margin:14px 0 6px; border-radius:20px; overflow:hidden;
+    background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.18)); border:1px solid var(--border)}
   #wave{position:absolute; inset:0; width:100%; height:100%; display:block}
-  .readout{
-    position:absolute; inset:0; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; pointer-events:none;
-  }
-  .note{
-    font-family:var(--disp); font-weight:600; font-size:96px; line-height:.9;
-    letter-spacing:-.03em; color:#fff; text-shadow:0 6px 40px rgba(0,0,0,.5);
-    transition:opacity .25s; opacity:.35;
-  }
-  .note .oct{font-size:30px; font-weight:500; color:var(--muted); vertical-align:super; margin-left:3px}
+  .readout{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none}
+  .note{font-weight:600; font-size:88px; line-height:.9; letter-spacing:-.03em; color:#fff; opacity:.35; transition:opacity .25s}
+  .note .oct{font-size:28px; font-weight:500; color:var(--muted); vertical-align:super; margin-left:3px}
   .note.on{opacity:1}
-  .readline{
-    display:flex; gap:14px; align-items:baseline; margin-top:8px;
-    font-family:var(--mono); font-size:13px; color:var(--muted);
-    font-variant-numeric:tabular-nums;
-  }
-  .cents{font-weight:500; letter-spacing:.02em}
+  .readline{display:flex; gap:14px; align-items:baseline; margin-top:8px; font-family:var(--mono); font-size:13px;
+            color:var(--muted); font-variant-numeric:tabular-nums}
 
   .meter{position:relative; height:34px; margin:2px 6px 4px}
-  .meter .rail{position:absolute; top:50%; left:0; right:0; height:2px; transform:translateY(-50%);
-    background:linear-gradient(90deg, transparent, rgba(255,255,255,.14) 15%, rgba(255,255,255,.14) 85%, transparent)}
-  .meter .mid{position:absolute; top:50%; left:50%; width:2px; height:16px; transform:translate(-50%,-50%);
-    background:rgba(255,255,255,.35); border-radius:2px}
-  .meter .dot{position:absolute; top:50%; left:50%; width:12px; height:12px; border-radius:50%;
-    transform:translate(-50%,-50%); background:var(--muted); opacity:0;
-    transition:background .12s, box-shadow .12s, opacity .2s}
-  .meter .dot.on{opacity:1}
-  .meter .lbl{position:absolute; top:calc(50% + 12px); font-family:var(--mono); font-size:10px; color:var(--muted2)}
-  .meter .lbl.l{left:2px} .meter .lbl.r{right:2px}
+  .rail{position:absolute; top:50%; left:0; right:0; height:2px; transform:translateY(-50%);
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.14) 15%,rgba(255,255,255,.14) 85%,transparent)}
+  .mid{position:absolute; top:50%; left:50%; width:2px; height:16px; transform:translate(-50%,-50%); background:rgba(255,255,255,.35); border-radius:2px}
+  .mdot{position:absolute; top:50%; left:50%; width:12px; height:12px; border-radius:50%; transform:translate(-50%,-50%);
+        background:var(--muted); opacity:0; transition:background .12s, box-shadow .12s, opacity .2s}
+  .mdot.on{opacity:1}
+  .lbl{position:absolute; top:calc(50% + 12px); font-family:var(--mono); font-size:10px; color:var(--muted2)}
+  .lbl.l{left:2px} .lbl.r{right:2px}
 
-  .strings{display:flex; gap:7px; margin:14px 0 0}
-  .str{
-    flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;
-    padding:11px 0 9px; border-radius:14px; cursor:pointer;
-    background:rgba(255,255,255,.025); border:1px solid var(--border);
-    transition:transform .12s, background .18s, border-color .18s, box-shadow .18s;
-  }
+  .strings{display:flex; gap:6px; margin:14px 0 0; flex-wrap:nowrap}
+  .str{flex:1 1 0; min-width:0; display:flex; flex-direction:column; align-items:center; gap:3px;
+    padding:11px 0 9px; border-radius:13px; cursor:pointer; background:rgba(255,255,255,.025);
+    border:1px solid var(--border); transition:transform .12s, background .18s, border-color .18s}
   .str:active{transform:scale(.95)}
-  .str .n{font-family:var(--mono); font-size:10px; color:var(--muted2)}
-  .str .nm{font-family:var(--disp); font-weight:600; font-size:16px; color:var(--text)}
+  .str .n{font-family:var(--mono); font-size:9.5px; color:var(--muted2)}
+  .str .nm{font-weight:600; font-size:15px}
   .str.active{background:rgba(55,224,176,.1); border-color:rgba(55,224,176,.45)}
   .str.active .nm{color:var(--mint)}
-  .str.locked{background:rgba(255,180,78,.12); border-color:rgba(255,180,78,.55); box-shadow:0 0 0 1px rgba(255,180,78,.15)}
+  .str.locked{background:rgba(255,180,78,.12); border-color:rgba(255,180,78,.55)}
   .str.locked .nm{color:var(--amber)}
-  .str.ring{animation:ring .5s ease}
-  @keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,255,255,.25)}100%{box-shadow:0 0 0 14px rgba(255,255,255,0)}}
-
   .hint{text-align:center; color:var(--muted2); font-family:var(--mono); font-size:11px; margin:12px 0 0}
 
-  button.start{
-    width:100%; margin-top:16px; padding:16px; border:none; border-radius:16px; cursor:pointer;
-    font-family:var(--disp); font-size:16px; font-weight:600; letter-spacing:.01em;
-    color:#04140F; background:linear-gradient(180deg,#4BEEC1,#2FCFA1);
-    box-shadow:0 10px 30px -8px rgba(55,224,176,.5); transition:filter .15s, transform .1s;
-  }
-  button.start:active{transform:translateY(1px)}
-  button.start.on{
-    color:#FFD9DE; background:rgba(224,32,65,.14); border:1px solid rgba(224,32,65,.5);
-    box-shadow:none;
-  }
-  @media (prefers-reduced-motion:reduce){ .str.ring{animation:none} }
+  button.primary{width:100%; margin-top:16px; padding:16px; border:none; border-radius:16px; cursor:pointer;
+    font-family:var(--disp); font-size:16px; font-weight:600; color:#04140F;
+    background:linear-gradient(180deg,#4BEEC1,#2FCFA1); box-shadow:0 10px 30px -8px rgba(55,224,176,.5)}
+  button.primary:active{transform:translateY(1px)}
+  button.primary.on{color:#FFD9DE; background:rgba(224,32,65,.14); border:1px solid rgba(224,32,65,.5); box-shadow:none}
+
+  /* ── library ── */
+  input,select{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--border);
+    background:rgba(255,255,255,.02); color:var(--text); font-family:var(--disp); font-size:15px; outline:none}
+  input:focus,select:focus{border-color:rgba(55,224,176,.45)}
+  input::placeholder{color:var(--muted2)}
+  .sec{margin-top:18px}
+  .sech{display:flex; align-items:center; justify-content:space-between; margin-bottom:9px}
+  .sech h2{font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0}
+  .link{background:none; border:none; color:var(--mint); font-family:var(--disp); font-size:12.5px; font-weight:600; cursor:pointer; padding:0}
+  .row{display:flex; align-items:center; gap:10px; padding:11px 12px; border-radius:13px;
+    background:rgba(255,255,255,.025); border:1px solid var(--border); margin-bottom:7px}
+  .row.sel{border-color:rgba(55,224,176,.45); background:rgba(55,224,176,.07)}
+  .row .info{flex:1; min-width:0; cursor:pointer}
+  .row .ttl{font-size:14.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .row .sub{font-family:var(--mono); font-size:11px; color:var(--muted); margin-top:3px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .icon{background:none; border:none; color:var(--muted2); cursor:pointer; font-size:15px; padding:5px; line-height:1}
+  .icon:hover{color:var(--text)}
+  .empty{color:var(--muted2); font-size:13px; text-align:center; padding:16px 8px; line-height:1.5}
+  .conf{font-family:var(--mono); font-size:10px; padding:2px 6px; border-radius:5px}
+  .conf.high{background:rgba(55,224,176,.13); color:var(--mint)}
+  .conf.medium{background:rgba(255,180,78,.13); color:var(--amber)}
+  .srcs{font-size:11px; color:var(--muted2); line-height:1.45; margin:4px 2px 0}
+
+  .sheet{position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter:blur(6px);
+    display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
+  .sheet.on{display:flex}
+  .card{width:100%; max-width:420px; max-height:86dvh; overflow:auto; background:#12141B;
+    border:1px solid var(--border); border-radius:22px; padding:20px}
+  .card h3{margin:0 0 4px; font-size:18px; font-weight:600}
+  .card p{margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.5}
+  .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-bottom:10px}
+  .pick{display:flex; gap:6px; align-items:center; margin-bottom:7px}
+  .pick .lb{font-family:var(--mono); font-size:11px; color:var(--muted); width:52px; flex:none}
+  .btns{display:flex; gap:8px; margin-top:14px}
+  .btns button{flex:1; padding:13px; border-radius:13px; font-family:var(--disp); font-size:14.5px; font-weight:600; cursor:pointer}
+  .bg{border:none; background:linear-gradient(180deg,#4BEEC1,#2FCFA1); color:#04140F}
+  .bo{border:1px solid var(--border); background:transparent; color:var(--text)}
+  .vrow{padding:12px; border-radius:13px; border:1px solid var(--border); background:rgba(255,255,255,.02);
+    margin-bottom:8px; cursor:pointer}
+  .vrow:active{border-color:rgba(55,224,176,.45)}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="brand"><h1>Tuner</h1><span class="dot" id="live"></span></div>
 
-  <div class="field">
-    <select id="tuning">
-      <option value="E2,A2,D3,G3,B3,E4"       data-desc="Standard tuning. Most songs live here.">E Standard · E A D G B E</option>
-      <option value="D#2,G#2,C#3,F#3,A#3,D#4" data-desc="Half step down. Hendrix, Guns N' Roses, lots of metal.">E♭ Standard · D# G# C# F# A# D#</option>
-      <option value="D2,G2,C3,F3,A3,D4"       data-desc="Whole step down. Thicker, heavier body.">D Standard · D G C F A D</option>
-      <option value="C#2,F#2,B2,E3,G#3,C#4"   data-desc="Minor third down. Dark and low.">C# Standard · C# F# B E G# C#</option>
-      <option value="C2,F2,A#2,D#3,G3,C4"     data-desc="Two whole steps down. Heavy low end.">C Standard · C F A# D# G C</option>
-      <option value="B1,F#2,B2,E3,G#3,C#4"    data-desc="Slipknot — Vermilion Pt. 2 (and most of Vol. 3). Drop B: very low, very heavy. Tap the low B to lock it.">Slipknot · Vermilion Pt. 2 · Drop B</option>
-    </select>
+  <div class="tabs">
+    <button class="tab on" id="tabTune">Tuner</button>
+    <button class="tab" id="tabLib">My Tunings</button>
   </div>
-  <div class="desc" id="desc"></div>
 
-  <div class="stage">
-    <canvas id="wave"></canvas>
-    <div class="readout">
-      <div class="note" id="note">–</div>
-      <div class="readline"><span id="freq">—</span><span class="cents" id="cents">Press start</span></div>
+  <!-- ══ TUNER ══ -->
+  <div class="view on" id="vTune">
+    <div class="now"><span class="t" id="curTitle">E Standard</span><span class="a" id="curStrings">E A D G B E</span></div>
+    <div class="desc" id="curDesc"></div>
+
+    <div class="stage">
+      <canvas id="wave"></canvas>
+      <div class="readout">
+        <div class="note" id="note">–</div>
+        <div class="readline"><span id="freq">—</span><span id="cents">Press start</span></div>
+      </div>
+    </div>
+
+    <div class="meter">
+      <div class="rail"></div><div class="mid"></div><div class="mdot" id="mdot"></div>
+      <span class="lbl l">♭ −50</span><span class="lbl r">+50 ♯</span>
+    </div>
+
+    <div class="strings" id="guide"></div>
+    <div class="hint" id="hint">Tap a string to hear it &amp; lock the target</div>
+    <button class="primary" id="start">Start</button>
+  </div>
+
+  <!-- ══ LIBRARY ══ -->
+  <div class="view" id="vLib">
+    <input id="search" placeholder="Search a song, artist or tuning…" autocomplete="off">
+    <div id="results"></div>
+
+    <div class="sec">
+      <div class="sech"><h2>My tunings</h2><button class="link" id="addCustom">+ Custom</button></div>
+      <div id="myList"></div>
+    </div>
+
+    <div class="sec">
+      <div class="sech"><h2>Built in</h2></div>
+      <div id="stdList"></div>
     </div>
   </div>
-
-  <div class="meter">
-    <div class="rail"></div><div class="mid"></div>
-    <div class="dot" id="dot"></div>
-    <span class="lbl l">♭ −50</span><span class="lbl r">+50 ♯</span>
-  </div>
-
-  <div class="strings" id="guide"></div>
-  <div class="hint" id="hint">Tap a string to hear it &amp; lock the target</div>
-
-  <button class="start" id="start">Start</button>
 </div>
 
+<!-- variant / custom sheet -->
+<div class="sheet" id="sheet"><div class="card" id="card"></div></div>
+
 <script>
+"use strict";
 const NOTES=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
 const $=id=>document.getElementById(id);
-const tuningSel=$("tuning"),guide=$("guide"),descEl=$("desc"),hint=$("hint");
-const noteEl=$("note"),freqEl=$("freq"),centsEl=$("cents"),dot=$("dot"),live=$("live");
-const startBtn=$("start"),cv=$("wave"),ctx2d=cv.getContext("2d");
 
-let audioCtx=null,analyser=null,stream=null,running=false,rafId=null;
-let lockedStringIdx=null;
+/* ── storage (degrades gracefully in sandboxed previews) ── */
+const mem={};
+const store={
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return mem[k]||null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){ mem[k]=v; } }
+};
+const LIB_KEY="gt.library.v1", ACT_KEY="gt.active.v1";
 
-// smoothing
-const RAW_BUF=5; let rawBuf=[];
-let targetCents=0, displayCents=0, hasSignal=false, lostFrames=0;
-let curNote="–", curOct="", curHz=0;
-let refUntil=0;                       // suppress mic display while a reference tone rings
-const reduceMotion=matchMedia("(prefers-reduced-motion:reduce)").matches;
+/* ── fallback catalog (used if tunings.json can't be fetched) ── */
+let CATALOG={tunings:[
+  {id:"std-e",name:"E Standard",strings:["E2","A2","D3","G3","B3","E4"],desc:"Standard tuning. Most songs live here."},
+  {id:"std-eb",name:"E\u266D Standard",strings:["D#2","G#2","C#3","F#3","A#3","D#4"],desc:"Half step down."},
+  {id:"std-d",name:"D Standard",strings:["D2","G2","C3","F3","A3","D4"],desc:"Whole step down."},
+  {id:"std-cs",name:"C# Standard",strings:["C#2","F#2","B2","E3","G#3","C#4"],desc:"Minor third down."},
+  {id:"std-c",name:"C Standard",strings:["C2","F2","A#2","D#3","G3","C4"],desc:"Two whole steps down."},
+  {id:"drop-b",name:"Drop B",strings:["B1","F#2","B2","E3","G#3","C#4"],desc:"Very low and heavy."}
+],songs:[]};
 
-// ── tuning helpers ──
-const tuningNotes=()=>tuningSel.value.split(",");
-const tuningDesc=()=>tuningSel.selectedOptions[0].dataset.desc||"";
-function noteNameToHz(name){
-  const m=name.match(/^([A-G]#?)(\d)$/); if(!m) return null;
+/* ── state ── */
+let library=[];       // user's saved tunings
+let active=null;      // {title, sub, strings[], capo, desc, note}
+let lockedIdx=null;
+
+function loadLib(){ try{ library=JSON.parse(store.get(LIB_KEY)||"[]"); }catch(e){ library=[]; } }
+function saveLib(){ store.set(LIB_KEY, JSON.stringify(library)); }
+
+/* ── note math (works for ANY number of strings) ── */
+function noteToHz(n){
+  const m=String(n).match(/^([A-G]#?)(-?\d)$/); if(!m) return null;
   const midi=NOTES.indexOf(m[1])+(parseInt(m[2])+1)*12;
   return 440*Math.pow(2,(midi-69)/12);
 }
+const bare=n=>String(n).replace(/-?\d/,"");
+const strLabel=arr=>arr.map(bare).join(" ");
 function foldToOctave(f,t){ if(!t) return f; while(f>t*1.5)f/=2; while(f<t/1.5)f*=2; return f; }
-function nearestString(freq){
-  const s=tuningNotes(); let bi=0,bc=Infinity;
-  for(let i=0;i<s.length;i++){ const hz=noteNameToHz(s[i]); if(!hz)continue;
-    const c=1200*Math.log2(freq/hz); if(Math.abs(c)<Math.abs(bc)){bc=c;bi=i;} }
-  const t=s[bi];
-  return {idx:bi,name:t.replace(/\d/,""),oct:t.match(/\d/)[0],hz:noteNameToHz(t),cents:bc,shownHz:freq};
-}
-function lockedInfo(freq){
-  const t=tuningNotes()[lockedStringIdx], hz=noteNameToHz(t), fold=foldToOctave(freq,hz);
-  return {idx:lockedStringIdx,name:t.replace(/\d/,""),oct:t.match(/\d/)[0],hz,cents:hz?1200*Math.log2(fold/hz):0,shownHz:fold};
+
+/* ── active tuning ── */
+function setActive(t,{silent=false}={}){
+  active=t; lockedIdx=null; rawBuf=[]; targetCents=0;
+  $("curTitle").textContent=t.title;
+  $("curStrings").textContent=strLabel(t.strings);
+  let d=t.desc||t.note||"";
+  if(t.capo) d+= (d?" ":"")+"Capo "+t.capo+".";
+  $("curDesc").innerHTML=d+(t.confidence==="medium"?'<span class="badge">unverified</span>':"");
+  store.set(ACT_KEY, JSON.stringify(t));
+  renderGuide(-1); updateHint();
+  if(!silent){ show("tune"); }
 }
 
-// ── audio context (shared by mic + reference) ──
+/* ── views ── */
+function show(which){
+  const t=which==="tune";
+  $("vTune").classList.toggle("on",t); $("vLib").classList.toggle("on",!t);
+  $("tabTune").classList.toggle("on",t); $("tabLib").classList.toggle("on",!t);
+}
+$("tabTune").onclick=()=>show("tune");
+$("tabLib").onclick=()=>{ show("lib"); renderLib(); };
+
+/* ══ AUDIO ══ */
+let audioCtx=null,analyser=null,stream=null,running=false,rafId=null,scratch=null;
+const RAW=5; let rawBuf=[];
+let targetCents=0,displayCents=0,hasSignal=false,lost=0;
+let curNote="–",curOct="",curHz=0,refUntil=0;
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+
 function ensureAudio(){
-  if(!audioCtx||audioCtx.state==="closed"){
-    audioCtx=new (window.AudioContext||window.webkitAudioContext)();
-  }
+  if(!audioCtx||audioCtx.state==="closed") audioCtx=new (window.AudioContext||window.webkitAudioContext)();
   if(audioCtx.state==="suspended") audioCtx.resume();
   return audioCtx;
 }
-// plucked-string reference tone (additive partials + decaying lowpass)
 function playReference(hz){
-  const ac=ensureAudio(), t=ac.currentTime;
-  const master=ac.createGain();
+  if(!hz) return;
+  const ac=ensureAudio(), t=ac.currentTime, master=ac.createGain();
   master.gain.setValueAtTime(0,t);
-  master.gain.linearRampToValueAtTime(0.9,t+0.006);
-  master.gain.exponentialRampToValueAtTime(0.0007,t+1.9);
+  master.gain.linearRampToValueAtTime(.9,t+.006);
+  master.gain.exponentialRampToValueAtTime(.0007,t+1.9);
   const lp=ac.createBiquadFilter(); lp.type="lowpass";
   lp.frequency.setValueAtTime(Math.min(7000,hz*9),t);
   lp.frequency.exponentialRampToValueAtTime(Math.max(700,hz*3),t+1.3);
@@ -226,165 +278,136 @@ function playReference(hz){
   });
   refUntil=performance.now()+1300;
 }
-
-// ── string guide (tap = hear + lock) ──
-function renderGuide(activeIdx){
-  const notes=tuningNotes(); guide.innerHTML="";
-  notes.forEach((n,i)=>{
-    const nm=n.replace(/\d/,"");
-    const d=document.createElement("div");
-    d.className="str"+(i===activeIdx?" active":"")+(i===lockedStringIdx?" locked":"");
-    d.innerHTML=`<span class="n">${notes.length-i}</span><span class="nm">${nm}</span>`;
-    d.addEventListener("click",()=>{
-      playReference(noteNameToHz(n));
-      lockedStringIdx=(lockedStringIdx===i)?null:i;
-      rawBuf=[];
-      d.classList.remove("ring"); void d.offsetWidth; d.classList.add("ring");
-      renderGuide(activeIdx); updateHint();
-    });
-    guide.appendChild(d);
-  });
-}
-function updateHint(){
-  if(lockedStringIdx===null){ hint.textContent="Tap a string to hear it & lock the target"; }
-  else{ const notes=tuningNotes(); const nm=notes[lockedStringIdx].replace(/\d/,"");
-    hint.textContent=`Locked · string ${notes.length-lockedStringIdx} (${nm}) — tap again to release`; }
-}
-function refreshTuning(){
-  lockedStringIdx=null; rawBuf=[]; targetCents=0; displayCents=0;
-  renderGuide(-1); descEl.textContent=tuningDesc(); updateHint();
-}
-tuningSel.addEventListener("change",refreshTuning);
-
-// ── pitch detection ──
 function autoCorrelate(buf,sr){
   const N=buf.length; let rms=0;
   for(let i=0;i<N;i++) rms+=buf[i]*buf[i];
-  rms=Math.sqrt(rms/N); if(rms<0.008) return -1;
-  let r1=0,r2=N-1; const thr=0.2;
+  if(Math.sqrt(rms/N)<.008) return -1;
+  let r1=0,r2=N-1; const thr=.2;
   for(let i=0;i<N/2;i++) if(Math.abs(buf[i])<thr){r1=i;break;}
   for(let i=1;i<N/2;i++) if(Math.abs(buf[N-i])<thr){r2=N-i;break;}
-  const b=buf.slice(r1,r2),n=b.length; const c=new Float32Array(n);
+  const b=buf.slice(r1,r2),n=b.length,c=new Float32Array(n);
   for(let i=0;i<n;i++) for(let j=0;j<n-i;j++) c[i]+=b[j]*b[j+i];
   let d=0; while(d<n-1&&c[d]>c[d+1])d++;
   let mx=-1,pos=-1; for(let i=d;i<n;i++) if(c[i]>mx){mx=c[i];pos=i;}
   if(pos<=0) return -1;
-  const x1=c[pos-1]||0,x2=c[pos],x3=c[pos+1]||0;
-  const a=(x1+x3-2*x2)/2,bb=(x3-x1)/2; let T=pos; if(a)T=pos-bb/(2*a);
-  return sr/T;
+  const x1=c[pos-1]||0,x2=c[pos],x3=c[pos+1]||0,a=(x1+x3-2*x2)/2,bb=(x3-x1)/2;
+  return sr/(a?pos-bb/(2*a):pos);
 }
-function medianRaw(){ if(!rawBuf.length)return null; const s=[...rawBuf].sort((a,b)=>a-b); return s[s.length>>1]; }
+const median=a=>{ const s=[...a].sort((x,y)=>x-y); return s[s.length>>1]; };
 
-const abuf=()=>new Float32Array(analyser.fftSize);
-let scratch=null;
+function matchString(freq){
+  const S=active.strings;
+  if(lockedIdx!==null){
+    const hz=noteToHz(S[lockedIdx]), f=foldToOctave(freq,hz);
+    return {idx:lockedIdx,name:bare(S[lockedIdx]),oct:(S[lockedIdx].match(/-?\d/)||[""])[0],
+            cents:hz?1200*Math.log2(f/hz):0, hz:f};
+  }
+  let bi=0,bc=Infinity;
+  for(let i=0;i<S.length;i++){
+    const hz=noteToHz(S[i]); if(!hz) continue;
+    const c=1200*Math.log2(freq/hz);
+    if(Math.abs(c)<Math.abs(bc)){bc=c;bi=i;}
+  }
+  return {idx:bi,name:bare(S[bi]),oct:(S[bi].match(/-?\d/)||[""])[0],cents:bc,hz:freq};
+}
+
 function analyze(){
   if(!analyser) return;
-  if(!scratch||scratch.length!==analyser.fftSize) scratch=abuf();
+  if(!scratch||scratch.length!==analyser.fftSize) scratch=new Float32Array(analyser.fftSize);
   analyser.getFloatTimeDomainData(scratch);
-
-  // input level for diagnostics
   let lvl=0; for(let i=0;i<scratch.length;i++) lvl+=scratch[i]*scratch[i];
   lvl=Math.sqrt(lvl/scratch.length);
-
-  if(performance.now()<refUntil){ centsEl.textContent="♪ reference"; return; }
-
+  if(performance.now()<refUntil){ $("cents").textContent="\u266A reference"; return; }
   const raw=autoCorrelate(scratch,audioCtx.sampleRate);
   if(raw>30&&raw<1400){
-    rawBuf.push(raw); if(rawBuf.length>RAW_BUF) rawBuf.shift();
-    const freq=medianRaw();
-    const info=(lockedStringIdx!==null)?lockedInfo(freq):nearestString(freq);
+    rawBuf.push(raw); if(rawBuf.length>RAW) rawBuf.shift();
+    const info=matchString(median(rawBuf));
     targetCents=Math.max(-60,Math.min(60,info.cents));
-    curNote=info.name; curOct=info.oct; curHz=info.shownHz;
-    hasSignal=true; lostFrames=0;
-    renderGuide(info.idx);
+    curNote=info.name; curOct=info.oct; curHz=info.hz;
+    hasSignal=true; lost=0; renderGuide(info.idx);
   }else{
-    if(++lostFrames>18){ hasSignal=false; }
-    centsEl.textContent = lvl<0.003 ? "no signal — check mic" : "play a string…";
+    if(++lost>18) hasSignal=false;
+    $("cents").textContent = lvl<.003 ? "no signal — check mic" : "play a string…";
   }
 }
 
-// ── waveform render (spring-smoothed, 60fps) ──
-let phase=0, beatPhase=0, dpr=1;
-function resize(){
-  dpr=Math.min(window.devicePixelRatio||1,2);
-  cv.width=cv.clientWidth*dpr; cv.height=cv.clientHeight*dpr;
-}
-window.addEventListener("resize",resize);
-function lerp(a,b,t){return a+(b-a)*t;}
+/* ── wave ── */
+const cv=$("wave"),cx=cv.getContext("2d");
+let phase=0,beat=0,dpr=1;
+function resize(){ dpr=Math.min(devicePixelRatio||1,2); cv.width=cv.clientWidth*dpr; cv.height=cv.clientHeight*dpr; }
+addEventListener("resize",resize);
+const lerp=(a,b,t)=>a+(b-a)*t;
 function stateColor(c){
-  const inTune=[55,224,176], flat=[78,168,255], sharp=[255,180,78];
-  const t=Math.min(Math.abs(c)/40,1); const base=c>0?sharp:flat;
-  return inTune.map((v,i)=>Math.round(lerp(v,base[i],t)));
+  const good=[55,224,176], base=c>0?[255,180,78]:[78,168,255], t=Math.min(Math.abs(c)/40,1);
+  return good.map((v,i)=>Math.round(lerp(v,base[i],t)));
 }
 function draw(){
-  const W=cv.width,H=cv.height,cy=H/2;
-  ctx2d.clearRect(0,0,W,H);
-  const good=Math.abs(displayCents)<=4;
-  const col=stateColor(displayCents), rgb=`${col[0]},${col[1]},${col[2]}`;
-
-  // motion scales with how far off we are; in tune → nearly still & clean
+  const W=cv.width,H=cv.height,cy=H/2; cx.clearRect(0,0,W,H);
+  const ok=Math.abs(displayCents)<=4, col=stateColor(displayCents), rgb=col.join(",");
   const off=Math.min(Math.abs(displayCents)/50,1);
-  if(!reduceMotion){ phase+=0.02+off*0.09*Math.sign(displayCents||1); beatPhase+=0.015+off*0.03; }
-  const beatK=off*7;                                   // acoustic-beat nodes when detuned
-  const amp=H*(good?0.16:0.11+off*0.10);
-  const vShift=-(Math.max(-50,Math.min(50,displayCents))/50)*(H*0.22); // sharp↑ flat↓
-
-  // soft glow band
-  const grad=ctx2d.createLinearGradient(0,cy+vShift-amp*2,0,cy+vShift+amp*2);
-  grad.addColorStop(0,`rgba(${rgb},0)`); grad.addColorStop(.5,`rgba(${rgb},${good?0.14:0.08})`); grad.addColorStop(1,`rgba(${rgb},0)`);
-  ctx2d.fillStyle=grad; ctx2d.fillRect(0,cy+vShift-amp*2,W,amp*4);
-
-  ctx2d.lineWidth=Math.max(2,2.4*dpr);
-  ctx2d.strokeStyle=`rgb(${rgb})`;
-  ctx2d.shadowBlur=good?18*dpr:6*dpr; ctx2d.shadowColor=`rgba(${rgb},${good?0.9:0.4})`;
-  ctx2d.beginPath();
-  const k=(Math.PI*2)/(W)* (3.2);                       // ~3 cycles across width
+  if(!reduce){ phase+=.02+off*.09*Math.sign(displayCents||1); beat+=.015+off*.03; }
+  const amp=H*(ok?.16:.11+off*.10);
+  const vs=-(Math.max(-50,Math.min(50,displayCents))/50)*(H*.22);
+  const g=cx.createLinearGradient(0,cy+vs-amp*2,0,cy+vs+amp*2);
+  g.addColorStop(0,`rgba(${rgb},0)`); g.addColorStop(.5,`rgba(${rgb},${ok?.14:.08})`); g.addColorStop(1,`rgba(${rgb},0)`);
+  cx.fillStyle=g; cx.fillRect(0,cy+vs-amp*2,W,amp*4);
+  cx.lineWidth=Math.max(2,2.4*dpr); cx.strokeStyle=`rgb(${rgb})`;
+  cx.shadowBlur=ok?18*dpr:6*dpr; cx.shadowColor=`rgba(${rgb},${ok?.9:.4})`;
+  cx.beginPath();
+  const k=Math.PI*2/W*3.2, bk=off*7;
   for(let px=0;px<=W;px+=2){
-    const x=px;
-    const env=0.45+0.55*Math.abs(Math.cos(px*beatK/W*Math.PI - beatPhase)); // beat envelope
-    const y=cy+vShift+Math.sin(px*k+phase)*amp*env;
-    px===0?ctx2d.moveTo(x,y):ctx2d.lineTo(x,y);
+    const env=.45+.55*Math.abs(Math.cos(px*bk/W*Math.PI-beat));
+    const y=cy+vs+Math.sin(px*k+phase)*amp*env;
+    px===0?cx.moveTo(px,y):cx.lineTo(px,y);
   }
-  ctx2d.stroke();
-  ctx2d.shadowBlur=0;
-
-  // center reference line
-  ctx2d.strokeStyle="rgba(255,255,255,.06)"; ctx2d.lineWidth=1*dpr;
-  ctx2d.beginPath(); ctx2d.moveTo(0,cy); ctx2d.lineTo(W,cy); ctx2d.stroke();
+  cx.stroke(); cx.shadowBlur=0;
+  cx.strokeStyle="rgba(255,255,255,.06)"; cx.lineWidth=dpr;
+  cx.beginPath(); cx.moveTo(0,cy); cx.lineTo(W,cy); cx.stroke();
 }
-
+let fc=0;
 function frame(){
-  // spring the visual toward the detected target
-  displayCents+=(targetCents-displayCents)*0.14;
-  if(running) analyzeThrottle();
+  displayCents+=(targetCents-displayCents)*.14;
+  if(running && (fc++%3===0)) analyze();
   draw();
-
-  // readout
   if(hasSignal){
-    noteEl.classList.add("on");
-    noteEl.innerHTML=curNote+(curOct?`<span class="oct">${curOct}</span>`:"");
-    freqEl.textContent=curHz.toFixed(1)+" Hz";
+    $("note").classList.add("on");
+    $("note").innerHTML=curNote+(curOct?`<span class="oct">${curOct}</span>`:"");
+    $("freq").textContent=curHz.toFixed(1)+" Hz";
     if(performance.now()>=refUntil){
-      const c=Math.round(displayCents);
-      const col=stateColor(displayCents);
-      if(Math.abs(displayCents)<=4){ centsEl.textContent="in tune"; centsEl.style.color=`rgb(${col})`; }
-      else { centsEl.textContent=(c>0?`+${c}`:`${c}`)+"¢ "+(c>0?"loosen":"tighten"); centsEl.style.color="var(--muted)"; }
-      dot.classList.add("on");
-      dot.style.left=(50+Math.max(-50,Math.min(50,displayCents))/50*46)+"%";
-      dot.style.background=`rgb(${col})`;
-      dot.style.boxShadow=Math.abs(displayCents)<=4?`0 0 14px rgb(${col})`:"none";
+      const c=Math.round(displayCents), col=stateColor(displayCents), ce=$("cents");
+      if(Math.abs(displayCents)<=4){ ce.textContent="in tune"; ce.style.color=`rgb(${col})`; }
+      else{ ce.textContent=(c>0?"+"+c:c)+"\u00A2 "+(c>0?"loosen":"tighten"); ce.style.color="var(--muted)"; }
+      const d=$("mdot"); d.classList.add("on");
+      d.style.left=(50+Math.max(-50,Math.min(50,displayCents))/50*46)+"%";
+      d.style.background=`rgb(${col})`;
+      d.style.boxShadow=Math.abs(displayCents)<=4?`0 0 14px rgb(${col})`:"none";
     }
   }else{
-    noteEl.classList.remove("on"); noteEl.textContent="–";
-    freqEl.textContent="—"; dot.classList.remove("on");
+    $("note").classList.remove("on"); $("note").textContent="–";
+    $("freq").textContent="—"; $("mdot").classList.remove("on");
   }
   rafId=requestAnimationFrame(frame);
 }
 
-// throttle heavy autocorrelation to ~every 3rd frame
-let fc=0; function analyzeThrottle(){ if((fc++%3)===0) analyze(); }
+/* ── string guide ── */
+function renderGuide(activeIdx){
+  const S=active.strings, g=$("guide"); g.innerHTML="";
+  S.forEach((n,i)=>{
+    const d=document.createElement("div");
+    d.className="str"+(i===activeIdx?" active":"")+(i===lockedIdx?" locked":"");
+    d.innerHTML=`<span class="n">${S.length-i}</span><span class="nm">${bare(n)}</span>`;
+    d.onclick=()=>{ playReference(noteToHz(n)); lockedIdx=(lockedIdx===i?null:i); rawBuf=[]; renderGuide(activeIdx); updateHint(); };
+    g.appendChild(d);
+  });
+}
+function updateHint(){
+  const S=active.strings;
+  $("hint").textContent = lockedIdx===null
+    ? "Tap a string to hear it & lock the target"
+    : `Locked · string ${S.length-lockedIdx} (${bare(S[lockedIdx])}) — tap again to release`;
+}
 
-// ── start / stop ──
+/* ── start/stop ── */
 async function start(){
   try{
     stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
@@ -392,27 +415,177 @@ async function start(){
     analyser=audioCtx.createAnalyser(); analyser.fftSize=4096;
     const src=audioCtx.createMediaStreamSource(stream);
     // iOS Safari won't pull from a MediaStreamSource unless the graph reaches
-    // destination — route through a muted gain (0) so audio flows, no feedback.
+    // destination — route through a muted gain so audio flows, no feedback.
     const mute=audioCtx.createGain(); mute.gain.value=0;
     src.connect(analyser); analyser.connect(mute); mute.connect(audioCtx.destination);
     if(audioCtx.state==="suspended") await audioCtx.resume();
     try{ await navigator.wakeLock.request("screen"); }catch(e){}
-    running=true; live.classList.add("live");
-    startBtn.textContent="Stop"; startBtn.classList.add("on");
-    if(!rafId) frame();
-  }catch(err){ centsEl.textContent="mic blocked: "+err.message; }
+    running=true; $("live").classList.add("live");
+    $("start").textContent="Stop"; $("start").classList.add("on");
+  }catch(e){ $("cents").textContent="mic blocked: "+e.message; }
 }
 function stop(){
-  running=false; hasSignal=false; live.classList.remove("live");
+  running=false; hasSignal=false; $("live").classList.remove("live");
   if(stream) stream.getTracks().forEach(t=>t.stop());
   analyser=null; rawBuf=[]; targetCents=0;
-  startBtn.textContent="Start"; startBtn.classList.remove("on");
-  centsEl.textContent="Press start"; centsEl.style.color="var(--muted)";
+  $("start").textContent="Start"; $("start").classList.remove("on");
+  $("cents").textContent="Press start"; $("cents").style.color="var(--muted)";
 }
-startBtn.addEventListener("click",()=>running?stop():start());
+$("start").onclick=()=>running?stop():start();
 
-// keep visuals alive from load (idle wave), analysis only when running
-resize(); refreshTuning(); frame();
+/* ══ LIBRARY UI ══ */
+const sheet=$("sheet"), card=$("card");
+function closeSheet(){ sheet.classList.remove("on"); card.innerHTML=""; }
+sheet.onclick=e=>{ if(e.target===sheet) closeSheet(); };
+
+function entryFromVariant(song,v){
+  return {id:song.id+"::"+v.label, title:song.song, sub:song.artist, strings:v.strings.slice(),
+          capo:v.capo||0, note:v.note||"", desc:"", confidence:song.confidence,
+          sources:song.sources||[], variant:v.label, added:new Date().toISOString()};
+}
+function inLib(id){ return library.some(x=>x.id===id); }
+function addEntry(e){ if(!inLib(e.id)){ library.unshift(e); saveLib(); } }
+
+function openSong(song){
+  if(song.variants.length===1){ commitSong(song,song.variants[0]); return; }
+  card.innerHTML=`<h3>${song.song}</h3><p>${song.artist} — several versions are played in different tunings. Pick one:</p>`
+    + song.variants.map((v,i)=>
+      `<div class="vrow" data-i="${i}"><div class="ttl">${v.label}</div>
+       <div class="sub" style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px">${strLabel(v.strings)}${v.capo?" · capo "+v.capo:""}</div></div>`).join("")
+    + `<div class="btns"><button class="bo" id="vCancel">Cancel</button></div>`;
+  card.querySelectorAll(".vrow").forEach(el=>el.onclick=()=>commitSong(song,song.variants[+el.dataset.i]));
+  $("vCancel").onclick=closeSheet;
+  sheet.classList.add("on");
+}
+function commitSong(song,v){
+  const e=entryFromVariant(song,v); addEntry(e); closeSheet();
+  setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo,note:e.note,confidence:e.confidence});
+}
+
+function renderResults(q){
+  const box=$("results"); q=q.trim().toLowerCase();
+  if(!q){ box.innerHTML=""; return; }
+  const songs=(CATALOG.songs||[]).filter(s=>(s.song+" "+s.artist).toLowerCase().includes(q));
+  const tun=(CATALOG.tunings||[]).filter(t=>(t.name+" "+strLabel(t.strings)).toLowerCase().includes(q));
+  if(!songs.length&&!tun.length){
+    box.innerHTML=`<div class="empty">Nothing found for “${q}”.<br>You can add it by hand with <b>+ Custom</b>.</div>`;
+    return;
+  }
+  box.innerHTML=`<div class="sec"><div class="sech"><h2>Results</h2></div>`
+   + songs.map(s=>{
+      const v=s.variants[0];
+      return `<div class="row"><div class="info" data-song="${s.id}">
+        <div class="ttl">${s.song} <span class="conf ${s.confidence}">${s.confidence}</span></div>
+        <div class="sub">${s.artist} · ${strLabel(v.strings)}${s.variants.length>1?" · "+s.variants.length+" versions":""}</div>
+      </div><button class="icon" data-song="${s.id}">＋</button></div>`;
+     }).join("")
+   + tun.map(t=>`<div class="row"><div class="info" data-tun="${t.id}">
+        <div class="ttl">${t.name}</div><div class="sub">${strLabel(t.strings)}</div>
+      </div><button class="icon" data-tun="${t.id}">＋</button></div>`).join("")
+   + `</div>`;
+  box.querySelectorAll("[data-song]").forEach(el=>el.onclick=()=>{
+    openSong(CATALOG.songs.find(s=>s.id===el.dataset.song));
+  });
+  box.querySelectorAll("[data-tun]").forEach(el=>el.onclick=()=>{
+    const t=CATALOG.tunings.find(x=>x.id===el.dataset.tun);
+    setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
+  });
+}
+$("search").oninput=e=>renderResults(e.target.value);
+
+function renderLib(){
+  const my=$("myList");
+  my.innerHTML = library.length ? library.map((e,i)=>
+    `<div class="row"><div class="info" data-i="${i}">
+       <div class="ttl">${e.title}</div>
+       <div class="sub">${e.sub?e.sub+" · ":""}${strLabel(e.strings)}${e.capo?" · capo "+e.capo:""}${e.variant?" · "+e.variant:""}</div>
+     </div>
+     <button class="icon" data-ren="${i}" title="Rename">✎</button>
+     <button class="icon" data-del="${i}" title="Delete">✕</button></div>`).join("")
+    : `<div class="empty">No saved tunings yet.<br>Search a song above, or add one with <b>+ Custom</b>.</div>`;
+  my.querySelectorAll("[data-i]").forEach(el=>el.onclick=()=>{
+    const e=library[+el.dataset.i];
+    setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo,note:e.note,confidence:e.confidence});
+  });
+  my.querySelectorAll("[data-ren]").forEach(el=>el.onclick=ev=>{
+    ev.stopPropagation(); const i=+el.dataset.ren;
+    const n=prompt("Rename tuning:",library[i].title);
+    if(n&&n.trim()){ library[i].title=n.trim(); saveLib(); renderLib(); }
+  });
+  my.querySelectorAll("[data-del]").forEach(el=>el.onclick=ev=>{
+    ev.stopPropagation(); const i=+el.dataset.del;
+    if(confirm(`Delete “${library[i].title}”?`)){ library.splice(i,1); saveLib(); renderLib(); }
+  });
+
+  $("stdList").innerHTML=(CATALOG.tunings||[]).map(t=>
+    `<div class="row"><div class="info" data-std="${t.id}">
+       <div class="ttl">${t.name}</div><div class="sub">${strLabel(t.strings)}</div></div></div>`).join("");
+  $("stdList").querySelectorAll("[data-std]").forEach(el=>el.onclick=()=>{
+    const t=CATALOG.tunings.find(x=>x.id===el.dataset.std);
+    setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
+  });
+}
+
+/* ── custom tuning builder (any string count) ── */
+const TEMPLATES={6:["E2","A2","D3","G3","B3","E4"],7:["B1","E2","A2","D3","G3","B3","E4"],
+  8:["F#1","B1","E2","A2","D3","G3","B3","E4"],4:["E1","A1","D2","G2"],5:["B0","E1","A1","D2","G2"]};
+function openCustom(){
+  let count=6, notes=TEMPLATES[6].slice();
+  const draw=()=>{
+    card.innerHTML=`<h3>Custom tuning</h3><p>Works for any instrument — pick the number of strings, then set each one (listed low to high).</p>
+      <div class="grid">
+        <input id="cTitle" placeholder="Name / song">
+        <input id="cArtist" placeholder="Artist (optional)">
+      </div>
+      <div class="pick"><span class="lb">Strings</span>
+        <select id="cCount">${[4,5,6,7,8].map(n=>`<option ${n===count?"selected":""}>${n}</option>`).join("")}</select>
+      </div>
+      ${notes.map((n,i)=>{
+        const nm=bare(n), oc=(n.match(/-?\d/)||["2"])[0];
+        return `<div class="pick"><span class="lb">${notes.length-i}</span>
+          <select data-n="${i}">${NOTES.map(x=>`<option ${x===nm?"selected":""}>${x}</option>`).join("")}</select>
+          <select data-o="${i}">${[0,1,2,3,4,5].map(x=>`<option ${String(x)===oc?"selected":""}>${x}</option>`).join("")}</select>
+        </div>`;}).join("")}
+      <div class="pick"><span class="lb">Capo</span><input id="cCapo" type="number" min="0" max="12" value="0"></div>
+      <div class="btns"><button class="bo" id="cCancel">Cancel</button><button class="bg" id="cSave">Save</button></div>`;
+    $("cCount").onchange=e=>{ count=+e.target.value; notes=(TEMPLATES[count]||TEMPLATES[6]).slice(); draw(); };
+    card.querySelectorAll("[data-n]").forEach(s=>s.onchange=()=>sync());
+    card.querySelectorAll("[data-o]").forEach(s=>s.onchange=()=>sync());
+    const sync=()=>{
+      card.querySelectorAll("[data-n]").forEach(s=>{
+        const i=+s.dataset.n, o=card.querySelector(`[data-o="${i}"]`).value;
+        notes[i]=s.value+o;
+      });
+    };
+    $("cCancel").onclick=closeSheet;
+    $("cSave").onclick=()=>{
+      sync();
+      const title=($("cTitle").value||"").trim()||"Custom tuning";
+      const e={id:"custom-"+Date.now(),title,sub:($("cArtist").value||"").trim(),
+        strings:notes.slice(),capo:+($("cCapo").value||0),note:"",custom:true,added:new Date().toISOString()};
+      library.unshift(e); saveLib(); closeSheet(); renderLib();
+      setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo});
+    };
+  };
+  draw(); sheet.classList.add("on");
+}
+$("addCustom").onclick=openCustom;
+
+/* ── boot ── */
+async function boot(){
+  loadLib();
+  try{
+    const r=await fetch("tunings.json",{cache:"no-cache"});
+    if(r.ok){ const j=await r.json(); if(j.tunings) CATALOG=j; }
+  }catch(e){ /* keep fallback catalog */ }
+  let act=null;
+  try{ act=JSON.parse(store.get(ACT_KEY)||"null"); }catch(e){}
+  const first=CATALOG.tunings[0];
+  setActive(act&&act.strings ? act
+    : {title:first.name,sub:"",strings:first.strings.slice(),capo:0,desc:first.desc||""}, {silent:true});
+  resize(); frame();
+}
+boot();
 </script>
 </body>
 </html>
