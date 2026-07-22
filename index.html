@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0C0E13">
+<meta name="theme-color" content="#0C0E13" id="themeColor">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
@@ -16,22 +16,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#0C0E13; --panel:rgba(255,255,255,.035); --border:rgba(255,255,255,.09);
+  /* ── themes ── */
+  :root,[data-theme="dark"]{
+    --ink:#0C0E13; --bg1:#0C0E13; --bg2:#0A0B10;
+    --panel:rgba(255,255,255,.035); --border:rgba(255,255,255,.09);
     --text:#EAECF2; --muted:#727A8A; --muted2:#4A5160;
+    --card-bg:#12141B; --toast-bg:#181B23;
+    --input-bg:rgba(255,255,255,.02);
     --mint:#37E0B0; --amber:#FFB44E; --blue:#4EA8FF;
     --disp:'Space Grotesk',-apple-system,system-ui,sans-serif;
     --mono:'JetBrains Mono',ui-monospace,monospace;
   }
+  [data-theme="light"]{
+    --ink:#F0F2F7; --bg1:#F0F2F7; --bg2:#E8EBF2;
+    --panel:rgba(0,0,0,.04); --border:rgba(0,0,0,.1);
+    --text:#1A1D26; --muted:#6B7280; --muted2:#9CA3AF;
+    --card-bg:#FFFFFF; --toast-bg:#FFFFFF;
+    --input-bg:rgba(0,0,0,.03);
+    --mint:#22C98C; --amber:#E09500; --blue:#2A7CE0;
+  }
+  [data-theme="amber"]{
+    --ink:#0E0A05; --bg1:#0E0A05; --bg2:#0A0703;
+    --panel:rgba(255,160,0,.03); --border:rgba(200,130,30,.14);
+    --text:#F0D8A0; --muted:#9A7A4A; --muted2:#5A3F20;
+    --card-bg:#160E04; --toast-bg:#160E04;
+    --input-bg:rgba(255,150,0,.03);
+    --mint:#37E0B0; --amber:#FFB44E; --blue:#4EA8FF;
+  }
+
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;height:100%}
   body{
     font-family:var(--disp); color:var(--text);
     background:radial-gradient(120% 80% at 50% -10%, rgba(55,224,176,.06), transparent 55%),
-               linear-gradient(180deg,#0C0E13 0%,#0A0B10 100%);
+               linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 100%);
     background-attachment:fixed;
     display:flex; align-items:flex-start; justify-content:center;
     padding:18px; min-height:100dvh; -webkit-user-select:none; user-select:none;
+  }
+  [data-theme="light"] body{
+    background:radial-gradient(120% 80% at 50% -10%, rgba(55,224,176,.08), transparent 55%),
+               linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 100%);
+  }
+  [data-theme="amber"] body{
+    background:radial-gradient(120% 80% at 50% -10%, rgba(255,160,0,.05), transparent 55%),
+               linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 100%);
   }
   .app{
     width:100%; max-width:460px; background:var(--panel); border:1px solid var(--border);
@@ -41,6 +70,10 @@
   }
   .brand{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px}
   .brand h1{font-size:15px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; margin:0; color:var(--muted)}
+  .brand-right{display:flex;align-items:center;gap:8px}
+  .a4badge{font-family:var(--mono);font-size:10px;color:var(--amber);background:rgba(255,180,78,.12);
+    border:1px solid rgba(255,180,78,.3);padding:2px 7px;border-radius:6px;display:none}
+  .a4badge.on{display:inline-block}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--muted2);transition:.3s}
   .dot.live{background:var(--mint);box-shadow:0 0 12px var(--mint)}
 
@@ -100,7 +133,7 @@
 
   /* ── library ── */
   input,select{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--border);
-    background:rgba(255,255,255,.02); color:var(--text); font-family:var(--disp); font-size:15px; outline:none}
+    background:var(--input-bg); color:var(--text); font-family:var(--disp); font-size:15px; outline:none}
   input:focus,select:focus{border-color:rgba(55,224,176,.45)}
   input::placeholder{color:var(--muted2)}
   .sec{margin-top:18px}
@@ -120,12 +153,11 @@
   .conf{font-family:var(--mono); font-size:10px; padding:2px 6px; border-radius:5px}
   .conf.high{background:rgba(55,224,176,.13); color:var(--mint)}
   .conf.medium{background:rgba(255,180,78,.13); color:var(--amber)}
-  .srcs{font-size:11px; color:var(--muted2); line-height:1.45; margin:4px 2px 0}
 
   .sheet{position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter:blur(6px);
     display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
   .sheet.on{display:flex}
-  .card{width:100%; max-width:420px; max-height:86dvh; overflow:auto; background:#12141B;
+  .card{width:100%; max-width:420px; max-height:86dvh; overflow:auto; background:var(--card-bg);
     border:1px solid var(--border); border-radius:22px; padding:20px}
   .card h3{margin:0 0 4px; font-size:18px; font-weight:600}
   .card p{margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.5}
@@ -150,14 +182,43 @@
   .hintbox{padding:11px 13px; border-radius:12px; background:rgba(255,180,78,.08);
     border:1px solid rgba(255,180,78,.28); color:var(--muted); font-size:12.5px; line-height:1.5}
   .toast{position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(20px);
-    background:#181B23; border:1px solid var(--border); color:var(--text); padding:11px 18px;
+    background:var(--toast-bg); border:1px solid var(--border); color:var(--text); padding:11px 18px;
     border-radius:12px; font-size:13.5px; opacity:0; pointer-events:none; transition:.25s; z-index:60}
   .toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+
+  /* ── settings ── */
+  .srow{display:flex; align-items:center; justify-content:space-between; padding:11px 0;
+    border-bottom:1px solid var(--border); gap:12px}
+  .srow:last-child{border-bottom:none}
+  .srow-lbl{font-size:13.5px; color:var(--text); flex:none}
+  .srow-ctrl{display:flex; align-items:center; gap:8px; flex:1; justify-content:flex-end}
+  /* toggle switch */
+  .tog{position:relative; display:inline-block; width:40px; height:22px; flex:none}
+  .tog input{opacity:0; width:0; height:0; position:absolute}
+  .tog-track{position:absolute; inset:0; border-radius:11px; background:var(--muted2); transition:.2s; cursor:pointer}
+  .tog-track:before{content:""; position:absolute; width:16px; height:16px; left:3px; top:3px;
+    border-radius:50%; background:#fff; transition:.2s}
+  .tog input:checked+.tog-track{background:var(--mint)}
+  .tog input:checked+.tog-track:before{transform:translateX(18px)}
+  /* a4 slider */
+  .a4-slider{flex:1; accent-color:var(--mint); height:4px; padding:0; background:none; border:none}
+  .a4-val{font-family:var(--mono); font-size:12px; color:var(--muted); width:46px; text-align:right; flex:none}
+  /* theme chips */
+  .theme-chips{display:flex; gap:5px}
+  .tchip{padding:5px 11px; border-radius:8px; border:1px solid var(--border); background:transparent;
+    font-family:var(--disp); font-size:12px; font-weight:600; color:var(--muted); cursor:pointer; transition:.15s}
+  .tchip.on{border-color:var(--mint); color:var(--mint); background:rgba(55,224,176,.08)}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="brand"><h1>Tuner</h1><span class="dot" id="live"></span></div>
+  <div class="brand">
+    <h1>Tuner</h1>
+    <div class="brand-right">
+      <span class="a4badge" id="a4badge"></span>
+      <span class="dot" id="live"></span>
+    </div>
+  </div>
 
   <div class="tabs">
     <button class="tab on" id="tabTune">Tuner</button>
@@ -215,6 +276,11 @@
       </div>
       <input type="file" id="impFile" accept="application/json,.json" style="display:none">
     </div>
+
+    <div class="sec">
+      <div class="sech"><h2>Settings</h2></div>
+      <div id="settingsBlock"></div>
+    </div>
   </div>
 </div>
 
@@ -227,7 +293,7 @@
 const NOTES=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
 const $=id=>document.getElementById(id);
 
-/* ── storage (degrades gracefully in sandboxed previews) ── */
+/* ── storage ── */
 const mem={};
 const store={
   get(k){ try{ return localStorage.getItem(k); }catch(e){ return mem[k]||null; } },
@@ -235,10 +301,36 @@ const store={
 };
 const LIB_KEY="gt.library.v1", ACT_KEY="gt.active.v1";
 
-/* ── fallback catalog (used if tunings.json can't be fetched) ── */
+/* ── settings state ── */
+let a4=440;
+let autoAdvance=true;
+let currentTheme="dark";
+
+function loadSettings(){
+  const sa=parseFloat(store.get("gt.a4")); if(sa>=432&&sa<=444) a4=sa;
+  const aa=store.get("gt.autoadvance"); if(aa==="false") autoAdvance=false;
+  currentTheme=store.get("gt.theme")||"dark";
+}
+function saveA4(v){ a4=v; store.set("gt.a4",v); ksCache.clear(); updateA4Badge(); }
+function saveAA(v){ autoAdvance=v; store.set("gt.autoadvance",String(v)); }
+function updateA4Badge(){
+  const b=$("a4badge");
+  if(Math.abs(a4-440)>0.1){ b.textContent="A4="+a4; b.classList.add("on"); }
+  else b.classList.remove("on");
+}
+
+const THEMES={dark:{color:"#0C0E13"},light:{color:"#F0F2F7"},amber:{color:"#0E0A05"}};
+function applyTheme(t){
+  currentTheme=t; store.set("gt.theme",t);
+  document.documentElement.setAttribute("data-theme",t);
+  $("themeColor").content=THEMES[t].color;
+  renderSettings();
+}
+
+/* ── fallback catalog ── */
 let CATALOG={tunings:[
   {id:"std-e",name:"E Standard",strings:["E2","A2","D3","G3","B3","E4"],desc:"Standard tuning. Most songs live here."},
-  {id:"std-eb",name:"E\u266D Standard",strings:["D#2","G#2","C#3","F#3","A#3","D#4"],desc:"Half step down."},
+  {id:"std-eb",name:"E♭ Standard",strings:["D#2","G#2","C#3","F#3","A#3","D#4"],desc:"Half step down."},
   {id:"std-d",name:"D Standard",strings:["D2","G2","C3","F3","A3","D4"],desc:"Whole step down."},
   {id:"std-cs",name:"C# Standard",strings:["C#2","F#2","B2","E3","G#3","C#4"],desc:"Minor third down."},
   {id:"std-c",name:"C Standard",strings:["C2","F2","A#2","D#3","G3","C4"],desc:"Two whole steps down."},
@@ -248,23 +340,25 @@ let CATALOG={tunings:[
 /* ── state ── */
 let library=[];
 let active=null;
-let selIdx=0;                 // the string being tuned. Always set: no auto-detection.
+let selIdx=0;
+let advanceAt=0;   // timestamp when auto-advance should fire (0 = not armed)
+let allDone=false; // all strings tuned flag
 
 function loadLib(){ try{ library=JSON.parse(store.get(LIB_KEY)||"[]"); }catch(e){ library=[]; } }
 function saveLib(){ store.set(LIB_KEY, JSON.stringify(library)); }
 
-/* ── note math (any number of strings) ── */
+/* ── note math — uses calibrated a4 ── */
 function noteToHz(n){
   const m=String(n).match(/^([A-G]#?)(-?\d)$/); if(!m) return null;
   const midi=NOTES.indexOf(m[1])+(parseInt(m[2])+1)*12;
-  return 440*Math.pow(2,(midi-69)/12);
+  return a4*Math.pow(2,(midi-69)/12);
 }
 const bare=n=>String(n).replace(/-?\d/,"");
 const strLabel=arr=>arr.map(bare).join(" ");
 
 /* ── active tuning ── */
 function setActive(t,{silent=false}={}){
-  active=t; selIdx=0; resetReadings();
+  active=t; selIdx=0; allDone=false; advanceAt=0; resetReadings();
   $("curTitle").textContent=t.title;
   $("curStrings").textContent=strLabel(t.strings);
   let d=t.desc||t.note||"";
@@ -402,8 +496,7 @@ function detectAgainst(buf,sr,targetHz,rangeCents){
   return {freq:sr/tau, conf};
 }
 
-/* ── smoothing: median of recent readings, then an exponential glide.
-   When confidence drops the needle HOLDS instead of darting around. ── */
+/* ── smoothing ── */
 const CONF_MIN=0.55, MED=5;
 let readings=[], targetCents=0, displayCents=0;
 let hasSignal=false, lostFrames=0, curHz=0;
@@ -411,7 +504,7 @@ let inTuneSince=0, dinged=false;
 
 function resetReadings(){
   readings=[]; targetCents=0; displayCents=0; hasSignal=false;
-  lostFrames=0; curHz=0; inTuneSince=0; dinged=false;
+  lostFrames=0; curHz=0; inTuneSince=0; dinged=false; advanceAt=0;
   const c=$("check"); if(c) c.classList.remove("on");
   const n=$("note"); if(n) n.classList.remove("tuned");
 }
@@ -425,7 +518,7 @@ function analyze(){
   let lvl=0; for(let i=0;i<scratch.length;i++) lvl+=scratch[i]*scratch[i];
   lvl=Math.sqrt(lvl/scratch.length);
 
-  if(performance.now()<refUntil){ $("cents").textContent="\u266A reference"; return; }
+  if(performance.now()<refUntil){ $("cents").textContent="♪ reference"; return; }
 
   const targetHz=noteToHz(active.strings[selIdx]);
   if(!targetHz) return;
@@ -437,7 +530,6 @@ function analyze(){
   }
   const r=detectAgainst(scratch,audioCtx.sampleRate,targetHz,700);
   if(!r||r.conf<CONF_MIN){
-    // uncertain: keep the needle where it is rather than let it jump
     if(++lostFrames>14){ hasSignal=false; readings=[]; }
     return;
   }
@@ -487,7 +579,6 @@ function draw(){
 /* ══════════ FRAME LOOP ══════════ */
 let fc=0;
 function frame(){
-  // the needle always glides; analysis runs less often than the display
   displayCents+=(targetCents-displayCents)*(hasSignal?0.12:0.06);
   if(running && (fc++%4===0)) analyze();
   draw();
@@ -508,13 +599,26 @@ function frame(){
       checkEl.classList.add("on"); noteEl.classList.add("tuned");
       const now=performance.now();
       if(!inTuneSince) inTuneSince=now;
-      // chime once the reading has settled, and only once per attempt
-      if(!dinged && now-inTuneSince>350 && now>=refUntil){ playDing(); dinged=true; }
+      if(!dinged && now-inTuneSince>350 && now>=refUntil){
+        playDing(); dinged=true;
+        if(autoAdvance && active && selIdx<active.strings.length-1) advanceAt=now+1200;
+        else if(autoAdvance && active && selIdx===active.strings.length-1) advanceAt=-1; // all done flag
+      }
+      // auto-advance: fire if still in tune
+      if(advanceAt>0 && now>=advanceAt && Math.abs(displayCents)<=4){
+        advanceAt=0;
+        const next=selIdx+1;
+        selIdx=next; allDone=false; resetReadings(); renderGuide(); updateHint();
+        // no playReference — don't interrupt the player
+      } else if(advanceAt===-1 && now-inTuneSince>1400){
+        advanceAt=0; allDone=true;
+        updateHint(); toast("All strings tuned!");
+      }
     }else{
       checkEl.classList.remove("on"); noteEl.classList.remove("tuned");
-      inTuneSince=0;
-      if(Math.abs(displayCents)>12) dinged=false;   // hysteresis: re-arm the chime
-      centsEl.textContent=(c>0?"+"+c:c)+"\u00A2 "+(c>0?"loosen":"tighten");
+      inTuneSince=0; advanceAt=0;
+      if(Math.abs(displayCents)>12) dinged=false;
+      centsEl.textContent=(c>0?"+"+c:c)+"¢ "+(c>0?"loosen":"tighten");
       centsEl.style.color="var(--muted)";
     }
     const d=$("mdot"); d.classList.add("on");
@@ -539,14 +643,16 @@ function renderGuide(){
     const d=document.createElement("div");
     d.className="str"+(i===selIdx?" sel":"");
     d.innerHTML=`<span class="n">${S.length-i}</span><span class="nm">${bare(n)}</span>`;
-    d.onclick=()=>{ selIdx=i; resetReadings(); renderGuide(); updateHint(); playReference(noteToHz(n)); };
+    d.onclick=()=>{ selIdx=i; allDone=false; advanceAt=0; resetReadings(); renderGuide(); updateHint(); playReference(noteToHz(n)); };
     g.appendChild(d);
   });
 }
 function updateHint(){
   if(!active) return;
+  if(allDone){ $("hint").textContent="All strings tuned!"; return; }
   const S=active.strings;
-  $("hint").textContent=`Tuning string ${S.length-selIdx} (${bare(S[selIdx])}) — tap another to switch`;
+  const aa=autoAdvance?" · auto-advance on":"";
+  $("hint").textContent=`Tuning string ${S.length-selIdx} (${bare(S[selIdx])}) — tap another to switch${aa}`;
 }
 
 /* ══════════ START / STOP ══════════ */
@@ -555,7 +661,7 @@ async function start(){
     stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
     ensureAudio();
     analyser=audioCtx.createAnalyser();
-    analyser.fftSize=8192;                     // long enough to resolve low B/F#
+    analyser.fftSize=8192;
     const src=audioCtx.createMediaStreamSource(stream);
     // iOS Safari won't pull from a MediaStreamSource unless the graph reaches
     // destination — route through a muted gain so audio flows, no feedback.
@@ -607,7 +713,7 @@ function renderResults(q){
   const songs=(CATALOG.songs||[]).filter(s=>(s.song+" "+s.artist).toLowerCase().includes(q));
   const tun=(CATALOG.tunings||[]).filter(t=>(t.name+" "+strLabel(t.strings)).toLowerCase().includes(q));
   if(!songs.length&&!tun.length){
-    box.innerHTML=`<div class="empty">Nothing found for “${q}”.<br>You can add it by hand with <b>+ Custom</b>.</div>`;
+    box.innerHTML=`<div class="empty">Nothing found for "${q}".<br>You can add it by hand with <b>+ Custom</b>.</div>`;
     return;
   }
   box.innerHTML=`<div class="sec"><div class="sech"><h2>Results</h2></div>`
@@ -649,7 +755,7 @@ function renderLib(){
   });
   my.querySelectorAll("[data-del]").forEach(el=>el.onclick=ev=>{
     ev.stopPropagation(); const i=+el.dataset.del;
-    if(confirm(`Delete “${library[i].title}”?`)){ library.splice(i,1); saveLib(); renderLib(); }
+    if(confirm(`Delete "${library[i].title}"?`)){ library.splice(i,1); saveLib(); renderLib(); }
   });
   $("stdList").innerHTML=(CATALOG.tunings||[]).map(t=>
     `<div class="row"><div class="info" data-std="${t.id}">
@@ -658,9 +764,45 @@ function renderLib(){
     const t=CATALOG.tunings.find(x=>x.id===el.dataset.std);
     setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
   });
+  renderSettings();
 }
 
-/* ── custom tuning builder (any string count) ── */
+/* ── settings block ── */
+function renderSettings(){
+  const b=$("settingsBlock"); if(!b) return;
+  const a4disp=Number.isInteger(a4*2)?(a4%1===0?a4.toFixed(0):a4.toFixed(1)):a4.toFixed(1);
+  b.innerHTML=`
+  <div class="srow">
+    <span class="srow-lbl">Auto-advance</span>
+    <div class="srow-ctrl">
+      <label class="tog"><input type="checkbox" id="togAA"${autoAdvance?" checked":""}><span class="tog-track"></span></label>
+    </div>
+  </div>
+  <div class="srow">
+    <span class="srow-lbl">A4 reference</span>
+    <div class="srow-ctrl">
+      <input type="range" class="a4-slider" id="sldA4" min="432" max="444" step="0.5" value="${a4}">
+      <span class="a4-val" id="a4disp">${a4disp} Hz</span>
+    </div>
+  </div>
+  <div class="srow">
+    <span class="srow-lbl">Theme</span>
+    <div class="srow-ctrl">
+      <div class="theme-chips">
+        <button class="tchip${currentTheme==="dark"?" on":""}" data-t="dark">Dark</button>
+        <button class="tchip${currentTheme==="light"?" on":""}" data-t="light">Light</button>
+        <button class="tchip${currentTheme==="amber"?" on":""}" data-t="amber">Amber</button>
+      </div>
+    </div>
+  </div>`;
+  $("togAA").onchange=e=>{ saveAA(e.target.checked); updateHint(); };
+  const sld=$("sldA4"), disp=$("a4disp");
+  sld.oninput=()=>{ const v=parseFloat(sld.value); disp.textContent=(v%1===0?v.toFixed(0):v.toFixed(1))+" Hz"; };
+  sld.onchange=()=>{ saveA4(parseFloat(sld.value)); renderSettings(); };
+  b.querySelectorAll(".tchip").forEach(el=>el.onclick=()=>applyTheme(el.dataset.t));
+}
+
+/* ── custom tuning builder ── */
 const TEMPLATES={6:["E2","A2","D3","G3","B3","E4"],7:["B1","E2","A2","D3","G3","B3","E4"],
   8:["F#1","B1","E2","A2","D3","G3","B3","E4"],4:["E1","A1","D2","G2"],5:["B0","E1","A1","D2","G2"]};
 function openCustom(){
@@ -703,10 +845,7 @@ function toast(msg){
   clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("on"),2600);
 }
 
-/* ── export / import ──
-   The library lives in localStorage, which iOS Safari can clear after ~7 days
-   of no visits unless the app is installed to the home screen. Export is the
-   safety net; installing is the real fix. */
+/* ── export / import ── */
 function exportLib(){
   if(!library.length){ toast("Nothing to export yet"); return; }
   const payload={app:"guitar-tuner",schema:1,exported:new Date().toISOString(),tunings:library};
@@ -727,7 +866,7 @@ function importLib(file){
       incoming.forEach(e=>{
         if(!e||!Array.isArray(e.strings)||!e.strings.length) return;
         const id=e.id||("imported-"+Math.random().toString(36).slice(2));
-        if(library.some(x=>x.id===id)) return;      // merge, never overwrite
+        if(library.some(x=>x.id===id)) return;
         library.push(Object.assign({},e,{id})); added++;
       });
       saveLib(); renderLib();
@@ -740,19 +879,19 @@ $("expBtn").onclick=exportLib;
 $("impBtn").onclick=()=>$("impFile").click();
 $("impFile").onchange=e=>{ if(e.target.files[0]) importLib(e.target.files[0]); e.target.value=""; };
 
-/* show the install nudge only when running in a browser tab (not installed) */
 (function(){
   const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
   if(!standalone) $("installHint").style.display="block";
 })();
 
-/* ── service worker: offline support ── */
 if("serviceWorker" in navigator){
   addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 }
 
-/* ── boot ── */
 async function boot(){
+  loadSettings();
+  applyTheme(currentTheme);
+  updateA4Badge();
   loadLib();
   try{
     const r=await fetch("tunings.json",{cache:"no-cache"});
@@ -766,7 +905,6 @@ async function boot(){
   resize(); frame();
 }
 boot();
-
 </script>
 </body>
 </html>
