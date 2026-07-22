@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#0C0E13">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tuner">
 <title>Guitar Tuner</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,6 +139,12 @@
   .vrow{padding:12px; border-radius:13px; border:1px solid var(--border); background:rgba(255,255,255,.02);
     margin-bottom:8px; cursor:pointer}
   .vrow:active{border-color:rgba(55,224,176,.45)}
+  .hintbox{padding:11px 13px; border-radius:12px; background:rgba(255,180,78,.08);
+    border:1px solid rgba(255,180,78,.28); color:var(--muted); font-size:12.5px; line-height:1.5}
+  .toast{position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(20px);
+    background:#181B23; border:1px solid var(--border); color:var(--text); padding:11px 18px;
+    border-radius:12px; font-size:13.5px; opacity:0; pointer-events:none; transition:.25s; z-index:60}
+  .toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -180,11 +193,25 @@
       <div class="sech"><h2>Built in</h2></div>
       <div id="stdList"></div>
     </div>
+
+    <div class="sec">
+      <div class="sech"><h2>Backup</h2></div>
+      <div class="hintbox" id="installHint" style="display:none">
+        Your tunings are stored on this device only. Add the app to your home screen
+        so the browser doesn't clear them, and export a copy now and then.
+      </div>
+      <div class="btns" style="margin-top:10px">
+        <button class="bo" id="expBtn">Export</button>
+        <button class="bo" id="impBtn">Import</button>
+      </div>
+      <input type="file" id="impFile" accept="application/json,.json" style="display:none">
+    </div>
   </div>
 </div>
 
 <!-- variant / custom sheet -->
 <div class="sheet" id="sheet"><div class="card" id="card"></div></div>
+<div class="toast" id="toast"></div>
 
 <script>
 "use strict";
@@ -570,6 +597,62 @@ function openCustom(){
   draw(); sheet.classList.add("on");
 }
 $("addCustom").onclick=openCustom;
+
+/* ── toast ── */
+let toastT=null;
+function toast(msg){
+  const t=$("toast"); t.textContent=msg; t.classList.add("on");
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("on"),2600);
+}
+
+/* ── export / import ──
+   The library lives in localStorage, which iOS Safari can clear after ~7 days
+   of no visits unless the app is installed to the home screen. Export is the
+   safety net; installing is the real fix. */
+function exportLib(){
+  if(!library.length){ toast("Nothing to export yet"); return; }
+  const payload={app:"guitar-tuner",schema:1,exported:new Date().toISOString(),tunings:library};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url; a.download="my-tunings.json"; document.body.appendChild(a); a.click();
+  a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+  toast("Exported "+library.length+" tuning"+(library.length>1?"s":""));
+}
+function importLib(file){
+  const fr=new FileReader();
+  fr.onload=()=>{
+    try{
+      const j=JSON.parse(fr.result);
+      const incoming=Array.isArray(j)?j:(j.tunings||[]);
+      if(!incoming.length){ toast("No tunings found in that file"); return; }
+      let added=0;
+      incoming.forEach(e=>{
+        if(!e||!Array.isArray(e.strings)||!e.strings.length) return;
+        const id=e.id||("imported-"+Math.random().toString(36).slice(2));
+        if(library.some(x=>x.id===id)) return;          // merge, never overwrite
+        library.push(Object.assign({},e,{id})); added++;
+      });
+      saveLib(); renderLib();
+      toast(added?("Imported "+added+" tuning"+(added>1?"s":"")):"Already up to date");
+    }catch(err){ toast("Couldn't read that file"); }
+  };
+  fr.readAsText(file);
+}
+$("expBtn").onclick=exportLib;
+$("impBtn").onclick=()=>$("impFile").click();
+$("impFile").onchange=e=>{ if(e.target.files[0]) importLib(e.target.files[0]); e.target.value=""; };
+
+/* show the install nudge only when running in a browser tab (not installed) */
+(function(){
+  const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone===true;
+  if(!standalone) $("installHint").style.display="block";
+})();
+
+/* ── service worker: offline support ── */
+if("serviceWorker" in navigator){
+  addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
 
 /* ── boot ── */
 async function boot(){
