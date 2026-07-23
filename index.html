@@ -900,6 +900,38 @@ if("serviceWorker" in navigator){
   addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 }
 
+/* ── Schema 2 expansion ──────────────────────────────────────────────────────
+   schema 1: songs have variants[] — pass through as-is (backward compat).
+   schema 2: songs are compact {t, sid, alts?}  — expand to variants[] here,
+   so the rest of the app never sees the difference. */
+function expandCatalog(j) {
+  if (!j || !j.tunings) return j;
+  // Already schema 1 or first song already has variants[]
+  if (!j.schema || j.schema < 2 || (j.songs && j.songs[0] && j.songs[0].variants)) return j;
+  const byId  = new Map(j.tunings.map(t => [t.id, t]));
+  const notes = j.notes || {};
+  j.songs = (j.songs || []).map(s => {
+    if (s.variants) return s; // already expanded (cached old format)
+    const mt   = byId.get(s.t);
+    const note = s.src ? (notes[s.src] || '') : (s.note || '');
+    const url  = s.sid ? `https://www.songsterr.com/a/wsa/${s.id}-tab-s${s.sid}` : '';
+    const variants = mt ? [{ label:'Transcription', tuningId:s.t, strings:[...mt.strings], capo:0, note }] : [];
+    for (const altId of (s.alts || [])) {
+      const at = byId.get(altId);
+      if (at) variants.push({ label:'Alternate', tuningId:altId, strings:[...at.strings], capo:0, note:notes.conflict||'' });
+    }
+    return {
+      id: s.id, song: s.song, artist: s.artist,
+      confidence: s.confidence || 'medium',
+      verified:   s.verified   || false,
+      variants,
+      sources: s.src === 'songsterr' ? ['Songsterr catalogue API'] : [],
+      url,
+    };
+  });
+  return j;
+}
+
 async function boot(){
   loadSettings();
   applyTheme(currentTheme);
@@ -907,7 +939,7 @@ async function boot(){
   loadLib();
   try{
     const r=await fetch("tunings.json",{cache:"no-cache"});
-    if(r.ok){ const j=await r.json(); if(j.tunings) CATALOG=j; }
+    if(r.ok){ const j=await r.json(); if(j.tunings) CATALOG=expandCatalog(j); }
   }catch(e){}
   let act=null;
   try{ act=JSON.parse(store.get(ACT_KEY)||"null"); }catch(e){}

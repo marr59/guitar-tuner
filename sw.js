@@ -3,7 +3,7 @@
    Rationale: the site is deployed with `git pull`, so a cache-first shell would
    pin users to an old build. Network-first keeps them current when online and
    still works fully offline (which matters in a rehearsal room or basement). */
-const VERSION = "v8";
+const VERSION = "v9";
 const CACHE = "tuner-" + VERSION;
 const SHELL = [
   "./", "./index.html", "./tunings.json", "./manifest.webmanifest",
