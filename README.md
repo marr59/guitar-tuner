@@ -192,9 +192,10 @@ metadata (which notes the strings are tuned to) is stored — no tablature,
 no notation, no audio. Each imported entry links back to the original
 Songsterr tab page so you can cross-check the source directly.
 
-The app is free, has no ads, and no subscription. Songsterr data is used
-under their terms of service, with attribution displayed in the UI next to
-every entry that came from their catalogue.
+The app is free, has no ads and no subscription, so this is
+non-commercial use. Attribution is displayed in the UI next to every
+entry that came from their catalogue, and permission for this use has
+been requested from Songsterr directly.
 
 ## License
 
