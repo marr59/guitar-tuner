@@ -191,6 +191,7 @@
   .str.sel{background:rgba(55,224,176,.14); border-color:var(--mint); box-shadow:0 0 0 1px rgba(55,224,176,.25)}
   .str.sel .nm{color:var(--mint)}
   .str.sel .n{color:rgba(55,224,176,.75)}
+  .bk-desc{color:var(--muted); font-size:12.5px; line-height:1.5; margin:6px 2px 0}
   .hintbox{padding:11px 13px; border-radius:12px; background:rgba(255,180,78,.08);
     border:1px solid rgba(255,180,78,.28); color:var(--muted); font-size:12.5px; line-height:1.5}
   .toast{position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(20px);
@@ -276,13 +277,14 @@
       <div id="stdList"></div>
     </div>
 
-    <div class="sec">
-      <div class="sech"><h2>Backup</h2></div>
-      <div class="hintbox" id="installHint" style="display:none">
-        Your tunings are stored on this device only. Add the app to your home screen
-        so the browser doesn't clear them, and export a copy now and then.
-      </div>
-      <div class="btns" style="margin-top:10px">
+    <div class="sec" id="installSec">
+      <div class="sech"><h2>Keep your tunings safe</h2></div>
+      <p class="bk-desc">This is a website, but you can install it like an app.
+        Browsers clear data for sites you haven't opened in a week — installed ones keep it.</p>
+      <button class="primary" id="installBtn" style="display:none;margin:10px 0 6px">Install app</button>
+      <div class="hintbox" id="installHint" style="display:none"></div>
+      <p class="bk-desc" style="margin-top:10px">Or export a backup file you can import anywhere.</p>
+      <div class="btns" style="margin-top:8px">
         <button class="bo" id="expBtn">Export</button>
         <button class="bo" id="impBtn">Import</button>
       </div>
@@ -996,9 +998,33 @@ $("expBtn").onclick=exportLib;
 $("impBtn").onclick=()=>$("impFile").click();
 $("impFile").onchange=e=>{ if(e.target.files[0]) importLib(e.target.files[0]); e.target.value=""; };
 
-(function(){
+let deferredPrompt=null;
+(function initInstall(){
   const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
-  if(!standalone) $("installHint").style.display="block";
+  if(standalone){ $("installSec").style.display="none"; return; }
+  const ua=navigator.userAgent;
+  const isIOS=/iPad|iPhone|iPod/.test(ua);
+  if(isIOS){
+    let hint;
+    if(/CriOS/.test(ua)) hint="Tap Share ⬆︎ next to the address bar, then 'Add to Home Screen'.";
+    else if(/Safari/.test(ua)) hint="Tap Share ⬆︎ at the bottom, then 'Add to Home Screen'.";
+    else hint="Open this page in Safari or Chrome, then Share → Add to Home Screen.";
+    $("installHint").textContent=hint;
+    $("installHint").style.display="block";
+  }
+  addEventListener('beforeinstallprompt',e=>{
+    e.preventDefault(); deferredPrompt=e;
+    $("installBtn").style.display="block";
+    $("installHint").style.display="none";
+  });
+  addEventListener('appinstalled',()=>{
+    $("installSec").style.display="none"; deferredPrompt=null;
+  });
+  $("installBtn").onclick=()=>{
+    if(!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(()=>{ deferredPrompt=null; $("installBtn").style.display="none"; });
+  };
 })();
 
 if("serviceWorker" in navigator){
