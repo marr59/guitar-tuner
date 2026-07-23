@@ -2,7 +2,7 @@
 
 A fast, free guitar tuner with a curated library of alternate tunings for specific songs.
 
-**Live → [tuner.artofrental.com](https://tuner.artofrental.com)**
+**Live → [marr59.github.io/guitar-tuner](https://marr59.github.io/guitar-tuner/)**
 
 Pick a song, see the tuning it was recorded in, retune, play. No account, no signup, no
 paywall, no ads. Installs to your home screen and works with no signal.
@@ -108,8 +108,8 @@ than 15 cents, i.e. when the player has clearly gone back to the tuning peg.
 
 Tuning information on the internet contradicts itself constantly, so every catalogue entry
 carries a confidence level and its sources. `high` means cross-checked across multiple
-independent sources; `medium` means commonly cited but worth confirming by ear, and the UI
-labels it as unverified.
+independent sources and shown with a verified badge in the UI. Entries without that badge
+are omitted from the display to avoid labelling 99% of the library as unverified noise.
 
 Where sources genuinely disagree, both readings ship as selectable variants instead of one
 being silently chosen. Metallica's "The Thing That Should Not Be" is transcribed as D
@@ -163,7 +163,7 @@ Songs reference a tuning and may carry several variants:
 | Offline | Service worker, network-first with cache fallback |
 | Storage | localStorage, with JSON export/import as a backup path |
 | Data | Static `tunings.json` served by nginx |
-| Deploy | Static files behind nginx and Cloudflare |
+| Deploy | GitHub Pages |
 
 Network-first caching is deliberate: the site deploys by `git pull`, so a cache-first shell
 would pin installed users to a stale build.
@@ -183,6 +183,18 @@ works but a bare LAN IP will not — use HTTPS to test from a phone.
 
 Entries live in `tunings.json`. Include the strings low to high, the source you checked, and
 an honest confidence level. If a song is played in plain E standard, it doesn't need an entry.
+
+## Data sources
+
+A large part of the tuning catalogue was imported from the
+[Songsterr](https://www.songsterr.com) public catalogue API. Only tuning
+metadata (which notes the strings are tuned to) is stored — no tablature,
+no notation, no audio. Each imported entry links back to the original
+Songsterr tab page so you can cross-check the source directly.
+
+The app is free, has no ads, and no subscription. Songsterr data is used
+under their terms of service, with attribution displayed in the UI next to
+every entry that came from their catalogue.
 
 ## License
 
