@@ -85,7 +85,8 @@
   .view{display:none} .view.on{display:block}
 
   /* ── tuner ── */
-  .now{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:4px}
+  .now{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:4px; cursor:pointer; user-select:none}
+  .now-chev{font-size:13px; color:var(--muted); margin-left:4px; transition:.2s}
   .now .t{font-size:17px; font-weight:600}
   .now .a{font-size:12px; color:var(--muted); font-family:var(--mono)}
   .desc{color:var(--muted); font-size:12.5px; line-height:1.4; margin:6px 2px 0; min-height:16px}
@@ -232,12 +233,12 @@
 
   <div class="tabs">
     <button class="tab on" id="tabTune">Tuner</button>
-    <button class="tab" id="tabLib">My Tunings</button>
+    <button class="tab" id="tabLib">Search by Song</button>
   </div>
 
   <!-- ══ TUNER ══ -->
   <div class="view on" id="vTune">
-    <div class="now"><span class="t" id="curTitle">E Standard</span><span class="a" id="curStrings">E A D G B E</span></div>
+    <div class="now" id="nowArea"><span class="t" id="curTitle">E Standard<span class="now-chev">▾</span></span><span class="a" id="curStrings">E A D G B E</span></div>
     <div class="desc" id="curDesc"></div>
 
     <div class="stage">
@@ -370,7 +371,7 @@ const strLabel=arr=>arr.map(bare).join(" ");
 /* ── active tuning ── */
 function setActive(t,{silent=false}={}){
   active=t; selIdx=0; allDone=false; advanceAt=0; advanceDir=1; resetReadings();
-  $("curTitle").textContent=t.title;
+  $("curTitle").innerHTML=t.title+'<span class="now-chev">▾</span>';
   $("curStrings").textContent=strLabel(t.strings);
   let d=t.desc||t.note||"";
   if(t.capo) d+=(d?" ":"")+"Capo "+t.capo+".";
@@ -407,62 +408,80 @@ function ensureAudio(){
   return audioCtx;
 }
 
-/* ── reference tone: Karplus-Strong plucked string ──
-   A noise burst circulating through a delay line with a loop filter, i.e. a
-   physical model of a real string rather than stacked sine waves.
-   The delay length must be fractional or the pitch lands several cents off,
-   which would defeat the point of a reference: an allpass section supplies the
-   fraction (measured error stays under 0.1 cents across the whole range). */
-const ksCache=new Map();
-function ksBuffer(ac,freq){
-  const key=freq.toFixed(3);
-  if(ksCache.has(key)) return ksCache.get(key);
-  const sr=ac.sampleRate;
-  const T=3.1-1.0*Math.min(1,freq/340);
-  const dur=T+0.4, N=Math.floor(sr*dur);
-  const D=sr/freq;
-  let L=Math.floor(D-0.5-0.1); if(L<2) L=2;
-  const frac=D-0.5-L, c=(1-frac)/(1+frac);
-  const g=Math.exp(-4.605/(freq*T));
-  const line=new Float32Array(L);
-  let prev=0;
-  for(let i=0;i<L;i++){ const n=Math.random()*2-1; prev=prev*0.5+n*0.5; line[i]=prev; }
-  const off=Math.max(1,Math.round(L*0.16)), tmp=line.slice();
-  for(let i=0;i<L;i++) line[i]=tmp[i]-tmp[(i+off)%L];
-  let mean=0; for(const v of line) mean+=v; mean/=L;
-  let mx=0; for(let i=0;i<L;i++){ line[i]-=mean; mx=Math.max(mx,Math.abs(line[i])); }
-  if(mx>0) for(let i=0;i<L;i++) line[i]/=mx;
-  const buf=ac.createBuffer(1,N,sr), out=buf.getChannelData(0);
-  let p=0,prevRead=0,apX=0,apY=0;
-  for(let n=0;n<N;n++){
-    const read=line[p];
-    const y=0.5*(read+prevRead)*g; prevRead=read;
-    const ap=c*y+apX-c*apY; apX=y; apY=ap;
-    line[p]=ap; out[n]=ap; p=(p+1)%L;
-  }
-  ksCache.set(key,buf);
-  return buf;
+/* ── reference tone: Karplus-Strong plucked string ── */
+const ksCache = new Map();
+function ksBuffer(ac, freq) {
+ const key = freq.toFixed(3);
+ if (ksCache.has(key)) return ksCache.get(key);
+ const sr = ac.sampleRate;
+ const T = 3.1 - 1.0 * Math.min(1, freq / 340);
+ const T3K = 2.0;
+ const dur = T + 0.4, N = Math.floor(sr * dur);
+ const w3 = 2 * Math.PI * 3000 / sr;
+ const u = 1 - Math.cos(w3);
+ const r = Math.exp(-4.605 / (freq * T3K));
+ const disc = 1 - 2 * (1 - r * r) / u;
+ let S = disc <= 0 ? 0.5 : (1 - Math.sqrt(disc)) / 2;
+ S = Math.min(0.5, Math.max(0.02, S));
+ const g = Math.exp(-4.605 / (freq * T));
+ const w0 = 2 * Math.PI * freq / sr;
+ const pdFilter = Math.atan2(S * Math.sin(w0), (1 - S) + S * Math.cos(w0)) / w0;
+ const D = sr / freq;
+ let L = Math.floor(D - pdFilter - 0.1);
+ if (L < 2) L = 2;
+ const frac = D - pdFilter - L;
+ const c = (1 - frac) / (1 + frac);
+ const smooth = 0.5 + 0.5 * Math.min(1, Math.max(0, (freq - 100) / 230));
+ const line = new Float32Array(L);
+ let prev = 0;
+ for (let i = 0; i < L; i++) {
+  const n = Math.random() * 2 - 1;
+  prev = prev * (1 - smooth) + n * smooth;
+  line[i] = prev;
+ }
+ const off = Math.max(1, Math.round(L * 0.16)), tmp = line.slice();
+ for (let i = 0; i < L; i++) line[i] = tmp[i] - tmp[(i + off) % L];
+ let mean = 0; for (const v of line) mean += v; mean /= L;
+ let mx = 0;
+ for (let i = 0; i < L; i++) { line[i] -= mean; mx = Math.max(mx, Math.abs(line[i])); }
+ if (mx > 0) for (let i = 0; i < L; i++) line[i] /= mx;
+ const buf = ac.createBuffer(1, N, sr), out = buf.getChannelData(0);
+ let p = 0, prevRead = 0, apX = 0, apY = 0;
+ for (let n = 0; n < N; n++) {
+  const read = line[p];
+  const y = ((1 - S) * read + S * prevRead) * g;
+  prevRead = read;
+  const ap = c * y + apX - c * apY;
+  apX = y; apY = ap;
+  line[p] = ap; out[n] = ap; p = (p + 1) % L;
+ }
+ let pk = 0; for (let i = 0; i < N; i++) pk = Math.max(pk, Math.abs(out[i]));
+ if (pk > 0) { const k = 0.95 / pk; for (let i = 0; i < N; i++) out[i] *= k; }
+ ksCache.set(key, buf);
+ return buf;
 }
-let refNode=null;
-function playReference(hz){
-  if(!hz) return;
-  const ac=ensureAudio(), t=ac.currentTime;
-  if(refNode){ try{ refNode.stop(); }catch(e){} refNode=null; }
-  const buf=ksBuffer(ac,hz);
-  const src=ac.createBufferSource(); src.buffer=buf;
-  const hp=ac.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=34;
-  const b1=ac.createBiquadFilter(); b1.type="peaking"; b1.frequency.value=110; b1.Q.value=1.0; b1.gain.value=3;
-  const b2=ac.createBiquadFilter(); b2.type="peaking"; b2.frequency.value=240; b2.Q.value=1.2; b2.gain.value=2;
-  const pr=ac.createBiquadFilter(); pr.type="peaking"; pr.frequency.value=2600; pr.Q.value=.8; pr.gain.value=2.5;
-  const lp=ac.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=8000;
-  const amp=ac.createGain();
-  amp.gain.setValueAtTime(0,t);
-  amp.gain.linearRampToValueAtTime(1.0,t+.004);
-  src.connect(hp); hp.connect(b1); b1.connect(b2); b2.connect(pr); pr.connect(lp);
-  lp.connect(amp); amp.connect(ac.destination);
-  src.start(t); refNode=src;
-  src.onended=()=>{ if(refNode===src) refNode=null; };
-  refUntil=performance.now()+buf.duration*1000*0.5;
+let refNode = null;
+function playReference(hz) {
+ if (!hz) return;
+ const ac = ensureAudio(), t = ac.currentTime;
+ if (refNode) { try { refNode.stop(); } catch (e) {} refNode = null; }
+ const buf = ksBuffer(ac, hz);
+ const src = ac.createBufferSource(); src.buffer = buf;
+ const hp = ac.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 34;
+ const b1 = ac.createBiquadFilter(); b1.type = "peaking"; b1.frequency.value = 110; b1.Q.value = 1.0; b1.gain.value = 3;
+ const b2 = ac.createBiquadFilter(); b2.type = "peaking"; b2.frequency.value = 240; b2.Q.value = 1.2; b2.gain.value = 2;
+ const pr = ac.createBiquadFilter(); pr.type = "peaking";
+ pr.frequency.value = Math.min(4200, Math.max(2400, hz * 9));
+ pr.Q.value = 0.8; pr.gain.value = 3;
+ const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 12000;
+ const amp = ac.createGain();
+ amp.gain.setValueAtTime(0, t);
+ amp.gain.linearRampToValueAtTime(1.0, t + 0.004);
+ src.connect(hp); hp.connect(b1); b1.connect(b2); b2.connect(pr); pr.connect(lp);
+ lp.connect(amp); amp.connect(ac.destination);
+ src.start(t); refNode = src;
+ src.onended = () => { if (refNode === src) refNode = null; };
+ refUntil = performance.now() + buf.duration * 1000 * 0.5;
 }
 
 /* ── success chime: a soft two-note bell, not a beep ── */
@@ -750,7 +769,8 @@ function commitSong(song,v){
 function renderResults(q){
   const box=$("results"); q=q.trim().toLowerCase();
   if(!q){ box.innerHTML=""; return; }
-  const songs=(CATALOG.songs||[]).filter(s=>(s.song+" "+s.artist).toLowerCase().includes(q));
+  const songs=(CATALOG.songs||[]).filter(s=>(s.song+" "+s.artist).toLowerCase().includes(q)
+    ||(s.variants||[]).some(v=>strLabel(v.strings).toLowerCase().includes(q)));
   const tun=(CATALOG.tunings||[]).filter(t=>(t.name+" "+strLabel(t.strings)).toLowerCase().includes(q));
   if(!songs.length&&!tun.length){
     box.innerHTML=`<div class="empty">Nothing found for "${q}".<br>You can add it by hand with <b>+ Custom</b>.</div>`;
@@ -776,6 +796,41 @@ function renderResults(q){
 }
 $("search").oninput=e=>renderResults(e.target.value);
 
+function getTopTunings(n){
+  const counts=new Map();
+  (CATALOG.songs||[]).forEach(s=>(s.variants||[]).forEach(v=>{
+    if(v.tuningId) counts.set(v.tuningId,(counts.get(v.tuningId)||0)+1);
+  }));
+  const all=CATALOG.tunings||[];
+  return all.slice().sort((a,b)=>(counts.get(b.id)||0)-(counts.get(a.id)||0)).slice(0,n||all.length);
+}
+
+function openTuningPicker(){
+  const all=CATALOG.tunings||[];
+  if(!all.length) return;
+  const top=getTopTunings(15);
+  const card=$("card");
+  let expanded=false;
+  const render=()=>{
+    const list=expanded?getTopTunings(all.length):top;
+    card.innerHTML=`<h3>Switch tuning</h3>`
+      +list.map(t=>`<div class="vrow" data-tid="${t.id}"><div class="ttl">${t.name}</div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px">${strLabel(t.strings)}</div></div>`).join("")
+      +(!expanded&&all.length>15?`<div class="btns"><button class="bo" id="pickerExpand">Show all ${all.length} tunings</button></div>`:"")
+      +`<div class="btns"><button class="bo" id="pickerCancel">Cancel</button></div>`;
+    card.querySelectorAll("[data-tid]").forEach(el=>el.onclick=()=>{
+      const t=CATALOG.tunings.find(x=>x.id===el.dataset.tid);
+      setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
+      closeSheet();
+    });
+    if($("pickerExpand")) $("pickerExpand").onclick=()=>{ expanded=true; render(); };
+    $("pickerCancel").onclick=closeSheet;
+  };
+  render();
+  $("sheet").classList.add("on");
+}
+$("nowArea").onclick=openTuningPicker;
+
 function renderLib(){
   const my=$("myList");
   my.innerHTML=library.length?library.map((e,i)=>
@@ -799,13 +854,22 @@ function renderLib(){
     ev.stopPropagation(); const i=+el.dataset.del;
     if(confirm(`Delete "${library[i].title}"?`)){ library.splice(i,1); saveLib(); renderLib(); }
   });
-  $("stdList").innerHTML=(CATALOG.tunings||[]).map(t=>
-    `<div class="row"><div class="info" data-std="${t.id}">
-      <div class="ttl">${t.name}</div><div class="sub">${strLabel(t.strings)}</div></div></div>`).join("");
-  $("stdList").querySelectorAll("[data-std]").forEach(el=>el.onclick=()=>{
-    const t=CATALOG.tunings.find(x=>x.id===el.dataset.std);
-    setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
-  });
+  const allTunings=CATALOG.tunings||[];
+  const renderStdList=(showAll)=>{
+    const list=showAll?getTopTunings(allTunings.length):getTopTunings(15);
+    $("stdList").innerHTML=list.map(t=>
+      `<div class="row"><div class="info" data-std="${t.id}">
+        <div class="ttl">${t.name}</div><div class="sub">${strLabel(t.strings)}</div></div></div>`).join("")
+      +(!showAll&&allTunings.length>15
+        ?`<div class="btns" style="margin-top:8px"><button class="bo" id="stdExpand">Show all ${allTunings.length} tunings</button></div>`
+        :"");
+    $("stdList").querySelectorAll("[data-std]").forEach(el=>el.onclick=()=>{
+      const t=CATALOG.tunings.find(x=>x.id===el.dataset.std);
+      setActive({title:t.name,sub:"",strings:t.strings.slice(),capo:0,desc:t.desc||""});
+    });
+    if($("stdExpand")) $("stdExpand").onclick=()=>renderStdList(true);
+  };
+  renderStdList(false);
   renderSettings();
 }
 
