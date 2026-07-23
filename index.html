@@ -90,6 +90,7 @@
   .now .t{font-size:17px; font-weight:600}
   .now .a{font-size:12px; color:var(--muted); font-family:var(--mono)}
   .desc{color:var(--muted); font-size:12.5px; line-height:1.4; margin:6px 2px 0; min-height:16px}
+  .song-ref{font-size:12.5px; color:var(--muted); margin-bottom:2px; font-style:italic}
   .badge{display:inline-block; padding:2px 7px; border-radius:6px; font-family:var(--mono); font-size:10px;
          background:rgba(255,180,78,.14); color:var(--amber); margin-left:6px}
 
@@ -373,6 +374,7 @@ function setActive(t,{silent=false}={}){
   active=t; selIdx=0; allDone=false; advanceAt=0; advanceDir=1; resetReadings();
   $("curTitle").innerHTML=t.title+'<span class="now-chev">▾</span>';
   $("curStrings").textContent=strLabel(t.strings);
+  const songRef=t.sub?`<div class="song-ref">${t.sub}</div>`:"";
   let d=t.desc||t.note||"";
   if(t.capo) d+=(d?" ":"")+"Capo "+t.capo+".";
   let trust="";
@@ -382,7 +384,7 @@ function setActive(t,{silent=false}={}){
   const attr=(t.src==="songsterr"&&t.url)
     ?`<div class="attr-line">Tuning data from Songsterr · <a href="${t.url}" target="_blank" rel="noopener noreferrer">View tab ↗</a></div>`
     :"";
-  $("curDesc").innerHTML=(d||verif?`<span>${d}</span>${verif}`:"")+trust+attr;
+  $("curDesc").innerHTML=songRef+(d||verif?`<span>${d}</span>${verif}`:"")+trust+attr;
   store.set(ACT_KEY, JSON.stringify(t));
   renderGuide(); updateHint();
   if(!silent) show("tune");
@@ -736,9 +738,12 @@ function closeSheet(){ sheet.classList.remove("on"); card.innerHTML=""; }
 sheet.onclick=e=>{ if(e.target===sheet) closeSheet(); };
 
 function entryFromVariant(song,v){
-  return {id:song.id+"::"+v.label,title:song.song,sub:song.artist,strings:v.strings.slice(),
-    capo:v.capo||0,note:v.note||"",desc:"",confidence:song.confidence,
-    sources:song.sources||[],variant:v.label,added:new Date().toISOString()};
+  const tun=CATALOG.tunings.find(x=>x.id===v.tuningId);
+  const tunName=tun?tun.name:strLabel(v.strings);
+  return {id:song.id+"::"+v.label,title:tunName,sub:song.artist+' — '+song.song,
+    strings:v.strings.slice(),capo:v.capo||0,note:v.note||"",desc:"",
+    confidence:song.confidence,sources:song.sources||[],variant:v.label,
+    added:new Date().toISOString()};
 }
 function addEntry(e){ if(!library.some(x=>x.id===e.id)) library.unshift(e), saveLib(); }
 function openSong(song){
@@ -802,7 +807,10 @@ function getTopTunings(n){
     if(v.tuningId) counts.set(v.tuningId,(counts.get(v.tuningId)||0)+1);
   }));
   const all=CATALOG.tunings||[];
-  return all.slice().sort((a,b)=>(counts.get(b.id)||0)-(counts.get(a.id)||0)).slice(0,n||all.length);
+  const eStd=all.find(t=>t.id==='std-e');
+  const rest=all.filter(t=>t.id!=='std-e').sort((a,b)=>(counts.get(b.id)||0)-(counts.get(a.id)||0));
+  const ordered=eStd?[eStd,...rest]:rest;
+  return ordered.slice(0,n||all.length);
 }
 
 function openTuningPicker(){

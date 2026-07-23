@@ -23,46 +23,18 @@
    "desc": "Standard tuning. Most songs live here."
   },
   {
-   "id": "std-eb",
-   "name": "E♭ Standard",
+   "id": "drop-c",
+   "name": "Drop C",
    "instrument": "guitar6",
    "strings": [
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
-   ],
-   "desc": "Half step down. Hendrix, Guns N' Roses, lots of metal."
-  },
-  {
-   "id": "std-d",
-   "name": "D Standard",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
+    "C2",
     "G2",
     "C3",
     "F3",
     "A3",
     "D4"
    ],
-   "desc": "Whole step down. Thicker, heavier body."
-  },
-  {
-   "id": "std-cs",
-   "name": "C# Standard",
-   "instrument": "guitar6",
-   "strings": [
-    "C#2",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
-    "C#4"
-   ],
-   "desc": "Minor third down. Dark and low."
+   "desc": "D standard with the 6th dropped to C."
   },
   {
    "id": "std-c",
@@ -93,18 +65,32 @@
    "desc": "Low E dropped to D. One-finger power chords."
   },
   {
-   "id": "drop-c",
-   "name": "Drop C",
+   "id": "std-d",
+   "name": "D Standard",
    "instrument": "guitar6",
    "strings": [
-    "C2",
+    "D2",
     "G2",
     "C3",
     "F3",
     "A3",
     "D4"
    ],
-   "desc": "D standard with the 6th dropped to C."
+   "desc": "Whole step down. Thicker, heavier body."
+  },
+  {
+   "id": "std-eb",
+   "name": "E♭ Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ],
+   "desc": "Half step down. Hendrix, Guns N' Roses, lots of metal."
   },
   {
    "id": "drop-b",
@@ -121,6 +107,299 @@
    "desc": "Very low and heavy. Slipknot Vol. 3 territory."
   },
   {
+   "id": "drop-cs",
+   "name": "Drop C#",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ],
+   "desc": "E♭ standard with the 6th string dropped to C#."
+  },
+  {
+   "id": "b1-e2-a2-d3-fs3-b3",
+   "name": "B Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "std-cs",
+   "name": "C# Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ],
+   "desc": "Minor third down. Dark and low."
+  },
+  {
+   "id": "as1-f2-as2-ds3-g3-c4",
+   "name": "Drop A#",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "B♭ Standard (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "Drop A♭ (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "a1-g2-c3-f3-a3-d4",
+   "name": "Drop A (from D standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "b1-e2-a2-d3-g3-b3-e4",
+   "name": "B Standard (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "korn-a-7",
+   "name": "Korn A (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ],
+   "desc": "Korn's signature seven-string tuning."
+  },
+  {
+   "id": "drop-a",
+   "name": "Drop A",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ],
+   "desc": "Lower than Drop B. Slipknot go here for a handful of songs."
+  },
+  {
+   "id": "meshuggah-f-8",
+   "name": "F Standard (8-string)",
+   "instrument": "guitar8",
+   "strings": [
+    "F1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ],
+   "desc": "Meshuggah's eight-string tuning."
+  },
+  {
+   "id": "as1-f2-as2-ds3-f3-as3-ds4",
+   "name": "A#1 F2 A#2 D#3 F3 A#3 D#4",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "a1-e2-a2-d3-e3-a3-d4",
+   "name": "A1 E2 A2 D3 E3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "fs1-b1-fs2-b2-e3-gs3-cs4",
+   "name": "Drop B + low F# (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "B1",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "g1-d2-g2-c3-f3-a3-d4",
+   "name": "Drop G (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "as1-ds2-gs2-cs3-f3-as3",
+   "name": "A# Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "gs1-f2-as2-ds3-f3-as3-ds4",
+   "name": "G#1 F2 A#2 D#3 F3 A#3 D#4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "std-8-fs",
+   "name": "F# Standard (8-string)",
+   "instrument": "guitar8",
+   "strings": [
+    "F#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ],
+   "desc": "Standard eight-string tuning."
+  },
+  {
+   "id": "b1-e2-a2-d3-g3-b3",
+   "name": "B1 E2 A2 D3 G3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "a1-e2-a2-d3-g3-b3-e4",
+   "name": "Drop A (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e2-g2-d3-g3-b3-e4",
+   "name": "E2 G2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "G2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
    "id": "dadgad",
    "name": "DADGAD",
    "instrument": "guitar6",
@@ -135,18 +414,123 @@
    "desc": "Modal, droning, open. Celtic and Zeppelin."
   },
   {
-   "id": "open-d",
-   "name": "Open D",
+   "id": "d2-a2-d3-g3-b3-d4",
+   "name": "D2 A2 D3 G3 B3 D4",
    "instrument": "guitar6",
    "strings": [
     "D2",
     "A2",
     "D3",
-    "F#3",
+    "G3",
+    "B3",
+    "D4"
+   ]
+  },
+  {
+   "id": "as1-g2-c3-f3-a3-d4",
+   "name": "Drop B♭ (from D standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "G2",
+    "C3",
+    "F3",
     "A3",
     "D4"
-   ],
-   "desc": "Strums an open D major. Slide favourite."
+   ]
+  },
+  {
+   "id": "gs1-ds2-gs2-cs3-ds3-gs3-cs4",
+   "name": "G#1 D#2 G#2 C#3 D#3 G#3 C#4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "D#3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "d2-g2-d3-g3-b3-e4",
+   "name": "D2 G2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "G2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "cs2-fs2-b2-e3-gs3-cs4-cs4",
+   "name": "C#2 F#2 B2 E3 G#3 C#4 C#4",
+   "instrument": "guitar7",
+   "strings": [
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4",
+    "C#4"
+   ]
+  },
+  {
+   "id": "as1-fs2-b2-e3-gs3-cs4",
+   "name": "Drop B♭ (from C# standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "cs2-gs2-cs3-fs3-gs3-cs4",
+   "name": "C#2 G#2 C#3 F#3 G#3 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "b1-a2-d3-g3-b3-e4",
+   "name": "Drop B (from E standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e2-g2-d3-g3-e3-d4",
+   "name": "E2 G2 D3 G3 E3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "G2",
+    "D3",
+    "G3",
+    "E3",
+    "D4"
+   ]
   },
   {
    "id": "open-e",
@@ -177,68 +561,22 @@
    "desc": "Keith Richards territory (he drops the 6th string entirely)."
   },
   {
-   "id": "drop-cs",
-   "name": "Drop C#",
+   "id": "a1-d2-g2-c3-e3-a3",
+   "name": "A Standard",
    "instrument": "guitar6",
-   "strings": [
-    "C#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
-   ],
-   "desc": "E♭ standard with the 6th string dropped to C#."
-  },
-  {
-   "id": "drop-a",
-   "name": "Drop A",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "E2",
-    "A2",
-    "D3",
-    "F#3",
-    "B3"
-   ],
-   "desc": "Lower than Drop B. Slipknot go here for a handful of songs."
-  },
-  {
-   "id": "korn-a-7",
-   "name": "Korn A (7-string)",
-   "instrument": "guitar7",
    "strings": [
     "A1",
     "D2",
     "G2",
     "C3",
-    "F3",
-    "A3",
-    "D4"
-   ],
-   "desc": "Korn's signature seven-string tuning."
+    "E3",
+    "A3"
+   ]
   },
   {
-   "id": "std-8-fs",
-   "name": "F# Standard (8-string)",
-   "instrument": "guitar8",
-   "strings": [
-    "F#1",
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ],
-   "desc": "Standard eight-string tuning."
-  },
-  {
-   "id": "meshuggah-f-8",
-   "name": "F Standard (8-string)",
-   "instrument": "guitar8",
+   "id": "f1-as1-ds2-gs2-cs3-fs3-as3",
+   "name": "F1 A#1 D#2 G#2 C#3 F#3 A#3",
+   "instrument": "guitar7",
    "strings": [
     "F1",
     "A#1",
@@ -246,26 +584,146 @@
     "G#2",
     "C#3",
     "F#3",
-    "A#3",
-    "D#4"
-   ],
-   "desc": "Meshuggah's eight-string tuning."
+    "A#3"
+   ]
   },
   {
-   "id": "g2-d3-g3-b3-d4",
-   "name": "G2 D3 G3 B3 D4",
-   "instrument": "guitar5",
+   "id": "c2-g2-c3-f3-g3-c4",
+   "name": "C2 G2 C3 F3 G3 C4",
+   "instrument": "guitar6",
    "strings": [
+    "C2",
     "G2",
-    "D3",
+    "C3",
+    "F3",
     "G3",
-    "B3",
+    "C4"
+   ]
+  },
+  {
+   "id": "c2-g2-c3-e3-g3-d4",
+   "name": "C2 G2 C3 E3 G3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "G2",
+    "C3",
+    "E3",
+    "G3",
     "D4"
    ]
   },
   {
+   "id": "gs1-e2-a2-d3-e3-a3-d4",
+   "name": "G#1 E2 A2 D3 E3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "E2",
+    "A2",
+    "D3",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "f1-as1-f2-as2-ds3-f3-as3-ds4",
+   "name": "F1 A#1 F2 A#2 D#3 F3 A#3 D#4",
+   "instrument": "guitar8",
+   "strings": [
+    "F1",
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "c2-g2-c3-g3-g3-e4",
+   "name": "Open C",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "G2",
+    "C3",
+    "G3",
+    "G3",
+    "E4"
+   ]
+  },
+  {
+   "id": "c2-g2-d3-g3-b3-e4",
+   "name": "C2 G2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "G2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "fs2-fs2-fs3-fs3-e3-b3",
+   "name": "F#2 F#2 F#3 F#3 E3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "F#2",
+    "F#2",
+    "F#3",
+    "F#3",
+    "E3",
+    "B3"
+   ]
+  },
+  {
+   "id": "a2-c3-c3-g3-gs3-c4",
+   "name": "A2 C3 C3 G3 G#3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "A2",
+    "C3",
+    "C3",
+    "G3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "e2-a2-e3-g3-b3-e4",
+   "name": "E2 A2 E3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "A2",
+    "E3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "open-d",
+   "name": "Open D",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "A2",
+    "D3",
+    "F#3",
+    "A3",
+    "D4"
+   ],
+   "desc": "Strums an open D major. Slide favourite."
+  },
+  {
    "id": "e1-b1-e2-a2-d3-g3-b3-e4",
-   "name": "E1 B1 E2 A2 D3 G3 B3 E4",
+   "name": "Drop E (8-string)",
    "instrument": "guitar8",
    "strings": [
     "E1",
@@ -279,21 +737,8 @@
    ]
   },
   {
-   "id": "as1-g2-c3-f3-a3-d4",
-   "name": "A#1 G2 C3 F3 A3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "A#1",
-    "G2",
-    "C3",
-    "F3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
    "id": "fs1-cs2-fs2-b2-e3-gs3-cs4",
-   "name": "F#1 C#2 F#2 B2 E3 G#3 C#4",
+   "name": "Drop F# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F#1",
@@ -306,8 +751,353 @@
    ]
   },
   {
+   "id": "e1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "Drop E (from F standard) (8-string)",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "b1-fs2-b2-e3-a3-b3",
+   "name": "B1 F#2 B2 E3 A3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "B3"
+   ]
+  },
+  {
+   "id": "g1-d2-g2-c3-e3-a3",
+   "name": "Drop G",
+   "instrument": "guitar6",
+   "strings": [
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "a1-e2-a2-d3-g3-b3",
+   "name": "A1 E2 A2 D3 G3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "g1-g2-c3-f3-a3-d4",
+   "name": "Drop G (from D standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "G1",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "fs1-b1-e2-a2-d3-g3-b3",
+   "name": "F#1 B1 E2 A2 D3 G3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-ds3-g3-c4",
+   "name": "Drop F (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "f1-as1-f2-as2-ds3-g3-c4",
+   "name": "Drop B♭ + low F (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "a1-a2-d3-g3-b3-e4",
+   "name": "Drop A (from E standard)",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e1-b1-fs2-b2-e3-gs3-cs4",
+   "name": "Drop B + low E (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "B1",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "e1-b1-e2-a2-d3-fs3-b3",
+   "name": "Drop E (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "f1-as1-f2-as2-ds3-f3-as3",
+   "name": "F1 A#1 F2 A#2 D#3 F3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "c2-f2-c3-g3-b3-e4",
+   "name": "C2 F2 C3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "F2",
+    "C3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "d2-g2-d3-g3-b3-c4",
+   "name": "D2 G2 D3 G3 B3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "G2",
+    "D3",
+    "G3",
+    "B3",
+    "C4"
+   ]
+  },
+  {
+   "id": "e2-e2-b2-b3-b3-b3",
+   "name": "E2 E2 B2 B3 B3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "E2",
+    "B2",
+    "B3",
+    "B3",
+    "B3"
+   ]
+  },
+  {
+   "id": "d2-ds2-as2-ds3-g3-g3",
+   "name": "D2 D#2 A#2 D#3 G3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "D#2",
+    "A#2",
+    "D#3",
+    "G3",
+    "G3"
+   ]
+  },
+  {
+   "id": "g2-a2-b2-d3-e3-g3",
+   "name": "G2 A2 B2 D3 E3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "G2",
+    "A2",
+    "B2",
+    "D3",
+    "E3",
+    "G3"
+   ]
+  },
+  {
+   "id": "d2-d2-d3-d3-a3-a3",
+   "name": "D2 D2 D3 D3 A3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "D2",
+    "D3",
+    "D3",
+    "A3",
+    "A3"
+   ]
+  },
+  {
+   "id": "fs2-fs2-g3-g3-a3-a3",
+   "name": "F#2 F#2 G3 G3 A3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "F#2",
+    "F#2",
+    "G3",
+    "G3",
+    "A3",
+    "A3"
+   ]
+  },
+  {
+   "id": "c3-c3-e3-b3-g3-d4",
+   "name": "C3 C3 E3 B3 G3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "C3",
+    "C3",
+    "E3",
+    "B3",
+    "G3",
+    "D4"
+   ]
+  },
+  {
+   "id": "b1-e2-d3-g3-b3-e4",
+   "name": "B1 E2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "E2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-fs3-gs3-ds4",
+   "name": "D#2 G#2 C#3 F#3 G#3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "G#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "ds2-fs2-cs3-fs3-as3-ds4",
+   "name": "D#2 F#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "F#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "e2-a2-d3-g3-a3-e4",
+   "name": "E2 A2 D3 G3 A3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "A3",
+    "E4"
+   ]
+  },
+  {
+   "id": "d2-b2-d3-g3-b3-e4",
+   "name": "D2 B2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "B2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "g2-d3-g3-b3-d4",
+   "name": "Open G (5-string)",
+   "instrument": "guitar5",
+   "strings": [
+    "G2",
+    "D3",
+    "G3",
+    "B3",
+    "D4"
+   ]
+  },
+  {
    "id": "c2-a2-d3-g3-b3-e4",
-   "name": "C2 A2 D3 G3 B3 E4",
+   "name": "Drop C (from E standard)",
    "instrument": "guitar6",
    "strings": [
     "C2",
@@ -333,7 +1123,7 @@
   },
   {
    "id": "c2-g2-c3-ds3-g3-c4",
-   "name": "C2 G2 C3 D#3 G3 C4",
+   "name": "Open Cm",
    "instrument": "guitar6",
    "strings": [
     "C2",
@@ -342,19 +1132,6 @@
     "D#3",
     "G3",
     "C4"
-   ]
-  },
-  {
-   "id": "a1-d2-g2-c3-e3-a3",
-   "name": "A Standard",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "D2",
-    "G2",
-    "C3",
-    "E3",
-    "A3"
    ]
   },
   {
@@ -371,22 +1148,8 @@
    ]
   },
   {
-   "id": "as1-ds2-gs2-cs3-fs3-as3-ds4",
-   "name": "A#1 D#2 G#2 C#3 F#3 A#3 D#4",
-   "instrument": "guitar7",
-   "strings": [
-    "A#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
    "id": "ds2-gs2-cs3-fs3-b3-ds4-gs4",
-   "name": "D#2 G#2 C#3 F#3 B3 D#4 G#4",
+   "name": "E♭ Standard (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D#2",
@@ -396,75 +1159,6 @@
     "B3",
     "D#4",
     "G#4"
-   ]
-  },
-  {
-   "id": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
-   "name": "G#1 D#2 G#2 C#3 F#3 A#3 D#4",
-   "instrument": "guitar7",
-   "strings": [
-    "G#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "e1-as1-ds2-gs2-cs3-fs3-as3-ds4",
-   "name": "E1 A#1 D#2 G#2 C#3 F#3 A#3 D#4",
-   "instrument": "guitar8",
-   "strings": [
-    "E1",
-    "A#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "f1-as1-ds2-gs2-cs3-fs3-as3",
-   "name": "F1 A#1 D#2 G#2 C#3 F#3 A#3",
-   "instrument": "guitar7",
-   "strings": [
-    "F1",
-    "A#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "A#3"
-   ]
-  },
-  {
-   "id": "b1-e2-a2-d3-fs3-b3",
-   "name": "B Standard",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "F#3",
-    "B3"
-   ]
-  },
-  {
-   "id": "as1-ds2-gs2-cs3-f3-as3",
-   "name": "A# Standard",
-   "instrument": "guitar6",
-   "strings": [
-    "A#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "F3",
-    "A#3"
    ]
   },
   {
@@ -481,35 +1175,8 @@
    ]
   },
   {
-   "id": "as1-f2-as2-ds3-g3-c4",
-   "name": "Drop A#",
-   "instrument": "guitar6",
-   "strings": [
-    "A#1",
-    "F2",
-    "A#2",
-    "D#3",
-    "G3",
-    "C4"
-   ]
-  },
-  {
-   "id": "cs2-fs2-b2-e3-gs3-cs4-cs4",
-   "name": "C#2 F#2 B2 E3 G#3 C#4 C#4",
-   "instrument": "guitar7",
-   "strings": [
-    "C#2",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
-    "C#4",
-    "C#4"
-   ]
-  },
-  {
    "id": "fs1-fs2-b2-e3-gs3-cs4",
-   "name": "F#1 F#2 B2 E3 G#3 C#4",
+   "name": "Drop F# (from C# standard)",
    "instrument": "guitar6",
    "strings": [
     "F#1",
@@ -547,35 +1214,8 @@
    ]
   },
   {
-   "id": "b1-e2-a2-d3-g3-b3-e4",
-   "name": "B1 E2 A2 D3 G3 B3 E4",
-   "instrument": "guitar7",
-   "strings": [
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "d2-a2-d3-g3-b3-d4",
-   "name": "D2 A2 D3 G3 B3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "D4"
-   ]
-  },
-  {
    "id": "c2-g2-c3-g3-c4-e4",
-   "name": "C2 G2 C3 G3 C4 E4",
+   "name": "Open C (C G C G C E)",
    "instrument": "guitar6",
    "strings": [
     "C2",
@@ -584,19 +1224,6 @@
     "G3",
     "C4",
     "E4"
-   ]
-  },
-  {
-   "id": "b1-fs2-b2-e3-a3-b3",
-   "name": "B1 F#2 B2 E3 A3 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "F#2",
-    "B2",
-    "E3",
-    "A3",
-    "B3"
    ]
   },
   {
@@ -609,19 +1236,6 @@
     "C#3",
     "F#3",
     "B3",
-    "C#4"
-   ]
-  },
-  {
-   "id": "as1-fs2-b2-e3-gs3-cs4",
-   "name": "A#1 F#2 B2 E3 G#3 C#4",
-   "instrument": "guitar6",
-   "strings": [
-    "A#1",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
     "C#4"
    ]
   },
@@ -666,7 +1280,7 @@
   },
   {
    "id": "gs1-gs2-cs3-fs3-as3-ds4",
-   "name": "G#1 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop A♭ (from E♭ standard)",
    "instrument": "guitar6",
    "strings": [
     "G#1",
@@ -675,19 +1289,6 @@
     "F#3",
     "A#3",
     "D#4"
-   ]
-  },
-  {
-   "id": "c2-g2-c3-f3-g3-c4",
-   "name": "C2 G2 C3 F3 G3 C4",
-   "instrument": "guitar6",
-   "strings": [
-    "C2",
-    "G2",
-    "C3",
-    "F3",
-    "G3",
-    "C4"
    ]
   },
   {
@@ -704,45 +1305,6 @@
    ]
   },
   {
-   "id": "g1-d2-g2-c3-e3-a3",
-   "name": "Drop G",
-   "instrument": "guitar6",
-   "strings": [
-    "G1",
-    "D2",
-    "G2",
-    "C3",
-    "E3",
-    "A3"
-   ]
-  },
-  {
-   "id": "b1-e2-a2-d3-g3-b3",
-   "name": "B1 E2 A2 D3 G3 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3"
-   ]
-  },
-  {
-   "id": "a1-e2-a2-d3-g3-b3",
-   "name": "A1 E2 A2 D3 G3 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3"
-   ]
-  },
-  {
    "id": "d2-fs2-a2-e3-a3-cs4",
    "name": "D2 F#2 A2 E3 A3 C#4",
    "instrument": "guitar6",
@@ -756,34 +1318,8 @@
    ]
   },
   {
-   "id": "g1-g2-c3-f3-a3-d4",
-   "name": "G1 G2 C3 F3 A3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "G1",
-    "G2",
-    "C3",
-    "F3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
-   "id": "a1-g2-c3-f3-a3-d4",
-   "name": "A1 G2 C3 F3 A3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "G2",
-    "C3",
-    "F3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
    "id": "as1-cs2-gs2-cs3-fs3-as3-ds4",
-   "name": "A#1 C#2 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop C# + low B♭ (7-string)",
    "instrument": "guitar7",
    "strings": [
     "A#1",
@@ -796,22 +1332,8 @@
    ]
   },
   {
-   "id": "fs1-b1-e2-a2-d3-g3-b3",
-   "name": "F#1 B1 E2 A2 D3 G3 B3",
-   "instrument": "guitar7",
-   "strings": [
-    "F#1",
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3"
-   ]
-  },
-  {
    "id": "fs1-ds2-gs2-cs3-fs3-as3-ds4",
-   "name": "F#1 D#2 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop F# (from B♭ standard) (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F#1",
@@ -824,66 +1346,11 @@
    ]
   },
   {
-   "id": "c2-g2-c3-e3-g3-d4",
-   "name": "C2 G2 C3 E3 G3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "C2",
-    "G2",
-    "C3",
-    "E3",
-    "G3",
-    "D4"
-   ]
-  },
-  {
-   "id": "f1-c2-f2-as2-ds3-g3-c4",
-   "name": "F1 C2 F2 A#2 D#3 G3 C4",
-   "instrument": "guitar7",
-   "strings": [
-    "F1",
-    "C2",
-    "F2",
-    "A#2",
-    "D#3",
-    "G3",
-    "C4"
-   ]
-  },
-  {
-   "id": "a1-e2-a2-d3-g3-b3-e4",
-   "name": "A1 E2 A2 D3 G3 B3 E4",
-   "instrument": "guitar7",
-   "strings": [
-    "A1",
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
    "id": "f1-f2-as2-ds3-g3-c4",
-   "name": "F1 F2 A#2 D#3 G3 C4",
+   "name": "Drop F (from C standard)",
    "instrument": "guitar6",
    "strings": [
     "F1",
-    "F2",
-    "A#2",
-    "D#3",
-    "G3",
-    "C4"
-   ]
-  },
-  {
-   "id": "f1-as1-f2-as2-ds3-g3-c4",
-   "name": "F1 A#1 F2 A#2 D#3 G3 C4",
-   "instrument": "guitar7",
-   "strings": [
-    "F1",
-    "A#1",
     "F2",
     "A#2",
     "D#3",
@@ -905,19 +1372,6 @@
    ]
   },
   {
-   "id": "a1-a2-d3-g3-b3-e4",
-   "name": "A1 A2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
    "id": "c2-g2-d3-g3-a3-d4",
    "name": "C2 G2 D3 G3 A3 D4",
    "instrument": "guitar6",
@@ -928,76 +1382,6 @@
     "G3",
     "A3",
     "D4"
-   ]
-  },
-  {
-   "id": "gs1-e2-a2-d3-e3-a3-d4",
-   "name": "G#1 E2 A2 D3 E3 A3 D4",
-   "instrument": "guitar7",
-   "strings": [
-    "G#1",
-    "E2",
-    "A2",
-    "D3",
-    "E3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
-   "id": "gs1-f2-as2-ds3-f3-as3-ds4",
-   "name": "G#1 F2 A#2 D#3 F3 A#3 D#4",
-   "instrument": "guitar7",
-   "strings": [
-    "G#1",
-    "F2",
-    "A#2",
-    "D#3",
-    "F3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "a1-e2-a2-d3-e3-a3-d4",
-   "name": "A1 E2 A2 D3 E3 A3 D4",
-   "instrument": "guitar7",
-   "strings": [
-    "A1",
-    "E2",
-    "A2",
-    "D3",
-    "E3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
-   "id": "as1-f2-as2-ds3-f3-as3-ds4",
-   "name": "A#1 F2 A#2 D#3 F3 A#3 D#4",
-   "instrument": "guitar7",
-   "strings": [
-    "A#1",
-    "F2",
-    "A#2",
-    "D#3",
-    "F3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "gs1-ds2-gs2-cs3-ds3-gs3-cs4",
-   "name": "G#1 D#2 G#2 C#3 D#3 G#3 C#4",
-   "instrument": "guitar7",
-   "strings": [
-    "G#1",
-    "D#2",
-    "G#2",
-    "C#3",
-    "D#3",
-    "G#3",
-    "C#4"
    ]
   },
   {
@@ -1014,62 +1398,6 @@
    ]
   },
   {
-   "id": "fs1-b1-fs2-b2-e3-gs3-cs4",
-   "name": "F#1 B1 F#2 B2 E3 G#3 C#4",
-   "instrument": "guitar7",
-   "strings": [
-    "F#1",
-    "B1",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
-    "C#4"
-   ]
-  },
-  {
-   "id": "e1-b1-fs2-b2-e3-gs3-cs4",
-   "name": "E1 B1 F#2 B2 E3 G#3 C#4",
-   "instrument": "guitar7",
-   "strings": [
-    "E1",
-    "B1",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
-    "C#4"
-   ]
-  },
-  {
-   "id": "g1-d2-g2-c3-f3-a3-d4",
-   "name": "G1 D2 G2 C3 F3 A3 D4",
-   "instrument": "guitar7",
-   "strings": [
-    "G1",
-    "D2",
-    "G2",
-    "C3",
-    "F3",
-    "A3",
-    "D4"
-   ]
-  },
-  {
-   "id": "e1-b1-e2-a2-d3-fs3-b3",
-   "name": "E1 B1 E2 A2 D3 F#3 B3",
-   "instrument": "guitar7",
-   "strings": [
-    "E1",
-    "B1",
-    "E2",
-    "A2",
-    "D3",
-    "F#3",
-    "B3"
-   ]
-  },
-  {
    "id": "f1-gs1-ds2-gs2-cs3-fs3-as3-ds4",
    "name": "F1 G#1 D#2 G#2 C#3 F#3 A#3 D#4",
    "instrument": "guitar8",
@@ -1082,34 +1410,6 @@
     "F#3",
     "A#3",
     "D#4"
-   ]
-  },
-  {
-   "id": "f1-as1-f2-as2-ds3-f3-as3-ds4",
-   "name": "F1 A#1 F2 A#2 D#3 F3 A#3 D#4",
-   "instrument": "guitar8",
-   "strings": [
-    "F1",
-    "A#1",
-    "F2",
-    "A#2",
-    "D#3",
-    "F3",
-    "A#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "cs2-gs2-cs3-fs3-gs3-cs4",
-   "name": "C#2 G#2 C#3 F#3 G#3 C#4",
-   "instrument": "guitar6",
-   "strings": [
-    "C#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "G#3",
-    "C#4"
    ]
   },
   {
@@ -1168,22 +1468,8 @@
    ]
   },
   {
-   "id": "f1-as1-f2-as2-ds3-f3-as3",
-   "name": "F1 A#1 F2 A#2 D#3 F3 A#3",
-   "instrument": "guitar7",
-   "strings": [
-    "F1",
-    "A#1",
-    "F2",
-    "A#2",
-    "D#3",
-    "F3",
-    "A#3"
-   ]
-  },
-  {
    "id": "as1-f2-as2-ds3-gs3-c4-f4",
-   "name": "A#1 F2 A#2 D#3 G#3 C4 F4",
+   "name": "Drop B♭ (7-string)",
    "instrument": "guitar7",
    "strings": [
     "A#1",
@@ -1197,7 +1483,7 @@
   },
   {
    "id": "a1-f2-as2-ds3-g3-c4",
-   "name": "A1 F2 A#2 D#3 G3 C4",
+   "name": "Drop A (from C standard)",
    "instrument": "guitar6",
    "strings": [
     "A1",
@@ -1236,7 +1522,7 @@
   },
   {
    "id": "b1-e2-a2-d3-fs3-b3-e4",
-   "name": "B Standard (7-string)",
+   "name": "B Standard (7-string) (B E A D F# B E)",
    "instrument": "guitar7",
    "strings": [
     "B1",
@@ -1250,7 +1536,7 @@
   },
   {
    "id": "as1-gs2-cs3-fs3-as3-ds4",
-   "name": "A#1 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop B♭ (from E♭ standard)",
    "instrument": "guitar6",
    "strings": [
     "A#1",
@@ -1263,7 +1549,7 @@
   },
   {
    "id": "ds2-a2-d3-g3-b3-e4",
-   "name": "D#2 A2 D3 G3 B3 E4",
+   "name": "Drop E♭ (from E standard)",
    "instrument": "guitar6",
    "strings": [
     "D#2",
@@ -1272,97 +1558,6 @@
     "G3",
     "B3",
     "E4"
-   ]
-  },
-  {
-   "id": "c2-f2-c3-g3-b3-e4",
-   "name": "C2 F2 C3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "C2",
-    "F2",
-    "C3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "c2-g2-c3-g3-g3-e4",
-   "name": "C2 G2 C3 G3 G3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "C2",
-    "G2",
-    "C3",
-    "G3",
-    "G3",
-    "E4"
-   ]
-  },
-  {
-   "id": "b1-a2-d3-g3-b3-e4",
-   "name": "B1 A2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "A2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "c2-g2-d3-g3-b3-e4",
-   "name": "C2 G2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "C2",
-    "G2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "d2-g2-d3-g3-b3-e4",
-   "name": "D2 G2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "G2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "d2-g2-d3-g3-b3-c4",
-   "name": "D2 G2 D3 G3 B3 C4",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "G2",
-    "D3",
-    "G3",
-    "B3",
-    "C4"
-   ]
-  },
-  {
-   "id": "e2-e2-b2-b3-b3-b3",
-   "name": "E2 E2 B2 B3 B3 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "E2",
-    "E2",
-    "B2",
-    "B3",
-    "B3",
-    "B3"
    ]
   },
   {
@@ -1419,7 +1614,7 @@
   },
   {
    "id": "cs2-gs2-cs3-gs3-gs3-f4",
-   "name": "C#2 G#2 C#3 G#3 G#3 F4",
+   "name": "Open C#",
    "instrument": "guitar6",
    "strings": [
     "C#2",
@@ -1432,7 +1627,7 @@
   },
   {
    "id": "cs2-gs2-cs3-f3-gs3-cs4",
-   "name": "C#2 G#2 C#3 F3 G#3 C#4",
+   "name": "Open C# (C# G# C# F G# C#)",
    "instrument": "guitar6",
    "strings": [
     "C#2",
@@ -1445,7 +1640,7 @@
   },
   {
    "id": "ds1-ds2-gs2-cs3-fs3-as3-ds4",
-   "name": "D#1 D#2 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop E♭ (from B♭ standard) (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D#1",
@@ -1458,34 +1653,8 @@
    ]
   },
   {
-   "id": "fs2-fs2-fs3-fs3-e3-b3",
-   "name": "F#2 F#2 F#3 F#3 E3 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "F#2",
-    "F#2",
-    "F#3",
-    "F#3",
-    "E3",
-    "B3"
-   ]
-  },
-  {
-   "id": "d2-ds2-as2-ds3-g3-g3",
-   "name": "D2 D#2 A#2 D#3 G3 G3",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "D#2",
-    "A#2",
-    "D#3",
-    "G3",
-    "G3"
-   ]
-  },
-  {
    "id": "ds2-ds2-as2-ds3-g3-g3",
-   "name": "D#2 D#2 A#2 D#3 G3 G3",
+   "name": "Open E♭",
    "instrument": "guitar6",
    "strings": [
     "D#2",
@@ -1493,32 +1662,6 @@
     "A#2",
     "D#3",
     "G3",
-    "G3"
-   ]
-  },
-  {
-   "id": "e2-g2-d3-g3-b3-e4",
-   "name": "E2 G2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "E2",
-    "G2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "g2-a2-b2-d3-e3-g3",
-   "name": "G2 A2 B2 D3 E3 G3",
-   "instrument": "guitar6",
-   "strings": [
-    "G2",
-    "A2",
-    "B2",
-    "D3",
-    "E3",
     "G3"
    ]
   },
@@ -1536,45 +1679,6 @@
    ]
   },
   {
-   "id": "e2-g2-d3-g3-e3-d4",
-   "name": "E2 G2 D3 G3 E3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "E2",
-    "G2",
-    "D3",
-    "G3",
-    "E3",
-    "D4"
-   ]
-  },
-  {
-   "id": "d2-d2-d3-d3-a3-a3",
-   "name": "D2 D2 D3 D3 A3 A3",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "D2",
-    "D3",
-    "D3",
-    "A3",
-    "A3"
-   ]
-  },
-  {
-   "id": "fs2-fs2-g3-g3-a3-a3",
-   "name": "F#2 F#2 G3 G3 A3 A3",
-   "instrument": "guitar6",
-   "strings": [
-    "F#2",
-    "F#2",
-    "G3",
-    "G3",
-    "A3",
-    "A3"
-   ]
-  },
-  {
    "id": "c2-g2-d3-g3-b3-b3",
    "name": "C2 G2 D3 G3 B3 B3",
    "instrument": "guitar6",
@@ -1588,19 +1692,6 @@
    ]
   },
   {
-   "id": "a2-c3-c3-g3-gs3-c4",
-   "name": "A2 C3 C3 G3 G#3 C4",
-   "instrument": "guitar6",
-   "strings": [
-    "A2",
-    "C3",
-    "C3",
-    "G3",
-    "G#3",
-    "C4"
-   ]
-  },
-  {
    "id": "ds2-fs2-cs3-fs3-ds3-cs4",
    "name": "D#2 F#2 C#3 F#3 D#3 C#4",
    "instrument": "guitar6",
@@ -1611,19 +1702,6 @@
     "F#3",
     "D#3",
     "C#4"
-   ]
-  },
-  {
-   "id": "c3-c3-e3-b3-g3-d4",
-   "name": "C3 C3 E3 B3 G3 D4",
-   "instrument": "guitar6",
-   "strings": [
-    "C3",
-    "C3",
-    "E3",
-    "B3",
-    "G3",
-    "D4"
    ]
   },
   {
@@ -1663,45 +1741,6 @@
     "E3",
     "G#3",
     "G#3"
-   ]
-  },
-  {
-   "id": "b1-e2-d3-g3-b3-e4",
-   "name": "B1 E2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "E2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "ds2-gs2-cs3-fs3-gs3-ds4",
-   "name": "D#2 G#2 C#3 F#3 G#3 D#4",
-   "instrument": "guitar6",
-   "strings": [
-    "D#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "G#3",
-    "D#4"
-   ]
-  },
-  {
-   "id": "ds2-fs2-cs3-fs3-as3-ds4",
-   "name": "D#2 F#2 C#3 F#3 A#3 D#4",
-   "instrument": "guitar6",
-   "strings": [
-    "D#2",
-    "F#2",
-    "C#3",
-    "F#3",
-    "A#3",
-    "D#4"
    ]
   },
   {
@@ -1757,19 +1796,6 @@
    ]
   },
   {
-   "id": "e2-a2-d3-g3-a3-e4",
-   "name": "E2 A2 D3 G3 A3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "E2",
-    "A2",
-    "D3",
-    "G3",
-    "A3",
-    "E4"
-   ]
-  },
-  {
    "id": "b1-b1-b1-b1-b2-b3",
    "name": "B1 B1 B1 B1 B2 B3",
    "instrument": "guitar6",
@@ -1780,32 +1806,6 @@
     "B1",
     "B2",
     "B3"
-   ]
-  },
-  {
-   "id": "d2-b2-d3-g3-b3-e4",
-   "name": "D2 B2 D3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "D2",
-    "B2",
-    "D3",
-    "G3",
-    "B3",
-    "E4"
-   ]
-  },
-  {
-   "id": "e2-a2-e3-g3-b3-e4",
-   "name": "E2 A2 E3 G3 B3 E4",
-   "instrument": "guitar6",
-   "strings": [
-    "E2",
-    "A2",
-    "E3",
-    "G3",
-    "B3",
-    "E4"
    ]
   },
   {
@@ -1901,7 +1901,7 @@
   },
   {
    "id": "g2-g2-d3-g3-b3-d4",
-   "name": "G2 G2 D3 G3 B3 D4",
+   "name": "Open G (G G D G B D)",
    "instrument": "guitar6",
    "strings": [
     "G2",
