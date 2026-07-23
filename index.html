@@ -1008,18 +1008,19 @@ let deferredPrompt=null;
     const shareIcon=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>`;
     const dotsIcon=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" style="vertical-align:-0.15em"><circle cx="12" cy="12" r="9.2"/><circle cx="7.6" cy="12" r="1.35" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.35" fill="currentColor" stroke="none"/><circle cx="16.4" cy="12" r="1.35" fill="currentColor" stroke="none"/></svg>`;
     const addIcon=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>`;
+    const moreIcon=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><path d="M7 10l5 5 5-5"/></svg>`;
     const ol=`style="margin:4px 0 0 16px;padding:0;line-height:1.7"`;
     let html;
     if(/CriOS/.test(ua)){
       html=`<ol ${ol}>
         <li>Tap ${shareIcon} next to the address bar</li>
-        <li>Tap "View More"</li>
+        <li>Tap ${moreIcon} "View More"</li>
         <li>Tap ${addIcon} "Add to Home Screen"</li></ol>`;
     } else if(/Safari/.test(ua)){
       html=`<ol ${ol}>
         <li>Tap ${dotsIcon} next to the address bar <span style="color:var(--muted);font-size:.9em">(on older iOS the ${shareIcon} icon is right there instead)</span></li>
         <li>Tap ${shareIcon} Share</li>
-        <li>Tap "View More"</li>
+        <li>Tap ${moreIcon} "View More"</li>
         <li>Tap ${addIcon} "Add to Home Screen"</li></ol>`;
     } else {
       html=`Open this page in Safari or Chrome, then use the share menu → Add to Home Screen.`;
