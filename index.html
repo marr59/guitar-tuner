@@ -841,13 +841,16 @@ $("nowArea").onclick=openTuningPicker;
 
 function renderLib(){
   const my=$("myList");
-  my.innerHTML=library.length?library.map((e,i)=>
-    `<div class="row"><div class="info" data-i="${i}">
-      <div class="ttl">${e.title}</div>
-      <div class="sub">${e.sub?e.sub+" · ":""}${strLabel(e.strings)}${e.capo?" · capo "+e.capo:""}${e.variant?" · "+e.variant:""}</div>
+  my.innerHTML=library.length?library.map((e,i)=>{
+    const ttl=e.sub?e.sub:e.title;
+    const sub=e.sub?e.title+" · "+strLabel(e.strings)+(e.capo?" · capo "+e.capo:"")+(e.variant?" · "+e.variant:"")
+                   :strLabel(e.strings)+(e.capo?" · capo "+e.capo:"")+(e.variant?" · "+e.variant:"");
+    return `<div class="row"><div class="info" data-i="${i}">
+      <div class="ttl">${ttl}</div>
+      <div class="sub">${sub}</div>
     </div>
     <button class="icon" data-ren="${i}">✎</button>
-    <button class="icon" data-del="${i}">✕</button></div>`).join("")
+    <button class="icon" data-del="${i}">✕</button></div>`;}).join("")
     :`<div class="empty">No saved tunings yet.<br>Search a song above, or add one with <b>+ Custom</b>.</div>`;
   my.querySelectorAll("[data-i]").forEach(el=>el.onclick=()=>{
     const e=library[+el.dataset.i];
