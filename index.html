@@ -152,7 +152,14 @@
   .empty{color:var(--muted2); font-size:13px; text-align:center; padding:16px 8px; line-height:1.5}
   .conf{font-family:var(--mono); font-size:10px; padding:2px 6px; border-radius:5px}
   .conf.high{background:rgba(55,224,176,.13); color:var(--mint)}
-  .conf.medium{background:rgba(255,180,78,.13); color:var(--amber)}
+  .conf-warn{font-size:11px; color:var(--amber); margin-left:4px; vertical-align:middle}
+  .trust-warn{margin-top:8px; padding:9px 12px; border-radius:10px;
+    background:rgba(255,180,78,.09); border:1px solid rgba(255,180,78,.28);
+    color:var(--amber); font-size:12.5px; line-height:1.5}
+  .trust-note{margin-top:8px; padding:9px 12px; border-radius:10px;
+    background:rgba(255,255,255,.04); border:1px solid var(--border);
+    color:var(--muted); font-size:12.5px; line-height:1.5}
+  .song-note{margin-top:4px; color:var(--muted); font-size:12.5px; line-height:1.5}
 
   .sheet{position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter:blur(6px);
     display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
@@ -364,7 +371,11 @@ function setActive(t,{silent=false}={}){
   $("curStrings").textContent=strLabel(t.strings);
   let d=t.desc||t.note||"";
   if(t.capo) d+=(d?" ":"")+"Capo "+t.capo+".";
-  $("curDesc").innerHTML=d+(t.confidence==="medium"?'<span class="badge">unverified</span>':"");
+  let trust="";
+  if(t.c===1) trust='<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>';
+  else if(t.unusual) trust='<div class="trust-note">Unusual by design — this song really is tuned this way.</div>';
+  const verif=t.confidence==="high"?'<span class="conf high" style="margin-left:6px">✓ verified</span>':"";
+  $("curDesc").innerHTML=(d||verif?`<span>${d}</span>${verif}`:"")+trust;
   store.set(ACT_KEY, JSON.stringify(t));
   renderGuide(); updateHint();
   if(!silent) show("tune");
@@ -707,7 +718,13 @@ function entryFromVariant(song,v){
 function addEntry(e){ if(!library.some(x=>x.id===e.id)) library.unshift(e), saveLib(); }
 function openSong(song){
   if(song.variants.length===1){ commitSong(song,song.variants[0]); return; }
-  card.innerHTML=`<h3>${song.song}</h3><p>${song.artist} — several versions are played in different tunings. Pick one:</p>`
+  const noteHtml=song.note?`<p class="song-note">${song.note}</p>`:"";
+  const trustHtml=song.c===1
+    ?`<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>`
+    :song.unusual?`<div class="trust-note">Unusual by design — this song really is tuned this way.</div>`:"";
+  const headChip=song.confidence==="high"?` <span class="conf high">✓ verified</span>`:"";
+  card.innerHTML=`<h3>${song.song}${headChip}</h3><p>${song.artist} — several versions are played in different tunings. Pick one:</p>`
+    +noteHtml+trustHtml
     +song.variants.map((v,i)=>`<div class="vrow" data-i="${i}"><div class="ttl">${v.label}</div>
       <div style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px">${strLabel(v.strings)}${v.capo?" · capo "+v.capo:""}</div></div>`).join("")
     +`<div class="btns"><button class="bo" id="vCancel">Cancel</button></div>`;
@@ -717,7 +734,8 @@ function openSong(song){
 }
 function commitSong(song,v){
   const e=entryFromVariant(song,v); addEntry(e); closeSheet();
-  setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo,note:e.note,confidence:e.confidence});
+  setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo,note:e.note,
+             confidence:e.confidence,c:song.c||0,unusual:song.unusual||false});
 }
 function renderResults(q){
   const box=$("results"); q=q.trim().toLowerCase();
@@ -730,8 +748,10 @@ function renderResults(q){
   }
   box.innerHTML=`<div class="sec"><div class="sech"><h2>Results</h2></div>`
     +songs.map(s=>{const v=s.variants[0];
+      const chip=s.c===1?`<span class="conf-warn">⚠</span>`
+        :s.confidence==="high"?`<span class="conf high">✓ verified</span>`:"";
       return `<div class="row"><div class="info" data-song="${s.id}">
-        <div class="ttl">${s.song} <span class="conf ${s.confidence}">${s.confidence}</span></div>
+        <div class="ttl">${s.song}${chip}</div>
         <div class="sub">${s.artist} · ${strLabel(v.strings)}${s.variants.length>1?" · "+s.variants.length+" versions":""}</div>
       </div><button class="icon" data-song="${s.id}">＋</button></div>`;}).join("")
     +tun.map(t=>`<div class="row"><div class="info" data-tun="${t.id}">
@@ -923,6 +943,9 @@ function expandCatalog(j) {
     return {
       id: s.id, song: s.song, artist: s.artist,
       confidence: s.confidence || 'medium',
+      c:          s.c          || 0,
+      unusual:    s.unusual    || false,
+      note:       s.note       || '',
       verified:   s.verified   || false,
       variants,
       sources: s.src === 'songsterr' ? ['Songsterr catalogue API'] : [],
