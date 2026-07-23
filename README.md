@@ -1,6 +1,8 @@
 # Guitar Tuner
 
-A fast, free guitar tuner with a curated library of alternate tunings for specific songs.
+A fast, free guitar tuner with a curated library of **3,500 alternate tunings** for specific
+songs, across 72 artists — including a corner of the Russian alternative scene that no other
+tuning database covers.
 
 **Live → [marr59.github.io/guitar-tuner](https://marr59.github.io/guitar-tuner/)**
 
@@ -12,9 +14,13 @@ paywall, no ads. Installs to your home screen and works with no signal.
 ## What it does
 
 - **Accurate pitch detection** down to low B and F#, reading out in cents
-- **Tuning library** — search a song, get the tuning it was actually recorded in
+- **Tuning library** — 3,500 songs across 72 artists, searchable offline
 - **Alternate tunings only** — songs in plain E standard are deliberately not catalogued
 - **Multiple versions per song** where studio and live tunings genuinely differ
+- **Experimental tunings preserved** — Soundgarden's six-strings-of-E "Mind Riot", Sonic
+  Youth's unison and out-of-order sets, Joni Mitchell's open tunings
+- **Russian alt scene** — Психея, [AMATORY], Stigmata, Lumen, Jane Air and others, largely
+  undocumented in English-language sources
 - **Plucked-string reference tones** — tap a string to hear its target pitch
 - **Auto-advance** — tune a string and it moves to the next, in whichever direction you're working
 - **Any string count** — 4 to 8 strings, so seven-strings, bass and ukulele all work
@@ -44,7 +50,7 @@ their absence is itself useful information.
 ## Engineering notes
 
 No frameworks, no build step, no backend. One HTML file, one JSON catalogue, a service
-worker. That constraint was worth keeping: it deploys with `git pull` and it runs on a
+worker. That constraint was worth keeping: deploying is a `git push` and it runs on a
 phone in a rehearsal room with no signal.
 
 ### Pitch detection is target-constrained
@@ -104,6 +110,44 @@ silently cancelled the transition — so it appeared to work once and then never
 timer now runs independently of the signal and is only abandoned if the reading moves more
 than 15 cents, i.e. when the player has clearly gone back to the tuning peg.
 
+### The catalogue was quietly ASCII-only
+
+Importing the Russian scene surfaced a bug that would have destroyed the data without
+raising a single error. Deduplication and slug generation both normalised titles with
+`[^a-z0-9]` — which, applied to Cyrillic, returns an **empty string**. Every song by a
+Russian band would have collapsed onto the same key and the same blank id, silently
+reducing fifty songs to one.
+
+The fix is Unicode-aware keys (`/[^\p{L}\p{N}]/gu`) plus transliteration for slugs, with the
+song id appended when two slugs still collide. But the interesting part is what remained
+afterwards, because Russian titles vary in ways an English-only importer never has to think
+about:
+
+- **ё vs е** — "Он Не Придет" and "Он не придёт" are the same song, and they arrived with
+  two different tunings
+- **script variance** — "Осколки"/"Oskolki", "Сид Spears"/"Sid Spears"
+- **inconsistent transliteration** — "12 Секунд" vs "12 Secund", where a strict transliterator
+  produces *sekund* and *secund*
+
+Eight duplicate pairs survived the automated pass and were caught by comparing
+aggressively-normalised keys with k/c and y/i folded together. Two of the eight disagreed on
+the tuning, so they became conflict entries rather than being silently merged.
+
+### Low is not the same as wrong
+
+The same import produced a batch of unusually low tunings, and the temptation was to treat
+low as suspect. Some were genuinely broken: an entry whose lowest strings were E1 and A1 —
+bass guitar range — turned out to be a bass track that slipped past the guitar filter. A
+title with a transcriber's credit baked into it ("... by Music Master Тула") carried a
+tuning that was just standard with one string wrong. A Nirvana cover was filed under the
+covering band's own catalogue.
+
+But [AMATORY]'s six-string Drop G, tuned down to G1 at 49 Hz, is real — five songs, all
+consistent — and so is Stigmata's seven-string Drop G. The distinguishing signal was not the
+pitch but the consistency: a real band tuning recurs across songs, while an artefact appears
+once. This is the same lesson as the unison heuristic above, arriving from the opposite
+direction.
+
 ### Data honesty over false precision
 
 Tuning information on the internet contradicts itself constantly, so every catalogue entry
@@ -116,6 +160,12 @@ being silently chosen. Metallica's "The Thing That Should Not Be" is transcribed
 standard, as Drop D, and Kirk Hammett has been quoted saying C#. The same mechanism covers
 songs with legitimately different studio and live tunings, such as Nirvana's "Come As You
 Are" — D standard on the record, E♭ live.
+
+One further signal is recorded rather than hidden. When every transcription of a band's
+catalogue reports an identical tuning with no variation at all, that is as likely to mean
+transcribers copied the value forward as it is to mean the band never retuned. Those entries
+carry a note saying so. It is a weaker claim than the data appears to make, and saying so is
+more useful than sounding certain.
 
 ---
 
@@ -136,21 +186,27 @@ eight-string guitars, bass and ukulele work without schema changes, and the cust
 builder already offers 4 through 8. The catalogue exercises this today: the Keith Richards
 open G entry is genuinely five strings, because he removes the sixth.
 
-Songs reference a tuning and may carry several variants:
+Songs don't repeat the note array — they reference a tuning by id:
 
 ```json
 {
-  "song": "Come As You Are",
-  "artist": "Nirvana",
-  "album": "Nevermind",
-  "confidence": "high",
-  "variants": [
-    { "label": "Studio (Nevermind)", "tuningId": "std-d",  "strings": ["D2","G2","C3","F3","A3","D4"] },
-    { "label": "Live",               "tuningId": "std-eb", "strings": ["D#2","G#2","C#3","F#3","A#3","D#4"] }
-  ],
-  "sources": ["TrueFire lesson", "GuitarLessons365 lesson"]
+  "song": "Vermilion Pt. 2",
+  "artist": "Slipknot",
+  "t": "drop-b",
+  "sid": 438900
 }
 ```
+
+That normalisation matters at this scale. 3,500 songs share only 144 distinct tunings, and
+roughly half of the original file was repeated boilerplate prose and reconstructible URLs.
+Collapsing both took the catalogue from 300 KB to 84 KB before the bulk import, and the
+finished file is 618 KB raw but **91 KB gzipped** — small enough to ship whole, so search
+stays instant and the entire library works offline.
+
+Splitting the catalogue into per-artist chunks was considered and rejected: searching for a
+song requires an index of every title anyway, and chunking would break offline use for
+anything not already downloaded. Extrapolated, one normalised file holds 25,000 songs in
+about 280 KB gzipped.
 
 ---
 
@@ -162,11 +218,12 @@ Songs reference a tuning and may carry several variants:
 | Rendering | Canvas 2D, spring-smoothed at 60fps |
 | Offline | Service worker, network-first with cache fallback |
 | Storage | localStorage, with JSON export/import as a backup path |
-| Data | Static `tunings.json` served by nginx |
+| Data | Static `tunings.json`, 3,500 songs in 91 KB gzipped |
 | Deploy | GitHub Pages |
 
-Network-first caching is deliberate: the site deploys by `git pull`, so a cache-first shell
-would pin installed users to a stale build.
+Network-first caching is deliberate: a cache-first shell would pin installed users to a stale
+build. On GitHub Pages there are no cache headers to tune, so bumping the service worker
+version each deploy is the only lever that matters.
 
 ## Running locally
 
