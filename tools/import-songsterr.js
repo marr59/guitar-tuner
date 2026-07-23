@@ -24,8 +24,8 @@ const E_STD_6    = [64, 59, 55, 50, 45, 40];  // hi→lo
 const UA         = 'guitar-tuner-importer (github.com/marr59/guitar-tuner)';
 const DELAY_MS   = 1100;
 const PAGE_SIZE  = 100;
-const MIN_VIEWS  = 300;
-const PER_ARTIST = 150;
+const MIN_VIEWS  = parseInt(process.env.MIN_VIEWS  || '300');
+const PER_ARTIST = parseInt(process.env.PER_ARTIST || '150');
 const TOP_MIN    = 55;
 const TOP_MAX    = 68;
 const BOT_MIN    = 26;
@@ -41,6 +41,9 @@ const REJECT_WORDS = [
 ];
 const REJECT_SUBS  = [
   'drop ','standard','tuning','(half step','(full step','bass down','ver.',
+  // Russian
+  'кавер','акустик','акустика','живьём','живьем','концерт','минус',
+  'версия','оригинальном строе','ремикс','инструментал',
 ];
 const REJECT_RX    = [
   /\d+\s*%/,
@@ -149,17 +152,39 @@ function getOrCreateTuning(strings) {
 
 // ── ID / dedup helpers ────────────────────────────────────────────────────────
 
+const CYR = {
+  'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z',
+  'и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r',
+  'с':'s','т':'t','у':'u','ф':'f','х':'h','ц':'c','ч':'ch','ш':'sh','щ':'sch',
+  'ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya',
+};
+function translit(s) { return s.replace(/[а-яё]/g, c => CYR[c] ?? c); }
+
 function slugify(s) {
-  return s.toLowerCase().replace(/['']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  return translit(s.toLowerCase().replace(/['']/g,''))
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 }
-function makeId(artist, song) { return `${slugify(artist)}-${slugify(song)}`; }
+function makeId(artist, song) {
+  const base = `${slugify(artist)}-${slugify(song)}`;
+  return base || `${slugify(artist)}-${song.replace(/\D+/g,'') || 'x'}`;
+}
 
+// Unicode-aware: strips parens, lowercases, collapses ё→е, keeps all Unicode letters/digits
+function normTitle(t) {
+  return t.replace(/\([^)]*\)/g,'').toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+}
 function pairKey(artist, song) {
-  const n = s => s.toLowerCase().replace(/\([^)]*\)/g,' ').replace(/[^a-z0-9]/g,'');
-  return `${n(artist)}::${n(song)}`;
+  return `${normTitle(artist)}::${normTitle(song)}`;
 }
 
-function normalizeArtist(s) { return s.toLowerCase().replace(/[^a-z0-9]/g,''); }
+function normalizeArtist(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}]/gu,''); }
+
+// Titles that indicate "this is the standard-tuning version of a song"
+const VARIANT_MARKER_SUBS = ['оригинальном строе'];
+function isVariantMarker(title) {
+  const t = title.toLowerCase();
+  return VARIANT_MARKER_SUBS.some(s => t.includes(s));
+}
 
 // ── Net ───────────────────────────────────────────────────────────────────────
 
@@ -227,8 +252,9 @@ function emptyStats() {
 }
 
 async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx, totalArtists) {
-  const pool    = new Map();
-  const seenIds = new Set();
+  const pool             = new Map();
+  const seenIds          = new Set();
+  const variantMarkerKeys = new Set();  // pairKeys whose alt-tuning version was also seen
   let from = 0;
   let page_n = 0;
 
@@ -251,6 +277,9 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       seenIds.add(song.songId);
       st.uniqueSongs++;
 
+      const pk = pairKey(song.artist, song.title);
+      if (isVariantMarker(song.title)) variantMarkerKeys.add(pk);
+
       if (titleRejected(song.title)) { st.rejectedTitle++; continue; }
 
       const tunings = extractNormalized(song.tracks, st);
@@ -259,7 +288,6 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       const nonStd = tunings.filter(t => !isEStd6(t.midi));
       if (!nonStd.length) { st.allEStd++; continue; }
 
-      const pk = pairKey(song.artist, song.title);
       const cur = pool.get(pk);
       if (!cur || nonStd[0].views > cur.tunings[0].views) {
         pool.set(pk, { song, tunings: nonStd });
@@ -289,6 +317,7 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
   const top = candidates.slice(0, PER_ARTIST);
 
   const results = [];
+  const batchIds = new Set(existingIds);  // guard against slug collisions within this batch
   for (const { song, tunings } of top) {
     const main    = tunings[0];
     const alts    = tunings.slice(1, 3);
@@ -296,15 +325,20 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
     const mainT   = getOrCreateTuning(strings);
     const altTs   = alts.map(a => getOrCreateTuning(tuningToStrings(a.midi)));
 
+    let baseId = makeId(artistName, song.title);
+    const entryId = batchIds.has(baseId) ? `${baseId}-${song.songId}` : baseId;
+    batchIds.add(entryId);
+
     const entry = {
-      id:     makeId(artistName, song.title),
+      id:     entryId,
       song:   song.title,
       artist: artistName,
       t:      mainT,
       sid:    song.songId,
       src:    'songsterr',
     };
-    if (altTs.length) { entry.c = 1; entry.alts = altTs; st.conflicts++; }
+    const hasConflict = altTs.length > 0 || variantMarkerKeys.has(pairKey(artistName, song.title));
+    if (hasConflict) { entry.c = 1; if (altTs.length) entry.alts = altTs; st.conflicts++; }
     results.push(entry);
   }
   st.proposed += results.length;

@@ -28270,6 +28270,396 @@
    "sid": 413719,
    "src": "songsterr",
    "unusual": true
+  },
+  {
+   "id": "psiheya-beskonechnyy-stuk-shagov",
+   "song": "Бесконечный Стук Шагов",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 388042,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-refleks-hichkoka",
+   "song": "Рефлекс Хичкока",
+   "artist": "Психея",
+   "t": "drop-cs",
+   "sid": 387575,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-lezviem-serdca",
+   "song": "Лезвием сердца",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 452172,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-spasus-tabletkami",
+   "song": "Спасусь Таблетками",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 387573,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-on-ne-pridet-for-girls",
+   "song": "Он не придёт",
+   "artist": "Психея",
+   "t": "drop-d",
+   "sid": 759244,
+   "src": "songsterr",
+   "c": 1,
+   "note": "Две транскрипции расходятся: Drop D и Open D (D A D F# A D). Обе не совпадают с обычным для группы Drop B — проверь на слух."
+  },
+  {
+   "id": "psiheya-nol-00-nol",
+   "song": "Ноль 00 Ноль",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 520924,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-ot-ad-a-do-ra-ya",
+   "song": "От Ад(А) До Ра(Я)",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 387397,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-vfiuchsikicchyucrch",
+   "song": "ВFИUЧСИKИCCHYUCRCH",
+   "artist": "Психея",
+   "t": "drop-cs",
+   "sid": 462346,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-navsegda",
+   "song": "Навсегда",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 479983,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-pokolenie-ty",
+   "song": "Поколение Ты",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 87946,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-lyudyam-planety-zemlya",
+   "song": "Людям планеты Земля",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 512093,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-180-bpm-mdma",
+   "song": "180 BPM + Mdma",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 499630,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-revolyuciya-sebya",
+   "song": "Революция себя",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 459831,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-ubey-menta",
+   "song": "Убей Мента",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 87943,
+   "src": "songsterr",
+   "c": 1,
+   "alts": [
+    "std-eb"
+   ]
+  },
+  {
+   "id": "psiheya-w-w-w-woy-walenkiy-wir",
+   "song": "W.W.W. (Wой Wаленький Wир)",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 87944,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-tishina",
+   "song": "тишина",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 479993,
+   "src": "songsterr",
+   "c": 1
+  },
+  {
+   "id": "psiheya-mif-o-rozovyh-delikatesah-correct",
+   "song": "Миф о розовых деликатесах (correct)",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 632014,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-urod",
+   "song": "Урод",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 1037332,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-vich-iisus",
+   "song": "Вич Иисус",
+   "artist": "Психея",
+   "t": "drop-cs",
+   "sid": 935968,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-applikaciya",
+   "song": "Аппликация",
+   "artist": "Психея",
+   "t": "drop-cs",
+   "sid": 570891,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-klon-future",
+   "song": "Клон Future",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 549013,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-lyudi-vrut-tebe-ty-vresh-lyudyam-no-esche-chasche-ty-vresh-sam-sebe",
+   "song": "Люди врут тебе, ты врешь людям, но еще чаще ты врешь сам себе",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 570473,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-slezy",
+   "song": "Слёзы",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 548776,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-shlyuha",
+   "song": "Шлюха",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 548779,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-esli-ty-menya-slyshish",
+   "song": "Если ты меня слышишь...",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 2891903,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-net-serebryanoy-puley",
+   "song": "Нет(Серебряной пулей)",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 2099347,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-boysya-vidya",
+   "song": "Бойся видя",
+   "artist": "Психея",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "sid": 923657,
+   "src": "songsterr",
+   "note": "Строй отличается от обычного для группы Drop B — не подтверждено, проверь на слух."
+  },
+  {
+   "id": "psiheya-eretiki",
+   "song": "Еретики",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 593336,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-e",
+   "song": "Э>",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 548775,
+   "src": "songsterr",
+   "c": 1,
+   "alts": [
+    "drop-cs"
+   ]
+  },
+  {
+   "id": "psiheya-orientir-guitar-training",
+   "song": "Ориентир (guitar training)",
+   "artist": "Психея",
+   "t": "drop-cs",
+   "sid": 599525,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-lyubov-i-vechnost",
+   "song": "Любовь И Вечность",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 380673,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-pen",
+   "song": "Пен@",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 1186561,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-vskrylis-rany",
+   "song": "Вскрылись раны",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 565491,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-stekla-plenka-stai",
+   "song": "Стёкла, плёнка, стаи",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 911618,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-sneg",
+   "song": "Снег",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 453113,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-gimn-zhertv-buduschih-samoubiyc",
+   "song": "Гимн Жертв Будущих Самоубийц",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 89933,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-samyy-plohoy",
+   "song": "Самый плохой",
+   "artist": "Психея",
+   "t": "gs1-ds2-gs2-cs3-f3-as3",
+   "sid": 601822,
+   "src": "songsterr",
+   "note": "Строй отличается от обычного для группы Drop B — не подтверждено, проверь на слух."
+  },
+  {
+   "id": "psiheya-malysh",
+   "song": "Малыш",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 548777,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-sid-spears-523747",
+   "song": "Sid Spears",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 523747,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-v-lico",
+   "song": "В лицо",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 594346,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-ubey-menya-dvazhdy",
+   "song": "Убей меня дважды",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 1186555,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-nablyudatel-za-nablyudatelyami",
+   "song": "Наблюдатель за наблюдателями",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 1045873,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-uchi-menya",
+   "song": "Учи меня",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 572282,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-bumazhnaya-nit",
+   "song": "Бумажная нить",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 476522,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-ne-znayu",
+   "song": "Не Знаю",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 933067,
+   "src": "songsterr"
+  },
+  {
+   "id": "psiheya-hlopya-hirosimy",
+   "song": "Хлопья Хиросимы",
+   "artist": "Психея",
+   "t": "std-d",
+   "sid": 1298154,
+   "src": "songsterr",
+   "note": "Строй отличается от обычного для группы Drop B — не подтверждено, проверь на слух."
+  },
+  {
+   "id": "psiheya-tebya-bolshe-net",
+   "song": "Тебя больше нет",
+   "artist": "Психея",
+   "t": "drop-b",
+   "sid": 2789162,
+   "src": "songsterr"
   }
  ]
 }
