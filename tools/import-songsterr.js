@@ -1,34 +1,54 @@
 #!/usr/bin/env node
 'use strict';
 
-// tools/import-songsterr.js
+// tools/import-songsterr.js  v4
 // Usage: node tools/import-songsterr.js "Artist1" "Artist2" ...
 //
-// Writes proposals to tunings.proposed.json. Never touches tunings.json directly.
+// Writes proposals to tunings.proposed.json (schema 2 format).
+// Checkpoint per artist in tools/.import-state.json — restart-safe.
+// NEVER touches tunings.json directly.
 
-const { readFileSync, writeFileSync } = require('fs');
+const { readFileSync, writeFileSync, existsSync } = require('fs');
 const { join } = require('path');
+const zlib = require('zlib');
+
+// Force unbuffered stdout so watchdogs see every line immediately
+if (process.stdout._handle) process.stdout._handle.setBlocking(true);
+function print(s) { process.stdout.write(s + '\n'); }
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const NOTES       = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-const E_STD_6     = [64, 59, 55, 50, 45, 40];   // 6-string E standard, hi→lo
-const UA          = 'guitar-tuner-importer (tuner.artofrental.com)';
-const DELAY_MS    = 1100;
-const PAGE_SIZE   = 100;
-const MIN_VIEWS   = 500;                          // filter 4
-const PER_ARTIST  = 40;                           // filter 6
-const MIDI_LOW_A1 = 33;                           // A1 — lowest sane fret
-const MIDI_LOW_A2 = 45;                           // A2 — if above this, discard
+const NOTES      = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const NOTE_SAFE  = {'C#':'Cs','D#':'Ds','F#':'Fs','G#':'Gs','A#':'As'};
+const E_STD_6    = [64, 59, 55, 50, 45, 40];  // hi→lo
+const UA         = 'guitar-tuner-importer (github.com/marr59/guitar-tuner)';
+const DELAY_MS   = 1100;
+const PAGE_SIZE  = 100;
+const MIN_VIEWS  = 300;
+const PER_ARTIST = 150;
+const TOP_MIN    = 55;
+const TOP_MAX    = 68;
+const BOT_MIN    = 26;
+const BOT_MAX    = 48;
+const KEEPALIVE_MS = 8000;  // print a tick every 8s so watchdog stays quiet
 
-// ── Title rejection (filter 2) ────────────────────────────────────────────────
+// ── Title rejection ───────────────────────────────────────────────────────────
 
 const REJECT_WORDS = [
   'live','acoustic','cover','remix','demo','karaoke',
   'instrumental','backing','tribute','medley','session',
+  'lesson','slowed','tab','octave',
 ];
-// substrings that flag transpositions / non-originals
-const REJECT_SUBS  = ['drop ','standard','tuning','(half step','(full step'];
+const REJECT_SUBS  = [
+  'drop ','standard','tuning','(half step','(full step','bass down','ver.',
+];
+const REJECT_RX    = [
+  /\d+\s*%/,
+  /\(\s*\d+-string/i,
+  /\d+-string\s*\)/i,
+  /\bspeed\b/i,
+  /\bslowed\b/i,
+];
 
 function titleRejected(title) {
   const t = title.toLowerCase();
@@ -36,7 +56,10 @@ function titleRejected(title) {
     if (new RegExp(`\\b${w}\\b`).test(t)) return `word:${w}`;
   }
   for (const s of REJECT_SUBS) {
-    if (t.includes(s)) return `substr:"${s.trim()}"`;
+    if (t.includes(s)) return `substr:${s.trim()}`;
+  }
+  for (const rx of REJECT_RX) {
+    if (rx.test(title)) return `rx:${rx}`;
   }
   return null;
 }
@@ -47,7 +70,6 @@ function midiToNote(m) {
   return NOTES[m % 12] + String(Math.floor(m / 12) - 1);
 }
 
-// Songsterr: hi→lo. Our format: lo→hi.
 function tuningToStrings(midiHiLo) {
   return [...midiHiLo].reverse().map(midiToNote);
 }
@@ -56,50 +78,117 @@ function isEStd6(midiHiLo) {
   return midiHiLo.length === 6 && midiHiLo.every((v, i) => v === E_STD_6[i]);
 }
 
-// Octave normalization (filter 3):
-// Shift up by octaves until lowest >= A1(33). Discard if lowest > A2(45).
-// Returns normalised hi→lo array, or null to discard.
+// Octave normalization v2: anchor on UPPER string (midiHiLo[0]).
 function normalizeOctave(midiHiLo) {
+  if (!midiHiLo || midiHiLo.length < 6) return null;
   let m = [...midiHiLo];
-  const low = () => Math.min(...m);
-  while (low() < MIDI_LOW_A1) m = m.map(x => x + 12);
-  if   (low() > MIDI_LOW_A2) return null;        // suspiciously high lowest string
+  while (m[0] >= 70) m = m.map(x => x - 12);
+  while (m[0] <= 52) m = m.map(x => x + 12);
+  const top = m[0], bot = m[m.length - 1];
+  if (top < TOP_MIN || top > TOP_MAX) return null;
+  if (bot < BOT_MIN || bot > BOT_MAX) return null;
+  if (![6, 7, 8].includes(m.length)) return null;
   return m;
 }
 
-function arrEq(a, b) { return a.length === b.length && a.every((v,i) => v === b[i]); }
+// ── Tuning name / id ──────────────────────────────────────────────────────────
+
+const STD  = { 5:[0,5,10,15,19],       6:[0,5,10,15,19,24],
+               7:[0,5,10,15,19,24,29], 8:[0,5,10,15,19,24,29,34] };
+const DROP = { 5:[0,7,12,17,21],       6:[0,7,12,17,21,26],
+               7:[0,7,12,17,21,26,31], 8:[0,7,12,17,21,26,31,36] };
+
+function toMidi(n) {
+  const mo = String(n).match(/^([A-G]#?)(-?\d)$/);
+  if (!mo) return null;
+  return NOTES.indexOf(mo[1]) + (parseInt(mo[2]) + 1) * 12;
+}
+
+function matchIntervals(midis, pattern) {
+  if (!pattern || midis.length !== pattern.length) return false;
+  const base = midis[0];
+  return pattern.every((offset, i) => midis[i] === base + offset);
+}
+
+function autoTuningName(strings) {
+  const midis = strings.map(toMidi);
+  if (midis.includes(null)) return strings.join(' ');
+  const n = midis.length;
+  const lowNote = NOTES[midis[0] % 12];
+  const suffix  = n > 6 ? ` (${n}-string)` : '';
+  if (matchIntervals(midis, STD[n]))  return `${lowNote} Standard${suffix}`;
+  if (matchIntervals(midis, DROP[n])) return `Drop ${lowNote}${suffix}`;
+  return strings.join(' ');
+}
+
+function autoTuningId(strings) {
+  return strings.map(s =>
+    (NOTE_SAFE[s.slice(0,-1)] || s.slice(0,-1)).toLowerCase() + s.slice(-1)
+  ).join('-');
+}
+
+// ── Tuning table management ───────────────────────────────────────────────────
+
+let newTunings;
+let tuningMap;
+
+function getOrCreateTuning(strings) {
+  const key = strings.join(',');
+  if (tuningMap.has(key)) return tuningMap.get(key);
+  for (const t of newTunings) {
+    if (t.strings.join(',') === key) { tuningMap.set(key, t.id); return t.id; }
+  }
+  let id = autoTuningId(strings);
+  const existingIds = new Set(newTunings.map(t => t.id));
+  let suffix = 0;
+  while (existingIds.has(id)) id = autoTuningId(strings) + '-' + (++suffix);
+  newTunings.push({ id, name: autoTuningName(strings), instrument: `guitar${strings.length}`, strings: [...strings] });
+  tuningMap.set(key, id);
+  return id;
+}
 
 // ── ID / dedup helpers ────────────────────────────────────────────────────────
 
 function slugify(s) {
   return s.toLowerCase().replace(/['']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 }
-function makeId(artist, song)    { return `${slugify(artist)}-${slugify(song)}`; }
-function pairKey(artist, song)   {
-  const n = s => s.toLowerCase().replace(/[^a-z0-9]/g,'');
+function makeId(artist, song) { return `${slugify(artist)}-${slugify(song)}`; }
+
+function pairKey(artist, song) {
+  const n = s => s.toLowerCase().replace(/\([^)]*\)/g,' ').replace(/[^a-z0-9]/g,'');
   return `${n(artist)}::${n(song)}`;
 }
-function normalizeArtist(s)      { return s.toLowerCase().replace(/[^a-z0-9]/g,''); }
+
+function normalizeArtist(s) { return s.toLowerCase().replace(/[^a-z0-9]/g,''); }
 
 // ── Net ───────────────────────────────────────────────────────────────────────
 
 async function fetchPage(pattern, from) {
   const url = `https://www.songsterr.com/api/songs?pattern=${encodeURIComponent(pattern)}&size=${PAGE_SIZE}&from=${from}`;
   const res  = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for "${pattern}" from=${from}`);
   return res.json();
 }
 
-function songUrl(artist, title, id) {
-  const s = str => str.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-  return `https://www.songsterr.com/a/wsa/${s(artist)}-${s(title)}-tab-s${id}`;
+// Sleep with keepalive ticks so watchdog sees output every KEEPALIVE_MS
+function sleep(ms) {
+  return new Promise(resolve => {
+    let elapsed = 0;
+    const tick = Math.min(KEEPALIVE_MS, ms);
+    const id = setInterval(() => {
+      elapsed += tick;
+      if (elapsed < ms) {
+        print(`  [keepalive +${elapsed}ms]`);
+      } else {
+        clearInterval(id);
+        resolve();
+      }
+    }, tick);
+  });
 }
 
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+// ── Guitar track extraction + octave normalization ────────────────────────────
 
-// ── Guitar track extraction + octave normalisation ────────────────────────────
-
-// Returns [{midi (hi→lo, normalised), views}] sorted by views desc, or null.
 function extractNormalized(tracks, st) {
   const guitar = (tracks || []).filter(t =>
     t.instrument && t.instrument.includes('Guitar') &&
@@ -107,7 +196,6 @@ function extractNormalized(tracks, st) {
   );
   if (!guitar.length) return null;
 
-  // Accumulate views per raw tuning
   const raw = new Map();
   for (const t of guitar) {
     const key = t.tuning.join(',');
@@ -115,14 +203,13 @@ function extractNormalized(tracks, st) {
     raw.get(key).views += (t.views || 0);
   }
 
-  // Normalize octave, collapse octave duplicates
   const norm = new Map();
   for (const { midi, views } of raw.values()) {
     const n = normalizeOctave(midi);
-    if (!n) { st.suspiciousLow++; continue; }
+    if (!n) { st.discardedPlausibility++; continue; }
     const key = n.join(',');
     if (!norm.has(key)) norm.set(key, { midi: n, views: 0 });
-    norm.get(key).views += views;          // merge octave copies into one
+    norm.get(key).views += views;
   }
 
   if (!norm.size) return null;
@@ -131,189 +218,291 @@ function extractNormalized(tracks, st) {
 
 // ── Per-artist scan ───────────────────────────────────────────────────────────
 
-async function scanArtist(artistName, existingIds, existingPairs, st) {
-  const candidates = [];
-  const seenIds    = new Set();
+function emptyStats() {
+  return {
+    fetched:0, wrongArtist:0, uniqueSongs:0, rejectedTitle:0,
+    noGuitarTracks:0, discardedPlausibility:0, allEStd:0,
+    belowViews:0, alreadyInBase:0, artistLimitCut:0, conflicts:0, proposed:0,
+  };
+}
+
+async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx, totalArtists) {
+  const pool    = new Map();
+  const seenIds = new Set();
   let from = 0;
+  let page_n = 0;
 
   while (true) {
     await sleep(DELAY_MS);
+    page_n++;
     let page;
-    try   { page = await fetchPage(artistName, from); }
-    catch (e) { console.error(`  Fetch error from=${from}: ${e.message}`); break; }
+    try {
+      page = await fetchPage(artistName, from);
+    } catch (e) {
+      print(`  [${artistIdx}/${totalArtists}] "${artistName}" pg${page_n} ERROR: ${e.message}`);
+      break;
+    }
 
+    let pageKept = 0;
     for (const song of page) {
       st.fetched++;
-
-      // Filter 1: exact artist match (punctuation-stripped)
-      if (normalizeArtist(song.artist) !== normalizeArtist(artistName)) {
-        st.wrongArtist++; continue;
-      }
+      if (normalizeArtist(song.artist) !== normalizeArtist(artistName)) { st.wrongArtist++; continue; }
       if (seenIds.has(song.songId)) continue;
       seenIds.add(song.songId);
       st.uniqueSongs++;
 
-      // Filter 2: title keywords
       if (titleRejected(song.title)) { st.rejectedTitle++; continue; }
 
-      // Filter 7: dedup against existing catalog
-      if (existingPairs.has(pairKey(song.artist, song.title)) ||
-          existingIds.has(makeId(song.artist, song.title))) {
-        st.alreadyInBase++; continue;
-      }
-
-      // Filters 3+5: extract, normalise, skip tracks with no guitar
       const tunings = extractNormalized(song.tracks, st);
       if (!tunings) { st.noGuitarTracks++; continue; }
 
-      // Filter: all tunings are E standard after normalization
       const nonStd = tunings.filter(t => !isEStd6(t.midi));
       if (!nonStd.length) { st.allEStd++; continue; }
 
-      // Filter 4: view threshold on main (highest-views) tuning
-      if (nonStd[0].views < MIN_VIEWS) { st.belowViews++; continue; }
-
-      candidates.push({ song, tunings: nonStd });
+      const pk = pairKey(song.artist, song.title);
+      const cur = pool.get(pk);
+      if (!cur || nonStd[0].views > cur.tunings[0].views) {
+        pool.set(pk, { song, tunings: nonStd });
+        pageKept++;
+      }
     }
+
+    print(`  [${artistIdx}/${totalArtists}] "${artistName}" pg${page_n} got=${page.length} kept_so_far=${pool.size}`);
 
     if (page.length < PAGE_SIZE) break;
     from += PAGE_SIZE;
-    if (from > 500) break;                // safety cap
+    if (from > 800) break;
   }
 
-  // Filter 6: per-artist limit — top 40 by main views
+  // Filter against catalog + views threshold
+  const candidates = [];
+  for (const { song, tunings } of pool.values()) {
+    const pk = pairKey(song.artist, song.title);
+    if (existingPairs.has(pk) || existingIds.has(makeId(song.artist, song.title))) { st.alreadyInBase++; continue; }
+    if (tunings[0].views < MIN_VIEWS) { st.belowViews++; continue; }
+    candidates.push({ song, tunings });
+  }
+
   candidates.sort((a, b) => b.tunings[0].views - a.tunings[0].views);
   const cut = candidates.length - PER_ARTIST;
   if (cut > 0) st.artistLimitCut += cut;
   const top = candidates.slice(0, PER_ARTIST);
 
-  // Build proposed entries
   const results = [];
   for (const { song, tunings } of top) {
-    const main   = tunings[0];
-    const others = tunings.slice(1, 3);  // keep at most 2 alternates (filter 8)
-    if (others.length) st.conflicts++;
+    const main    = tunings[0];
+    const alts    = tunings.slice(1, 3);
+    const strings = tuningToStrings(main.midi);
+    const mainT   = getOrCreateTuning(strings);
+    const altTs   = alts.map(a => getOrCreateTuning(tuningToStrings(a.midi)));
 
     const entry = {
-      id:         makeId(song.artist, song.title),
-      song:       song.title,
-      artist:     song.artist,
-      songId:     song.songId,
-      confidence: 'medium',
-      verified:   false,
-      sources:    ['Songsterr catalog API'],
-      url:        songUrl(song.artist, song.title, song.songId),
-      strings:    tuningToStrings(main.midi),
-      mainViews:  main.views,
+      id:     makeId(artistName, song.title),
+      song:   song.title,
+      artist: artistName,
+      t:      mainT,
+      sid:    song.songId,
+      src:    'songsterr',
     };
-    if (others.length) {
-      entry.candidates = others.map(o => ({ strings: tuningToStrings(o.midi), views: o.views }));
-      entry.conflict = true;
-    }
+    if (altTs.length) { entry.c = 1; entry.alts = altTs; st.conflicts++; }
     results.push(entry);
   }
   st.proposed += results.length;
   return results;
 }
 
+// ── Checkpoint helpers ────────────────────────────────────────────────────────
+
+function loadState(statePath) {
+  if (!existsSync(statePath)) return { done: {}, proposed: [], tunings: null };
+  try {
+    return JSON.parse(readFileSync(statePath, 'utf8'));
+  } catch { return { done: {}, proposed: [], tunings: null }; }
+}
+
+function saveState(statePath, state) {
+  writeFileSync(statePath, JSON.stringify(state, null, 2), 'utf8');
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-function emptyStats() {
-  return {
-    fetched:0, wrongArtist:0, uniqueSongs:0, rejectedTitle:0, noGuitarTracks:0,
-    suspiciousLow:0, allEStd:0, belowViews:0, alreadyInBase:0,
-    artistLimitCut:0, conflicts:0, proposed:0,
-  };
-}
 function addStats(dst, src) { for (const k of Object.keys(dst)) dst[k] += (src[k]||0); }
 
 async function main() {
   const artists = process.argv.slice(2);
   if (!artists.length) {
-    console.error('Usage: node tools/import-songsterr.js "Artist1" "Artist2" ...');
+    print('Usage: node tools/import-songsterr.js "Artist1" ...');
     process.exit(1);
   }
 
-  const root    = join(__dirname, '..');
-  const catalog = JSON.parse(readFileSync(join(root, 'tunings.json'), 'utf8'));
-  const existingIds   = new Set([...(catalog.tunings||[]).map(t=>t.id), ...(catalog.songs||[]).map(s=>s.id)]);
+  const root      = join(__dirname, '..');
+  const catalog   = JSON.parse(readFileSync(join(root, 'tunings.json'), 'utf8'));
+  const statePath = join(__dirname, '.import-state.json');
+  const outPath   = join(root, 'tunings.proposed.json');
+
+  // Load checkpoint state
+  const state = loadState(statePath);
+
+  // Init tuning table from checkpoint (if resuming) or from catalog
+  if (state.tunings && state.tunings.length) {
+    newTunings = state.tunings.map(t => ({ ...t }));
+  } else {
+    newTunings = [...(catalog.tunings || []).map(t => ({ ...t }))];
+  }
+  tuningMap = new Map();
+  for (const t of newTunings) tuningMap.set(t.strings.join(','), t.id);
+
+  const existingIds   = new Set([
+    ...(catalog.tunings||[]).map(t=>t.id),
+    ...(catalog.songs||[]).map(s=>s.id),
+  ]);
   const existingPairs = new Set((catalog.songs||[]).map(s => pairKey(s.artist, s.song)));
 
   // ── Control checks ──────────────────────────────────────────────────────────
-  console.log('=== Control checks ===');
+  print('=== Control checks (octave normalization v2) ===');
   const showNorm = (midi, label) => {
-    const n = normalizeOctave(midi);
+    const n   = normalizeOctave(midi);
     const str = n ? tuningToStrings(n).join(' ') : 'DISCARDED';
-    const std = n && isEStd6(n) ? ' ← E-std SKIP' : '';
-    console.log(`  [${midi}] → ${str}${std}  (${label})`);
+    const tag = n && isEStd6(n) ? '  ← E-std SKIP' : '';
+    print(`  [${midi}] → ${str}${tag}  (${label})`);
   };
-  showNorm([64,59,55,50,45,40], 'E standard — must skip');
-  showNorm([61,56,52,47,42,35], 'Drop B');
-  showNorm([59,54,50,45,40,33], 'Drop A');
-  showNorm([49,44,40,35,30,23], 'Drop B octave-down — must collapse to same Drop B');
-  console.log('');
+  showNorm([64,59,55,50,45,40],       'E standard → must skip');
+  showNorm([61,56,52,47,42,35],       'Drop B');
+  showNorm([59,54,50,45,40,33],       'Drop A');
+  showNorm([75,70,66,61,56,51,46,41], '8-str → must lower 1 oct');
+  showNorm([40,35,31,26,21,14],       'Too-low bass → must discard');
+  print('');
 
   // ── Scan ────────────────────────────────────────────────────────────────────
-  const global   = emptyStats();
-  const byArtist = {};
-  const allProposed = [];
+  const global     = emptyStats();
+  const byArtist   = {};
+  const allProposed = [...(state.proposed || [])];
+  const failed     = [];
 
-  for (const artist of artists) {
-    process.stdout.write(`→ "${artist}"... `);
-    const st       = emptyStats();
-    const proposed = await scanArtist(artist, existingIds, existingPairs, st);
+  // Re-accumulate global stats from already-done artists
+  for (const [artist, st] of Object.entries(state.done || {})) {
+    addStats(global, st);
+    byArtist[artist] = st;
+  }
+
+  for (let i = 0; i < artists.length; i++) {
+    const artist = artists[i];
+
+    if (state.done && state.done[artist]) {
+      print(`[${i+1}/${artists.length}] "${artist}" — SKIP (checkpoint)`);
+      continue;
+    }
+
+    print(`[${i+1}/${artists.length}] Scanning "${artist}"...`);
+
+    let proposed;
+    const st = emptyStats();
+    try {
+      proposed = await scanArtist(artist, existingIds, existingPairs, st, i+1, artists.length);
+    } catch (e) {
+      print(`  ERROR scanning "${artist}": ${e.message}`);
+      failed.push(artist);
+      continue;
+    }
+
     allProposed.push(...proposed);
     addStats(global, st);
     byArtist[artist] = st;
-    console.log(`${st.uniqueSongs} unique → ${st.proposed} proposed`);
+
+    // Save checkpoint
+    state.done    = state.done || {};
+    state.done[artist] = st;
+    state.proposed = allProposed;
+    state.tunings  = newTunings;
+    saveState(statePath, state);
+
+    print(`  ✓ "${artist}": unique=${st.uniqueSongs} proposed=${st.proposed}`);
   }
 
-  // ── Write ────────────────────────────────────────────────────────────────────
-  const outPath = join(root, 'tunings.proposed.json');
-  writeFileSync(outPath, JSON.stringify({
+  // ── Plausibility check ───────────────────────────────────────────────────────
+  print('\n=== Plausibility check: верхняя струна 55–68 ===');
+  let checkPassed = 0, checkFailed = 0;
+  for (const entry of allProposed) {
+    const t = newTunings.find(x => x.id === entry.t);
+    if (!t) { print(`  FAIL: tuning "${entry.t}" not found — ${entry.id}`); checkFailed++; continue; }
+    const topMidi = toMidi(t.strings[t.strings.length - 1]);
+    if (topMidi === null || topMidi < TOP_MIN || topMidi > TOP_MAX) {
+      print(`  FAIL: top=${topMidi} — ${entry.artist} / ${entry.song}`);
+      checkFailed++;
+    } else {
+      checkPassed++;
+    }
+  }
+  print(`  проверка верхней струны: ${checkPassed} из ${checkPassed + checkFailed}`);
+  if (checkFailed > 0) {
+    print(`\n❌ СТОП: ${checkFailed} записей не прошли проверку. Коммит запрещён.`);
+    process.exit(1);
+  }
+  print('  ✅ все прошли\n');
+
+  // ── Write output ─────────────────────────────────────────────────────────────
+  const outObj = {
     generated: new Date().toISOString(),
     artists,
-    globalStats: global,
+    stats:    global,
     byArtist,
     proposed: allProposed,
-  }, null, 2), 'utf8');
+    tunings:  newTunings,
+  };
+  const outRaw = JSON.stringify(outObj, null, 2);
+  writeFileSync(outPath, outRaw, 'utf8');
+
+  const rawKB  = Math.round(Buffer.byteLength(outRaw) / 1024);
+  const gzipKB = Math.round(zlib.gzipSync(outRaw).length / 1024);
+
+  // ── Index.html guards ────────────────────────────────────────────────────────
+  const { execSync } = require('child_process');
+  print('=== grep защитных ===');
+  ['analyser.connect(mute)', 'detectAgainst', 'ksBuffer'].forEach(sig => {
+    try {
+      const n = execSync(`grep -c "${sig}" "${join(root,'index.html')}"`, {encoding:'utf8'}).trim();
+      print(`  ${sig} = ${n}`);
+    } catch { print(`  ${sig} = 0  ← ВНИМАНИЕ`); }
+  });
 
   // ── Report ───────────────────────────────────────────────────────────────────
-  console.log('\n=== FILTER FUNNEL (global) ===');
-  console.log(`Fetched from API:          ${global.fetched}`);
-  console.log(`  - wrong artist:          ${global.wrongArtist}`);
-  console.log(`= Unique songs:            ${global.uniqueSongs}`);
-  console.log(`  - title keyword:         ${global.rejectedTitle}`);
-  console.log(`  - already in base:       ${global.alreadyInBase}`);
-  console.log(`  - no guitar tracks:      ${global.noGuitarTracks}`);
-  console.log(`  - (suspicious tunings):  ${global.suspiciousLow}  (track-level, not song)`);
-  console.log(`  - all E standard:        ${global.allEStd}`);
-  console.log(`  - below ${MIN_VIEWS} views:        ${global.belowViews}`);
-  console.log(`  - artist cap cut:        ${global.artistLimitCut}`);
-  console.log(`= Proposed:                ${global.proposed}  (of which ⚠ conflict: ${global.conflicts})`);
-
-  console.log('\n=== BY ARTIST ===');
   const pad = (s, n) => String(s).padStart(n);
+
+  print('\n=== FILTER FUNNEL ===');
+  print(`Fetched from API:              ${global.fetched}`);
+  print(`  - wrong artist:              ${global.wrongArtist}`);
+  print(`= Unique songs:                ${global.uniqueSongs}`);
+  print(`  - title keyword:             ${global.rejectedTitle}`);
+  print(`  - no guitar tracks:          ${global.noGuitarTracks}`);
+  print(`  - discarded plausibility:    ${global.discardedPlausibility}  (track-level)`);
+  print(`  - all E standard:            ${global.allEStd}`);
+  print(`  - already in base:           ${global.alreadyInBase}`);
+  print(`  - below ${MIN_VIEWS} views:            ${global.belowViews}`);
+  print(`  - artist cap cut:            ${global.artistLimitCut}`);
+  print(`= Proposed:                    ${global.proposed}  (conflicts: ${global.conflicts})`);
+  print(`\nTunings: ${catalog.tunings.length} existing + ${newTunings.length - catalog.tunings.length} new = ${newTunings.length}`);
+  print(`Output: ${rawKB} KB raw / ${gzipKB} KB gzip → ${outPath}`);
+
+  print('\n=== BY ARTIST ===');
   for (const [artist, s] of Object.entries(byArtist)) {
-    console.log(
-      `  ${artist.padEnd(22)}` +
-      `  unique:${pad(s.uniqueSongs,4)}` +
+    print(
+      `  ${artist.padEnd(24)}` +
+      `  uniq:${pad(s.uniqueSongs,4)}` +
       `  titleKW:${pad(s.rejectedTitle,3)}` +
       `  noGuitar:${pad(s.noGuitarTracks,3)}` +
       `  eStd:${pad(s.allEStd,3)}` +
       `  views<${MIN_VIEWS}:${pad(s.belowViews,3)}` +
-      `  proposed:${pad(s.proposed,3)}` +
+      `  ➜${pad(s.proposed,3)}` +
       (s.conflicts ? `  ⚠${s.conflicts}` : '')
     );
   }
 
-  console.log('\n=== FIRST 10 PROPOSED ===');
-  allProposed.slice(0,10).forEach((e,i) => {
-    console.log(`${pad(i+1,2)}. [${e.strings.join(' ')}]  ${e.artist} — ${e.song}${e.conflict ? '  ⚠' : ''}`);
-    (e.candidates||[]).forEach(c => console.log(`      alt: [${c.strings.join(' ')}] (${c.views}v)`));
-  });
+  if (failed.length) {
+    print(`\n⚠ Сбойные исполнители (${failed.length}): ${failed.join(', ')}`);
+  }
 
-  console.log(`\nOutput → ${outPath}  (${allProposed.length} entries)`);
+  print(`\nDONE artists=${artists.length - failed.length} songs=${global.uniqueSongs} proposed=${global.proposed}`);
+  print('⚠  НЕ коммить tunings.proposed.json без ревью Ильмара!');
 }
 
-main().catch(e => { console.error(e.stack || e); process.exit(1); });
+main().catch(e => { print(e.stack || String(e)); process.exit(1); });
