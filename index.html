@@ -1005,11 +1005,22 @@ let deferredPrompt=null;
   const ua=navigator.userAgent;
   const isIOS=/iPad|iPhone|iPod/.test(ua);
   if(isIOS){
-    let hint;
-    if(/CriOS/.test(ua)) hint="Tap Share ⬆︎ next to the address bar, then 'Add to Home Screen'.";
-    else if(/Safari/.test(ua)) hint="Tap Share ⬆︎ at the bottom, then 'Add to Home Screen'.";
-    else hint="Open this page in Safari or Chrome, then Share → Add to Home Screen.";
-    $("installHint").textContent=hint;
+    const shareIcon=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>`;
+    let html;
+    if(/CriOS/.test(ua)){
+      html=`<ol style="margin:4px 0 0 16px;padding:0;line-height:1.7">
+        <li>Tap ${shareIcon} next to the address bar</li>
+        <li>Tap "View More"</li>
+        <li>Tap "Add to Home Screen"</li></ol>`;
+    } else if(/Safari/.test(ua)){
+      html=`<ol style="margin:4px 0 0 16px;padding:0;line-height:1.7">
+        <li>Tap ${shareIcon} at the bottom of the screen</li>
+        <li>Scroll down the list</li>
+        <li>Tap "Add to Home Screen"</li></ol>`;
+    } else {
+      html=`Open this page in Safari or Chrome, then use the share menu → Add to Home Screen.`;
+    }
+    $("installHint").innerHTML=html;
     $("installHint").style.display="block";
   }
   addEventListener('beforeinstallprompt',e=>{
