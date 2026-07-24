@@ -796,6 +796,33 @@
     "https://www.guitartabs.cc/tabs/d/dark_tranquillity/lost_to_apathy_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Down 1 1/2 step (Db Gb B E Ab Db)'. Album 'Character' confirmed."
+  },
+  {
+   "artist": "Avatar",
+   "song": "Bloody Angel",
+   "album": "Hail the Apocalypse",
+   "year": 2014,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "B1",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "Drop B. Tab explicitly labels all six strings from high to low: C# G# E B F# B. Reversed = B F# B E G# C# from low to high = Drop B (C# standard with lowest string dropped 2 semitones). Album not stated in tab; attributed from general knowledge.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/a/avatar/bloody_angel_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab string labels dословно from high to low: 'C#', 'G#', 'E', 'B', 'F#', 'B'. This is Drop B tuning."
   }
  ],
  "_leads": [

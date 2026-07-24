@@ -1,16 +1,18 @@
 {
-  "updated": "2026-07-24T08:35:00Z",
+  "updated": "2026-07-24T08:45:00Z",
   "completed": [
     "Insomnium",
     "Amorphis",
     "Soilwork",
     "Katatonia",
-    "Dark Tranquillity"
+    "Dark Tranquillity",
+    "Avatar"
   ],
-  "in_progress": "Avatar",
+  "in_progress": "Leprous",
   "empty": [],
   "notes": {
     "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums",
-    "Dark Tranquillity": "Conflict within Damage Done album (2002): title track tab says D standard, Monochromatic Stains tab says C# standard. Character (2005) confirmed C# standard."
+    "Dark Tranquillity": "Conflict within Damage Done album (2002): title track tab says D standard, Monochromatic Stains tab says C# standard. Character (2005) confirmed C# standard.",
+    "Avatar": "Only 7 tabs on guitartabs.cc. Bloody Angel has explicit Drop B string labels. Limited coverage."
   }
 }
