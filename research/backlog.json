@@ -29,8 +29,9 @@
   {
     "artist": "Turmion Kätilöt",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 28,
+    "search_log": "Songsterr (per-song tuning stored as MIDI numbers in page JSON) and Ultimate-Guitar (artist page + individual Pro tabs) both opened and read for ~48 songs; they agree closely. Turmion Kätilöt use Drop C as their main tuning, Drop D on early Hoitovirhe-era songs (Teurastaja, Verta Ja Lihaa, Hades, etc.), Drop A on some heavier tracks, plus C standard (Usch) and B standard (Vie Se Pois). A The Razor's Edge interview with MC Raaka Pee confirms Teurastaja was written in a dropped tuning (primary source), making it high confidence; other songs are medium (two tab databases, no primary specifying exact pitch). E-standard-only tabs (Kirosana, Vihko, Pulssi) were skipped."
   },
   {
     "artist": "Battle Beast",

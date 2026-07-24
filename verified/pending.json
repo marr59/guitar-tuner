@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 3,
+  "batch": 4,
   "date": "2026-07-24",
   "entries": [
     {
@@ -1234,6 +1234,787 @@
         "https://www.guitartabs.cc/tabs/k/kalmah/tordah_tab.html"
       ],
       "_verified_by": "Claude — открыл страницу, в шапке 'Tuning: Dropped D' (D A D G B E)"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Teurastaja",
+      "album": "Hoitovirhe",
+      "year": 2004,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. MC Raaka Pee says in interview the song was written in a 'dropped tuning'; Songsterr and Ultimate-Guitar both specify Drop D (D A D G B E).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-teurastaja-tab-s57206",
+        "https://tabs.ultimate-guitar.com/tab/507876",
+        "https://therazorsedge.rocks/2020-04-interview-turmion-katilot/"
+      ],
+      "_verified_by": "Claude — Songsterr guitar track tuning [64,59,55,50,45,38]=E4 B3 G3 D3 A2 D2; UG tab page shows 'Tuning: D A D G B E / Drop D'; interview quote confirms dropped tuning"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Verta Ja Lihaa",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Songsterr and Ultimate-Guitar both list Drop D (D A D G B E).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-verta-ja-lihaa-tab-s81052",
+        "https://tabs.ultimate-guitar.com/tab/507870"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG tab page shows 'Tuning: D A D G B E / Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Hades",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar (Pro tab).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-hades-tab-s389139",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG artist page lists Hades tuning 'Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Lepositeet",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-lepositeet-tab-s57207",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG artist page lists Lepositeet 'Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Liitto",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-liitto-tab-s426989",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG artist page lists Liitto 'Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Pimeyden Morsian",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Songsterr and UG Pro tab agree on Drop D (a simplified UG standard-tuning tab also exists).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-pimeyden-morsian-tab-s426994",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG artist page lists Pimeyden Morsian Pro tab 'Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Rautaketju",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Agreed by Songsterr and two UG tabs.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-rautaketju-tab-s530706",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning D2 A2 D3 G3 B3 E4; UG artist page lists Rautaketju 'Drop D'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Usch",
+      "album": "U.S.C.H!",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard (whole-step-down-from-D / two steps below E standard). Songsterr and UG Pro both label 'C Tuning'; a simplified UG Drop-C tab also exists.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-usch-tab-s388439",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning [60,55,51,46,41,36]=C2 F2 A#2 D#3 G3 C4; UG artist page lists Usch Pro tab 'C Tuning'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Aina Arki",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-aina-arki-tab-s426991",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Aina Arki 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Elävä Koneeksi",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-elava-koneeksi-tab-s632461",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Elävä Koneeksi 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Hyvissä Höyryissä",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-hyvissa-hoyryissa-tab-s426998",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Hyvissä Höyryissä 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Kirottujen Karnevaalit",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-kirottujen-karnevaalit-tab-s426997",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Kirottujen Karnevaalit 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Lataa Ja Varmista",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-lataa-ja-varmista-tab-s4330455",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Lataa Ja Varmista 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Minä Määrään",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Two Songsterr tabs and UG all list Drop C.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-mina-maaraan-tab-s81050",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Minä Määrään 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Nimi Kivessä",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Songsterr and UG Pro tab agree (a UG standard-tuning chord sheet also exists).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-nimi-kivessa-tab-s1388353",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Nimi Kivessä Pro tab 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Paha Ihminen",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-paha-ihminen-tab-s81053",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Paha Ihminen 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Pirun Nyrkki",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-pirun-nyrkki-tab-s57204",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Pirun Nyrkki 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Pyhä Maa",
+      "album": "Pyhä Maa",
+      "year": 2009,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Two Songsterr tabs (incl. a 5-string version) and UG list Drop C.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-pyha-maa-tab-s405358",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Pyhä Maa 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Rehtori",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-rehtori-tab-s426995",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Rehtori 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Silmät Sumeat",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-silmat-sumeat-tab-s426990",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Silmät Sumeat 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Sinulle",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-sinulle-tab-s426993",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Sinulle 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Tirehtööri",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-tirehtoori-tab-s426996",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Tirehtööri 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Vastanaineet",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-vastanaineet-tab-s426992",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning C2 G2 C3 F3 A3 D4; UG artist page lists Vastanaineet 'Drop C'"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Dance Panique",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "Drop A (drop-tuned B standard). Single source (Songsterr) — one of the band's heavier/newer tracks.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-dance-panique-tab-s2828602"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning [59,54,50,45,40,33]=A1 E2 A2 D3 F#3 B3"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Gabriel",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "Drop A. Single source (Songsterr).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-gabriel-tab-s680959"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning A1 E2 A2 D3 F#3 B3"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Revi Minut Auki",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "Drop A. Single source (Songsterr).",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-revi-minut-auki-tab-s3612534"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning A1 E2 A2 D3 F#3 B3"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Vie Se Pois",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "B1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "B standard. Songsterr guitar tab; UG only has a chord sheet defaulting to 'Standard', so pitch is from Songsterr.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-vie-se-pois-tab-s680951"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning [59,54,50,45,40,35]=B1 E2 A2 D3 F#3 B3"
+    },
+    {
+      "artist": "Turmion Kätilöt",
+      "song": "Sikiö",
+      "album": null,
+      "year": null,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Songsterr (Drop A)",
+          "strings": [
+            "A1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "Conflict: Songsterr guitar tab = Drop A (A E A D F# B); Ultimate-Guitar Pro tab labels it 'Standard'. Listed as Drop A per Songsterr but unconfirmed.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/turmion-katilot-sikio-tab-s680961",
+        "https://www.ultimate-guitar.com/artist/18012"
+      ],
+      "_verified_by": "Claude — Songsterr guitar tuning A1 E2 A2 D3 F#3 B3; UG artist page lists Sikiö Pro tab as 'Standard' (disagreement)"
     }
   ],
   "_leads": [
