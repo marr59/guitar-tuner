@@ -8,13 +8,14 @@
   {
     "artist": "Norther",
     "region": "Финляндия",
-    "status": "empty",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": "JSON не распарсился"
   },
   {
     "artist": "Kalmah",
     "region": "Финляндия",
-    "status": "empty",
+    "status": "pending",
     "entries": 0
   },
   {
@@ -272,6 +273,12 @@
   {
     "artist": "God Dethroned",
     "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Gojira",
+    "region": "Франция",
     "status": "pending",
     "entries": 0
   },
