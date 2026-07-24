@@ -1,5 +1,5 @@
 {
-  "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.",
+  "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
   "batch": 2,
   "date": "2026-07-24",
   "entries": [
@@ -883,7 +883,7 @@
       "song": "Blodtorst",
       "album": "Kvelertak",
       "year": 2010,
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
       "conflict": false,
       "variants": [
@@ -899,12 +899,12 @@
           ]
         }
       ],
-      "note": "Drop D. Two independent tabs from the same debut album independently confirm this. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'.",
+      "note": "Drop D. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'. Второй источник (Ulvetid, тот же альбом, 2010) — подтверждает строй группы, а не этой песни: 'Tuning: Drop D'.",
       "sources": [
-        "https://www.guitartabs.cc/tabs/k/kvelertak/blodtorst_tab.html",
-        "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html"
+        "https://www.guitartabs.cc/tabs/k/kvelertak/blodtorst_tab.html"
       ],
-      "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Also opened ulvetid_tab.html (status 200): 'Tuning: Drop D'. Both songs from debut album 'Kvelertak' (2010). Two sources → confidence high."
+      "_second_source_note": "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html",
+      "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Ulvetid tab (другая песня) подтверждает строй группы, а не этой песни — перенесено в заметку."
     },
     {
       "artist": "Stam1na",
@@ -940,7 +940,7 @@
       "song": "Artifacts of the Black Rain",
       "album": "The Jester Race",
       "year": 1996,
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
       "conflict": false,
       "variants": [
@@ -956,12 +956,12 @@
           ]
         }
       ],
-      "note": "C standard (all strings down 4 semitones). Tab says 'Tune down 2 whole step to C'. Two tabs independently confirm In Flames used C standard on mid-90s material: this one (Jester Race 1996) and Behind Space '99 (Colony 1999).",
+      "note": "C standard (all strings down 4 semitones). Tab says 'Tune down 2 whole step to C'. Второй источник (Behind Space, Colony 1999) — подтверждает строй группы, а не этой песни: 'C tuning (C,F,A#,D#,G,C)'.",
       "sources": [
-        "https://www.guitartabs.cc/tabs/i/in_flames/artifacts_of_the_black_rain_tab.html",
-        "https://www.guitartabs.cc/tabs/i/in_flames/behind_space_tab.html"
+        "https://www.guitartabs.cc/tabs/i/in_flames/artifacts_of_the_black_rain_tab.html"
       ],
-      "_verified_by": "Claude — opened artifacts tab (status 200): 'Tune down 2 whole step to C'. Also opened behind_space tab (status 200): 'C tuning (C,F,A#,D#,G,C)'. Both independently confirm C standard."
+      "_second_source_note": "https://www.guitartabs.cc/tabs/i/in_flames/behind_space_tab.html",
+      "_verified_by": "Claude — opened artifacts tab (status 200): 'Tune down 2 whole step to C'. Behind Space tab (другая песня) подтверждает строй группы, а не этой песни — перенесено в заметку."
     },
     {
       "artist": "In Flames",
@@ -995,7 +995,7 @@
       "song": "Are You Dead Yet?",
       "album": "Are You Dead Yet?",
       "year": 2005,
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
       "conflict": false,
       "variants": [
@@ -1011,12 +1011,12 @@
           ]
         }
       ],
-      "note": "Drop C. Tab explicitly labels all six strings from high to low: D A F C G C (reversed = C G C F A D from low to high). Two tabs confirm CoB Drop C on this era: Are You Dead Yet? and Banned From Heaven (Hate Crew Deathroll, 2003).",
+      "note": "Drop C. Tab explicitly labels all six strings from high to low: D A F C G C (reversed = C G C F A D from low to high). Второй источник (Banned From Heaven, Hate Crew Deathroll 2003) — подтверждает строй группы, а не этой песни: 'the real song is probably in dropped C'.",
       "sources": [
-        "https://www.guitartabs.cc/tabs/c/children_of_bodom/are_you_dead_yet_tab.html",
-        "https://www.guitartabs.cc/tabs/c/children_of_bodom/banned_from_heaven_tab.html"
+        "https://www.guitartabs.cc/tabs/c/children_of_bodom/are_you_dead_yet_tab.html"
       ],
-      "_verified_by": "Claude — opened are_you_dead_yet_tab.html (status 200). GP tab string labels from high to low: D A F C G C = Drop C (C2 G2 C3 F3 A3 D4). Also opened banned_from_heaven_tab.html (status 200): tabber writes 'the real song is probably in dropped C'."
+      "_second_source_note": "https://www.guitartabs.cc/tabs/c/children_of_bodom/banned_from_heaven_tab.html",
+      "_verified_by": "Claude — opened are_you_dead_yet_tab.html (status 200). GP tab string labels from high to low: D A F C G C = Drop C. Banned From Heaven tab (другая песня) подтверждает строй группы, а не этой песни — перенесено в заметку."
     },
     {
       "artist": "Children of Bodom",
