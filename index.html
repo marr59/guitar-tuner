@@ -162,9 +162,7 @@
     background:rgba(255,255,255,.04); border:1px solid var(--border);
     color:var(--muted); font-size:12.5px; line-height:1.5}
   .song-note{margin-top:4px; color:var(--muted); font-size:12.5px; line-height:1.5}
-  .attr-line{margin-top:8px; font-size:11px; color:var(--muted2)}
-  .attr-line a{color:var(--muted); text-decoration:none}
-  .attr-line a:hover{color:var(--mint)}
+
 
   .sheet{position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter:blur(6px);
     display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
@@ -383,10 +381,7 @@ function setActive(t,{silent=false}={}){
   if(t.c===1) trust='<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>';
   else if(t.unusual) trust='<div class="trust-note">Unusual by design — this song really is tuned this way.</div>';
   const verif=t.confidence==="high"?'<span class="conf high" style="margin-left:6px">✓ verified</span>':"";
-  const attr=(t.src==="songsterr"&&t.url)
-    ?`<div class="attr-line">Tuning data from Songsterr · <a href="${t.url}" target="_blank" rel="noopener noreferrer">View tab ↗</a></div>`
-    :"";
-  $("curDesc").innerHTML=songRef+(d||verif?`<span>${d}</span>${verif}`:"")+trust+attr;
+  $("curDesc").innerHTML=songRef+(d||verif?`<span>${d}</span>${verif}`:"")+trust;
   store.set(ACT_KEY, JSON.stringify(t));
   renderGuide(); updateHint();
   if(!silent) show("tune");
@@ -744,7 +739,7 @@ function entryFromVariant(song,v){
   const tunName=tun?tun.name:strLabel(v.strings);
   return {id:song.id+"::"+v.label,title:tunName,sub:song.artist+' — '+song.song,
     strings:v.strings.slice(),capo:v.capo||0,note:v.note||"",desc:"",
-    confidence:song.confidence,sources:song.sources||[],variant:v.label,
+    confidence:song.confidence,variant:v.label,
     added:new Date().toISOString()};
 }
 function addEntry(e){ if(!library.some(x=>x.id===e.id)) library.unshift(e), saveLib(); }
@@ -755,11 +750,8 @@ function openSong(song){
     ?`<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>`
     :song.unusual?`<div class="trust-note">Unusual by design — this song really is tuned this way.</div>`:"";
   const headChip=song.confidence==="high"?` <span class="conf high">✓ verified</span>`:"";
-  const attrHtml=(song.src==="songsterr"&&song.url)
-    ?`<div class="attr-line" style="margin-bottom:12px">Tuning data from Songsterr · <a href="${song.url}" target="_blank" rel="noopener noreferrer">View tab ↗</a></div>`
-    :"";
   card.innerHTML=`<h3>${song.song}${headChip}</h3><p>${song.artist} — several versions are played in different tunings. Pick one:</p>`
-    +noteHtml+trustHtml+attrHtml
+    +noteHtml+trustHtml
     +song.variants.map((v,i)=>`<div class="vrow" data-i="${i}"><div class="ttl">${v.label}</div>
       <div style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px">${strLabel(v.strings)}${v.capo?" · capo "+v.capo:""}</div></div>`).join("")
     +`<div class="btns"><button class="bo" id="vCancel">Cancel</button></div>`;
@@ -771,7 +763,7 @@ function commitSong(song,v){
   const e=entryFromVariant(song,v); addEntry(e); closeSheet();
   setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo,note:e.note,
              confidence:e.confidence,c:song.c||0,unusual:song.unusual||false,
-             src:song.src||'',url:song.url||''});
+             });
 }
 function renderResults(q){
   const box=$("results"); q=q.trim().toLowerCase();
@@ -1060,8 +1052,7 @@ function expandCatalog(j) {
   j.songs = (j.songs || []).map(s => {
     if (s.variants) return s; // already expanded (cached old format)
     const mt   = byId.get(s.t);
-    const note = s.src ? (notes[s.src] || '') : (s.note || '');
-    const url  = s.sid ? `https://www.songsterr.com/a/wsa/${s.id}-tab-s${s.sid}` : '';
+    const note = s.note || '';
     const variants = mt ? [{ label:'Transcription', tuningId:s.t, strings:[...mt.strings], capo:0, note }] : [];
     for (const altId of (s.alts || [])) {
       const at = byId.get(altId);
@@ -1074,10 +1065,7 @@ function expandCatalog(j) {
       unusual:    s.unusual    || false,
       note:       s.note       || '',
       verified:   s.verified   || false,
-      src:        s.src        || '',
       variants,
-      sources: s.src === 'songsterr' ? ['Songsterr catalogue API'] : [],
-      url,
     };
   });
   return j;
