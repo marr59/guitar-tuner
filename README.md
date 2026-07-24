@@ -241,19 +241,6 @@ works but a bare LAN IP will not — use HTTPS to test from a phone.
 Entries live in `tunings.json`. Include the strings low to high, the source you checked, and
 an honest confidence level. If a song is played in plain E standard, it doesn't need an entry.
 
-## Data sources
-
-A large part of the tuning catalogue was imported from the
-[Songsterr](https://www.songsterr.com) public catalogue API. Only tuning
-metadata (which notes the strings are tuned to) is stored — no tablature,
-no notation, no audio. Each imported entry links back to the original
-Songsterr tab page so you can cross-check the source directly.
-
-The app is free, has no ads and no subscription, so this is
-non-commercial use. Attribution is displayed in the UI next to every
-entry that came from their catalogue, and permission for this use has
-been requested from Songsterr directly.
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
