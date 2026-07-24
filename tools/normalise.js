@@ -57,16 +57,14 @@ function autoInstrument(strings) {
 // ── Template notes ────────────────────────────────────────────────────────────
 
 const TEMPLATE_NOTES = new Map([
-  ['Imported from the Songsterr catalogue; reflects the transcriber\'s tuning, not verified against the record.', 'songsterr'],
-  ['Imported from the Songsterr catalogue; reflects the transcriber\'s tuning, not verified against the recording.', 'songsterr'],
   ['A second transcription uses this tuning. Unresolved — check by ear.', 'conflict'],
   ['Drop D.', 'drop-d'],
 ]);
 
 const NOTES_DICT = {
-  songsterr: 'Imported from the Songsterr catalogue; reflects the transcriber\'s tuning, not verified against the recording.',
-  conflict:  'A second transcription uses this tuning. Unresolved — check by ear.',
-  'drop-d':  'Drop D.',
+  unverified: 'Not independently verified — check by ear if something sounds off.',
+  conflict:   'A second transcription uses this tuning. Unresolved — check by ear.',
+  'drop-d':   'Drop D.',
 };
 
 // ── URL → sid ─────────────────────────────────────────────────────────────────
@@ -144,16 +142,11 @@ for (const song of src.songs) {
 
   const entry = { id: song.id, song: song.song, artist: song.artist, t: mainT };
 
-  const sid = extractSid(song.url);
-  if (sid) entry.sid = sid;
-
   if (altTs.length) { entry.c = 1; entry.alts = altTs; }
 
-  // Note: template → src, unique → note
-  const note    = (mainV.note || '').trim();
-  const srcCode = TEMPLATE_NOTES.get(note);
-  if (srcCode)   entry.src  = srcCode;
-  else if (note) entry.note = note;
+  // Note: template → discard (now omitted), unique inline text → note field
+  const note = (mainV.note || '').trim();
+  if (note && !TEMPLATE_NOTES.has(note)) entry.note = note;
 
   // Hand-curated metadata
   if (song.confidence === 'high') entry.confidence = 'high';

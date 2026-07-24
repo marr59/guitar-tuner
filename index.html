@@ -165,10 +165,13 @@
 
 
   .sheet{position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter:blur(6px);
-    display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
+    display:none; align-items:center; justify-content:center; padding:18px; z-index:50;
+    touch-action:none}
   .sheet.on{display:flex}
   .card{width:100%; max-width:420px; max-height:86dvh; overflow:auto; background:var(--card-bg);
-    border:1px solid var(--border); border-radius:22px; padding:20px}
+    border:1px solid var(--border); border-radius:22px; padding:20px;
+    overscroll-behavior:contain; -webkit-overflow-scrolling:touch; touch-action:pan-y}
+  body.sheet-open{position:fixed; width:100%; overflow:hidden}
   .card h3{margin:0 0 4px; font-size:18px; font-weight:600}
   .card p{margin:0 0 14px; color:var(--muted); font-size:13px; line-height:1.5}
   .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-bottom:10px}
@@ -731,7 +734,10 @@ $("start").onclick=()=>running?stop():start();
 
 /* ══════════ LIBRARY UI ══════════ */
 const sheet=$("sheet"), card=$("card");
-function closeSheet(){ sheet.classList.remove("on"); card.innerHTML=""; }
+let scrollY=0;
+function lockPage(){ scrollY=window.scrollY; document.body.style.top=`-${scrollY}px`; document.body.classList.add("sheet-open"); }
+function unlockPage(){ document.body.classList.remove("sheet-open"); document.body.style.top=""; window.scrollTo(0,scrollY); }
+function closeSheet(){ unlockPage(); sheet.classList.remove("on"); card.innerHTML=""; }
 sheet.onclick=e=>{ if(e.target===sheet) closeSheet(); };
 
 function entryFromVariant(song,v){
@@ -757,7 +763,7 @@ function openSong(song){
     +`<div class="btns"><button class="bo" id="vCancel">Cancel</button></div>`;
   card.querySelectorAll(".vrow").forEach(el=>el.onclick=()=>commitSong(song,song.variants[+el.dataset.i]));
   $("vCancel").onclick=closeSheet;
-  sheet.classList.add("on");
+  lockPage(); sheet.classList.add("on");
 }
 function commitSong(song,v){
   const e=entryFromVariant(song,v); addEntry(e); closeSheet();
@@ -829,7 +835,7 @@ function openTuningPicker(){
     $("pickerCancel").onclick=closeSheet;
   };
   render();
-  $("sheet").classList.add("on");
+  lockPage(); $("sheet").classList.add("on");
 }
 $("nowArea").onclick=openTuningPicker;
 
@@ -945,7 +951,7 @@ function openCustom(){
       setActive({title:e.title,sub:e.sub,strings:e.strings,capo:e.capo});
     };
   };
-  drawSheet(); sheet.classList.add("on");
+  drawSheet(); lockPage(); sheet.classList.add("on");
 }
 $("addCustom").onclick=openCustom;
 
