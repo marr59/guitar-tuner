@@ -152,9 +152,12 @@
   .icon{background:none; border:none; color:var(--muted2); cursor:pointer; font-size:15px; padding:5px; line-height:1}
   .icon:hover{color:var(--text)}
   .empty{color:var(--muted2); font-size:13px; text-align:center; padding:16px 8px; line-height:1.5}
-  .conf{font-family:var(--mono); font-size:10px; padding:2px 6px; border-radius:5px}
+  .conf{display:inline-flex; align-items:center; gap:4px; white-space:nowrap;
+    font-family:var(--mono); font-size:10px; padding:2px 6px;
+    border-radius:5px; vertical-align:middle}
   .conf.high{background:rgba(55,224,176,.13); color:var(--mint)}
   .conf-warn{font-size:11px; color:var(--amber); margin-left:4px; vertical-align:middle}
+  .conf+.conf, .desc .conf{margin-left:6px}
   .trust-warn{margin-top:8px; padding:9px 12px; border-radius:10px;
     background:rgba(255,180,78,.09); border:1px solid rgba(255,180,78,.28);
     color:var(--amber); font-size:12.5px; line-height:1.5}
@@ -383,8 +386,8 @@ function setActive(t,{silent=false}={}){
   let trust="";
   if(t.c===1) trust='<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>';
   else if(t.unusual) trust='<div class="trust-note">Unusual by design — this song really is tuned this way.</div>';
-  const verif=t.confidence==="high"?'<span class="conf high" style="margin-left:6px">✓ verified</span>':"";
-  $("curDesc").innerHTML=songRef+(d||verif?`<span>${d}</span>${verif}`:"")+trust;
+  const verif=t.confidence==="high"?'<span class="conf high"><span>✓</span><span>verified</span></span>':"";
+  $("curDesc").innerHTML=songRef+(d?`<span>${d}</span>`:"")+( verif?`<div style="margin-top:6px">${verif}</div>`:"")+trust;
   store.set(ACT_KEY, JSON.stringify(t));
   renderGuide(); updateHint();
   if(!silent) show("tune");
@@ -755,7 +758,7 @@ function openSong(song){
   const trustHtml=song.c===1
     ?`<div class="trust-warn">⚠ Sources disagree on this tuning — trust your ear.</div>`
     :song.unusual?`<div class="trust-note">Unusual by design — this song really is tuned this way.</div>`:"";
-  const headChip=song.confidence==="high"?` <span class="conf high">✓ verified</span>`:"";
+  const headChip=song.confidence==="high"?` <span class="conf high"><span>✓</span><span>verified</span></span>`:"";
   card.innerHTML=`<h3>${song.song}${headChip}</h3><p>${song.artist} — several versions are played in different tunings. Pick one:</p>`
     +noteHtml+trustHtml
     +song.variants.map((v,i)=>`<div class="vrow" data-i="${i}"><div class="ttl">${v.label}</div>
@@ -784,7 +787,7 @@ function renderResults(q){
   box.innerHTML=`<div class="sec"><div class="sech"><h2>Results</h2></div>`
     +songs.map(s=>{const v=s.variants[0];
       const chip=s.c===1?`<span class="conf-warn">⚠</span>`
-        :s.confidence==="high"?`<span class="conf high">✓ verified</span>`:"";
+        :s.confidence==="high"?`<span class="conf high"><span>✓</span><span>verified</span></span>`:"";
       return `<div class="row"><div class="info" data-song="${s.id}">
         <div class="ttl">${s.song}${chip}</div>
         <div class="sub">${s.artist} · ${strLabel(v.strings)}${s.variants.length>1?" · "+s.variants.length+" versions":""}</div>
