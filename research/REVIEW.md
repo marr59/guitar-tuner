@@ -3,7 +3,7 @@
 Обновлено: 2026-07-24
 
 ## Сводка
-- Групп обработано: 5 (done=3, empty=2, pending=79)
+- Групп в очереди: pending=80, done=3, empty=0, not-found=2, standard=0
 - Записей всего: 39 (high=6, medium=33)
 - Первичные источники: Opeth, Stam1na, Mokoma
 
@@ -50,3 +50,10 @@
 | Soilwork | Distance | B1 E2 A2 D3 F#3 B3 | medium | guitartabs.cc | B standard. Tab explicitly states 'Tuning: Standard B tuning… |
 | Stam1na | Aivohalvaus | A1 D2 A2 D3 G3 B3 E4 | medium | stam1na.com | The band's own FAQ states this seven-string tuning for both … |
 | Stam1na | Paha Arkkitehti | D2 A2 D3 G3 B3 E4 | medium | guitartabs.cc | Drop D on 6-string. This is one of the SLK 6-string songs re… |
+
+## Пустые группы (где искал)
+
+**Norther** (not-found): JSON не распарсился
+
+**Kalmah** (not-found): Не удалось получить доступ ни к одному источнику: инструменты WebSearch и WebFetch вернули отказ по правам доступа (permission not granted). Проверить gtdb.org, таб-сайты и интервью с гитаристом не удалось — ни один URL открыть не получилось.
+
