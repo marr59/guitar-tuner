@@ -57,8 +57,9 @@
   {
     "artist": "Before the Dawn",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 18,
+    "search_log": "Primary: Moshville interview confirms Saukkonen uses 'super-low tunings' + baritone scale + .78/.80 strings, but no per-song data (and framed around Wolfheart); Raato/silverbladeaudio blocked (403); metal-archives/Wikipedia gave tracklists+years only. Tab sites: Ultimate-Guitar Guitar-Pro tabs embed each tab's real tuning in server-rendered page meta — I curled ~25 pages and read the 'Tuning:' line directly on each; Songsterr/gprotab/gotabs are JS-walled (Songsterr scrape only returned its static tuning-picker catalog, discarded). gtdb.org returned no Before the Dawn entries. Result: the band never plays E standard — everything sits in a low-C family, split in the tabs between Drop C (C G C F A D) and C standard (C F A# D# G C); The Ghost (2006) is consistently Drop C, while later albums mix the two representations (partly transcriber-dependent — the reliable common denominator is the low string tuned to C, 2.5 steps below E standard)."
   },
   {
     "artist": "Sonata Arctica",

@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 7,
+  "batch": 8,
   "date": "2026-07-24",
   "entries": [
     {
@@ -2205,6 +2205,540 @@
         "https://www.bigchords.com/swallow_the_sun_chords/deadly_nightshade_tab.html"
       ],
       "_verified_by": "Claude — opened page; shows 'Tuning: Drop C [ C G C F A D ]'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Disappear",
+      "album": "The Ghost",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. All three sourced The Ghost tabs (Disappear, Enemy, Stormbringer) agree on Drop C, so the album tuning is well-corroborated.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/disappear-guitar-pro-1396159"
+      ],
+      "_verified_by": "Claude — curled the UG Guitar Pro page; server-rendered meta reads 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Enemy",
+      "album": "The Ghost",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/enemy-guitar-pro-738923"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Stormbringer",
+      "album": "The Ghost",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/stormbringer-guitar-pro-1457433"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Deadsong",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Guitar Pro (full)",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        },
+        {
+          "label": "Intro text tab (simplified up a step)",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Guitar Pro tab is Drop C; a separate intro text tab is written a whole step up in Drop D — a common simplification. Drop C is the more reliable value.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/deadsong-guitar-pro-770066",
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/deadsong-tabs-966846"
+      ],
+      "_verified_by": "Claude — GP page meta: 'Tuning: C G C F A D'; intro text-tab page meta: 'Tuning: D A D G B E'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Faithless",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Guitar Pro (full)",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        },
+        {
+          "label": "Text tabs (transposed to standard)",
+          "strings": [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Two independent UG Guitar Pro tabs both give Drop C; two text tabs are written in E standard (transposed up for playability). Drop C is the recorded tuning.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/faithless-guitar-pro-873090",
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/faithless-guitar-pro-739029"
+      ],
+      "_verified_by": "Claude — both GP page metas read 'Tuning: C G C F A D'; the two text-tab metas read 'Tuning: E A D G B E'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Wrath",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard (all strings 2.5 steps below E). Same album as the Drop C songs above — see band note about the Drop C / C standard split.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/wrath-guitar-pro-639885"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo' (Bb→A#, Eb→D#)"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Fear Me",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/fear-me-guitar-pro-740885"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Reign of Fire",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/reign-of-fire-guitar-pro-820790"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Gehenna",
+      "album": "Deadlight",
+      "year": 2007,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/gehenna-guitar-pro-870773"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Dying Sun",
+      "album": "Soundscape of Silence",
+      "year": 2008,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/dying-sun-guitar-pro-1047443"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Dead Reflection",
+      "album": "Soundscape of Silence",
+      "year": 2008,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/dead-reflection-guitar-pro-1131868"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Monsters",
+      "album": "Soundscape of Silence",
+      "year": 2008,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/monsters-guitar-pro-1450250"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C G C F A D Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Savior",
+      "album": "Soundscape of Silence",
+      "year": 2008,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard. (Titled 'Saviour' on the album.)",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/savior-guitar-pro-793767"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Deathstar",
+      "album": "Deathstar Rising",
+      "year": 2011,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/deathstar-guitar-pro-1040210"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Pitch-Black Universe",
+      "album": "Deathstar Rising",
+      "year": 2011,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/pitch-black-universe-guitar-pro-1214598"
+      ],
+      "_verified_by": "Claude — UG Guitar Pro page meta: 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Throne of Ice",
+      "album": "Deathstar Rising",
+      "year": 2011,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard. Two independent UG Guitar Pro tabs agree.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/throne-of-ice-guitar-pro-1455840",
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/throne-of-ice-guitar-pro-1814213"
+      ],
+      "_verified_by": "Claude — both UG Guitar Pro page metas read 'Tuning: C F Bb Eb G C Capo: no capo'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Winter Within",
+      "album": "Deathstar Rising",
+      "year": 2011,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Guitar Pro (full)",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        },
+        {
+          "label": "Alt tab (transposed to standard)",
+          "strings": [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Primary Guitar Pro tab is Drop C; a second tab is written in E standard (transposed up). Drop C is the recorded tuning.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/winter-within-guitar-pro-1094957"
+      ],
+      "_verified_by": "Claude — GP page meta: 'Tuning: C G C F A D'; the second GP tab (2918411) meta reads 'Tuning: E A D G B E Key: C'"
+    },
+    {
+      "artist": "Before the Dawn",
+      "song": "Unbreakable",
+      "album": "Deathstar Rising",
+      "year": 2011,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "GP tab A (drop-C-family, low string up to D)",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        },
+        {
+          "label": "GP tab B (Drop D)",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "The two UG Guitar Pro tabs disagree — one is D G C F A D (a drop-C variant with the low string raised to D), the other is plain Drop D. Non-standard either way, but the exact tuning is unresolved.",
+      "sources": [
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/unbreakable-guitar-pro-616864",
+        "https://tabs.ultimate-guitar.com/tab/before-the-dawn/unbreakable-guitar-pro-628987"
+      ],
+      "_verified_by": "Claude — tab 616864 meta: 'Tuning: D G C F A D'; tab 628987 meta: 'Tuning: D A D G B E'"
     }
   ],
   "_leads": [
