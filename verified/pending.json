@@ -1,1077 +1,1132 @@
 {
- "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.",
- "batch": 2,
- "date": "2026-07-24",
- "entries": [
-  {
-   "artist": "Opeth",
-   "song": "Ghost of Perdition",
-   "album": "Ghost Reveries",
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+  "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.",
+  "batch": 2,
+  "date": "2026-07-24",
+  "entries": [
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "F3",
-      "A3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Åkerfeldt's open D-minor tuning, used across Ghost Reveries. He credits folk players Bert Jansch, John Renbourn and Nick Drake as the source of the idea.",
-   "sources": [
-    "https://ragajunglism.org/tunings/menu/ghost-reveries/",
-    "https://gtdb.org/dadfae",
-    "https://theriffrepeater.com/rocksmith-remastered-dlc-3-31-2020-opeth-ghost-of-perdition-bleak-blackwater-park-guitar-bass-progressive-death-metal-sweden-mikael-akerfeldt-steven-wilson-ghost-reveries-2005/"
-   ],
-   "_verified_by": "Claude — открыл все три источника. Rocksmith DLC (лицензионный продукт) указывает 'Custom Tuning: DADFAE'. Ragajunglism перечисляет песни поимённо."
-  },
-  {
-   "artist": "Opeth",
-   "song": "The Baying of the Hounds",
-   "album": "Ghost Reveries",
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "F3",
-      "A3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
-   "sources": [
-    "https://ragajunglism.org/tunings/menu/ghost-reveries/"
-   ],
-   "_verified_by": "Claude — источник называет песню поимённо в списке треков в этом строе."
-  },
-  {
-   "artist": "Opeth",
-   "song": "Isolation Years",
-   "album": "Ghost Reveries",
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "F3",
-      "A3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
-   "sources": [
-    "https://ragajunglism.org/tunings/menu/ghost-reveries/"
-   ],
-   "_verified_by": "Claude — песня названа поимённо. Ни одна из четырёх моделей её не предложила."
-  },
-  {
-   "artist": "Opeth",
-   "song": "Reverie / Harlequin Forest",
-   "album": "Ghost Reveries",
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "F3",
-      "A3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "All six electric, acoustic and 12-string guitar layers are in this tuning.",
-   "sources": [
-    "https://ragajunglism.org/tunings/menu/ghost-reveries/"
-   ],
-   "_verified_by": "Claude — источник отдельно оговаривает, что в этом строе все шесть гитарных слоёв. Модели её не предложили."
-  },
-  {
-   "artist": "Stam1na",
-   "song": "Aivohalvaus",
-   "album": "Nocebo",
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "A1",
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "The band's own FAQ states this seven-string tuning for both guitarists. It is their working tuning rather than a per-song statement, and the same page notes that some songs are played on a six-string, so confidence stays medium.",
-   "sources": [
-    "https://stam1na.com/ukk/",
-    "https://www.gtdb.org/aeadfsa/videos/wlyTSPlWJ1I"
-   ],
-   "_verified_by": "Claude — открыл официальный FAQ. Дословно: 'Kitaroiden vire matalimmasta alkaen on A-D-A-D-G-H-E', указано дважды (Ibanez RG7 Олкконена и баритоны ESP Хюрюнена). H в финской нотации = B. ОГОВОРКА: та же страница упоминает 'шестиструнные песни с SLK', значит строй не сквозной по всему репертуару."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Kasvot kohti itää",
-   "album": "Kurimus",
-   "year": 2003,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Confirmed by tab header from a separate author (not the zesar_1337 series); the author explicitly writes 'Tuning drop D' at the top.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html",
-    "https://fi.wikipedia.org/wiki/Kurimus_(albumi)",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — открыла guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html, статус 200, в теле файла дословно: 'Tuning drop D'. Принадлежность к альбому Kurimus (2003) подтверждена fi.wikipedia.org/wiki/Kurimus_(albumi) — трек-лист содержит 'Kasvot kohti itää' треком №3. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Haudan takaa",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Three independent sources agree: two tab transcriptions (different sites) and a YouTube cover video description.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/haudan_takaa_tab.html",
-    "https://tabs.ultimate-guitar.com/tab/mokoma/haudan-takaa-tabs-723252",
-    "https://www.youtube.com/watch?v=OFpAvhU1Pus",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт, дословно в заголовке: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo' и 'Gtr III (D A D G B E) - Melodia'. UG-страница вернула 200 (JS-рендер), сниппет поисковика дословно: 'Tuning: D A D G B E · Author: tonedeafidiot'. YouTube-ролик (guitar cover) — описание в сниппете: 'Tuning drop D.' Принадлежность к альбому 2004 подтверждена fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi: 'Haudan takaa – 3.21'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Hiljaisuuden julistaja",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Tab credits fixes from Kuisma Aalto himself ('fiksejä Kuisma'), which makes this marginally more trustworthy than a typical fan transcription.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/hiljaisuuden_julistaja_tab.html",
-    "https://fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Tablat: Johannes/Sami + fiksejä Kuisma', затем 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo'. Альбом подтверждён fi.wikipedia.org — трек 'Hiljaisuuden julistaja'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Tämän maailman ruhtinaan hovi",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Title track.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/taman_maailman_ruhtinaan_hovi_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E)' (Tuomo). Альбом подтверждён fi.wikipedia.org. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Kiellän itseni",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/kiellan_itseni_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Hyinen syli",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/hyinen_syli_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Vade retro, Satana!",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio (6-string)",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
+      "artist": "Opeth",
+      "song": "Ghost of Perdition",
+      "album": "Ghost Reveries",
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "F3",
+            "A3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Åkerfeldt's open D-minor tuning, used across Ghost Reveries. He credits folk players Bert Jansch, John Renbourn and Nick Drake as the source of the idea.",
+      "sources": [
+        "https://ragajunglism.org/tunings/menu/ghost-reveries/",
+        "https://gtdb.org/dadfae",
+        "https://theriffrepeater.com/rocksmith-remastered-dlc-3-31-2020-opeth-ghost-of-perdition-bleak-blackwater-park-guitar-bass-progressive-death-metal-sweden-mikael-akerfeldt-steven-wilson-ghost-reveries-2005/"
+      ],
+      "_verified_by": "Claude — открыл все три источника. Rocksmith DLC (лицензионный продукт) указывает 'Custom Tuning: DADFAE'. Ragajunglism перечисляет песни поимённо."
     },
     {
-     "label": "Kuisma Aalto 7-string",
-     "strings": [
-      "A1",
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Kuisma Aalto uses a 7-string guitar (A D A D G B E, low A below Drop D) for the main guitar I track; Tuomo Saikkonen and Kuisma's second guitar are both in standard Drop D. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/vade_retro_satana_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (A D A D G B E) - Kuisma 7', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (D A D G B E) - Kuisma 6'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Sudet ihmisten vaatteissa",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/sudet_ihmisten_vaatteissa_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuom[o]'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Poltetun maan taktiikkaa",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/poltetun_maan_taktiikkaa_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
-  },
-  {
-   "artist": "Mokoma",
-   "song": "Nämä kolme ovat yhtä",
-   "album": "Tämän maailman ruhtinaan hovi",
-   "year": 2004,
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
-    {
-     "label": "Studio (6-string)",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
+      "artist": "Opeth",
+      "song": "The Baying of the Hounds",
+      "album": "Ghost Reveries",
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "F3",
+            "A3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
+      "sources": [
+        "https://ragajunglism.org/tunings/menu/ghost-reveries/"
+      ],
+      "_verified_by": "Claude — источник называет песню поимённо в списке треков в этом строе."
     },
     {
-     "label": "Kuisma Aalto 7-string",
-     "strings": [
-      "A1",
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Same arrangement as Vade retro Satana: Kuisma's six-string and Tuomo are in Drop D; Kuisma's seven-string adds a low-A layer. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/m/mokoma/nama_kolme_ovat_yhta_tab.html",
-    "https://mokoma.com/tag/viritys/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma 6', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (A D A D G B E) - Kuisma 7'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
-  },
-  {
-   "artist": "Insomnium",
-   "song": "In The Halls Of Awaiting",
-   "album": "In the Halls of Awaiting",
-   "year": 2002,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Opeth",
+      "song": "Isolation Years",
+      "album": "Ghost Reveries",
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "F3",
+            "A3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
+      "sources": [
+        "https://ragajunglism.org/tunings/menu/ghost-reveries/"
+      ],
+      "_verified_by": "Claude — песня названа поимённо. Ни одна из четырёх моделей её не предложила."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard (whole step down). All six guitar tracks in the tab share the same tuning notation D G C F A D.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/i/insomnium/in_the_halls_of_awaiting_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header shows: 'Gtr I (D G C F A D) - Acoustic 1', Gtr II, III, IV, V, VI all identical. D G C F A D from low to high = D standard."
-  },
-  {
-   "artist": "Insomnium",
-   "song": "Down With The Sun",
-   "album": "Across the Dark",
-   "year": 2009,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Opeth",
+      "song": "Reverie / Harlequin Forest",
+      "album": "Ghost Reveries",
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "F3",
+            "A3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "All six electric, acoustic and 12-string guitar layers are in this tuning.",
+      "sources": [
+        "https://ragajunglism.org/tunings/menu/ghost-reveries/"
+      ],
+      "_verified_by": "Claude — источник отдельно оговаривает, что в этом строе все шесть гитарных слоёв. Модели её не предложили."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard. Tabber explicitly writes 'tuning: Whole step down' and then 'D, G, C, F, A, D'.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/i/insomnium/down_with_the_sun_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab header: 'tuning: Whole step down / D, G, C, F, A, D'. Tabbed by Hyks 20/7/2012, album: Across the dark."
-  },
-  {
-   "artist": "Insomnium",
-   "song": "Mortal Share",
-   "album": "Above the Weeping World",
-   "year": 2006,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Stam1na",
+      "song": "Aivohalvaus",
+      "album": "Nocebo",
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A1",
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "The band's own FAQ states this seven-string tuning for both guitarists. It is their working tuning rather than a per-song statement, and the same page notes that some songs are played on a six-string, so confidence stays medium.",
+      "sources": [
+        "https://stam1na.com/ukk/",
+        "https://www.gtdb.org/aeadfsa/videos/wlyTSPlWJ1I"
+      ],
+      "_verified_by": "Claude — открыл официальный FAQ. Дословно: 'Kitaroiden vire matalimmasta alkaen on A-D-A-D-G-H-E', указано дважды (Ibanez RG7 Олкконена и баритоны ESP Хюрюнена). H в финской нотации = B. ОГОВОРКА: та же страница упоминает 'шестиструнные песни с SLK', значит строй не сквозной по всему репертуару."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Two independent tabs both state D A D G B E. Tab v1 writes 'Tuning: drop D'; tab v2 writes 'Tuning: D A D G B E'. Shows Insomnium used both D standard and Drop D on the same album.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/i/insomnium/mortal_share_tab.html",
-    "https://www.guitartabs.cc/tabs/i/insomnium/mortal_share_tab_ver_2.html"
-   ],
-   "_verified_by": "Claude — opened both tab URLs, both status 200. v1 header: 'Tuning: drop D'. v2 header: 'Tuning: D A D G B E'. Both independently confirm Drop D."
-  },
-  {
-   "artist": "Amorphis",
-   "song": "Born of Fire",
-   "album": "Eclipse",
-   "year": 2006,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Kasvot kohti itää",
+      "album": "Kurimus",
+      "year": 2003,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Confirmed by tab header from a separate author (not the zesar_1337 series); the author explicitly writes 'Tuning drop D' at the top.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html",
+        "https://fi.wikipedia.org/wiki/Kurimus_(albumi)",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — открыла guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html, статус 200, в теле файла дословно: 'Tuning drop D'. Принадлежность к альбому Kurimus (2003) подтверждена fi.wikipedia.org/wiki/Kurimus_(albumi) — трек-лист содержит 'Kasvot kohti itää' треком №3. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard. Guitar Pro tab shows 'Gtr I (D G C F A D)' header.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/a/amorphis/born_of_fire_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header in GP export: 'Gtr I (D G C F A D) - Untitled'. Album 'Eclipse' confirmed in tab header."
-  },
-  {
-   "artist": "Amorphis",
-   "song": "Divinity",
-   "album": "Tuonela",
-   "year": 1999,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Haudan takaa",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Three independent sources agree: two tab transcriptions (different sites) and a YouTube cover video description.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/haudan_takaa_tab.html",
+        "https://tabs.ultimate-guitar.com/tab/mokoma/haudan-takaa-tabs-723252",
+        "https://www.youtube.com/watch?v=OFpAvhU1Pus",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт, дословно в заголовке: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo' и 'Gtr III (D A D G B E) - Melodia'. UG-страница вернула 200 (JS-рендер), сниппет поисковика дословно: 'Tuning: D A D G B E · Author: tonedeafidiot'. YouTube-ролик (guitar cover) — описание в сниппете: 'Tuning drop D.' Принадлежность к альбому 2004 подтверждена fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi: 'Haudan takaa – 3.21'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard. Tabber writes 'Tuning: Down 1 whole step'.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/a/amorphis/divinity_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header: 'AMORPHIS - DIVINITY / From the album TUONELA / Tuning: Down 1 whole step'."
-  },
-  {
-   "artist": "Amorphis",
-   "song": "Day of Your Beliefs",
-   "album": "Am Universum",
-   "year": 2001,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Hiljaisuuden julistaja",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Tab credits fixes from Kuisma Aalto himself ('fiksejä Kuisma'), which makes this marginally more trustworthy than a typical fan transcription.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/hiljaisuuden_julistaja_tab.html",
+        "https://fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Tablat: Johannes/Sami + fiksejä Kuisma', затем 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo'. Альбом подтверждён fi.wikipedia.org — трек 'Hiljaisuuden julistaja'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Tabber writes '2 Guitars, dropped D'. Conflict flag: Amorphis uses Drop D here vs D standard on Tuonela/Eclipse — suggests per-song variation.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/a/amorphis/day_of_your_beliefs_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab setup block dословно: '2 Guitars, dropped D'. Album 'Am Universum' confirmed in tab."
-  },
-  {
-   "artist": "Soilwork",
-   "song": "The Chainheart Machine",
-   "album": "The Chainheart Machine",
-   "year": 2000,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Tämän maailman ruhtinaan hovi",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Title track.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/taman_maailman_ruhtinaan_hovi_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E)' (Tuomo). Альбом подтверждён fi.wikipedia.org. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "B1",
-      "E2",
-      "A2",
-      "D3",
-      "F#3",
-      "B3"
-     ]
-    }
-   ],
-   "note": "B standard. Tab header says 'Tune Gtr to B'. Same instruction appears on Machine Gun Majesty from the same album, confirming this is the album-wide working tuning.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/s/soilwork/chainheart_machine_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Tune Gtr to B'. Machine Gun Majesty (same album) also says 'Tune Gtr to B'."
-  },
-  {
-   "artist": "Soilwork",
-   "song": "Distance",
-   "album": "Stabbing the Drama",
-   "year": 2005,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Kiellän itseni",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/kiellan_itseni_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "B1",
-      "E2",
-      "A2",
-      "D3",
-      "F#3",
-      "B3"
-     ]
-    }
-   ],
-   "note": "B standard. Tab explicitly states 'Tuning: Standard B tuning (B E A D F# B)'. Confirms Soilwork continued using B standard through their mid-period.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/s/soilwork/distance_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Standard B tuning (B E A D F# B)'. Album 'Stabbing the Drama' 2005 confirmed."
-  },
-  {
-   "artist": "Katatonia",
-   "song": "Evidence",
-   "album": "Viva Emptiness",
-   "year": 2003,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Hyinen syli",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/hyinen_syli_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard. Tabber writes 'Tune guitar to D:'. Conflict flag: different album uses Drop Bb.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/k/katatonia/evidence_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune guitar to D:'. Album 'Viva Emptiness' 2003 stated in tab header."
-  },
-  {
-   "artist": "Katatonia",
-   "song": "Leaders",
-   "album": "The Great Cold Distance",
-   "year": 2006,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Vade retro, Satana!",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio (6-string)",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        },
+        {
+          "label": "Kuisma Aalto 7-string",
+          "strings": [
+            "A1",
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Kuisma Aalto uses a 7-string guitar (A D A D G B E, low A below Drop D) for the main guitar I track; Tuomo Saikkonen and Kuisma's second guitar are both in standard Drop D. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/vade_retro_satana_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (A D A D G B E) - Kuisma 7', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (D A D G B E) - Kuisma 6'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "A#1",
-      "F2",
-      "A#2",
-      "D#3",
-      "G3",
-      "C4"
-     ]
-    }
-   ],
-   "note": "Drop Bb (Drop A#) — lowest string dropped from C standard. Tab labels strings from low to high: Bb F Bb Eb G C. Tabber calls it 'Dropped Bflat (or A#)'. Different from D standard used on Viva Emptiness — Katatonia shifted significantly lower by 2006.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/k/katatonia/leaders_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Dropped Bflat (or A#)'. String labels in tab from high to low: C G Eb Bb F Bb. Lowest string = Bb/A#1."
-  },
-  {
-   "artist": "Dark Tranquillity",
-   "song": "Damage Done",
-   "album": "Damage Done",
-   "year": 2002,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Sudet ihmisten vaatteissa",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/sudet_ihmisten_vaatteissa_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuom[o]'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "D standard per tab ('Tune down to D'). Conflict: 'Monochromatic Stains' from the same album is tabbed in C# standard — one of these tabbers may have been wrong. Treat with caution.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/damage_done_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune down to D'. String labels in tab: d A F C G (= D4 A3 F3 C3 G2 = strings 1-5 of D standard)."
-  },
-  {
-   "artist": "Dark Tranquillity",
-   "song": "Monochromatic Stains",
-   "album": "Damage Done",
-   "year": 2002,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Poltetun maan taktiikkaa",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/poltetun_maan_taktiikkaa_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C#2",
-      "F#2",
-      "B2",
-      "E3",
-      "G#3",
-      "C#4"
-     ]
-    }
-   ],
-   "note": "C# standard. Tab spells out all six strings: 'C# F# B E G# C#'. Conflict: 'Damage Done' title track from same album is tabbed in D standard.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/monochromatic_stains_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: \"C#\"F#\"B\"E\"G#\"C#\"'. All six strings enumerated."
-  },
-  {
-   "artist": "Dark Tranquillity",
-   "song": "Lost to Apathy",
-   "album": "Character",
-   "year": 2005,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Mokoma",
+      "song": "Nämä kolme ovat yhtä",
+      "album": "Tämän maailman ruhtinaan hovi",
+      "year": 2004,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio (6-string)",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        },
+        {
+          "label": "Kuisma Aalto 7-string",
+          "strings": [
+            "A1",
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Same arrangement as Vade retro Satana: Kuisma's six-string and Tuomo are in Drop D; Kuisma's seven-string adds a low-A layer. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/m/mokoma/nama_kolme_ovat_yhta_tab.html",
+        "https://mokoma.com/tag/viritys/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma 6', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (A D A D G B E) - Kuisma 7'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C#2",
-      "F#2",
-      "B2",
-      "E3",
-      "G#3",
-      "C#4"
-     ]
-    }
-   ],
-   "note": "C# standard. Tab states 'Down 1 1/2 step (Db Gb B E Ab Db)'. Consistent with C# standard across the album.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/lost_to_apathy_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Down 1 1/2 step (Db Gb B E Ab Db)'. Album 'Character' confirmed."
-  },
-  {
-   "artist": "Avatar",
-   "song": "Bloody Angel",
-   "album": "Hail the Apocalypse",
-   "year": 2014,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Insomnium",
+      "song": "In The Halls Of Awaiting",
+      "album": "In the Halls of Awaiting",
+      "year": 2002,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard (whole step down). All six guitar tracks in the tab share the same tuning notation D G C F A D.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/i/insomnium/in_the_halls_of_awaiting_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header shows: 'Gtr I (D G C F A D) - Acoustic 1', Gtr II, III, IV, V, VI all identical. D G C F A D from low to high = D standard."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "B1",
-      "F#2",
-      "B2",
-      "E3",
-      "G#3",
-      "C#4"
-     ]
-    }
-   ],
-   "note": "Drop B. Tab explicitly labels all six strings from high to low: C# G# E B F# B. Reversed = B F# B E G# C# from low to high = Drop B (C# standard with lowest string dropped 2 semitones). Album not stated in tab; attributed from general knowledge.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/a/avatar/bloody_angel_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab string labels dословно from high to low: 'C#', 'G#', 'E', 'B', 'F#', 'B'. This is Drop B tuning."
-  },
-  {
-   "artist": "Enslaved",
-   "song": "Ruun",
-   "album": "Ruun",
-   "year": 2006,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Insomnium",
+      "song": "Down With The Sun",
+      "album": "Across the Dark",
+      "year": 2009,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard. Tabber explicitly writes 'tuning: Whole step down' and then 'D, G, C, F, A, D'.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/i/insomnium/down_with_the_sun_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab header: 'tuning: Whole step down / D, G, C, F, A, D'. Tabbed by Hyks 20/7/2012, album: Across the dark."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C#2",
-      "F#2",
-      "B2",
-      "E3",
-      "G#3",
-      "C#4"
-     ]
-    }
-   ],
-   "note": "C# standard. Guitar Pro tab shows all three guitar tracks: 'Gtr I (Db Gb B E Ab Db)'. Db=C#, Gb=F#, Ab=G# — standard enharmonic equivalents.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/e/enslaved/ruun_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Gtr I (Db Gb B E Ab Db) - Untitled' for all guitar tracks. Low-to-high = C#2 F#2 B2 E3 G#3 C#4 = C# standard."
-  },
-  {
-   "artist": "Enslaved",
-   "song": "Havenless",
-   "album": "Below the Lights",
-   "year": 2003,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Insomnium",
+      "song": "Mortal Share",
+      "album": "Above the Weeping World",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Two independent tabs both state D A D G B E. Tab v1 writes 'Tuning: drop D'; tab v2 writes 'Tuning: D A D G B E'. Shows Insomnium used both D standard and Drop D on the same album.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/i/insomnium/mortal_share_tab.html",
+        "https://www.guitartabs.cc/tabs/i/insomnium/mortal_share_tab_ver_2.html"
+      ],
+      "_verified_by": "Claude — opened both tab URLs, both status 200. v1 header: 'Tuning: drop D'. v2 header: 'Tuning: D A D G B E'. Both independently confirm Drop D."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C#2",
-      "G#2",
-      "C#3",
-      "F#3",
-      "A#3",
-      "C#4"
-     ]
-    }
-   ],
-   "note": "Non-standard open C#-based tuning. GP tab header: 'Gtr I (C# G# C# F# A# C#)'. From low to high: C#2 G#2 C#3 F#3 A#3 C#4 — strings 2-5 are 2 semitones above C# standard, outer strings stay at C#. Conflict flag: Enslaved used C# standard on Ruun (2006). This open tuning may be transcription-specific.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/e/enslaved/havenless_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. GP header дословно: 'Gtr I (C# G# C# F# A# C#) - Guitar I'. Album 'Below the Lights' 2003 stated in header."
-  },
-  {
-   "artist": "Kvelertak",
-   "song": "Blodtorst",
-   "album": "Kvelertak",
-   "year": 2010,
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Amorphis",
+      "song": "Born of Fire",
+      "album": "Eclipse",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard. Guitar Pro tab shows 'Gtr I (D G C F A D)' header.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/amorphis/born_of_fire_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header in GP export: 'Gtr I (D G C F A D) - Untitled'. Album 'Eclipse' confirmed in tab header."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D. Two independent tabs from the same debut album independently confirm this. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/k/kvelertak/blodtorst_tab.html",
-    "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html"
-   ],
-   "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Also opened ulvetid_tab.html (status 200): 'Tuning: Drop D'. Both songs from debut album 'Kvelertak' (2010). Two sources → confidence high."
-  },
-  {
-   "artist": "Stam1na",
-   "song": "Paha Arkkitehti",
-   "album": "SLK (K18V dokumentti)",
-   "year": 2014,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Amorphis",
+      "song": "Divinity",
+      "album": "Tuonela",
+      "year": 1999,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard. Tabber writes 'Tuning: Down 1 whole step'.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/amorphis/divinity_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header: 'AMORPHIS - DIVINITY / From the album TUONELA / Tuning: Down 1 whole step'."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "D2",
-      "A2",
-      "D3",
-      "G3",
-      "B3",
-      "E4"
-     ]
-    }
-   ],
-   "note": "Drop D on 6-string. This is one of the SLK 6-string songs referenced in the official FAQ (stam1na.com/ukk/) as being played on Ibanez Jem 77VBK. Tab header: 'Tuning: Drop D'. Minor labeling inconsistency in the tab (string 2 labeled 'A' instead of 'B') but remaining string labels and tuning header are consistent with Drop D. Album confirmed as SLK-era via Finnish Wikipedia track listing.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/s/stam1na/paha_arkkitehti_tab.html",
-    "https://fi.wikipedia.org/wiki/SLK_(albumi)",
-    "https://stam1na.com/ukk/"
-   ],
-   "_verified_by": "Claude — guitartabs.cc tab (status 200): 'Tuning: Drop D'. fi.wikipedia.org SLK track listing (status 200) confirms 'Paha arkkitehti' composed by Olkkonen in K18V documentary section. stam1na.com/ukk/ confirms SLK has 6-string songs on Ibanez Jem 77VBK."
-  },
-  {
-   "artist": "In Flames",
-   "song": "Artifacts of the Black Rain",
-   "album": "The Jester Race",
-   "year": 1996,
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Amorphis",
+      "song": "Day of Your Beliefs",
+      "album": "Am Universum",
+      "year": 2001,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Tabber writes '2 Guitars, dropped D'. Conflict flag: Amorphis uses Drop D here vs D standard on Tuonela/Eclipse — suggests per-song variation.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/amorphis/day_of_your_beliefs_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab setup block dословно: '2 Guitars, dropped D'. Album 'Am Universum' confirmed in tab."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C2",
-      "F2",
-      "A#2",
-      "D#3",
-      "G3",
-      "C4"
-     ]
-    }
-   ],
-   "note": "C standard (all strings down 4 semitones). Tab says 'Tune down 2 whole step to C'. Two tabs independently confirm In Flames used C standard on mid-90s material: this one (Jester Race 1996) and Behind Space '99 (Colony 1999).",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/i/in_flames/artifacts_of_the_black_rain_tab.html",
-    "https://www.guitartabs.cc/tabs/i/in_flames/behind_space_tab.html"
-   ],
-   "_verified_by": "Claude — opened artifacts tab (status 200): 'Tune down 2 whole step to C'. Also opened behind_space tab (status 200): 'C tuning (C,F,A#,D#,G,C)'. Both independently confirm C standard."
-  },
-  {
-   "artist": "In Flames",
-   "song": "Alias",
-   "album": "Clayman",
-   "year": 2000,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Soilwork",
+      "song": "The Chainheart Machine",
+      "album": "The Chainheart Machine",
+      "year": 2000,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "B1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "B standard. Tab header says 'Tune Gtr to B'. Same instruction appears on Machine Gun Majesty from the same album, confirming this is the album-wide working tuning.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/s/soilwork/chainheart_machine_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Tune Gtr to B'. Machine Gun Majesty (same album) also says 'Tune Gtr to B'."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "A#1",
-      "F2",
-      "A#2",
-      "D#3",
-      "G3",
-      "C4"
-     ]
-    }
-   ],
-   "note": "Drop A# (= Drop Bb). Tab states 'Drop A#, F, A#, D#, G, C'. This is C standard with lowest string dropped 2 semitones (C→A#). Consistent with In Flames' base C standard tuning.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/i/in_flames/alias_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Drop A#,F,A#,D#,G,C'. Tabber also writes 'I'm new to the whole drop A# but...' confirming the tuning."
-  },
-  {
-   "artist": "Children of Bodom",
-   "song": "Are You Dead Yet?",
-   "album": "Are You Dead Yet?",
-   "year": 2005,
-   "confidence": "high",
-   "capo": 0,
-   "conflict": false,
-   "variants": [
+      "artist": "Soilwork",
+      "song": "Distance",
+      "album": "Stabbing the Drama",
+      "year": 2005,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "B1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "B standard. Tab explicitly states 'Tuning: Standard B tuning (B E A D F# B)'. Confirms Soilwork continued using B standard through their mid-period.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/s/soilwork/distance_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Standard B tuning (B E A D F# B)'. Album 'Stabbing the Drama' 2005 confirmed."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C2",
-      "G2",
-      "C3",
-      "F3",
-      "A3",
-      "D4"
-     ]
-    }
-   ],
-   "note": "Drop C. Tab explicitly labels all six strings from high to low: D A F C G C (reversed = C G C F A D from low to high). Two tabs confirm CoB Drop C on this era: Are You Dead Yet? and Banned From Heaven (Hate Crew Deathroll, 2003).",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/c/children_of_bodom/are_you_dead_yet_tab.html",
-    "https://www.guitartabs.cc/tabs/c/children_of_bodom/banned_from_heaven_tab.html"
-   ],
-   "_verified_by": "Claude — opened are_you_dead_yet_tab.html (status 200). GP tab string labels from high to low: D A F C G C = Drop C (C2 G2 C3 F3 A3 D4). Also opened banned_from_heaven_tab.html (status 200): tabber writes 'the real song is probably in dropped C'."
-  },
-  {
-   "artist": "Children of Bodom",
-   "song": "Angels Don't Kill",
-   "album": "Are You Dead Yet?",
-   "year": 2005,
-   "confidence": "medium",
-   "capo": 0,
-   "conflict": true,
-   "variants": [
+      "artist": "Katatonia",
+      "song": "Evidence",
+      "album": "Viva Emptiness",
+      "year": 2003,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard. Tabber writes 'Tune guitar to D:'. Conflict flag: different album uses Drop Bb.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/katatonia/evidence_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune guitar to D:'. Album 'Viva Emptiness' 2003 stated in tab header."
+    },
     {
-     "label": "Studio",
-     "strings": [
-      "C#2",
-      "F#2",
-      "B2",
-      "E3",
-      "G#3",
-      "C#4"
-     ]
+      "artist": "Katatonia",
+      "song": "Leaders",
+      "album": "The Great Cold Distance",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A#1",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "Drop Bb (Drop A#) — lowest string dropped from C standard. Tab labels strings from low to high: Bb F Bb Eb G C. Tabber calls it 'Dropped Bflat (or A#)'. Different from D standard used on Viva Emptiness — Katatonia shifted significantly lower by 2006.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/katatonia/leaders_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Dropped Bflat (or A#)'. String labels in tab from high to low: C G Eb Bb F Bb. Lowest string = Bb/A#1."
+    },
+    {
+      "artist": "Dark Tranquillity",
+      "song": "Damage Done",
+      "album": "Damage Done",
+      "year": 2002,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "D standard per tab ('Tune down to D'). Conflict: 'Monochromatic Stains' from the same album is tabbed in C# standard — one of these tabbers may have been wrong. Treat with caution.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/d/dark_tranquillity/damage_done_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune down to D'. String labels in tab: d A F C G (= D4 A3 F3 C3 G2 = strings 1-5 of D standard)."
+    },
+    {
+      "artist": "Dark Tranquillity",
+      "song": "Monochromatic Stains",
+      "album": "Damage Done",
+      "year": 2002,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "C# standard. Tab spells out all six strings: 'C# F# B E G# C#'. Conflict: 'Damage Done' title track from same album is tabbed in D standard.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/d/dark_tranquillity/monochromatic_stains_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: \"C#\"F#\"B\"E\"G#\"C#\"'. All six strings enumerated."
+    },
+    {
+      "artist": "Dark Tranquillity",
+      "song": "Lost to Apathy",
+      "album": "Character",
+      "year": 2005,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "C# standard. Tab states 'Down 1 1/2 step (Db Gb B E Ab Db)'. Consistent with C# standard across the album.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/d/dark_tranquillity/lost_to_apathy_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Down 1 1/2 step (Db Gb B E Ab Db)'. Album 'Character' confirmed."
+    },
+    {
+      "artist": "Avatar",
+      "song": "Bloody Angel",
+      "album": "Hail the Apocalypse",
+      "year": 2014,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "B1",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "Drop B. Tab explicitly labels all six strings from high to low: C# G# E B F# B. Reversed = B F# B E G# C# from low to high = Drop B (C# standard with lowest string dropped 2 semitones). Album not stated in tab; attributed from general knowledge.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/avatar/bloody_angel_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab string labels dословно from high to low: 'C#', 'G#', 'E', 'B', 'F#', 'B'. This is Drop B tuning."
+    },
+    {
+      "artist": "Enslaved",
+      "song": "Ruun",
+      "album": "Ruun",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "C# standard. Guitar Pro tab shows all three guitar tracks: 'Gtr I (Db Gb B E Ab Db)'. Db=C#, Gb=F#, Ab=G# — standard enharmonic equivalents.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/e/enslaved/ruun_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Gtr I (Db Gb B E Ab Db) - Untitled' for all guitar tracks. Low-to-high = C#2 F#2 B2 E3 G#3 C#4 = C# standard."
+    },
+    {
+      "artist": "Enslaved",
+      "song": "Havenless",
+      "album": "Below the Lights",
+      "year": 2003,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "Non-standard open C#-based tuning. GP tab header: 'Gtr I (C# G# C# F# A# C#)'. From low to high: C#2 G#2 C#3 F#3 A#3 C#4 — strings 2-5 are 2 semitones above C# standard, outer strings stay at C#. Conflict flag: Enslaved used C# standard on Ruun (2006). This open tuning may be transcription-specific.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/e/enslaved/havenless_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab, status 200. GP header дословно: 'Gtr I (C# G# C# F# A# C#) - Guitar I'. Album 'Below the Lights' 2003 stated in header."
+    },
+    {
+      "artist": "Kvelertak",
+      "song": "Blodtorst",
+      "album": "Kvelertak",
+      "year": 2010,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Two independent tabs from the same debut album independently confirm this. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kvelertak/blodtorst_tab.html",
+        "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html"
+      ],
+      "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Also opened ulvetid_tab.html (status 200): 'Tuning: Drop D'. Both songs from debut album 'Kvelertak' (2010). Two sources → confidence high."
+    },
+    {
+      "artist": "Stam1na",
+      "song": "Paha Arkkitehti",
+      "album": "SLK (K18V dokumentti)",
+      "year": 2014,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D on 6-string. This is one of the SLK 6-string songs referenced in the official FAQ (stam1na.com/ukk/) as being played on Ibanez Jem 77VBK. Tab header: 'Tuning: Drop D'. Minor labeling inconsistency in the tab (string 2 labeled 'A' instead of 'B') but remaining string labels and tuning header are consistent with Drop D. Album confirmed as SLK-era via Finnish Wikipedia track listing.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/s/stam1na/paha_arkkitehti_tab.html",
+        "https://fi.wikipedia.org/wiki/SLK_(albumi)",
+        "https://stam1na.com/ukk/"
+      ],
+      "_verified_by": "Claude — guitartabs.cc tab (status 200): 'Tuning: Drop D'. fi.wikipedia.org SLK track listing (status 200) confirms 'Paha arkkitehti' composed by Olkkonen in K18V documentary section. stam1na.com/ukk/ confirms SLK has 6-string songs on Ibanez Jem 77VBK."
+    },
+    {
+      "artist": "In Flames",
+      "song": "Artifacts of the Black Rain",
+      "album": "The Jester Race",
+      "year": 1996,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "C standard (all strings down 4 semitones). Tab says 'Tune down 2 whole step to C'. Two tabs independently confirm In Flames used C standard on mid-90s material: this one (Jester Race 1996) and Behind Space '99 (Colony 1999).",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/i/in_flames/artifacts_of_the_black_rain_tab.html",
+        "https://www.guitartabs.cc/tabs/i/in_flames/behind_space_tab.html"
+      ],
+      "_verified_by": "Claude — opened artifacts tab (status 200): 'Tune down 2 whole step to C'. Also opened behind_space tab (status 200): 'C tuning (C,F,A#,D#,G,C)'. Both independently confirm C standard."
+    },
+    {
+      "artist": "In Flames",
+      "song": "Alias",
+      "album": "Clayman",
+      "year": 2000,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "A#1",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "Drop A# (= Drop Bb). Tab states 'Drop A#, F, A#, D#, G, C'. This is C standard with lowest string dropped 2 semitones (C→A#). Consistent with In Flames' base C standard tuning.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/i/in_flames/alias_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Drop A#,F,A#,D#,G,C'. Tabber also writes 'I'm new to the whole drop A# but...' confirming the tuning."
+    },
+    {
+      "artist": "Children of Bodom",
+      "song": "Are You Dead Yet?",
+      "album": "Are You Dead Yet?",
+      "year": 2005,
+      "confidence": "high",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Tab explicitly labels all six strings from high to low: D A F C G C (reversed = C G C F A D from low to high). Two tabs confirm CoB Drop C on this era: Are You Dead Yet? and Banned From Heaven (Hate Crew Deathroll, 2003).",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/c/children_of_bodom/are_you_dead_yet_tab.html",
+        "https://www.guitartabs.cc/tabs/c/children_of_bodom/banned_from_heaven_tab.html"
+      ],
+      "_verified_by": "Claude — opened are_you_dead_yet_tab.html (status 200). GP tab string labels from high to low: D A F C G C = Drop C (C2 G2 C3 F3 A3 D4). Also opened banned_from_heaven_tab.html (status 200): tabber writes 'the real song is probably in dropped C'."
+    },
+    {
+      "artist": "Children of Bodom",
+      "song": "Angels Don't Kill",
+      "album": "Are You Dead Yet?",
+      "year": 2005,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "C# standard per one tab ('Down 1 1/2 steps to C#'). Conflict: other songs from this album show Drop C (C G C F A D). The Angels Don't Kill tab is a keyboard intro arranged for guitar and may reflect the arrangement, not the original guitar tuning. Treat with caution.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/c/children_of_bodom/angels_dont_kill_tab.html"
+      ],
+      "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Tuning: Down 1 1/2 steps to C#'. Tab header: 'Keyboard intro arranged for guitar' — tuning may reflect the keyboard transposition, not studio guitar tuning."
+    },
+    {
+      "artist": "Arch Enemy",
+      "song": "Burning Angel",
+      "album": "Wages of Sin",
+      "year": 2001,
+      "confidence": "medium",
+      "capo": null,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "C standard",
+          "strings": [
+            "C2",
+            "F2",
+            "A#2",
+            "D#3",
+            "G3",
+            "C4"
+          ]
+        }
+      ],
+      "note": "Tab instruction: 'Tune Gtr to C'. Confirmed by second tab (Ravenous, same album) also stating C standard.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/arch_enemy/burning_angel_tab.html",
+        "https://www.guitartabs.cc/tabs/a/arch_enemy/ravenous_tab.html"
+      ],
+      "_verified_by": "subagent-tuning-research"
+    },
+    {
+      "artist": "Arch Enemy",
+      "song": "Beast of Man",
+      "album": "Stigmata",
+      "year": 1998,
+      "confidence": "medium",
+      "capo": null,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "B standard",
+          "strings": [
+            "B1",
+            "E2",
+            "A2",
+            "D3",
+            "F#3",
+            "B3"
+          ]
+        }
+      ],
+      "note": "Tab instruction: 'Tune Down 2.5 steps to B' (5 semitones below E standard = B standard).",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/a/arch_enemy/beast_of_man_tab.html"
+      ],
+      "_verified_by": "subagent-tuning-research"
     }
-   ],
-   "note": "C# standard per one tab ('Down 1 1/2 steps to C#'). Conflict: other songs from this album show Drop C (C G C F A D). The Angels Don't Kill tab is a keyboard intro arranged for guitar and may reflect the arrangement, not the original guitar tuning. Treat with caution.",
-   "sources": [
-    "https://www.guitartabs.cc/tabs/c/children_of_bodom/angels_dont_kill_tab.html"
-   ],
-   "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Tuning: Down 1 1/2 steps to C#'. Tab header: 'Keyboard intro arranged for guitar' — tuning may reflect the keyboard transposition, not studio guitar tuning."
-  }
- ],
- "_leads": [
-  {
-   "artist": "Mokoma",
-   "song": "Sydänjuuret",
-   "note": "Раздел Kysyttyä на mokoma.com упоминает H-вире (H = B в финской нотации) применительно к этой песне — значит строй отличается от обычного Drop D. Нужно найти полный ответ группы и выяснить точный строй.",
-   "sources_to_check": [
-    "https://mokoma.com/tag/viritys/",
-    "https://mokoma.com/kysyttya/"
-   ]
-  },
-  {
-   "artist": "Stam1na",
-   "note": "Официальный FAQ stam1na.com/ukk/ явно упоминает, что некоторые песни с альбома SLK записаны на шестиструнной гитаре — значит строй отличается от семиструнного A-D-A-D-G-B-E. Нужно найти список этих песен и их строй.",
-   "sources_to_check": [
-    "https://stam1na.com/ukk/"
-   ]
-  }
- ],
- "_rejected": [
-  {
-   "claim": "Wintersun — Beyond the Dark Sun в C standard (Gemini, confidence high)",
-   "reason": "Не подтвердилось. Таб на Ultimate-Guitar прямо пишет, что альбомная версия в E standard. Другие источники говорят про тон вниз. Ни один не даёт C standard. Источники, названные моделью ('Official Wintersun Tab Book', 'Premier Guitar interview'), подтвердить не удалось."
-  },
-  {
-   "claim": "Opeth — Ghost of Perdition в D A D F A D (Gemini)",
-   "reason": "Неверно. Верхняя струна E, а не D. Подтверждено тремя источниками."
-  }
- ]
+  ],
+  "_leads": [
+    {
+      "artist": "Mokoma",
+      "song": "Sydänjuuret",
+      "note": "Раздел Kysyttyä на mokoma.com упоминает H-вире (H = B в финской нотации) применительно к этой песне — значит строй отличается от обычного Drop D. Нужно найти полный ответ группы и выяснить точный строй.",
+      "sources_to_check": [
+        "https://mokoma.com/tag/viritys/",
+        "https://mokoma.com/kysyttya/"
+      ]
+    },
+    {
+      "artist": "Stam1na",
+      "note": "Официальный FAQ stam1na.com/ukk/ явно упоминает, что некоторые песни с альбома SLK записаны на шестиструнной гитаре — значит строй отличается от семиструнного A-D-A-D-G-B-E. Нужно найти список этих песен и их строй.",
+      "sources_to_check": [
+        "https://stam1na.com/ukk/"
+      ]
+    }
+  ],
+  "_rejected": [
+    {
+      "claim": "Wintersun — Beyond the Dark Sun в C standard (Gemini, confidence high)",
+      "reason": "Не подтвердилось. Таб на Ultimate-Guitar прямо пишет, что альбомная версия в E standard. Другие источники говорят про тон вниз. Ни один не даёт C standard. Источники, названные моделью ('Official Wintersun Tab Book', 'Premier Guitar interview'), подтвердить не удалось."
+    },
+    {
+      "claim": "Opeth — Ghost of Perdition в D A D F A D (Gemini)",
+      "reason": "Неверно. Верхняя струна E, а не D. Подтверждено тремя источниками."
+    }
+  ]
 }

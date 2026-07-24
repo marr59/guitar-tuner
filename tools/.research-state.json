@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T10:00:00Z",
+  "updated": "2026-07-24T08:09:58Z",
   "completed": [
     "Insomnium",
     "Amorphis",
@@ -13,21 +13,23 @@
     "Stam1na",
     "Wintersun",
     "In Flames",
-    "Children of Bodom"
+    "Children of Bodom",
+    "Arch Enemy"
   ],
-  "in_progress": "Arch Enemy",
+  "in_progress": null,
   "empty": [
     "Leprous",
     "Wintersun"
   ],
   "notes": {
-    "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums",
+    "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) — significant downtuning between albums",
     "Dark Tranquillity": "Conflict within Damage Done album (2002): title track tab says D standard, Monochromatic Stains tab says C# standard. Character (2005) confirmed C# standard.",
     "Avatar": "Only 7 tabs on guitartabs.cc. Bloody Angel has explicit Drop B string labels. Limited coverage.",
     "Leprous": "No tabs on guitartabs.cc. leprous.net has no FAQ/tuning section. UG is JS-only. Potential lead: YouTube tutorial descriptions (not fetched). Fan forums may have info.",
-    "Enslaved": "Ruun (2006) confirmed C# standard. Havenless (Below the Lights, 2003) shows unusual open C# tuning (strings 2-5 each +2 semitones from C# standard) \u2014 may be GP tab error or genuine open tuning.",
+    "Enslaved": "Ruun (2006) confirmed C# standard. Havenless (Below the Lights, 2003) shows unusual open C# tuning (strings 2-5 each +2 semitones from C# standard) — may be GP tab error or genuine open tuning.",
     "Stam1na": "Official FAQ (stam1na.com/ukk/) states SLK 6-string songs use Ibanez Jem 77VBK but does NOT state 6-string tuning. Paha Arkkitehti (K18V/SLK 2014) tab says Drop D. SLK track list confirmed via Finnish Wikipedia.",
     "Wintersun": "All guitartabs.cc tabs (Sadness and Hate, Starchild, Beyond the Dark Sun v4, Battle Against Time) show E standard. Jari Maenpaa plays standard tuning on debut album. Skipped per rules (no non-E-standard songs found).",
-    "Children of Bodom": "Are You Dead Yet? (2005) clearly in Drop C (C G C F A D). Banned from Heaven (HCDR 2003) also Drop C per tabber note. Angels Dont Kill conflict: one tab says C# standard but from a keyboard arrangement."
+    "Children of Bodom": "Are You Dead Yet? (2005) clearly in Drop C (C G C F A D). Banned from Heaven (HCDR 2003) also Drop C per tabber note. Angels Dont Kill conflict: one tab says C# standard but from a keyboard arrangement.",
+    "Arch Enemy": "Stigmata (1998): B standard ('Tune Down 2.5 steps to B'). Wages of Sin (2001): C standard ('Tune Gtr to C', confirmed by Burning Angel and Ravenous tabs)."
   }
 }
