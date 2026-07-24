@@ -715,6 +715,87 @@
     "https://www.guitartabs.cc/tabs/k/katatonia/leaders_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Dropped Bflat (or A#)'. String labels in tab from high to low: C G Eb Bb F Bb. Lowest string = Bb/A#1."
+  },
+  {
+   "artist": "Dark Tranquillity",
+   "song": "Damage Done",
+   "album": "Damage Done",
+   "year": 2002,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    }
+   ],
+   "note": "D standard per tab ('Tune down to D'). Conflict: 'Monochromatic Stains' from the same album is tabbed in C# standard — one of these tabbers may have been wrong. Treat with caution.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/damage_done_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune down to D'. String labels in tab: d A F C G (= D4 A3 F3 C3 G2 = strings 1-5 of D standard)."
+  },
+  {
+   "artist": "Dark Tranquillity",
+   "song": "Monochromatic Stains",
+   "album": "Damage Done",
+   "year": 2002,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C#2",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "C# standard. Tab spells out all six strings: 'C# F# B E G# C#'. Conflict: 'Damage Done' title track from same album is tabbed in D standard.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/monochromatic_stains_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: \"C#\"F#\"B\"E\"G#\"C#\"'. All six strings enumerated."
+  },
+  {
+   "artist": "Dark Tranquillity",
+   "song": "Lost to Apathy",
+   "album": "Character",
+   "year": 2005,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C#2",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "C# standard. Tab states 'Down 1 1/2 step (Db Gb B E Ab Db)'. Consistent with C# standard across the album.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/d/dark_tranquillity/lost_to_apathy_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Down 1 1/2 step (Db Gb B E Ab Db)'. Album 'Character' confirmed."
   }
  ],
  "_leads": [

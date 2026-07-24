@@ -1,14 +1,16 @@
 {
-  "updated": "2026-07-24T08:25:00Z",
+  "updated": "2026-07-24T08:35:00Z",
   "completed": [
     "Insomnium",
     "Amorphis",
     "Soilwork",
-    "Katatonia"
+    "Katatonia",
+    "Dark Tranquillity"
   ],
-  "in_progress": "Dark Tranquillity",
+  "in_progress": "Avatar",
   "empty": [],
   "notes": {
-    "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums"
+    "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums",
+    "Dark Tranquillity": "Conflict within Damage Done album (2002): title track tab says D standard, Monochromatic Stains tab says C# standard. Character (2005) confirmed C# standard."
   }
 }
