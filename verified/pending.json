@@ -877,6 +877,34 @@
     "https://www.guitartabs.cc/tabs/e/enslaved/havenless_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. GP header дословно: 'Gtr I (C# G# C# F# A# C#) - Guitar I'. Album 'Below the Lights' 2003 stated in header."
+  },
+  {
+   "artist": "Kvelertak",
+   "song": "Blodtorst",
+   "album": "Kvelertak",
+   "year": 2010,
+   "confidence": "high",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    }
+   ],
+   "note": "Drop D. Two independent tabs from the same debut album independently confirm this. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/k/kvelertak/blodtorst_tab.html",
+    "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html"
+   ],
+   "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Also opened ulvetid_tab.html (status 200): 'Tuning: Drop D'. Both songs from debut album 'Kvelertak' (2010). Two sources → confidence high."
   }
  ],
  "_leads": [
