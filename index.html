@@ -406,9 +406,9 @@ let audioCtx=null,analyser=null,stream=null,running=false,rafId=null,scratch=nul
 let refUntil=0;
 const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 
-function ensureAudio(){
+async function ensureAudio(){
   if(!audioCtx||audioCtx.state==="closed") audioCtx=new (window.AudioContext||window.webkitAudioContext)();
-  if(audioCtx.state==="suspended") audioCtx.resume();
+  if(audioCtx.state==="suspended") await audioCtx.resume();
   return audioCtx;
 }
 
@@ -465,9 +465,9 @@ function ksBuffer(ac, freq) {
  return buf;
 }
 let refNode = null;
-function playReference(hz) {
+async function playReference(hz) {
  if (!hz) return;
- const ac = ensureAudio(), t = ac.currentTime;
+ const ac = await ensureAudio(), t = ac.currentTime;
  if (refNode) { try { refNode.stop(); } catch (e) {} refNode = null; }
  const buf = ksBuffer(ac, hz);
  const src = ac.createBufferSource(); src.buffer = buf;
@@ -489,8 +489,8 @@ function playReference(hz) {
 }
 
 /* ── success chime: a soft two-note bell, not a beep ── */
-function playDing(){
-  const ac=ensureAudio(), t=ac.currentTime;
+async function playDing(){
+  const ac=await ensureAudio(), t=ac.currentTime;
   [[1046.5,0,1],[1568.0,.07,.7]].forEach(([f,delay,lvl])=>{
     const st=t+delay;
     const g=ac.createGain();
@@ -711,7 +711,7 @@ function updateHint(){
 async function start(){
   try{
     stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
-    ensureAudio();
+    await ensureAudio();
     analyser=audioCtx.createAnalyser();
     analyser.fftSize=8192;
     const src=audioCtx.createMediaStreamSource(stream);
