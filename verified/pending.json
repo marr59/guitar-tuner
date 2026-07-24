@@ -905,6 +905,35 @@
     "https://www.guitartabs.cc/tabs/k/kvelertak/ulvetid_tab.html"
    ],
    "_verified_by": "Claude — opened blodtorst_tab.html (status 200): 'Tuning: Drop D (D-A-D-G-B-e)'. Also opened ulvetid_tab.html (status 200): 'Tuning: Drop D'. Both songs from debut album 'Kvelertak' (2010). Two sources → confidence high."
+  },
+  {
+   "artist": "Stam1na",
+   "song": "Paha Arkkitehti",
+   "album": "SLK (K18V dokumentti)",
+   "year": 2014,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    }
+   ],
+   "note": "Drop D on 6-string. This is one of the SLK 6-string songs referenced in the official FAQ (stam1na.com/ukk/) as being played on Ibanez Jem 77VBK. Tab header: 'Tuning: Drop D'. Minor labeling inconsistency in the tab (string 2 labeled 'A' instead of 'B') but remaining string labels and tuning header are consistent with Drop D. Album confirmed as SLK-era via Finnish Wikipedia track listing.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/s/stam1na/paha_arkkitehti_tab.html",
+    "https://fi.wikipedia.org/wiki/SLK_(albumi)",
+    "https://stam1na.com/ukk/"
+   ],
+   "_verified_by": "Claude — guitartabs.cc tab (status 200): 'Tuning: Drop D'. fi.wikipedia.org SLK track listing (status 200) confirms 'Paha arkkitehti' composed by Olkkonen in K18V documentary section. stam1na.com/ukk/ confirms SLK has 6-string songs on Ibanez Jem 77VBK."
   }
  ],
  "_leads": [
