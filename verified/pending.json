@@ -934,6 +934,61 @@
     "https://stam1na.com/ukk/"
    ],
    "_verified_by": "Claude — guitartabs.cc tab (status 200): 'Tuning: Drop D'. fi.wikipedia.org SLK track listing (status 200) confirms 'Paha arkkitehti' composed by Olkkonen in K18V documentary section. stam1na.com/ukk/ confirms SLK has 6-string songs on Ibanez Jem 77VBK."
+  },
+  {
+   "artist": "In Flames",
+   "song": "Artifacts of the Black Rain",
+   "album": "The Jester Race",
+   "year": 1996,
+   "confidence": "high",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C2",
+      "F2",
+      "A#2",
+      "D#3",
+      "G3",
+      "C4"
+     ]
+    }
+   ],
+   "note": "C standard (all strings down 4 semitones). Tab says 'Tune down 2 whole step to C'. Two tabs independently confirm In Flames used C standard on mid-90s material: this one (Jester Race 1996) and Behind Space '99 (Colony 1999).",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/i/in_flames/artifacts_of_the_black_rain_tab.html",
+    "https://www.guitartabs.cc/tabs/i/in_flames/behind_space_tab.html"
+   ],
+   "_verified_by": "Claude — opened artifacts tab (status 200): 'Tune down 2 whole step to C'. Also opened behind_space tab (status 200): 'C tuning (C,F,A#,D#,G,C)'. Both independently confirm C standard."
+  },
+  {
+   "artist": "In Flames",
+   "song": "Alias",
+   "album": "Clayman",
+   "year": 2000,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "A#1",
+      "F2",
+      "A#2",
+      "D#3",
+      "G3",
+      "C4"
+     ]
+    }
+   ],
+   "note": "Drop A# (= Drop Bb). Tab states 'Drop A#, F, A#, D#, G, C'. This is C standard with lowest string dropped 2 semitones (C→A#). Consistent with In Flames' base C standard tuning.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/i/in_flames/alias_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Drop A#,F,A#,D#,G,C'. Tabber also writes 'I'm new to the whole drop A# but...' confirming the tuning."
   }
  ],
  "_leads": [
