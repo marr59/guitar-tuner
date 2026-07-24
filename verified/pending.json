@@ -607,6 +607,60 @@
     "https://www.guitartabs.cc/tabs/a/amorphis/day_of_your_beliefs_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab setup block dословно: '2 Guitars, dropped D'. Album 'Am Universum' confirmed in tab."
+  },
+  {
+   "artist": "Soilwork",
+   "song": "The Chainheart Machine",
+   "album": "The Chainheart Machine",
+   "year": 2000,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "B1",
+      "E2",
+      "A2",
+      "D3",
+      "F#3",
+      "B3"
+     ]
+    }
+   ],
+   "note": "B standard. Tab header says 'Tune Gtr to B'. Same instruction appears on Machine Gun Majesty from the same album, confirming this is the album-wide working tuning.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/s/soilwork/chainheart_machine_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Tune Gtr to B'. Machine Gun Majesty (same album) also says 'Tune Gtr to B'."
+  },
+  {
+   "artist": "Soilwork",
+   "song": "Distance",
+   "album": "Stabbing the Drama",
+   "year": 2005,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "B1",
+      "E2",
+      "A2",
+      "D3",
+      "F#3",
+      "B3"
+     ]
+    }
+   ],
+   "note": "B standard. Tab explicitly states 'Tuning: Standard B tuning (B E A D F# B)'. Confirms Soilwork continued using B standard through their mid-period.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/s/soilwork/distance_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Standard B tuning (B E A D F# B)'. Album 'Stabbing the Drama' 2005 confirmed."
   }
  ],
  "_leads": [
