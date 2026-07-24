@@ -1,7 +1,7 @@
 {
  "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.",
- "batch": 1,
- "date": "2026-07-23",
+ "batch": 2,
+ "date": "2026-07-24",
  "entries": [
  {
  "artist": "Opeth",
@@ -79,6 +79,183 @@
  "https://www.gtdb.org/aeadfsa/videos/wlyTSPlWJ1I"
  ],
  "_verified_by": "Claude — открыл официальный FAQ. Дословно: 'Kitaroiden vire matalimmasta alkaen on A-D-A-D-G-H-E', указано дважды (Ibanez RG7 Олкконена и баритоны ESP Хюрюнена). H в финской нотации = B. ОГОВОРКА: та же страница упоминает 'шестиструнные песни с SLK', значит строй не сквозной по всему репертуару."
+ }
+ ,
+ {
+  "artist": "Mokoma",
+  "song": "Kasvot kohti itää",
+  "album": "Kurimus",
+  "year": 2003,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D. Confirmed by tab header from a separate author (not the zesar_1337 series); the author explicitly writes 'Tuning drop D' at the top.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html",
+   "https://fi.wikipedia.org/wiki/Kurimus_(albumi)"
+  ],
+  "_verified_by": "Claude — открыла guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html, статус 200, в теле файла дословно: 'Tuning drop D'. Принадлежность к альбому Kurimus (2003) подтверждена fi.wikipedia.org/wiki/Kurimus_(albumi) — трек-лист содержит 'Kasvot kohti itää' треком №3."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Haudan takaa",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D. Three independent sources agree: two tab transcriptions (different sites) and a YouTube cover video description.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/haudan_takaa_tab.html",
+   "https://tabs.ultimate-guitar.com/tab/mokoma/haudan-takaa-tabs-723252",
+   "https://www.youtube.com/watch?v=OFpAvhU1Pus"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно в заголовке: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo' и 'Gtr III (D A D G B E) - Melodia'. UG-страница вернула 200 (JS-рендер), сниппет поисковика дословно: 'Tuning: D A D G B E · Author: tonedeafidiot'. YouTube-ролик (guitar cover) — описание в сниппете: 'Tuning drop D.' Принадлежность к альбому 2004 подтверждена fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi: 'Haudan takaa – 3.21'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Hiljaisuuden julistaja",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D. Tab credits fixes from Kuisma Aalto himself ('fiksejä Kuisma'), which makes this marginally more trustworthy than a typical fan transcription.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/hiljaisuuden_julistaja_tab.html",
+   "https://fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Tablat: Johannes/Sami + fiksejä Kuisma', затем 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo'. Альбом подтверждён fi.wikipedia.org — трек 'Hiljaisuuden julistaja'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Tämän maailman ruhtinaan hovi",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D. Title track.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/taman_maailman_ruhtinaan_hovi_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E)' (Tuomo). Альбом подтверждён fi.wikipedia.org."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Kiellän itseni",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/kiellan_itseni_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Hyinen syli",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/hyinen_syli_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Vade retro, Satana!",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio (6-string)", "strings": ["D2","A2","D3","G3","B3","E4"] },
+   { "label": "Kuisma Aalto 7-string", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Kuisma Aalto uses a 7-string guitar (A D A D G B E, low A below Drop D) for the main guitar I track; Tuomo Saikkonen and Kuisma's second guitar are both in standard Drop D. A 6-string player would use Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/vade_retro_satana_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (A D A D G B E) - Kuisma 7', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (D A D G B E) - Kuisma 6'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Sudet ihmisten vaatteissa",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/sudet_ihmisten_vaatteissa_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuom[o]'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Poltetun maan taktiikkaa",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio", "strings": ["D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/poltetun_maan_taktiikkaa_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+ },
+ {
+  "artist": "Mokoma",
+  "song": "Nämä kolme ovat yhtä",
+  "album": "Tämän maailman ruhtinaan hovi",
+  "year": 2004,
+  "confidence": "medium",
+  "capo": 0,
+  "conflict": false,
+  "variants": [
+   { "label": "Studio (6-string)", "strings": ["D2","A2","D3","G3","B3","E4"] },
+   { "label": "Kuisma Aalto 7-string", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
+  ],
+  "note": "Same arrangement as Vade retro Satana: Kuisma's six-string and Tuomo are in Drop D; Kuisma's seven-string adds a low-A layer. A 6-string player would use Drop D.",
+  "sources": [
+   "https://www.guitartabs.cc/tabs/m/mokoma/nama_kolme_ovat_yhta_tab.html"
+  ],
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma 6', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (A D A D G B E) - Kuisma 7'."
  }
  ],
  "_rejected": [
