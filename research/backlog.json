@@ -22,8 +22,9 @@
   {
     "artist": "Ensiferum",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "standard",
+    "entries": 0,
+    "search_log": "Проверил все три направления: (1) SevenString.org тред об Ensiferum прямо указывает, что гитары в E standard (нестандартна только 7-струнная бас-гитара Sami Hinkka); финский поиск viritys дал только общие гайды. (2) guitartabs.cc 'Battle Song' — без строя, риффы в стандарте; UG/Songsterr для 'In My Sword I Trust' и 'One More Magic Potion' за JS-стеной, но UG пометил One More Magic Potion как Standard tuning. (3) gtdb.org вернул 403. Нестандартных строёв не найдено — группа играет в E standard."
   },
   {
     "artist": "Turmion Kätilöt",
