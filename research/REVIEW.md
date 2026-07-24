@@ -3,8 +3,8 @@
 Обновлено: 2026-07-24
 
 ## Сводка
-- Групп в очереди: pending=80, done=3, empty=0, not-found=2, standard=0
-- Записей всего: 39 (high=6, medium=33)
+- Групп в очереди: pending=80, done=4, empty=0, not-found=1, standard=0
+- Записей всего: 44 (high=6, medium=38)
 - Первичные источники: Opeth, Stam1na, Mokoma
 
 ## Записи
@@ -35,6 +35,11 @@
 | Insomnium | In The Halls Of Awaiting | D2 G2 C3 F3 A3 D4 | medium | guitartabs.cc | D standard (whole step down). All six guitar tracks in the t… |
 | Insomnium | Down With The Sun | D2 G2 C3 F3 A3 D4 | medium | guitartabs.cc | D standard. Tabber explicitly writes 'tuning: Whole step dow… |
 | Insomnium | Mortal Share | D2 A2 D3 G3 B3 E4 | medium | guitartabs.cc | Drop D. Two independent tabs both state D A D G B E. Tab v1 … |
+| Kalmah | Hades | D#2 G#2 C#3 F#3 A#3 D#4 | medium | guitartabs.cc | Tab explicitly states 'tune down a 1/2 step (Eb Ab Db Gb Bb … |
+| Kalmah | Bitter Metallic Side | D2 G2 C3 F3 A3 D4 | medium | guitartabs.cc | Tab lines labelled D G C F A d = D standard (whole step down… |
+| Kalmah | To the Gallows | D2 G2 C3 F3 A3 D4 | medium | guitartabs.cc | Tab notes 'It's dropped 1 step down to D'; lines D G C F A d… |
+| Kalmah | Black Waltz | D2 A2 D3 G3 B3 E4 | medium | guitartabs.cc | Tab header states 'Drop D'. Other transcriptions from the sa… |
+| Kalmah | Tordah | D2 A2 D3 G3 B3 E4 | medium | guitartabs.cc | Tab header states 'Tuning: Dropped D'. Single source. |
 | Katatonia | Evidence | D2 G2 C3 F3 A3 D4 | medium | guitartabs.cc | D standard. Tabber writes 'Tune guitar to D:'. Conflict flag… |
 | Katatonia | Leaders | A#1 F2 A#2 D#3 G3 C4 | medium | guitartabs.cc | Drop Bb (Drop A#) — lowest string dropped from C standard. T… |
 | Kvelertak | Blodtorst | D2 A2 D3 G3 B3 E4 | medium | guitartabs.cc | Drop D. Tab header: 'Tuning: Drop D (D-A-D-G-B-e)'. Второй и… |
@@ -53,7 +58,5 @@
 
 ## Пустые группы (где искал)
 
-**Norther** (not-found): JSON не распарсился
-
-**Kalmah** (not-found): Не удалось получить доступ ни к одному источнику: инструменты WebSearch и WebFetch вернули отказ по правам доступа (permission not granted). Проверить gtdb.org, таб-сайты и интервью с гитаристом не удалось — ни один URL открыть не получилось.
+**Norther** (not-found): Проверил все три направления. Первичные: equipboard 403, финские интервью с Ranta/Lindroos строй не называют. Таб-сайты (UG, Songsterr, gtptabs) прячут поле тюнинга за JS-стеной, фетч его не отдаёт; acousterr показывает лишь стандартную подпись строк E-A-D-G-B-E без явного объявления строя. gtdb.org записей по Norther не имеет. Ни одной рабочей страницы с явно видимым нестандартным строем конкретной песни получить не удалось.
 
