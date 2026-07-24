@@ -526,6 +526,87 @@
     "https://www.guitartabs.cc/tabs/i/insomnium/mortal_share_tab_ver_2.html"
    ],
    "_verified_by": "Claude — opened both tab URLs, both status 200. v1 header: 'Tuning: drop D'. v2 header: 'Tuning: D A D G B E'. Both independently confirm Drop D."
+  },
+  {
+   "artist": "Amorphis",
+   "song": "Born of Fire",
+   "album": "Eclipse",
+   "year": 2006,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    }
+   ],
+   "note": "D standard. Guitar Pro tab shows 'Gtr I (D G C F A D)' header.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/a/amorphis/born_of_fire_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header in GP export: 'Gtr I (D G C F A D) - Untitled'. Album 'Eclipse' confirmed in tab header."
+  },
+  {
+   "artist": "Amorphis",
+   "song": "Divinity",
+   "album": "Tuonela",
+   "year": 1999,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    }
+   ],
+   "note": "D standard. Tabber writes 'Tuning: Down 1 whole step'.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/a/amorphis/divinity_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Header: 'AMORPHIS - DIVINITY / From the album TUONELA / Tuning: Down 1 whole step'."
+  },
+  {
+   "artist": "Amorphis",
+   "song": "Day of Your Beliefs",
+   "album": "Am Universum",
+   "year": 2001,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "A2",
+      "D3",
+      "G3",
+      "B3",
+      "E4"
+     ]
+    }
+   ],
+   "note": "Drop D. Tabber writes '2 Guitars, dropped D'. Conflict flag: Amorphis uses Drop D here vs D standard on Tuonela/Eclipse — suggests per-song variation.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/a/amorphis/day_of_your_beliefs_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab setup block dословно: '2 Guitars, dropped D'. Album 'Am Universum' confirmed in tab."
   }
  ],
  "_leads": [
