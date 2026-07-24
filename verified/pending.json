@@ -661,6 +661,60 @@
     "https://www.guitartabs.cc/tabs/s/soilwork/distance_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tuning: Standard B tuning (B E A D F# B)'. Album 'Stabbing the Drama' 2005 confirmed."
+  },
+  {
+   "artist": "Katatonia",
+   "song": "Evidence",
+   "album": "Viva Emptiness",
+   "year": 2003,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "D2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    }
+   ],
+   "note": "D standard. Tabber writes 'Tune guitar to D:'. Conflict flag: different album uses Drop Bb.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/k/katatonia/evidence_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Tune guitar to D:'. Album 'Viva Emptiness' 2003 stated in tab header."
+  },
+  {
+   "artist": "Katatonia",
+   "song": "Leaders",
+   "album": "The Great Cold Distance",
+   "year": 2006,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "A#1",
+      "F2",
+      "A#2",
+      "D#3",
+      "G3",
+      "C4"
+     ]
+    }
+   ],
+   "note": "Drop Bb (Drop A#) — lowest string dropped from C standard. Tab labels strings from low to high: Bb F Bb Eb G C. Tabber calls it 'Dropped Bflat (or A#)'. Different from D standard used on Viva Emptiness — Katatonia shifted significantly lower by 2006.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/k/katatonia/leaders_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно в заголовке: 'Dropped Bflat (or A#)'. String labels in tab from high to low: C G Eb Bb F Bb. Lowest string = Bb/A#1."
   }
  ],
  "_leads": [

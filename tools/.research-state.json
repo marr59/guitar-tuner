@@ -1,11 +1,14 @@
 {
-  "updated": "2026-07-24T08:15:00Z",
+  "updated": "2026-07-24T08:25:00Z",
   "completed": [
     "Insomnium",
     "Amorphis",
-    "Soilwork"
+    "Soilwork",
+    "Katatonia"
   ],
-  "in_progress": "Katatonia",
+  "in_progress": "Dark Tranquillity",
   "empty": [],
-  "notes": {}
+  "notes": {
+    "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums"
+  }
 }
