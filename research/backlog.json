@@ -36,8 +36,9 @@
   {
     "artist": "Battle Beast",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 3,
+    "search_log": "Pulled all 49 Battle Beast song pages from Songsterr and extracted embedded MIDI tuning arrays (guitar + bass); 46 are E standard and skipped. Three non-standard: Twilight Cabaret (Drop D), The Road to Avalon (Drop C#), Kingdom (C# standard) — each cross-checked against its bass track. Ultimate-Guitar/guvnaguitars/PaidTabs exposed no machine-readable tuning (JS-walled) and gtdb.org returned 403, so Songsterr is the single source (confidence medium)."
   },
   {
     "artist": "Omnium Gatherum",

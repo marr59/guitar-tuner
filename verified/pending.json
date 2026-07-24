@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 4,
+  "batch": 5,
   "date": "2026-07-24",
   "entries": [
     {
@@ -2015,6 +2015,87 @@
         "https://www.ultimate-guitar.com/artist/18012"
       ],
       "_verified_by": "Claude — Songsterr guitar tuning A1 E2 A2 D3 F#3 B3; UG artist page lists Sikiö Pro tab as 'Standard' (disagreement)"
+    },
+    {
+      "artist": "Battle Beast",
+      "song": "Twilight Cabaret",
+      "album": "Steelbound",
+      "year": 2025,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Drop D. Songsterr guitar tuning array [64,59,55,50,45,38]; bass track [43,38,33,26] is Drop D bass, confirming.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/battle-beast-twilight-cabaret-tab-s2623589"
+      ],
+      "_verified_by": "Claude — curl of Songsterr page JSON showed guitar \"tuning\":[64,59,55,50,45,38] (low E→D2) across all guitar tracks, plus Drop-D bass array"
+    },
+    {
+      "artist": "Battle Beast",
+      "song": "The Road to Avalon",
+      "album": "No More Hollywood Endings",
+      "year": 2019,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ]
+        }
+      ],
+      "note": "Drop C# (Eb-standard with low string dropped a whole step to C#). Songsterr array [63,58,54,49,44,37] identical across all three guitar tracks (Lead/Rhythm/Harmonies); bass [42,37,32,25] matches.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/battle-beast-the-road-to-avalon-tab-s1146610"
+      ],
+      "_verified_by": "Claude — Songsterr JSON: all 3 guitar tracks \"tuning\":[63,58,54,49,44,37] = C#2 G#2 C#3 F#3 A#3 D#4 (drop C#), corroborated by drop-C# bass array"
+    },
+    {
+      "artist": "Battle Beast",
+      "song": "Kingdom",
+      "album": "Battle Beast",
+      "year": 2013,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": true,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "C# standard (down 1.5 steps / minor third from E). Songsterr main guitar array [61,56,52,47,42,37] and bass [40,35,30,25] both down 3 semitones, confirming. CONFLICT: the same Songsterr tab also contains one guitar track in E standard [64,59,55,50,45,40] (likely a transcription artifact); bass strongly supports C# standard.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/battle-beast-kingdom-tab-s1947488"
+      ],
+      "_verified_by": "Claude — Songsterr JSON: guitar \"tuning\":[61,56,52,47,42,37]=C# standard and bass [40,35,30,25] both down a minor third; one extra guitar track shown in E standard (noted as conflict)"
     }
   ],
   "_leads": [
