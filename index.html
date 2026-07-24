@@ -407,6 +407,28 @@ let audioCtx=null,analyser=null,stream=null,running=false,rafId=null,scratch=nul
 let refUntil=0;
 const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 
+/* iOS mute-switch fix: claim 'playback' audio session on first string tap.
+   Without this, Web Audio stays in the 'ambient' category and is silenced
+   by the hardware mute switch until the microphone is activated. */
+let sessionSet=false;
+function unmuteFallback(){
+  // Playing any <audio> element in a user gesture switches iOS audio session
+  // to playback, which overrides the mute switch — same effect as the API.
+  const a=document.createElement('audio');
+  a.setAttribute('playsinline','');
+  a.preload='auto'; a.loop=false; a.volume=0.001;
+  a.src='data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQIAAAAAAA==';
+  a.play().catch(()=>{});
+}
+function claimAudioSession(){
+  if(sessionSet) return;
+  sessionSet=true;
+  try{
+    if('audioSession' in navigator) navigator.audioSession.type='playback';
+  }catch(e){}
+  unmuteFallback();
+}
+
 async function ensureAudio(){
   if(!audioCtx||audioCtx.state==="closed") audioCtx=new (window.AudioContext||window.webkitAudioContext)();
   if(audioCtx.state==="suspended") await audioCtx.resume();
@@ -695,6 +717,7 @@ function renderGuide(){
       else if(i===last) advanceDir=-1;
       else if(i!==selIdx) advanceDir=i>selIdx?1:-1;
       selIdx=i; allDone=false; advanceAt=0; resetReadings();
+      claimAudioSession();
       renderGuide(); updateHint(); playReference(noteToHz(n));
     };
     g.appendChild(d);
@@ -712,6 +735,7 @@ function updateHint(){
 async function start(){
   try{
     stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
+    try{ if('audioSession' in navigator) navigator.audioSession.type='play-and-record'; }catch(e){}
     await ensureAudio();
     analyser=audioCtx.createAnalyser();
     analyser.fftSize=8192;
