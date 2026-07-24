@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 6,
+  "batch": 7,
   "date": "2026-07-24",
   "entries": [
     {
@@ -2123,6 +2123,88 @@
         "https://www.songsterr.com/a/wsa/omnium-gatherum-tabs-a10542"
       ],
       "_verified_by": "Claude — открыл список табов Omnium Gatherum на Songsterr, в перечне видна запись 'Rest in Your Heart C# Standard' с пометкой строя прямо в заголовке таба"
+    },
+    {
+      "artist": "Swallow the Sun",
+      "song": "New Moon",
+      "album": "New Moon",
+      "year": 2009,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Two independent tab sites (bigchords, guitaretab) both state 'Tuning: Drop C'; no primary source found so kept medium.",
+      "sources": [
+        "https://www.bigchords.com/swallow_the_sun_chords/new_moon_tab.html",
+        "https://www.guitaretab.com/s/swallow-the-sun/217757.html"
+      ],
+      "_verified_by": "Claude — opened both pages; each shows tuning header 'Tuning: Drop C' (C G C F A D)"
+    },
+    {
+      "artist": "Swallow the Sun",
+      "song": "These Woods Breathe Evil",
+      "album": "New Moon",
+      "year": 2009,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Single verified source (bigchords).",
+      "sources": [
+        "https://www.bigchords.com/swallow_the_sun_chords/these_woods_breathe_evil_tab.html"
+      ],
+      "_verified_by": "Claude — opened page; shows 'Tuning: Drop C'"
+    },
+    {
+      "artist": "Swallow the Sun",
+      "song": "Deadly Nightshade",
+      "album": "Emerald Forest and the Blackbird",
+      "year": 2012,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Drop C. Single verified source (bigchords), which lists 'Tuning: Drop C [ C G C F A D ]'.",
+      "sources": [
+        "https://www.bigchords.com/swallow_the_sun_chords/deadly_nightshade_tab.html"
+      ],
+      "_verified_by": "Claude — opened page; shows 'Tuning: Drop C [ C G C F A D ]'"
     }
   ],
   "_leads": [

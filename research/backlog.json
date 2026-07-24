@@ -50,8 +50,9 @@
   {
     "artist": "Swallow the Sun",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 3,
+    "search_log": "Primary (band site swallowthesun.net, Juha Raivio interviews) gave no per-song tuning; gtdb.org returned HTTP 403; Songsterr and Ultimate-Guitar render tuning via JS so it wasn't visible to fetch. Static tab pages on bigchords.com and guitaretab.com confirmed Drop C (C G C F A D) for New Moon, These Woods Breathe Evil, and Deadly Nightshade — the band's consistent catalog tuning."
   },
   {
     "artist": "Before the Dawn",
