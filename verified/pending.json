@@ -823,6 +823,60 @@
     "https://www.guitartabs.cc/tabs/a/avatar/bloody_angel_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Tab string labels dословно from high to low: 'C#', 'G#', 'E', 'B', 'F#', 'B'. This is Drop B tuning."
+  },
+  {
+   "artist": "Enslaved",
+   "song": "Ruun",
+   "album": "Ruun",
+   "year": 2006,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C#2",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "C# standard. Guitar Pro tab shows all three guitar tracks: 'Gtr I (Db Gb B E Ab Db)'. Db=C#, Gb=F#, Ab=G# — standard enharmonic equivalents.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/e/enslaved/ruun_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. Дословно: 'Gtr I (Db Gb B E Ab Db) - Untitled' for all guitar tracks. Low-to-high = C#2 F#2 B2 E3 G#3 C#4 = C# standard."
+  },
+  {
+   "artist": "Enslaved",
+   "song": "Havenless",
+   "album": "Below the Lights",
+   "year": 2003,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C#2",
+      "G#2",
+      "C#3",
+      "F#3",
+      "A#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "Non-standard open C#-based tuning. GP tab header: 'Gtr I (C# G# C# F# A# C#)'. From low to high: C#2 G#2 C#3 F#3 A#3 C#4 — strings 2-5 are 2 semitones above C# standard, outer strings stay at C#. Conflict flag: Enslaved used C# standard on Ruun (2006). This open tuning may be transcription-specific.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/e/enslaved/havenless_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab, status 200. GP header дословно: 'Gtr I (C# G# C# F# A# C#) - Guitar I'. Album 'Below the Lights' 2003 stated in header."
   }
  ],
  "_leads": [

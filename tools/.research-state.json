@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T08:55:00Z",
+  "updated": "2026-07-24T09:05:00Z",
   "completed": [
     "Insomnium",
     "Amorphis",
@@ -7,9 +7,10 @@
     "Katatonia",
     "Dark Tranquillity",
     "Avatar",
-    "Leprous"
+    "Leprous",
+    "Enslaved"
   ],
-  "in_progress": "Enslaved",
+  "in_progress": "Kvelertak",
   "empty": [
     "Leprous"
   ],
@@ -17,6 +18,7 @@
     "Katatonia": "Tuning shifted from D standard (2003) to Drop Bb (2006) \u2014 significant downtuning between albums",
     "Dark Tranquillity": "Conflict within Damage Done album (2002): title track tab says D standard, Monochromatic Stains tab says C# standard. Character (2005) confirmed C# standard.",
     "Avatar": "Only 7 tabs on guitartabs.cc. Bloody Angel has explicit Drop B string labels. Limited coverage.",
-    "Leprous": "No tabs on guitartabs.cc. leprous.net has no FAQ/tuning section. UG is JS-only. Potential lead: YouTube tutorial descriptions (not fetched). Fan forums may have info."
+    "Leprous": "No tabs on guitartabs.cc. leprous.net has no FAQ/tuning section. UG is JS-only. Potential lead: YouTube tutorial descriptions (not fetched). Fan forums may have info.",
+    "Enslaved": "Ruun (2006) confirmed C# standard. Havenless (Below the Lights, 2003) shows unusual open C# tuning (strings 2-5 each +2 semitones from C# standard) \u2014 may be GP tab error or genuine open tuning."
   }
 }
