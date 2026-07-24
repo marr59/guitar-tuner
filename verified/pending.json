@@ -11,13 +11,13 @@
  "capo": 0,
  "conflict": false,
  "variants": [
- { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
+  { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
  ],
  "note": "Åkerfeldt's open D-minor tuning, used across Ghost Reveries. He credits folk players Bert Jansch, John Renbourn and Nick Drake as the source of the idea.",
  "sources": [
- "https://ragajunglism.org/tunings/menu/ghost-reveries/",
- "https://gtdb.org/dadfae",
- "https://theriffrepeater.com/rocksmith-remastered-dlc-3-31-2020-opeth-ghost-of-perdition-bleak-blackwater-park-guitar-bass-progressive-death-metal-sweden-mikael-akerfeldt-steven-wilson-ghost-reveries-2005/"
+  "https://ragajunglism.org/tunings/menu/ghost-reveries/",
+  "https://gtdb.org/dadfae",
+  "https://theriffrepeater.com/rocksmith-remastered-dlc-3-31-2020-opeth-ghost-of-perdition-bleak-blackwater-park-guitar-bass-progressive-death-metal-sweden-mikael-akerfeldt-steven-wilson-ghost-reveries-2005/"
  ],
  "_verified_by": "Claude — открыл все три источника. Rocksmith DLC (лицензионный продукт) указывает 'Custom Tuning: DADFAE'. Ragajunglism перечисляет песни поимённо."
  },
@@ -29,7 +29,7 @@
  "capo": 0,
  "conflict": false,
  "variants": [
- { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
+  { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
  ],
  "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
  "sources": ["https://ragajunglism.org/tunings/menu/ghost-reveries/"],
@@ -43,7 +43,7 @@
  "capo": 0,
  "conflict": false,
  "variants": [
- { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
+  { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
  ],
  "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
  "sources": ["https://ragajunglism.org/tunings/menu/ghost-reveries/"],
@@ -57,7 +57,7 @@
  "capo": 0,
  "conflict": false,
  "variants": [
- { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
+  { "label": "Studio", "strings": ["D2","A2","D3","F3","A3","E4"] }
  ],
  "note": "All six electric, acoustic and 12-string guitar layers are in this tuning.",
  "sources": ["https://ragajunglism.org/tunings/menu/ghost-reveries/"],
@@ -71,16 +71,15 @@
  "capo": 0,
  "conflict": false,
  "variants": [
- { "label": "Studio", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
+  { "label": "Studio", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
  ],
  "note": "The band's own FAQ states this seven-string tuning for both guitarists. It is their working tuning rather than a per-song statement, and the same page notes that some songs are played on a six-string, so confidence stays medium.",
  "sources": [
- "https://stam1na.com/ukk/",
- "https://www.gtdb.org/aeadfsa/videos/wlyTSPlWJ1I"
+  "https://stam1na.com/ukk/",
+  "https://www.gtdb.org/aeadfsa/videos/wlyTSPlWJ1I"
  ],
  "_verified_by": "Claude — открыл официальный FAQ. Дословно: 'Kitaroiden vire matalimmasta alkaen on A-D-A-D-G-H-E', указано дважды (Ibanez RG7 Олкконена и баритоны ESP Хюрюнена). H в финской нотации = B. ОГОВОРКА: та же страница упоминает 'шестиструнные песни с SLK', значит строй не сквозной по всему репертуару."
- }
- ,
+ },
  {
   "artist": "Mokoma",
   "song": "Kasvot kohti itää",
@@ -95,9 +94,10 @@
   "note": "Drop D. Confirmed by tab header from a separate author (not the zesar_1337 series); the author explicitly writes 'Tuning drop D' at the top.",
   "sources": [
    "https://www.guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html",
-   "https://fi.wikipedia.org/wiki/Kurimus_(albumi)"
+   "https://fi.wikipedia.org/wiki/Kurimus_(albumi)",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — открыла guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html, статус 200, в теле файла дословно: 'Tuning drop D'. Принадлежность к альбому Kurimus (2003) подтверждена fi.wikipedia.org/wiki/Kurimus_(albumi) — трек-лист содержит 'Kasvot kohti itää' треком №3."
+  "_verified_by": "Claude — открыла guitartabs.cc/tabs/m/mokoma/kasvot_kohti_itaa_tab.html, статус 200, в теле файла дословно: 'Tuning drop D'. Принадлежность к альбому Kurimus (2003) подтверждена fi.wikipedia.org/wiki/Kurimus_(albumi) — трек-лист содержит 'Kasvot kohti itää' треком №3. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -114,9 +114,10 @@
   "sources": [
    "https://www.guitartabs.cc/tabs/m/mokoma/haudan_takaa_tab.html",
    "https://tabs.ultimate-guitar.com/tab/mokoma/haudan-takaa-tabs-723252",
-   "https://www.youtube.com/watch?v=OFpAvhU1Pus"
+   "https://www.youtube.com/watch?v=OFpAvhU1Pus",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт, дословно в заголовке: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo' и 'Gtr III (D A D G B E) - Melodia'. UG-страница вернула 200 (JS-рендер), сниппет поисковика дословно: 'Tuning: D A D G B E · Author: tonedeafidiot'. YouTube-ролик (guitar cover) — описание в сниппете: 'Tuning drop D.' Принадлежность к альбому 2004 подтверждена fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi: 'Haudan takaa – 3.21'."
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно в заголовке: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo' и 'Gtr III (D A D G B E) - Melodia'. UG-страница вернула 200 (JS-рендер), сниппет поисковика дословно: 'Tuning: D A D G B E · Author: tonedeafidiot'. YouTube-ролик (guitar cover) — описание в сниппете: 'Tuning drop D.' Принадлежность к альбому 2004 подтверждена fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi: 'Haudan takaa – 3.21'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -132,9 +133,10 @@
   "note": "Drop D. Tab credits fixes from Kuisma Aalto himself ('fiksejä Kuisma'), which makes this marginally more trustworthy than a typical fan transcription.",
   "sources": [
    "https://www.guitartabs.cc/tabs/m/mokoma/hiljaisuuden_julistaja_tab.html",
-   "https://fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi"
+   "https://fi.wikipedia.org/wiki/Tämän_maailman_ruhtinaan_hovi",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Tablat: Johannes/Sami + fiksejä Kuisma', затем 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo'. Альбом подтверждён fi.wikipedia.org — трек 'Hiljaisuuden julistaja'."
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Tablat: Johannes/Sami + fiksejä Kuisma', затем 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuomo'. Альбом подтверждён fi.wikipedia.org — трек 'Hiljaisuuden julistaja'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -149,9 +151,10 @@
   ],
   "note": "Drop D. Title track.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/taman_maailman_ruhtinaan_hovi_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/taman_maailman_ruhtinaan_hovi_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E)' (Tuomo). Альбом подтверждён fi.wikipedia.org."
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E)' (Tuomo). Альбом подтверждён fi.wikipedia.org. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -166,9 +169,10 @@
   ],
   "note": "Drop D.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/kiellan_itseni_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/kiellan_itseni_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -183,27 +187,29 @@
   ],
   "note": "Drop D.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/hyinen_syli_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/hyinen_syli_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
   "song": "Vade retro, Satana!",
   "album": "Tämän maailman ruhtinaan hovi",
   "year": 2004,
-  "confidence": "medium",
+  "confidence": "high",
   "capo": 0,
   "conflict": false,
   "variants": [
    { "label": "Studio (6-string)", "strings": ["D2","A2","D3","G3","B3","E4"] },
    { "label": "Kuisma Aalto 7-string", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
   ],
-  "note": "Kuisma Aalto uses a 7-string guitar (A D A D G B E, low A below Drop D) for the main guitar I track; Tuomo Saikkonen and Kuisma's second guitar are both in standard Drop D. A 6-string player would use Drop D.",
+  "note": "Kuisma Aalto uses a 7-string guitar (A D A D G B E, low A below Drop D) for the main guitar I track; Tuomo Saikkonen and Kuisma's second guitar are both in standard Drop D. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/vade_retro_satana_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/vade_retro_satana_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (A D A D G B E) - Kuisma 7', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (D A D G B E) - Kuisma 6'."
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (A D A D G B E) - Kuisma 7', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (D A D G B E) - Kuisma 6'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
  },
  {
   "artist": "Mokoma",
@@ -218,9 +224,10 @@
   ],
   "note": "Drop D.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/sudet_ihmisten_vaatteissa_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/sudet_ihmisten_vaatteissa_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuom[o]'."
+  "_verified_by": "Claude — guitartabs.cc открыт, дословно: 'Gtr I (D A D G B E) - Kuisma' и 'Gtr II (D A D G B E) - Tuom[o]'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
@@ -235,28 +242,48 @@
   ],
   "note": "Drop D.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/poltetun_maan_taktiikkaa_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/poltetun_maan_taktiikkaa_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'."
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma'. mokoma.com/tag/viritys/ добавлен как подтверждение общего рабочего строя группы."
  },
  {
   "artist": "Mokoma",
   "song": "Nämä kolme ovat yhtä",
   "album": "Tämän maailman ruhtinaan hovi",
   "year": 2004,
-  "confidence": "medium",
+  "confidence": "high",
   "capo": 0,
   "conflict": false,
   "variants": [
    { "label": "Studio (6-string)", "strings": ["D2","A2","D3","G3","B3","E4"] },
    { "label": "Kuisma Aalto 7-string", "strings": ["A1","D2","A2","D3","G3","B3","E4"] }
   ],
-  "note": "Same arrangement as Vade retro Satana: Kuisma's six-string and Tuomo are in Drop D; Kuisma's seven-string adds a low-A layer. A 6-string player would use Drop D.",
+  "note": "Same arrangement as Vade retro Satana: Kuisma's six-string and Tuomo are in Drop D; Kuisma's seven-string adds a low-A layer. A 6-string player would use Drop D. Официальный ответ группы на своём сайте подтверждает оба варианта — (A)-D-A-D-G-B-(E), в зависимости от того, шести- или семиструнный инструмент.",
   "sources": [
-   "https://www.guitartabs.cc/tabs/m/mokoma/nama_kolme_ovat_yhta_tab.html"
+   "https://www.guitartabs.cc/tabs/m/mokoma/nama_kolme_ovat_yhta_tab.html",
+   "https://mokoma.com/tag/viritys/"
   ],
-  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma 6', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (A D A D G B E) - Kuisma 7'."
+  "_verified_by": "Claude — guitartabs.cc открыт (spillover log), дословно: 'Gtr I (D A D G B E) - Kuisma 6', 'Gtr II (D A D G B E) - Tuomo', 'Gtr III (A D A D G B E) - Kuisma 7'. mokoma.com/tag/viritys/ (статус 200) содержит официальный Q&A: «Kitarat ovat viritetty säveliin (A)-D-A-D-G-B-(E), riippuen siitä onko luuttu kuusi vai seitsemänkielinen» — первичный источник, повышает уверенность до high."
  }
+ ],
+ "_leads": [
+  {
+   "artist": "Mokoma",
+   "song": "Sydänjuuret",
+   "note": "Раздел Kysyttyä на mokoma.com упоминает H-вире (H = B в финской нотации) применительно к этой песне — значит строй отличается от обычного Drop D. Нужно найти полный ответ группы и выяснить точный строй.",
+   "sources_to_check": [
+    "https://mokoma.com/tag/viritys/",
+    "https://mokoma.com/kysyttya/"
+   ]
+  },
+  {
+   "artist": "Stam1na",
+   "note": "Официальный FAQ stam1na.com/ukk/ явно упоминает, что некоторые песни с альбома SLK записаны на шестиструнной гитаре — значит строй отличается от семиструнного A-D-A-D-G-B-E. Нужно найти список этих песен и их строй.",
+   "sources_to_check": [
+    "https://stam1na.com/ukk/"
+   ]
+  }
  ],
  "_rejected": [
  {
