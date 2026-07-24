@@ -1,0 +1,506 @@
+[
+  {
+    "artist": "Children of Bodom",
+    "region": "Финляндия",
+    "status": "done",
+    "entries": 2
+  },
+  {
+    "artist": "Norther",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Kalmah",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Ensiferum",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Turmion Kätilöt",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Battle Beast",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Omnium Gatherum",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Swallow the Sun",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Before the Dawn",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Sonata Arctica",
+    "region": "Финляндия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Meshuggah",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "At the Gates",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Entombed",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Opeth",
+    "region": "Швеция",
+    "status": "done",
+    "entries": 4
+  },
+  {
+    "artist": "In Flames",
+    "region": "Швеция",
+    "status": "done",
+    "entries": 2
+  },
+  {
+    "artist": "Amon Amarth",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "The Haunted",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Scar Symmetry",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Evergrey",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Sabaton",
+    "region": "Швеция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Dimmu Borgir",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Satyricon",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Emperor",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Borknagar",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Extol",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Madder Mortem",
+    "region": "Норвегия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Volbeat",
+    "region": "Дания",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Mercyful Fate",
+    "region": "Дания",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Illdisposed",
+    "region": "Дания",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Hatesphere",
+    "region": "Дания",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Heaven Shall Burn",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Caliban",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Callejon",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Kreator",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Any Given Day",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Annisokay",
+    "region": "Германия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Behemoth",
+    "region": "Польша",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Decapitated",
+    "region": "Польша",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Vader",
+    "region": "Польша",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Riverside",
+    "region": "Польша",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Hunter",
+    "region": "Польша",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Textures",
+    "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Within Temptation",
+    "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Epica",
+    "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Delain",
+    "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "God Dethroned",
+    "region": "Нидерланды",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Dagoba",
+    "region": "Франция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Hypno5e",
+    "region": "Франция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Klone",
+    "region": "Франция",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Lacuna Coil",
+    "region": "Италия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Fleshgod Apocalypse",
+    "region": "Италия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Destrage",
+    "region": "Италия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Bring Me The Horizon",
+    "region": "Британия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Architects",
+    "region": "Британия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "TesseracT",
+    "region": "Британия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Sikth",
+    "region": "Британия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Monuments",
+    "region": "Британия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Sepultura",
+    "region": "Бразилия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Angra",
+    "region": "Бразилия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Krisiun",
+    "region": "Бразилия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Nervosa",
+    "region": "Бразилия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Project46",
+    "region": "Бразилия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Rata Blanca",
+    "region": "Аргентина",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Carajo",
+    "region": "Аргентина",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Jinete Insomne",
+    "region": "Аргентина",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Brujeria",
+    "region": "Мексика",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Here Comes The Kraken",
+    "region": "Мексика",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Vimic",
+    "region": "Мексика",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Pentagram",
+    "region": "Чили",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Criminal",
+    "region": "Чили",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Crossfaith",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Coldrain",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Dir En Grey",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Babymetal",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "MAN WITH A MISSION",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Nemophila",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Band-Maid",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Sigh",
+    "region": "Япония",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Jambinai",
+    "region": "Корея",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Dreamcatcher",
+    "region": "Корея",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Burgerkill",
+    "region": "Индонезия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Deadsquad",
+    "region": "Индонезия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Bloodywood",
+    "region": "Индия",
+    "status": "pending",
+    "entries": 0
+  },
+  {
+    "artist": "Demonic Resurrection",
+    "region": "Индия",
+    "status": "pending",
+    "entries": 0
+  }
+]
