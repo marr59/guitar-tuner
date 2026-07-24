@@ -989,6 +989,61 @@
     "https://www.guitartabs.cc/tabs/i/in_flames/alias_tab.html"
    ],
    "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Drop A#,F,A#,D#,G,C'. Tabber also writes 'I'm new to the whole drop A# but...' confirming the tuning."
+  },
+  {
+   "artist": "Children of Bodom",
+   "song": "Are You Dead Yet?",
+   "album": "Are You Dead Yet?",
+   "year": 2005,
+   "confidence": "high",
+   "capo": 0,
+   "conflict": false,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C2",
+      "G2",
+      "C3",
+      "F3",
+      "A3",
+      "D4"
+     ]
+    }
+   ],
+   "note": "Drop C. Tab explicitly labels all six strings from high to low: D A F C G C (reversed = C G C F A D from low to high). Two tabs confirm CoB Drop C on this era: Are You Dead Yet? and Banned From Heaven (Hate Crew Deathroll, 2003).",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/c/children_of_bodom/are_you_dead_yet_tab.html",
+    "https://www.guitartabs.cc/tabs/c/children_of_bodom/banned_from_heaven_tab.html"
+   ],
+   "_verified_by": "Claude — opened are_you_dead_yet_tab.html (status 200). GP tab string labels from high to low: D A F C G C = Drop C (C2 G2 C3 F3 A3 D4). Also opened banned_from_heaven_tab.html (status 200): tabber writes 'the real song is probably in dropped C'."
+  },
+  {
+   "artist": "Children of Bodom",
+   "song": "Angels Don't Kill",
+   "album": "Are You Dead Yet?",
+   "year": 2005,
+   "confidence": "medium",
+   "capo": 0,
+   "conflict": true,
+   "variants": [
+    {
+     "label": "Studio",
+     "strings": [
+      "C#2",
+      "F#2",
+      "B2",
+      "E3",
+      "G#3",
+      "C#4"
+     ]
+    }
+   ],
+   "note": "C# standard per one tab ('Down 1 1/2 steps to C#'). Conflict: other songs from this album show Drop C (C G C F A D). The Angels Don't Kill tab is a keyboard intro arranged for guitar and may reflect the arrangement, not the original guitar tuning. Treat with caution.",
+   "sources": [
+    "https://www.guitartabs.cc/tabs/c/children_of_bodom/angels_dont_kill_tab.html"
+   ],
+   "_verified_by": "Claude — opened guitartabs.cc tab (status 200). Дословно: 'Tuning: Down 1 1/2 steps to C#'. Tab header: 'Keyboard intro arranged for guitar' — tuning may reflect the keyboard transposition, not studio guitar tuning."
   }
  ],
  "_leads": [
