@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 2,
+  "batch": 3,
   "date": "2026-07-24",
   "entries": [
     {
@@ -1099,6 +1099,141 @@
         "https://www.guitartabs.cc/tabs/a/arch_enemy/beast_of_man_tab.html"
       ],
       "_verified_by": "subagent-tuning-research"
+    },
+    {
+      "artist": "Kalmah",
+      "song": "Hades",
+      "album": "Swamplord",
+      "year": 2000,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D#2",
+            "G#2",
+            "C#3",
+            "F#3",
+            "A#3",
+            "D#4"
+          ]
+        }
+      ],
+      "note": "Tab explicitly states 'tune down a 1/2 step (Eb Ab Db Gb Bb Eb)' = Eb standard. Single source.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kalmah/hades_tab.html"
+      ],
+      "_verified_by": "Claude — открыл страницу, в шапке таба указано 'tune down a 1/2 step (Eb Ab Db Gb Bb Eb)'"
+    },
+    {
+      "artist": "Kalmah",
+      "song": "Bitter Metallic Side",
+      "album": "The Black Waltz",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Tab lines labelled D G C F A d = D standard (whole step down). Single source.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kalmah/bitter_metallic_side_tab.html"
+      ],
+      "_verified_by": "Claude — открыл страницу, строки таба размечены D G C F A d (D standard)"
+    },
+    {
+      "artist": "Kalmah",
+      "song": "To the Gallows",
+      "album": "The Black Waltz",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "G2",
+            "C3",
+            "F3",
+            "A3",
+            "D4"
+          ]
+        }
+      ],
+      "note": "Tab notes 'It's dropped 1 step down to D'; lines D G C F A d = D standard. Single source.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kalmah/to_the_gallows_tab.html"
+      ],
+      "_verified_by": "Claude — открыл страницу, описание 'dropped 1 step down to D', строки D G C F A d"
+    },
+    {
+      "artist": "Kalmah",
+      "song": "Black Waltz",
+      "album": "The Black Waltz",
+      "year": 2006,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Tab header states 'Drop D'. Other transcriptions from the same album are in D standard, so this may be a transcriber's relative reading. Single source.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kalmah/black_waltz_tab.html"
+      ],
+      "_verified_by": "Claude — открыл страницу, в шапке 'Tuning: Drop D' (D A D G B E)"
+    },
+    {
+      "artist": "Kalmah",
+      "song": "Tordah",
+      "album": "Swampsong",
+      "year": 2003,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "D2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+          ]
+        }
+      ],
+      "note": "Tab header states 'Tuning: Dropped D'. Single source.",
+      "sources": [
+        "https://www.guitartabs.cc/tabs/k/kalmah/tordah_tab.html"
+      ],
+      "_verified_by": "Claude — открыл страницу, в шапке 'Tuning: Dropped D' (D A D G B E)"
     }
   ],
   "_leads": [

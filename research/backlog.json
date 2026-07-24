@@ -15,8 +15,9 @@
   {
     "artist": "Kalmah",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 5,
+    "search_log": "Первичный (сайт/финские интервью viritys): открыл inferno.fi/kalmah.com результаты — упоминаний конкретного строя нет. gtdb.org и equipboard.com дают HTTP 403 для fetch, Songsterr и Ultimate-Guitar прячут строй за JS. Рабочим источником оказался guitartabs.cc: открыл индивидуальные табы — Hades (Eb standard), Bitter Metallic Side и To the Gallows (D standard), Black Waltz и Tordah (Drop D). Все записи single-source → medium."
   },
   {
     "artist": "Ensiferum",
