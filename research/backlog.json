@@ -43,8 +43,9 @@
   {
     "artist": "Omnium Gatherum",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "done",
+    "entries": 1,
+    "search_log": "Первичные источники (интервью Markus Vanhala на getreadytorock, Arrow Lords) строй не называют; Equipboard 403; gtdb.org 403. На Songsterr список табов открылся и в нём видна пометка 'Rest in Your Heart C# Standard' — единственный визуально подтверждённый строй. Индивидуальные страницы Songsterr/UG (New World Shadows≈Drop C#, Ego/Soul Journeys≈C#) за JS-стеной — строй не отображается, поэтому в записи не внесены; guitartabs.cc: 'Candles For Giordano Bruno'=standard E."
   },
   {
     "artist": "Swallow the Sun",

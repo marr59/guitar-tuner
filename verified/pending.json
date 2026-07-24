@@ -1,6 +1,6 @@
 {
   "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
-  "batch": 5,
+  "batch": 6,
   "date": "2026-07-24",
   "entries": [
     {
@@ -2096,6 +2096,33 @@
         "https://www.songsterr.com/a/wsa/battle-beast-kingdom-tab-s1947488"
       ],
       "_verified_by": "Claude — Songsterr JSON: guitar \"tuning\":[61,56,52,47,42,37]=C# standard and bass [40,35,30,25] both down a minor third; one extra guitar track shown in E standard (noted as conflict)"
+    },
+    {
+      "artist": "Omnium Gatherum",
+      "song": "Rest In Your Heart",
+      "album": "Beyond",
+      "year": 2013,
+      "confidence": "medium",
+      "capo": 0,
+      "conflict": false,
+      "variants": [
+        {
+          "label": "Studio",
+          "strings": [
+            "C#2",
+            "F#2",
+            "B2",
+            "E3",
+            "G#3",
+            "C#4"
+          ]
+        }
+      ],
+      "note": "Songsterr tab explicitly labeled 'C# Standard' (standard intervals, low string C#). Single source; band's later material trends to C#/Drop-C# range.",
+      "sources": [
+        "https://www.songsterr.com/a/wsa/omnium-gatherum-tabs-a10542"
+      ],
+      "_verified_by": "Claude — открыл список табов Omnium Gatherum на Songsterr, в перечне видна запись 'Rest in Your Heart C# Standard' с пометкой строя прямо в заголовке таба"
     }
   ],
   "_leads": [
