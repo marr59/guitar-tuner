@@ -15,8 +15,9 @@
   {
     "artist": "Kalmah",
     "region": "Финляндия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": "Не удалось получить доступ ни к одному источнику: инструменты WebSearch и WebFetch вернули отказ по правам доступа (permission not granted). Проверить gtdb.org, таб-сайты и интервью с гитаристом не удалось — ни один URL открыть не получилось."
   },
   {
     "artist": "Ensiferum",
