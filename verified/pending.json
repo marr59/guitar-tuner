@@ -1,5 +1,8 @@
 {
-  "_comment": "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
+  "_comment": [
+    "Проверенные записи, ожидающие вливания в tunings.json. Каждая запись имеет источник, который был открыт и прочитан. Пополняется партиями; вливать одним заходом.\n\nПРАВИЛО УВЕРЕННОСТИ: high = два НЕЗАВИСИМЫХ источника по ЭТОЙ ЖЕ песне, из них хотя бы один первичный (сайт группы, интервью, официальные ноты, плейтру музыканта). Два таба с одного сайта — один источник. Таб другой песни — не источник для этой песни вообще.",
+    "Album-wide tuning claims are a trap: one song's tuning does not prove the next song's. Ghost Reveries is the example — Ghost of Perdition is DADFAE, the rest DADFAD, and Baying may be Drop D. Each song needs its own source."
+  ],
   "batch": 8,
   "date": "2026-07-24",
   "entries": [
@@ -35,9 +38,9 @@
       "artist": "Opeth",
       "song": "The Baying of the Hounds",
       "album": "Ghost Reveries",
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
-      "conflict": false,
+      "conflict": true,
       "variants": [
         {
           "label": "Studio",
@@ -47,21 +50,21 @@
             "D3",
             "F3",
             "A3",
-            "E4"
+            "D4"
           ]
         }
       ],
-      "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
+      "note": "Album tuning is DADFAD, but some players transcribe this track as plain Drop D (DADGBE). Unresolved — verify by ear.",
       "sources": [
         "https://ragajunglism.org/tunings/menu/ghost-reveries/"
       ],
-      "_verified_by": "Claude — источник называет песню поимённо в списке треков в этом строе."
+      "_verified_by": "ragajunglism.org (album tuning); conflicting Drop D transcriptions also exist"
     },
     {
       "artist": "Opeth",
       "song": "Isolation Years",
       "album": "Ghost Reveries",
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
       "conflict": false,
       "variants": [
@@ -73,21 +76,21 @@
             "D3",
             "F3",
             "A3",
-            "E4"
+            "D4"
           ]
         }
       ],
-      "note": "Same open D-minor tuning as the rest of Ghost Reveries.",
+      "note": "Open Dm add9 (DADFAD), album tuning. Ghost of Perdition uses DADFAE (high E) but the other Ghost Reveries tracks use DADFAD.",
       "sources": [
-        "https://ragajunglism.org/tunings/menu/ghost-reveries/"
+        "https://pt.ultimate-guitar.com/tab/opeth/isolation-years-tabs-2787889"
       ],
-      "_verified_by": "Claude — песня названа поимённо. Ни одна из четырёх моделей её не предложила."
+      "_verified_by": "UG tab — strings listed as D A D F A D"
     },
     {
       "artist": "Opeth",
       "song": "Reverie / Harlequin Forest",
       "album": "Ghost Reveries",
-      "confidence": "high",
+      "confidence": "medium",
       "capo": 0,
       "conflict": false,
       "variants": [
@@ -99,15 +102,15 @@
             "D3",
             "F3",
             "A3",
-            "E4"
+            "D4"
           ]
         }
       ],
-      "note": "All six electric, acoustic and 12-string guitar layers are in this tuning.",
+      "note": "Open Dm add9 (DADFAD), album tuning. Ghost of Perdition uses DADFAE (high E) but the other Ghost Reveries tracks use DADFAD. gtdb.org labels DADFAE as 'Opeth Tuning' and cites Reverie — that is an aggregator error.",
       "sources": [
         "https://ragajunglism.org/tunings/menu/ghost-reveries/"
       ],
-      "_verified_by": "Claude — источник отдельно оговаривает, что в этом строе все шесть гитарных слоёв. Модели её не предложили."
+      "_verified_by": "ragajunglism.org lists album tuning; corrected top string from E to D per primary tab sources"
     },
     {
       "artist": "Stam1na",
