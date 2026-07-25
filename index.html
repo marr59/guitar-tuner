@@ -734,8 +734,8 @@ function updateHint(){
 /* ══════════ START / STOP ══════════ */
 async function start(){
   try{
-    stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
     try{ if('audioSession' in navigator) navigator.audioSession.type='play-and-record'; }catch(e){}
+    stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});
     await ensureAudio();
     analyser=audioCtx.createAnalyser();
     analyser.fftSize=8192;
@@ -756,6 +756,7 @@ function stop(){
   analyser=null; resetReadings();
   $("start").textContent="Start"; $("start").classList.remove("on");
   $("cents").textContent="Press start"; $("cents").style.color="var(--muted)";
+  try{ if('audioSession' in navigator) navigator.audioSession.type='playback'; }catch(e){}
 }
 $("start").onclick=()=>running?stop():start();
 
