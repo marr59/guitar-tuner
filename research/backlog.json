@@ -78,8 +78,9 @@
   {
     "artist": "At the Gates",
     "region": "Швеция",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Entombed",
