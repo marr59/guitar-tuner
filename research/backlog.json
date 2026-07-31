@@ -111,8 +111,9 @@
   {
     "artist": "The Haunted",
     "region": "Швеция",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Scar Symmetry",
