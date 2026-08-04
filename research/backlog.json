@@ -139,8 +139,9 @@
   {
     "artist": "Dimmu Borgir",
     "region": "Норвегия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Satyricon",
