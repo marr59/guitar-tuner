@@ -209,8 +209,9 @@
   {
     "artist": "Heaven Shall Burn",
     "region": "Германия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Caliban",
