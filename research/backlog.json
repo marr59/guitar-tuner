@@ -223,8 +223,9 @@
   {
     "artist": "Callejon",
     "region": "Германия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Kreator",
