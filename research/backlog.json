@@ -279,8 +279,9 @@
   {
     "artist": "Hunter",
     "region": "Польша",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Textures",
