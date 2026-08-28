@@ -307,8 +307,9 @@
   {
     "artist": "Delain",
     "region": "Нидерланды",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "God Dethroned",
