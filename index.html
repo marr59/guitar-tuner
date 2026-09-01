@@ -743,7 +743,14 @@ async function start(){
     // iOS Safari won't pull from a MediaStreamSource unless the graph reaches
     // destination — route through a muted gain so audio flows, no feedback.
     const mute=audioCtx.createGain(); mute.gain.value=0;
-    src.connect(analyser); analyser.connect(mute); mute.connect(audioCtx.destination);
+    // Narrow notch filters to suppress 60 Hz power-line hum and its second harmonic.
+    // Q=35 → ~1.7 Hz bandwidth at 60 Hz, leaving B1 (61.74 Hz) essentially untouched.
+    const notch60=audioCtx.createBiquadFilter();
+    notch60.type="notch"; notch60.frequency.value=60; notch60.Q.value=35;
+    const notch120=audioCtx.createBiquadFilter();
+    notch120.type="notch"; notch120.frequency.value=120; notch120.Q.value=25;
+    src.connect(notch60); notch60.connect(notch120); notch120.connect(analyser);
+    analyser.connect(mute); mute.connect(audioCtx.destination);
     if(audioCtx.state==="suspended") await audioCtx.resume();
     try{ await navigator.wakeLock.request("screen"); }catch(e){}
     running=true; $("live").classList.add("live");
