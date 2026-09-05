@@ -363,8 +363,9 @@
   {
     "artist": "Destrage",
     "region": "Италия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Bring Me The Horizon",
