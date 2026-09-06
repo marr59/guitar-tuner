@@ -370,8 +370,9 @@
   {
     "artist": "Bring Me The Horizon",
     "region": "Британия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Architects",
