@@ -377,8 +377,9 @@
   {
     "artist": "Architects",
     "region": "Британия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "TesseracT",
