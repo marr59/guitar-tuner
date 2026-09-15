@@ -433,8 +433,9 @@
   {
     "artist": "Project46",
     "region": "Бразилия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Rata Blanca",
