@@ -321,12 +321,12 @@ const LIB_KEY="gt.library.v1", ACT_KEY="gt.active.v1";
 
 /* ── settings state ── */
 let a4=440;
-let autoAdvance=true;
+let autoAdvance=false;   // manual by default — user taps the string; toggle in Settings enables auto-advance
 let currentTheme="dark";
 
 function loadSettings(){
   const sa=parseFloat(store.get("gt.a4")); if(sa>=432&&sa<=444) a4=sa;
-  const aa=store.get("gt.autoadvance"); if(aa==="false") autoAdvance=false;
+  const aa=store.get("gt.autoadvance"); if(aa!=null) autoAdvance=(aa==="true");
   currentTheme=store.get("gt.theme")||"dark";
 }
 function saveA4(v){ a4=v; store.set("gt.a4",v); ksCache.clear(); updateA4Badge(); }
@@ -643,7 +643,11 @@ function draw(){
 /* ══════════ FRAME LOOP ══════════ */
 let fc=0;
 function frame(){
-  displayCents+=(targetCents-displayCents)*(hasSignal?0.12:0.06);
+  // Adaptive smoothing: snappy when the string is far off, calm near the
+  // centre so tiny pitch-detector jitter doesn't make the needle twitch.
+  const near=Math.min(Math.abs(targetCents)/25,1);   // ~0 in tune → 1 when ≥25¢ off
+  const k=hasSignal ? 0.05+0.11*near : 0.05;
+  displayCents+=(targetCents-displayCents)*k;
   if(running && (fc++%4===0)) analyze();
   draw();
 
