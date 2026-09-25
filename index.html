@@ -225,6 +225,12 @@
   .tchip{padding:5px 11px; border-radius:8px; border:1px solid var(--border); background:transparent;
     font-family:var(--disp); font-size:12px; font-weight:600; color:var(--muted); cursor:pointer; transition:.15s}
   .tchip.on{border-color:var(--mint); color:var(--mint); background:rgba(55,224,176,.08)}
+  /* on-tuner mode switch (Manual / Auto) */
+  .modeseg{display:flex; gap:4px; margin:4px auto 0; padding:3px; border-radius:11px;
+    background:rgba(255,255,255,.04); border:1px solid var(--border); width:max-content}
+  .mseg{padding:6px 16px; border:none; border-radius:8px; background:transparent; cursor:pointer;
+    font-family:var(--disp); font-size:12.5px; font-weight:600; color:var(--muted); transition:.15s}
+  .mseg.on{background:rgba(55,224,176,.14); color:var(--mint)}
 </style>
 </head>
 <body>
@@ -262,6 +268,10 @@
     </div>
 
     <div class="strings" id="guide"></div>
+    <div class="modeseg" id="modeSeg">
+      <button class="mseg" data-aa="0">Manual</button>
+      <button class="mseg" data-aa="1">Auto</button>
+    </div>
     <div class="hint" id="hint">Pick the string you want to tune</div>
     <button class="primary" id="start">Start</button>
   </div>
@@ -331,6 +341,19 @@ function loadSettings(){
 }
 function saveA4(v){ a4=v; store.set("gt.a4",v); ksCache.clear(); updateA4Badge(); }
 function saveAA(v){ autoAdvance=v; store.set("gt.autoadvance",String(v)); }
+// Single source of truth: keep the on-tuner Manual/Auto segment and the
+// Settings toggle in sync whenever the mode changes from either place.
+function setAutoAdvance(v){
+  saveAA(v);
+  const t=$("togAA"); if(t) t.checked=v;
+  syncModeSeg();
+  if(!v) advanceAt=0;      // leaving auto: cancel any pending jump
+  updateHint();
+}
+function syncModeSeg(){
+  const seg=$("modeSeg"); if(!seg) return;
+  seg.querySelectorAll(".mseg").forEach(el=>el.classList.toggle("on",(el.dataset.aa==="1")===autoAdvance));
+}
 function updateA4Badge(){
   const b=$("a4badge");
   if(Math.abs(a4-440)>0.1){ b.textContent="A4="+a4; b.classList.add("on"); }
@@ -731,8 +754,7 @@ function updateHint(){
   if(!active) return;
   if(allDone){ $("hint").textContent="All strings tuned!"; return; }
   const S=active.strings;
-  const aa=autoAdvance?" · auto-advance on":"";
-  $("hint").textContent=`Tuning string ${S.length-selIdx} (${bare(S[selIdx])}) — tap another to switch${aa}`;
+  $("hint").textContent=`Tuning string ${S.length-selIdx} (${bare(S[selIdx])}) — tap another to switch`;
 }
 
 /* ══════════ START / STOP ══════════ */
@@ -944,7 +966,7 @@ function renderSettings(){
       </div>
     </div>
   </div>`;
-  $("togAA").onchange=e=>{ saveAA(e.target.checked); updateHint(); };
+  $("togAA").onchange=e=>{ setAutoAdvance(e.target.checked); };
   const sld=$("sldA4"), disp=$("a4disp");
   sld.oninput=()=>{ const v=parseFloat(sld.value); disp.textContent=(v%1===0?v.toFixed(0):v.toFixed(1))+" Hz"; };
   sld.onchange=()=>{ saveA4(parseFloat(sld.value)); renderSettings(); };
@@ -1113,6 +1135,8 @@ async function boot(){
   loadSettings();
   applyTheme(currentTheme);
   updateA4Badge();
+  const seg=$("modeSeg");
+  if(seg){ seg.querySelectorAll(".mseg").forEach(el=>el.onclick=()=>setAutoAdvance(el.dataset.aa==="1")); syncModeSeg(); }
   loadLib();
   try{
     const r=await fetch("tunings.json",{cache:"no-cache"});
