@@ -517,8 +517,9 @@
   {
     "artist": "Babymetal",
     "region": "Япония",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "MAN WITH A MISSION",
