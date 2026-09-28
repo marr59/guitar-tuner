@@ -524,8 +524,9 @@
   {
     "artist": "MAN WITH A MISSION",
     "region": "Япония",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Nemophila",
