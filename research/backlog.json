@@ -573,8 +573,9 @@
   {
     "artist": "Deadsquad",
     "region": "Индонезия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   },
   {
     "artist": "Bloodywood",
