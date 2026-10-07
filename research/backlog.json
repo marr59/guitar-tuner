@@ -587,7 +587,8 @@
   {
     "artist": "Demonic Resurrection",
     "region": "Индия",
-    "status": "pending",
-    "entries": 0
+    "status": "not-found",
+    "entries": 0,
+    "search_log": ""
   }
 ]
