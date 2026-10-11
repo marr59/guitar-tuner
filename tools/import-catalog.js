@@ -87,7 +87,7 @@ const MIN_VIEWS  = parseInt(process.env.MIN_VIEWS  || '300');
 const PER_ARTIST = parseInt(process.env.PER_ARTIST || '150');
 const TOP_MIN    = 55;
 const TOP_MAX    = 68;
-const BOT_MIN    = 26;
+const BOT_MIN    = 25;   // C#1 (34.6 Hz) — the low string of a standard 9-string guitar
 const BOT_MAX    = 48;
 const KEEPALIVE_MS = 8000;
 
@@ -245,6 +245,56 @@ function pairKey(artist, song) {
 
 function normalizeArtist(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}]/gu,''); }
 
+// ── Artist aliases ────────────────────────────────────────────────────────────
+//
+// Some catalogues file an artist under evasive names ("Not <Artist>", scrambled
+// titles) instead of the real one. tools/artist-aliases.json maps the canonical
+// name to whatever the source actually uses; entries are always stored under the
+// canonical name. Optional per-artist titleFixes repairs scrambled song titles,
+// titleReject drops tab variants that are not songs.
+
+function loadAliases() {
+  const p = join(__dirname, 'artist-aliases.json');
+  if (!existsSync(p)) return {};
+  try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return {}; }
+}
+
+const ALIAS_FILE = loadAliases();
+
+function aliasConfig(artistName) {
+  const key = normalizeArtist(artistName);
+  for (const [canonical, cfg] of Object.entries(ALIAS_FILE)) {
+    if (canonical.startsWith('_')) continue;
+    if (normalizeArtist(canonical) === key) return cfg;
+  }
+  return null;
+}
+
+function artistAccepted(sourceArtist, artistName, cfg) {
+  const a = normalizeArtist(sourceArtist);
+  if (a === normalizeArtist(artistName)) return true;
+  if (!cfg) return false;
+  return (cfg.aliases || []).some(x => normalizeArtist(x) === a);
+}
+
+function fixTitle(title, cfg) {
+  if (!cfg || !cfg.titleFixes) return title;
+  const want = normTitle(title);
+  for (const [from, to] of Object.entries(cfg.titleFixes)) {
+    if (normTitle(from) === want) return to;
+  }
+  return title;
+}
+
+function titleRejectedByArtist(title, cfg) {
+  if (!cfg || !cfg.titleReject) return null;
+  const t = title.toLowerCase();
+  for (const s of cfg.titleReject) {
+    if (t.includes(s.toLowerCase())) return `artist:${s}`;
+  }
+  return null;
+}
+
 // Titles that indicate "this is the standard-tuning version of a song"
 const VARIANT_MARKER_SUBS = ['оригинальном строе'];
 function isVariantMarker(title) {
@@ -308,13 +358,17 @@ function extractNormalized(song, st) {
 
 function emptyStats() {
   return {
-    fetched:0, wrongArtist:0, uniqueSongs:0, rejectedTitle:0,
+    fetched:0, wrongArtist:0, uniqueSongs:0, rejectedTitle:0, titleFixed:0,
     noGuitarTracks:0, discardedPlausibility:0, allEStd:0,
     belowViews:0, alreadyInBase:0, artistLimitCut:0, conflicts:0, proposed:0,
   };
 }
 
 async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx, totalArtists) {
+  const cfg               = aliasConfig(artistName);
+  if (cfg && (cfg.aliases || []).length) {
+    print(`  [${artistIdx}/${totalArtists}] "${artistName}" — aliases enabled: ${(cfg.aliases||[]).join(', ')}`);
+  }
   const pool              = new Map();
   const seenIds           = new Set();
   const variantMarkerKeys = new Set();
@@ -335,15 +389,19 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
 
     for (const song of page) {
       st.fetched++;
-      if (normalizeArtist(song.artist) !== normalizeArtist(artistName)) { st.wrongArtist++; continue; }
+      if (!artistAccepted(song.artist, artistName, cfg)) { st.wrongArtist++; continue; }
       if (seenIds.has(song.id)) continue;
       seenIds.add(song.id);
       st.uniqueSongs++;
 
-      const pk = pairKey(song.artist, song.title);
+      const fixed = fixTitle(song.title, cfg);
+      if (fixed !== song.title) { st.titleFixed++; song.title = fixed; }
+
+      // Always key on the canonical artist: aliases must collapse onto one song
+      const pk = pairKey(artistName, song.title);
       if (isVariantMarker(song.title)) variantMarkerKeys.add(pk);
 
-      if (titleRejected(song.title)) { st.rejectedTitle++; continue; }
+      if (titleRejected(song.title) || titleRejectedByArtist(song.title, cfg)) { st.rejectedTitle++; continue; }
 
       const tunings = extractNormalized(song, st);
       if (!tunings) { st.noGuitarTracks++; continue; }
@@ -367,7 +425,7 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
   // Filter against catalog + views threshold
   const candidates = [];
   for (const { song, tunings } of pool.values()) {
-    const pk = pairKey(song.artist, song.title);
+    const pk = pairKey(artistName, song.title);
     if (existingPairs.has(pk) || existingIds.has(makeId(song.artist, song.title))) { st.alreadyInBase++; continue; }
     if (tunings[0].views < MIN_VIEWS) { st.belowViews++; continue; }
     candidates.push({ song, tunings });
@@ -567,6 +625,7 @@ async function main() {
   print(`  - wrong artist:              ${global.wrongArtist}`);
   print(`= Unique songs:                ${global.uniqueSongs}`);
   print(`  - title keyword:             ${global.rejectedTitle}`);
+  if (global.titleFixed) print(`  ~ titles repaired (alias):   ${global.titleFixed}`);
   print(`  - no guitar tracks:          ${global.noGuitarTracks}`);
   print(`  - discarded plausibility:    ${global.discardedPlausibility}  (track-level)`);
   print(`  - all E standard:            ${global.allEStd}`);

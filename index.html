@@ -839,12 +839,23 @@ function commitSong(song,v){
              confidence:e.confidence,c:song.c||0,unusual:song.unusual||false,
              });
 }
+// Punctuation-blind match: catalogue titles keep the official spelling
+// ("Ka$cade", "Mind-Spun", "Jag vet inte"), but nobody types the punctuation.
+// Compare both the raw text and a stripped form so either way finds the song.
+const LEET = {'$':'s','@':'a','!':'i','0':'o','1':'i','3':'e','4':'a','5':'s','7':'t'};
+const loose = s => s.toLowerCase().replace(/[$@!01345 7]/g, c => LEET[c] ?? c)
+                     .replace(/[^\p{L}\p{N}]+/gu,"");
+function hay(text,q,qLoose){
+  const t=text.toLowerCase();
+  return t.includes(q) || (qLoose && loose(text).includes(qLoose));
+}
 function renderResults(q){
   const box=$("results"); q=q.trim().toLowerCase();
   if(!q){ box.innerHTML=""; return; }
-  const songs=(CATALOG.songs||[]).filter(s=>(s.song+" "+s.artist).toLowerCase().includes(q)
-    ||(s.variants||[]).some(v=>strLabel(v.strings).toLowerCase().includes(q)));
-  const tun=(CATALOG.tunings||[]).filter(t=>(t.name+" "+strLabel(t.strings)).toLowerCase().includes(q));
+  const qLoose=loose(q);
+  const songs=(CATALOG.songs||[]).filter(s=>hay(s.song+" "+s.artist,q,qLoose)
+    ||(s.variants||[]).some(v=>hay(strLabel(v.strings),q,qLoose)));
+  const tun=(CATALOG.tunings||[]).filter(t=>hay(t.name+" "+strLabel(t.strings),q,qLoose));
   if(!songs.length&&!tun.length){
     box.innerHTML=`<div class="empty">Nothing found for "${q}".<br>You can add it by hand with <b>+ Custom</b>.</div>`;
     return;

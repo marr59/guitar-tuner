@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "note": "strings[] is ordered low→high. Focus is ALTERNATE tunings (E standard not catalogued). songs[].t references tunings[].id; expand to strings[] on load.",
  "notes": {
   "conflict": "A second transcription uses this tuning. Unresolved — check by ear.",
@@ -3256,6 +3256,151 @@
     "A#2",
     "D3",
     "G3"
+   ]
+  },
+  {
+   "id": "b1-d2-a2-d3-g3-b3-e4",
+   "name": "B1 D2 A2 D3 G3 B3 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "D2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "d1-b1-d2-a2-d3-g3-b3-e4",
+   "name": "D1 B1 D2 A2 D3 G3 B3 E4",
+   "instrument": "guitar8",
+   "strings": [
+    "D1",
+    "B1",
+    "D2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e1-b1-e2-a2-d3-g3-b3",
+   "name": "E1 B1 E2 A2 D3 G3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "cs1-a1-e2-a2-d3-g3-b3-e4",
+   "name": "C#1 A1 E2 A2 D3 G3 B3 E4",
+   "instrument": "guitar8",
+   "strings": [
+    "C#1",
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "d1-a1-d2-g2-c3-f3-a3",
+   "name": "D1 A1 D2 G2 C3 F3 A3",
+   "instrument": "guitar7",
+   "strings": [
+    "D1",
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3"
+   ]
+  },
+  {
+   "id": "e1-g1-d2-g2-c3-f3-a3-d4",
+   "name": "E1 G1 D2 G2 C3 F3 A3 D4",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "e1-b1-d2-a2-d3-g3-b3",
+   "name": "E1 B1 D2 A2 D3 G3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "B1",
+    "D2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "cs1-a1-e2-a2-d3-g3-b3",
+   "name": "C#1 A1 E2 A2 D3 G3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "C#1",
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "e1-b1-d2-a2-d3-g3-b3-e4",
+   "name": "E1 B1 D2 A2 D3 G3 B3 E4",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "B1",
+    "D2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "cs1-fs1-b1-e2-a2-d3-g3-b3",
+   "name": "C#1 F#1 B1 E2 A2 D3 G3 B3",
+   "instrument": "guitar8",
+   "strings": [
+    "C#1",
+    "F#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
    ]
   }
  ],
@@ -9315,12 +9460,6 @@
    "t": "std-8-fs"
   },
   {
-   "id": "animals-as-leaders-animals-as-leaders-the-price-of-everything-and-the-value-of-nothing",
-   "song": "Animals as Leaders - The Price of Everything and the Value of Nothing",
-   "artist": "Animals as Leaders",
-   "t": "b1-e2-a2-d3-g3-b3-e4"
-  },
-  {
    "id": "animals-as-leaders-conflict-cartography",
    "song": "Conflict Cartography",
    "artist": "Animals as Leaders",
@@ -14689,7 +14828,7 @@
   },
   {
    "id": "arch-enemy-arch-enemy-break-the-spells",
-   "song": "ARCH ENEMY – Break The Spells",
+   "song": "Break The Spells",
    "artist": "Arch Enemy",
    "t": "drop-b"
   },
@@ -18472,7 +18611,11 @@
    "id": "electric-wizard-electric-wizard",
    "song": "Electric Wizard",
    "artist": "Electric Wizard",
-   "t": "drop-c"
+   "t": "drop-c",
+   "alts": [
+    "std-c"
+   ],
+   "c": 1
   },
   {
    "id": "electric-wizard-return-trip",
@@ -18675,12 +18818,6 @@
    "song": "L.S.D.",
    "artist": "Electric Wizard",
    "t": "a1-d2-g2-c3-e3-a3"
-  },
-  {
-   "id": "electric-wizard-electric-wizard-electric-wizard",
-   "song": "Electric Wizard-Electric Wizard",
-   "artist": "Electric Wizard",
-   "t": "std-c"
   },
   {
    "id": "electric-wizard-return-trip-solos",
@@ -24516,7 +24653,7 @@
   },
   {
    "id": "slot-slot-krugi-na-vode",
-   "song": "СЛОТ – Круги на воде",
+   "song": "Круги на воде",
    "artist": "Слот",
    "t": "drop-b"
   },
@@ -35971,6 +36108,354 @@
    "song": "Pretty Boy",
    "artist": "Alpha Wolf",
    "t": "g1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "animals-as-leaders-on-impulse",
+   "song": "On Impulse",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-cafo",
+   "song": "CAFO",
+   "artist": "Animals as Leaders",
+   "t": "b1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-the-woven-web",
+   "song": "The Woven Web",
+   "artist": "Animals as Leaders",
+   "t": "d1-b1-d2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-d2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-ka-cade",
+   "song": "Ka$cade",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4",
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-physical-education",
+   "song": "Physical Education",
+   "artist": "Animals as Leaders",
+   "t": "cs1-a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-monomyth",
+   "song": "Monomyth",
+   "artist": "Animals as Leaders",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "animals-as-leaders-an-infinite-regression",
+   "song": "An Infinite Regression",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-tempting-time",
+   "song": "Tempting Time",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-apeirophobia",
+   "song": "Apeirophobia",
+   "artist": "Animals as Leaders",
+   "t": "korn-a-7",
+   "alts": [
+    "d1-a1-d2-g2-c3-e3-a3",
+    "d1-a1-d2-g2-c3-f3-a3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-another-year",
+   "song": "Another Year",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4",
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-red-miso",
+   "song": "Red Miso",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-modern-meat",
+   "song": "Modern Meat",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-wave-of-babies",
+   "song": "Wave of Babies",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-nephele",
+   "song": "Nephele",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-para-mexer",
+   "song": "Para Mexer",
+   "artist": "Animals as Leaders",
+   "t": "e1-g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "animals-as-leaders-inamorata",
+   "song": "Inamorata",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-lippincott",
+   "song": "Lippincott",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-point-to-point",
+   "song": "Point to Point",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-song-of-solomon",
+   "song": "Song of Solomon",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-gordian-naught",
+   "song": "Gordian Naught",
+   "artist": "Animals as Leaders",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "animals-as-leaders-soraya",
+   "song": "Soraya",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-air-chrysalis",
+   "song": "Air Chrysalis",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-cylindrical-sea",
+   "song": "Cylindrical Sea",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-inner-assassins",
+   "song": "Inner Assassins",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "std-8-fs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-behaving-badly",
+   "song": "Behaving Badly",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-mind-spun",
+   "song": "Mind-Spun",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-d2-a2-d3-g3-b3"
+  },
+  {
+   "id": "animals-as-leaders-thoughts-and-prayers",
+   "song": "Thoughts and Prayers",
+   "artist": "Animals as Leaders",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "animals-as-leaders-the-brain-dance",
+   "song": "The Brain Dance",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-thoroughly-at-home",
+   "song": "Thoroughly at Home",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-the-future-that-awaited-me",
+   "song": "The Future That Awaited Me",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-cognitive-contortions",
+   "song": "Cognitive Contortions",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-crescent",
+   "song": "Crescent",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-new-eden",
+   "song": "New Eden",
+   "artist": "Animals as Leaders",
+   "t": "a1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "cs1-a1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-the-price-of-everything-and-the-value-of-nothing",
+   "song": "The Price of Everything and the Value of Nothing",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-earth-departure",
+   "song": "Earth Departure",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-odessa",
+   "song": "Odessa",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-do-not-go-gently",
+   "song": "Do Not Go Gently",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-weightless",
+   "song": "Weightless",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-ectogenesis",
+   "song": "Ectogenesis",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-backpfeifengesicht",
+   "song": "Backpfeifengesicht",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-transcentience",
+   "song": "Transcentience",
+   "artist": "Animals as Leaders",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-isolated-incidents",
+   "song": "Isolated Incidents",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "animals-as-leaders-private-visions-of-the-world",
+   "song": "Private Visions of the World",
+   "artist": "Animals as Leaders",
+   "t": "cs1-fs1-b1-e2-a2-d3-g3-b3",
+   "alts": [
+    "std-8-fs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "animals-as-leaders-tessitura",
+   "song": "Tessitura",
+   "artist": "Animals as Leaders",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3",
+    "e1-b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
   }
  ]
 }

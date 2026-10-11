@@ -1,0 +1,37 @@
+{
+  "_note": "Каталог прячет часть исполнителей под обходными именами (видимо, после жалоб правообладателей). Здесь — сопоставление канонического имени с тем, под чем записи реально лежат в источнике. Записи всегда сохраняются под каноническим именем. titleFixes правит перевёрнутые названия песен, titleReject режет варианты табов, которые не являются песнями.",
+  "Animals as Leaders": {
+    "aliases": [
+      "Not Animals As Leaders",
+      "Not Animals as Leaders",
+      "not animals as leaders",
+      "Not Animal As Leaders",
+      "Leaders As Animals",
+      "animals as leadersn't",
+      "Animal as leaders"
+    ],
+    "titleFixes": {
+      "OFAC": "CAFO",
+      "Assassins Inner": "Inner Assassins",
+      "Contortions Cognitive": "Cognitive Contortions",
+      "GenesisEcto": "Ectogenesis",
+      "MythMono": "Monomyth",
+      "World Private Visions": "Private Visions of the World",
+      "Cafo": "CAFO",
+      "Kascade": "Ka$cade",
+      "Point To Point": "Point to Point",
+      "Song Of Solomon": "Song of Solomon",
+      "Thoroughly At Home": "Thoroughly at Home",
+      "Wave Of Babies": "Wave of Babies",
+      "transentience": "Transcentience"
+    },
+    "titleReject": [
+      "intro sweep",
+      "thump",
+      "overdriven",
+      "quintuplet",
+      "but the bass"
+    ],
+    "_verified": "Названия сверены с дискографией MusicBrainz (artist 5c2d2520-950b-4c78-84fc-78a9328172a3), 42 из 43 совпали; 'transentience' — опечатка источника."
+  }
+}
