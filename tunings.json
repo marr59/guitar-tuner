@@ -4293,17 +4293,12 @@
    "id": "deftones-risk",
    "song": "Risk",
    "artist": "Deftones",
-   "t": "std-8-fs"
-  },
-  {
-   "id": "deftones-risk-6-string-accurate",
-   "song": "Risk - 6 String (accurate)",
-   "artist": "Deftones",
-   "t": "ds2-gs2-cs3-fs3-b3-e4",
-   "c": 1,
+   "t": "std-8-fs",
    "alts": [
+    "ds2-gs2-cs3-fs3-b3-e4",
     "fs2-b2-e3-a3-d4-g4"
-   ]
+   ],
+   "c": 1
   },
   {
    "id": "deftones-rocket-skates",
@@ -5780,12 +5775,6 @@
    "song": "The Devil In I",
    "artist": "Slipknot",
    "t": "drop-a"
-  },
-  {
-   "id": "slipknot-before-i-forget-5-strings-bass",
-   "song": "Before I Forget 5 strings bass",
-   "artist": "Slipknot",
-   "t": "drop-b"
   },
   {
    "id": "slipknot-sulfur",
@@ -7295,12 +7284,6 @@
    "t": "drop-c"
   },
   {
-   "id": "disturbed-decadence-4-string-bass",
-   "song": "Decadence 4 string bass",
-   "artist": "Disturbed",
-   "t": "drop-cs"
-  },
-  {
    "id": "disturbed-the-vengeful-one",
    "song": "The Vengeful One",
    "artist": "Disturbed",
@@ -7441,12 +7424,6 @@
   {
    "id": "disturbed-droppin-plates",
    "song": "Droppin' Plates",
-   "artist": "Disturbed",
-   "t": "drop-cs"
-  },
-  {
-   "id": "disturbed-voices-4-string-bass",
-   "song": "Voices 4 string bass",
    "artist": "Disturbed",
    "t": "drop-cs"
   },
@@ -7822,7 +7799,7 @@
   },
   {
    "id": "disturbed-reason-to-fight-full-band",
-   "song": "Reason To Fight (Full Band)",
+   "song": "Reason To Fight",
    "artist": "Disturbed",
    "t": "b1-e2-a2-d3-fs3-b3"
   },
@@ -8355,12 +8332,6 @@
   {
    "id": "mudvayne-not-falling",
    "song": "Not Falling",
-   "artist": "Mudvayne",
-   "t": "drop-c"
-  },
-  {
-   "id": "mudvayne-4-string-not-falling",
-   "song": "4 string not falling",
    "artist": "Mudvayne",
    "t": "drop-c"
   },
@@ -8951,7 +8922,7 @@
   },
   {
    "id": "drowning-pool-37-stitches-full-version",
-   "song": "37 Stitches(Full Version)",
+   "song": "37 Stitches",
    "artist": "Drowning Pool",
    "t": "drop-b"
   },
@@ -9383,12 +9354,6 @@
    "t": "std-8-fs"
   },
   {
-   "id": "periphery-the-walk-correct",
-   "song": "The Walk (correct)",
-   "artist": "Periphery",
-   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
-  },
-  {
    "id": "periphery-marigold",
    "song": "Marigold",
    "artist": "Periphery",
@@ -9618,7 +9583,7 @@
   },
   {
    "id": "periphery-zyglorx-corrected-version",
-   "song": "Zyglorx (corrected version)",
+   "song": "Zyglorx",
    "artist": "Periphery",
    "t": "a1-g2-c3-f3-a3-d4"
   },
@@ -9713,7 +9678,7 @@
   },
   {
    "id": "periphery-rainbow-gravity-solo-correct",
-   "song": "Rainbow Gravity Solo (correct)",
+   "song": "Rainbow Gravity Solo",
    "artist": "Periphery",
    "t": "std-eb"
   },
@@ -10260,7 +10225,7 @@
   },
   {
    "id": "veil-of-maya-three-fifty-correct",
-   "song": "Three-Fifty (Correct)",
+   "song": "Three-Fifty",
    "artist": "Veil of Maya",
    "t": "fs1-b1-fs2-b2-e3-gs3-cs4",
    "c": 1,
@@ -10592,7 +10557,7 @@
   },
   {
    "id": "veil-of-maya-red-fur-correct",
-   "song": "red fur(correct)",
+   "song": "red fur",
    "artist": "Veil of Maya",
    "t": "e1-b1-fs2-b2-e3-gs3-cs4"
   },
@@ -11147,7 +11112,7 @@
   },
   {
    "id": "after-the-burial-the-fractal-effect-good-version",
-   "song": "The Fractal Effect (Good Version)",
+   "song": "The Fractal Effect",
    "artist": "After the Burial",
    "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
   },
@@ -11899,7 +11864,7 @@
   },
   {
    "id": "in-flames-food-for-the-gods-corrrect-version",
-   "song": "Food for the Gods (corrrect version)",
+   "song": "Food for the Gods",
    "artist": "In Flames",
    "t": "std-c"
   },
@@ -16923,7 +16888,7 @@
   },
   {
    "id": "the-black-dahlia-murder-mammothss-hand-most-accurate",
-   "song": "Mammoths's Hand (Most Accurate)",
+   "song": "Mammoths's Hand",
    "artist": "The Black Dahlia Murder",
    "t": "std-c"
   },
@@ -18488,12 +18453,6 @@
    "t": "std-d"
   },
   {
-   "id": "mastodon-iron-tusk-5-string-bass",
-   "song": "Iron Tusk 5 String Bass",
-   "artist": "Mastodon",
-   "t": "a1-g2-c3-f3-a3-d4"
-  },
-  {
    "id": "mastodon-the-hunter",
    "song": "The Hunter",
    "artist": "Mastodon",
@@ -19514,7 +19473,7 @@
   },
   {
    "id": "kyuss-phototropic-fixed",
-   "song": "Phototropic (fixed)",
+   "song": "Phototropic",
    "artist": "Kyuss",
    "t": "std-c"
   },
@@ -19746,7 +19705,7 @@
   },
   {
    "id": "high-on-fire-electric-messiah-full",
-   "song": "Electric Messiah (Full)",
+   "song": "Electric Messiah",
    "artist": "High on Fire",
    "t": "std-c"
   },
@@ -20726,7 +20685,7 @@
   },
   {
    "id": "black-sabbath-danger-zone-full-song",
-   "song": "Danger Zone (Full Song)",
+   "song": "Danger Zone",
    "artist": "Black Sabbath",
    "t": "std-d"
   },
@@ -21280,7 +21239,11 @@
    "id": "alice-in-chains-them-bones",
    "song": "Them Bones",
    "artist": "Alice in Chains",
-   "t": "drop-cs"
+   "t": "drop-cs",
+   "alts": [
+    "drop-d"
+   ],
+   "c": 1
   },
   {
    "id": "alice-in-chains-nutshell",
@@ -21866,12 +21829,6 @@
    "song": "Maybe",
    "artist": "Alice in Chains",
    "t": "drop-cs"
-  },
-  {
-   "id": "alice-in-chains-them-bones-simplified",
-   "song": "Them Bones Simplified",
-   "artist": "Alice in Chains",
-   "t": "drop-d"
   },
   {
    "id": "alice-in-chains-pretty-done",
@@ -23299,12 +23256,6 @@
    "t": "drop-d"
   },
   {
-   "id": "queens-of-the-stone-age-regular-john-but-its-accurate",
-   "song": "regular john but its accurate",
-   "artist": "Queens of the Stone Age",
-   "t": "std-c"
-  },
-  {
    "id": "queens-of-the-stone-age-ode-to-clarissa",
    "song": "Ode To Clarissa",
    "artist": "Queens of the Stone Age",
@@ -23762,7 +23713,7 @@
   },
   {
    "id": "psiheya-mif-o-rozovyh-delikatesah-correct",
-   "song": "Миф о розовых деликатесах (correct)",
+   "song": "Миф о розовых деликатесах",
    "artist": "Психея",
    "t": "drop-b"
   },
@@ -24930,7 +24881,7 @@
   },
   {
    "id": "animal-dzhaz-tri-poloski-full-version",
-   "song": "Три Полоски (Full Version)",
+   "song": "Три Полоски",
    "artist": "Animal ДжаZ",
    "t": "drop-d"
   },
@@ -27359,7 +27310,7 @@
   },
   {
    "id": "opeth-5-real-version",
-   "song": "§5 (real version)",
+   "song": "§5",
    "artist": "Opeth",
    "t": "drop-d"
   },
@@ -31208,7 +31159,7 @@
   },
   {
    "id": "katatonia-nerve-better-version",
-   "song": "Nerve (better version)",
+   "song": "Nerve",
    "artist": "Katatonia",
    "t": "drop-cs"
   },
@@ -33624,7 +33575,7 @@
   },
   {
    "id": "meshuggah-combustion-main-riff-correct",
-   "song": "Combustion Main Riff (Correct)",
+   "song": "Combustion Main Riff",
    "artist": "Meshuggah",
    "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
   },
@@ -34076,7 +34027,7 @@
   },
   {
    "id": "erra-crawl-backwards-out-of-heaven-correct",
-   "song": "Crawl Backwards Out Of Heaven (Correct)",
+   "song": "Crawl Backwards Out Of Heaven",
    "artist": "Erra",
    "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
   },
@@ -34306,7 +34257,7 @@
   },
   {
    "id": "erra-idle-wild-full-song",
-   "song": "Idle Wild (Full Song)",
+   "song": "Idle Wild",
    "artist": "Erra",
    "t": "e1-b1-e2-a2-d3-fs3-b3"
   },
@@ -34500,7 +34451,7 @@
   },
   {
    "id": "northlane-transcending-dimensions-correct",
-   "song": "Transcending Dimensions(Correct)",
+   "song": "Transcending Dimensions",
    "artist": "Northlane",
    "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
   },
@@ -35031,7 +34982,7 @@
   },
   {
    "id": "polaris-inhumane-full",
-   "song": "Inhumane (Full)",
+   "song": "Inhumane",
    "artist": "Polaris",
    "t": "g1-d2-g2-c3-f3-a3-d4"
   },
@@ -35731,7 +35682,7 @@
   },
   {
    "id": "parkway-drive-breaking-point-correct",
-   "song": "Breaking Point (Correct)",
+   "song": "Breaking Point",
    "artist": "Parkway Drive",
    "t": "drop-b"
   },
@@ -35893,7 +35844,7 @@
   },
   {
    "id": "parkway-drive-dont-close-your-eyes-full",
-   "song": "Dont Close Your Eyes (Full)",
+   "song": "Dont Close Your Eyes",
    "artist": "Parkway Drive",
    "t": "drop-b"
   },
@@ -35965,7 +35916,7 @@
   },
   {
    "id": "parkway-drive-flesh-bone-and-weakness-full",
-   "song": "Flesh Bone and Weakness (Full)",
+   "song": "Flesh Bone and Weakness",
    "artist": "Parkway Drive",
    "t": "drop-b"
   },
@@ -36036,12 +35987,6 @@
   {
    "id": "parkway-drive-the-sound-of-violence",
    "song": "The Sound Of Violence",
-   "artist": "Parkway Drive",
-   "t": "drop-b"
-  },
-  {
-   "id": "parkway-drive-youre-over-correct-version",
-   "song": "Youre Over (Correct Version)",
    "artist": "Parkway Drive",
    "t": "drop-b"
   },
@@ -37543,7 +37488,7 @@
   },
   {
    "id": "coldrain-mayday-full",
-   "song": "Mayday (full)",
+   "song": "Mayday",
    "artist": "Coldrain",
    "t": "as1-f2-as2-ds3-g3-c4",
    "alts": [
@@ -38256,7 +38201,7 @@
   },
   {
    "id": "maximum-the-hormone-hungry-pride-full",
-   "song": "Hungry Pride (full)",
+   "song": "Hungry Pride",
    "artist": "Maximum the Hormone",
    "t": "drop-c"
   },
@@ -41367,7 +41312,7 @@
   },
   {
    "id": "nemophila-hammer-down-full-song",
-   "song": "Hammer Down (Full Song)",
+   "song": "Hammer Down",
    "artist": "Nemophila",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -43471,7 +43416,7 @@
   },
   {
    "id": "ling-tosite-sigure-unravel-full-tabs",
-   "song": "Unravel (Full Tabs)",
+   "song": "Unravel",
    "artist": "Ling Tosite Sigure",
    "t": "drop-d"
   },
@@ -44959,7 +44904,7 @@
   },
   {
    "id": "angra-upper-levels-full-song",
-   "song": "Upper Levels (Full song)",
+   "song": "Upper Levels",
    "artist": "Angra",
    "t": "std-d"
   },
@@ -45361,7 +45306,7 @@
   },
   {
    "id": "architects-numbers-count-for-nothing-full",
-   "song": "Numbers Count For Nothing (Full)",
+   "song": "Numbers Count For Nothing",
    "artist": "Architects",
    "t": "std-cs"
   },
@@ -46941,7 +46886,7 @@
   },
   {
    "id": "rata-blanca-talisman-original",
-   "song": "Talisman (Original)",
+   "song": "Talisman",
    "artist": "Rata Blanca",
    "t": "std-eb"
   },
@@ -47311,7 +47256,7 @@
   },
   {
    "id": "within-temptation-titanium-5-string-bass",
-   "song": "Titanium (5 String Bass",
+   "song": "Titanium",
    "artist": "Within Temptation",
    "t": "std-eb"
   },
@@ -47351,7 +47296,7 @@
   },
   {
    "id": "within-temptation-covered-by-roses-full",
-   "song": "Covered By Roses (full)",
+   "song": "Covered By Roses",
    "artist": "Within Temptation",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -49375,7 +49320,7 @@
   },
   {
    "id": "epica-design-your-universe-full",
-   "song": "Design Your Universe (full)",
+   "song": "Design Your Universe",
    "artist": "Epica",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -49549,7 +49494,7 @@
   },
   {
    "id": "epica-the-quantum-enigma-full",
-   "song": "The Quantum Enigma (full)",
+   "song": "The Quantum Enigma",
    "artist": "Epica",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -50697,7 +50642,7 @@
   },
   {
    "id": "decapitated-carnival-is-forever-full",
-   "song": "Carnival Is Forever(Full)",
+   "song": "Carnival Is Forever",
    "artist": "Decapitated",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -51109,7 +51054,7 @@
   },
   {
    "id": "brujeria-seis-seis-seis-fixed",
-   "song": "Seis Seis Seis (Fixed)",
+   "song": "Seis Seis Seis",
    "artist": "Brujeria",
    "t": "a1-e2-a2-d3-g3-b3-e4"
   },
@@ -52091,7 +52036,7 @@
   },
   {
    "id": "entombed-rotten-soil-full-song",
-   "song": "Rotten Soil (full song)",
+   "song": "Rotten Soil",
    "artist": "Entombed",
    "t": "std-c"
   },
