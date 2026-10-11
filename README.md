@@ -6,6 +6,12 @@ A fast, free guitar tuner with a curated library of **4,500 alternate tunings** 
 
 Pick a song, see the tuning it was recorded in, retune, play. No account, no signup, no paywall, no ads. Installs to your home screen and works with no signal.
 
+<p align="center">
+  <img src="docs/screenshot-tuner.png" alt="Tuner screen: E Standard selected, waveform display, string selector and Manual/Auto switch" width="300" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshot-search.png" alt="Search by Song: Slipknot's Vermilion Pt. 2 shown in B F# B E G# C# with a verified badge" width="300" />
+</p>
+
 ---
 
 ## What it does
