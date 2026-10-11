@@ -452,6 +452,11 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       seenIds.add(song.id);
       st.uniqueSongs++;
 
+      // Reject on the UNTOUCHED title. Stripping first let "Seeing Red cover"
+      // become "Seeing Red co", which no longer matches \bcover\b — the strip
+      // was quietly smuggling covers and live takes past their own filter.
+      if (titleRejected(song.title) || titleRejectedByArtist(song.title, cfg)) { st.rejectedTitle++; continue; }
+
       const stripped = stripVersionSuffix(song.title);
       if (stripped !== song.title) { st.titleFixed++; song.title = stripped; }
 
@@ -461,8 +466,6 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       // Always key on the canonical artist: aliases must collapse onto one song
       const pk = pairKey(artistName, song.title);
       if (isVariantMarker(song.title)) variantMarkerKeys.add(pk);
-
-      if (titleRejected(song.title) || titleRejectedByArtist(song.title, cfg)) { st.rejectedTitle++; continue; }
 
       const tunings = extractNormalized(song, st);
       if (!tunings) { st.noGuitarTracks++; continue; }

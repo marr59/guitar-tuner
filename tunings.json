@@ -44640,7 +44640,7 @@
   },
   {
    "id": "kreator-fore",
-   "song": "Fore",
+   "song": "Forever",
    "artist": "Kreator",
    "t": "std-d"
   },
@@ -44779,12 +44779,6 @@
   {
    "id": "kreator-a-better-tomorrow",
    "song": "A Better Tomorrow",
-   "artist": "Kreator",
-   "t": "std-d"
-  },
-  {
-   "id": "kreator-phobia-co",
-   "song": "Phobia co",
    "artist": "Kreator",
    "t": "std-d"
   },
@@ -45541,12 +45535,6 @@
    "t": "std-cs"
   },
   {
-   "id": "architects-doomsday-8string-co",
-   "song": "Doomsday (8string Co",
-   "artist": "Architects",
-   "t": "e1-a1-e2-a2-d3-g3-b3-e4"
-  },
-  {
    "id": "architects-in-the-desert",
    "song": "In The Desert",
    "artist": "Architects",
@@ -45573,12 +45561,6 @@
   {
    "id": "architects-spit-the-bone",
    "song": "spit the bone",
-   "artist": "Architects",
-   "t": "drop-b"
-  },
-  {
-   "id": "architects-seeing-red-co",
-   "song": "Seeing Red co",
    "artist": "Architects",
    "t": "drop-b"
   },
@@ -45660,7 +45642,7 @@
   },
   {
    "id": "architects-unbelie",
-   "song": "Unbelie",
+   "song": "Unbeliever",
    "artist": "Architects",
    "t": "drop-c"
   },
@@ -45850,7 +45832,7 @@
   },
   {
    "id": "delain-stay-fore",
-   "song": "Stay Fore",
+   "song": "Stay Forever",
    "artist": "Delain",
    "t": "korn-a-7"
   },
@@ -46368,7 +46350,7 @@
   },
   {
    "id": "scar-symmetry-chaoswea",
-   "song": "Chaoswea",
+   "song": "Chaosweaver",
    "artist": "Scar Symmetry",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
@@ -46778,7 +46760,7 @@
   },
   {
    "id": "caliban-nothing-is-fore",
-   "song": "Nothing Is Fore",
+   "song": "Nothing Is Forever",
    "artist": "Caliban",
    "t": "drop-c"
   },
@@ -48254,7 +48236,7 @@
   },
   {
    "id": "bring-me-the-horizon-diamonds-arent-fore",
-   "song": "Diamonds Aren't Fore",
+   "song": "Diamonds Aren't Forever",
    "artist": "Bring Me The Horizon",
    "t": "as1-f2-as2-ds3-g3-c4"
   },
@@ -48670,7 +48652,7 @@
   },
   {
    "id": "bring-me-the-horizon-football-season-is-o",
-   "song": "Football Season Is O",
+   "song": "Football Season Is Over",
    "artist": "Bring Me The Horizon",
    "t": "g1-f2-as2-ds3-g3-c4"
   },
@@ -49133,14 +49115,8 @@
    "t": "std-d"
   },
   {
-   "id": "volbeat-lola-montez-mechanical-aberration-co",
-   "song": "Lola Montez (Mechanical Aberration co",
-   "artist": "Volbeat",
-   "t": "std-d"
-  },
-  {
    "id": "volbeat-a-moment-fore",
-   "song": "A Moment Fore",
+   "song": "A Moment Forever",
    "artist": "Volbeat",
    "t": "std-d"
   },
@@ -49952,7 +49928,7 @@
   },
   {
    "id": "evergrey-more-than-e",
-   "song": "More Than E",
+   "song": "More Than Ever",
    "artist": "Evergrey",
    "t": "drop-d"
   },
@@ -49976,7 +49952,7 @@
   },
   {
    "id": "evergrey-the-great-decei",
-   "song": "The Great Decei",
+   "song": "The Great Deceiver",
    "artist": "Evergrey",
    "t": "drop-c"
   },
@@ -50478,7 +50454,7 @@
   },
   {
    "id": "decapitated-ne",
-   "song": "Ne",
+   "song": "Never",
    "artist": "Decapitated",
    "t": "b1-fs2-b2-e3-a3-cs4-fs4"
   },
@@ -50671,12 +50647,6 @@
   {
    "id": "decapitated-mandatory-suicide",
    "song": "Mandatory Suicide",
-   "artist": "Decapitated",
-   "t": "std-d"
-  },
-  {
-   "id": "decapitated-suffer-the-children-napalm-death-co",
-   "song": "Suffer The Children (Napalm Death Co",
    "artist": "Decapitated",
    "t": "std-d"
   },
@@ -51423,12 +51393,6 @@
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },
   {
-   "id": "fleshgod-apocalypse-blinded-by-fear-at-the-gates-co",
-   "song": "Blinded By Fear (At The Gates Co",
-   "artist": "Fleshgod Apocalypse",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
    "id": "fleshgod-apocalypse-i-can-never-die",
    "song": "I Can Never Die",
    "artist": "Fleshgod Apocalypse",
@@ -51541,12 +51505,6 @@
    "song": "Post-Enlightenment Executor",
    "artist": "Fleshgod Apocalypse",
    "t": "drop-b"
-  },
-  {
-   "id": "fleshgod-apocalypse-the-hypocrisy-guitar-co",
-   "song": "The Hypocrisy Guitar Co",
-   "artist": "Fleshgod Apocalypse",
-   "t": "b1-e2-a2-d3-g3-b3-e4"
   },
   {
    "id": "fleshgod-apocalypse-carnivorous-lamb-ai",
@@ -51793,12 +51751,6 @@
    "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
-   "id": "at-the-gates-legion-co",
-   "song": "Legion Co",
-   "artist": "At the Gates",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
    "id": "at-the-gates-a-ritual-of-waste",
    "song": "A Ritual of Waste",
    "artist": "At the Gates",
@@ -51879,12 +51831,6 @@
   {
    "id": "at-the-gates-souls-of-the-evil-departed",
    "song": "Souls Of The Evil Departed",
-   "artist": "At the Gates",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
-   "id": "at-the-gates-under-a-serpent-sun-5er-co",
-   "song": "Under A Serpent Sun (5er co",
    "artist": "At the Gates",
    "t": "b1-e2-a2-d3-fs3-b3"
   },
@@ -52650,7 +52596,7 @@
   },
   {
    "id": "hatesphere-the-white-fe",
-   "song": "The White Fe",
+   "song": "The White Fever",
    "artist": "Hatesphere",
    "t": "std-c"
   },
