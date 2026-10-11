@@ -9248,12 +9248,6 @@
    "t": "std-8-fs"
   },
   {
-   "id": "periphery-absolomb-5-string",
-   "song": "Absolomb (5 string)",
-   "artist": "Periphery",
-   "t": "drop-c"
-  },
-  {
    "id": "periphery-letter-experiment",
    "song": "Letter Experiment",
    "artist": "Periphery",
@@ -9398,7 +9392,11 @@
    "id": "periphery-marigold",
    "song": "Marigold",
    "artist": "Periphery",
-   "t": "drop-c"
+   "t": "drop-c",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
   },
   {
    "id": "periphery-four-lights",
@@ -9680,12 +9678,6 @@
     "korn-a-7",
     "std-c"
    ]
-  },
-  {
-   "id": "periphery-marigold-7string",
-   "song": "Marigold 7string",
-   "artist": "Periphery",
-   "t": "b1-e2-a2-d3-g3-b3-e4"
   },
   {
    "id": "periphery-captain-on",
@@ -10412,7 +10404,11 @@
    "id": "veil-of-maya-we-bow-in-its-aura",
    "song": "We Bow In Its Aura",
    "artist": "Veil of Maya",
-   "t": "drop-b"
+   "t": "drop-b",
+   "alts": [
+    "b1-fs2-b2-e3-a3-cs4-fs4"
+   ],
+   "c": 1
   },
   {
    "id": "veil-of-maya-viscera",
@@ -22263,7 +22259,11 @@
    "id": "tool-prison-sex",
    "song": "Prison Sex",
    "artist": "Tool",
-   "t": "b1-a2-d3-g3-b3-e4"
+   "t": "b1-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
   },
   {
    "id": "tool-46-and-2",
@@ -22510,12 +22510,6 @@
    "song": "No Quarter",
    "artist": "Tool",
    "t": "drop-d"
-  },
-  {
-   "id": "tool-prison-sex-7-string",
-   "song": "prison sex 7 string",
-   "artist": "Tool",
-   "t": "b1-e2-a2-d3-g3-b3-e4"
   },
   {
    "id": "tool-stranglehold",
@@ -32451,12 +32445,6 @@
    "t": "drop-b"
   },
   {
-   "id": "veil-of-maya-we-bow-in-its-aura-7-string",
-   "song": "We Bow In It's Aura (7 String)",
-   "artist": "Veil of Maya",
-   "t": "b1-fs2-b2-e3-a3-cs4-fs4"
-  },
-  {
    "id": "volumes-edge-of-the-earth",
    "song": "Edge Of The Earth",
    "artist": "Volumes",
@@ -32777,6 +32765,7 @@
    "artist": "Vildhjarta",
    "t": "f1-c2-f2-as2-ds3-gs3-c4",
    "alts": [
+    "f1-c2-f2-as2-ds3-gs3",
     "g1-c2-f2-as2-ds3-gs3-c4"
    ],
    "c": 1
@@ -32797,18 +32786,8 @@
    "artist": "Vildhjarta",
    "t": "e1-c2-f2-as2-ds3-gs3-c4",
    "alts": [
-    "e1-b1-e2-a2-d3-fs3-b3"
-   ],
-   "c": 1
-  },
-  {
-   "id": "vildhjarta-den-helige-anden-6-strings",
-   "song": "Den Helige Anden 6 strings",
-   "artist": "Vildhjarta",
-   "t": "e1-c2-f2-as2-d3-g3",
-   "alts": [
     "e1-b1-e2-a2-d3-fs3-b3",
-    "e1-c2-f2-as2-ds3-gs3-c4"
+    "e1-c2-f2-as2-d3-g3"
    ],
    "c": 1
   },
@@ -32969,12 +32948,6 @@
     "cs2-a2-d3-g3-c4-e4"
    ],
    "c": 1
-  },
-  {
-   "id": "vildhjarta-dagger-6-string",
-   "song": "Dagger 6 string",
-   "artist": "Vildhjarta",
-   "t": "f1-c2-f2-as2-ds3-gs3"
   },
   {
    "id": "vildhjarta-phobon-nika",
@@ -34838,7 +34811,7 @@
   },
   {
    "id": "polaris-masochist-7-strings",
-   "song": "Masochist (7 strings)",
+   "song": "Masochist",
    "artist": "Polaris",
    "t": "b1-e2-a2-d3-g3-b3-e4"
   },

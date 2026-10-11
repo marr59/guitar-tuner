@@ -108,8 +108,6 @@ const REJECT_RX    = [
   /\d+\s*%/,
   /\(\s*\d+-string/i,
   /\d+-string\s*\)/i,
-  /\(\s*\d+\s*strings?\s*\)/i,   // "(5 Strings)" — a transcription variant, not a song
-  /\b\d+\s*strings?\s*$/i,         // "Rondo Of Nightmare 6 String"
   /\bspeed\b/i,
   /\bslowed\b/i,
 ];
@@ -119,12 +117,22 @@ const REJECT_RX    = [
 // need the number: "(Full Version)" and "Better Version" are remarks about the
 // transcription, not a revision index, and stripping a bare "ver" eats the end
 // of Forever, Game Over and AOV.
+// "Marigold 7string", "Dagger 6 string", "Absolomb (5 string)" are the same song
+// written out for a different string count. Rejecting them threw away a playable
+// alternative; stripping the marker folds them onto the base song instead, where
+// a differing tuning is recorded as a second version.
+const STRING_COUNT_RX = [
+  /\s*[\(\[]\s*\d+\s*strings?\s*[\)\]]\s*$/i,
+  /\s*\b\d+\s*strings?\s*$/i,
+];
+
 const VERSION_RX = [
   /\s*[\(\[]\s*(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*[\)\]]\s*$/i,
   /\s+(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*$/i,
 ];
 function stripVersionSuffix(title) {
   let t = title;
+  for (const rx of STRING_COUNT_RX) t = t.replace(rx, '');
   for (const rx of VERSION_RX) t = t.replace(rx, '');
   t = t.replace(/\s*[-\u2013\u2014]\s*$/, '').trim();
   return t.length >= 2 ? t : title;
