@@ -114,12 +114,19 @@ const REJECT_RX    = [
   /\bslowed\b/i,
 ];
 
-// Tab revisions ("Guren v2", "The Beginning (V2)", "… Mortal Downer ver") are the
-// same song re-transcribed. Strip the marker so they fold into the base entry —
-// if the revision disagrees on the tuning, that becomes a recorded conflict.
-const VERSION_SUFFIX_RX = /\s*[\(\[]?\s*(?:v|ver|version)\s*\.?\s*\d*\s*[\)\]]?\s*$/i;
+// A tab revision marker is either a whole trailing bracket ("(V2)") or a
+// separate word carrying a number (" v2", " Ver 2", " wersja 2"). Both forms
+// need the number: "(Full Version)" and "Better Version" are remarks about the
+// transcription, not a revision index, and stripping a bare "ver" eats the end
+// of Forever, Game Over and AOV.
+const VERSION_RX = [
+  /\s*[\(\[]\s*(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*[\)\]]\s*$/i,
+  /\s+(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*$/i,
+];
 function stripVersionSuffix(title) {
-  const t = title.replace(VERSION_SUFFIX_RX, '').replace(/\s*[-–—]\s*$/, '').trim();
+  let t = title;
+  for (const rx of VERSION_RX) t = t.replace(rx, '');
+  t = t.replace(/\s*[-\u2013\u2014]\s*$/, '').trim();
   return t.length >= 2 ? t : title;
 }
 
@@ -192,10 +199,16 @@ function toHighToLow(track) {
 
 // ── Tuning name / id ──────────────────────────────────────────────────────────
 
-const STD  = { 5:[0,5,10,15,19],       6:[0,5,10,15,19,24],
-               7:[0,5,10,15,19,24,29], 8:[0,5,10,15,19,24,29,34] };
-const DROP = { 5:[0,7,12,17,21],       6:[0,7,12,17,21,26],
-               7:[0,7,12,17,21,26,31], 8:[0,7,12,17,21,26,31,36] };
+// Intervals measured off the real instruments, not extrapolated: a seven-string
+// standard is B E A D G B E (0 5 10 15 20 24 29), and the major third sits
+// between the second and third string whatever the string count. Extending the
+// six-string row by +5 per string — which is what used to be here — puts that
+// third in the wrong place and hands a "B Standard (7-string)" label to a tuning
+// that is a semitone off on one string.
+const STD  = { 5:[0,5,10,15,19],        6:[0,5,10,15,19,24],
+               7:[0,5,10,15,20,24,29],  8:[0,5,10,15,20,25,29,34] };
+const DROP = { 5:[0,7,12,17,21],        6:[0,7,12,17,21,26],
+               7:[0,7,12,17,22,26,31],  8:[0,7,12,17,22,27,31,36] };
 
 function toMidi(n) {
   const mo = String(n).match(/^([A-G]#?)(-?\d)$/);
