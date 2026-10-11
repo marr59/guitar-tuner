@@ -1162,19 +1162,6 @@
    ]
   },
   {
-   "id": "b1-fs2-b2-e4-gs3-cs4",
-   "name": "B1 F#2 B2 E4 G#3 C#4",
-   "instrument": "guitar6",
-   "strings": [
-    "B1",
-    "F#2",
-    "B2",
-    "E4",
-    "G#3",
-    "C#4"
-   ]
-  },
-  {
    "id": "fs1-fs2-b2-e3-gs3-cs4",
    "name": "Drop F# (from C# standard)",
    "instrument": "guitar6",
@@ -1953,7 +1940,7 @@
   },
   {
    "id": "a1-d2-a2-d3-g3-b3-e4",
-   "name": "A1 D2 A2 D3 G3 B3 E4",
+   "name": "Drop D + low A (7-string)",
    "instrument": "guitar7",
    "strings": [
     "A1",
@@ -2087,7 +2074,7 @@
   },
   {
    "id": "as2-fs3-b3-e4-gs4-cs4",
-   "name": "A#2 F#3 B3 E4 G#4 C#4",
+   "name": "A#2 F#3 B3 E4 G#4 C#5",
    "instrument": "guitar6",
    "strings": [
     "A#2",
@@ -2095,7 +2082,7 @@
     "B3",
     "E4",
     "G#4",
-    "C#4"
+    "C#5"
    ]
   },
   {
@@ -2217,21 +2204,8 @@
    ]
   },
   {
-   "id": "cs2-gs2-cs3-fs3-gs4-cs4",
-   "name": "C#2 G#2 C#3 F#3 G#4 C#4",
-   "instrument": "guitar6",
-   "strings": [
-    "C#2",
-    "G#2",
-    "C#3",
-    "F#3",
-    "G#4",
-    "C#4"
-   ]
-  },
-  {
    "id": "d1-d2-g2-c3-f3-a3-d4",
-   "name": "D1 D2 G2 C3 F3 A3 D4",
+   "name": "D Standard + low D (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D1",
@@ -2352,7 +2326,7 @@
   },
   {
    "id": "fs1-b1-e2-a2-d3-fs3-b3",
-   "name": "F#1 B1 E2 A2 D3 F#3 B3",
+   "name": "B Standard + low F# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F#1",
@@ -2379,7 +2353,7 @@
   },
   {
    "id": "fs1-e2-a2-d3-g3-b3-e4",
-   "name": "F#1 E2 A2 D3 G3 B3 E4",
+   "name": "E Standard + low F# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F#1",
@@ -2432,7 +2406,7 @@
   },
   {
    "id": "gs1-cs2-fs2-b2-e3-gs3-cs4",
-   "name": "G#1 C#2 F#2 B2 E3 G#3 C#4",
+   "name": "C# Standard + low G# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "G#1",
@@ -2446,7 +2420,7 @@
   },
   {
    "id": "gs2-cs3-fs3-b3-ds4-gs4",
-   "name": "G#2 C#3 F#3 B3 D#4 G#4",
+   "name": "G# Standard",
    "instrument": "guitar6",
    "strings": [
     "G#2",
@@ -2497,21 +2471,8 @@
    ]
   },
   {
-   "id": "a1-d2-a2-d3-g4-b3",
-   "name": "A1 D2 A2 D3 G4 B3",
-   "instrument": "guitar6",
-   "strings": [
-    "A1",
-    "D2",
-    "A2",
-    "D3",
-    "G4",
-    "B3"
-   ]
-  },
-  {
    "id": "g1-c2-g2-c3-f3-a3-d4",
-   "name": "G1 C2 G2 C3 F3 A3 D4",
+   "name": "Drop C + low G (7-string)",
    "instrument": "guitar7",
    "strings": [
     "G1",
@@ -2539,7 +2500,7 @@
   },
   {
    "id": "cs2-fs2-b2-e3-a3-cs4-fs4",
-   "name": "C#2 F#2 B2 E3 A3 C#4 F#4",
+   "name": "F# Standard + low C# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "C#2",
@@ -2553,7 +2514,7 @@
   },
   {
    "id": "b1-fs2-b2-e3-a3-cs4-fs4",
-   "name": "B1 F#2 B2 E3 A3 C#4 F#4",
+   "name": "F# Standard + low B (7-string)",
    "instrument": "guitar7",
    "strings": [
     "B1",
@@ -2595,7 +2556,7 @@
   },
   {
    "id": "d1-a1-d2-g2-c3-e3-a3",
-   "name": "D1 A1 D2 G2 C3 E3 A3",
+   "name": "A Standard + low D (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D1",
@@ -2664,7 +2625,7 @@
   },
   {
    "id": "g1-c2-f2-as2-ds3-g3-c4",
-   "name": "G1 C2 F2 A#2 D#3 G3 C4",
+   "name": "C Standard + low G (7-string)",
    "instrument": "guitar7",
    "strings": [
     "G1",
@@ -2733,7 +2694,7 @@
   },
   {
    "id": "ds1-b1-e2-a2-d3-fs3-b3",
-   "name": "D#1 B1 E2 A2 D3 F#3 B3",
+   "name": "B Standard + low D# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D#1",
@@ -2871,7 +2832,7 @@
   },
   {
    "id": "ds1-as1-ds2-gs2-cs3-f3-as3",
-   "name": "D#1 A#1 D#2 G#2 C#3 F3 A#3",
+   "name": "A# Standard + low D# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D#1",
@@ -2900,7 +2861,7 @@
   },
   {
    "id": "f1-as1-ds2-gs2-cs3-f3-as3",
-   "name": "F1 A#1 D#2 G#2 C#3 F3 A#3",
+   "name": "A# Standard + low F (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F1",
@@ -2958,7 +2919,7 @@
   },
   {
    "id": "d1-as1-ds2-gs2-cs3-f3-as3",
-   "name": "D1 A#1 D#2 G#2 C#3 F3 A#3",
+   "name": "A# Standard + low D (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D1",
@@ -2986,7 +2947,7 @@
   },
   {
    "id": "e1-a1-d2-g2-c3-e3-a3",
-   "name": "E1 A1 D2 G2 C3 E3 A3",
+   "name": "A Standard + low E (7-string)",
    "instrument": "guitar7",
    "strings": [
     "E1",
@@ -3015,7 +2976,7 @@
   },
   {
    "id": "ds1-gs1-ds2-gs2-cs3-f3-as3",
-   "name": "D#1 G#1 D#2 G#2 C#3 F3 A#3",
+   "name": "Drop G# + low D# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D#1",
@@ -3070,7 +3031,7 @@
   },
   {
    "id": "gs1-cs2-gs2-cs3-fs3-as3-ds4",
-   "name": "G#1 C#2 G#2 C#3 F#3 A#3 D#4",
+   "name": "Drop C# + low G# (7-string)",
    "instrument": "guitar7",
    "strings": [
     "G#1",
@@ -3084,7 +3045,7 @@
   },
   {
    "id": "e1-a1-e2-a2-d3-fs3-b3",
-   "name": "E1 A1 E2 A2 D3 F#3 B3",
+   "name": "Drop A + low E (7-string)",
    "instrument": "guitar7",
    "strings": [
     "E1",
@@ -3124,7 +3085,7 @@
   },
   {
    "id": "d1-g1-d2-g2-c3-e3-a3",
-   "name": "D1 G1 D2 G2 C3 E3 A3",
+   "name": "Drop G + low D (7-string)",
    "instrument": "guitar7",
    "strings": [
     "D1",
@@ -3152,19 +3113,6 @@
    ]
   },
   {
-   "id": "b2-fs2-b2-e3-gs3-cs4",
-   "name": "B2 F#2 B2 E3 G#3 C#4",
-   "instrument": "guitar6",
-   "strings": [
-    "B2",
-    "F#2",
-    "B2",
-    "E3",
-    "G#3",
-    "C#4"
-   ]
-  },
-  {
    "id": "g1-d2-g2-c3-e3-a3-d4",
    "name": "Drop G (7-string)",
    "instrument": "guitar7",
@@ -3180,7 +3128,7 @@
   },
   {
    "id": "f1-d2-g2-c3-f3-a3-d4",
-   "name": "F1 D2 G2 C3 F3 A3 D4",
+   "name": "D Standard + low F (7-string)",
    "instrument": "guitar7",
    "strings": [
     "F1",
@@ -3260,7 +3208,7 @@
   },
   {
    "id": "b1-d2-a2-d3-g3-b3-e4",
-   "name": "B1 D2 A2 D3 G3 B3 E4",
+   "name": "Drop D + low B (7-string)",
    "instrument": "guitar7",
    "strings": [
     "B1",
@@ -3401,6 +3349,274 @@
     "D3",
     "G3",
     "B3"
+   ]
+  },
+  {
+   "id": "cs2-gs2-cs3-gs3-cs4-cs4",
+   "name": "C#2 G#2 C#3 G#3 C#4 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "C#3",
+    "G#3",
+    "C#4",
+    "C#4"
+   ]
+  },
+  {
+   "id": "a1-e2-a2-g3-b3-e4",
+   "name": "A1 E2 A2 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "as1-gs2-cs3-gs3-cs4-cs4",
+   "name": "A#1 G#2 C#3 G#3 C#4 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "G#2",
+    "C#3",
+    "G#3",
+    "C#4",
+    "C#4"
+   ]
+  },
+  {
+   "id": "gs1-cs2-fs2-cs3-e3-gs3-d4",
+   "name": "G#1 C#2 F#2 C#3 E3 G#3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "C#2",
+    "F#2",
+    "C#3",
+    "E3",
+    "G#3",
+    "D4"
+   ]
+  },
+  {
+   "id": "as1-fs2-as2-ds3-g3-c4",
+   "name": "A#1 F#2 A#2 D#3 G3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "F#2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "c2-gs2-cs3-fs3-as3-ds4",
+   "name": "C2 G#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "b1-e2-a2-c3-g3-b3-e4",
+   "name": "B1 E2 A2 C3 G3 B3 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "C3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "cs1-gs1-cs2-fs2-b2-e3-gs3-cs4",
+   "name": "C#1 G#1 C#2 F#2 B2 E3 G#3 C#4",
+   "instrument": "guitar8",
+   "strings": [
+    "C#1",
+    "G#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "cs2-fs2-b2-e3-a3-d4",
+   "name": "C#2 F#2 B2 E3 A3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "ds1-ds2-gs2-cs3-f3-as3",
+   "name": "D#1 D#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "D#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "e2-a2-d3-gs3-b3-e4",
+   "name": "E2 A2 D3 G#3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "A2",
+    "D3",
+    "G#3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e2-gs2-b2-fs3-b3-ds4",
+   "name": "E2 G#2 B2 F#3 B3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "G#2",
+    "B2",
+    "F#3",
+    "B3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "as1-ds2-gs2-cs3-f3-as3-ds4",
+   "name": "A# Standard (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "g1-as1-ds2-gs2-cs3-f3-as3",
+   "name": "A# Standard + low G (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "G1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "c2-f2-as2-ds3-g3-c4-e4",
+   "name": "C2 F2 A#2 D#3 G3 C4 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4",
+    "E4"
+   ]
+  },
+  {
+   "id": "b1-fs2-b2-fs3-b3-ds4",
+   "name": "B1 F#2 B2 F#3 B3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "F#2",
+    "B2",
+    "F#3",
+    "B3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "fs1-d2-g2-c3-f3-a3-d4",
+   "name": "D Standard + low F# (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-fs3-b3-ds4",
+   "name": "D#2 G#2 C#3 F#3 B3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "B3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-f3-as3-ds4",
+   "name": "D#2 G#2 C#3 F3 A#3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "f2-as2-ds3-gs3-c4-f4",
+   "name": "F Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4",
+    "F4"
    ]
   }
  ],
@@ -5494,11 +5710,7 @@
    "id": "slipknot-surfacing",
    "song": "Surfacing",
    "artist": "Slipknot",
-   "t": "b1-fs2-b2-e4-gs3-cs4",
-   "c": 1,
-   "alts": [
-    "drop-b"
-   ],
+   "t": "drop-b",
    "unusual": true
   },
   {
@@ -10972,11 +11184,7 @@
    "id": "monuments-the-cimmerian",
    "song": "The Cimmerian",
    "artist": "Monuments",
-   "t": "cs2-gs2-cs3-fs3-gs3-cs4",
-   "c": 1,
-   "alts": [
-    "cs2-gs2-cs3-fs3-gs4-cs4"
-   ]
+   "t": "cs2-gs2-cs3-fs3-gs3-cs4"
   },
   {
    "id": "monuments-mirror-image",
@@ -18209,10 +18417,6 @@
    "song": "Sleeping Giant",
    "artist": "Mastodon",
    "t": "drop-c",
-   "c": 1,
-   "alts": [
-    "drop-c"
-   ],
    "note": "Corrected an octave artefact in the imported transcription."
   },
   {
@@ -20998,10 +21202,6 @@
    "song": "Nutshell",
    "artist": "Alice in Chains",
    "t": "std-eb",
-   "c": 1,
-   "alts": [
-    "std-eb"
-   ],
    "note": "Corrected an octave artefact in the imported transcription."
   },
   {
@@ -21803,8 +22003,8 @@
    "t": "a2-fs2-e3-fs3-e3-b3",
    "c": 1,
    "alts": [
-    "fs2-fs2-fs3-fs3-e3-b3",
-    "b2-e3-g3-d4-b3-b3"
+    "b2-e3-g3-d4-b3-b3",
+    "fs2-fs2-fs3-fs3-e3-b3"
    ],
    "unusual": true
   },
@@ -22295,8 +22495,8 @@
    "t": "std-eb",
    "c": 1,
    "alts": [
-    "ds2-gs2-cs3-g3-as3-f4",
-    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+    "as1-ds2-gs2-cs3-fs3-as3-ds4",
+    "ds2-gs2-cs3-g3-as3-f4"
    ]
   },
   {
@@ -28249,7 +28449,7 @@
    "id": "mokoma-haluamanilainen",
    "song": "Haluamanilainen",
    "artist": "Mokoma",
-   "t": "a1-d2-a2-d3-g4-b3",
+   "t": "a1-d2-a2-d3-g3-b3",
    "alts": [
     "a1-d2-a2-d3-g3-b3-e4"
    ],
@@ -35429,11 +35629,7 @@
    "id": "parkway-drive-its-hard-to-speak-without-a-tongue",
    "song": "It's Hard To Speak Without A Tongue",
    "artist": "Parkway Drive",
-   "t": "drop-b",
-   "alts": [
-    "b2-fs2-b2-e3-gs3-cs4"
-   ],
-   "c": 1
+   "t": "drop-b"
   },
   {
    "id": "parkway-drive-deathless-song",
@@ -36454,6 +36650,7212 @@
    "alts": [
     "e1-b1-e2-a2-d3-g3-b3",
     "e1-b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-vinushka",
+   "song": "Vinushka",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-different-sense",
+   "song": "Different Sense",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-aka",
+   "song": "Aka",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-saku",
+   "song": "Saku",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-red-em",
+   "song": "Red...[em]",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-lotus",
+   "song": "Lotus",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-the-final",
+   "song": "The Final",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-ryoujoku-no-ame",
+   "song": "Ryoujoku No Ame",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-kodou",
+   "song": "Kodou",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-gaika-chinmoku-ga-nemuru-koro",
+   "song": "Gaika, chinmoku ga nemuru koro",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-c",
+   "song": "C",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-drain-away",
+   "song": "Drain Away",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-uroko",
+   "song": "Uroko",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-agitated-screams-of-maggots",
+   "song": "Agitated Screams Of Maggots",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-toguro",
+   "song": "Toguro",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-dozing-green",
+   "song": "Dozing Green",
+   "artist": "Dir En Grey",
+   "t": "drop-cs",
+   "alts": [
+    "cs2-gs2-cs3-gs3-cs4-cs4",
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-rinkaku",
+   "song": "Rinkaku",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-ningen-wo-kaburu",
+   "song": "Ningen wo Kaburu (人間を被る)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-dead-tree",
+   "song": "Dead Tree",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-obscure",
+   "song": "Obscure",
+   "artist": "Dir En Grey",
+   "t": "drop-d",
+   "alts": [
+    "a1-d2-a2-d3-g3-b3-e4",
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-macabre-the-unraveling",
+   "song": "Macabre (The Unraveling)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-zan-2009",
+   "song": "Zan 2009",
+   "artist": "Dir En Grey",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "dir-en-grey-sustain-the-untruth",
+   "song": "Sustain The Untruth",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-shokubeni",
+   "song": "Shokubeni",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-mushi",
+   "song": "Mushi",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-oboro",
+   "song": "Oboro",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-clever-sleazoid",
+   "song": "Clever Sleazoid",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-vanitas",
+   "song": "Vanitas",
+   "artist": "Dir En Grey",
+   "t": "drop-d",
+   "alts": [
+    "a1-d2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-hageshisa-to-kono-mune-no-naka-de-karamitsuita-shakunetsu-no-yami",
+   "song": "Hageshisa To, Kono Mune no Naka de Karamitsuita Shakunetsu no Yami",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "dir-en-grey-marmalade-chainsaw",
+   "song": "Marmalade Chainsaw",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-tousei",
+   "song": "Tousei",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "dir-en-grey-glass-skin",
+   "song": "Glass Skin",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-conceived-sorrow",
+   "song": "Conceived Sorrow",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-twentyfour-cylinders",
+   "song": "Twentyfour Cylinders",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-reiketsu-nariseba",
+   "song": "Reiketsu Nariseba",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-grief",
+   "song": "Grief",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-diabolos",
+   "song": "Diabolos",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "dir-en-grey-decayed-crow",
+   "song": "DECAYED CROW",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-child-prey",
+   "song": "Child Prey",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-revelation-of-mankind",
+   "song": "Revelation Of Mankind",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-inconvenient-ideal",
+   "song": "Inconvenient Ideal",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-ware-yami-tote",
+   "song": "Ware Yami Tote",
+   "artist": "Dir En Grey",
+   "t": "std-eb"
+  },
+  {
+   "id": "dir-en-grey-schadenfreude",
+   "song": "Schadenfreude",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-namamekashiki-ansoku-tamerai-ni-hohoemi",
+   "song": "Namamekashiki Ansoku, Tamerai Ni Hohoemi",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-bugaboo",
+   "song": "Bugaboo",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-amber",
+   "song": "Amber",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-bottom-of-the-death-valley",
+   "song": "Bottom Of The Death Valley",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-itoshisa-ha-fuhai-ni-tsuki",
+   "song": "Itoshisa Ha Fuhai Ni Tsuki",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-kasumi",
+   "song": "Kasumi",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-un-deux",
+   "song": "Un Deux",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-byo-shin",
+   "song": "Byo' 'Shin",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-umbrella",
+   "song": "Umbrella",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-red-soil",
+   "song": "Red Soil",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-audience-killer-loop",
+   "song": "Audience Killer Loop",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-merciless-cult",
+   "song": "Merciless Cult",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-repetition-of-hatred",
+   "song": "Repetition Of Hatred",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-phenomenon",
+   "song": "Phenomenon",
+   "artist": "Dir En Grey",
+   "t": "a1-e2-a2-g3-b3-e4",
+   "alts": [
+    "drop-a"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-disabled-complexes",
+   "song": "Disabled Complexes",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-amon",
+   "song": "Amon",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "dir-en-grey-kigan",
+   "song": "Kigan",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-the-iiid-empire",
+   "song": "The Iiid Empire",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-13",
+   "song": "13",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-kodoku-ni-shisu-yueni-kodoku",
+   "song": "Kodoku Ni Shisu, Yueni Kodoku",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-mr-newsman",
+   "song": "Mr.NEWSMAN",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-utafumi",
+   "song": "詩踏み - Utafumi",
+   "artist": "Dir En Grey",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-kukoku-no-kyouon",
+   "song": "Kukoku No Kyouon",
+   "artist": "Dir En Grey",
+   "t": "drop-d",
+   "alts": [
+    "a1-d2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-the-final-wtd",
+   "song": "THE FINAL - WtD",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-unraveling",
+   "song": "Unraveling",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-the-perfume-of-sins",
+   "song": "The Perfume of Sins",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-yokusou-ni-dreambox-aruiwa-seijuku-no-rinen-to-tsumetai-ame",
+   "song": "Yokusou Ni Dreambox Aruiwa Seijuku No Rinen To Tsumetai Ame",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-doukoku-to-sarinu",
+   "song": "Doukoku To Sarinu",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-pledge",
+   "song": "Pledge",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-rasetsukoku-2011",
+   "song": "Rasetsukoku (2011)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-rotting-root",
+   "song": "Rotting Root",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-machiavellism",
+   "song": "Machiavellism",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-juuyoku",
+   "song": "Juuyoku",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-filth",
+   "song": "Filth",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-keibetsu-no-hajimari",
+   "song": "Keibetsu No Hajimari",
+   "artist": "Dir En Grey",
+   "t": "drop-c"
+  },
+  {
+   "id": "dir-en-grey-stuck-man",
+   "song": "Stuck Man",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-jessica",
+   "song": "Jessica",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-eddie",
+   "song": "Eddie",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-embryo",
+   "song": "Embryo",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-the-deeper-vileness",
+   "song": "The Deeper Vileness",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-tsumi-to-kisei",
+   "song": "Tsumi To Kisei",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-kaishun",
+   "song": "懐春 (Kaishun)",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-lie-buried-with-a-vengeance",
+   "song": "Lie Buried With A Vengeance",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-r-to-the-core",
+   "song": "R To The Core",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-fukai",
+   "song": "Fukai",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-the-fatal-believer",
+   "song": "The Fatal Belie",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-the-blossoming-beelzebub",
+   "song": "The Blossoming Beelzebub",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-zan-remake",
+   "song": "ZAN (REMAKE)",
+   "artist": "Dir En Grey",
+   "t": "as1-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "as1-gs2-cs3-gs3-cs4-cs4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-ranunculus",
+   "song": "Ranunculus",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-the-final-2005",
+   "song": "The Final 2005",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-increase-blue",
+   "song": "Increase Blue",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-downfall",
+   "song": "Downfall",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-kaijin-ni-kisu",
+   "song": "灰燼に帰す Kaijin ni Kisu",
+   "artist": "Dir En Grey",
+   "t": "drop-d",
+   "alts": [
+    "a1-d2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-ugly",
+   "song": "Ugly",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-the-devil-in-me",
+   "song": "The Devil in Me",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-karma-the-unraveling-2013",
+   "song": "業 (Karma) THE UNRAVELING (2013)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-ruten-no-tou",
+   "song": "Ruten No Tou",
+   "artist": "Dir En Grey",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "dir-en-grey-hades",
+   "song": "Hades",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-utafumi-432719",
+   "song": "Utafumi",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-followers-v2",
+   "song": "Followers",
+   "artist": "Dir En Grey",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-beautiful-dirt-2018",
+   "song": "BEAUTIFUL DIRT - 2018",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-hydra-666",
+   "song": "Hydra 666",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-the-devil-in-me-mortal-downer-ver",
+   "song": "The Devil In Me - Mortal Downer",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-rinkaku-1386592",
+   "song": "輪郭 (RINKAKU)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-pink-killer",
+   "song": "Pink Killer",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-karma-the-unraveling",
+   "song": "Karma The Unraveling",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-soshaku",
+   "song": "Soshaku",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-children",
+   "song": "Children",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-ochita-koto-no-aru-sora",
+   "song": "Ochita Koto No Aru Sora",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-otogi",
+   "song": "otogi (御伽)",
+   "artist": "Dir En Grey",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-garbage",
+   "song": "Garbage",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-bottom-of-death-valley-the-unraveling",
+   "song": "Bottom Of Death Valley (The Unraveling)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-behind-a-vacant-image",
+   "song": "Behind A Vacant Image",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-",
+   "song": "激しさと、この胸の中で絡み付いた灼熱の闇",
+   "artist": "Dir En Grey",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "dir-en-grey-values-of-madness",
+   "song": "Values Of Madness",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-jesus-christ-rnr",
+   "song": "Jesus Christ R'nr",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-mazohyst-of-decadence-pharalis",
+   "song": "mazohyst of decadence(Pharalis)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-mobs",
+   "song": "MOBS",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-shitataru-mourou",
+   "song": "Shitataru Mourou",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "dir-en-grey-sajou-no-uta",
+   "song": "Sajou No Uta",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-spilled-milk",
+   "song": "Spilled Milk",
+   "artist": "Dir En Grey",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dir-en-grey-zomboid",
+   "song": "Zomboid",
+   "artist": "Dir En Grey",
+   "t": "std-d"
+  },
+  {
+   "id": "dir-en-grey-gyakujou-tannou-keloid-milk",
+   "song": "Gyakujou Tannou Keloid Milk",
+   "artist": "Dir En Grey",
+   "t": "gs1-cs2-fs2-cs3-e3-gs3-d4",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dir-en-grey-asunaki-koufuku-koenaki-asu",
+   "song": "Asunaki Koufuku (koenaki Asu)",
+   "artist": "Dir En Grey",
+   "t": "drop-d"
+  },
+  {
+   "id": "dir-en-grey-karasu-the-unraveling",
+   "song": "Karasu (The Unraveling)",
+   "artist": "Dir En Grey",
+   "t": "a1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "crossfaith-j-gerbomb",
+   "song": "Jägerbomb",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-monolith",
+   "song": "Monolith",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-leviathan",
+   "song": "Leviathan",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-stars-faded-in-slow-motion",
+   "song": "Stars Faded In Slow Motion",
+   "artist": "Crossfaith",
+   "t": "drop-c"
+  },
+  {
+   "id": "crossfaith-mirror",
+   "song": "Mirror",
+   "artist": "Crossfaith",
+   "t": "drop-c"
+  },
+  {
+   "id": "crossfaith-zero",
+   "song": "ZERO",
+   "artist": "Crossfaith",
+   "t": "drop-c"
+  },
+  {
+   "id": "crossfaith-endorphin",
+   "song": "Endorphin",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-godspeed",
+   "song": "godspeed",
+   "artist": "Crossfaith",
+   "t": "drop-d"
+  },
+  {
+   "id": "crossfaith-we-are-the-future",
+   "song": "We Are The Future",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-canopus",
+   "song": "Canopus",
+   "artist": "Crossfaith",
+   "t": "std-d"
+  },
+  {
+   "id": "crossfaith-rx-overdrive",
+   "song": "Rx Overdrive",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-countdown-to-hell",
+   "song": "Countdown To Hell",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-photosphere",
+   "song": "Photosphere",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-catastrophe",
+   "song": "Catastrophe",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-snake-code-v1",
+   "song": "Snake Code",
+   "artist": "Crossfaith",
+   "t": "drop-c"
+  },
+  {
+   "id": "crossfaith-my-own-salvation",
+   "song": "My Own Salvation",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "crossfaith-tears-fall",
+   "song": "Tears Fall",
+   "artist": "Crossfaith",
+   "t": "drop-b"
+  },
+  {
+   "id": "coldrain-mayday-full",
+   "song": "Mayday (full)",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "as1-fs2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-vengeance",
+   "song": "Vengeance",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-final-destination",
+   "song": "Final Destination",
+   "artist": "Coldrain",
+   "t": "std-eb",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-the-revelation-complete",
+   "song": "The Revelation (Complete)",
+   "artist": "Coldrain",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-bloody-power-fame",
+   "song": "Bloody power fame",
+   "artist": "Coldrain",
+   "t": "std-eb"
+  },
+  {
+   "id": "coldrain-die-tomorrow",
+   "song": "Die Tomorrow",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-cut-me",
+   "song": "Cut Me",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-were-not-alone",
+   "song": "Were not alone",
+   "artist": "Coldrain",
+   "t": "drop-cs",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4",
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-feed-the-fire",
+   "song": "Feed The Fire",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-see-you",
+   "song": "See You",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-remember",
+   "song": "Remember",
+   "artist": "Coldrain",
+   "t": "drop-cs"
+  },
+  {
+   "id": "coldrain-rabbit-hole",
+   "song": "Rabbit Hole",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-envy",
+   "song": "ENVY",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-paradise",
+   "song": "PARADISE",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-given-up-on-you-video-vesion",
+   "song": "Given up on you Video Vesion",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-incomplete",
+   "song": "Incomplete",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-given-up-on-you",
+   "song": "given up on you",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-the-side-effects",
+   "song": "THE SIDE EFFECTS",
+   "artist": "Coldrain",
+   "t": "std-eb",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-chasing-shadows",
+   "song": "Chasing Shadows",
+   "artist": "Coldrain",
+   "t": "std-eb",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-before-i-go-by-mize",
+   "song": "Before I Go (by Mize)",
+   "artist": "Coldrain",
+   "t": "std-d"
+  },
+  {
+   "id": "coldrain-ex-humanity",
+   "song": "EX-HUMANITY",
+   "artist": "Coldrain",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-deja-v-v1",
+   "song": "Deja",
+   "artist": "Coldrain",
+   "t": "drop-cs"
+  },
+  {
+   "id": "coldrain-divine",
+   "song": "Divine",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-help-me-help-you",
+   "song": "Help Me Help You",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-free-fall",
+   "song": "FREE FALL",
+   "artist": "Coldrain",
+   "t": "std-eb",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "coldrain-digitoll",
+   "song": "DIGITOLL",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-calling",
+   "song": "CALLING",
+   "artist": "Coldrain",
+   "t": "drop-c"
+  },
+  {
+   "id": "coldrain-fire-in-the-sky",
+   "song": "Fire In The Sky",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-to-be-alive",
+   "song": "To Be Alive",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-bloody-power-fame-full-length",
+   "song": "Bloody Power Fame | Full Length",
+   "artist": "Coldrain",
+   "t": "std-eb"
+  },
+  {
+   "id": "coldrain-adrenaline",
+   "song": "Adrenaline",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "coldrain-aftermath",
+   "song": "AFTERMATH",
+   "artist": "Coldrain",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "one-ok-rock-nobodys-home",
+   "song": "Nobody's Home",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-no-scared",
+   "song": "No Scared",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-",
+   "song": "キミシダイ列車",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-c-h-a-o-s-m-y-t-h",
+   "song": "C.H.A.O.S.M.Y.T.H.",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-c-u-r-i-o-s-i-t-y-feat-paledusk-and-chico-carlito",
+   "song": "C.U.R.I.O.S.I.T.Y. feat. Paledusk and CHICO CARLITO",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-make-it-out-alive",
+   "song": "Make It Out Alive",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-stand-out-fit-in",
+   "song": "Stand Out Fit In",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-cry-out-by-iasaoi",
+   "song": "Cry Out (By Iasaoi)",
+   "artist": "One Ok Rock",
+   "t": "std-c"
+  },
+  {
+   "id": "one-ok-rock-clock-strikes",
+   "song": "Clock Strikes",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-taking-off",
+   "song": "Taking Off",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-mikansei-koukyoukyoku",
+   "song": "未完成交響曲 Mikansei Koukyoukyoku",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-renegades",
+   "song": "Renegades",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-nasty",
+   "song": "NASTY",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-jibun-rock",
+   "song": "Jibun Rock",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-cry-out-by-soranon",
+   "song": "Cry Out By Soranon",
+   "artist": "One Ok Rock",
+   "t": "drop-c"
+  },
+  {
+   "id": "one-ok-rock-partys-over",
+   "song": "Party's O",
+   "artist": "One Ok Rock",
+   "t": "drop-c"
+  },
+  {
+   "id": "one-ok-rock-heartache",
+   "song": "Heartache",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-the-beginning-v2",
+   "song": "The Beginning",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-never-let-this-go",
+   "song": "Never Let This Go",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-last-dance",
+   "song": "Last Dance",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-dystopia",
+   "song": "Dystopia",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-hard-to-love",
+   "song": "Hard To Love",
+   "artist": "One Ok Rock",
+   "t": "c2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "one-ok-rock-lets-take-it-someday",
+   "song": "Let's take it someday",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-answer-is-near",
+   "song": "アンサイズニア Answer Is Near",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-shake-it-down",
+   "song": "Shake It Down",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-delusion-all",
+   "song": "Delusion:All",
+   "artist": "One Ok Rock",
+   "t": "drop-b"
+  },
+  {
+   "id": "one-ok-rock-memories",
+   "song": "Memories",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-onion",
+   "song": "ONION!",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-mikansei-koukyoukyoku-424375",
+   "song": "Mikansei Koukyoukyoku",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-nothing-helps",
+   "song": "Nothing Helps",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-rock-jibun-rock-easy-version",
+   "song": "じぶんrock (Jibun Rock) Easy",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-mighty-long-fall-by-okk221-original-version",
+   "song": "Mighty Long Fall (By Okk221) Original",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-bombs-away",
+   "song": "Bombs Away",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-rock",
+   "song": "じぶんROCK",
+   "artist": "One Ok Rock",
+   "t": "drop-d",
+   "alts": [
+    "drop-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "one-ok-rock-kimishidai-ressha",
+   "song": "Kimishidai Ressha",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-the-pilot-3",
+   "song": "The Pilot ᐸ/3",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-my-sweet-baby",
+   "song": "My Sweet Baby",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-hearthache-by-soranon",
+   "song": "Hearthache By Soranon",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-c-u-r-i-o-s-i-t-y-arad",
+   "song": "C.U.R.I.O.S.I.T.Y - Arad",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-adult-suit",
+   "song": "アダルトスーツ Adult Suit",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-jaded",
+   "song": "Jaded",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-take-me-to-the-top",
+   "song": "Take Me To The Top",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-devil-may-cry",
+   "song": "Devil May Cry",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-ending-story",
+   "song": "Ending Story??",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-living-dolls",
+   "song": "Living Dolls",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-yume-yume",
+   "song": "努努-ゆめゆめ- Yume Yume",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-borderline",
+   "song": "Borderline",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-american-girls",
+   "song": "American Girls",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-vandalize-lead-rhythm-guitar",
+   "song": "Vandalize (Lead & Rhythm Guitar)",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-broken-heart-of-gold",
+   "song": "Broken Heart of Gold",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-lost-and-found",
+   "song": "Lost And Found",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-et-cetera",
+   "song": "Et Cetera",
+   "artist": "One Ok Rock",
+   "t": "std-eb"
+  },
+  {
+   "id": "one-ok-rock-mr-gendai-speaker-mr-speaker",
+   "song": "Mr. Gendai Speaker (Mr.現代speaker)",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-juvenile",
+   "song": "Juvenile",
+   "artist": "One Ok Rock",
+   "t": "drop-cs"
+  },
+  {
+   "id": "one-ok-rock-the-same-as",
+   "song": "the same as…",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-save-yourself-more-accurate",
+   "song": "SAVE YOURSELF (more accurate)",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "one-ok-rock-reflection",
+   "song": "Reflection",
+   "artist": "One Ok Rock",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-whats-up-people",
+   "song": "What's Up, People?!",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-f",
+   "song": "[F]",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-zetsubou-billy",
+   "song": "Zetsubou Billy",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-bu-ikikaesu",
+   "song": "Bu-ikikaesu!!",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-shimi-feat-atarashii-gakko",
+   "song": "SHIMI feat. ATARASHII GAKKO!",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-yoshu-fukushu",
+   "song": "Yoshu Fukushu",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-utsukushiki-hitobito-no-uta",
+   "song": "Utsukushiki Hitobito No Uta",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-louisiana-bob",
+   "song": "Louisiana Bob",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-koi-no-mega-lover",
+   "song": "恋のメガラバ(Koi No Mega-Lo",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-shimi",
+   "song": "Shimi",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-feat",
+   "song": "『シミ feat.新しい学校のリーダーズ』",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-koi-no-sperm",
+   "song": "Koi No Sperm",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "maximum-the-hormone-rocknroll-chainsaw",
+   "song": "Rocknroll Chainsaw",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-",
+   "song": "シミ",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-benjo-sandal-dance",
+   "song": "Benjo Sandal Dance",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-maximum-the-hormone-ii-lets-talk-about-menkata-cottelee",
+   "song": "Maximum The Hormone II -Lets Talk About Menkata Cottelee",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-chu2-the-beam",
+   "song": "Chu2 The Beam",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-hawatari",
+   "song": "Hawatari",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone--4506112",
+   "song": "爪爪爪",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-beauty-colosseum",
+   "song": "Beauty Colosseum",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-all-the-lynch-all-the-mince",
+   "song": "ALL THE LYNCH!! ALL THE MINCE!!",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-yoshuu-fukushuu",
+   "song": "Yoshuu Fukushuu",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-2",
+   "song": "刃渡り2億センチ",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-hungry-pride-full",
+   "song": "Hungry Pride (full)",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-black-yen-power-g-man-spy",
+   "song": "Black Yen Power G-Man Spy",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-ningen-empi",
+   "song": "Ningen Empi",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-seritsuwa-kannazukiwo-korasu-kion",
+   "song": "Seritsuwa Kannazukiwo Korasu Kion",
+   "artist": "Maximum the Hormone",
+   "t": "drop-cs"
+  },
+  {
+   "id": "maximum-the-hormone-unbelievable-swomints-hockeleiro-mifeho",
+   "song": "Unbelievable!: Swomints Hockeleiro Mifeho",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-zetsubou-billy-death-note-ending-2-tv-size",
+   "song": "Zetsubou Billy - Death Note Ending 2 (TV Size)",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-johnny-tetsu-pipe-iii",
+   "song": "Johnny Tetsu Pipe III",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-hawatari-nioku-centi",
+   "song": "HAWATARI NIOKU CENTI",
+   "artist": "Maximum the Hormone",
+   "t": "drop-a",
+   "alts": [
+    "drop-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "maximum-the-hormone--702718",
+   "song": "ぶっ生き返す",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone-policeman-benz",
+   "song": "Policeman Benz",
+   "artist": "Maximum the Hormone",
+   "t": "drop-d"
+  },
+  {
+   "id": "maximum-the-hormone--4133641",
+   "song": "鬱くしき人々のうた",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-kamigami",
+   "song": "KAMIGAMI",
+   "artist": "Maximum the Hormone",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "maximum-the-hormone-intent-to-murder-intent-to-kill",
+   "song": "Intent to murder:intent to kill",
+   "artist": "Maximum the Hormone",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "maximum-the-hormone-advance-revenge",
+   "song": "Advance Revenge",
+   "artist": "Maximum the Hormone",
+   "t": "drop-c"
+  },
+  {
+   "id": "maximum-the-hormone-haiyani-spain",
+   "song": "Haiyani Spain",
+   "artist": "Maximum the Hormone",
+   "t": "drop-b"
+  },
+  {
+   "id": "band-maid-bestie",
+   "song": "Bestie",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-thrill",
+   "song": "Thrill (スリル)",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-dice",
+   "song": "DICE",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-domination",
+   "song": "DOMINATION",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-choose-me",
+   "song": "Choose Me",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-from-now-on",
+   "song": "From Now On",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-the-non-fiction-days",
+   "song": "the non-fiction days",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-clang",
+   "song": "CLANG",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-puzzle",
+   "song": "Puzzle",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-without-holding-back",
+   "song": "Without Holding Back",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-sayonakidori",
+   "song": "Sayonakidori",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-shambles",
+   "song": "Shambles",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-you",
+   "song": "you.",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-after-life",
+   "song": "After Life",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-secret-my-lips",
+   "song": "secret My lips",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-chemical-reaction",
+   "song": "CHEMICAL REACTION",
+   "artist": "Band-Maid",
+   "t": "drop-c"
+  },
+  {
+   "id": "band-maid-real-existence",
+   "song": "Real Existence",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-onset",
+   "song": "onset",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-dont-you-tell-me",
+   "song": "Don't you tell me",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-play",
+   "song": "Play",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-blooming",
+   "song": "Blooming",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-moratorium",
+   "song": "Moratorium",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-corallium",
+   "song": "Corallium",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-letters-to-you-ia",
+   "song": "Letters to you (IA)",
+   "artist": "Band-Maid",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "band-maid-glory",
+   "song": "Glory",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-turn-me-on",
+   "song": "Turn me on",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-honey",
+   "song": "Honey",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-sense",
+   "song": "Sense",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-matchless-gum",
+   "song": "Matchless GUM",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-present-perfect",
+   "song": "Present Perfect",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-time",
+   "song": "TIME",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-magie",
+   "song": "Magie",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-fate",
+   "song": "Fate",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-warning",
+   "song": "Warning!",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-order",
+   "song": "Order",
+   "artist": "Band-Maid",
+   "t": "drop-c"
+  },
+  {
+   "id": "band-maid-i-still-seek-revenge",
+   "song": "I Still Seek Revenge.",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-why-why-why",
+   "song": "Why Why Why",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-lock-and-load",
+   "song": "Lock and Load",
+   "artist": "Band-Maid",
+   "t": "drop-cs"
+  },
+  {
+   "id": "band-maid-yuragu",
+   "song": "Yuragu",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-endless-story",
+   "song": "endless story",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-persent-perfect",
+   "song": "Persent Perfect",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-energetic",
+   "song": "ENERGETIC",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-hibana",
+   "song": "Hibana",
+   "artist": "Band-Maid",
+   "t": "drop-d"
+  },
+  {
+   "id": "band-maid-awkward",
+   "song": "Awkward",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "band-maid-rinne-ai",
+   "song": "Rinne (Ai)",
+   "artist": "Band-Maid",
+   "t": "std-eb"
+  },
+  {
+   "id": "babymetal-road-of-resistance",
+   "song": "Road Of Resistance",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-akatsuki",
+   "song": "Akatsuki",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "babymetal-gimme-choco",
+   "song": "Gimme Choco",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-arkadia",
+   "song": "Arkadia",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-ijime-dame-zettai",
+   "song": "Ijime Dame Zettai",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-from-me-to-u-feat-poppy",
+   "song": "from me to u (feat. Poppy)",
+   "artist": "Babymetal",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4",
+    "g1-d2-g2-c3-e3-a3",
+    "g1-d2-g2-c3-f3-a3-d4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "babymetal-karate",
+   "song": "Karate",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-megitsune",
+   "song": "Megitsune",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-c3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-monochrome",
+   "song": "Monochrome",
+   "artist": "Babymetal",
+   "t": "g1-d2-g2-c3-f3-a3-d4",
+   "alts": [
+    "std-8-fs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "babymetal-syncopation",
+   "song": "Syncopation",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-headbanger",
+   "song": "Headbanger",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-babymetal-death",
+   "song": "Babymetal Death",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-the-one",
+   "song": "The One",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-doki-doki-morning",
+   "song": "Doki Doki Morning",
+   "artist": "Babymetal",
+   "t": "drop-a"
+  },
+  {
+   "id": "babymetal-sunset-kiss",
+   "song": "Sunset Kiss",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-amore",
+   "song": "Amore",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-white-flame",
+   "song": "White Flame ー白炎ー",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "babymetal-kagerou",
+   "song": "Kagerou",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-distortion",
+   "song": "Distortion",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-gj",
+   "song": "Gj!",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-sis-anger",
+   "song": "Sis. Anger",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-pa-pa-ya",
+   "song": "Pa Pa Ya",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-song-3",
+   "song": "Song 3",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-shanti-shanti-shanti",
+   "song": "Shanti Shanti Shanti",
+   "artist": "Babymetal",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "babymetal-starlight",
+   "song": "Starlight",
+   "artist": "Babymetal",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-catch-me-if-you-can",
+   "song": "Catch Me If You Can",
+   "artist": "Babymetal",
+   "t": "drop-b"
+  },
+  {
+   "id": "babymetal-white-flame-2195821",
+   "song": "White Flame -白炎",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-mirror-mirror",
+   "song": "Mirror Mirror",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-divine-attack-shingeki",
+   "song": "Divine Attack - Shingeki",
+   "artist": "Babymetal",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "babymetal-shine",
+   "song": "Shine",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-song-4",
+   "song": "Song 4",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-kxaxwxaxixi",
+   "song": "KxAxWxAxIxI",
+   "artist": "Babymetal",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "babymetal-kimi-to-anime-ga-mitai",
+   "song": "Kimi To Anime Ga Mitai",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-ratatata",
+   "song": "RATATATA",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-gimme-choko-6str",
+   "song": "Gimme Choko 6str",
+   "artist": "Babymetal",
+   "t": "std-c"
+  },
+  {
+   "id": "babymetal-algorism",
+   "song": "Algorism",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-kon-kon-feat-bloodywood",
+   "song": "Kon! Kon! feat. Bloodywood",
+   "artist": "Babymetal",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "babymetal-da-da-dance-feat-tak-matsumoto",
+   "song": "DA DA DANCE (feat. Tak Matsumoto)",
+   "artist": "Babymetal",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-night-night-burn",
+   "song": "Night Night Burn!",
+   "artist": "Babymetal",
+   "t": "drop-a"
+  },
+  {
+   "id": "babymetal-tales-of-the-destinies",
+   "song": "Tales Of The Destinies",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-yava",
+   "song": "Yava!",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-metalizm-solo",
+   "song": "Metalizm",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-onedari-daisakusen",
+   "song": "Onedari Daisakusen",
+   "artist": "Babymetal",
+   "t": "std-c"
+  },
+  {
+   "id": "babymetal-metali",
+   "song": "Metali!!",
+   "artist": "Babymetal",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-bbab",
+   "song": "↑↓←→BBAB",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-meta-taro",
+   "song": "Meta Taro",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-my-queen",
+   "song": "My Queen",
+   "artist": "Babymetal",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "babymetal-akumu-no-rondo",
+   "song": "Akumu No Rondo",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-brand-new-day",
+   "song": "Brand New Day",
+   "artist": "Babymetal",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "babymetal-in-the-name-of",
+   "song": "IN THE NAME OF",
+   "artist": "Babymetal",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-awadama-fever",
+   "song": "Awadama Fe",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-elevator-girl",
+   "song": "Elevator Girl",
+   "artist": "Babymetal",
+   "t": "cs1-gs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "babymetal-answer-for-animation-with-you-kimi-to-anime-ga-mitai",
+   "song": "Answer for animation with you (kimi to anime ga mitai)",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-bxmxc",
+   "song": "BxMxC",
+   "artist": "Babymetal",
+   "t": "cs2-fs2-b2-e3-a3-d4"
+  },
+  {
+   "id": "babymetal-future-metal",
+   "song": "FUTURE METAL",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-white-flame-1995601",
+   "song": "White Flame",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-believing",
+   "song": "Believing",
+   "artist": "Babymetal",
+   "t": "drop-b"
+  },
+  {
+   "id": "babymetal-oh-majinai-feat-joakim-brod-n",
+   "song": "Oh! MAJINAI (feat. Joakim Brodén)",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-uki-uki-midnight",
+   "song": "Uki Uki Midnight",
+   "artist": "Babymetal",
+   "t": "drop-c"
+  },
+  {
+   "id": "babymetal-from-dusk-till-dawn",
+   "song": "From Dusk Till Dawn",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-head",
+   "song": "head",
+   "artist": "Babymetal",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "babymetal-akumu-no-rinbukyoku",
+   "song": "Akumu No Rinbukyoku",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "babymetal-tamashii-no-rufuran",
+   "song": "Tamashii No Rufuran",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-kon-kon",
+   "song": "Kon! Kon!",
+   "artist": "Babymetal",
+   "t": "gs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "babymetal-choko-love",
+   "song": "choko love",
+   "artist": "Babymetal",
+   "t": "drop-cs"
+  },
+  {
+   "id": "babymetal-metali-kami-band-solo",
+   "song": "METALI!! Kami Band",
+   "artist": "Babymetal",
+   "t": "std-eb"
+  },
+  {
+   "id": "babymetal-mischiefs-of-metal-gods-luca-delle-fave",
+   "song": "Mischiefs of Metal Gods (Luca Delle Fave)",
+   "artist": "Babymetal",
+   "t": "drop-b"
+  },
+  {
+   "id": "babymetal-sunset-kiss-ai",
+   "song": "Sunset Kiss AI",
+   "artist": "Babymetal",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "sigh-corpsecry-angelfall",
+   "song": "Corpsecry - Angelfall",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-kuroi-kage",
+   "song": "Kuroi Kage",
+   "artist": "Sigh",
+   "t": "drop-d"
+  },
+  {
+   "id": "sigh-purgatorium",
+   "song": "Purgatorium",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-scarlet-dream",
+   "song": "Scarlet Dream",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-requiem-nostalgia",
+   "song": "Requiem - Nostalgia",
+   "artist": "Sigh",
+   "t": "drop-d"
+  },
+  {
+   "id": "sigh-at-my-funeral",
+   "song": "At My Funeral",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-a-sunset-song",
+   "song": "A Sunset Song",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-the-zombie-terror",
+   "song": "The Zombie Terror",
+   "artist": "Sigh",
+   "t": "drop-d"
+  },
+  {
+   "id": "sigh-carnage",
+   "song": "Carnage",
+   "artist": "Sigh",
+   "t": "drop-d"
+  },
+  {
+   "id": "sigh-izuna",
+   "song": "Izuna",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-a-victory-of-dakani",
+   "song": "A Victory Of Dakani",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-slaughtergarden-suite",
+   "song": "Slaughtergarden Suite",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-silver-universe",
+   "song": "Silver Universe",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "sigh-shoujahitsumetsu",
+   "song": "Shoujahitsumetsu",
+   "artist": "Sigh",
+   "t": "std-d"
+  },
+  {
+   "id": "loudness-you-shook-me",
+   "song": "You Shook Me",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-enter-the-dragon",
+   "song": "Enter The Dragon",
+   "artist": "Loudness",
+   "t": "std-d"
+  },
+  {
+   "id": "loudness-black-widow",
+   "song": "Black Widow",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-waking-the-dead",
+   "song": "Waking The Dead",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-racing-the-wind",
+   "song": "Racing The Wind",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-love-kills",
+   "song": "Love Kills",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-pray-for-the-dead",
+   "song": "Pray For The Dead",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-slap-in-the-face",
+   "song": "Slap In The Face",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-stay-wild",
+   "song": "Stay Wild",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-hellrider",
+   "song": "Hellrider",
+   "artist": "Loudness",
+   "t": "drop-d"
+  },
+  {
+   "id": "loudness-the-end-of-earth",
+   "song": "The End Of Earth",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-everyone-lies",
+   "song": "Everyone Lies",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-firestorm",
+   "song": "Firestorm",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-hell-bites-from-the-edge-of-sanity",
+   "song": "Hell Bites From The Edge Of Sanity",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "loudness-the-winds-of-victory",
+   "song": "The Winds Of Victory",
+   "artist": "Loudness",
+   "t": "std-eb"
+  },
+  {
+   "id": "mucc-gerbera",
+   "song": "Gerbera",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-ryuusei",
+   "song": "Ryuusei",
+   "artist": "Mucc",
+   "t": "std-d"
+  },
+  {
+   "id": "mucc-waga-arubeki-basho",
+   "song": "Waga, Arubeki Basho",
+   "artist": "Mucc",
+   "t": "drop-d"
+  },
+  {
+   "id": "mucc-ranchuu",
+   "song": "Ranchuu",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-roji-ura-boku-to-kimi-e",
+   "song": "Roji Ura Boku To Kimi E",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-houkou",
+   "song": "Houkou",
+   "artist": "Mucc",
+   "t": "drop-d"
+  },
+  {
+   "id": "mucc-danzetsu",
+   "song": "Danzetsu",
+   "artist": "Mucc",
+   "t": "std-c"
+  },
+  {
+   "id": "mucc-bouzenjishitsu",
+   "song": "Bouzenjishitsu",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-ageha",
+   "song": "Ageha",
+   "artist": "Mucc",
+   "t": "drop-b"
+  },
+  {
+   "id": "mucc-libra",
+   "song": "Libra",
+   "artist": "Mucc",
+   "t": "drop-b"
+  },
+  {
+   "id": "mucc-kokoro-no-nai-machi",
+   "song": "Kokoro No Nai Machi",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-zetsubou-by-salad",
+   "song": "Zetsubou_by_SaLaD",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-kuukyona-heya",
+   "song": "Kuukyona Heya",
+   "artist": "Mucc",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "mucc-classic",
+   "song": "CLASSIC",
+   "artist": "Mucc",
+   "t": "drop-d"
+  },
+  {
+   "id": "the-gazette-pledge",
+   "song": "Pledge",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-cassis",
+   "song": "Cassis",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-vortex",
+   "song": "Vortex",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-dogma",
+   "song": "Dogma",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-ugly",
+   "song": "Ugly",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-shiver",
+   "song": "Shi",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-sonokoe-wa-moroku",
+   "song": "SONOKOE WA MOROKU",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-guren",
+   "song": "Guren",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-baretta",
+   "song": "Baretta",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-miseinen",
+   "song": "Miseinen",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-nausea-shudder",
+   "song": "Nausea & Shudder",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-chizuru",
+   "song": "Chizuru",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-gentle-lie",
+   "song": "Gentle Lie",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-regret",
+   "song": "Regret",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-calm-envy",
+   "song": "Calm Envy",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-dawn",
+   "song": "DAWN",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-filth-in-the-beauty",
+   "song": "Filth In The Beauty",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "drop-c",
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-deux",
+   "song": "Deux",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-fadeless",
+   "song": "Fadeless",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-inside-beast",
+   "song": "Inside Beast",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-unfinished",
+   "song": "Unfinished",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-distress-and-coma",
+   "song": "Distress And Coma",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-red",
+   "song": "Red",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-anata-no-tame-no-kono-inochi",
+   "song": "Anata No Tame No Kono Inochi",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-kare-uta",
+   "song": "Kare Uta",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-without-a-trace",
+   "song": "Without A Trace",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-blinding-hope",
+   "song": "BLINDING HOPE",
+   "artist": "The Gazette",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-invisible-wall",
+   "song": "Invisible Wall",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-shiroki-yuutsu",
+   "song": "Shiroki Yuutsu",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-ito-chi",
+   "song": "Ito-Chi",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-undying",
+   "song": "Undying",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-abhor-god",
+   "song": "ABHOR GOD",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-last-heaven",
+   "song": "Last Heaven",
+   "artist": "The Gazette",
+   "t": "std-d",
+   "alts": [
+    "drop-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-hyena",
+   "song": "Hyena",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-lucy",
+   "song": "Lucy",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-blemish",
+   "song": "BLEMISH",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-remember-the-urge",
+   "song": "Remember The Urge",
+   "artist": "The Gazette",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "std-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-falling",
+   "song": "Falling",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-kugutsue",
+   "song": "Kugutsue",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-dln",
+   "song": "Dln",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-cockroach",
+   "song": "Cockroach",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-ninth-odd-smell",
+   "song": "NINTH ODD SMELL",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-taion",
+   "song": "Taion",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-silly-god-disco",
+   "song": "Silly God Disco",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-before-i-decay",
+   "song": "Before I Decay",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-rollin",
+   "song": "ROLLIN'",
+   "artist": "The Gazette",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-leech",
+   "song": "Leech",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-frenzy",
+   "song": "FRENZY",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-nox",
+   "song": "NOX",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-vacant",
+   "song": "Vacant",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-ibitsu",
+   "song": "Ibitsu",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-goddess",
+   "song": "GODDESS",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-in-the-middle-of-chaos",
+   "song": "In the middle of chaos!",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-kagefumi",
+   "song": "Kagefumi",
+   "artist": "The Gazette",
+   "t": "std-d",
+   "alts": [
+    "drop-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-vermin",
+   "song": "Vermin",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-two-of-a-kind",
+   "song": "Two Of A Kind",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-paralysis",
+   "song": "PARALYSIS",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-venomous-spider-web",
+   "song": "Venomous Spider Web",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-dogma-from-dogma",
+   "song": "DOGMA - from DOGMA",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-the-suicide-circus",
+   "song": "The Suicide Circus",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-dripping-insanity",
+   "song": "Dripping Insanity",
+   "artist": "The Gazette",
+   "t": "b1-e2-a2-d3-fs3-b3",
+   "alts": [
+    "drop-a"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-incubus",
+   "song": "Incubus",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-bathroom",
+   "song": "Bathroom",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-shiikureta-haru-kawarenu-haru",
+   "song": "Shiikureta Haru Kawarenu Haru",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-rage",
+   "song": "Rage",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-nakigahara",
+   "song": "Nakigahara",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-derangement",
+   "song": "Derangement",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-13-stairs",
+   "song": "13 Stairs",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-dim-scene",
+   "song": "Dim Scene",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-clever-monkey",
+   "song": "Clever Monkey",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-redo",
+   "song": "Redo",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-burial-applicant",
+   "song": "Burial Applicant",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-ray",
+   "song": "Ray",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-barbarian",
+   "song": "BARBARIAN",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-chijou",
+   "song": "Chijou",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-to-dazzling-darkness",
+   "song": "To Dazzling Darkness",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-headache-man",
+   "song": "Headache Man",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-utsu-semi",
+   "song": "UTSU SEMI",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-agony",
+   "song": "Agony",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-kago-no-sanagi",
+   "song": "Kago No Sanagi",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-tommorrow-never-dies",
+   "song": "Tommorrow Never Dies",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-coda",
+   "song": "Coda",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-swallowtail-on-the-death-valley",
+   "song": "Swallowtail On The Death Valley",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-cassis-traces-vol-2",
+   "song": "Cassis Traces Vol.2",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-deracine",
+   "song": "DERACINE",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-last-bouquet",
+   "song": "Last Bouquet",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-hold",
+   "song": "Hold",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-lindacandydive-pinky-heaven",
+   "song": "Lindacandydive Pinky Heaven",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-ominous-by-sese",
+   "song": "Ominous By Sese",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-hanakotoba",
+   "song": "Hanakotoba",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-the-social-riot-machine",
+   "song": "The Social Riot Machine",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-nausea-and-shudder",
+   "song": "Nausea And Shudder",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-untitled-with-bass",
+   "song": "Untitled (with Bass)",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-naraku",
+   "song": "Naraku",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-toguro",
+   "song": "Toguro",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-the-stupid-tiny-insect",
+   "song": "The Stupid Tiny Insect",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-gush",
+   "song": "GUSH",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-kuroku-sunda-sora-to-zangai-to-katahane",
+   "song": "Kuroku Sunda Sora To Zangai To Katahane",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-karasu",
+   "song": "Karasu",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-daku",
+   "song": "DAKU",
+   "artist": "The Gazette",
+   "t": "a1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-best-friends",
+   "song": "Best Friends",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-no-66",
+   "song": "No 66",
+   "artist": "The Gazette",
+   "t": "drop-d"
+  },
+  {
+   "id": "the-gazette-saraba",
+   "song": "Saraba",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-devouring-one-another",
+   "song": "Devouring One Another",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-yoin",
+   "song": "Yoin",
+   "artist": "The Gazette",
+   "t": "std-d",
+   "alts": [
+    "drop-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-ogre",
+   "song": "Ogre",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-last-song-v2",
+   "song": "Last Song",
+   "artist": "The Gazette",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4",
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-shadow-vii-ii-i",
+   "song": "Shadow VII II I",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-zetsu",
+   "song": "Zetsu",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-ganges-ni-akai-bara",
+   "song": "Ganges Ni Akai Bara",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-carry",
+   "song": "Carry?",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-mob-136-bars",
+   "song": "Mob 136 Bars",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-break-me",
+   "song": "Break Me",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-crucify-sorrow",
+   "song": "Crucify Sorrow",
+   "artist": "The Gazette",
+   "t": "drop-c",
+   "alts": [
+    "drop-b",
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-until-it-burns-out",
+   "song": "Until It Burns Out",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-sludgy-cult",
+   "song": "Sludgy Cult",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-hole",
+   "song": "Hole",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-kathrine-in-the-trunk",
+   "song": "Kathrine in the trunk",
+   "artist": "The Gazette",
+   "t": "std-eb"
+  },
+  {
+   "id": "the-gazette-wife",
+   "song": "Wife",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-the-mortal",
+   "song": "THE MORTAL",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-circle-of-swindler",
+   "song": "Circle Of Swindler",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-defective-tragedy",
+   "song": "Defective Tragedy",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-distorted-daytime",
+   "song": "Distorted Daytime",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-psychopath",
+   "song": "Psychopath",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-mayakashi",
+   "song": "Mayakashi",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-the-pale",
+   "song": "The Pale",
+   "artist": "The Gazette",
+   "t": "a1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-grudge",
+   "song": "Grudge",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-attitude",
+   "song": "Attitude",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-depravity",
+   "song": "DEPRAVITY",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-required-malfunction",
+   "song": "Required Malfunction",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "the-gazette-in-blossom",
+   "song": "In Blossom",
+   "artist": "The Gazette",
+   "t": "drop-c"
+  },
+  {
+   "id": "the-gazette-ganjisu-ni-akai-bara",
+   "song": "ガンジスに紅い薔薇 (GANJISU ni akai bara)",
+   "artist": "The Gazette",
+   "t": "std-d"
+  },
+  {
+   "id": "the-gazette-discharge",
+   "song": "Discharge",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-loss",
+   "song": "Loss",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-gabriel-on-the-gallows",
+   "song": "Gabriel On The Gallows",
+   "artist": "The Gazette",
+   "t": "drop-b",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "the-gazette-the-invisible-wall",
+   "song": "The Invisible Wall",
+   "artist": "The Gazette",
+   "t": "drop-b"
+  },
+  {
+   "id": "the-gazette-hedoro",
+   "song": "Hedoro",
+   "artist": "The Gazette",
+   "t": "drop-a"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-thunderclap",
+   "song": "Thunderclap",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-scream-hard-as-you-can",
+   "song": "Scream Hard As You Can",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-let-me-hear",
+   "song": "Let Me Hear",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-just-awake",
+   "song": "Just Awake",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-chase-the-light",
+   "song": "Chase the Light!",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-rave-up-tonight",
+   "song": "Rave-Up Tonight",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-swing-it",
+   "song": "Swing It",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-virtue-and-vice",
+   "song": "Virtue And Vice",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-evolve-forward-in-hazard",
+   "song": "Evolve Forward in Hazard",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-jump-around",
+   "song": "Jump Around",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-the-answer-for-unequal-world",
+   "song": "The Answer for Unequal World",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-stray-in-chaos",
+   "song": "Stray In Chaos",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-twilight",
+   "song": "Twilight",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-party-boys",
+   "song": "Party Boys",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-take-me-out",
+   "song": "Take Me Out!!",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-love-at-first-sight",
+   "song": "Love At First Sight",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-crossover",
+   "song": "Crosso",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-nail-the-shit-down",
+   "song": "Nail The Shit Down",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-are-you-ready-to-blast-off",
+   "song": "Are You Ready to Blast Off?",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-cast-your-shell",
+   "song": "Cast Your Shell",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-solitude-xmas",
+   "song": "Solitude X'mas",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-gratitude",
+   "song": "Gratitude",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-shake-your-body",
+   "song": "Shake Your Body",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-short-but-seems-long-time-of-our-life",
+   "song": "Short but Seems Long, Time of Our Life",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-how-old-you-are-never-forget-your-dream",
+   "song": "How Old You Are Never Forget Your Dream",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-d"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-acceleration",
+   "song": "Acceleration",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-hey-girl-why-not-party-like-a-bitch",
+   "song": "Hey Girl!! Why Not Party Like a Bitch!?",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-vice-and-virtue",
+   "song": "Vice And Virtue",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-my-dear-lady-will-you-dance-with-me-tonight",
+   "song": "My Dear Lady, Will You Dance With Me Tonight?",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-one-shot-one-mind",
+   "song": "One shot, One mind",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-shine",
+   "song": "Shine",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-until-you-die-out",
+   "song": "Until You Die Out",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-the-gong-of-knockout",
+   "song": "The Gong of knockout",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-d"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-before-i-fail",
+   "song": "Before I Fail",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-flutter-of-cherry-blossom",
+   "song": "Flutter Of Cherry Blossom",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-burn-the-disco-floor-with-your-2-step",
+   "song": "Burn the Disco Floor with Your “2-step”!!",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-beyond-the-end",
+   "song": "Beyond The End",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-get-back-the-hope",
+   "song": "Get Back the Hope",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-struggle-to-survive",
+   "song": "Struggle to Survive",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-repaint",
+   "song": "Repaint",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-overwrite",
+   "song": "Overwrite",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-never-say-never",
+   "song": "Never Say Ne",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-fight-against-the-limit",
+   "song": "Fight Against The Limit",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-return-to-zero",
+   "song": "Return to Zero",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-phase-2-interlude",
+   "song": "Phase 2 - Interlude",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "std-eb"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-escape-from-the-loop",
+   "song": "Escape from the Loop",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "fear-and-loathing-in-las-vegas-counterattack-by-the-sesame-sized-bodies",
+   "song": "Counterattack By The Sesame Sized Bodies",
+   "artist": "Fear and Loathing in Las Vegas",
+   "t": "drop-c"
+  },
+  {
+   "id": "boris-akuma-no-uta",
+   "song": "Akuma No Uta",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-flood-ii",
+   "song": "Flood II",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-naki-kyoku",
+   "song": "Naki Kyoku",
+   "artist": "Boris",
+   "t": "std-eb"
+  },
+  {
+   "id": "boris-korosu",
+   "song": "Korosu",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-flood-iii",
+   "song": "Flood III",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-woman-on-the-screen",
+   "song": "Woman On The Screen",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-feedbacker-pt-2",
+   "song": "Feedbacker Pt. 2",
+   "artist": "Boris",
+   "t": "std-eb"
+  },
+  {
+   "id": "boris-ibitsu",
+   "song": "Ibitsu",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-electric",
+   "song": "Electric",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-heavy-friends",
+   "song": "Heavy Friends",
+   "artist": "Boris",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-1970",
+   "song": "1970",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-wareruraido",
+   "song": "Wareruraido",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-flood-i",
+   "song": "Flood I",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-pink",
+   "song": "Pink",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-just-abandoned-myself",
+   "song": "Just Abandoned Myself",
+   "artist": "Boris",
+   "t": "b1-e2-a2-d3-fs3-b3",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "boris-kuruimizu",
+   "song": "Kuruimizu",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-blackout",
+   "song": "Blackout",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-rattlesnake",
+   "song": "Rattlesnake",
+   "artist": "Boris",
+   "t": "std-eb"
+  },
+  {
+   "id": "boris-statement",
+   "song": "Statement",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-dronevil",
+   "song": "Dronevil",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-rainbow-ai",
+   "song": "Rainbow (ai)",
+   "artist": "Boris",
+   "t": "std-eb"
+  },
+  {
+   "id": "boris-flood",
+   "song": "Flood",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-hama",
+   "song": "Hama",
+   "artist": "Boris",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "boris-dyna-soar",
+   "song": "Dyna-Soar",
+   "artist": "Boris",
+   "t": "std-d"
+  },
+  {
+   "id": "boris-feedbacker-pt-1",
+   "song": "Feedbacker Pt.1",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-absolutego",
+   "song": "Absolutego",
+   "artist": "Boris",
+   "t": "std-c"
+  },
+  {
+   "id": "boris-feedbacker-pt-3",
+   "song": "Feedbacker, Pt. 3",
+   "artist": "Boris",
+   "t": "std-eb"
+  },
+  {
+   "id": "boris-riot-sugar",
+   "song": "Riot Sugar",
+   "artist": "Boris",
+   "t": "as1-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "boris-vomitself",
+   "song": "Vomitself",
+   "artist": "Boris",
+   "t": "ds1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-farewell",
+   "song": "Farewell",
+   "artist": "Boris",
+   "t": "std-cs"
+  },
+  {
+   "id": "boris-quicksilver",
+   "song": "Quicksil",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-ganbouki",
+   "song": "Ganbouki",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "boris-heavy-rain",
+   "song": "Heavy Rain",
+   "artist": "Boris",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "church-of-misery-make-them-die-slowly",
+   "song": "Make Them Die Slowly",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-el-padrino",
+   "song": "El Padrino",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-master-of-brutality",
+   "song": "Master of Brutality",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-killfornia",
+   "song": "Killfornia",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-badlands",
+   "song": "Badlands",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-brother-bishop",
+   "song": "Brother Bishop",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-blood-sucking-freak",
+   "song": "Blood sucking Freak",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-candy-man",
+   "song": "Candy Man",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-come-and-get-me-sucker",
+   "song": "Come and get me sucker",
+   "artist": "Church of Misery",
+   "t": "drop-c"
+  },
+  {
+   "id": "church-of-misery-green-river",
+   "song": "Green Ri",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-killifornia-ed-kemper",
+   "song": "Killifornia (Ed Kemper)",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-butcher-baker",
+   "song": "Butcher Baker",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-murderfreak-blues",
+   "song": "Murderfreak Blues",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-road-to-ruin-ai",
+   "song": "Road To Ruin (AI)",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-doctor-death-ai",
+   "song": "Doctor Death (AI)",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "church-of-misery-megalomania",
+   "song": "Megalomania",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-ripping-into-pieces",
+   "song": "Ripping into Pieces",
+   "artist": "Church of Misery",
+   "t": "std-cs"
+  },
+  {
+   "id": "church-of-misery-river-demon-ai",
+   "song": "River Demon (AI)",
+   "artist": "Church of Misery",
+   "t": "std-c"
+  },
+  {
+   "id": "envy-footsteps-in-the-distance",
+   "song": "Footsteps in the Distance",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-night-in-winter",
+   "song": "night in winter",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-distress-of-ignorance",
+   "song": "Distress of Ignorance",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-ignorant-rain-at-the-end-of-the-world",
+   "song": "Ignorant Rain at the End of the World",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-envy-a-hint-and-the-incapacity",
+   "song": "A Hint And The Incapacity",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-farewell-to-words-ai",
+   "song": "Farewell To Words (ai)",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "envy-seimei",
+   "song": "Seimei",
+   "artist": "Envy",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "envy-imagination-and-creation",
+   "song": "Imagination and Creation",
+   "artist": "Envy",
+   "t": "drop-d"
+  },
+  {
+   "id": "mono-halo",
+   "song": "Halo",
+   "artist": "Mono",
+   "t": "std-d"
+  },
+  {
+   "id": "mono-pure-as-a-snow",
+   "song": "Pure As A Snow",
+   "artist": "Mono",
+   "t": "e2-a2-d3-gs3-b3-e4"
+  },
+  {
+   "id": "mono-cyclone",
+   "song": "cyclone",
+   "artist": "Mono",
+   "t": "e2-a2-d3-g3-a3-e4"
+  },
+  {
+   "id": "mono-halcyon-beautiful-days",
+   "song": "Halcyon Beautiful Days",
+   "artist": "Mono",
+   "t": "e2-a2-d3-gs3-b3-e4"
+  },
+  {
+   "id": "toe-two-moons",
+   "song": "Two Moons",
+   "artist": "Toe",
+   "t": "e2-gs2-b2-fs3-b3-ds4"
+  },
+  {
+   "id": "ling-tosite-sigure-missing-ling",
+   "song": "Missing Ling",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "crystal-lake-apollo",
+   "song": "Apollo",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-into-the-great-beyond",
+   "song": "Into the Great Beyond",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-watch-me-burn",
+   "song": "Watch Me Burn",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-omega",
+   "song": "Omega",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-twisted-fate-rerecorded",
+   "song": "Twisted Fate (Rerecorded)",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-hail-to-the-fire",
+   "song": "Hail to the Fire",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-prometheus",
+   "song": "Prometheus",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-beloved",
+   "song": "Beloved",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-matrix",
+   "song": "Matrix",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-rollin",
+   "song": "Rollin'",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-daylight",
+   "song": "Daylight",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-curse",
+   "song": "Curse",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "crystal-lake-open-water",
+   "song": "Open Water",
+   "artist": "Crystal Lake",
+   "t": "as1-ds2-gs2-cs3-f3-as3-ds4",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "crystal-lake-aeon",
+   "song": "AEON",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-disobey",
+   "song": "Disobey",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-lost-in-forever",
+   "song": "Lost In Fore",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-the-weight-of-sound",
+   "song": "The Weight Of Sound",
+   "artist": "Crystal Lake",
+   "t": "drop-c"
+  },
+  {
+   "id": "crystal-lake-devilcry",
+   "song": "Devilcry",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-81",
+   "song": "81",
+   "artist": "Crystal Lake",
+   "t": "g1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "crystal-lake-fabricated-refuge",
+   "song": "Fabricated Refuge",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-agony",
+   "song": "Agony",
+   "artist": "Crystal Lake",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-hatred",
+   "song": "HATRED",
+   "artist": "Crystal Lake",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "crystal-lake-the-burden",
+   "song": "The Burden",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-the-fire-inside",
+   "song": "The Fire Inside",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-mercury",
+   "song": "Mercury",
+   "artist": "Crystal Lake",
+   "t": "drop-cs"
+  },
+  {
+   "id": "crystal-lake-mephisto",
+   "song": "Mephisto",
+   "artist": "Crystal Lake",
+   "t": "c2-f2-as2-ds3-g3-c4-e4"
+  },
+  {
+   "id": "crystal-lake-waves",
+   "song": "Waves",
+   "artist": "Crystal Lake",
+   "t": "drop-c"
+  },
+  {
+   "id": "crystal-lake-mahakala",
+   "song": "Mahakala",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-rebirth",
+   "song": "Rebirth",
+   "artist": "Crystal Lake",
+   "t": "drop-c"
+  },
+  {
+   "id": "crystal-lake-daylight-5910620",
+   "song": "Daylight(くされ）",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-twisted-fate",
+   "song": "Twisted Fate　　　　ね",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-crystal-lake-ups-downs",
+   "song": "Ups&Downs",
+   "artist": "Crystal Lake",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "crystal-lake-outgrow",
+   "song": "\"Outgrow\"",
+   "artist": "Crystal Lake",
+   "t": "drop-c"
+  },
+  {
+   "id": "paledusk-hugs-tv-size",
+   "song": "HUGs (Tv Size)",
+   "artist": "Paledusk",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-black-ice",
+   "song": "BLACK ICE",
+   "artist": "Paledusk",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-slay",
+   "song": "SLAY!!",
+   "artist": "Paledusk",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-rumble",
+   "song": "RUMBLE",
+   "artist": "Paledusk",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-area-pd",
+   "song": "AREA PD",
+   "artist": "Paledusk",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-no-way-feat-soshina",
+   "song": "NO WAY!! feat. Soshina",
+   "artist": "Paledusk",
+   "t": "g1-d2-g2-c3-f3-a3-d4",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "paledusk-hugs-6-st",
+   "song": "HUGs 6 st.",
+   "artist": "Paledusk",
+   "t": "f1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-no",
+   "song": "NO!",
+   "artist": "Paledusk",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "paledusk-pale-horse",
+   "song": "PALE HORSE",
+   "artist": "Paledusk",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "survive-said-the-prophet-mukanjyo",
+   "song": "Mukanjyo",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-paradox",
+   "song": "Paradox",
+   "artist": "Survive Said The Prophet",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "survive-said-the-prophet-speak-of-the-devil-feat-masato",
+   "song": "Speak of the Devil feat. Masato",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-b"
+  },
+  {
+   "id": "survive-said-the-prophet-found-and-lost",
+   "song": "Found and Lost",
+   "artist": "Survive Said The Prophet",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "survive-said-the-prophet-found-lost",
+   "song": "found & lost",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-cs"
+  },
+  {
+   "id": "survive-said-the-prophet-useless",
+   "song": "Useless",
+   "artist": "Survive Said The Prophet",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "survive-said-the-prophet-red",
+   "song": "Red",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-hollow",
+   "song": "Hollow",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-mary",
+   "song": "Mary",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-conscious",
+   "song": "Conscious",
+   "artist": "Survive Said The Prophet",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "survive-said-the-prophet-beauty-queen",
+   "song": "Beauty Queen",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-d"
+  },
+  {
+   "id": "survive-said-the-prophet-t-r-a-n-s-l-a-t-e-d",
+   "song": "T R A N S l a t e d",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-confession",
+   "song": "Confession",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-c"
+  },
+  {
+   "id": "survive-said-the-prophet-x-axis",
+   "song": "X_AXIS",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-b"
+  },
+  {
+   "id": "survive-said-the-prophet-speak-of-the-devil-feat-masato-ai",
+   "song": "Speak of the Devil feat. Masato AI",
+   "artist": "Survive Said The Prophet",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-revive",
+   "song": "REVIVE",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-dissension",
+   "song": "DISSENSION",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-dai-zero-kan-by-10-feet",
+   "song": "Dai Zero Kan (by 10-FEET)",
+   "artist": "Nemophila",
+   "t": "drop-d"
+  },
+  {
+   "id": "nemophila-oiran",
+   "song": "OIRAN",
+   "artist": "Nemophila",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nemophila-raitei",
+   "song": "RAITEI",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-konjikigraffty",
+   "song": "金色グラフティーkonjikigraffty",
+   "artist": "Nemophila",
+   "t": "drop-cs",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "nemophila-ama-te-ras",
+   "song": "AMA-TE-RAS",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-kaikasengen",
+   "song": "KAIKASENGEN",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-oskr",
+   "song": "OSKR",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-g-o-d",
+   "song": "G.O.D.",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-rise",
+   "song": "Rise",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-life",
+   "song": "Life",
+   "artist": "Nemophila",
+   "t": "drop-c"
+  },
+  {
+   "id": "nemophila-hammer-down-full-song",
+   "song": "Hammer Down (Full Song)",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-",
+   "song": "ー業ー",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-sorai",
+   "song": "Sorai",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-beautiful-days",
+   "song": "Beautiful Days",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-brainwash",
+   "song": "BRAINWASH",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-zen-tabs",
+   "song": "ZEN tabs",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-adabana",
+   "song": "ADABANA",
+   "artist": "Nemophila",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-pump-it-up",
+   "song": "PUMP IT UP!!",
+   "artist": "Nemophila",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-hypnosis",
+   "song": "HYPNOSIS",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-now-i-here",
+   "song": "now I here",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-oblivious",
+   "song": "Oblivious",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila--3199802",
+   "song": "アナタダレ",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila-hozuki",
+   "song": "HOZUKI | 鬼灯",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nemophila-vs-ego",
+   "song": "VS EGO:",
+   "artist": "Nemophila",
+   "t": "drop-b"
+  },
+  {
+   "id": "nemophila--3070403",
+   "song": "鬼灯",
+   "artist": "Nemophila",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "lovebites-break-the-wall",
+   "song": "Break The wall",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-scream-for-me",
+   "song": "Scream For Me",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-swan-song",
+   "song": "SWAN SONG",
+   "artist": "Lovebites",
+   "t": "drop-c"
+  },
+  {
+   "id": "lovebites-judgement-day",
+   "song": "Judgement Day",
+   "artist": "Lovebites",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "lovebites-shadowmaker",
+   "song": "Shadowmaker",
+   "artist": "Lovebites",
+   "t": "std-d"
+  },
+  {
+   "id": "lovebites-soldier-stands-solitarily",
+   "song": "Soldier Stands Solitarily",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-addicted",
+   "song": "Addicted",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-dystopia-symphony",
+   "song": "Dystopia Symphony",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-raise-some-hell",
+   "song": "Raise Some Hell",
+   "artist": "Lovebites",
+   "t": "drop-d"
+  },
+  {
+   "id": "lovebites-reapers-lullaby",
+   "song": "Reaper's Lullaby.",
+   "artist": "Lovebites",
+   "t": "std-d"
+  },
+  {
+   "id": "lovebites-3",
+   "song": "스완송 3기타 솔로쉽게",
+   "artist": "Lovebites",
+   "t": "drop-c"
+  },
+  {
+   "id": "galneryus-hunting-for-your-dream",
+   "song": "HUNTING FOR YOUR DREAM",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-angel-of-salvation",
+   "song": "ANGEL OF SALVATION",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-raise-my-sword",
+   "song": "Raise My Sword",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-destiny",
+   "song": "Destiny",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-kizuna",
+   "song": "Kizuna",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-wherever-you-are",
+   "song": "Wherever You Are",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-let-us-shine",
+   "song": "Let Us Shine",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-silent-revelation",
+   "song": "Silent Revelation",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-emotions",
+   "song": "EMOTIONS",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-struggle-for-the-freedom-flag",
+   "song": "Struggle For The Freedom Flag",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-reason-we-fight",
+   "song": "The Reason We Fight",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-chasing-the-wind",
+   "song": "Chasing The Wind",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-force-of-courage",
+   "song": "THE FORCE OF COURAGE",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-new-legend",
+   "song": "New Legend",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-tear-off-your-chain",
+   "song": "Tear Off Your Chain",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-rain-of-tears",
+   "song": "Rain Of Tears",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-shriek-of-the-vengeance",
+   "song": "Shriek Of The Vengeance",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-glorious-aggressor-whisper-in-the-red-sky",
+   "song": "Glorious Aggressor/Whisper In the Red Sky",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-see-the-light-of-freedom",
+   "song": "See the Light of Freedom",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-departure",
+   "song": "Departure!",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-requiem",
+   "song": "Requiem",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-attitude-to-life",
+   "song": "Attitude to life",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-ultimate-sacrifice",
+   "song": "Ultimate Sacrifice",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-angel-of-salvation-mv",
+   "song": "Angel Of Salvation [M",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-grmetal",
+   "song": "Grmetal",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-whatever-it-takes-raise-our-hands",
+   "song": "Whatever It Takes (Raise Our Hands!)",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-wings-of-justice-tabs-i-guess",
+   "song": "Wings of Justice (@tabs, I Guess",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-never-again",
+   "song": "Never Again",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-flag-of-reincarnation",
+   "song": "The Flag of Reincarnation",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-heavenly-punishment",
+   "song": "Heavenly Punishment",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-my-hope-is-gone",
+   "song": "My Hope Is Gone",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-soul-of-the-field",
+   "song": "Soul Of The Field",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-brutal-spiral-of-emotions",
+   "song": "Brutal Spiral of Emotions",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-united-flag",
+   "song": "United Flag",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-t-f-f-b",
+   "song": "T.F.F.B.",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-endless-story",
+   "song": "Endless Story",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-longing",
+   "song": "Longing",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-lament",
+   "song": "Lament",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-whisper-in-the-red-sky",
+   "song": "Whisper In The Red Sky",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-vetelgyus",
+   "song": "Vetelgyus",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-save-you",
+   "song": "SAVE YOU!",
+   "artist": "Galneryus",
+   "t": "std-eb",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-the-voice-of-grievous-cry",
+   "song": "The Voice Of Grievous Cry",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-burn-my-heart",
+   "song": "BURN MY HEART",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-across-the-rainbow",
+   "song": "ACROSS THE RAINBOW",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-deep-affection-tabs-i-guess",
+   "song": "Deep Affection(@Tabs I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-a-far-off-distance",
+   "song": "A FAR-OFF DISTANCE",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-run-to-the-edge",
+   "song": "Run to the Edge",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-no-exit-tabs-i-guess",
+   "song": "No Exit (@Tabs I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-meditation-for-the-saga",
+   "song": "MEDITATION FOR THE SAGA",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-rebel-flag",
+   "song": "Rebel Flag",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-i-believe-tabs-i-guess",
+   "song": "I BELIEVE (@tabs, i guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-future-never-dies",
+   "song": "Future Never Dies",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-owarinaki-konouta-tabs-i-guess",
+   "song": "Owarinaki, Konouta (Tabs,I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-time-before-dawn",
+   "song": "The Time Before Dawn",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-chain-of-distress",
+   "song": "Chain of Distress",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-fighting-of-eternity",
+   "song": "Fighting of Eternity",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-end-of-the-linee",
+   "song": "The End Of The Linee",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-alsatia",
+   "song": "Alsatia",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-still-loving-you",
+   "song": "Still Loving You",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-winning-the-honor",
+   "song": "WINNING THE HONOR",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-temptation-through-the-night",
+   "song": "Temptation Through The Night",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-reward-for-betrayal",
+   "song": "Reward for Betrayal",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-destinations",
+   "song": "Destinations",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-flames-of-rage",
+   "song": "Flames of Rage",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-bash-out",
+   "song": "BASH OUT!",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-enter-the-new-age",
+   "song": "Enter the New Age",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-enemy-to-injustice",
+   "song": "Enemy To Injustice",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-cry-for-the-dark",
+   "song": "Cry For the Dark",
+   "artist": "Galneryus",
+   "t": "drop-cs",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-carry-on",
+   "song": "Carry on",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-quiet-wish-edit",
+   "song": "Quiet Wish (Edit)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-infinity",
+   "song": "Infinity",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-glory",
+   "song": "Glory",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-seasons-cry-tabs-i-guess",
+   "song": "Seasons Cry (@tabs, I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-premonition",
+   "song": "Premonition",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-heartless",
+   "song": "HEARTLESS",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-light-of-hope",
+   "song": "The Light of Hope",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-time-has-come",
+   "song": "The Time Has Come",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-tomorrow",
+   "song": "Tomorrow",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-everlasting",
+   "song": "Everlasting",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-voice-in-sadness-tabs-i-guess",
+   "song": "VOICE IN SADNESS (Tabs, I Guess...)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-with-pride",
+   "song": "With Pride",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-remain-behind",
+   "song": "Remain Behind",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-stand-up-for-the-right",
+   "song": "Stand Up for the Right",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-united-blood",
+   "song": "United Blood",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-point-of-no-return",
+   "song": "Point Of No Return",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-shadow-within",
+   "song": "The Shadow Within",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-shiver",
+   "song": "Shi",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-reach-to-the-sky",
+   "song": "Reach to the Sky",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-lonely-as-a-stranger",
+   "song": "Lonely as a Stranger",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-the-awakening",
+   "song": "The Awakening",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-purgatorial-flame",
+   "song": "Purgatorial Flame",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-cause-disarray",
+   "song": "Cause Disarray",
+   "artist": "Galneryus",
+   "t": "std-eb",
+   "alts": [
+    "drop-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-holding-the-broken-wings",
+   "song": "Holding The Broken Wings",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-my-last-farewell",
+   "song": "My Last Farewell",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-howling-darkness",
+   "song": "The Howling Darkness",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-in-the-delight",
+   "song": "In The Delight",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-bravehearts",
+   "song": "Bravehearts",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-in-the-cage",
+   "song": "In The Cage",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-braving-flag-tabs-i-guess",
+   "song": "Braving Flag (@Tabs I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-fate-of-the-sadness",
+   "song": "Fate Of The Sadness",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-roaming-in-my-memory",
+   "song": "Roaming In My Memory",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-syu",
+   "song": "Syu",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-against-the-domination-complete",
+   "song": "AGAINST THE DOMINATION (complete)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-road-goes-on",
+   "song": "The Road Goes On",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-raid-again",
+   "song": "Raid Again",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-without-you",
+   "song": "Without You",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-blame-yourself-tabs-i-guess",
+   "song": "Blame Yourself (@Tabs I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-heavy-curse",
+   "song": "Heavy curse",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-time-will-tell",
+   "song": "Time Will Tell",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-beyond-of-the-ground",
+   "song": "Beyond Of The Ground",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-promised-flag",
+   "song": "PROMISED FLAG",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-theres-no-escape",
+   "song": "THERE'S NO ESCAPE",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-last-new-song",
+   "song": "Last new song",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-rising-infuriation-tabs-i-guess",
+   "song": "Rising Infuriation (@Tabs, I Guess)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-break-the-silence",
+   "song": "Break the Silence!",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-demolish-the-wickedness",
+   "song": "Demolish the Wickedness!",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-garden-of-the-goddess",
+   "song": "Garden of the Goddess",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-echoes-of-fate",
+   "song": "ECHOES OF FATE",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-final-resolution",
+   "song": "Final Resolution",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-fall-in-the-dark",
+   "song": "Fall in The Dark",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-beyond-the-sunrise",
+   "song": "Beyond the Sunrise",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-sun-goes-down",
+   "song": "The Sun Goes Down",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-wind-blows-tabs-i-guess",
+   "song": "THE WIND BLOWS (Tabs, I Guess...)",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-hold-on",
+   "song": "Hold On",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-the-nightcraver",
+   "song": "The Nightcra",
+   "artist": "Galneryus",
+   "t": "drop-cs"
+  },
+  {
+   "id": "galneryus-i-wish-tabs-i-guess",
+   "song": "I WISH (Tabs, I Guess...)",
+   "artist": "Galneryus",
+   "t": "std-eb",
+   "alts": [
+    "drop-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "galneryus-to-the-last-breath",
+   "song": "To the Last Breath",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-complicated-crying",
+   "song": "Complicated Crying",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-bleeding-sanity",
+   "song": "Bleeding Sanity",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-inori",
+   "song": "Inori",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-finally-it-comes",
+   "song": "FINALLY, IT COMES!",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "galneryus-in-the-cage-tabs-i-guess",
+   "song": "In the Cage - Tabs, I Guess...",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-angels-of-salvation",
+   "song": "Angels Of Salvation",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-the-garden-of-the-goddess",
+   "song": "The Garden of the Goddess",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-in-waters-gaze",
+   "song": "IN WATER'S GAZE",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-glorious-aggressor",
+   "song": "Glorious Aggressor",
+   "artist": "Galneryus",
+   "t": "std-eb"
+  },
+  {
+   "id": "galneryus-stardust-tabsiguess",
+   "song": "STARDUST(TabsIGuess)",
+   "artist": "Galneryus",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "x-japan-kurenai",
+   "song": "紅（Kurenai）",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-silent-jealousy",
+   "song": "Silent Jealousy",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-week-end",
+   "song": "Week End",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-endless-rain",
+   "song": "Endless Rain",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-sadistic-desire",
+   "song": "Sadistic Desire",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-rose-of-pain",
+   "song": "Rose Of Pain",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-dahlia",
+   "song": "Dahlia",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-vanishing-love",
+   "song": "Vanishing Love",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-blue-blood",
+   "song": "Blue Blood",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-voiceless-screaming",
+   "song": "Voiceless Screaming",
+   "artist": "X Japan",
+   "t": "std-cs"
+  },
+  {
+   "id": "x-japan-x",
+   "song": "X",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-desperate-angel",
+   "song": "Desperate Angel",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-say-anything",
+   "song": "Say Anything",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-stab-me-in-the-back",
+   "song": "Stab Me In The Back",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-ill-kill-you",
+   "song": "I'll Kill You",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-alive",
+   "song": "Alive",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-original-weekend",
+   "song": "original weekend",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-scars",
+   "song": "Scars",
+   "artist": "X Japan",
+   "t": "drop-d"
+  },
+  {
+   "id": "x-japan-joker",
+   "song": "Joker",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-art-of-life",
+   "song": "Art of Life",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-born-to-be-free",
+   "song": "Born To Be Free",
+   "artist": "X Japan",
+   "t": "drop-d"
+  },
+  {
+   "id": "x-japan-crucify-my-love",
+   "song": "Crucify My Love",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-miscast",
+   "song": "Miscast",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-orgasm",
+   "song": "Orgasm",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-white-wind-from-mr-martin",
+   "song": "White Wind From Mr. Martin",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-phantom-of-guilt",
+   "song": "Phantom Of Guilt",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-jade",
+   "song": "Jade",
+   "artist": "X Japan",
+   "t": "std-d",
+   "alts": [
+    "std-c"
+   ],
+   "c": 1
+  },
+  {
+   "id": "x-japan-celebration",
+   "song": "Celebration",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-easy-fight-rambling",
+   "song": "Easy Fight Rambling",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-20th-century-boy",
+   "song": "20th Century Boy",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-dear-loser",
+   "song": "Dear Loser",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-xclamation",
+   "song": "Xclamation",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-desperate-angel-92",
+   "song": "Desperate Angel 92",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-tell-me",
+   "song": "Tell Me",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-say-anything-guitar-solo",
+   "song": "Say Anything Guitar",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "x-japan-unfinished",
+   "song": "Unfinished",
+   "artist": "X Japan",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-tonight",
+   "song": "Tonight",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-crazy-about-you",
+   "song": "Crazy About You",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-higher-and-higher",
+   "song": "宇宙の詩 〜Higher and Higher〜",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-the-beyond",
+   "song": "THE BEYOND",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-make-a-vow",
+   "song": "Make a vow",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-my-lover",
+   "song": "My Lo",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-inside-you",
+   "song": "Inside You",
+   "artist": "Luna Sea",
+   "t": "std-d"
+  },
+  {
+   "id": "luna-sea-into-the-sun",
+   "song": "Into The Sun",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-metamorphosis",
+   "song": "Metamorphosis",
+   "artist": "Luna Sea",
+   "t": "drop-d"
+  },
+  {
+   "id": "luna-sea-metamorphosis-3-by-luna-sea",
+   "song": "Metamorphosis 3 by Luna Sea",
+   "artist": "Luna Sea",
+   "t": "drop-d"
+  },
+  {
+   "id": "luna-sea-feel",
+   "song": "Feel",
+   "artist": "Luna Sea",
+   "t": "std-eb"
+  },
+  {
+   "id": "luna-sea-1999",
+   "song": "1999",
+   "artist": "Luna Sea",
+   "t": "drop-d"
+  },
+  {
+   "id": "girugamesh-owari-to-mirai",
+   "song": "Owari To Mirai",
+   "artist": "Girugamesh",
+   "t": "drop-c"
+  },
+  {
+   "id": "girugamesh-chimera",
+   "song": "chimera",
+   "artist": "Girugamesh",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "girugamesh-break-down",
+   "song": "Break Down",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-color",
+   "song": "color",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-crying-rain",
+   "song": "Crying Rain",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-drain",
+   "song": "drain",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-suiren",
+   "song": "Suiren",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-zantetsuken",
+   "song": "Zantetsuken",
+   "artist": "Girugamesh",
+   "t": "drop-b"
+  },
+  {
+   "id": "girugamesh-mienai-kyori",
+   "song": "mienai kyori",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-volcano",
+   "song": "Volcano",
+   "artist": "Girugamesh",
+   "t": "b1-fs2-b2-fs3-b3-ds4"
+  },
+  {
+   "id": "girugamesh-glamorous-sky",
+   "song": "Glamorous Sky",
+   "artist": "Girugamesh",
+   "t": "drop-b"
+  },
+  {
+   "id": "girugamesh-incomplete",
+   "song": "Incomplete",
+   "artist": "Girugamesh",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "girugamesh-patchwork-v2",
+   "song": "Patchwork",
+   "artist": "Girugamesh",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "girugamesh-shadan",
+   "song": "Shadan",
+   "artist": "Girugamesh",
+   "t": "drop-b"
+  },
+  {
+   "id": "nocturnal-bloodlust-",
+   "song": "銃創",
+   "artist": "Nocturnal Bloodlust",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nocturnal-bloodlust-desperate",
+   "song": "DESPERATE",
+   "artist": "Nocturnal Bloodlust",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nocturnal-bloodlust-devil-inside",
+   "song": "Devil inside",
+   "artist": "Nocturnal Bloodlust",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-malice-against",
+   "song": "Malice against",
+   "artist": "Nocturnal Bloodlust",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "nocturnal-bloodlust-kingdom",
+   "song": "kingdom",
+   "artist": "Nocturnal Bloodlust",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-trigger",
+   "song": "Trigger",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-a"
+  },
+  {
+   "id": "nocturnal-bloodlust-venom",
+   "song": "Venom",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-a"
+  },
+  {
+   "id": "nocturnal-bloodlust-genesis",
+   "song": "Genesis",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-b"
+  },
+  {
+   "id": "nocturnal-bloodlust-the-strength-i-need",
+   "song": "The Strength I Need",
+   "artist": "Nocturnal Bloodlust",
+   "t": "g1-d2-g2-c3-f3-a3-d4",
+   "alts": [
+    "fs1-d2-g2-c3-f3-a3-d4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "nocturnal-bloodlust-vanilla",
+   "song": "vanilla",
+   "artist": "Nocturnal Bloodlust",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-faceless",
+   "song": "FACELESS",
+   "artist": "Nocturnal Bloodlust",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "nocturnal-bloodlust-dagger-official",
+   "song": "Dagger Official",
+   "artist": "Nocturnal Bloodlust",
+   "t": "ds1-as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-unbreakable",
+   "song": "Unbreakable",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-c"
+  },
+  {
+   "id": "nocturnal-bloodlust-a-bullet-of-skyline",
+   "song": "a bullet of skyline",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-b"
+  },
+  {
+   "id": "nocturnal-bloodlust-v-i-p",
+   "song": "V.I.P",
+   "artist": "Nocturnal Bloodlust",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nocturnal-bloodlust-life-is-once-ai",
+   "song": "Life is Once (AI)",
+   "artist": "Nocturnal Bloodlust",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-rebellion",
+   "song": "Rebellion",
+   "artist": "Nocturnal Bloodlust",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "nocturnal-bloodlust-reviver-official",
+   "song": "Reviver Official",
+   "artist": "Nocturnal Bloodlust",
+   "t": "ds1-gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "nocturnal-bloodlust-punch-me-if-you-can",
+   "song": "Punch me if you can",
+   "artist": "Nocturnal Bloodlust",
+   "t": "drop-a"
+  },
+  {
+   "id": "hanabie-we-love-sweets",
+   "song": "We Love Sweets",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-o-ta-ku",
+   "song": "O･TA･KUラブリー伝説",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-spicy-queen",
+   "song": "Spicy Queen",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-ito-okashi-my-type",
+   "song": "Ito Okashi My Type",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-our-7days-war",
+   "song": "Our 7days War",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-bukkowasu",
+   "song": "Bukkowasu!!",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-tousou-run-away",
+   "song": "TOUSOU (run away)",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-bucchigiri-tokyo",
+   "song": "Bucchigiri Tokyo",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-warning",
+   "song": "Warning!!",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-sentimental-heroine",
+   "song": "Sentimental Heroine",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-metamorphose",
+   "song": "Metamorphose! - メタ盛るフォーゼ！",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-hyperdimension-galaxy",
+   "song": "Hyperdimension Galaxy",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-reiwa-matching-sedai",
+   "song": "Reiwa Matching Sedai",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-want-to-tie-up",
+   "song": "Want to TIE-UP",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-",
+   "song": "命短し対する乙女よ",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-todays-good-day-so-epic",
+   "song": "Today's Good Day & So Epic",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-sunrise-soup",
+   "song": "SUNRISE 味噌SOUP",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-neet-game",
+   "song": "NEET GAME",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie--539866",
+   "song": "限界沼ライフ",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-envy",
+   "song": "Envy",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-iconic",
+   "song": "【花冷え。】ICONIC",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-invisible-wall",
+   "song": "Invisible wall",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-life-is-short-o-brave-girl",
+   "song": "Life Is Short, O Brave Girl",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-gambler",
+   "song": "Gambler",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-pardon-me-i-have-to-go-now-tabbed-by-benji-kun",
+   "song": "Pardon Me, I Have To Go Now/Tabbed by Benji Kun",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-tokimeki-about-you",
+   "song": "Tokimeki About You",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-o-ta-ku-otaku-lovely-densetsu-music-video-hanabie",
+   "song": "O･TA･KUラブリー伝説 - 〜 OTAKU Lovely Densetsu〜 - Music Video 【HANABIE.】",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "hanabie-iconic-3559811",
+   "song": "ICONIC",
+   "artist": "Hanabie",
+   "t": "drop-c"
+  },
+  {
+   "id": "hanabie-girls-talk",
+   "song": "GIRL'S TALK",
+   "artist": "Hanabie",
+   "t": "drop-d"
+  },
+  {
+   "id": "hanabie-tasty-survivor",
+   "song": "【花冷え。】 おいしいサバイバー -Tasty Survivor",
+   "artist": "Hanabie",
+   "t": "drop-b"
+  },
+  {
+   "id": "aldious-suicide",
+   "song": "Suicide",
+   "artist": "Aldious",
+   "t": "drop-d"
+  },
+  {
+   "id": "esprit-dair-leviathan",
+   "song": "Leviathan",
+   "artist": "Esprit D'Air",
+   "t": "drop-cs"
+  },
+  {
+   "id": "deviloof-goujin-sangoku",
+   "song": "Goujin Sangoku",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-escape",
+   "song": "Escape",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-return-of-the-curse",
+   "song": "Return Of the Curse",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-ishtar",
+   "song": "ISHTAR",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-murderous-impulse",
+   "song": "Murderous Impulse",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-egoist",
+   "song": "EGOIST",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-incipit",
+   "song": "InCipit",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-peer-pressure",
+   "song": "Peer Pressure",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-natural-born-killer",
+   "song": "Natural Born Killer",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-ruin",
+   "song": "Ruin　ルーイン",
+   "artist": "Deviloof",
+   "t": "drop-a"
+  },
+  {
+   "id": "deviloof-dusky-vision",
+   "song": "Dusky-Vision",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-everything-is-all-lies",
+   "song": "Everything is all lies",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-",
+   "song": "「開花」 ～鬼ノ巻～",
+   "artist": "Deviloof",
+   "t": "drop-a"
+  },
+  {
+   "id": "deviloof-syphilischancroidchlamydiaclervicitisprotozoaaids",
+   "song": "syphilischancroidchlamydiaclervicitisprotozoaaids",
+   "artist": "Deviloof",
+   "t": "drop-a"
+  },
+  {
+   "id": "deviloof-damn",
+   "song": "Damn",
+   "artist": "Deviloof",
+   "t": "e1-a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-libido",
+   "song": "Libido",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-aishitekudasai",
+   "song": "Aishitekudasai",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-destination",
+   "song": "DESTINATION",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof--967433",
+   "song": "因習",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-newspeak",
+   "song": "Newspeak",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3"
+  },
+  {
+   "id": "deviloof-ruin-5704932",
+   "song": "Ruin",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof--651115",
+   "song": "愛してください",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "deviloof-song-for-the-weak",
+   "song": "Song For The Weak.",
+   "artist": "Deviloof",
+   "t": "drop-a"
+  },
+  {
+   "id": "deviloof-lover",
+   "song": "LO",
+   "artist": "Deviloof",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "sable-hills-odyssey",
+   "song": "Odyssey",
+   "artist": "Sable Hills",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "sable-hills-namu",
+   "song": "Namu",
+   "artist": "Sable Hills",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "sable-hills-crisis",
+   "song": "Crisis",
+   "artist": "Sable Hills",
+   "t": "drop-a"
+  },
+  {
+   "id": "sable-hills-abyss",
+   "song": "Abyss",
+   "artist": "Sable Hills",
+   "t": "drop-a"
+  },
+  {
+   "id": "sable-hills-messiah",
+   "song": "Messiah",
+   "artist": "Sable Hills",
+   "t": "drop-a"
+  },
+  {
+   "id": "sable-hills-tokyo",
+   "song": "Tokyo",
+   "artist": "Sable Hills",
+   "t": "std-eb"
+  },
+  {
+   "id": "sable-hills-a-new-chapter",
+   "song": "A New Chapter",
+   "artist": "Sable Hills",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "sable-hills-homura-feat-fuki",
+   "song": "Homura feat. Fuki",
+   "artist": "Sable Hills",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "sable-hills-battle-cry",
+   "song": "Battle Cry",
+   "artist": "Sable Hills",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "sable-hills-godforsaken-ft-john-henry-of-darkest-hour",
+   "song": "Godforsaken ft. John Henry of DARKEST HOUR",
+   "artist": "Sable Hills",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "sable-hills-embers",
+   "song": "Embers",
+   "artist": "Sable Hills",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "earthists-resonating-light-2-0",
+   "song": "Resonating Light 2.0",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-footprints",
+   "song": "Footprints",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-ultrablue",
+   "song": "ULTRABLUE",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-cybele",
+   "song": "Cybele",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-leaves",
+   "song": "Leaves",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-sayyoukill",
+   "song": "SAYYOUKILL",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-hyperhell",
+   "song": "HYPERHELL_",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "earthists-hyperhell-ai",
+   "song": "HYPERHELL ai",
+   "artist": "Earthists",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "dead-end-",
+   "song": "摩天楼ゲーム",
+   "artist": "Dead End",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-end-matenrou-game",
+   "song": "Matenrou Game",
+   "artist": "Dead End",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-end-suishoujuu",
+   "song": "Suishoujuu",
+   "artist": "Dead End",
+   "t": "drop-d"
+  },
+  {
+   "id": "ling-tosite-sigure-telecastic-fake-show",
+   "song": "Telecastic Fake Show",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-abnormalize",
+   "song": "Abnormalize",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-telecaster-no-shinjitsu",
+   "song": "Telecaster no Shinjitsu",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-disco-flight",
+   "song": "DISCO FLIGHT",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-am3-45",
+   "song": "am3:45",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-enigmatic-feeling",
+   "song": "Enigmatic Feeling",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-alexithymiaspare",
+   "song": "アレキシサイミアスペア/ alexithymiaspare",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sadistic-summer",
+   "song": "Sadistic Summer",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-souzou-no-security",
+   "song": "Souzou No Security",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-jpop-xfile",
+   "song": "JPOP XFile",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-kankaku-ufo",
+   "song": "Kankaku UFO",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-moment-a-rhythm-short",
+   "song": "Moment A Rhythm (Short",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-a-7days-wonder",
+   "song": "A 7days Wonder",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-un-apex",
+   "song": "Un-Apex",
+   "artist": "Ling Tosite Sigure",
+   "t": "drop-d"
+  },
+  {
+   "id": "ling-tosite-sigure-yuukei-no-kioku",
+   "song": "Yuukei no Kioku",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-azayaka-na-satsujin",
+   "song": "Azayaka Na Satsujin",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-boukan",
+   "song": "Boukan",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-nakano-kill-you",
+   "song": "Nakano Kill You",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-make-up-syndrome",
+   "song": "make up syndrome",
+   "artist": "Ling Tosite Sigure",
+   "t": "ds2-gs2-cs3-fs3-b3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "ling-tosite-sigure-tremolo-a",
+   "song": "Tremolo+A",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-ef",
+   "song": "eF",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-metamorphose",
+   "song": "Metamorphose",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-unravel-full-tabs",
+   "song": "Unravel (Full Tabs)",
+   "artist": "Ling Tosite Sigure",
+   "t": "drop-d"
+  },
+  {
+   "id": "ling-tosite-sigure-sergio-echigo",
+   "song": "Sergio Echigo",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-tk-in-the-yuukei",
+   "song": "TK in the Yuukei",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sitai-miss-me",
+   "song": "Sitai Miss Me",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-24reverse",
+   "song": "24reverse",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-cool-j",
+   "song": "Cool J",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-hakaiyo-no-yume",
+   "song": "Hakaiyo no Yume",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-a-over-die",
+   "song": "A Over Die",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-crazy-kanjou-style",
+   "song": "Crazy Kanjou Style",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-i-not-crazy-am-you-are",
+   "song": "i not crazy am you are",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-turbocharger-on",
+   "song": "Turbocharger ON",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-illusion-is-mine",
+   "song": "illusion is mine",
+   "artist": "Ling Tosite Sigure",
+   "t": "ds2-gs2-cs3-f3-as3-ds4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "ling-tosite-sigure-this-is-is-this",
+   "song": "This Is Is This?",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-die-meets-hard",
+   "song": "Die Meets Hard",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-i-was-music",
+   "song": "I was music",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-",
+   "song": "テレキャスターの真実",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure--518635",
+   "song": "竜巻いて鮮脳",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-knife-vacation",
+   "song": "knife vacation",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-o-f-t",
+   "song": "O.F.T",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-high-energy-vacuum",
+   "song": "High Energy Vacuum",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-akai-yuuwaku",
+   "song": "Akai Yuuwaku",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-alexithymiaspare-550809",
+   "song": "alexithymiaspare",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-a-symmetry",
+   "song": "a symmetry",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sa-so-ri",
+   "song": "Sa.SO.RI.",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-replica",
+   "song": "replica",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-enigmatic-feeling-2",
+   "song": "Enigmatic Feeling 2",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-1-f-no-kansyoku",
+   "song": "1/f no Kansyoku",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-serial-number-of-turbo",
+   "song": "Serial Number Of Turbo",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-monster",
+   "song": "Monster",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-moment-a-rhythm-part-2",
+   "song": "Moment A Rhythm Part 2",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-hysteric-phase-show",
+   "song": "Hysteric Phase Show",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-aki-no-kehai-no-arpeggio",
+   "song": "Aki No Kehai No Arpeggio",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-filmsick-mystery",
+   "song": "Filmsick Mystery",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-last-dance-revolution",
+   "song": "Last Dance Revolution",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-secret-g",
+   "song": "Secret G",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-who-what-who-what",
+   "song": "Who What Who What",
+   "artist": "Ling Tosite Sigure",
+   "t": "ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "ling-tosite-sigure-loo-who-music-video-tv-ed",
+   "song": "凛として時雨 『Loo% Who%』 Music Video（TVアニメ「グノーシア」 EDテーマ）",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sosos",
+   "song": "SOSOS",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sadistic-summer-4610124",
+   "song": "凛として時雨『Sadistic Summer』",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-loo-who-ai",
+   "song": "Loo% Who% AI",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-metsubo-craft",
+   "song": "Metsubo craft",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sick-mind-b-rain",
+   "song": "sick mind B rain",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-mib126",
+   "song": "Mib126",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-ten-to-ten",
+   "song": "Ten To Ten",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure--517726",
+   "song": "夕景の記憶",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-perfake-perfect",
+   "song": "Perfake Perfect",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-shandy",
+   "song": "Shandy",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-kimitooku",
+   "song": "Kimitooku",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-tornado-g",
+   "song": "Tornado G",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-neighbormind",
+   "song": "Neighbormind",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-re-automation",
+   "song": "Re:automation",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-can-you-kill-a-secret",
+   "song": "Can you kill a secret?",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-tornado-mystery",
+   "song": "Tornado Mystery",
+   "artist": "Ling Tosite Sigure",
+   "t": "f2-as2-ds3-gs3-c4-f4"
+  },
+  {
+   "id": "ling-tosite-sigure-synchrome",
+   "song": "Synchrome",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-sasurai-no-rnb",
+   "song": "Sasurai no RNB",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-tornado-minority-ia",
+   "song": "Tornado Minority (IA)",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-trrrrrrrrrrrrrrrrrrrue-lies",
+   "song": "Trrrrrrrrrrrrrrrrrrrue Lies",
+   "artist": "Ling Tosite Sigure",
+   "t": "drop-c"
+  },
+  {
+   "id": "ling-tosite-sigure-azayaka-na-satujin",
+   "song": "Azayaka na Satujin",
+   "artist": "Ling Tosite Sigure",
+   "t": "std-eb"
+  },
+  {
+   "id": "ling-tosite-sigure-secret-cm",
+   "song": "Secret CM",
+   "artist": "Ling Tosite Sigure",
+   "t": "ds2-gs2-cs3-f3-as3-ds4",
+   "alts": [
+    "std-eb"
    ],
    "c": 1
   }

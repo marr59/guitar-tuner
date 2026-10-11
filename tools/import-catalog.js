@@ -108,9 +108,20 @@ const REJECT_RX    = [
   /\d+\s*%/,
   /\(\s*\d+-string/i,
   /\d+-string\s*\)/i,
+  /\(\s*\d+\s*strings?\s*\)/i,   // "(5 Strings)" — a transcription variant, not a song
+  /\b\d+\s*strings?\s*$/i,         // "Rondo Of Nightmare 6 String"
   /\bspeed\b/i,
   /\bslowed\b/i,
 ];
+
+// Tab revisions ("Guren v2", "The Beginning (V2)", "… Mortal Downer ver") are the
+// same song re-transcribed. Strip the marker so they fold into the base entry —
+// if the revision disagrees on the tuning, that becomes a recorded conflict.
+const VERSION_SUFFIX_RX = /\s*[\(\[]?\s*(?:v|ver|version)\s*\.?\s*\d*\s*[\)\]]?\s*$/i;
+function stripVersionSuffix(title) {
+  const t = title.replace(VERSION_SUFFIX_RX, '').replace(/\s*[-–—]\s*$/, '').trim();
+  return t.length >= 2 ? t : title;
+}
 
 function titleRejected(title) {
   const t = title.toLowerCase();
@@ -142,6 +153,24 @@ function isEStd6(midiHighToLow) {
   return midiHighToLow.length === 6 && midiHighToLow.every((v, i) => v === E_STD_6[i]);
 }
 
+// A transcription typo we have seen repeatedly: one string written an octave
+// off, so the string set stops ascending (A1 D2 A2 D3 G4 B3 — G in the fourth
+// octave where the third belongs). Genuine non-ascending tunings exist (Nashville
+// high-strung, some open tunings), and those cannot be repaired by moving a
+// single string an octave — which is exactly what separates them from the typo.
+function octaveTypo(midiHighToLow) {
+  const m = [...midiHighToLow].reverse();            // low-to-high
+  const asc = a => a.every((v, i) => i === 0 || v >= a[i-1]);
+  if (asc(m)) return false;
+  for (let i = 0; i < m.length; i++) {
+    for (const d of [12, -12]) {
+      const t = [...m]; t[i] += d;
+      if (asc(t) && t[i] >= 20 && t[i] <= 76) return true;
+    }
+  }
+  return false;
+}
+
 // Octave normalization: anchor on UPPER string (index 0 in high-to-low).
 function normalizeOctave(midiHighToLow) {
   if (!midiHighToLow || midiHighToLow.length < 6) return null;
@@ -152,6 +181,7 @@ function normalizeOctave(midiHighToLow) {
   if (top < TOP_MIN || top > TOP_MAX) return null;
   if (bot < BOT_MIN || bot > BOT_MAX) return null;
   if (![6, 7, 8].includes(m.length)) return null;
+  if (octaveTypo(m)) return null;
   return m;
 }
 
@@ -187,6 +217,15 @@ function autoTuningName(strings) {
   const suffix  = n > 6 ? ` (${n}-string)` : '';
   if (matchIntervals(midis, STD[n]))  return `${lowNote} Standard${suffix}`;
   if (matchIntervals(midis, DROP[n])) return `Drop ${lowNote}${suffix}`;
+  // Extended-range guitars are often a familiar six-string set with one extra
+  // low string bolted underneath (Dir En Grey play Drop D with a low A below it).
+  // Naming that beats dumping the raw note list on the user.
+  if (n > 6) {
+    const rest = midis.slice(1);
+    const restNote = NOTES[rest[0] % 12];
+    if (matchIntervals(rest, STD[n-1]))  return `${restNote} Standard + low ${lowNote} (${n}-string)`;
+    if (matchIntervals(rest, DROP[n-1])) return `Drop ${restNote} + low ${lowNote} (${n}-string)`;
+  }
   return strings.join(' ');
 }
 
@@ -372,18 +411,24 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
   const pool              = new Map();
   const seenIds           = new Set();
   const variantMarkerKeys = new Set();
-  let from = 0;
   let page_n = 0;
 
-  while (true) {
+  // Search under every known spelling, not just the canonical one: a catalogue
+  // that files a band under its Japanese name will not answer to a romanisation.
+  const patterns = [artistName, ...((cfg && cfg.aliases) || [])];
+
+  for (const pattern of patterns) {
+  let from = 0;
+  let exhausted = false;
+  while (!exhausted) {
     await sleep(DELAY_MS);
     page_n++;
     let page;
     try {
-      const url = SOURCE.searchUrl(artistName, from);
+      const url = SOURCE.searchUrl(pattern, from);
       page = SOURCE.parseSongs(await fetchPage(url));
     } catch (e) {
-      print(`  [${artistIdx}/${totalArtists}] "${artistName}" pg${page_n} ERROR: ${e.message}`);
+      print(`  [${artistIdx}/${totalArtists}] "${pattern}" pg${page_n} ERROR: ${e.message}`);
       break;
     }
 
@@ -393,6 +438,9 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       if (seenIds.has(song.id)) continue;
       seenIds.add(song.id);
       st.uniqueSongs++;
+
+      const stripped = stripVersionSuffix(song.title);
+      if (stripped !== song.title) { st.titleFixed++; song.title = stripped; }
 
       const fixed = fixTitle(song.title, cfg);
       if (fixed !== song.title) { st.titleFixed++; song.title = fixed; }
@@ -415,11 +463,12 @@ async function scanArtist(artistName, existingIds, existingPairs, st, artistIdx,
       }
     }
 
-    print(`  [${artistIdx}/${totalArtists}] "${artistName}" pg${page_n} got=${page.length} kept_so_far=${pool.size}`);
+    print(`  [${artistIdx}/${totalArtists}] "${pattern}" pg${page_n} got=${page.length} kept_so_far=${pool.size}`);
 
-    if (page.length < PAGE_SIZE) break;
+    if (page.length < PAGE_SIZE) exhausted = true;
     from += PAGE_SIZE;
-    if (from > 800) break;
+    if (from > 800) exhausted = true;
+  }
   }
 
   // Filter against catalog + views threshold
