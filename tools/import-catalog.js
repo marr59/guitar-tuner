@@ -97,12 +97,19 @@ const REJECT_WORDS = [
   'live','acoustic','cover','remix','demo','karaoke',
   'instrumental','backing','tribute','medley','session',
   'lesson','slowed','tab','octave',
+  'unplugged','dvd','tour',
 ];
 const REJECT_SUBS  = [
   'drop ','standard','tuning','(half step','(full step','bass down','ver.',
   // Russian
   'кавер','акустик','акустика','живьём','живьем','концерт','минус',
   'версия','оригинальном строе','ремикс','инструментал',
+  // Spanish / Portuguese — «Ao vivo», «EN VIVO», «Acústico MTV». Голое «vivo»
+  // не берём: песни с таким названием существуют, режем только оборот.
+  'ao vivo','en vivo','en directo','acustico','acústico','acustica','acústica',
+  'version acustica','versión acústica',
+  // Строй, вынесенный в название: «RUBÃO (Afinado em Eb)», «Sopla el Pampero (D Estándar)»
+  'afinado','afinação','afinacao','afinacion','afinación','estándar','estandar',
   // Korean / Japanese / Chinese — the Latin keyword list never sees these, and
   // the Korean scene is full of them: 챠우챠우 라이브 is a live take, not a song.
   '라이브','커버','어쿠스틱','리믹스','연주','반주',
@@ -115,6 +122,8 @@ const REJECT_RX    = [
   /\d+-string\s*\)/i,
   /\bspeed\b/i,
   /\bslowed\b/i,
+  /\(\s*(?:ai|ia)\s*\)/i,       // «Chaos Corporation (AI)», «Poder latino (IA)» — машинный таб
+  /\(\s*drop\s*\)/i,            // «Os calo (drop)» — пометка о строе без пробела после слова
 ];
 
 // A tab revision marker is either a whole trailing bracket ("(V2)") or a
@@ -312,7 +321,7 @@ const CYR = {
 function translit(s) { return s.replace(/[а-яё]/g, c => CYR[c] ?? c); }
 
 function slugify(s) {
-  return translit(s.toLowerCase().replace(/['']/g,''))
+  return translit(fold(s).toLowerCase().replace(/['']/g,''))
     .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 }
 function makeId(artist, song) {
@@ -322,13 +331,21 @@ function makeId(artist, song) {
 
 // Unicode-aware: strips parens, lowercases, collapses ё→е, keeps all Unicode letters/digits
 function normTitle(t) {
-  return t.replace(/\([^)]*\)/g,'').toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+  return fold(t).replace(/\([^)]*\)/g,'').toLowerCase().replace(/ё/g,'е')
+          .replace(/'/g,'').replace(/\u2019/g,'')
+          .replace(/[^\p{L}\p{N}]+/gu,' ').trim();
 }
 function pairKey(artist, song) {
   return `${normTitle(artist)}::${normTitle(song)}`;
 }
 
-function normalizeArtist(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}]/gu,''); }
+// Диакритику складываем, иначе латиноамериканская сцена не сходится: источник
+// пишет Sarcófago, Ratos de Porão, Café Tacvba, División Minúscula, Zoé — а в
+// запросе и в каталоге то же имя обычно без надстрочных знаков. \p{L} считает
+// «ó» отдельной буквой, поэтому до разложения NFD имена просто не совпадают.
+function fold(s) { return s.normalize('NFD').replace(/\p{M}+/gu, ''); }
+
+function normalizeArtist(s) { return fold(s).toLowerCase().replace(/[^\p{L}\p{N}]/gu,''); }
 
 // ── Artist aliases ────────────────────────────────────────────────────────────
 //

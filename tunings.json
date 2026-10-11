@@ -4530,6 +4530,99 @@
     "F#3",
     "G3"
    ]
+  },
+  {
+   "id": "gs1-cs2-fs2-b2-ds3-gs3",
+   "name": "G# Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "G#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "D#3",
+    "G#3"
+   ]
+  },
+  {
+   "id": "d2-g2-c3-f3-g3-d4",
+   "name": "D2 G2 C3 F3 G3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "G3",
+    "D4"
+   ]
+  },
+  {
+   "id": "cs2-gs2-cs3-gs3-b3-ds4",
+   "name": "C#2 G#2 C#3 G#3 B3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "C#3",
+    "G#3",
+    "B3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "gs1-ds2-gs2-ds3-fs3-as3",
+   "name": "G#1 D#2 G#2 D#3 F#3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "G#1",
+    "D#2",
+    "G#2",
+    "D#3",
+    "F#3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "fs2-b2-e3-a3-cs4-fs4",
+   "name": "F# Standard",
+   "instrument": "guitar6",
+   "strings": [
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "C#4",
+    "F#4"
+   ]
+  },
+  {
+   "id": "cs2-gs2-d3-g3-b3-e4",
+   "name": "C#2 G#2 D3 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "e1-a1-ds2-ds3-fs3-gs3-b3-b3",
+   "name": "E1 A1 D#2 D#3 F#3 G#3 B3 B3",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "A1",
+    "D#2",
+    "D#3",
+    "F#3",
+    "G#3",
+    "B3",
+    "B3"
+   ]
   }
  ],
  "songs": [
@@ -13019,12 +13112,6 @@
    "t": "as1-f2-as2-ds3-g3-c4"
   },
   {
-   "id": "in-flames-brush-the-dust-away-ai",
-   "song": "Brush the Dust Away (AI)",
-   "artist": "In Flames",
-   "t": "std-c"
-  },
-  {
    "id": "in-flames-scorn",
    "song": "Scorn",
    "artist": "In Flames",
@@ -19828,12 +19915,6 @@
    "t": "std-cs"
   },
   {
-   "id": "electric-wizard-mountains-of-mars-ai",
-   "song": "Mountains of mars (AI)",
-   "artist": "Electric Wizard",
-   "t": "std-c"
-  },
-  {
    "id": "electric-wizard-mind-transferal",
    "song": "Mind Transferal",
    "artist": "Electric Wizard",
@@ -20120,12 +20201,6 @@
    "song": "Big Bikes",
    "artist": "Kyuss",
    "t": "std-cs"
-  },
-  {
-   "id": "kyuss-into-the-void-full-ep-ai",
-   "song": "Into the Void full EP (AI)",
-   "artist": "Kyuss",
-   "t": "std-c"
   },
   {
    "id": "kyuss-el-rodeo",
@@ -21564,12 +21639,6 @@
   {
    "id": "black-sabbath-the-hand-that-rocks-the-cradle",
    "song": "The Hand That Rocks The Cradle",
-   "artist": "Black Sabbath",
-   "t": "std-eb"
-  },
-  {
-   "id": "black-sabbath-the-law-maker-ai",
-   "song": "The law maker (ai)",
    "artist": "Black Sabbath",
    "t": "std-eb"
   },
@@ -24214,12 +24283,6 @@
    "t": "std-d"
   },
   {
-   "id": "radiohead-trans-atlantic-drawl-ai",
-   "song": "Trans-Atlantic Drawl (AI)",
-   "artist": "Radiohead",
-   "t": "drop-d"
-  },
-  {
    "id": "joni-mitchell-big-yellow-taxi",
    "song": "Big Yellow Taxi",
    "artist": "Joni Mitchell",
@@ -25931,12 +25994,6 @@
    "song": "Desire",
    "artist": "My Autumn",
    "t": "drop-a"
-  },
-  {
-   "id": "my-autumn-chernoe-zerkalo-ai",
-   "song": "ЧЁРНОЕ ЗЕРКАЛО (AI)",
-   "artist": "My Autumn",
-   "t": "a1-e2-a2-d3-g3-b3-e4"
   },
   {
    "id": "my-autumn-beguschiy-chelovek",
@@ -28498,12 +28555,6 @@
    "t": "std-d"
   },
   {
-   "id": "insomnium-song-of-the-dusk-ai",
-   "song": "Song of the Dusk (AI)",
-   "artist": "Insomnium",
-   "t": "std-d"
-  },
-  {
    "id": "insomnium-white-christ",
    "song": "White Christ",
    "artist": "Insomnium",
@@ -30895,12 +30946,6 @@
    "c": 1
   },
   {
-   "id": "dark-tranquillity-a-bleaker-sun-ai",
-   "song": "A Bleaker Sun (AI)",
-   "artist": "Dark Tranquillity",
-   "t": "std-cs"
-  },
-  {
    "id": "soilwork-the-akuma-afterglow",
    "song": "The Akuma Afterglow",
    "artist": "Soilwork",
@@ -31231,12 +31276,6 @@
   {
    "id": "soilwork-rise-above-the-sentiment",
    "song": "Rise Above The Sentiment",
-   "artist": "Soilwork",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
-   "id": "soilwork-skin-after-skin-ai",
-   "song": "Skin After Skin (AI)",
    "artist": "Soilwork",
    "t": "b1-e2-a2-d3-fs3-b3"
   },
@@ -31723,12 +31762,6 @@
    "song": "I Am Nothing, Better Version",
    "artist": "Katatonia",
    "t": "std-eb"
-  },
-  {
-   "id": "katatonia-wind-of-no-change-ai",
-   "song": "Wind of no Change (AI)",
-   "artist": "Katatonia",
-   "t": "drop-c"
   },
   {
    "id": "katatonia-atrium",
@@ -33636,12 +33669,6 @@
    "t": "d1-gs1-b1-e2-a2-b2-e3-a3"
   },
   {
-   "id": "vildhjarta-penny-royal-poison-ai",
-   "song": "penny royal poison (ai)",
-   "artist": "Vildhjarta",
-   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
-  },
-  {
    "id": "vildhjarta-thallmix",
    "song": "Thallmix",
    "artist": "Vildhjarta",
@@ -34845,12 +34872,6 @@
    "song": "Of Rare Reform",
    "artist": "Erra",
    "t": "drop-b"
-  },
-  {
-   "id": "erra-wave-ai",
-   "song": "Wave (AI)",
-   "artist": "Erra",
-   "t": "drop-cs"
   },
   {
    "id": "erra-end-to-excess",
@@ -39095,12 +39116,6 @@
    "t": "std-eb"
   },
   {
-   "id": "band-maid-letters-to-you-ia",
-   "song": "Letters to you (IA)",
-   "artist": "Band-Maid",
-   "t": "a1-e2-a2-d3-g3-b3-e4"
-  },
-  {
    "id": "band-maid-glory",
    "song": "Glory",
    "artist": "Band-Maid",
@@ -39217,12 +39232,6 @@
   {
    "id": "band-maid-awkward",
    "song": "Awkward",
-   "artist": "Band-Maid",
-   "t": "std-eb"
-  },
-  {
-   "id": "band-maid-rinne-ai",
-   "song": "Rinne (Ai)",
    "artist": "Band-Maid",
    "t": "std-eb"
   },
@@ -41274,12 +41283,6 @@
    "t": "as1-ds2-gs2-cs3-f3-as3"
   },
   {
-   "id": "boris-rainbow-ai",
-   "song": "Rainbow (ai)",
-   "artist": "Boris",
-   "t": "std-eb"
-  },
-  {
    "id": "boris-flood",
    "song": "Flood",
    "artist": "Boris",
@@ -41430,18 +41433,6 @@
    "t": "std-c"
   },
   {
-   "id": "church-of-misery-road-to-ruin-ai",
-   "song": "Road To Ruin (AI)",
-   "artist": "Church of Misery",
-   "t": "std-cs"
-  },
-  {
-   "id": "church-of-misery-doctor-death-ai",
-   "song": "Doctor Death (AI)",
-   "artist": "Church of Misery",
-   "t": "std-c"
-  },
-  {
    "id": "church-of-misery-megalomania",
    "song": "Megalomania",
    "artist": "Church of Misery",
@@ -41452,12 +41443,6 @@
    "song": "Ripping into Pieces",
    "artist": "Church of Misery",
    "t": "std-cs"
-  },
-  {
-   "id": "church-of-misery-river-demon-ai",
-   "song": "River Demon (AI)",
-   "artist": "Church of Misery",
-   "t": "std-c"
   },
   {
    "id": "envy-footsteps-in-the-distance",
@@ -41486,12 +41471,6 @@
   {
    "id": "envy-envy-a-hint-and-the-incapacity",
    "song": "A Hint And The Incapacity",
-   "artist": "Envy",
-   "t": "drop-d"
-  },
-  {
-   "id": "envy-farewell-to-words-ai",
-   "song": "Farewell To Words (ai)",
    "artist": "Envy",
    "t": "drop-d"
   },
@@ -43450,12 +43429,6 @@
    "t": "a1-e2-a2-d3-g3-b3-e4"
   },
   {
-   "id": "nocturnal-bloodlust-life-is-once-ai",
-   "song": "Life is Once (AI)",
-   "artist": "Nocturnal Bloodlust",
-   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
-  },
-  {
    "id": "nocturnal-bloodlust-rebellion",
    "song": "Rebellion",
    "artist": "Nocturnal Bloodlust",
@@ -44408,12 +44381,6 @@
   {
    "id": "ling-tosite-sigure-sasurai-no-rnb",
    "song": "Sasurai no RNB",
-   "artist": "Ling Tosite Sigure",
-   "t": "std-eb"
-  },
-  {
-   "id": "ling-tosite-sigure-tornado-minority-ia",
-   "song": "Tornado Minority (IA)",
    "artist": "Ling Tosite Sigure",
    "t": "std-eb"
   },
@@ -46070,12 +46037,6 @@
    "t": "drop-b"
   },
   {
-   "id": "architects-evil-eyes-ai",
-   "song": "Evil Eyes (AI)",
-   "artist": "Architects",
-   "t": "drop-b"
-  },
-  {
    "id": "architects-hollow-crown",
    "song": "Hollow Crown",
    "artist": "Architects",
@@ -46660,12 +46621,6 @@
   {
    "id": "lacuna-coil-in-the-mean-time",
    "song": "In The Mean Time",
-   "artist": "Lacuna Coil",
-   "t": "a1-e2-a2-d3-g3-b3-e4"
-  },
-  {
-   "id": "lacuna-coil-save-me-ai",
-   "song": "Save Me (AI)",
    "artist": "Lacuna Coil",
    "t": "a1-e2-a2-d3-g3-b3-e4"
   },
@@ -48298,12 +48253,6 @@
    "t": "std-cs"
   },
   {
-   "id": "behemoth-nomen-barbarvm-ai",
-   "song": "Nomen Barbarvm(AI)",
-   "artist": "Behemoth",
-   "t": "std-cs"
-  },
-  {
    "id": "behemoth-arcana-hereticae",
    "song": "Arcana Hereticae",
    "artist": "Behemoth",
@@ -48524,12 +48473,6 @@
   {
    "id": "behemoth-off-to-war",
    "song": "Off To War!",
-   "artist": "Behemoth",
-   "t": "std-cs"
-  },
-  {
-   "id": "behemoth-the-deathless-sun-ai",
-   "song": "The Deathless Sun (AI)",
    "artist": "Behemoth",
    "t": "std-cs"
   },
@@ -49726,22 +49669,10 @@
    "t": "std-d"
   },
   {
-   "id": "volbeat-something-else-or-ai",
-   "song": "Something else or... (AI)",
-   "artist": "Volbeat",
-   "t": "std-d"
-  },
-  {
    "id": "volbeat-my-body",
    "song": "My Body",
    "artist": "Volbeat",
    "t": "drop-d"
-  },
-  {
-   "id": "volbeat-alienized-ai",
-   "song": "Alienized (AI)",
-   "artist": "Volbeat",
-   "t": "std-d"
   },
   {
    "id": "volbeat-dagen-for",
@@ -52290,12 +52221,6 @@
    "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
-   "id": "at-the-gates-all-life-ends-ai",
-   "song": "All Life Ends (AI)",
-   "artist": "At the Gates",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
    "id": "at-the-gates-neverwhere",
    "song": "Neverwhere",
    "artist": "At the Gates",
@@ -52402,12 +52327,6 @@
    "song": "Blinded By Fear (seven string",
    "artist": "At the Gates",
    "t": "b1-e2-a2-d3-g3-b3-e4"
-  },
-  {
-   "id": "at-the-gates-cult-of-salvation-ai",
-   "song": "Cult of Salvation (AI)",
-   "artist": "At the Gates",
-   "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
    "id": "at-the-gates-souls-of-the-evil-departed",
@@ -52686,12 +52605,6 @@
    "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
-   "id": "entombed-severe-burns-ai",
-   "song": "Severe Burns ( AI )",
-   "artist": "Entombed",
-   "t": "std-c"
-  },
-  {
    "id": "entombed-morbid-devourment",
    "song": "Morbid Devourment",
    "artist": "Entombed",
@@ -52966,12 +52879,6 @@
    "t": "std-cs"
   },
   {
-   "id": "the-haunted-the-stain-ai",
-   "song": "The Stain (AI)",
-   "artist": "The Haunted",
-   "t": "std-cs"
-  },
-  {
    "id": "the-haunted-liquid-burns",
    "song": "Liquid Burns",
    "artist": "The Haunted",
@@ -53054,12 +52961,6 @@
    "song": "Acorazados",
    "artist": "Carajo",
    "t": "as1-f2-as2-ds3-g3-c4"
-  },
-  {
-   "id": "carajo-chico-granada-ia",
-   "song": "Chico Granada (IA)",
-   "artist": "Carajo",
-   "t": "drop-c"
   },
   {
    "id": "carajo-hacerse-cargo",
@@ -53950,12 +53851,6 @@
    "t": "drop-d"
   },
   {
-   "id": "krisiun-blood-of-lions-ai",
-   "song": "Blood of lions (AI)",
-   "artist": "Krisiun",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
    "id": "krisiun-ageless-venomous",
    "song": "Ageless Venomous",
    "artist": "Krisiun",
@@ -54002,12 +53897,6 @@
    "song": "Bloodcraft",
    "artist": "Krisiun",
    "t": "std-cs"
-  },
-  {
-   "id": "krisiun-scourge-of-the-enthroned-ai",
-   "song": "Scourge of The Enthroned (AI)",
-   "artist": "Krisiun",
-   "t": "b1-e2-a2-d3-g3-b3-e4"
   },
   {
    "id": "krisiun-cursed-scrolls",
@@ -55244,12 +55133,6 @@
   {
    "id": "black-sabbath-lonely-is-the-word-ai",
    "song": "Lonely Is the Word AI",
-   "artist": "Black Sabbath",
-   "t": "std-eb"
-  },
-  {
-   "id": "black-sabbath-kiss-of-death-ai",
-   "song": "Kiss Of Death (AI)",
    "artist": "Black Sabbath",
    "t": "std-eb"
   },
@@ -57320,12 +57203,6 @@
    "t": "std-d"
   },
   {
-   "id": "gojira-possessed-ep-pre-gojira-ai",
-   "song": "Possessed EP (Pre-Gojira) (AI)",
-   "artist": "Gojira",
-   "t": "std-d"
-  },
-  {
    "id": "gojira-over-de-flow-saint-hubert",
    "song": "over de flow saint hubert",
    "artist": "Gojira",
@@ -58962,12 +58839,6 @@
    "song": "Ever Be",
    "artist": "Korn",
    "t": "korn-a-7"
-  },
-  {
-   "id": "korn-this-loss-ai",
-   "song": "This Loss (AI)",
-   "artist": "Korn",
-   "t": "drop-a"
   },
   {
    "id": "korn-haze",
@@ -66186,12 +66057,6 @@
    "c": 1
   },
   {
-   "id": "vildhjarta-dont-fail-me-now-lady-luck-ai",
-   "song": "Don't Fail Me Now (Lady Luck) (AI)",
-   "artist": "Vildhjarta",
-   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
-  },
-  {
    "id": "volbeat-room-24-better-version",
    "song": "Room 24",
    "artist": "Volbeat",
@@ -66572,12 +66437,6 @@
   {
    "id": "psiheya-zvezda-z-vezde-1186553",
    "song": "Звезда з вездe",
-   "artist": "Психея",
-   "t": "drop-b"
-  },
-  {
-   "id": "psiheya-zvezda-rok-n-rolla-ai",
-   "song": "Звезда рок-н-ролла (AI)",
    "artist": "Психея",
    "t": "drop-b"
   },
@@ -67230,6 +67089,3572 @@
    "song": "Evergreen",
    "artist": "Aphasia",
    "t": "d1-a1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "soulfly-jumpdafuckup",
+   "song": "Jumpdafuckup",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-no-hope-no-fear",
+   "song": "No Hope = No Fear",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-seek-n-strike",
+   "song": "Seek 'n' Strike",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-back-to-the-primitive",
+   "song": "Back To The Primitive",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-eye-for-an-eye",
+   "song": "Eye For An Eye",
+   "artist": "Soulfly",
+   "t": "g1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "soulfly-bleed",
+   "song": "Bleed",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-prophecy",
+   "song": "Prophecy",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "soulfly-pain",
+   "song": "Pain",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-ritual",
+   "song": "Ritual",
+   "artist": "Soulfly",
+   "t": "drop-a"
+  },
+  {
+   "id": "soulfly-living-sacrifice",
+   "song": "Living Sacrifice",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-in-the-meantime",
+   "song": "In The Meantime",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-kingdom",
+   "song": "Kingdom",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-son-song",
+   "song": "Son Song",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-fly-high",
+   "song": "Fly High",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-babylon",
+   "song": "Babylon",
+   "artist": "Soulfly",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "soulfly-terrorist",
+   "song": "Terrorist",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-blood-fire-war-hate",
+   "song": "Blood Fire War Hate",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-plata-o-plomo",
+   "song": "Plata O Plomo",
+   "artist": "Soulfly",
+   "t": "drop-b",
+   "alts": [
+    "b1-e2-a2-d3-fs3-b3",
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "soulfly-umbabarauma",
+   "song": "Umbabarauma",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-arise-again",
+   "song": "Arise Again",
+   "artist": "Soulfly",
+   "t": "std-cs"
+  },
+  {
+   "id": "soulfly-bring-it",
+   "song": "Bring It",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-defeat-u",
+   "song": "Defeat U",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-bleak",
+   "song": "Bleak",
+   "artist": "Soulfly",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "soulfly-sodomites",
+   "song": "Sodomites",
+   "artist": "Soulfly",
+   "t": "drop-c"
+  },
+  {
+   "id": "soulfly-no",
+   "song": "No",
+   "artist": "Soulfly",
+   "t": "gs1-cs2-fs2-b2-ds3-gs3"
+  },
+  {
+   "id": "soulfly-world-scum",
+   "song": "World Scum",
+   "artist": "Soulfly",
+   "t": "as1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4",
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "soulfly-boom",
+   "song": "Boom",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-the-prophet",
+   "song": "The Prophet.",
+   "artist": "Soulfly",
+   "t": "a1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "soulfly-no-pain-no-power-full",
+   "song": "No Pain = No Power",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-fire",
+   "song": "Fire",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-we-sold-our-souls-to-metal",
+   "song": "We Sold Our Souls To Metal",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-archangel",
+   "song": "Archangel",
+   "artist": "Soulfly",
+   "t": "drop-a"
+  },
+  {
+   "id": "soulfly-carved-inside",
+   "song": "Carved Inside",
+   "artist": "Soulfly",
+   "t": "drop-cs"
+  },
+  {
+   "id": "soulfly-fuel-the-hate",
+   "song": "Fuel The Hate",
+   "artist": "Soulfly",
+   "t": "std-cs"
+  },
+  {
+   "id": "soulfly-touching-the-void",
+   "song": "Touching the Void",
+   "artist": "Soulfly",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "soulfly-storm-the-gates",
+   "song": "Storm The Gates",
+   "artist": "Soulfly",
+   "t": "a1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "soulfly-downstroy",
+   "song": "Downstroy",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-under-the-sun",
+   "song": "Under the Sun",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-bumbklaatt",
+   "song": "Bumbklaatt",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "soulfly-rise-of-the-fallen",
+   "song": "Rise Of The Fallen",
+   "artist": "Soulfly",
+   "t": "std-c",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "soulfly-i-and-i",
+   "song": "I And I",
+   "artist": "Soulfly",
+   "t": "c2-g2-c3-g3-c4-e4"
+  },
+  {
+   "id": "soulfly-great-depression",
+   "song": "Great Depression",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-ishtar-rising-2",
+   "song": "Ishtar Rising 2",
+   "artist": "Soulfly",
+   "t": "drop-a"
+  },
+  {
+   "id": "soulfly-demonized",
+   "song": "Demonized",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-ecstasy-of-gold",
+   "song": "Ecstasy Of Gold",
+   "artist": "Soulfly",
+   "t": "std-c"
+  },
+  {
+   "id": "soulfly-one-nation",
+   "song": "One Nation",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-unleash",
+   "song": "Unleash",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-soulfly-iv",
+   "song": "IV",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-filth-upon-filth",
+   "song": "Filth Upon Filth",
+   "artist": "Soulfly",
+   "t": "drop-cs"
+  },
+  {
+   "id": "soulfly-superstition-ai",
+   "song": "Superstition AI",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-enter-faith",
+   "song": "Enter Faith",
+   "artist": "Soulfly",
+   "t": "drop-a"
+  },
+  {
+   "id": "soulfly-under-rapture",
+   "song": "Under Rapture",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-bloodshed-feat-igor-amadeus-cavalera",
+   "song": "Bloodshed (feat. Igor Amadeus Cavalera)",
+   "artist": "Soulfly",
+   "t": "a1-e2-a2-d3-g3-b3"
+  },
+  {
+   "id": "soulfly-i-believe",
+   "song": "I Believe",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-soulfly-v",
+   "song": "Soulfly V",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-ayatollah-of-rock-n-rolla",
+   "song": "Ayatollah of Rock 'N' Rolla",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-innerspirit",
+   "song": "Innerspirit",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-spiral",
+   "song": "Spiral",
+   "artist": "Soulfly",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "soulfly-american-steel",
+   "song": "American Steel",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-execution-style",
+   "song": "Execution Style",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-call-to-arms",
+   "song": "Call To Arms",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "soulfly-gladiator",
+   "song": "Gladiator",
+   "artist": "Soulfly",
+   "t": "as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "soulfly-enemy-ghost",
+   "song": "Enemy Ghost",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-shamash",
+   "song": "Shamash",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-chama",
+   "song": "Chama",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-the-summoning",
+   "song": "The Summoning",
+   "artist": "Soulfly",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "soulfly-bloodbath-and-beyond",
+   "song": "Bloodbath And Beyond",
+   "artist": "Soulfly",
+   "t": "std-d"
+  },
+  {
+   "id": "soulfly-brasil",
+   "song": "Brasil",
+   "artist": "Soulfly",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "soulfly-first-commandment",
+   "song": "first commandment",
+   "artist": "Soulfly",
+   "t": "std-eb"
+  },
+  {
+   "id": "soulfly-titans",
+   "song": "Titans",
+   "artist": "Soulfly",
+   "t": "drop-b"
+  },
+  {
+   "id": "soulfly-master-of-savagery",
+   "song": "Master Of Savagery",
+   "artist": "Soulfly",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "soulfly-dead-behind-the-eyes-feat-randy-blythe",
+   "song": "Dead Behind The Eyes feat. Randy Blythe",
+   "artist": "Soulfly",
+   "t": "drop-d"
+  },
+  {
+   "id": "cavalera-conspiracy-warlord",
+   "song": "Warlord",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "cavalera-conspiracy-must-kill",
+   "song": "Must Kill",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "drop-b"
+   ],
+   "c": 1
+  },
+  {
+   "id": "cavalera-conspiracy-blunt-force-trauma",
+   "song": "Blunt Force Trauma",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "cavalera-conspiracy-killing-inside",
+   "song": "Killing Inside",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "cavalera-conspiracy-inflikted",
+   "song": "Inflikted",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "drop-b"
+   ],
+   "c": 1
+  },
+  {
+   "id": "cavalera-conspiracy-i-speak-hate",
+   "song": "I Speak Hate",
+   "artist": "Cavalera Conspiracy",
+   "t": "drop-b"
+  },
+  {
+   "id": "cavalera-conspiracy-sanctuary",
+   "song": "Sanctuary",
+   "artist": "Cavalera Conspiracy",
+   "t": "std-d"
+  },
+  {
+   "id": "cavalera-conspiracy-ultra-violent",
+   "song": "Ultra-Violent",
+   "artist": "Cavalera Conspiracy",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "cavalera-conspiracy-lynch-mob",
+   "song": "Lynch Mob",
+   "artist": "Cavalera Conspiracy",
+   "t": "drop-c"
+  },
+  {
+   "id": "cavalera-conspiracy-spectral-war",
+   "song": "Spectral War",
+   "artist": "Cavalera Conspiracy",
+   "t": "std-d"
+  },
+  {
+   "id": "cavalera-conspiracy-bloodbrawl",
+   "song": "Bloodbrawl",
+   "artist": "Cavalera Conspiracy",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "cavalera-conspiracy-hearts-of-darkness",
+   "song": "Hearts of Darkness",
+   "artist": "Cavalera Conspiracy",
+   "t": "std-d"
+  },
+  {
+   "id": "cavalera-conspiracy-terrorize",
+   "song": "Terrorize",
+   "artist": "Cavalera Conspiracy",
+   "t": "drop-b"
+  },
+  {
+   "id": "cavalera-conspiracy-target",
+   "song": "Target",
+   "artist": "Cavalera Conspiracy",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-midnight-queen",
+   "song": "Midnight Queen",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-screeches-from-the-silence",
+   "song": "Screeches From The Silence",
+   "artist": "Sarcófago",
+   "t": "std-eb"
+  },
+  {
+   "id": "sarcofago-piercings",
+   "song": "Piercings",
+   "artist": "Sarcófago",
+   "t": "std-eb"
+  },
+  {
+   "id": "sarcofago-the-laws-of-scourge",
+   "song": "The Laws Of Scourge",
+   "artist": "Sarcófago",
+   "t": "d2-g2-c3-f3-g3-d4",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "sarcofago-crush-kill-destroy",
+   "song": "Crush, Kill, Destroy",
+   "artist": "Sarcófago",
+   "t": "std-eb"
+  },
+  {
+   "id": "sarcofago-little-julie",
+   "song": "Little Julie",
+   "artist": "Sarcófago",
+   "t": "std-eb"
+  },
+  {
+   "id": "sarcofago-the-black-vomit",
+   "song": "The Black Vomit",
+   "artist": "Sarcófago",
+   "t": "std-eb"
+  },
+  {
+   "id": "sarcofago-secret-of-a-widow",
+   "song": "Secret Of A Widow",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-hate",
+   "song": "Hate",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-secrets-of-a-widow",
+   "song": "Secrets Of A Widow",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-prelude-to-a-suicide",
+   "song": "Prelude To A Suicide",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-the-worst",
+   "song": "The Worst",
+   "artist": "Sarcófago",
+   "t": "std-c"
+  },
+  {
+   "id": "sarcofago-midnight-queeen",
+   "song": "Midnight Queeen",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "sarcofago-sex-drinks-and-metal",
+   "song": "Sex, Drinks And Metal",
+   "artist": "Sarcófago",
+   "t": "std-d"
+  },
+  {
+   "id": "korzus-truth",
+   "song": "Truth",
+   "artist": "Korzus",
+   "t": "std-c"
+  },
+  {
+   "id": "korzus-correria",
+   "song": "Correria",
+   "artist": "Korzus",
+   "t": "drop-c"
+  },
+  {
+   "id": "korzus-no-light-within",
+   "song": "NO LIGHT WITHIN",
+   "artist": "Korzus",
+   "t": "drop-c"
+  },
+  {
+   "id": "korzus-never-die",
+   "song": "Never Die",
+   "artist": "Korzus",
+   "t": "std-c"
+  },
+  {
+   "id": "korzus-internally",
+   "song": "Internally",
+   "artist": "Korzus",
+   "t": "std-eb"
+  },
+  {
+   "id": "korzus-what-are-you-looking-for",
+   "song": "What Are You Looking For",
+   "artist": "Korzus",
+   "t": "std-c"
+  },
+  {
+   "id": "korzus-guilty-silence",
+   "song": "Guilty Silence",
+   "artist": "Korzus",
+   "t": "std-c"
+  },
+  {
+   "id": "korzus-raise-your-soul",
+   "song": "Raise Your Soul",
+   "artist": "Korzus",
+   "t": "std-c"
+  },
+  {
+   "id": "torture-squad-raise-your-horns",
+   "song": "Raise Your Horns",
+   "artist": "Torture Squad",
+   "t": "std-d"
+  },
+  {
+   "id": "torture-squad-horror-and-torture",
+   "song": "Horror and Torture",
+   "artist": "Torture Squad",
+   "t": "std-cs"
+  },
+  {
+   "id": "torture-squad-pandemonium",
+   "song": "\"Pandemonium\"",
+   "artist": "Torture Squad",
+   "t": "std-cs"
+  },
+  {
+   "id": "torture-squad-flukeman",
+   "song": "Flukeman",
+   "artist": "Torture Squad",
+   "t": "std-d"
+  },
+  {
+   "id": "matanza-whisky-para-um-condenado",
+   "song": "Whisky para um condenado",
+   "artist": "Matanza",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-eu-quero-ver-o-oco",
+   "song": "Eu Quero Ver o Oco",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-tora-tora",
+   "song": "Tora Tora",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-andar-na-pedra",
+   "song": "Andar Na Pedra",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-esporrei-na-manivela",
+   "song": "Esporrei Na Manivela",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-baile-funky",
+   "song": "Baile Funky",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-rebelde-sem-causa",
+   "song": "Rebelde Sem Causa",
+   "artist": "Raimundos",
+   "t": "std-eb"
+  },
+  {
+   "id": "raimundos-kavookavala",
+   "song": "Kavookavala",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-fome-do-cao",
+   "song": "Fome do Cão",
+   "artist": "Raimundos",
+   "t": "drop-cs"
+  },
+  {
+   "id": "raimundos-deixa-eu-falar-certo",
+   "song": "Deixa eu Falar",
+   "artist": "Raimundos",
+   "t": "drop-b"
+  },
+  {
+   "id": "raimundos-eu-quero",
+   "song": "Eu Quero",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-wipe-out",
+   "song": "Wipe Out",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-o-toco",
+   "song": "O Toco",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-poquito-mas-healthy-food",
+   "song": "Poquito Más (Healthy Food)",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "raimundos-um-doce",
+   "song": "UM DOCE",
+   "artist": "Raimundos",
+   "t": "drop-cs"
+  },
+  {
+   "id": "raimundos-jaws",
+   "song": "Jaws.",
+   "artist": "Raimundos",
+   "t": "std-cs"
+  },
+  {
+   "id": "raimundos-fique-fique",
+   "song": "Fique! Fique!",
+   "artist": "Raimundos",
+   "t": "drop-d"
+  },
+  {
+   "id": "charlie-brown-jr-me-encontra-official",
+   "song": "Me Encontra",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-lugar-ao-sol",
+   "song": "Lugar Ao Sol",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-so-por-uma-noite",
+   "song": "So Por Uma Noite",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-zoio-de-lula",
+   "song": "Zoio De Lula",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-papo-reto",
+   "song": "Papo Reto",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-nao-viva-em-vao",
+   "song": "Não Viva em Vão",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-pontes-indestrutiveis",
+   "song": "Pontes Indestrutíveis",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-lutar-pelo-que-e-meu",
+   "song": "Lutar Pelo Que É Meu",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-te-levar",
+   "song": "Te Levar",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-dona-do-meu-pensamento-v2-0",
+   "song": "Dona do Meu Pensamento v2.0",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-hoje-sou-eu-que-nao-mais-te-quero",
+   "song": "Hoje Sou Eu Que Não Mais Te Quero",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-tudo-o-que-ela-gosta-de-escutar",
+   "song": "Tudo O Que Ela Gosta De Escutar",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-proibida-pra-mim",
+   "song": "Proibida Pra Mim",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-rubao-o-dono-do-mundo",
+   "song": "Rubão, O Dono do Mundo",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-como-tudo-deve-ser",
+   "song": "Como Tudo Deve Ser",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-dias-de-luta-dias-de-gloria",
+   "song": "Dias de Luta, Dias de Glória",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-champanhe-e-agua-benta",
+   "song": "Champanhe E Água Benta",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-tamo-ai-na-atividade",
+   "song": "Tamo Aí Na Atividade",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-meu-novo-mundo",
+   "song": "Meu Novo Mundo",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-quinta-feira",
+   "song": "Quinta-Feira",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-nao-deixa-o-mar-te-engolir",
+   "song": "Não deixa o mar te engolir",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-e-quente",
+   "song": "É Quente",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-ela-vai-voltar",
+   "song": "Ela Vai Voltar",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-bocas-ordinarias-guerrilhas",
+   "song": "Bocas Ordinárias, Guerrilhas",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-eu-protesto",
+   "song": "Eu Protesto",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-dona-do-meu-pensamento-completa",
+   "song": "Dona do Meu Pensamento",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-viver-dias-de-sol",
+   "song": "Viver Dias de Sol",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-nao-deixe-o-mar-te-engolir",
+   "song": "Não Deixe O Mar Te Engolir",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-o-universo-a-nosso-favor",
+   "song": "O Universo A Nosso Favor",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-transar-no-escuro",
+   "song": "Transar No Escuro",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-quebra-mar",
+   "song": "Quebra-Mar",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-be-myself",
+   "song": "Be Myself",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-cheia-de-vida",
+   "song": "Cheia de Vida",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-o-preco",
+   "song": "O Preço",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-cidade-grande",
+   "song": "Cidade Grande",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-hoje-de-noite",
+   "song": "Hoje De Noite",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-vicios-e-virtudes",
+   "song": "Vícios e Virtudes",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-camisa-preta",
+   "song": "Camisa Preta",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-sou-quem-eu-sou",
+   "song": "Sou Quem Eu Sou",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-onde-nao-existe-a-paz-nao-existe-o-amor",
+   "song": "Onde Não Existe A Paz Não Existe O Amor",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-beco-sem-saida",
+   "song": "Beco sem Saída",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-tarja-preta",
+   "song": "Tarja Preta",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-pipeline",
+   "song": "Pipeline",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-tudo-mudar",
+   "song": "Tudo Mudar",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-333",
+   "song": "333",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-vou-me-embriagar-de-voce",
+   "song": "Vou Me Embriagar De Você",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-somos-poucos-mas-somos-loucos-ia",
+   "song": "Somos Poucos Mas Somos Loucos - IA",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-camisa-10-joga-bola-ate-na-chuva",
+   "song": "Camisa 10 Joga Bola Até Na Chuva",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-o-futuro-e-um-labirinto-pra-quem-nao-sabe-o-que-quer",
+   "song": "O Futuro É Um Labirinto Pra Quem Não Sabe O Que Quer",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-vida-de-magnata",
+   "song": "Vida De Magnata",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-um-dia-a-gente-se-encontra",
+   "song": "Um Dia A Gente Se Encontra",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-contrastes-da-vida",
+   "song": "Contrastes Da Vida",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-rockstar",
+   "song": "Rockstar",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-someone-to-call",
+   "song": "Someone To Call",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-voce-vai-de-limusine-eu-vou-de-trem",
+   "song": "Você Vai De Limusine, Eu Vou De Trem",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-somos-poucos-mas-somos-loucos",
+   "song": "Somos Poucos Mas Somos Loucos",
+   "artist": "Charlie Brown Jr.",
+   "t": "cs2-gs2-cs3-gs3-b3-ds4",
+   "alts": [
+    "gs1-ds2-gs2-ds3-fs3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "charlie-brown-jr-o-penetra",
+   "song": "O Penetra",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-hoje-sou-eu-que-nao-mais-te-quero-cbjr",
+   "song": "Hoje Sou Eu Que Não Mais Te Quero - CBJR",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-comigo-ninguem-tira-onda",
+   "song": "Comigo Ninguém Tira Onda",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-eu-vim-de-santos-sou-charlie-brown",
+   "song": "Eu Vim De Santos Sou Charlie Brown",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-do-surf",
+   "song": "Do Surf",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-te-levar-daqui",
+   "song": "Te Levar Daqui",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-liberdade-acima-de-tudo",
+   "song": "Liberdade Acima de Tudo",
+   "artist": "Charlie Brown Jr.",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "charlie-brown-jr-quem-deu-entrada-pra-subir-fdp",
+   "song": "Quem Deu Entrada Pra Subir?(FDP)",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-fichado",
+   "song": "Fichado",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "charlie-brown-jr-samba-makossa",
+   "song": "Samba Makossa",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-skate-vibration",
+   "song": "Skate Vibration",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-aquela-paz-official",
+   "song": "Aquela Paz",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-samba-triste",
+   "song": "Samba Triste",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-resolve-meu-problema-ai-solo",
+   "song": "Resolve Meu Problema Aí (solo)",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-descubra-o-que-ha-de-errado-com-voce",
+   "song": "Descubra O Que Há De Errado Com Você",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-se-for-minha-ultima-vez-a-utilma-musica-do-chorao",
+   "song": "se for minha última vez \"A ÚTILMA MÚSICA DO CHORÃO\"",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-nao-fure-os-olhos-da-verdade",
+   "song": "Não Fure Os Olhos da Verdade",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-resolve-o-meu-problema-ai",
+   "song": "Resolve O Meu Problema Aí",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-papo-reto-3",
+   "song": "Papo Reto 3",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-i-feel-so-good-today",
+   "song": "I Feel So Good Today",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-mantenha-a-duvida",
+   "song": "Mantenha a duvida",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-ritmo-ritual-e-responsa-2",
+   "song": "Ritmo, Ritual E Responsa 2",
+   "artist": "Charlie Brown Jr.",
+   "t": "std-eb"
+  },
+  {
+   "id": "charlie-brown-jr-lixo-e-o-luxo",
+   "song": "Lixo e o Luxo",
+   "artist": "Charlie Brown Jr.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "cpm-22-estranho-no-espelho",
+   "song": "Estranho No Espelho",
+   "artist": "CPM 22",
+   "t": "drop-d"
+  },
+  {
+   "id": "fresno-milonga",
+   "song": "Milonga",
+   "artist": "Fresno",
+   "t": "std-eb"
+  },
+  {
+   "id": "fresno-desde-quando-voce-se-foi",
+   "song": "Desde Quando Você Se Foi",
+   "artist": "Fresno",
+   "t": "std-eb",
+   "alts": [
+    "drop-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "fresno-evaporar",
+   "song": "Evaporar",
+   "artist": "Fresno",
+   "t": "drop-d"
+  },
+  {
+   "id": "fresno-polo",
+   "song": "Polo",
+   "artist": "Fresno",
+   "t": "std-eb"
+  },
+  {
+   "id": "fresno-revanche",
+   "song": "Revanche",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-stonehenge",
+   "song": "Stonehenge",
+   "artist": "Fresno",
+   "t": "std-eb"
+  },
+  {
+   "id": "fresno-crocodilia",
+   "song": "Crocodilia",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-relato-de-um-homem-de-bom-coracao",
+   "song": "Relato de Um Homem de Bom Coração",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-tentar-de-novo-e-de-novo",
+   "song": "Tentar De Novo e De Novo",
+   "artist": "Fresno",
+   "t": "drop-d"
+  },
+  {
+   "id": "fresno-eu-sei",
+   "song": "Eu Sei",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-redencao",
+   "song": "Redenção",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-05-diga-parte-2",
+   "song": "05 - Diga, parte 2",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-diga-pt-2",
+   "song": "Diga PT. 2",
+   "artist": "Fresno",
+   "t": "std-eb"
+  },
+  {
+   "id": "fresno-uma-musica",
+   "song": "Uma Música",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-maior-que-as-muralhas",
+   "song": "Maior que as muralhas",
+   "artist": "Fresno",
+   "t": "drop-cs"
+  },
+  {
+   "id": "fresno-sobria",
+   "song": "Sóbria",
+   "artist": "Fresno",
+   "t": "drop-d"
+  },
+  {
+   "id": "fresno-02-infinito",
+   "song": "02 - Infinito",
+   "artist": "Fresno",
+   "t": "drop-d"
+  },
+  {
+   "id": "nx-zero-so-rezo",
+   "song": "Só Rezo",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-alem-de-mim",
+   "song": "Além de Mim",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-razoes-e-emocoes",
+   "song": "Razões e Emoções",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-pela-ultima-vez",
+   "song": "Pela Ultima Vez",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-daqui-pra-frente",
+   "song": "Daqui Pra Frente",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-consequencia",
+   "song": "Consequência",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-hoje-o-ceu-abriu",
+   "song": "Hoje O Céu Abriu",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-cedo-ou-tarde",
+   "song": "Cedo Ou Tarde",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-mare",
+   "song": "Maré",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-nao-e-normal",
+   "song": "Não É Normal",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-razoes-e-emooes",
+   "song": "Razoes E Emooes",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-mentiras-e-fracassos",
+   "song": "Mentiras e Fracassos",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-bem-ou-mal",
+   "song": "Bem Ou Mal",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-so-rezo-album-version",
+   "song": "Só Rezo - Album Version",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-espero-a-minha-vez-completa",
+   "song": "Espero a Minha Vez",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-incompleta-2",
+   "song": "Incompleta 2",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-ligacao",
+   "song": "Ligação",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-inimigo-invisivel",
+   "song": "inimigo invisivel",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-silencio",
+   "song": "Silêncio",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-entre-nos-dois",
+   "song": "Entre Nós Dois",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "nx-zero-uma-gota-no-oceano",
+   "song": "Uma Gota No Oceano",
+   "artist": "NX Zero",
+   "t": "std-eb"
+  },
+  {
+   "id": "pitty-admiravel-chip-novo",
+   "song": "Admirável Chip Novo",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-na-sua-estante",
+   "song": "Na Sua Estante",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-mascara",
+   "song": "Máscara",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-calice",
+   "song": "Cálice",
+   "artist": "Pitty",
+   "t": "std-eb"
+  },
+  {
+   "id": "pitty-admiravel-chip-novo-revisada",
+   "song": "Admiravel Chip Novo - Revisada",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-brinquedo-torto",
+   "song": "Brinquedo Torto",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-quem-vai-queimar",
+   "song": "Quem Vai Queimar?",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-sobremesa",
+   "song": "Sobremesa",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-anacronico-ia",
+   "song": "Anacrônico IA",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "pitty-de-voce",
+   "song": "De Você",
+   "artist": "Pitty",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-queda-livre",
+   "song": "Queda Livre",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-voce",
+   "song": "Você",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-a-urgencia",
+   "song": "A Urgência",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-tao-iguais",
+   "song": "Tão Iguais",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-destruir-tudo-de-novo",
+   "song": "Destruir Tudo De Novo",
+   "artist": "Dead Fish",
+   "t": "drop-c"
+  },
+  {
+   "id": "dead-fish-autonomia",
+   "song": "Autonomia",
+   "artist": "Dead Fish",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dead-fish-sangue-nas-maos",
+   "song": "Sangue nas Mãos",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-49",
+   "song": "49",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-tudo",
+   "song": "Tudo",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-vitoria",
+   "song": "Vitória",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-912-passos",
+   "song": "912 Passos",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-um-homem-so",
+   "song": "Um Homem Só",
+   "artist": "Dead Fish",
+   "t": "drop-c"
+  },
+  {
+   "id": "dead-fish-sombras-da-caverna",
+   "song": "Sombras Da Caverna",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-re-aprender-a-andar",
+   "song": "Re-aprender a Andar",
+   "artist": "Dead Fish",
+   "t": "drop-d"
+  },
+  {
+   "id": "dead-fish-zero-e-um",
+   "song": "Zero e Um",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-asfalto",
+   "song": "Asfalto",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-descendo-as-escadas",
+   "song": "Descendo As Escadas",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-obrigacao",
+   "song": "Obrigação",
+   "artist": "Dead Fish",
+   "t": "std-d"
+  },
+  {
+   "id": "dead-fish-nao-termina-assim",
+   "song": "Não Termina Assim",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "dead-fish-doutrina-do-choque",
+   "song": "Doutrina Do Choque",
+   "artist": "Dead Fish",
+   "t": "std-eb"
+  },
+  {
+   "id": "shaman-for-tomorrow",
+   "song": "For Tomorrow",
+   "artist": "Shaman",
+   "t": "std-d"
+  },
+  {
+   "id": "shaman-pride",
+   "song": "Pride",
+   "artist": "Shaman",
+   "t": "std-eb"
+  },
+  {
+   "id": "shaman-turn-away",
+   "song": "Turn Away",
+   "artist": "Shaman",
+   "t": "drop-c"
+  },
+  {
+   "id": "shaman-blind-spell",
+   "song": "Blind Spell",
+   "artist": "Shaman",
+   "t": "drop-d"
+  },
+  {
+   "id": "shaman-ii-lea-voibmi",
+   "song": "Ii Lea Voibmi",
+   "artist": "Shaman",
+   "t": "fs2-b2-e3-a3-cs4-fs4"
+  },
+  {
+   "id": "almah-birds-of-prey-completa",
+   "song": "Birds Of Prey",
+   "artist": "Almah",
+   "t": "drop-cs"
+  },
+  {
+   "id": "almah-beyond-tomorrow-riffs",
+   "song": "Beyond Tomorrow Riffs",
+   "artist": "Almah",
+   "t": "b1-d2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "almah-torn-solo",
+   "song": "Torn",
+   "artist": "Almah",
+   "t": "drop-d"
+  },
+  {
+   "id": "almah-trace-of-trait",
+   "song": "Trace of Trait",
+   "artist": "Almah",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "almah-scary-zone",
+   "song": "SCARY ZONE",
+   "artist": "Almah",
+   "t": "drop-cs"
+  },
+  {
+   "id": "almah-take-back-your-spell",
+   "song": "Take Back Your Spell",
+   "artist": "Almah",
+   "t": "std-eb"
+  },
+  {
+   "id": "almah-king",
+   "song": "King",
+   "artist": "Almah",
+   "t": "cs2-gs2-d3-g3-b3-e4"
+  },
+  {
+   "id": "viper-thunderhorse",
+   "song": "Thunderhorse",
+   "artist": "Viper",
+   "t": "std-c"
+  },
+  {
+   "id": "viper-the-spreading-soul-forever",
+   "song": "The Spreading Soul Forever",
+   "artist": "Viper",
+   "t": "std-eb",
+   "alts": [
+    "ds2-gs2-ds3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "dr-sin-emotional-catastrophe",
+   "song": "Emotional Catastrophe",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-fire",
+   "song": "Fire",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-zero",
+   "song": "Zero",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-futebol-mulher-rockn-roll",
+   "song": "Futebol, Mulher & Rock'n Roll",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-have-you-ever-seen-the-rain",
+   "song": "Have you ever seen the rain",
+   "artist": "Dr. Sin",
+   "t": "drop-cs"
+  },
+  {
+   "id": "dr-sin-suffocation",
+   "song": "Suffocation",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-down-in-the-trenches",
+   "song": "Down in the Trenches",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-time-after-time",
+   "song": "Time After Time",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-futebol-mulher-e-rock-roll",
+   "song": "Futebol, Mulher e Rock Roll",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-you-stole-my-heart",
+   "song": "You Stole My Heart",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-stone-cold-dead",
+   "song": "Stone Cold Dead",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-howlin-in-the-shadows",
+   "song": "Howlin' in the Shadows",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-the-fire-burns-cold",
+   "song": "The Fire Burns Cold",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-valley-of-dreams",
+   "song": "Valley of Dreams",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-someone-to-blame",
+   "song": "Someone to Blame",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-hey-you",
+   "song": "Hey You",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-eternity",
+   "song": "Eternity",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-sometimes",
+   "song": "Sometimes",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-karma",
+   "song": "Karma",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "dr-sin-dr-sin",
+   "song": "Dr. Sin",
+   "artist": "Dr. Sin",
+   "t": "std-eb"
+  },
+  {
+   "id": "ratos-de-porao-expresso-da-escravidao",
+   "song": "Expresso Da Escravidão",
+   "artist": "Ratos de Porão",
+   "t": "std-d"
+  },
+  {
+   "id": "a-n-i-m-a-l-el-nuevo-camino-del-hombre",
+   "song": "El Nuevo Camino Del Hombre",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-lejos-de-casa",
+   "song": "Lejos de casa",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-solo-por-ser-indios",
+   "song": "Solo Por Ser Indios",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-d"
+  },
+  {
+   "id": "a-n-i-m-a-l-hijos-del-sol",
+   "song": "Hijos del sol",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-d"
+  },
+  {
+   "id": "a-n-i-m-a-l-aura",
+   "song": "Aura",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-pueblos-erguidos",
+   "song": "Pueblos erguidos",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-milagro",
+   "song": "Milagro",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-antes-de-morir",
+   "song": "Antes de morir",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-fin-de-un-mundo-enfermo",
+   "song": "Fin de un mundo enfermo",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-cs"
+  },
+  {
+   "id": "a-n-i-m-a-l-gracias-doy",
+   "song": "Gracias doy",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-lo-mejor-de-lo-peor",
+   "song": "Lo mejor de lo peor",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-mi-barrio",
+   "song": "Mi Barrio",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-cs"
+  },
+  {
+   "id": "a-n-i-m-a-l-vamos-de-pie",
+   "song": "Vamos de Pie",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-sobrevivencia",
+   "song": "Sobrevivencia",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-cs"
+  },
+  {
+   "id": "a-n-i-m-a-l-combativo",
+   "song": "Combativo",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-muriendo-en-su-interior",
+   "song": "Muriendo en su interior",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-cs"
+  },
+  {
+   "id": "a-n-i-m-a-l-esperando-el-final",
+   "song": "Esperando El Final",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-d"
+  },
+  {
+   "id": "a-n-i-m-a-l-guerra-de-razas",
+   "song": "Guerra de razas",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-c"
+  },
+  {
+   "id": "a-n-i-m-a-l-revolucion",
+   "song": "Revolución",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-familia-es-la-oportunidad",
+   "song": "Familia(es la oportunidad)",
+   "artist": "A.N.I.M.A.L.",
+   "t": "drop-a"
+  },
+  {
+   "id": "a-n-i-m-a-l-esclavo-de-ilusion",
+   "song": "Esclavo de Ilusión",
+   "artist": "A.N.I.M.A.L.",
+   "t": "std-eb"
+  },
+  {
+   "id": "almafuerte-muere-monstruo-muere",
+   "song": "Muere Monstruo, Muere",
+   "artist": "Almafuerte",
+   "t": "drop-d"
+  },
+  {
+   "id": "almafuerte-el-visitante",
+   "song": "El Visitante",
+   "artist": "Almafuerte",
+   "t": "drop-d"
+  },
+  {
+   "id": "almafuerte-mi-credo",
+   "song": "Mi Credo",
+   "artist": "Almafuerte",
+   "t": "std-eb"
+  },
+  {
+   "id": "almafuerte-yo-traigo-la-semilla",
+   "song": "Yo traigo la semilla",
+   "artist": "Almafuerte",
+   "t": "drop-d"
+  },
+  {
+   "id": "almafuerte-desde-el-oeste",
+   "song": "Desde el Oeste",
+   "artist": "Almafuerte",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-grito-de-pilaga",
+   "song": "Grito de Pilaga",
+   "artist": "Malón",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-bajo-el-dominio-danzante",
+   "song": "Bajo El Dominio Danzante",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-30-000-plegarias",
+   "song": "30.000 Plegarias",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-hipotecado",
+   "song": "Hipotecado",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-nido-de-almas",
+   "song": "Nido De Almas",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-sexooo",
+   "song": "sexooo",
+   "artist": "Malón",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-cicatrizando",
+   "song": "Cicatrizando",
+   "artist": "Malón",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-fuiste-y-seras",
+   "song": "fuiste y seras",
+   "artist": "Malón",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-revolucion-nacional",
+   "song": "Revolucion nacional",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-judas-de-oficio",
+   "song": "Judas de oficio",
+   "artist": "Malón",
+   "t": "drop-d"
+  },
+  {
+   "id": "malon-el-infierno-de-ayer",
+   "song": "El infierno de ayer",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-nuevo-orden-mundial",
+   "song": "Nuevo Orden Mundial",
+   "artist": "Malón",
+   "t": "std-d"
+  },
+  {
+   "id": "malon-devorador-de-suenos",
+   "song": "Devorador De Sueños",
+   "artist": "Malón",
+   "t": "drop-c"
+  },
+  {
+   "id": "catupecu-machu-plan-b-anhelo-de-satisfaccion",
+   "song": "Plan B: Anhelo de Satisfacción",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-y-lo-que-quiero-es-que-pises-sin-el-suelo",
+   "song": "Y Lo Que Quiero Es Que Pises Sin El Suelo",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-a-veces-vuelvo",
+   "song": "A Veces Vuelvo",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-calavera-deforme",
+   "song": "Calavera Deforme",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-magia-veneno-version-encuentro-en-el-estudio",
+   "song": "Magia Veneno (Versión Encuentro en el Estudio)",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-en-los-suenos",
+   "song": "En Los Sueños",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "catupecu-machu-viaje-del-miedo",
+   "song": "Viaje Del Miedo",
+   "artist": "Catupecu Machu",
+   "t": "std-eb"
+  },
+  {
+   "id": "babasonicos-demonomania",
+   "song": "Demonomanía",
+   "artist": "Babasónicos",
+   "t": "drop-d"
+  },
+  {
+   "id": "babasonicos-calmado-matamos-al-venado",
+   "song": "Calmado, Matamos Al Venado",
+   "artist": "Babasónicos",
+   "t": "std-eb"
+  },
+  {
+   "id": "divididos-paisano-de-hurlingham-dropd",
+   "song": "Paisano de Hurlingham DropD",
+   "artist": "Divididos",
+   "t": "drop-d"
+  },
+  {
+   "id": "divididos-casi-estatua",
+   "song": "Casi estatua",
+   "artist": "Divididos",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "divididos-voodoo-chile",
+   "song": "Voodoo Chile",
+   "artist": "Divididos",
+   "t": "std-d"
+  },
+  {
+   "id": "divididos-aliados-en-un-viaje",
+   "song": "Aliados en un viaje",
+   "artist": "Divididos",
+   "t": "drop-d"
+  },
+  {
+   "id": "attaque-77-cual-es-el-precio",
+   "song": "Cuál Es el Precio?",
+   "artist": "Attaque 77",
+   "t": "std-eb"
+  },
+  {
+   "id": "attaque-77-hacelo-por-mi",
+   "song": "Hacelo por mi",
+   "artist": "Attaque 77",
+   "t": "std-eb"
+  },
+  {
+   "id": "eruca-sativa-fuera-o-mas-alla",
+   "song": "Fuera o Más Allá",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "eruca-sativa-nada-salvaje",
+   "song": "Nada Salvaje",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "eruca-sativa-paraiso-en-retro",
+   "song": "Paraíso en Retro",
+   "artist": "Eruca Sativa",
+   "t": "std-d"
+  },
+  {
+   "id": "eruca-sativa-el-balcon",
+   "song": "El Balcón",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "eruca-sativa-para-nadie",
+   "song": "Para Nadie",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "eruca-sativa-agujas",
+   "song": "Agujas",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "eruca-sativa-eco",
+   "song": "Eco",
+   "artist": "Eruca Sativa",
+   "t": "drop-d"
+  },
+  {
+   "id": "massacre-dawn-of-eternity",
+   "song": "Dawn Of Eternity",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-cryptic-realms",
+   "song": "Cryptic Realms",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-biohazard",
+   "song": "Biohazard",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-defeat-remains",
+   "song": "Defeat Remains",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-violence-district",
+   "song": "Violence District",
+   "artist": "Massacre",
+   "t": "drop-c"
+  },
+  {
+   "id": "massacre-chamber-of-ages",
+   "song": "Chamber Of Ages",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-from-beyond",
+   "song": "From Beyond",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-succubus",
+   "song": "Succubus",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-la-reina-de-marte",
+   "song": "La Reina de Marte",
+   "artist": "Massacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "massacre-symbolic-immortality",
+   "song": "Symbolic Immortality...",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-promise",
+   "song": "Promise",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-la-octava-maravilla",
+   "song": "La Octava Maravilla",
+   "artist": "Massacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "massacre-tanto-amor",
+   "song": "Tanto Amor",
+   "artist": "Massacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "massacre-corpsegrinder",
+   "song": "Corpsegrinder",
+   "artist": "Massacre",
+   "t": "std-d"
+  },
+  {
+   "id": "massacre-el-deseo",
+   "song": "El Deseo",
+   "artist": "Massacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "soda-stereo-persiana-americana-gira-me-veras-volver",
+   "song": "Persiana Americana (Gira Me Verás Volver)",
+   "artist": "Soda Stereo",
+   "t": "std-eb"
+  },
+  {
+   "id": "soda-stereo-corazon-delator-gira-me-veras-volver",
+   "song": "Corazon Delator (Gira Me Verás Volver)",
+   "artist": "Soda Stereo",
+   "t": "std-eb"
+  },
+  {
+   "id": "soda-stereo-corazon-delator-mvv",
+   "song": "Corazón Delator MVV",
+   "artist": "Soda Stereo",
+   "t": "std-eb"
+  },
+  {
+   "id": "pentagram-chile-demoniac-possession",
+   "song": "Demoniac Possession",
+   "artist": "Pentagram Chile",
+   "t": "std-d"
+  },
+  {
+   "id": "pentagram-chile-fatal-predictions",
+   "song": "Fatal Predictions",
+   "artist": "Pentagram Chile",
+   "t": "std-eb"
+  },
+  {
+   "id": "pentagram-chile-possessor",
+   "song": "Possessor",
+   "artist": "Pentagram Chile",
+   "t": "std-d"
+  },
+  {
+   "id": "pentagram-chile-spell-of-the-pentagram",
+   "song": "Spell Of The Pentagram",
+   "artist": "Pentagram Chile",
+   "t": "std-eb"
+  },
+  {
+   "id": "pentagram-chile-the-malefice",
+   "song": "The Malefice",
+   "artist": "Pentagram Chile",
+   "t": "std-eb"
+  },
+  {
+   "id": "pentagram-chile-la-fiura",
+   "song": "La Fiura",
+   "artist": "Pentagram Chile",
+   "t": "std-d"
+  },
+  {
+   "id": "dorso-alquimia-y-busqueda",
+   "song": "Alquimia Y Busqueda",
+   "artist": "Dorso",
+   "t": "std-eb"
+  },
+  {
+   "id": "dorso-mi-querida-senorita",
+   "song": "Mi Querida Señorita",
+   "artist": "Dorso",
+   "t": "std-eb"
+  },
+  {
+   "id": "dorso-disco-blood-final",
+   "song": "Disco Blood (Final)",
+   "artist": "Dorso",
+   "t": "std-eb"
+  },
+  {
+   "id": "lucybell-rojo-eterno",
+   "song": "Rojo Eterno",
+   "artist": "Lucybell",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "los-tres-olor-a-gas",
+   "song": "Olor a Gas",
+   "artist": "Los Tres",
+   "t": "e1-a1-ds2-ds3-fs3-gs3-b3-b3"
+  },
+  {
+   "id": "los-tres-claus",
+   "song": "Claus",
+   "artist": "Los Tres",
+   "t": "std-d"
+  },
+  {
+   "id": "los-tres-he-barrido-el-sol-revuelta-ia",
+   "song": "He barrido el sol revuelta ia",
+   "artist": "Los Tres",
+   "t": "std-eb"
+  },
+  {
+   "id": "chancho-en-piedra-mampato",
+   "song": "Mampato",
+   "artist": "Chancho en Piedra",
+   "t": "drop-c"
+  },
+  {
+   "id": "molotov-perro-negro-granjero",
+   "song": "Perro Negro Granjero",
+   "artist": "Molotov",
+   "t": "drop-d"
+  },
+  {
+   "id": "molotov-apocalypshit",
+   "song": "Apocalypshit",
+   "artist": "Molotov",
+   "t": "drop-d"
+  },
+  {
+   "id": "molotov-perro-negro",
+   "song": "Perro Negro",
+   "artist": "Molotov",
+   "t": "drop-d"
+  },
+  {
+   "id": "caifanes-la-llorona",
+   "song": "La Llorona",
+   "artist": "Caifanes",
+   "t": "drop-d"
+  },
+  {
+   "id": "caifanes-metamorfeame",
+   "song": "Metamorféame",
+   "artist": "Caifanes",
+   "t": "drop-d"
+  },
+  {
+   "id": "panda-narcisista-por-excelencia",
+   "song": "Narcisista Por Excelencia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-cita-en-el-quirofano",
+   "song": "Cita En El Quirofano",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-los-malaventurados-no-lloran",
+   "song": "Los Malaventurados No Lloran",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-pathetica",
+   "song": "Pathetica",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-3-1",
+   "song": "3+1",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-lmnll",
+   "song": "LMNLL",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-solo-a-terceros",
+   "song": "Solo A Terceros",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-procedimientos-para-llegar-a-un-comun-acuerdo",
+   "song": "Procedimientos Para Llegar A Un Comun Acuerdo",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-disculpa-los-malos-pensamientos",
+   "song": "Disculpa Los Malos Pensamientos",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-cuando-no-es-como-deberia-ser",
+   "song": "Cuando No Es Como Deberia Ser",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-usted",
+   "song": "Usted",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-romance-en-re-sostenido",
+   "song": "Romance En Re Sostenido",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-nuestra-afliccion",
+   "song": "Nuestra Afliccion",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-la-estrategia-perdida",
+   "song": "La Estrategia Perdida",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-so-violento-so-macabro",
+   "song": "So Violento So Macabro",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mi-huracan-llevaba-tu-nombre",
+   "song": "Mi Huracan Llevaba Tu Nombre",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-miedo-a-las-alturas",
+   "song": "Miedo A Las Alturas",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-martirio-de-otro",
+   "song": "Martirio De Otro",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-libre-pastoreo",
+   "song": "Libre Pastoreo",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-la-reina-de-uxmal",
+   "song": "La Reina De Uxmal",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-saludos-desde-turquia",
+   "song": "Saludos desde Turquía",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-atractivo-encontramos-en-lo-mas-repugnante",
+   "song": "Atractivo Encontramos En Lo Más Repugnante",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-hasta-el-final",
+   "song": "Hasta El Final",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-adheridos-separados",
+   "song": "Adheridos Separados",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-conversacion-casual",
+   "song": "Conversacion Casual",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-enfermedad-en-casa",
+   "song": "Enfermedad En Casa",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-promesas-decepciones",
+   "song": "Promesas - Decepciones",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-saco-sport-y-clavel-blanco",
+   "song": "Saco Sport Y Clavel Blanco",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-10-am",
+   "song": "10 Am",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-si-supieras",
+   "song": "Si Supieras",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-el-cuello-perfecto",
+   "song": "El Cuello Perfecto",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-color-negro-pasion",
+   "song": "Color Negro Pasión",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-oro",
+   "song": "Oro",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-pasar-desapercibido",
+   "song": "Pasar Desapercibido",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-casi-nula-autoestima",
+   "song": "Casi Nula Autoestima",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-la-noche-de-la-mesa-triste",
+   "song": "La Noche De La Mesa Triste",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-tus-palabras-punzocortantes",
+   "song": "Tus Palabras Punzocortantes",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-y-de-la-gasolina-renacio-el-amor",
+   "song": "Y De La Gasolina Renacio El Amor",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-no-tienes-oportunidad-contra-mi-antipatica-imaginacion",
+   "song": "No Tienes Oportunidad Contra Mi Antipatica Imaginacion",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-estoy-mas-sohloh-que-ayer-pero-menos-que-manana",
+   "song": "Estoy Mas Sohloh Que Ayer Pero Menos Que Mañana",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-un-tipo-de-indulgencia",
+   "song": "Un Tipo De Indulgencia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mi-muneca-sinfonia-soledad",
+   "song": "Mi Muñeca Sinfonía Soledad",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-ilusion-oh-ilusion",
+   "song": "Ilusion, Oh Ilusion",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-corazon-de-un-cuento-roto",
+   "song": "Corazon De Un Cuento Roto",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-nuestra-afliccion-corregido",
+   "song": "Nuestra Aflicción Corregido",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-ando-pedo-y-ella-esta-aqui",
+   "song": "Ando Pedo Y Ella Esta Aqui",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-ya-no-jalaba",
+   "song": "Ya No Jalaba",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-bella-en-mi-cabeza-para-siempre",
+   "song": "Bella En Mi Cabeza Para Siempre",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-lunar-de-clavicula",
+   "song": "Lunar De Clavicula",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-envejecido-en-barril-de-roble",
+   "song": "Envejecido En Barril De Roble",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-cuando-no-es-como-debiera-ser",
+   "song": "Cuando No Es Como Debiera Ser",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mujer-nada-me-has-dado",
+   "song": "Mujer, Nada Me Has Dado",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-feliz-cumpleanos",
+   "song": "Feliz Cumpleaños",
+   "artist": "Panda",
+   "t": "cs2-gs2-cs3-f3-gs3-cs4",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "panda-introduccion-a-la-cartografia",
+   "song": "Introducción A La Cartografía",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-doble-gracias",
+   "song": "Doble Gracias",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-huesped-en-casa-propia",
+   "song": "Huésped En Casa Propia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-nunca-nadie-nos-podra-parar",
+   "song": "Nunca Nadie Nos Podra Parar",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-el-infame-estar-y-no-estar",
+   "song": "El Infame Estar Y No Estar",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-del-rapto-y-otros-pormenores",
+   "song": "Del Rapto Y Otros Pormenores",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mala-suerte",
+   "song": "Mala Suerte",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-la-vida-en-el-barandal",
+   "song": "La Vida En El Barandal",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-abigail",
+   "song": "Abigail",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-en-tu-honor",
+   "song": "En Tu Honor",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-agradable-locura-temporal",
+   "song": "Agradable Locura Temporal",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-sequedad-musical",
+   "song": "Sequedad Musical",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-11-tripulacion-armar-toboganes",
+   "song": "11 Tripulacion Armar Toboganes",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-quisiera-no-pensar",
+   "song": "Quisiera No Pensar",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-no-te-deseo-el-mal-pero-tampoco-el-mal",
+   "song": "No Te Deseo El Mal Pero Tampoco El Mal",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mi-muneca",
+   "song": "Mi Muñeca",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-fascinante",
+   "song": "Fascinante",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-senor-payaso",
+   "song": "Señor Payaso",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-de-otro-modo",
+   "song": "De Otro Modo",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-tripulacion-armar-toboganes",
+   "song": "Tripulacion Armar Toboganes",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-lascivamente",
+   "song": "Lascivamente",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-pensandolo-bien-pense-mal",
+   "song": "Pensándolo Bien, Pensé Mal",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-consejo-al-espejo",
+   "song": "Consejo Al Espejo",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-que-tu-cama-sea-mi-hogar",
+   "song": "Que Tu Cama Sea Mi Hogar",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-narcicista-por-excelencia",
+   "song": "Narcicista por excelencia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-quinta-real",
+   "song": "Quinta",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-buen-dia",
+   "song": "Buen Dia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-muneca",
+   "song": "Muneca",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-narcisista-por-exelencia",
+   "song": "Narcisista Por Exelencia",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-ah-pero-como-vendo-casettes",
+   "song": "¡Ah Pero Como Vendo Casettes!",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-claro-que-no",
+   "song": "Claro Que No",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-maracas",
+   "song": "Maracas",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-cortame-con-unas-tijeras-pero-que-no-se-te-olvide-el-resistol-para-volverme-a-pegar",
+   "song": "Cortame Con Unas Tijeras Pero Que No Se Te Olvide El Resistol Para Volverme A Pegar",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-ilasha",
+   "song": "Ilasha",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-4-ya-no-es-suficiente-lamentar-3-1",
+   "song": "4 Ya No Es Suficiente Lamentar/3+1",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-espejismos-y-visiones",
+   "song": "Espejismos Y Visiones",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-no-te-deseo-el-mal-pero-tampoco-te-deseo-el-bien",
+   "song": "No Te Deseo El Mal Pero Tampoco Te Deseo El Bien",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-las-mil-y-una-camas",
+   "song": "Las Mil Y Una Camas",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-sweater-geek",
+   "song": "Sweater Geek",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-te-invito-a-mi-fiesta",
+   "song": "Te Invito A Mi Fiesta",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-aforismos",
+   "song": "Aforismos",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-popurri-para-ti",
+   "song": "Popurri Para Ti",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-porque-todavia-podemos-decir-una-vez-mas",
+   "song": "Porque Todavía Podemos Decir “Una Vez Más”",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-las-mil-y-un-camas",
+   "song": "Las Mil y Un Camas",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-soy-un-ganador",
+   "song": "Soy Un Ganador",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-cristina",
+   "song": "Cristina",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-3-1-sinfonia-soledad",
+   "song": "3+1 Sinfonía Soledad",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-no-me-culpes-por-ser-bello",
+   "song": "No Me Culpes Por Ser Bello",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-el-chango-de-los-2-platanos",
+   "song": "El chango de los 2 platanos",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-romance-en-re-sostenido-sin-voz",
+   "song": "Romance En Re Sostenido - Sin Voz",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-estoy-mas-soloh-que-ayer-pero-menos-que-manana",
+   "song": "Estoy Más Soloh Que Ayer Pero Menos Que Mañana",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-mujer-no-me-has-dado",
+   "song": "Mujer No Me Has Dado",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-tocame-esta",
+   "song": "Tócame Esta",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-en-el-vaticano",
+   "song": "En El Vaticano",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-tanto",
+   "song": "Tanto",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-si-esto-fuese-realidad",
+   "song": "Si Esto Fuese Realidad",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-sunny-blue",
+   "song": "Sunny Blue",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-miercoles",
+   "song": "Miércoles",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-espiritu-pionero",
+   "song": "Espiritu Pionero",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-feliz-cumpleanos-rock",
+   "song": "FELIZ CUMPLEAÑOS ROCK",
+   "artist": "Panda",
+   "t": "drop-cs"
+  },
+  {
+   "id": "panda-hola",
+   "song": "Hola!",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-malaventurados-no-lloran",
+   "song": "Malaventurados No Lloran",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "panda-figura-decorativa-sobre-fondo-ornamental",
+   "song": "Figura Decorativa Sobre Fondo Ornamental",
+   "artist": "Panda",
+   "t": "std-eb"
+  },
+  {
+   "id": "division-minuscula-humanos-como-tu",
+   "song": "Humanos Como Tu",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-un-beso-al-aire-y-un-tiro-al-pecho",
+   "song": "Un Beso Al Aire Y Un Tiro Al Pecho",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-muriendo-en-un-simulacro",
+   "song": "Muriendo en un simulacro",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-veneno-es-antidoto-s-o-s",
+   "song": "Veneno Es Antidoto (S.O.S)",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-altamar-division-minuscula",
+   "song": "Altamar-Division Minuscula",
+   "artist": "División Minúscula",
+   "t": "std-d"
+  },
+  {
+   "id": "division-minuscula-frenesi",
+   "song": "Frenesí",
+   "artist": "División Minúscula",
+   "t": "std-d"
+  },
+  {
+   "id": "division-minuscula-sed",
+   "song": "Sed",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-tinta-y-papel",
+   "song": "Tinta Y Papel",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-nuestro-crimen",
+   "song": "Nuestro Crimen",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-laberintos",
+   "song": "Laberintos",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "division-minuscula-escombros",
+   "song": "Escombros",
+   "artist": "División Minúscula",
+   "t": "drop-d"
+  },
+  {
+   "id": "transmetal-infierno-de-dante",
+   "song": "Infierno De Dante",
+   "artist": "Transmetal",
+   "t": "std-d"
+  },
+  {
+   "id": "transmetal-mexico-barbaro",
+   "song": "México Barbaro",
+   "artist": "Transmetal",
+   "t": "std-d"
+  },
+  {
+   "id": "transmetal-tristeza-de-lucifer",
+   "song": "Tristeza De Lucifer",
+   "artist": "Transmetal",
+   "t": "std-d"
+  },
+  {
+   "id": "transmetal-sepelio-en-el-mar",
+   "song": "Sepelio en el Mar",
+   "artist": "Transmetal",
+   "t": "std-eb"
+  },
+  {
+   "id": "transmetal-poder-y-pudricion",
+   "song": "Poder y pudricion",
+   "artist": "Transmetal",
+   "t": "std-cs"
+  },
+  {
+   "id": "transmetal-las-letanias-de-satan",
+   "song": "Las Letanías de Satán",
+   "artist": "Transmetal",
+   "t": "std-cs"
+  },
+  {
+   "id": "transmetal-fariseos",
+   "song": "Fariseos",
+   "artist": "Transmetal",
+   "t": "std-cs"
+  },
+  {
+   "id": "transmetal-el-infierno-de-dante",
+   "song": "El Infierno de Dante",
+   "artist": "Transmetal",
+   "t": "std-c"
+  },
+  {
+   "id": "transmetal-rostro-maligno-transmetal",
+   "song": "Rostro maligno Transmetal",
+   "artist": "Transmetal",
+   "t": "std-d"
+  },
+  {
+   "id": "transmetal-el-llamado-de-la-hembra",
+   "song": "El Llamado de la Hembra",
+   "artist": "Transmetal",
+   "t": "std-cs"
+  },
+  {
+   "id": "transmetal-kilers-2",
+   "song": "kilers 2",
+   "artist": "Transmetal",
+   "t": "std-d"
+  },
+  {
+   "id": "allison-fragil",
+   "song": "Fragil",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-algo-que-decir",
+   "song": "Algo Que Decir",
+   "artist": "Allison",
+   "t": "drop-d"
+  },
+  {
+   "id": "allison-matar-o-morir",
+   "song": "Matar O Morir",
+   "artist": "Allison",
+   "t": "drop-c"
+  },
+  {
+   "id": "allison-rompase-el-vidrio-en-caso-de-emergencia-studio",
+   "song": "Rómpase el Vidrio en Caso de Emergencia",
+   "artist": "Allison",
+   "t": "drop-c"
+  },
+  {
+   "id": "allison-me-cambio",
+   "song": "Me Cambio",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-aqui",
+   "song": "Aquí",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-tu",
+   "song": "Tú",
+   "artist": "Allison",
+   "t": "drop-d"
+  },
+  {
+   "id": "allison-vamos-otra-vez",
+   "song": "Vamos Otra Vez",
+   "artist": "Allison",
+   "t": "drop-c",
+   "alts": [
+    "drop-d"
+   ],
+   "c": 1
+  },
+  {
+   "id": "allison-olvidaste-decir-adios",
+   "song": "Olvídaste Decir Adiós",
+   "artist": "Allison",
+   "t": "drop-d"
+  },
+  {
+   "id": "allison-120-km-hr",
+   "song": "120 Km/Hr",
+   "artist": "Allison",
+   "t": "drop-cs"
+  },
+  {
+   "id": "allison-gracias-por-la-herida",
+   "song": "Gracias Por La Herida",
+   "artist": "Allison",
+   "t": "drop-c"
+  },
+  {
+   "id": "allison-el-principe",
+   "song": "El Príncipe",
+   "artist": "Allison",
+   "t": "drop-c"
+  },
+  {
+   "id": "allison-83-87",
+   "song": "83-87",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-80-s",
+   "song": "80 S",
+   "artist": "Allison",
+   "t": "drop-d"
+  },
+  {
+   "id": "allison-ya-no-te-am",
+   "song": "Ya no te am",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-llama-por-favor",
+   "song": "Llama Por Favor",
+   "artist": "Allison",
+   "t": "std-eb"
+  },
+  {
+   "id": "allison-el-juego",
+   "song": "El Juego",
+   "artist": "Allison",
+   "t": "drop-c"
+  },
+  {
+   "id": "allison-senorita-a-mi-gusta-su-style",
+   "song": "Señorita a mi gusta Su style",
+   "artist": "Allison",
+   "t": "drop-cs"
+  },
+  {
+   "id": "kraken-soy-real",
+   "song": "Soy",
+   "artist": "Kraken",
+   "t": "std-d"
+  },
+  {
+   "id": "kraken-no-importa-que-mientas",
+   "song": "No Importa Que Mientas",
+   "artist": "Kraken",
+   "t": "std-d"
+  },
+  {
+   "id": "kraken-no-me-hables-de-amor-am",
+   "song": "No me hables de Amor Am",
+   "artist": "Kraken",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "kraken-revolucion",
+   "song": "Revolución",
+   "artist": "Kraken",
+   "t": "std-d"
+  },
+  {
+   "id": "kraken-reflect",
+   "song": "Reflect",
+   "artist": "Kraken",
+   "t": "drop-b"
+  },
+  {
+   "id": "masacre-cortejo-funebre",
+   "song": "Cortejo Funebre",
+   "artist": "Masacre",
+   "t": "b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "masacre-dolor-sensato",
+   "song": "Dolor Sensato",
+   "artist": "Masacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "masacre-exodo",
+   "song": "Éxodo",
+   "artist": "Masacre",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "masacre-mas-alla-del-dolor",
+   "song": "Mas Alla Del Dolor",
+   "artist": "Masacre",
+   "t": "std-eb"
+  },
+  {
+   "id": "masacre-sangre-en-mis-manos",
+   "song": "Sangre En Mis Manos",
+   "artist": "Masacre",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "ekhymosis-de-madrugada",
+   "song": "De Madrugada",
+   "artist": "Ekhymosis",
+   "t": "std-eb"
+  },
+  {
+   "id": "la-vela-puerca-para-no-verme-mas",
+   "song": "Para No Verme Más",
+   "artist": "La Vela Puerca",
+   "t": "std-eb"
+  },
+  {
+   "id": "la-vela-puerca-de-atar",
+   "song": "De Atar",
+   "artist": "La Vela Puerca",
+   "t": "std-eb"
+  },
+  {
+   "id": "el-cuarteto-de-nos-rorschach",
+   "song": "Rorschach",
+   "artist": "El Cuarteto de Nos",
+   "t": "drop-d"
+  },
+  {
+   "id": "el-cuarteto-de-nos-contrapunto-para-humano-y-computadora",
+   "song": "Contrapunto para humano y computadora",
+   "artist": "El Cuarteto de Nos",
+   "t": "drop-d"
+  },
+  {
+   "id": "caramelos-de-cianuro-sanitarios",
+   "song": "Sanitarios",
+   "artist": "Caramelos de Cianuro",
+   "t": "drop-d"
+  },
+  {
+   "id": "caramelos-de-cianuro-surfer-girl",
+   "song": "Surfer Girl",
+   "artist": "Caramelos de Cianuro",
+   "t": "drop-d"
+  },
+  {
+   "id": "caramelos-de-cianuro-cancion-suave-despecho-n-2",
+   "song": "Cancion Suave (Despecho N°2)",
+   "artist": "Caramelos de Cianuro",
+   "t": "drop-c"
+  },
+  {
+   "id": "caramelos-de-cianuro-plataforma-de-despegue",
+   "song": "Plataforma De Despegue",
+   "artist": "Caramelos de Cianuro",
+   "t": "std-eb"
+  },
+  {
+   "id": "libido-lamento-bolibiano",
+   "song": "Lamento Bolibiano",
+   "artist": "Libido",
+   "t": "drop-d"
   }
  ]
 }
