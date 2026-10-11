@@ -1,6 +1,6 @@
 # Guitar Tuner
 
-A fast, free guitar tuner with a curated library of **3,500 alternate tunings** for specific songs, across 72 artists — including a corner of the Russian alternative scene that no other tuning database covers.
+A fast, free guitar tuner with a curated library of **4,500 alternate tunings** for specific songs, across 91 artists — including a corner of the Russian alternative scene that no other tuning database covers.
 
 **Live → [marr59.github.io/guitar-tuner](https://marr59.github.io/guitar-tuner/)**
 
@@ -11,11 +11,12 @@ Pick a song, see the tuning it was recorded in, retune, play. No account, no sig
 ## What it does
 
 - **Accurate pitch detection** down to low B and F#, reading out in cents
-- **Tuning library** — 3,500 songs across 72 artists, searchable offline
+- **Tuning library** — 4,500 songs across 91 artists, searchable offline
 - **Alternate tunings only** — songs in plain E standard are deliberately not catalogued
 - **Multiple versions per song** where studio and live tunings genuinely differ
 - **Experimental tunings preserved** — Soundgarden's six-strings-of-E "Mind Riot", Sonic Youth's unison and out-of-order sets, Joni Mitchell's open tunings
 - **Russian alt scene** — Психея, [AMATORY], Stigmata, Lumen, Jane Air and others, largely undocumented in English-language sources
+- **Nordic metal in depth** — Stam1na and Mokoma on seven-string A D A D G B E, Turmion Kätilöt, Kalmah, Insomnium, Before the Dawn and the rest of the Finnish catalogue, song by song rather than band by band
 - **Plucked-string reference tones** — tap a string to hear its target pitch
 - **Auto-advance** — tune a string and it moves to the next, in whichever direction you're working
 - **Any string count** — 4 to 8 strings, so seven-strings, bass and ukulele all work
@@ -118,7 +119,7 @@ Songs don't repeat the note array — they reference a tuning by id:
 }
 ```
 
-That normalisation matters at this scale. 3,500 songs share only 144 distinct tunings, and roughly half of the original file was repeated boilerplate prose and reconstructible URLs. Collapsing both took the catalogue from 300 KB to 84 KB before the bulk import, and the finished file is 618 KB raw but **91 KB gzipped** — small enough to ship whole, so search stays instant and the entire library works offline.
+That normalisation matters at this scale. 4,500 songs share only 190 distinct tunings, and roughly half of the original file was repeated boilerplate prose and reconstructible URLs. Collapsing both took the catalogue from 300 KB to 84 KB before the bulk import, and the finished file is 646 KB raw but **99 KB gzipped** — small enough to ship whole, so search stays instant and the entire library works offline.
 
 Splitting the catalogue into per-artist chunks was considered and rejected: searching for a song requires an index of every title anyway, and chunking would break offline use for anything not already downloaded. Extrapolated, one normalised file holds 25,000 songs in about 280 KB gzipped.
 
@@ -130,7 +131,7 @@ Splitting the catalogue into per-artist chunks was considered and rejected: sear
 | Rendering | Canvas 2D, spring-smoothed at 60fps |
 | Offline | Service worker, network-first with cache fallback |
 | Storage | localStorage, with JSON export/import as a backup path |
-| Data | Static `tunings.json`, 3,500 songs in 91 KB gzipped |
+| Data | Static `tunings.json`, 4,500 songs in 99 KB gzipped |
 | Deploy | GitHub Pages |
 
 Network-first caching is deliberate: a cache-first shell would pin installed users to a stale build. On GitHub Pages there are no cache headers to tune, so bumping the service worker version each deploy is the only lever that matters.
