@@ -4517,6 +4517,19 @@
     "F3",
     "A3"
    ]
+  },
+  {
+   "id": "a1-e2-a2-d3-fs3-g3",
+   "name": "A1 E2 A2 D3 F#3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "G3"
+   ]
   }
  ],
  "songs": [
@@ -5303,7 +5316,11 @@
    "id": "korn-ball-tongue",
    "song": "Ball Tongue",
    "artist": "Korn",
-   "t": "korn-a-7"
+   "t": "korn-a-7",
+   "alts": [
+    "a1-d2-g2-c3-e3-a3"
+   ],
+   "c": 1
   },
   {
    "id": "korn-faget",
@@ -19637,12 +19654,6 @@
    "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
-   "id": "electric-wizard-electric-wizard-clean-solo",
-   "song": "Electric Wizard Clean solo",
-   "artist": "Electric Wizard",
-   "t": "std-c"
-  },
-  {
    "id": "electric-wizard-we-hate-you",
    "song": "We Hate You",
    "artist": "Electric Wizard",
@@ -27472,7 +27483,11 @@
    "id": "chthonic-forty-nine-theurgy-chains",
    "song": "Forty-Nine Theurgy Chains",
    "artist": "Chthonic",
-   "t": "drop-c"
+   "t": "drop-c",
+   "alts": [
+    "std-c"
+   ],
+   "c": 1
   },
   {
    "id": "in-flames-only-for-the-weak-true-version-clayman-2020-re-recorded-version",
@@ -32727,7 +32742,7 @@
   },
   {
    "id": "omnium-gatherum-omnium-gatherum-slasher",
-   "song": "Omnium Gatherum Slasher",
+   "song": "Slasher",
    "artist": "Omnium Gatherum",
    "t": "std-cs"
   },
@@ -33665,12 +33680,6 @@
    "c": 1
   },
   {
-   "id": "vildhjarta-vildhjarta-album-preproduction-teasers",
-   "song": "vildhjarta album preproduction teasers",
-   "artist": "Vildhjarta",
-   "t": "g1-d2-g2-c3-f3-a3-d4"
-  },
-  {
    "id": "vildhjarta-d-r-mossan-m-ter-havet",
    "song": "+ där mossan möter havet +",
    "artist": "Vildhjarta",
@@ -33685,12 +33694,6 @@
   {
    "id": "vildhjarta-sargasso",
    "song": "+ sargasso +",
-   "artist": "Vildhjarta",
-   "t": "f1-c2-f2-as2-ds3-g3-c4"
-  },
-  {
-   "id": "vildhjarta-vildhjarta-unreleased-compilation",
-   "song": "Vildhjarta UNRELEASED Compilation",
    "artist": "Vildhjarta",
    "t": "f1-c2-f2-as2-ds3-g3-c4"
   },
@@ -34536,12 +34539,6 @@
    "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
   },
   {
-   "id": "erra-erra-skyline",
-   "song": "ERRA Skyline",
-   "artist": "Erra",
-   "t": "as1-f2-as2-ds3-g3-c4"
-  },
-  {
    "id": "erra-the-architect",
    "song": "The Architect",
    "artist": "Erra",
@@ -34681,7 +34678,7 @@
   },
   {
    "id": "erra-erra-the-hypnotist",
-   "song": "ERRA The Hypnotist",
+   "song": "The Hypnotist",
    "artist": "Erra",
    "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
   },
@@ -38819,7 +38816,7 @@
   },
   {
    "id": "maximum-the-hormone-maximum-the-hormone-ii-lets-talk-about-menkata-cottelee",
-   "song": "Maximum The Hormone II -Lets Talk About Menkata Cottelee",
+   "song": "II -Lets Talk About Menkata Cottelee",
    "artist": "Maximum the Hormone",
    "t": "drop-c"
   },
@@ -44302,7 +44299,7 @@
   },
   {
    "id": "ling-tosite-sigure-loo-who-music-video-tv-ed",
-   "song": "凛として時雨 『Loo% Who%』 Music Video（TVアニメ「グノーシア」 EDテーマ）",
+   "song": "『Loo% Who%』",
    "artist": "Ling Tosite Sigure",
    "t": "std-eb"
   },
@@ -51600,7 +51597,7 @@
   },
   {
    "id": "vader-vader-pi-i-stal",
-   "song": "Vader ~ Pięść I Stal",
+   "song": "Pięść I Stal",
    "artist": "Vader",
    "t": "std-cs"
   },
@@ -52916,7 +52913,7 @@
   },
   {
    "id": "the-haunted-the-flood-official",
-   "song": "The Flood (official)",
+   "song": "The Flood",
    "artist": "The Haunted",
    "t": "std-cs"
   },
@@ -54765,12 +54762,6 @@
    "t": "std-eb"
   },
   {
-   "id": "alice-in-chains-alice-in-chains-dedicate-nutshell-to-panteras-vinnie-paul-in-clisson-france",
-   "song": "Alice In Chains dedicate \"Nutshell\" to Pantera's Vinnie Paul in Clisson, France",
-   "artist": "Alice in Chains",
-   "t": "std-eb"
-  },
-  {
    "id": "alice-in-chains-whatcha-gonna-do",
    "song": "Whatcha Gonna Do",
    "artist": "Alice in Chains",
@@ -55245,12 +55236,6 @@
    "t": "std-eb"
   },
   {
-   "id": "black-sabbath-black-sabbath-doom-version",
-   "song": "Black Sabbath Doom Version",
-   "artist": "Black Sabbath",
-   "t": "b1-e2-a2-d3-fs3-b3"
-  },
-  {
    "id": "black-sabbath-odins-court",
    "song": "Odin's Court",
    "artist": "Black Sabbath",
@@ -55297,12 +55282,6 @@
    "song": "TV Crimes ai",
    "artist": "Black Sabbath",
    "t": "std-eb"
-  },
-  {
-   "id": "black-sabbath-black-sabbath-d-standart",
-   "song": "Black Sabbath D Standart",
-   "artist": "Black Sabbath",
-   "t": "std-d"
   },
   {
    "id": "black-sabbath-back-to-eden",
@@ -55431,12 +55410,6 @@
   {
    "id": "chthonic-blooming-blades",
    "song": "Blooming Blades",
-   "artist": "Chthonic",
-   "t": "std-c"
-  },
-  {
-   "id": "chthonic-49-theurgy-chains",
-   "song": "49 Theurgy Chains",
    "artist": "Chthonic",
    "t": "std-c"
   },
@@ -57036,12 +57009,6 @@
    "t": "b1-e2-a2-d3-fs3-b3"
   },
   {
-   "id": "electric-wizard-electric-wizard-ai-transcription",
-   "song": "Electric Wizard ai transcription",
-   "artist": "Electric Wizard",
-   "t": "std-c"
-  },
-  {
    "id": "electric-wizard-flower-of-evil-a-k-a-malifore",
    "song": "Flower Of Evil A.K.A. Malifore",
    "artist": "Electric Wizard",
@@ -57959,12 +57926,6 @@
   {
    "id": "jimi-hendrix-voodoo-child-sunshine-of-your-love",
    "song": "Voodoo Child/ Sunshine of Your Love)",
-   "artist": "Jimi Hendrix",
-   "t": "std-eb"
-  },
-  {
-   "id": "jimi-hendrix-jimi-hendrix-style-jammin",
-   "song": "Jimi Hendrix Style Jammin",
    "artist": "Jimi Hendrix",
    "t": "std-eb"
   },
@@ -59091,12 +59052,6 @@
    "song": "Camel Song",
    "artist": "Korn",
    "t": "korn-a-7"
-  },
-  {
-   "id": "korn-korn-ball-tongue-riff-6-sting",
-   "song": "KORN BALL TONGUE RIFF(6 sting)",
-   "artist": "Korn",
-   "t": "a1-d2-g2-c3-e3-a3"
   },
   {
    "id": "korn-did-my-time-ai-version",
@@ -61162,17 +61117,6 @@
    "t": "std-eb"
   },
   {
-   "id": "metallica-metallica-riffs-not-written-by-james-hetfield",
-   "song": "METALLICA Riffs NOT Written by James Hetfield",
-   "artist": "Metallica",
-   "t": "std-eb",
-   "alts": [
-    "drop-c",
-    "drop-d"
-   ],
-   "c": 1
-  },
-  {
    "id": "metallica-all-master-of-puppets-solos-and-harmonies",
    "song": "All Master of Puppets Solos and Harmonies",
    "artist": "Metallica",
@@ -62117,12 +62061,6 @@
    "t": "drop-c"
   },
   {
-   "id": "papa-roach-papa-roach-last-resort",
-   "song": "Papa Roach Last Resort",
-   "artist": "Papa Roach",
-   "t": "drop-d"
-  },
-  {
    "id": "papa-roach-legacy",
    "song": "Legacy",
    "artist": "Papa Roach",
@@ -62942,17 +62880,6 @@
    "t": "drop-d"
   },
   {
-   "id": "rammstein-rammstein-solos",
-   "song": "Rammstein Solos",
-   "artist": "Rammstein",
-   "t": "std-d",
-   "alts": [
-    "drop-b",
-    "drop-d"
-   ],
-   "c": 1
-  },
-  {
    "id": "rammstein-sadist-biest",
    "song": "Sadist (Biest)",
    "artist": "Rammstein",
@@ -63715,12 +63642,6 @@
    "t": "drop-a"
   },
   {
-   "id": "slipknot-slipknot-mfkr",
-   "song": "Slipknot (MFKR)",
-   "artist": "Slipknot",
-   "t": "drop-c"
-  },
-  {
    "id": "slipknot-heirloom",
    "song": "Heirloom",
    "artist": "Slipknot",
@@ -63831,12 +63752,6 @@
   {
    "id": "slipknot-bone-church",
    "song": "Bone Church",
-   "artist": "Slipknot",
-   "t": "drop-b"
-  },
-  {
-   "id": "slipknot-slipknot-guitar-exercises",
-   "song": "Slipknot Guitar Exercises",
    "artist": "Slipknot",
    "t": "drop-b"
   },
@@ -66701,6 +66616,620 @@
    "song": "Я знаю (ИИ разбор)",
    "artist": "Слот",
    "t": "drop-b"
+  },
+  {
+   "id": "seo-taiji-internet-war",
+   "song": "Internet War",
+   "artist": "Seo Taiji",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "seo-taiji-heffy-end",
+   "song": "Heffy End",
+   "artist": "Seo Taiji",
+   "t": "drop-c"
+  },
+  {
+   "id": "seo-taiji-",
+   "song": "난 알아요",
+   "artist": "Seo Taiji",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "seo-taiji-feel-the-soul",
+   "song": "Feel The Soul",
+   "artist": "Seo Taiji",
+   "t": "a1-e2-a2-d3-fs3-g3"
+  },
+  {
+   "id": "seo-taiji-orange",
+   "song": "Orange",
+   "artist": "Seo Taiji",
+   "t": "drop-d"
+  },
+  {
+   "id": "seo-taiji-ultramania",
+   "song": "ULTRAMANIA",
+   "artist": "Seo Taiji",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "seo-taiji-come-back-home-02-remake",
+   "song": "Come Back Home (′02 Remake)",
+   "artist": "Seo Taiji",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "seo-taiji--446987",
+   "song": "로보트",
+   "artist": "Seo Taiji",
+   "t": "drop-c"
+  },
+  {
+   "id": "seo-taiji-2",
+   "song": "난알아요 2",
+   "artist": "Seo Taiji",
+   "t": "korn-a-7"
+  },
+  {
+   "id": "seo-taiji-fm-buisness",
+   "song": "FM buisness",
+   "artist": "Seo Taiji",
+   "t": "drop-d"
+  },
+  {
+   "id": "nell-parasite",
+   "song": "Parasite",
+   "artist": "Nell",
+   "t": "std-eb"
+  },
+  {
+   "id": "nell-",
+   "song": "유령의 노래",
+   "artist": "Nell",
+   "t": "std-eb"
+  },
+  {
+   "id": "nell--90159",
+   "song": "인어의 별",
+   "artist": "Nell",
+   "t": "std-eb"
+  },
+  {
+   "id": "nell-stay-nell",
+   "song": "Stay Nell",
+   "artist": "Nell",
+   "t": "std-eb"
+  },
+  {
+   "id": "yb-rebellion",
+   "song": "Rebellion",
+   "artist": "YB",
+   "t": "drop-a"
+  },
+  {
+   "id": "nemesis-kobe",
+   "song": "Kobe",
+   "artist": "Nemesis",
+   "t": "std-eb"
+  },
+  {
+   "id": "nemesis-joyodhoni",
+   "song": "Joyodhoni",
+   "artist": "Nemesis",
+   "t": "drop-cs"
+  },
+  {
+   "id": "nemesis-loss-and-grief",
+   "song": "Loss and Grief",
+   "artist": "Nemesis",
+   "t": "std-d"
+  },
+  {
+   "id": "nemesis-uprising",
+   "song": "Uprising",
+   "artist": "Nemesis",
+   "t": "drop-c"
+  },
+  {
+   "id": "nemesis-crying-blood",
+   "song": "Crying Blood",
+   "artist": "Nemesis",
+   "t": "std-d"
+  },
+  {
+   "id": "nemesis-black-messiah",
+   "song": "Black Messiah",
+   "artist": "Nemesis",
+   "t": "std-d"
+  },
+  {
+   "id": "nemesis-andromeda",
+   "song": "Andromeda",
+   "artist": "Nemesis",
+   "t": "std-d"
+  },
+  {
+   "id": "vassline-24hrs",
+   "song": "24Hrs",
+   "artist": "Vassline",
+   "t": "drop-d"
+  },
+  {
+   "id": "vassline-dawn-of-the-apocalypse",
+   "song": "Dawn of the Apocalypse",
+   "artist": "Vassline",
+   "t": "drop-d"
+  },
+  {
+   "id": "vassline-assassin-of-death",
+   "song": "Assassin Of Death",
+   "artist": "Vassline",
+   "t": "drop-d"
+  },
+  {
+   "id": "remnants-of-the-fallen-generation-sin-solo",
+   "song": "Generation Sin",
+   "artist": "Remnants of the Fallen",
+   "t": "drop-c"
+  },
+  {
+   "id": "remnants-of-the-fallen-hel",
+   "song": "Hel",
+   "artist": "Remnants of the Fallen",
+   "t": "drop-c"
+  },
+  {
+   "id": "day6-you-were-beautiful",
+   "song": "You were beautiful",
+   "artist": "Day6",
+   "t": "std-eb"
+  },
+  {
+   "id": "xdinary-heroes-fire-my-sweet-misery",
+   "song": "FiRE (My Sweet Misery)",
+   "artist": "Xdinary Heroes",
+   "t": "drop-cs"
+  },
+  {
+   "id": "xdinary-heroes-moneyball",
+   "song": "MONEYBALL",
+   "artist": "Xdinary Heroes",
+   "t": "drop-b"
+  },
+  {
+   "id": "xdinary-heroes-instead",
+   "song": "iNSTEAD!",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-beautiful-life",
+   "song": "Beautiful Life",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-fight-me",
+   "song": "Fight Me",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-ashes-to-ashes",
+   "song": "Ashes to Ashes",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-boy-comics",
+   "song": "Boy Comics",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-love-me-2-death",
+   "song": "LOVE ME 2 DEATH",
+   "artist": "Xdinary Heroes",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "xdinary-heroes-break-the-brake",
+   "song": "Break The Brake",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-money-on-my-mind",
+   "song": "Money on My Mind",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-love-and-fear",
+   "song": "LOVE and FEAR",
+   "artist": "Xdinary Heroes",
+   "t": "drop-c"
+  },
+  {
+   "id": "xdinary-heroes-dreaming-girl",
+   "song": "Dreaming Girl (꿈을 꾸는 소녀)",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-happy-death-day",
+   "song": "Happy Death Day",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-fire-my-sweet-misery-junhans-guitar-tutorial",
+   "song": "FiRE (My Sweet Misery) — Junhan's guitar tutorial",
+   "artist": "Xdinary Heroes",
+   "t": "drop-cs"
+  },
+  {
+   "id": "xdinary-heroes-rise-high-rise",
+   "song": "Rise High Rise",
+   "artist": "Xdinary Heroes",
+   "t": "drop-b"
+  },
+  {
+   "id": "xdinary-heroes-paint-it",
+   "song": "Paint it",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-more-than-i-like",
+   "song": "more than i like",
+   "artist": "Xdinary Heroes",
+   "t": "drop-c"
+  },
+  {
+   "id": "xdinary-heroes-no-cool-kids-zone",
+   "song": "No Cool Kids Zone",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-spoiler",
+   "song": "Spoiler!!!",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d",
+   "alts": [
+    "drop-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "xdinary-heroes-no-matter",
+   "song": "No Matter",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "xdinary-heroes-enemy",
+   "song": "Enemy",
+   "artist": "Xdinary Heroes",
+   "t": "drop-d"
+  },
+  {
+   "id": "silica-gel-mercurial",
+   "song": "Mercurial",
+   "artist": "Silica Gel",
+   "t": "drop-d"
+  },
+  {
+   "id": "galaxy-express-dont-care-anymore-communeslive1126",
+   "song": "Don't care anymore",
+   "artist": "Galaxy Express",
+   "t": "std-eb"
+  },
+  {
+   "id": "galaxy-express-oh-yeah",
+   "song": "Oh yeah!",
+   "artist": "Galaxy Express",
+   "t": "std-eb"
+  },
+  {
+   "id": "deli-spice-",
+   "song": "챠우챠우",
+   "artist": "Deli Spice",
+   "t": "std-eb"
+  },
+  {
+   "id": "deli-spice--559338",
+   "song": "항상 엔진을 켜 둘게",
+   "artist": "Deli Spice",
+   "t": "std-eb"
+  },
+  {
+   "id": "cherry-filter-pianissimo",
+   "song": "Pianissimo",
+   "artist": "Cherry Filter",
+   "t": "drop-d"
+  },
+  {
+   "id": "cherry-filter-remixed-remastered-cherryfilter-foreign-matter",
+   "song": "이물질 (Foreign Matter)",
+   "artist": "Cherry Filter",
+   "t": "drop-d"
+  },
+  {
+   "id": "nine-treasures-",
+   "song": "Tes River's Hymn (特斯河之赞)",
+   "artist": "Nine Treasures",
+   "t": "drop-d"
+  },
+  {
+   "id": "nine-treasures-sonsii",
+   "song": "Sonsii",
+   "artist": "Nine Treasures",
+   "t": "drop-d"
+  },
+  {
+   "id": "nine-treasures-bodhicitta-ft-liberation",
+   "song": "Bodhicitta ft. Liberation",
+   "artist": "Nine Treasures",
+   "t": "drop-b"
+  },
+  {
+   "id": "nine-treasures-wisdom-eyes",
+   "song": "Wisdom Eyes",
+   "artist": "Nine Treasures",
+   "t": "drop-d"
+  },
+  {
+   "id": "yaksa-chinese-way-fuck-fuck-fuck",
+   "song": "Chinese Way (Fuck! Fuck! Fuck!)",
+   "artist": "Yaksa",
+   "t": "drop-a"
+  },
+  {
+   "id": "twisted-machine-nobody-give-you-face",
+   "song": "Nobody Give You Face",
+   "artist": "Twisted Machine",
+   "t": "std-eb"
+  },
+  {
+   "id": "omnipotent-youth-society-",
+   "song": "在这颗行星所有的酒馆 (Throughout the Drinkeries of This Planet)",
+   "artist": "Omnipotent Youth Society",
+   "t": "std-eb",
+   "alts": [
+    "b1-e2-a2-d3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "beyond-",
+   "song": "命運是你家",
+   "artist": "Beyond",
+   "t": "drop-d"
+  },
+  {
+   "id": "beyond--91957",
+   "song": "不見不散",
+   "artist": "Beyond",
+   "t": "std-eb"
+  },
+  {
+   "id": "beyond--1165759",
+   "song": "吓，講乜野話？",
+   "artist": "Beyond",
+   "t": "std-eb"
+  },
+  {
+   "id": "flesh-juicer-",
+   "song": "關閉太陽",
+   "artist": "Flesh Juicer",
+   "t": "b1-fs2-b2-e3-gs3-cs4-fs4"
+  },
+  {
+   "id": "flesh-juicer--2674011",
+   "song": "歡迎光臨+太子哥",
+   "artist": "Flesh Juicer",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "flesh-juicer-99",
+   "song": "愛情99 (Love U 99)",
+   "artist": "Flesh Juicer",
+   "t": "drop-b"
+  },
+  {
+   "id": "flesh-juicer--2494495",
+   "song": "虎爺",
+   "artist": "Flesh Juicer",
+   "t": "drop-b"
+  },
+  {
+   "id": "flesh-juicer-escape-from-the-ocean-deep-ft-her-name-in-blood-studio-version",
+   "song": "逃出深海洋 Escape From The Ocean Deep ft. Her Name In Blood Studio Version",
+   "artist": "Flesh Juicer",
+   "t": "drop-b"
+  },
+  {
+   "id": "flesh-juicer-2023",
+   "song": "伊的身邊已經有別人",
+   "artist": "Flesh Juicer",
+   "t": "b1-fs2-b2-e3-a3-cs4-fs4"
+  },
+  {
+   "id": "flesh-juicer--4298442",
+   "song": "中港方程式",
+   "artist": "Flesh Juicer",
+   "t": "drop-b"
+  },
+  {
+   "id": "flesh-juicer--5663814",
+   "song": "粗殘台中",
+   "artist": "Flesh Juicer",
+   "t": "b1-fs2-b2-e3-gs3-cs4-fs4"
+  },
+  {
+   "id": "flesh-juicer-ft-zi-official-music-video",
+   "song": "玉山 Ft. ØZI",
+   "artist": "Flesh Juicer",
+   "t": "drop-b"
+  },
+  {
+   "id": "flesh-juicer--4298730",
+   "song": "馬里亞納",
+   "artist": "Flesh Juicer",
+   "t": "b1-fs2-b2-e3-gs3-cs4-fs4"
+  },
+  {
+   "id": "flesh-juicer--412724",
+   "song": "上山",
+   "artist": "Flesh Juicer",
+   "t": "drop-a"
+  },
+  {
+   "id": "mayday-",
+   "song": "拥抱",
+   "artist": "Mayday",
+   "t": "std-eb"
+  },
+  {
+   "id": "mayday--381342",
+   "song": "雌雄同体",
+   "artist": "Mayday",
+   "t": "drop-d"
+  },
+  {
+   "id": "fire-ex-fire-ex",
+   "song": "同學會",
+   "artist": "Fire EX.",
+   "t": "std-eb"
+  },
+  {
+   "id": "fire-ex-18-life",
+   "song": "人生 (Life)",
+   "artist": "Fire EX.",
+   "t": "std-eb"
+  },
+  {
+   "id": "fire-ex-03-pass-away",
+   "song": "Pass Away",
+   "artist": "Fire EX.",
+   "t": "std-eb"
+  },
+  {
+   "id": "no-party-for-cao-dong-",
+   "song": "山海 (Wayfarer)",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--2159487",
+   "song": "空",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-intro",
+   "song": "大風吹",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--570882",
+   "song": "苦难精算师",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-guitar",
+   "song": "情歌",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-outro",
+   "song": "爛泥",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-lie",
+   "song": "床 (Lie)",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--1516560",
+   "song": "滔滔",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--699186",
+   "song": "老張",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-cs"
+  },
+  {
+   "id": "no-party-for-cao-dong--699169",
+   "song": "艾瑪",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-emily-the-ghost",
+   "song": "Emily The Ghost",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--1474790",
+   "song": "還願",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--3566813",
+   "song": "八",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong-damn",
+   "song": "但 (Damn)",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "no-party-for-cao-dong--3259566",
+   "song": "缸",
+   "artist": "No Party For Cao Dong",
+   "t": "drop-d"
+  },
+  {
+   "id": "wu-bai-",
+   "song": "心愛的再會啦",
+   "artist": "Wu Bai",
+   "t": "std-eb"
+  },
+  {
+   "id": "aphasia-in-death",
+   "song": "In Death",
+   "artist": "Aphasia",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "aphasia-thief-in-the-mirror-b",
+   "song": "Thief in the Mirror",
+   "artist": "Aphasia",
+   "t": "std-eb"
+  },
+  {
+   "id": "aphasia-evergreen",
+   "song": "Evergreen",
+   "artist": "Aphasia",
+   "t": "d1-a1-d2-g2-c3-e3-a3"
   }
  ]
 }

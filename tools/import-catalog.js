@@ -103,6 +103,11 @@ const REJECT_SUBS  = [
   // Russian
   'кавер','акустик','акустика','живьём','живьем','концерт','минус',
   'версия','оригинальном строе','ремикс','инструментал',
+  // Korean / Japanese / Chinese — the Latin keyword list never sees these, and
+  // the Korean scene is full of them: 챠우챠우 라이브 is a live take, not a song.
+  '라이브','커버','어쿠스틱','리믹스','연주','반주',
+  'ライブ','カバー','アコースティック','リミックス','インスト',
+  '现场','翻唱','翻弹','原声','伴奏','改编',
 ];
 const REJECT_RX    = [
   /\d+\s*%/,
@@ -130,8 +135,14 @@ const VERSION_RX = [
   /\s*[\(\[]\s*(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*[\)\]]\s*$/i,
   /\s+(?:v|ver|version|wersja|versione|versi[o\u00f3]n)\s*\.?\s*\d+\s*$/i,
 ];
+// Uploaders tag a title with where it came from: "Don't care anymore
+// @communeslive1126". The handle is not part of the song.
+// Пробел перед @ обязателен, иначе правило съедает лит-спик внутри названия:
+// «gl@tch» у Parkway Drive и «H@rd3r» у Korn превратились бы в «gl» и «H».
+const HANDLE_RX = /\s+@[^\s@]+\s*$/;
+
 function stripVersionSuffix(title) {
-  let t = title;
+  let t = title.replace(HANDLE_RX, '');
   for (const rx of STRING_COUNT_RX) t = t.replace(rx, '');
   for (const rx of VERSION_RX) t = t.replace(rx, '');
   t = t.replace(/\s*[-\u2013\u2014]\s*$/, '').trim();
