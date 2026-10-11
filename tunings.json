@@ -2550,6 +2550,713 @@
     "C#4",
     "F#4"
    ]
+  },
+  {
+   "id": "b1-fs2-b2-e3-a3-cs4-fs4",
+   "name": "B1 F#2 B2 E3 A3 C#4 F#4",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "C#4",
+    "F#4"
+   ]
+  },
+  {
+   "id": "a1-e2-a2-d3-fs3-b3-e4",
+   "name": "Drop A (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "gs1-ds2-gs2-cs3-f3-as3-ds4",
+   "name": "Drop G# (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "d1-a1-d2-g2-c3-e3-a3",
+   "name": "D1 A1 D2 G2 C3 E3 A3",
+   "instrument": "guitar7",
+   "strings": [
+    "D1",
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "fs1-cs2-fs2-b2-ds3-gs3-cs4",
+   "name": "Drop F# (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "D#3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "e1-c2-f2-as2-ds3-gs3",
+   "name": "E1 C2 F2 A#2 D#3 G#3",
+   "instrument": "guitar6",
+   "strings": [
+    "E1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-ds3-gs3-c4",
+   "name": "F1 C2 F2 A#2 D#3 G#3 C4",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "g1-c2-f2-as2-ds3-gs3-c4",
+   "name": "G1 C2 F2 A#2 D#3 G#3 C4",
+   "instrument": "guitar7",
+   "strings": [
+    "G1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "g1-c2-f2-as2-ds3-g3-c4",
+   "name": "G1 C2 F2 A#2 D#3 G3 C4",
+   "instrument": "guitar7",
+   "strings": [
+    "G1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "e1-c2-f2-as2-ds3-gs3-c4",
+   "name": "E1 C2 F2 A#2 D#3 G#3 C4",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "e1-c2-f2-as2-d3-g3",
+   "name": "E1 C2 F2 A#2 D3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "E1",
+    "C2",
+    "F2",
+    "A#2",
+    "D3",
+    "G3"
+   ]
+  },
+  {
+   "id": "f1-cs2-fs2-b2-e3-a3-cs4",
+   "name": "F1 C#2 F#2 B2 E3 A3 C#4",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "ds1-b1-e2-a2-d3-g3-b3",
+   "name": "D#1 B1 E2 A2 D3 G3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "D#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3"
+   ]
+  },
+  {
+   "id": "ds1-b1-e2-a2-d3-fs3-b3",
+   "name": "D#1 B1 E2 A2 D3 F#3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "D#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "e1-a1-e2-a2-d3-g3-b3-e4",
+   "name": "E1 A1 E2 A2 D3 G3 B3 E4",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "fs1-cs2-fs2-b2-e3-a3-d4",
+   "name": "F#1 C#2 F#2 B2 E3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-ds3-gs3",
+   "name": "F1 C2 F2 A#2 D#3 G#3",
+   "instrument": "guitar6",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3"
+   ]
+  },
+  {
+   "id": "d1-gs1-b1-e2-a2-b2-e3-a3",
+   "name": "D1 G#1 B1 E2 A2 B2 E3 A3",
+   "instrument": "guitar8",
+   "strings": [
+    "D1",
+    "G#1",
+    "B1",
+    "E2",
+    "A2",
+    "B2",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "a1-f2-as2-ds3-gs3-c4",
+   "name": "A1 F2 A#2 D#3 G#3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "as1-fs2-b2-e3-a3-cs4",
+   "name": "A#1 F#2 B2 E3 A3 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "cs2-a2-d3-g3-c4-e4",
+   "name": "C#2 A2 D3 G3 C4 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "A2",
+    "D3",
+    "G3",
+    "C4",
+    "E4"
+   ]
+  },
+  {
+   "id": "e1-b1-e2-b2-e3-fs3-b3",
+   "name": "E1 B1 E2 B2 E3 F#3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "B1",
+    "E2",
+    "B2",
+    "E3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "b1-e2-b2-e3-fs3-b3-e4",
+   "name": "B1 E2 B2 E3 F#3 B3 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "E2",
+    "B2",
+    "E3",
+    "F#3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "ds1-as1-ds2-gs2-cs3-f3-as3",
+   "name": "D#1 A#1 D#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "D#1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "e1-a1-d2-g2-c3-f3-a3-d4",
+   "name": "E1 A1 D2 G2 C3 F3 A3 D4",
+   "instrument": "guitar8",
+   "strings": [
+    "E1",
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "f1-as1-ds2-gs2-cs3-f3-as3",
+   "name": "F1 A#1 D#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "ds1-gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "D#1 G#1 D#2 G#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar8",
+   "strings": [
+    "D#1",
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "ds1-gs1-cs2-fs2-b2-e3-gs3-cs4",
+   "name": "D#1 G#1 C#2 F#2 B2 E3 G#3 C#4",
+   "instrument": "guitar8",
+   "strings": [
+    "D#1",
+    "G#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "e1-as1-ds2-gs2-cs3-fs3-as3",
+   "name": "E1 A#1 D#2 G#2 C#3 F#3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "d1-as1-ds2-gs2-cs3-f3-as3",
+   "name": "D1 A#1 D#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "D1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "f1-as1-ds2-gs2-cs3-fs3-a3",
+   "name": "F1 A#1 D#2 G#2 C#3 F#3 A3",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A3"
+   ]
+  },
+  {
+   "id": "e1-a1-d2-g2-c3-e3-a3",
+   "name": "E1 A1 D2 G2 C3 E3 A3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "d1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "D1 A#1 D#2 G#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar8",
+   "strings": [
+    "D1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "ds1-gs1-ds2-gs2-cs3-f3-as3",
+   "name": "D#1 G#1 D#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "D#1",
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-d3-g3-c4",
+   "name": "Drop F (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "as1-f2-as2-d3-f3-c4",
+   "name": "A#1 F2 A#2 D3 F3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "F2",
+    "A#2",
+    "D3",
+    "F3",
+    "C4"
+   ]
+  },
+  {
+   "id": "f1-as1-f2-as2-ds3-gs3-c4",
+   "name": "F1 A#1 F2 A#2 D#3 G#3 C4",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4"
+   ]
+  },
+  {
+   "id": "gs1-cs2-gs2-cs3-fs3-as3-ds4",
+   "name": "G#1 C#2 G#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "C#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "e1-a1-e2-a2-d3-fs3-b3",
+   "name": "E1 A1 E2 A2 D3 F#3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "E1",
+    "A1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "gs1-cs2-gs2-cs3-f3-as3",
+   "name": "G#1 C#2 G#2 C#3 F3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "G#1",
+    "C#2",
+    "G#2",
+    "C#3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "gs1-ds2-gs2-cs3-fs3-as3",
+   "name": "G#1 D#2 G#2 C#3 F#3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "G#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "d1-g1-d2-g2-c3-e3-a3",
+   "name": "D1 G1 D2 G2 C3 E3 A3",
+   "instrument": "guitar7",
+   "strings": [
+    "D1",
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-ds3-gs3-c4-f4",
+   "name": "F1 C2 F2 A#2 D#3 G#3 C4 F4",
+   "instrument": "guitar8",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4",
+    "F4"
+   ]
+  },
+  {
+   "id": "b2-fs2-b2-e3-gs3-cs4",
+   "name": "B2 F#2 B2 E3 G#3 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "B2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "g1-d2-g2-c3-e3-a3-d4",
+   "name": "Drop G (7-string)",
+   "instrument": "guitar7",
+   "strings": [
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "f1-d2-g2-c3-f3-a3-d4",
+   "name": "F1 D2 G2 C3 F3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "f1-d2-g2-c3-e3-a3",
+   "name": "F1 D2 G2 C3 E3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "F1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "f1-d2-g2-c3-e3-a3-d4",
+   "name": "F1 D2 G2 C3 E3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "F1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "ds1-d2-g2-c3-e3-a3",
+   "name": "D#1 D2 G2 C3 E3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "D#1",
+    "D2",
+    "G2",
+    "C3",
+    "E3",
+    "A3"
+   ]
+  },
+  {
+   "id": "g1-d2-g2-c3-f3-a3",
+   "name": "G1 D2 G2 C3 F3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "G1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3"
+   ]
+  },
+  {
+   "id": "f1-c2-f2-as2-d3-g3",
+   "name": "Drop F",
+   "instrument": "guitar6",
+   "strings": [
+    "F1",
+    "C2",
+    "F2",
+    "A#2",
+    "D3",
+    "G3"
+   ]
   }
  ],
  "songs": [
@@ -9639,7 +10346,11 @@
    "id": "born-of-osiris-behold-outro",
    "song": "Behold Outro",
    "artist": "Born of Osiris",
-   "t": "korn-a-7"
+   "t": "korn-a-7",
+   "alts": [
+    "std-d"
+   ],
+   "c": 1
   },
   {
    "id": "born-of-osiris-the-accountable",
@@ -31126,6 +31837,4140 @@
    "song": "Black Dawn",
    "artist": "Before the Dawn",
    "t": "drop-c"
+  },
+  {
+   "id": "periphery-make-total-destroy-6-string",
+   "song": "Make Total Destroy 6-string",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "periphery-heaven-on-high-accurate-drums",
+   "song": "Heaven on High accurate drums",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "periphery-obsession",
+   "song": "Obsession",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "periphery-heaven-on-high-ai",
+   "song": "Heaven on High ai",
+   "artist": "Periphery",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "periphery-motormouth-gp",
+   "song": "Motormouth gp",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-22-faces-gp",
+   "song": "22 faces gp",
+   "artist": "Periphery",
+   "t": "std-8-fs",
+   "alts": [
+    "fs1-b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-jake-bowen-bias",
+   "song": "Jake Bowen Bias",
+   "artist": "Periphery",
+   "t": "drop-c"
+  },
+  {
+   "id": "periphery-rainbow-gravity-gp",
+   "song": "Rainbow gravity gp",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-talk-official",
+   "song": "Talk Official",
+   "artist": "Periphery",
+   "t": "a1-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "periphery-four-lights-gp",
+   "song": "Four Lights gp",
+   "artist": "Periphery",
+   "t": "std-8-fs",
+   "alts": [
+    "fs1-b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-new-snu",
+   "song": "New Snu",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "periphery-omega-gp",
+   "song": "Omega gp",
+   "artist": "Periphery",
+   "t": "drop-c",
+   "alts": [
+    "korn-a-7"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-pale-aura",
+   "song": "Pale Aura",
+   "artist": "Periphery",
+   "t": "drop-c"
+  },
+  {
+   "id": "periphery-the-price-is-wrong-gp",
+   "song": "The price is wrong gp",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-flatline-gp",
+   "song": "Flatline gp",
+   "artist": "Periphery",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "periphery-overture",
+   "song": "Overture",
+   "artist": "Periphery",
+   "t": "b1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "fs1-b1-e2-a2-d3-g3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-heavy-heart-gp",
+   "song": "Heavy heart gp",
+   "artist": "Periphery",
+   "t": "drop-c"
+  },
+  {
+   "id": "periphery-prayer-position-gp",
+   "song": "Prayer Position gp",
+   "artist": "Periphery",
+   "t": "a1-g2-c3-f3-a3-d4",
+   "alts": [
+    "korn-a-7"
+   ],
+   "c": 1
+  },
+  {
+   "id": "periphery-absolomb-v3",
+   "song": "Absolomb V3",
+   "artist": "Periphery",
+   "t": "drop-c"
+  },
+  {
+   "id": "periphery-marigold-accoustic",
+   "song": "Marigold accoustic",
+   "artist": "Periphery",
+   "t": "drop-d"
+  },
+  {
+   "id": "periphery-erised-guitar",
+   "song": "Erised - Guitar",
+   "artist": "Periphery",
+   "t": "drop-c"
+  },
+  {
+   "id": "tesseract-hollow",
+   "song": "Hollow",
+   "artist": "TesseracT",
+   "t": "as1-f2-as2-ds3-f3-as3-ds4"
+  },
+  {
+   "id": "tesseract-nocturne",
+   "song": "Nocturne",
+   "artist": "TesseracT",
+   "t": "drop-b"
+  },
+  {
+   "id": "tesseract-calabi-yau",
+   "song": "Calabi Yau",
+   "artist": "TesseracT",
+   "t": "a1-e2-a2-d3-e3-a3-d4"
+  },
+  {
+   "id": "tesseract-epiphany",
+   "song": "Epiphany",
+   "artist": "TesseracT",
+   "t": "as1-f2-as2-ds3-f3-as3-ds4"
+  },
+  {
+   "id": "tesseract-juno-bass-one-step-down",
+   "song": "Juno bass one step down",
+   "artist": "TesseracT",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "tesseract-smile-the-arrow",
+   "song": "Smile/The Arrow",
+   "artist": "TesseracT",
+   "t": "gs1-e2-a2-d3-e3-a3-d4"
+  },
+  {
+   "id": "tesseract-mirror-image",
+   "song": "Mirror Image",
+   "artist": "TesseracT",
+   "t": "gs1-f2-as2-ds3-f3-as3-ds4"
+  },
+  {
+   "id": "tesseract-embers",
+   "song": "Embers",
+   "artist": "TesseracT",
+   "t": "a1-e2-a2-d3-e3-a3-d4"
+  },
+  {
+   "id": "monuments-the-cimmerian-ai",
+   "song": "The Cimmerian ai",
+   "artist": "Monuments",
+   "t": "drop-cs"
+  },
+  {
+   "id": "monuments-for-meeee",
+   "song": "for meeee",
+   "artist": "Monuments",
+   "t": "cs2-gs2-cs3-fs3-gs3-cs4"
+  },
+  {
+   "id": "monuments-cardinal-red-ai",
+   "song": "Cardinal Red ai",
+   "artist": "Monuments",
+   "t": "std-d",
+   "alts": [
+    "korn-a-7"
+   ],
+   "c": 1
+  },
+  {
+   "id": "monuments-lavos-ai",
+   "song": "Lavos Ai",
+   "artist": "Monuments",
+   "t": "drop-cs"
+  },
+  {
+   "id": "monuments-somnus-ai",
+   "song": "Somnus ai",
+   "artist": "Monuments",
+   "t": "as1-f2-as2-ds3-f3-as3-ds4"
+  },
+  {
+   "id": "veil-of-maya-all-things-set-aside-v-2",
+   "song": "All Things Set Aside v.2",
+   "artist": "Veil of Maya",
+   "t": "drop-b"
+  },
+  {
+   "id": "veil-of-maya-wounds",
+   "song": "Wounds",
+   "artist": "Veil of Maya",
+   "t": "drop-b"
+  },
+  {
+   "id": "veil-of-maya-id",
+   "song": "I'd",
+   "artist": "Veil of Maya",
+   "t": "drop-b"
+  },
+  {
+   "id": "veil-of-maya-we-bow-in-its-aura-7-string",
+   "song": "We Bow In It's Aura (7 String)",
+   "artist": "Veil of Maya",
+   "t": "b1-fs2-b2-e3-a3-cs4-fs4"
+  },
+  {
+   "id": "volumes-edge-of-the-earth",
+   "song": "Edge Of The Earth",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "gs1-ds2-gs2-cs3-f3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "volumes-wormholes",
+   "song": "Wormholes",
+   "artist": "Volumes",
+   "t": "a1-e2-a2-d3-fs3-b3-e4"
+  },
+  {
+   "id": "volumes-intake",
+   "song": "Intake",
+   "artist": "Volumes",
+   "t": "a1-e2-a2-d3-fs3-b3-e4"
+  },
+  {
+   "id": "volumes-bend",
+   "song": "Bend",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "volumes-erased",
+   "song": "Erased",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-happier",
+   "song": "Happier?",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-the-mixture",
+   "song": "The Mixture",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-via",
+   "song": "Via",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "volumes-serenity",
+   "song": "Serenity",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-the-columbian-faction",
+   "song": "The Columbian Faction",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "volumes-feels-good",
+   "song": "Feels Good",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-fbx",
+   "song": "FBX",
+   "artist": "Volumes",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "volumes-lets-me-down",
+   "song": "Lets Me Down",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-on-her-mind",
+   "song": "On Her Mind",
+   "artist": "Volumes",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "volumes-vahle",
+   "song": "Vahle",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-worth-it",
+   "song": "Worth It",
+   "artist": "Volumes",
+   "t": "d1-a1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "volumes-dream",
+   "song": "Dream",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "volumes-two-one",
+   "song": "Two-One",
+   "artist": "Volumes",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "volumes-adrenaline",
+   "song": "Adrenaline",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "volumes-man-on-fire",
+   "song": "Man On Fire",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-91367",
+   "song": "91367",
+   "artist": "Volumes",
+   "t": "fs1-b1-e2-a2-d3-g3-b3"
+  },
+  {
+   "id": "volumes-bad-habit",
+   "song": "Bad Habit",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-stitch",
+   "song": "Stitch",
+   "artist": "Volumes",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "volumes-s-o-a-p",
+   "song": "S.O.A.P.",
+   "artist": "Volumes",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "volumes-until-the-end",
+   "song": "Until The End",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-limitless",
+   "song": "Limitless",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "volumes-bottom-dollar",
+   "song": "Bottom Dollar",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "volumes-through-the-trees",
+   "song": "Through The Trees",
+   "artist": "Volumes",
+   "t": "drop-a",
+   "alts": [
+    "a1-e2-a2-d3-fs3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "volumes-up-all-night",
+   "song": "Up All Night",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-bad-habit-guitar",
+   "song": "Bad Habit Guitar",
+   "artist": "Volumes",
+   "t": "d1-a1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "volumes-malevolent",
+   "song": "Malevolent",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-california",
+   "song": "California",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-finite",
+   "song": "Finite",
+   "artist": "Volumes",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "volumes-pullin-shades",
+   "song": "\"Pullin' Shades\"",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-sidewinder",
+   "song": "Sidewinder",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "volumes-neon-eyes",
+   "song": "Neon Eyes",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-see-you-again",
+   "song": "See You Again",
+   "artist": "Volumes",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "volumes-across-the-bed",
+   "song": "Across The Bed",
+   "artist": "Volumes",
+   "t": "drop-b"
+  },
+  {
+   "id": "volumes-paid-in-full",
+   "song": "Paid In Full",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "volumes-behind-the-curtain",
+   "song": "Behind The Curtain",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "volumes-pistol-play",
+   "song": "Pistol Play",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-pixelate",
+   "song": "Pixelate",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "volumes-weighted",
+   "song": "Weighted",
+   "artist": "Volumes",
+   "t": "fs1-cs2-fs2-b2-ds3-gs3-cs4"
+  },
+  {
+   "id": "volumes-into-you-hurt",
+   "song": "Into You (Hurt)",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4",
+   "alts": [
+    "d1-a1-d2-g2-c3-e3-a3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "volumes-reversion",
+   "song": "Reversion",
+   "artist": "Volumes",
+   "t": "cs2-gs2-cs3-fs3-gs3-cs4"
+  },
+  {
+   "id": "volumes-edge-of-the-earth-2nd-version",
+   "song": "Edge of the Earth 2nd Version",
+   "artist": "Volumes",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "volumes-across-the-bed-ai",
+   "song": "Across The Bed AI",
+   "artist": "Volumes",
+   "t": "drop-b"
+  },
+  {
+   "id": "volumes-void",
+   "song": "Void",
+   "artist": "Volumes",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "vildhjarta-den-spanska-k-nslan",
+   "song": "+ den spanska känslan +",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3",
+   "alts": [
+    "e1-b1-e2-a2-d3-g3-b3-e4",
+    "std-8-fs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-dagger-ver2",
+   "song": "Dagger (ver2)",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-shadow",
+   "song": "Shadow",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-den-helige-anden",
+   "song": "Den Helige Anden",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "e1-b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-den-helige-anden-6-strings",
+   "song": "Den Helige Anden 6 strings",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-d3-g3",
+   "alts": [
+    "e1-b1-e2-a2-d3-fs3-b3",
+    "e1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-all-these-feelings",
+   "song": "All These Feelings",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-the-lone-deranger",
+   "song": "The Lone Deranger",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-eternal-golden-monk",
+   "song": "Eternal Golden Monk",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-m-sstadens-nationals-ng",
+   "song": "Måsstadens nationalsång",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-dimman",
+   "song": "Dimman",
+   "artist": "Vildhjarta",
+   "t": "g1-d2-g2-c3-f3-a3-d4",
+   "alts": [
+    "d1-d2-g2-c3-f3-a3-d4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-toxin",
+   "song": "Toxin",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "f1-cs2-fs2-b2-e3-a3-cs4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-traces",
+   "song": "Traces",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-deceit",
+   "song": "Deceit",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-when-no-one-walks-with-you",
+   "song": "When No One Walks With You",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-en-m-rk-vit-l-gn",
+   "song": "En mörk vit lögn",
+   "artist": "Vildhjarta",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "vildhjarta-passage-noir",
+   "song": "passage noir",
+   "artist": "Vildhjarta",
+   "t": "ds1-b1-e2-a2-d3-g3-b3"
+  },
+  {
+   "id": "vildhjarta-br-nnm-rkt",
+   "song": "brännmärkt",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-tv-vackra-svanar",
+   "song": "+ två vackra svanar +",
+   "artist": "Vildhjarta",
+   "t": "ds1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "vildhjarta-l-ngstmed-n",
+   "song": "Längstmedån",
+   "artist": "Vildhjarta",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "vildhjarta-shiver",
+   "song": "Shiver",
+   "artist": "Vildhjarta",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-detta-dr-mmars-sk-te-en-sl-ja-till-ormars-n-ste",
+   "song": "Detta Drömmars Sköte En Slöja Till Ormars Näste",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-lavender-haze",
+   "song": "lavender haze",
+   "artist": "Vildhjarta",
+   "t": "e1-a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "vildhjarta-staos",
+   "song": "Staos",
+   "artist": "Vildhjarta",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "vildhjarta-benbl-st",
+   "song": "Benblåst",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-dimman-fran-lutzen",
+   "song": "Dimman Fran Lutzen",
+   "artist": "Vildhjarta",
+   "t": "fs1-cs2-fs2-b2-e3-a3-d4",
+   "alts": [
+    "fs1-cs2-fs2-b2-e3-gs3-cs4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-n-r-de-du-lskar-kommer-tillbaka-fr-n-de-d-da",
+   "song": "när de du älskar kommer tillbaka från de döda",
+   "artist": "Vildhjarta",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "vildhjarta-kristallfagel",
+   "song": "+ kristallfagel",
+   "artist": "Vildhjarta",
+   "t": "fs1-b1-fs2-b2-e3-gs3-cs4",
+   "alts": [
+    "a1-f2-as2-ds3-gs3-c4",
+    "as1-fs2-b2-e3-a3-cs4",
+    "cs2-a2-d3-g3-c4-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-dagger-6-string",
+   "song": "Dagger 6 string",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3"
+  },
+  {
+   "id": "vildhjarta-phobon-nika",
+   "song": "Phobon Nika",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-to-be-continued",
+   "song": "To Be Continued",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-nojja",
+   "song": "Nojja",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "g1-c2-f2-as2-ds3-gs3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-h-sten-som-togs-ifr-n-mig",
+   "song": "+ hösten som togs ifrån mig +",
+   "artist": "Vildhjarta",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "vildhjarta-phantom-assassin",
+   "song": "Phantom Assassin",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4",
+   "alts": [
+    "e1-b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-regnet-the",
+   "song": "+ ? regnet, the ? +",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-byta-ut-alla-stj-rnor-p-himlen-mot-plustecken",
+   "song": "+ byta ut alla stjärnor på himlen mot plustecken +",
+   "artist": "Vildhjarta",
+   "t": "d1-gs1-b1-e2-a2-b2-e3-a3"
+  },
+  {
+   "id": "vildhjarta-penny-royal-poison-ai",
+   "song": "penny royal poison (ai)",
+   "artist": "Vildhjarta",
+   "t": "e1-b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "vildhjarta-thallmix",
+   "song": "Thallmix",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-stpeppar",
+   "song": "Östpeppar",
+   "artist": "Vildhjarta",
+   "t": "g1-c2-f2-as2-ds3-gs3-c4"
+  },
+  {
+   "id": "vildhjarta-roda-lappar-sota-applen",
+   "song": "Roda lappar sota applen",
+   "artist": "Vildhjarta",
+   "t": "drop-c"
+  },
+  {
+   "id": "vildhjarta-vagabond",
+   "song": "vagabond",
+   "artist": "Vildhjarta",
+   "t": "meshuggah-f-8",
+   "alts": [
+    "gs1-ds2-gs2-cs3-f3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-kaos2",
+   "song": "kaos2",
+   "artist": "Vildhjarta",
+   "t": "e1-b1-e2-b2-e3-fs3-b3",
+   "alts": [
+    "b1-e2-b2-e3-fs3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "vildhjarta-vildhjarta-album-preproduction-teasers",
+   "song": "vildhjarta album preproduction teasers",
+   "artist": "Vildhjarta",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "vildhjarta-d-r-mossan-m-ter-havet",
+   "song": "+ där mossan möter havet +",
+   "artist": "Vildhjarta",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "vildhjarta-rational-gaze-sum",
+   "song": "rational gaze / sum",
+   "artist": "Vildhjarta",
+   "t": "e1-c2-f2-as2-ds3-gs3"
+  },
+  {
+   "id": "vildhjarta-sargasso",
+   "song": "+ sargasso +",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-vildhjarta-unreleased-compilation",
+   "song": "Vildhjarta UNRELEASED Compilation",
+   "artist": "Vildhjarta",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "vildhjarta-bunch-of-old-riffage",
+   "song": "Bunch Of Old Riffage",
+   "artist": "Vildhjarta",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "vildhjarta-rendezvous",
+   "song": "Rendezvous",
+   "artist": "Vildhjarta",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-swarm",
+   "song": "Swarm",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-in-death-is-life",
+   "song": "In Death - Is Life",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-the-hurt-that-finds-you-first",
+   "song": "The Hurt That Finds You First",
+   "artist": "Meshuggah",
+   "t": "e1-a1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "meshuggah-light-the-shortening-fuse",
+   "song": "Light The Shortening Fuse",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-nostrum",
+   "song": "Nostrum",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-they-move-below",
+   "song": "They Move Below",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-ritual",
+   "song": "Ritual",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-by-the-ton",
+   "song": "By The Ton",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "meshuggah-f-8"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-sum",
+   "song": "Sum",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-our-rage-wont-die",
+   "song": "Our Rage Won't Die",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "meshuggah-god-he-sees-in-mirrors",
+   "song": "God He Sees in Mirrors",
+   "artist": "Meshuggah",
+   "t": "ds1-gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-ivory-tower",
+   "song": "Ivory Tower",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-entrapment",
+   "song": "Entrapment",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-violent-sleep-of-reason",
+   "song": "Violent Sleep Of Reason",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-stifled",
+   "song": "Stifled",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8",
+   "alts": [
+    "std-8-fs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-behind-the-sun",
+   "song": "Behind The Sun",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-marrow",
+   "song": "Marrow",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-monstrocity",
+   "song": "Monstrocity",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "meshuggah-neurotica",
+   "song": "Neurotica",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-catch-33",
+   "song": "Catch 33",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-kaleidoscope-solo",
+   "song": "Kaleidoscope (SOLO)",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-phantoms",
+   "song": "Phantoms",
+   "artist": "Meshuggah",
+   "t": "ds1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-nebulous",
+   "song": "Nebulous",
+   "artist": "Meshuggah",
+   "t": "ds1-gs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "meshuggah-autonomy-lost",
+   "song": "Autonomy Lost",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-beneath",
+   "song": "Beneath",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-the-faultless",
+   "song": "The Faultless",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-the-mouth-licking-what-youve-bled",
+   "song": "The Mouth Licking What You've Bled",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-concatenation",
+   "song": "Concatenation",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-gods-of-rapture",
+   "song": "Gods Of Rapture",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-organic-shadows",
+   "song": "Organic Shadows",
+   "artist": "Meshuggah",
+   "t": "e1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "e1-as1-ds2-gs2-cs3-fs3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-sublevels",
+   "song": "Sublevels",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-into-decay",
+   "song": "Into Decay",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-cadaverous-mastication",
+   "song": "Cadaverous Mastication",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-the-paradoxical-spiral",
+   "song": "The Paradoxical Spiral",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-this-spiteful-snake",
+   "song": "This Spiteful Snake",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8",
+   "alts": [
+    "d1-as1-ds2-gs2-cs3-f3-as3",
+    "f1-as1-ds2-gs2-cs3-f3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-the-last-vigil",
+   "song": "The Last Vigil",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-suffer-in-truth",
+   "song": "Suffer In Truth",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-war",
+   "song": "War",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-sickening",
+   "song": "Sickening",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-transfixion",
+   "song": "Transfixion",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-new-millenium-cyanide-christ",
+   "song": "New Millenium Cyanide Christ",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-terminal-illusions",
+   "song": "Terminal Illusions",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-vanished",
+   "song": "Vanished",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-armies-of-the-preposterous",
+   "song": "Armies Of The Preposterous",
+   "artist": "Meshuggah",
+   "t": "ds1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-acrid-placidity",
+   "song": "Acrid Placidity",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-sane",
+   "song": "Sane",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-past-tense",
+   "song": "Past Tense",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-a3",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-qualms-of-reality",
+   "song": "Qualms Of Reality",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-shed",
+   "song": "Shed",
+   "artist": "Meshuggah",
+   "t": "ds1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "as1-ds2-gs2-cs3-fs3-as3-ds4",
+    "ds1-as1-ds2-gs2-cs3-fs3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-personae-non-gratae",
+   "song": "Personae Non Gratae",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "meshuggah-inside-whats-within-behind",
+   "song": "Inside What's Within Behind",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-paralyzing-ignorance",
+   "song": "Paralyzing Ignorance",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-the-exquisite-machinery-of-torture",
+   "song": "The Exquisite Machinery Of Torture",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-glints-collide",
+   "song": "Glints Collide",
+   "artist": "Meshuggah",
+   "t": "e1-a1-d2-g2-c3-e3-a3",
+   "alts": [
+    "korn-a-7"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-in-death-is-life-in-death-is-death",
+   "song": "In Death - Is Life/In Death - Is Death",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-erroneous-manipulation",
+   "song": "Erroneous Manipulation",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-choirs-of-devastation",
+   "song": "Choirs Of Devastation",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-bleed-practice",
+   "song": "Bleed Practice",
+   "artist": "Meshuggah",
+   "t": "std-d"
+  },
+  {
+   "id": "meshuggah-elastic",
+   "song": "Elastic",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-bleed-herta",
+   "song": "Bleed Herta",
+   "artist": "Meshuggah",
+   "t": "std-8-fs"
+  },
+  {
+   "id": "meshuggah-greed",
+   "song": "Greed",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-well-never-see-the-day",
+   "song": "We'll Never See The Day",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-sovereigns-morbidity",
+   "song": "Sovereigns Morbidity",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-rational-gaze-3",
+   "song": "Rational gaze :3",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-abnegating-cecity",
+   "song": "Abnegating Cecity",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-black-cathedral",
+   "song": "Black Cathedral",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-catch-thirtythree",
+   "song": "Catch Thirtythree",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-obsidian",
+   "song": "Obsidian",
+   "artist": "Meshuggah",
+   "t": "d1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4",
+    "meshuggah-f-8"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-aztec-two-step",
+   "song": "Aztec Two-Step",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-obzen-subdivided",
+   "song": "obZen Subdivided",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-imprint-of-the-un-saved",
+   "song": "Imprint Of The Un-Saved",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-re-inanimate",
+   "song": "Re-Inanimate",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-pitch-black",
+   "song": "Pitch Black",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8",
+   "alts": [
+    "std-eb"
+   ],
+   "c": 1
+  },
+  {
+   "id": "meshuggah-stifled-guitar-solo",
+   "song": "Stifled Guitar",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-disenchantment",
+   "song": "Disenchantment",
+   "artist": "Meshuggah",
+   "t": "meshuggah-f-8"
+  },
+  {
+   "id": "meshuggah-dont-speak",
+   "song": "Don't Speak",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-unanything",
+   "song": "Unanything",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "meshuggah-combustion-main-riff-correct",
+   "song": "Combustion Main Riff (Correct)",
+   "artist": "Meshuggah",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "meshuggah-cadeverous-mastication",
+   "song": "Cadeverous Mastication",
+   "artist": "Meshuggah",
+   "t": "std-eb"
+  },
+  {
+   "id": "meshuggah-spasm-but-different",
+   "song": "Spasm but different???",
+   "artist": "Meshuggah",
+   "t": "a1-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "meshuggah-future-breed-machine-subdivided",
+   "song": "Future Breed Machine Subdivided",
+   "artist": "Meshuggah",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "born-of-osiris-aeon-iii",
+   "song": "Aeon Iii",
+   "artist": "Born of Osiris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "born-of-osiris-dissimulation-solo-taab",
+   "song": "Dissimulation SOlo taab",
+   "artist": "Born of Osiris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "born-of-osiris-goddess-of-the-dawn",
+   "song": "Goddess Of The Dawn",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "born-of-osiris-machine-sweep-practice",
+   "song": "Machine Sweep Practice",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "born-of-osiris-crossface",
+   "song": "Crossface",
+   "artist": "Born of Osiris",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "born-of-osiris-starved",
+   "song": "Starved",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "born-of-osiris-threat-of-your-presence-v2",
+   "song": "Threat Of Your Presence v2",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "born-of-osiris-the-origin",
+   "song": "The Origin",
+   "artist": "Born of Osiris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "born-of-osiris-illusionist1",
+   "song": "Illusionist1",
+   "artist": "Born of Osiris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "born-of-osiris-truth-and-denial",
+   "song": "Truth and Denial",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "born-of-osiris-glorious-day",
+   "song": "Glorious Day",
+   "artist": "Born of Osiris",
+   "t": "drop-c"
+  },
+  {
+   "id": "after-the-burial-mixed-lead",
+   "song": "mixed lead",
+   "artist": "After the Burial",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "after-the-burial-behold-the-crown-2-0",
+   "song": "Behold the Crown 2.0",
+   "artist": "After the Burial",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "after-the-burial-disconnect-2",
+   "song": "Disconnect 2",
+   "artist": "After the Burial",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "after-the-burial-a-pulse-exchange",
+   "song": "A Pulse Exchange",
+   "artist": "After the Burial",
+   "t": "as1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "after-the-burial-neo-seoul-2",
+   "song": "neo seoul 2",
+   "artist": "After the Burial",
+   "t": "f1-as1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "erra-gore-of-being",
+   "song": "gore of being",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-further-eden",
+   "song": "further eden",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-snow-blood",
+   "song": "snow_blood",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-vanish-canvas",
+   "song": "Vanish Canvas​",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-white-noise",
+   "song": "White Noise",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-dementia",
+   "song": "Dementia",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-hybrid-earth",
+   "song": "Hybrid Earth",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-echo-sonata-non-ai",
+   "song": "Echo Sonata (non-AI)",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-scorpion-hymn",
+   "song": "Scorpion Hymn​",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-alpha-seed",
+   "song": "Alpha Seed",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-snowblood",
+   "song": "Snowblood",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-pulse",
+   "song": "Pulse",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-breach",
+   "song": "Breach​",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4",
+   "alts": [
+    "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "erra-drift",
+   "song": "Drift",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "erra-cure",
+   "song": "Cure",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-i-the-many-names-of-god",
+   "song": "i. the many names of god",
+   "artist": "Erra",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-spirits-away",
+   "song": "Spirits Away",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-rebirth",
+   "song": "Rebirth",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-glimpse",
+   "song": "Glimpse",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-eye-of-god",
+   "song": "Eye Of God",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "erra-slow-sour-bleed",
+   "song": "Slow Sour Bleed",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-sky-line",
+   "song": "Sky line",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-shadow-autonomous",
+   "song": "Shadow Autonomous​",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4",
+   "alts": [
+    "std-cs"
+   ],
+   "c": 1
+  },
+  {
+   "id": "erra-house-of-glass",
+   "song": "House of Glass​",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-frostbite",
+   "song": "Frostbite",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-nigh-to-silence",
+   "song": "Nigh To Silence",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-remnant",
+   "song": "Remnant​",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-black-cloud",
+   "song": "black cloud",
+   "artist": "Erra",
+   "t": "drop-d"
+  },
+  {
+   "id": "erra-rumor-of-light",
+   "song": "Rumor Of Light",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-erra-skyline",
+   "song": "ERRA Skyline",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-the-architect",
+   "song": "The Architect",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-divisionary",
+   "song": "Divisionary​",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-pattern-interrupt",
+   "song": "Pattern Interrupt",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-stelliform",
+   "song": "stelliform",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-vaalbara",
+   "song": "Vaalbara",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-seven",
+   "song": "Seven",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-ultraviolet",
+   "song": "Ultraviolet",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-efflorescent",
+   "song": "Efflorescent",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-pull-from-the-ghost",
+   "song": "Pull From The Ghost",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-render-the-void",
+   "song": "Render The Void",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-cicada-siren",
+   "song": "cicada siren",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-dreamcatcher",
+   "song": "Dreamcatcher",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-dreamwalkers",
+   "song": "Dreamwalkers",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-crimson",
+   "song": "Crimson",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-snowbloodd",
+   "song": "Snowbloodd",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-monolith",
+   "song": "Monolith",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-heart",
+   "song": "Heart",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-warrior",
+   "song": "Warrior",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "erra-our-translucent-forever",
+   "song": "Our Translucent Forever",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-past-life-persona",
+   "song": "Past Life Persona",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-hourgiass",
+   "song": "HourgIass",
+   "artist": "Erra",
+   "t": "f1-c2-f2-as2-d3-g3-c4"
+  },
+  {
+   "id": "erra-ghost-of-nothing",
+   "song": "Ghost Of Nothing",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-ds3-gs3-cs4"
+  },
+  {
+   "id": "erra-prometheus",
+   "song": "Prometheus",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-erra-the-hypnotist",
+   "song": "ERRA The Hypnotist",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-invent",
+   "song": "Invent",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-crawl-backwards-out-of-heaven-correct",
+   "song": "Crawl Backwards Out Of Heaven (Correct)",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-eidolon",
+   "song": "Eidolon​",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-dissaray",
+   "song": "Dissaray",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-pale-iris",
+   "song": "Pale Iris",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-eidoion",
+   "song": "EidoIon",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-sol-absentia",
+   "song": "Sol Absentia",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-valhalla",
+   "song": "Valhalla",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-moments-of-clarity",
+   "song": "Moments Of Clarity",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-signal-fire",
+   "song": "Signal Fire",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-towers",
+   "song": "Towers",
+   "artist": "Erra",
+   "t": "drop-b"
+  },
+  {
+   "id": "erra-ii-in-the-gut-of-the-wolf",
+   "song": "ii.in the gut of the wolf",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-lucid-threshold",
+   "song": "lucid threshold",
+   "artist": "Erra",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "erra-psalm-of-sedition",
+   "song": "Psalm of Sedition",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3",
+   "alts": [
+    "b1-e2-a2-d3-fs3-b3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "erra-blue-reverie",
+   "song": "Blue Reverie",
+   "artist": "Erra",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-wish-glimpse",
+   "song": "Wish/Glimpse",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-wish",
+   "song": "Wish",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-lights-city",
+   "song": "Lights City",
+   "artist": "Erra",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-black-cloud-ai",
+   "song": "black cloud AI",
+   "artist": "Erra",
+   "t": "drop-c"
+  },
+  {
+   "id": "erra-luna-halo",
+   "song": "Luna Halo",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-light-my-way",
+   "song": "Light My Way",
+   "artist": "Erra",
+   "t": "drop-d",
+   "alts": [
+    "a1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "erra-lunar-halo-2",
+   "song": "Lunar Halo (2)",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-the-many-names-of-god-guitar-playthrough",
+   "song": "the many names of god guitar playthrough",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-memory-fiction",
+   "song": "Memory Fiction​",
+   "artist": "Erra",
+   "t": "as1-f2-as2-d3-f3-c4"
+  },
+  {
+   "id": "erra-spiral-of-liminal-infinity-ai",
+   "song": "spiral (of liminal infinity) AI",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-of-rare-reform",
+   "song": "Of Rare Reform",
+   "artist": "Erra",
+   "t": "drop-b"
+  },
+  {
+   "id": "erra-wave-ai",
+   "song": "Wave (AI)",
+   "artist": "Erra",
+   "t": "drop-cs"
+  },
+  {
+   "id": "erra-end-to-excess",
+   "song": "End to Excess",
+   "artist": "Erra",
+   "t": "std-eb"
+  },
+  {
+   "id": "erra-obscure-words",
+   "song": "Obscure Words",
+   "artist": "Erra",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "erra-stockholm-syndrome-7",
+   "song": "Stockholm Syndrome 7",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-crawl-bakwards-out-of-heaven",
+   "song": "crawl bakwards out of heaven",
+   "artist": "Erra",
+   "t": "ds1-gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-ii-in-the-gut-of-the-wolf-ai",
+   "song": "ii. in the gut of the wolf AI",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-faction",
+   "song": "Faction",
+   "artist": "Erra",
+   "t": "drop-b"
+  },
+  {
+   "id": "erra-spiral",
+   "song": "spiral",
+   "artist": "Erra",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "erra-separate-and-coalesce",
+   "song": "Separate And Coalesce",
+   "artist": "Erra",
+   "t": "drop-b"
+  },
+  {
+   "id": "erra-machina",
+   "song": "Machina",
+   "artist": "Erra",
+   "t": "drop-b"
+  },
+  {
+   "id": "erra-iii-twilight-in-the-reflection-of-dreams",
+   "song": "iii. twilight in the reflection of dreams",
+   "artist": "Erra",
+   "t": "ds1-gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "erra-stelliform-ai",
+   "song": "stelliform AI",
+   "artist": "Erra",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "erra-idle-wild-full-song",
+   "song": "Idle Wild (Full Song)",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "erra-cicada-siren-ai",
+   "song": "cicada siren AI",
+   "artist": "Erra",
+   "t": "e1-b1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "northlane-dispossession",
+   "song": "Dispossession",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-dispossession-by-northlane-futui7tik-version",
+   "song": "Dispossession by Northlane, Futui7tik version",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-quantum-flux",
+   "song": "Quantum Flux",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "f1-c2-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-plenty",
+   "song": "Plenty",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-talking-heads",
+   "song": "Talking Heads",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-bloodline",
+   "song": "Bloodline",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "northlane-intuition",
+   "song": "Intuition",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-freefall",
+   "song": "Freefall",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-4d",
+   "song": "4D",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "gs1-ds2-gs2-cs3-f3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-worldeater",
+   "song": "Worldeater",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-citizen",
+   "song": "Citizen",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-rot",
+   "song": "Rot",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-leech",
+   "song": "Leech",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-heartmachine",
+   "song": "Heartmachine",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "northlane-impulse",
+   "song": "Impulse",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-genesis-scarab",
+   "song": "Genesis/Scarab",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "f1-as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-scarab",
+   "song": "Scarab",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-details-matter",
+   "song": "Details Matter",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-carbonized",
+   "song": "Carbonized",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-obelisk",
+   "song": "Obelisk",
+   "artist": "Northlane",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "northlane-jinn",
+   "song": "Jinn",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-dream-awake",
+   "song": "Dream Awake",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "northlane-clarity",
+   "song": "Clarity",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-vultures",
+   "song": "Vultures",
+   "artist": "Northlane",
+   "t": "e1-a1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "northlane-metamorphosis",
+   "song": "Metamorphosis",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-windbreaker",
+   "song": "Windbreaker",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-xen",
+   "song": "Xen",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-transcending-dimensions-correct",
+   "song": "Transcending Dimensions(Correct)",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "northlane-dispossession-v2",
+   "song": "Dispossession V2",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "gs1-ds2-gs2-cs3-f3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-windbreaker-v2",
+   "song": "Windbreaker v2",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-node",
+   "song": "Node",
+   "artist": "Northlane",
+   "t": "fs1-b1-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "northlane-disposession",
+   "song": "Disposession",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-the-calling",
+   "song": "The Calling",
+   "artist": "Northlane",
+   "t": "gs1-cs2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-aspire",
+   "song": "Aspire",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3-ds4"
+  },
+  {
+   "id": "northlane-obsidian",
+   "song": "Obsidian",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-colourwave",
+   "song": "Colourwave",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-clockwork",
+   "song": "Clockwork",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-solace",
+   "song": "Solace",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-evian",
+   "song": "Evian",
+   "artist": "Northlane",
+   "t": "drop-c"
+  },
+  {
+   "id": "northlane-ra",
+   "song": "Ra",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-i-shook-hands-with-death",
+   "song": "I Shook Hands With Death",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3"
+  },
+  {
+   "id": "northlane-keymaker",
+   "song": "Keymaker",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-enemy-of-the-night",
+   "song": "Enemy of the night",
+   "artist": "Northlane",
+   "t": "e1-a1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "northlane-echo-chamber",
+   "song": "Echo Chamber",
+   "artist": "Northlane",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-abrasumente",
+   "song": "Abrasumente",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3",
+   "alts": [
+    "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-exposure",
+   "song": "Exposure",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-hollow",
+   "song": "Hollow",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-eclipse",
+   "song": "Eclipse",
+   "artist": "Northlane",
+   "t": "d1-g1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "northlane-savage",
+   "song": "Savage",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-welcome-to-the-industry-from-fretless-ost",
+   "song": "Welcome to the Industry (from Fretless OST)",
+   "artist": "Northlane",
+   "t": "ds1-as1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-cypher",
+   "song": "cypher",
+   "artist": "Northlane",
+   "t": "ds1-gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-let-me-disappear",
+   "song": "Let Me Disappear",
+   "artist": "Northlane",
+   "t": "g1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "northlane-the-deadmines",
+   "song": "The Deadmines",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-all-seeing-eye",
+   "song": "All Seeing Eye",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-soma-exe",
+   "song": "\"soma.exe\"",
+   "artist": "Northlane",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-crucified",
+   "song": "Crucified",
+   "artist": "Northlane",
+   "t": "e1-a1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "northlane-genesis",
+   "song": "Genesis",
+   "artist": "Northlane",
+   "t": "f1-as1-f2-as2-ds3-gs3-c4",
+   "alts": [
+    "f1-c2-f2-as2-ds3-gs3-c4",
+    "f1-c2-f2-as2-ds3-gs3-c4-f4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-discoveries",
+   "song": "Discoveries",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-rot-exe",
+   "song": "\"rot.exe\"",
+   "artist": "Northlane",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "northlane-sleepless",
+   "song": "Sleepless",
+   "artist": "Northlane",
+   "t": "drop-c"
+  },
+  {
+   "id": "northlane-masquerade",
+   "song": "Masquerade",
+   "artist": "Northlane",
+   "t": "f1-c2-f2-as2-ds3-g3-c4",
+   "alts": [
+    "f1-as1-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "northlane-paragon",
+   "song": "Paragon",
+   "artist": "Northlane",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "northlane-corruption",
+   "song": "Corruption",
+   "artist": "Northlane",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "northlane-soma",
+   "song": "Soma",
+   "artist": "Northlane",
+   "t": "drop-c"
+  },
+  {
+   "id": "northlane-dark-solitaire",
+   "song": "Dark Solitaire",
+   "artist": "Northlane",
+   "t": "d1-g1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "polaris-pray-for-rain",
+   "song": "Pray for Rain.",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-above-my-head-working",
+   "song": "Above My Head (Working)",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-relapse",
+   "song": "Relapse",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-dissipate-official",
+   "song": "Dissipate Official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-lucid-guitar",
+   "song": "Lucid (Guitar)",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-all-of-this-fleeting",
+   "song": "All Of This Fleeting",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-voiceless",
+   "song": "Voiceless",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "polaris-consume-v2",
+   "song": "Consume V2",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-dissipate",
+   "song": "\"Dissipate\"",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-waves",
+   "song": "Waves",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-no-rest",
+   "song": "No Rest",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-unfamiliar",
+   "song": "Unfamiliar",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-inhumane-official",
+   "song": "Inhumane Official",
+   "artist": "Polaris",
+   "t": "g1-c2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-masochist-7-strings",
+   "song": "Masochist (7 strings)",
+   "artist": "Polaris",
+   "t": "b1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "polaris-nightmare-official",
+   "song": "Nightmare Official",
+   "artist": "Polaris",
+   "t": "g1-c2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-vagabond-both-guitars-drums",
+   "song": "Vagabond (both guitars + drums)",
+   "artist": "Polaris",
+   "t": "drop-cs"
+  },
+  {
+   "id": "polaris-consume-guitar-playthrough",
+   "song": "Consume Guitar Playthrough",
+   "artist": "Polaris",
+   "t": "drop-cs"
+  },
+  {
+   "id": "polaris-hypermania-working",
+   "song": "Hypermania (Working)",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-lappel-du-vide",
+   "song": "L'appel Du Vide",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-in-memoria-di",
+   "song": "In Memoria Di",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-all-in-vain-official",
+   "song": "All in Vain Official",
+   "artist": "Polaris",
+   "t": "g1-c2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-the-crossfire-official",
+   "song": "The Crossfire Official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-with-regards-official",
+   "song": "With Regards Official",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-crooked-path-legit",
+   "song": "Crooked Path LEGIT",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-parasites-official",
+   "song": "Parasites Official",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-regress",
+   "song": "Regress",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4",
+   "alts": [
+    "ds1-as1-ds2-gs2-cs3-f3-as3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "polaris-masochist-official",
+   "song": "Masochist Official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-summit",
+   "song": "Summit",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-martyr",
+   "song": "Martyr",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-deliverance",
+   "song": "Deliverance",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-harbinger-official",
+   "song": "Harbinger Official",
+   "artist": "Polaris",
+   "t": "g1-c2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-aspirations",
+   "song": "Aspirations",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-overflow-official",
+   "song": "Overflow Official",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-the-slow-decay",
+   "song": "The Slow Decay",
+   "artist": "Polaris",
+   "t": "drop-cs"
+  },
+  {
+   "id": "polaris-without-you",
+   "song": "WITHOUT YOU",
+   "artist": "Polaris",
+   "t": "gs1-ds2-gs2-cs3-f3-as3"
+  },
+  {
+   "id": "polaris-parasites",
+   "song": "Parasites",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-frailty-polaris",
+   "song": "Frailty - Polaris",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-the-undertow",
+   "song": "The Undertow",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-hold-you-under-feat-marcus-bridge-of-northlane",
+   "song": "Hold You Under (Feat. Marcus Bridge Of Northlane)",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-icarus",
+   "song": "Icarus",
+   "artist": "Polaris",
+   "t": "e1-a1-e2-a2-d3-fs3-b3"
+  },
+  {
+   "id": "polaris-with-regards-gp",
+   "song": "With Regards Gp",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-all-in-vain-wip",
+   "song": "All in Vain (wip)",
+   "artist": "Polaris",
+   "t": "drop-c"
+  },
+  {
+   "id": "polaris-all-of-this-is-fleeting-official",
+   "song": "All of This is Fleeting Official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-pray-for-rain-official",
+   "song": "Pray For Rain official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-fault-line-official",
+   "song": "Fault Line Official",
+   "artist": "Polaris",
+   "t": "g1-c2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-frailty-v2",
+   "song": "Frailty V2",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-below-my-feet",
+   "song": "below my feet",
+   "artist": "Polaris",
+   "t": "drop-b"
+  },
+  {
+   "id": "polaris-nightmares",
+   "song": "Nightmares",
+   "artist": "Polaris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-aftertouch",
+   "song": "Aftertouch",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-inhumane-full",
+   "song": "Inhumane (Full)",
+   "artist": "Polaris",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "polaris-aftertouch-official",
+   "song": "Aftertouch Official",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "polaris-crpat",
+   "song": "crPat",
+   "artist": "Polaris",
+   "t": "gs1-cs2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "thy-art-is-murder-whore-to-a-chainsaw",
+   "song": "Whore To A Chainsaw",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-reign-of-darkness",
+   "song": "Reign Of Darkness",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-puppet-master",
+   "song": "Puppet Master",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-the-purest-strain-of-hate",
+   "song": "The Purest Strain Of Hate",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-holy-war",
+   "song": "Holy War",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-laceration-penetration",
+   "song": "Laceration Penetration",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-infinite-death",
+   "song": "Infinite Death",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-death-squad-anthem",
+   "song": "Death Squad Anthem",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-slaves-beyond-death",
+   "song": "Slaves Beyond Death",
+   "artist": "Thy Art Is Murder",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "thy-art-is-murder-join-me-in-armageddon",
+   "song": "Join Me In Armageddon",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-shadow-of-eternal-sin",
+   "song": "Shadow Of Eternal Sin",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-make-america-hate-again",
+   "song": "Make America Hate Again",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-ill-show-you-god",
+   "song": "I'll Show You God",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-parasitic-autopsy",
+   "song": "Parasitic Autopsy",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-breeding-bacteria",
+   "song": "Breeding Bacteria",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-the-son-of-misery",
+   "song": "The Son Of Misery",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-dead-sun",
+   "song": "Dead Sun",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-human-target",
+   "song": "Human Target",
+   "artist": "Thy Art Is Murder",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "thy-art-is-murder-destroyer-of-dreams",
+   "song": "Destroyer Of Dreams",
+   "artist": "Thy Art Is Murder",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "thy-art-is-murder-dear-desolation",
+   "song": "Dear Desolation",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-blood-throne",
+   "song": "Blood Throne",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-engineering-the-antichrist",
+   "song": "Engineering The Antichrist",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-coffin-dragger",
+   "song": "Coffin Dragger",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-fire-in-the-sky",
+   "song": "Fire In The Sky",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-hammer-smashed-face",
+   "song": "Hammer Smashed Face",
+   "artist": "Thy Art Is Murder",
+   "t": "drop-a"
+  },
+  {
+   "id": "thy-art-is-murder-immolation",
+   "song": "Immolation",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-like-a-face-to-a-blender",
+   "song": "Like A Face To A Blender",
+   "artist": "Thy Art Is Murder",
+   "t": "drop-b"
+  },
+  {
+   "id": "thy-art-is-murder-the-adversary",
+   "song": "The Adversary",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-light-bearer",
+   "song": "Light Bearer",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-defective-breed",
+   "song": "Defective Breed",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-vile-creation",
+   "song": "Vile Creation",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-the-false-prophet",
+   "song": "The False Prophet",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-chemical-christ",
+   "song": "Chemical Christ",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-keres-dist-test",
+   "song": "Keres (Dist. Test)",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-violent-reckoning",
+   "song": "Violent Reckoning",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-doomed-from-birth",
+   "song": "Doomed From Birth",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-infinite-forms",
+   "song": "Infinite Forms",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-godlike-vers-2",
+   "song": "Godlike Vers.2",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-until-there-is-no-longer",
+   "song": "Until There Is No Longer",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-cowards-throne",
+   "song": "Cowards Throne",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-flesh-oracle",
+   "song": "Flesh Oracle",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-they-will-know-another",
+   "song": "They Will Know Another",
+   "artist": "Thy Art Is Murder",
+   "t": "gs1-ds2-gs2-cs3-fs3-as3-ds4"
+  },
+  {
+   "id": "thy-art-is-murder-eye-for-an-eye",
+   "song": "Eye for an Eye",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4",
+   "alts": [
+    "b1-e2-a2-d3-g3-b3-e4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "thy-art-is-murder-new-gods",
+   "song": "New Gods",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-absolute-genocide",
+   "song": "Absolute Genocide",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-eternal-suffering",
+   "song": "Eternal Suffering",
+   "artist": "Thy Art Is Murder",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "thy-art-is-murder-fur-and-claw",
+   "song": "Fur And Claw",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-everything-unwanted",
+   "song": "Everything Unwanted",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-through-blood-i-purify",
+   "song": "Through Blood I Purify",
+   "artist": "Thy Art Is Murder",
+   "t": "drop-a"
+  },
+  {
+   "id": "thy-art-is-murder-soldier-of-immortality",
+   "song": "Soldier of Immortality",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-atonement",
+   "song": "Atonement",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-killing-season",
+   "song": "Killing Season",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-emptiness",
+   "song": "Emptiness",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-furnace-of-hate",
+   "song": "Furnace Of Hate",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-naked-and-cold",
+   "song": "Naked And Cold",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-this-hole-isnt-deep-enough",
+   "song": "This Hole Isn't Deep Enough",
+   "artist": "Thy Art Is Murder",
+   "t": "drop-b"
+  },
+  {
+   "id": "thy-art-is-murder-anathema",
+   "song": "Anathema",
+   "artist": "Thy Art Is Murder",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "thy-art-is-murder-du-hast",
+   "song": "Du Hast",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-requiem",
+   "song": "Requiem",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-death-dealer",
+   "song": "Death Dealer",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-gates-of-misery",
+   "song": "Gates Of Misery",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-welcome-oblivion",
+   "song": "Welcome Oblivion",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-death-perception",
+   "song": "Death Perception",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-deliver-us-to-evil",
+   "song": "Deliver Us To Evil",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-no-absolution",
+   "song": "No Absolution",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-decrepit-purification",
+   "song": "Decrepit Purification",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-voyeurs-into-death",
+   "song": "Voyeurs into Death",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-the-skin-of-the-serpent",
+   "song": "The Skin of the Serpent",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-child-of-sorrow",
+   "song": "Child Of Sorrow",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-into-chaos-we-climb",
+   "song": "Into Chaos We Climb",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-man-is-the-enemy",
+   "song": "Man Is The Enemy",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "thy-art-is-murder-the-final-curtain",
+   "song": "The Final Curtain",
+   "artist": "Thy Art Is Murder",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "parkway-drive-carrion",
+   "song": "Carrion",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-idols-and-anchors",
+   "song": "Idols And Anchors",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-wild-eyes",
+   "song": "Wild Eyes",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-vice-grip",
+   "song": "Vice Grip",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-horizons",
+   "song": "Horizons",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-romance-is-dead",
+   "song": "Romance Is Dead",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-boneyards",
+   "song": "Boneyards",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-prey",
+   "song": "Prey",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-the-void",
+   "song": "The Void",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-glitch",
+   "song": "Glitch",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-glitch-by-parkway-drive",
+   "song": "Glitch by Parkway Drive",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-smoke-em-if-ya-got-em",
+   "song": "Smoke 'em If Ya Got 'em",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-karma",
+   "song": "Karma",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-five-months",
+   "song": "Five Months",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-chronos",
+   "song": "Chronos",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dark-days",
+   "song": "Dark Days",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-the-river",
+   "song": "The River",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-crushed",
+   "song": "Crushed",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-sleepwalker",
+   "song": "Sleepwalker",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-its-hard-to-speak-without-a-tongue",
+   "song": "It's Hard To Speak Without A Tongue",
+   "artist": "Parkway Drive",
+   "t": "drop-b",
+   "alts": [
+    "b2-fs2-b2-e3-gs3-cs4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "parkway-drive-deathless-song",
+   "song": "Deathless Song",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-wreckage",
+   "song": "Wreckage",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-sacred",
+   "song": "Sacred",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-the-greatest-fear",
+   "song": "The Greatest Fear",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-deliver-me",
+   "song": "Deliver Me",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-pandora",
+   "song": "Pandora",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-destroyer",
+   "song": "Destroyer",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-sirens-song",
+   "song": "Siren's Song",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-home-is-for-the-heartless",
+   "song": "Home Is For The Heartless",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-frostbite",
+   "song": "Frostbite",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-alone",
+   "song": "Alone",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-anasasis-xenophontis",
+   "song": "Anasasis (Xenophontis)",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-bottom-feeder",
+   "song": "Bottom Feeder",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dedicated",
+   "song": "Dedicated",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dedicated-by-parkway-drive",
+   "song": "Dedicated by Parkway Drive",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-mutiny",
+   "song": "Mutiny",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-leviathan-i",
+   "song": "Leviathan I",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-wishing-wells",
+   "song": "Wishing Wells",
+   "artist": "Parkway Drive",
+   "t": "drop-d"
+  },
+  {
+   "id": "parkway-drive-ground-zero",
+   "song": "Ground Zero",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-blue-and-the-grey",
+   "song": "Blue And The Grey",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-dead-mans-chest-1",
+   "song": "Dead Mans Chest (1)",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-breaking-point-correct",
+   "song": "Breaking Point (Correct)",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-sleight-of-hand",
+   "song": "Sleight Of Hand",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-imperial-heretic",
+   "song": "Imperial Heretic",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-a-cold-day-in-hell",
+   "song": "A Cold Day In Hell",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-looks-like-yoda",
+   "song": "Looks Like Yoda",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-gimme-ad",
+   "song": "Gimme Ad",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-absolute-power",
+   "song": "Absolute Power",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-shadow-boxing",
+   "song": "Shadow Boxing",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dream-run",
+   "song": "Dream Run",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-i-watched",
+   "song": "I Watched",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-picture-perfect-pathetic",
+   "song": "Picture Perfect, Pathetic",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-i-hope-you-rot",
+   "song": "I Hope You Rot",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-blackout",
+   "song": "Blackout",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-hollow",
+   "song": "Hollow",
+   "artist": "Parkway Drive",
+   "t": "drop-a"
+  },
+  {
+   "id": "parkway-drive-guns-for-show-knives-for-a-pro",
+   "song": "Guns for Show, Knives for a Pro",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-pressures",
+   "song": "Pressures",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-dead-mans-chest",
+   "song": "Dead Man's Chest",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-like-napalm",
+   "song": "Like Napalm",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-swing",
+   "song": "Swing",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-soul-bleach",
+   "song": "Soul Bleach",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-fractures",
+   "song": "Fractures",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-darker-still",
+   "song": "Darker Still",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-carrion-by-diyv",
+   "song": "Carrion, by DIYV",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-deadweight",
+   "song": "Deadweight",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-hollow-man",
+   "song": "Hollow Man",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-unrest",
+   "song": "Unrest",
+   "artist": "Parkway Drive",
+   "t": "drop-a"
+  },
+  {
+   "id": "parkway-drive-dying-to-believe",
+   "song": "Dying To Believe",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dont-close-your-eyes-full",
+   "song": "Dont Close Your Eyes (Full)",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-dead-dreams",
+   "song": "Dead Dreams",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-moments-in-oblivion",
+   "song": "Moments In Oblivion",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-feed-them-to-the-pigs",
+   "song": "Feed Them To The Pigs",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-devils-calling",
+   "song": "Devil's Calling",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-vicious",
+   "song": "Vicious",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-into-the-dark",
+   "song": "Into The Dark",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-snake-oil-and-holy-water",
+   "song": "Snake Oil And Holy Water",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-the-slow-surrender",
+   "song": "The Slow Surrender",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-begin",
+   "song": "Begin",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-in-blood",
+   "song": "In Blood",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-atlas",
+   "song": "Atlas",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-flesh-bone-and-weakness-full",
+   "song": "Flesh Bone and Weakness (Full)",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-cruise",
+   "song": "Cruise",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-the-sirens-song",
+   "song": "\"The Siren's Song\"",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-carrion-grade-6-guitar",
+   "song": "Carrion Grade 6 Guitar",
+   "artist": "Parkway Drive",
+   "t": "drop-d"
+  },
+  {
+   "id": "parkway-drive-a-deathless-song-feat-jenna-mcdougall-full",
+   "song": "\"A Deathless Song\" feat. Jenna McDougall full",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-fox-footy-anthem",
+   "song": "Fox Footy Anthem",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-samsara-unrest",
+   "song": "Samsara/Unrest",
+   "artist": "Parkway Drive",
+   "t": "drop-a"
+  },
+  {
+   "id": "parkway-drive-land-of-the-lost",
+   "song": "Land of the lost",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-old-ghost-new-regrets",
+   "song": "Old Ghost New Regrets",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "parkway-drive-the-negotiator",
+   "song": "The Negotiator",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-romance-is-dead-dropc-by-marius",
+   "song": "Romance Is Dead(DropC) By Marius",
+   "artist": "Parkway Drive",
+   "t": "drop-c",
+   "alts": [
+    "drop-b"
+   ],
+   "c": 1
+  },
+  {
+   "id": "parkway-drive-the-sound-of-violence",
+   "song": "The Sound Of Violence",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-youre-over-correct-version",
+   "song": "Youre Over (Correct Version)",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-sparks",
+   "song": "Sparks",
+   "artist": "Parkway Drive",
+   "t": "drop-d",
+   "alts": [
+    "drop-b"
+   ],
+   "c": 1
+  },
+  {
+   "id": "parkway-drive-samsara",
+   "song": "Samsara",
+   "artist": "Parkway Drive",
+   "t": "drop-a"
+  },
+  {
+   "id": "parkway-drive-from-the-heart-of-darkness",
+   "song": "From The Heart Of Darkness",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-its-so-hard-to-speak-without-a-tongue",
+   "song": "It's So Hard To Speak Without A Tongue",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-the-colour-of-leaving",
+   "song": "The Colour Of Leaving",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-swallowing-razorblades",
+   "song": "Swallowing Razorblades",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-a-deathless-song",
+   "song": "\"A Deathless Song\"",
+   "artist": "Parkway Drive",
+   "t": "std-d"
+  },
+  {
+   "id": "parkway-drive-hopeless",
+   "song": "Hopeless",
+   "artist": "Parkway Drive",
+   "t": "drop-c"
+  },
+  {
+   "id": "parkway-drive-gl-tch",
+   "song": "gl@tch",
+   "artist": "Parkway Drive",
+   "t": "drop-cs"
+  },
+  {
+   "id": "parkway-drive-youre-over",
+   "song": "You're Over",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-a-deathless-song-feat-jenna-mcdougall",
+   "song": "\"A Deathless Song\" feat. Jenna McDougall",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "parkway-drive-set-to-destroy-1",
+   "song": "Set To Destroy (1)",
+   "artist": "Parkway Drive",
+   "t": "as1-f2-as2-ds3-g3-c4",
+   "alts": [
+    "drop-a"
+   ],
+   "c": 1
+  },
+  {
+   "id": "parkway-drive-emotional-breakdown",
+   "song": "Emotional Breakdown",
+   "artist": "Parkway Drive",
+   "t": "drop-b"
+  },
+  {
+   "id": "alpha-wolf-akudama",
+   "song": "Akudama",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-e3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-60cm-of-steel",
+   "song": "60cm of Steel",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-e3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-bleed-4-you",
+   "song": "Bleed 4 You",
+   "artist": "Alpha Wolf",
+   "t": "f1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-black-mamba",
+   "song": "Black Mamba",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-e3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-haunter",
+   "song": "Haunter",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-creep",
+   "song": "Creep",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-mangekyo",
+   "song": "Mangekyo",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-ultra-violet-violence",
+   "song": "Ultra-Violet Violence",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-restricted-r18",
+   "song": "Restricted (R18+)",
+   "artist": "Alpha Wolf",
+   "t": "f1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "alpha-wolf-sub-zero",
+   "song": "Sub-Zero",
+   "artist": "Alpha Wolf",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "alpha-wolf-hotel-underground",
+   "song": "Hotel Underground",
+   "artist": "Alpha Wolf",
+   "t": "f1-d2-g2-c3-e3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-rot-in-pieces",
+   "song": "Rot in Pieces",
+   "artist": "Alpha Wolf",
+   "t": "ds1-d2-g2-c3-e3-a3"
+  },
+  {
+   "id": "alpha-wolf-nail-biter",
+   "song": "Nail Biter",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-e3-a3",
+   "alts": [
+    "g1-d2-g2-c3-f3-a3"
+   ],
+   "c": 1
+  },
+  {
+   "id": "alpha-wolf-sucks-2-suck",
+   "song": "Sucks 2 suck",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-acid-romance",
+   "song": "Acid romance",
+   "artist": "Alpha Wolf",
+   "t": "f1-c2-f2-as2-d3-g3",
+   "alts": [
+    "f1-c2-f2-as2-ds3-g3-c4"
+   ],
+   "c": 1
+  },
+  {
+   "id": "alpha-wolf-half-living-things",
+   "song": "Half Living Things",
+   "artist": "Alpha Wolf",
+   "t": "a1-e2-a2-d3-g3-b3-e4"
+  },
+  {
+   "id": "alpha-wolf-whenever-youre-ready",
+   "song": "Whenever You're Ready",
+   "artist": "Alpha Wolf",
+   "t": "fs1-cs2-fs2-b2-e3-gs3-cs4"
+  },
+  {
+   "id": "alpha-wolf-dont-ask",
+   "song": "Don't Ask...",
+   "artist": "Alpha Wolf",
+   "t": "f1-c2-f2-as2-ds3-g3-c4"
+  },
+  {
+   "id": "alpha-wolf-feign",
+   "song": "Feign",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-spirit-breaker",
+   "song": "Spirit Breaker",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-no-2",
+   "song": "No. 2",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-golden-fate-gut-ache",
+   "song": "Golden Fate; Gut Ache",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-f3-a3-d4"
+  },
+  {
+   "id": "alpha-wolf-pretty-boy",
+   "song": "Pretty Boy",
+   "artist": "Alpha Wolf",
+   "t": "g1-d2-g2-c3-e3-a3"
   }
  ]
 }
