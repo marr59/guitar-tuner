@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "updated": "2026-07-24",
+ "updated": "2026-10-10",
  "note": "strings[] is ordered low→high. Focus is ALTERNATE tunings (E standard not catalogued). songs[].t references tunings[].id; expand to strings[] on load.",
  "notes": {
   "conflict": "A second transcription uses this tuning. Unresolved — check by ear.",
@@ -1976,6 +1976,485 @@
     "F#3",
     "A#3",
     "C#4"
+   ]
+  },
+  {
+   "id": "a1-c2-g2-c3-f3-as3",
+   "name": "A1 C2 G2 C3 F3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "C2",
+    "G2",
+    "C3",
+    "F3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "a1-d2-g2-c3-f3-a3",
+   "name": "A1 D2 G2 C3 F3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "A1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3"
+   ]
+  },
+  {
+   "id": "a2-a2-e3-e3-a3-a3",
+   "name": "A2 A2 E3 E3 A3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "A2",
+    "A2",
+    "E3",
+    "E3",
+    "A3",
+    "A3"
+   ]
+  },
+  {
+   "id": "as1-c2-f2-as2-ds3-g3",
+   "name": "A#1 C2 F2 A#2 D#3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "C2",
+    "F2",
+    "A#2",
+    "D#3",
+    "G3"
+   ]
+  },
+  {
+   "id": "as1-ds2-gs2-cs3-fs3-as3",
+   "name": "A#1 D#2 G#2 C#3 F#3 A#3",
+   "instrument": "guitar6",
+   "strings": [
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "as1-ds2-gs2-cs3-fs3-as3-cs4",
+   "name": "A#1 D#2 G#2 C#3 F#3 A#3 C#4",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "as1-f2-as2-ds3-fs3-as3-ds4",
+   "name": "A#1 F2 A#2 D#3 F#3 A#3 D#4",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "as1-f2-as2-ds3-gs3-c4-e4",
+   "name": "A#1 F2 A#2 D#3 G#3 C4 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "A#1",
+    "F2",
+    "A#2",
+    "D#3",
+    "G#3",
+    "C4",
+    "E4"
+   ]
+  },
+  {
+   "id": "as2-fs3-b3-e4-gs4-cs4",
+   "name": "A#2 F#3 B3 E4 G#4 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "A#2",
+    "F#3",
+    "B3",
+    "E4",
+    "G#4",
+    "C#4"
+   ]
+  },
+  {
+   "id": "b1-e2-a2-d3-e3-a3-d4",
+   "name": "B1 E2 A2 D3 E3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "E3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "b1-e2-a2-d3-g3-c4",
+   "name": "B1 E2 A2 D3 G3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "b1-fs2-b2-g3-b3-e4",
+   "name": "B1 F#2 B2 G3 B3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "B1",
+    "F#2",
+    "B2",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "b2-b2-e3-e3-a3-a3",
+   "name": "B2 B2 E3 E3 A3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "B2",
+    "B2",
+    "E3",
+    "E3",
+    "A3",
+    "A3"
+   ]
+  },
+  {
+   "id": "b2-e3-g3-d4-b3-b3",
+   "name": "B2 E3 G3 D4 B3 B3",
+   "instrument": "guitar6",
+   "strings": [
+    "B2",
+    "E3",
+    "G3",
+    "D4",
+    "B3",
+    "B3"
+   ]
+  },
+  {
+   "id": "c2-f2-as2-d3-g3-c4",
+   "name": "C2 F2 A#2 D3 G3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "F2",
+    "A#2",
+    "D3",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "c2-f2-c3-f3-a3-d4",
+   "name": "C2 F2 C3 F3 A3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "C2",
+    "F2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "c3-f3-as3-ds4-g3-c4",
+   "name": "C3 F3 A#3 D#4 G3 C4",
+   "instrument": "guitar6",
+   "strings": [
+    "C3",
+    "F3",
+    "A#3",
+    "D#4",
+    "G3",
+    "C4"
+   ]
+  },
+  {
+   "id": "cs2-fs2-cs3-fs3-gs3-ds4",
+   "name": "C#2 F#2 C#3 F#3 G#3 D#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "F#2",
+    "C#3",
+    "F#3",
+    "G#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "cs2-gs2-cs3-fs3-gs4-cs4",
+   "name": "C#2 G#2 C#3 F#3 G#4 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "C#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "G#4",
+    "C#4"
+   ]
+  },
+  {
+   "id": "d1-d2-g2-c3-f3-a3-d4",
+   "name": "D1 D2 G2 C3 F3 A3 D4",
+   "instrument": "guitar7",
+   "strings": [
+    "D1",
+    "D2",
+    "G2",
+    "C3",
+    "F3",
+    "A3",
+    "D4"
+   ]
+  },
+  {
+   "id": "d2-a2-d3-as3-c4-d4",
+   "name": "D2 A2 D3 A#3 C4 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "D2",
+    "A2",
+    "D3",
+    "A#3",
+    "C4",
+    "D4"
+   ]
+  },
+  {
+   "id": "ds1-as1-ds2-gs2-cs3-fs3-as3",
+   "name": "D#1 A#1 D#2 G#2 C#3 F#3 A#3",
+   "instrument": "guitar7",
+   "strings": [
+    "D#1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3"
+   ]
+  },
+  {
+   "id": "ds1-as1-ds2-gs2-cs3-fs3-as3-ds4",
+   "name": "D#1 A#1 D#2 G#2 C#3 F#3 A#3 D#4",
+   "instrument": "guitar8",
+   "strings": [
+    "D#1",
+    "A#1",
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "D#4"
+   ]
+  },
+  {
+   "id": "ds2-as2-as2-fs3-as3-d4",
+   "name": "D#2 A#2 A#2 F#3 A#3 D4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "A#2",
+    "A#2",
+    "F#3",
+    "A#3",
+    "D4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-fs3-as3-cs4",
+   "name": "D#2 G#2 C#3 F#3 A#3 C#4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-fs3-as3-g4",
+   "name": "D#2 G#2 C#3 F#3 A#3 G4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "F#3",
+    "A#3",
+    "G4"
+   ]
+  },
+  {
+   "id": "ds2-gs2-cs3-g3-as3-f4",
+   "name": "D#2 G#2 C#3 G3 A#3 F4",
+   "instrument": "guitar6",
+   "strings": [
+    "D#2",
+    "G#2",
+    "C#3",
+    "G3",
+    "A#3",
+    "F4"
+   ]
+  },
+  {
+   "id": "e2-a2-d3-e3-a3-e4",
+   "name": "E2 A2 D3 E3 A3 E4",
+   "instrument": "guitar6",
+   "strings": [
+    "E2",
+    "A2",
+    "D3",
+    "E3",
+    "A3",
+    "E4"
+   ]
+  },
+  {
+   "id": "fs1-b1-e2-a2-d3-fs3-b3",
+   "name": "F#1 B1 E2 A2 D3 F#3 B3",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "B1",
+    "E2",
+    "A2",
+    "D3",
+    "F#3",
+    "B3"
+   ]
+  },
+  {
+   "id": "fs1-b1-fs2-b2-ds3-gs3",
+   "name": "F#1 B1 F#2 B2 D#3 G#3",
+   "instrument": "guitar6",
+   "strings": [
+    "F#1",
+    "B1",
+    "F#2",
+    "B2",
+    "D#3",
+    "G#3"
+   ]
+  },
+  {
+   "id": "fs1-e2-a2-d3-g3-b3-e4",
+   "name": "F#1 E2 A2 D3 G3 B3 E4",
+   "instrument": "guitar7",
+   "strings": [
+    "F#1",
+    "E2",
+    "A2",
+    "D3",
+    "G3",
+    "B3",
+    "E4"
+   ]
+  },
+  {
+   "id": "fs2-b2-e3-a3-d4-g4",
+   "name": "F#2 B2 E3 A3 D4 G4",
+   "instrument": "guitar6",
+   "strings": [
+    "F#2",
+    "B2",
+    "E3",
+    "A3",
+    "D4",
+    "G4"
+   ]
+  },
+  {
+   "id": "g2-g2-d3-a3-g3-a3",
+   "name": "G2 G2 D3 A3 G3 A3",
+   "instrument": "guitar6",
+   "strings": [
+    "G2",
+    "G2",
+    "D3",
+    "A3",
+    "G3",
+    "A3"
+   ]
+  },
+  {
+   "id": "g2-g2-d3-f3-f3-g3",
+   "name": "G2 G2 D3 F3 F3 G3",
+   "instrument": "guitar6",
+   "strings": [
+    "G2",
+    "G2",
+    "D3",
+    "F3",
+    "F3",
+    "G3"
+   ]
+  },
+  {
+   "id": "gs1-cs2-fs2-b2-e3-gs3-cs4",
+   "name": "G#1 C#2 F#2 B2 E3 G#3 C#4",
+   "instrument": "guitar7",
+   "strings": [
+    "G#1",
+    "C#2",
+    "F#2",
+    "B2",
+    "E3",
+    "G#3",
+    "C#4"
+   ]
+  },
+  {
+   "id": "gs2-cs3-fs3-b3-ds4-gs4",
+   "name": "G#2 C#3 F#3 B3 D#4 G#4",
+   "instrument": "guitar6",
+   "strings": [
+    "G#2",
+    "C#3",
+    "F#3",
+    "B3",
+    "D#4",
+    "G#4"
    ]
   }
  ],
@@ -24158,6 +24637,536 @@
    "t": "drop-d",
    "confidence": "medium",
    "note": "Drop D on 6-string. This is one of the SLK 6-string songs referenced in the official FAQ (stam1na.com/ukk/) as being played on Ibanez Jem 77VBK. Tab header: 'Tuning: Drop D'. Minor labeling inconsistency in the tab (string 2 labeled 'A' instead of 'B') but remaining string labels and tuning header are consistent with Drop D. Album confirmed as SLK-era via Finnish Wikipedia track listing."
+  },
+  {
+   "id": "kalmah-hades",
+   "song": "Hades",
+   "artist": "Kalmah",
+   "t": "std-eb",
+   "confidence": "high",
+   "verified": true,
+   "note": "Tab explicitly states 'tune down a 1/2 step (Eb Ab Db Gb Bb Eb)' = Eb standard. Single source."
+  },
+  {
+   "id": "kalmah-bitter-metallic-side",
+   "song": "Bitter Metallic Side",
+   "artist": "Kalmah",
+   "t": "std-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Tab lines labelled D G C F A d = D standard (whole step down). Single source."
+  },
+  {
+   "id": "kalmah-to-the-gallows",
+   "song": "To the Gallows",
+   "artist": "Kalmah",
+   "t": "std-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Tab notes 'It's dropped 1 step down to D'; lines D G C F A d = D standard. Single source."
+  },
+  {
+   "id": "kalmah-black-waltz",
+   "song": "Black Waltz",
+   "artist": "Kalmah",
+   "t": "drop-d",
+   "c": 1,
+   "alts": [
+    "std-d"
+   ],
+   "note": "Tab header states 'Drop D'. Other transcriptions from the same album are in D standard, so this may be a transcriber's relative reading. Single source."
+  },
+  {
+   "id": "kalmah-tordah",
+   "song": "Tordah",
+   "artist": "Kalmah",
+   "t": "drop-d",
+   "c": 1,
+   "alts": [
+    "std-d"
+   ],
+   "note": "Tab header states 'Tuning: Dropped D'. Single source."
+  },
+  {
+   "id": "turmion-katilot-teurastaja",
+   "song": "Teurastaja",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. MC Raaka Pee says in interview the song was written in a 'dropped tuning'; Songsterr and Ultimate-Guitar both specify Drop D (D A D G B E)."
+  },
+  {
+   "id": "turmion-katilot-verta-ja-lihaa",
+   "song": "Verta Ja Lihaa",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Songsterr and Ultimate-Guitar both list Drop D (D A D G B E)."
+  },
+  {
+   "id": "turmion-katilot-hades",
+   "song": "Hades",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar (Pro tab)."
+  },
+  {
+   "id": "turmion-katilot-lepositeet",
+   "song": "Lepositeet",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-liitto",
+   "song": "Liitto",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-pimeyden-morsian",
+   "song": "Pimeyden Morsian",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Songsterr and UG Pro tab agree on Drop D (a simplified UG standard-tuning tab also exists)."
+  },
+  {
+   "id": "turmion-katilot-rautaketju",
+   "song": "Rautaketju",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Agreed by Songsterr and two UG tabs."
+  },
+  {
+   "id": "turmion-katilot-usch",
+   "song": "Usch",
+   "artist": "Turmion Kätilöt",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard (whole-step-down-from-D / two steps below E standard). Songsterr and UG Pro both label 'C Tuning'; a simplified UG Drop-C tab also exists."
+  },
+  {
+   "id": "turmion-katilot-aina-arki",
+   "song": "Aina Arki",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-elava-koneeksi",
+   "song": "Elävä Koneeksi",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-hyvissa-hoyryissa",
+   "song": "Hyvissä Höyryissä",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-kirottujen-karnevaalit",
+   "song": "Kirottujen Karnevaalit",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-lataa-ja-varmista",
+   "song": "Lataa Ja Varmista",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-mina-maaraan",
+   "song": "Minä Määrään",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Two Songsterr tabs and UG all list Drop C."
+  },
+  {
+   "id": "turmion-katilot-nimi-kivessa",
+   "song": "Nimi Kivessä",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Songsterr and UG Pro tab agree (a UG standard-tuning chord sheet also exists)."
+  },
+  {
+   "id": "turmion-katilot-paha-ihminen",
+   "song": "Paha Ihminen",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-pirun-nyrkki",
+   "song": "Pirun Nyrkki",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-pyha-maa",
+   "song": "Pyhä Maa",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Two Songsterr tabs (incl. a 5-string version) and UG list Drop C."
+  },
+  {
+   "id": "turmion-katilot-rehtori",
+   "song": "Rehtori",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-silmat-sumeat",
+   "song": "Silmät Sumeat",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-sinulle",
+   "song": "Sinulle",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-tirehtoori",
+   "song": "Tirehtööri",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-vastanaineet",
+   "song": "Vastanaineet",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Agreed by Songsterr and Ultimate-Guitar."
+  },
+  {
+   "id": "turmion-katilot-dance-panique",
+   "song": "Dance Panique",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-a",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop A (drop-tuned B standard). Single source (Songsterr) — one of the band's heavier/newer tracks."
+  },
+  {
+   "id": "turmion-katilot-gabriel",
+   "song": "Gabriel",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-a",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop A. Single source (Songsterr)."
+  },
+  {
+   "id": "turmion-katilot-revi-minut-auki",
+   "song": "Revi Minut Auki",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-a",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop A. Single source (Songsterr)."
+  },
+  {
+   "id": "turmion-katilot-vie-se-pois",
+   "song": "Vie Se Pois",
+   "artist": "Turmion Kätilöt",
+   "t": "b1-e2-a2-d3-fs3-b3",
+   "confidence": "high",
+   "verified": true,
+   "note": "B standard. Songsterr guitar tab; UG only has a chord sheet defaulting to 'Standard', so pitch is from Songsterr."
+  },
+  {
+   "id": "turmion-katilot-sikio",
+   "song": "Sikiö",
+   "artist": "Turmion Kätilöt",
+   "t": "drop-a",
+   "confidence": "high",
+   "verified": true,
+   "note": "Conflict: Songsterr guitar tab = Drop A (A E A D F# B); Ultimate-Guitar Pro tab labels it 'Standard'. Listed as Drop A per Songsterr but unconfirmed."
+  },
+  {
+   "id": "battle-beast-twilight-cabaret",
+   "song": "Twilight Cabaret",
+   "artist": "Battle Beast",
+   "t": "drop-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop D. Songsterr guitar tuning array [64,59,55,50,45,38]; bass track [43,38,33,26] is Drop D bass, confirming."
+  },
+  {
+   "id": "battle-beast-the-road-to-avalon",
+   "song": "The Road to Avalon",
+   "artist": "Battle Beast",
+   "t": "drop-cs",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C# (Eb-standard with low string dropped a whole step to C#). Songsterr array [63,58,54,49,44,37] identical across all three guitar tracks (Lead/Rhythm/Harmonies); bass [42,37,32,25] matches."
+  },
+  {
+   "id": "battle-beast-kingdom",
+   "song": "Kingdom",
+   "artist": "Battle Beast",
+   "t": "std-cs",
+   "confidence": "high",
+   "verified": true,
+   "note": "C# standard (down 1.5 steps / minor third from E). Songsterr main guitar array [61,56,52,47,42,37] and bass [40,35,30,25] both down 3 semitones, confirming. CONFLICT: the same Songsterr tab also contains one guitar track in E standard [64,59,55,50,45,40] (likely a transcription artifact); bass strongly supports C# standard."
+  },
+  {
+   "id": "omnium-gatherum-rest-in-your-heart",
+   "song": "Rest In Your Heart",
+   "artist": "Omnium Gatherum",
+   "t": "std-cs",
+   "c": 1,
+   "alts": [
+    "drop-cs"
+   ],
+   "note": "Songsterr tab explicitly labeled 'C# Standard' (standard intervals, low string C#). Single source; band's later material trends to C#/Drop-C# range."
+  },
+  {
+   "id": "swallow-the-sun-new-moon",
+   "song": "New Moon",
+   "artist": "Swallow the Sun",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Two independent tab sites (bigchords, guitaretab) both state 'Tuning: Drop C'; no primary source found so kept medium."
+  },
+  {
+   "id": "swallow-the-sun-these-woods-breathe-evil",
+   "song": "These Woods Breathe Evil",
+   "artist": "Swallow the Sun",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Single verified source (bigchords)."
+  },
+  {
+   "id": "swallow-the-sun-deadly-nightshade",
+   "song": "Deadly Nightshade",
+   "artist": "Swallow the Sun",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. Single verified source (bigchords), which lists 'Tuning: Drop C [ C G C F A D ]'."
+  },
+  {
+   "id": "before-the-dawn-disappear",
+   "song": "Disappear",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C. All three sourced The Ghost tabs (Disappear, Enemy, Stormbringer) agree on Drop C, so the album tuning is well-corroborated."
+  },
+  {
+   "id": "before-the-dawn-enemy",
+   "song": "Enemy",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C."
+  },
+  {
+   "id": "before-the-dawn-stormbringer",
+   "song": "Stormbringer",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C."
+  },
+  {
+   "id": "before-the-dawn-deadsong",
+   "song": "Deadsong",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Guitar Pro tab is Drop C; a separate intro text tab is written a whole step up in Drop D — a common simplification. Drop C is the more reliable value."
+  },
+  {
+   "id": "before-the-dawn-faithless",
+   "song": "Faithless",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Two independent UG Guitar Pro tabs both give Drop C; two text tabs are written in E standard (transposed up for playability). Drop C is the recorded tuning."
+  },
+  {
+   "id": "before-the-dawn-wrath",
+   "song": "Wrath",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard (all strings 2.5 steps below E). Same album as the Drop C songs above — see band note about the Drop C / C standard split."
+  },
+  {
+   "id": "before-the-dawn-fear-me",
+   "song": "Fear Me",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard."
+  },
+  {
+   "id": "before-the-dawn-reign-of-fire",
+   "song": "Reign of Fire",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard."
+  },
+  {
+   "id": "before-the-dawn-gehenna",
+   "song": "Gehenna",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C."
+  },
+  {
+   "id": "before-the-dawn-dying-sun",
+   "song": "Dying Sun",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard."
+  },
+  {
+   "id": "before-the-dawn-dead-reflection",
+   "song": "Dead Reflection",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "medium",
+   "note": "Drop C."
+  },
+  {
+   "id": "before-the-dawn-monsters",
+   "song": "Monsters",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "Drop C."
+  },
+  {
+   "id": "before-the-dawn-savior",
+   "song": "Savior",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "medium",
+   "note": "C standard. (Titled 'Saviour' on the album.)"
+  },
+  {
+   "id": "before-the-dawn-deathstar",
+   "song": "Deathstar",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard."
+  },
+  {
+   "id": "before-the-dawn-pitch-black-universe",
+   "song": "Pitch-Black Universe",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "confidence": "high",
+   "verified": true,
+   "note": "C standard."
+  },
+  {
+   "id": "before-the-dawn-throne-of-ice",
+   "song": "Throne of Ice",
+   "artist": "Before the Dawn",
+   "t": "std-c",
+   "c": 1,
+   "alts": [
+    "drop-c"
+   ],
+   "note": "C standard. Two independent UG Guitar Pro tabs agree."
+  },
+  {
+   "id": "before-the-dawn-winter-within",
+   "song": "Winter Within",
+   "artist": "Before the Dawn",
+   "t": "drop-c",
+   "c": 1,
+   "alts": [
+    "std-c"
+   ],
+   "note": "Primary Guitar Pro tab is Drop C; a second tab is written in E standard (transposed up). Drop C is the recorded tuning."
+  },
+  {
+   "id": "before-the-dawn-unbreakable",
+   "song": "Unbreakable",
+   "artist": "Before the Dawn",
+   "t": "std-d",
+   "confidence": "high",
+   "verified": true,
+   "note": "The two UG Guitar Pro tabs disagree — one is D G C F A D (a drop-C variant with the low string raised to D), the other is plain Drop D. Non-standard either way, but the exact tuning is unresolved."
   }
  ]
 }
