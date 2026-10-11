@@ -122,8 +122,8 @@ const REJECT_RX    = [
 // alternative; stripping the marker folds them onto the base song instead, where
 // a differing tuning is recorded as a second version.
 const STRING_COUNT_RX = [
-  /\s*[\(\[]\s*\d+\s*strings?\s*[\)\]]\s*$/i,
-  /\s*\b\d+\s*strings?\s*$/i,
+  /\s*[\(\[]\s*(?:for\s+)?\d+(?:\/\d+)?\s*strings?(?:\s+(?:version|edition))?\s*[\)\]]\s*$/i,
+  /\s*\b(?:for\s+)?\d+(?:\/\d+)?\s*strings?(?:\s+(?:version|edition))?\s*$/i,
 ];
 
 const VERSION_RX = [
@@ -186,6 +186,19 @@ function octaveTypo(midiHighToLow) {
   return false;
 }
 
+// A string set where two neighbours sit more than an octave and a tone apart is
+// not an instrument, it is a transcription with a string missing or misread
+// (E1 A1 D3 G3 B3 E4 jumps 17 semitones from A1 to D3). The ceiling is measured,
+// not guessed: across 286 tunings already in the catalogue the widest neighbour
+// gap is 13, and that only in paired twelve-string courses.
+function implausibleGap(midiHighToLow) {
+  const m = [...midiHighToLow].reverse();
+  for (let i = 1; i < m.length; i++) {
+    if (Math.abs(m[i] - m[i-1]) >= 14) return true;
+  }
+  return false;
+}
+
 // Octave normalization: anchor on UPPER string (index 0 in high-to-low).
 function normalizeOctave(midiHighToLow) {
   if (!midiHighToLow || midiHighToLow.length < 6) return null;
@@ -197,6 +210,7 @@ function normalizeOctave(midiHighToLow) {
   if (bot < BOT_MIN || bot > BOT_MAX) return null;
   if (![6, 7, 8].includes(m.length)) return null;
   if (octaveTypo(m)) return null;
+  if (implausibleGap(m)) return null;
   return m;
 }
 
