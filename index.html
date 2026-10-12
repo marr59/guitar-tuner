@@ -853,7 +853,12 @@ function commitSong(song,v){
 // ("Ka$cade", "Mind-Spun", "Jag vet inte"), but nobody types the punctuation.
 // Compare both the raw text and a stripped form so either way finds the song.
 const LEET = {'$':'s','@':'a','!':'i','0':'o','1':'i','3':'e','4':'a','5':'s','7':'t'};
-const loose = s => s.toLowerCase().replace(/[$@!01345 7]/g, c => LEET[c] ?? c)
+// Диакритику складываем и здесь: иначе «Sarcófago», «Ratos de Porão», «Café
+// Tacvba», «División Minúscula», «Månegarm» и «Horkýže Slíže» не находятся по
+// тому написанию, которым их реально набирают. Ту же ошибку я уже исправил в
+// импортёре — в поиске она сидела отдельно.
+const loose = s => s.normalize("NFD").replace(/\p{M}+/gu,"")
+                     .toLowerCase().replace(/[$@!01345 7]/g, c => LEET[c] ?? c)
                      .replace(/[^\p{L}\p{N}]+/gu,"");
 function hay(text,q,qLoose){
   const t=text.toLowerCase();
