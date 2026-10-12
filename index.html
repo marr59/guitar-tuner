@@ -1164,7 +1164,9 @@ async function boot(){
   if(seg){ seg.querySelectorAll(".mseg").forEach(el=>el.onclick=()=>setAutoAdvance(el.dataset.aa==="1")); syncModeSeg(); }
   loadLib();
   try{
-    const r=await fetch("tunings.json",{cache:"no-cache"});
+    // Без no-cache: пусть отвечает service worker (stale-while-revalidate) или
+    // кэш браузера. Иначе каталог в полмегабайта тянется при каждом запуске.
+    const r=await fetch("tunings.json");
     if(r.ok){ const j=await r.json(); if(j.tunings) CATALOG=expandCatalog(j); }
   }catch(e){}
   let act=null;
