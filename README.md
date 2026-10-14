@@ -19,7 +19,6 @@ Pick a song, see the tuning it was recorded in, retune, play. No account, no sig
 - **Accurate pitch detection** down to low B and F#, reading out in cents
 - **Tuning library** — 27,801 songs across 857 artists and 573 tunings, searchable offline
 - **Alternate tunings only** — songs in plain E standard are deliberately not catalogued
-- **Multiple versions per song** where transcriptions genuinely disagree — 1,324 songs carry more than one tuning rather than a chosen winner
 - **Experimental tunings preserved** — Soundgarden's six-strings-of-E "Mind Riot", Sonic Youth's unison and out-of-order sets, Joni Mitchell's open tunings
 - **Russian alt scene** — Психея, [AMATORY], Stigmata, Lumen, Jane Air and others, largely undocumented in English-language sources
 - **Nordic metal in depth** — Stam1na and Mokoma on seven-string A D A D G B E, Turmion Kätilöt, Kalmah, Insomnium, Before the Dawn and the rest of the Finnish catalogue, song by song rather than band by band
@@ -125,7 +124,7 @@ Songs don't repeat the note array — they reference a tuning by id:
 }
 ```
 
-That normalisation matters at this scale. 27,801 songs share only 190 distinct tunings, and roughly half of the original file was repeated boilerplate prose and reconstructible URLs. Collapsing both took the catalogue from 300 KB to 84 KB before the bulk import, and the finished file is 646 KB raw but **590 KB gzipped** — small enough to ship whole, so search stays instant and the entire library works offline.
+That normalisation matters at this scale. 27,801 songs reference a shared set of 573 tunings, and roughly half of the original file was repeated boilerplate prose and reconstructible URLs. Collapsing both took the catalogue from 300 KB to 84 KB before the bulk import, and the finished file is 3.6 MB raw but **590 KB gzipped** — small enough to ship whole, so search stays instant and the entire library works offline.
 
 Splitting the catalogue into per-artist chunks was considered and rejected: searching for a song requires an index of every title anyway, and chunking would break offline use for anything not already downloaded. Extrapolated, one normalised file holds 27,801 songs in about 590 KB gzipped.
 
