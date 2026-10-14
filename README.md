@@ -19,6 +19,7 @@ Pick a song, see the tuning it was recorded in, retune, play. No account, no sig
 - **Accurate pitch detection** down to low B and F#, reading out in cents
 - **Tuning library** — 27,801 songs across 857 artists and 573 tunings, searchable offline
 - **Alternate tunings only** — songs in plain E standard are deliberately not catalogued
+- **Multiple readings per song** where transcriptions genuinely disagree — 1,314 songs carry an alternate tuning alongside the primary one rather than a chosen winner
 - **Experimental tunings preserved** — Soundgarden's six-strings-of-E "Mind Riot", Sonic Youth's unison and out-of-order sets, Joni Mitchell's open tunings
 - **Russian alt scene** — Психея, [AMATORY], Stigmata, Lumen, Jane Air and others, largely undocumented in English-language sources
 - **Nordic metal in depth** — Stam1na and Mokoma on seven-string A D A D G B E, Turmion Kätilöt, Kalmah, Insomnium, Before the Dawn and the rest of the Finnish catalogue, song by song rather than band by band
@@ -112,7 +113,7 @@ A tuning is an ordered array of scientific-pitch note names, low to high, of any
 }
 ```
 
-Nothing in the detector, the UI or the storage layer assumes six strings. Seven- and eight-string guitars, bass and ukulele work without schema changes, and the custom tuning builder already offers 4 through 8. The catalogue exercises this today: the Keith Richards open G entry is genuinely five strings, because he removes the sixth.
+Nothing in the detector, the UI or the storage layer assumes six strings. Seven- and eight-string guitars, bass and ukulele work without schema changes, and the custom tuning builder already offers 4 through 8. The catalogue exercises this today: the Rolling Stones' "Honky Tonk Women" is genuinely five strings — the five-string Open G Keith Richards gets by removing the sixth.
 
 Songs don't repeat the note array — they reference a tuning by id:
 
@@ -121,6 +122,18 @@ Songs don't repeat the note array — they reference a tuning by id:
   "song": "Vermilion Pt. 2",
   "artist": "Slipknot",
   "t": "drop-b"
+}
+```
+
+When sources genuinely disagree, the primary tuning stays in `t` and the competing readings ride alongside it in `alts`, with a note recording the conflict instead of silently picking a winner:
+
+```json
+{
+  "song": "The Thing That Should Not Be",
+  "artist": "Metallica",
+  "t": "std-d",
+  "alts": ["drop-d"],
+  "note": "Sources disagree: many transcriptions say D standard, older ones say Drop D, and Kirk Hammett has been quoted saying C#."
 }
 ```
 
