@@ -520,7 +520,16 @@ function ksBuffer(ac, freq) {
  ksCache.set(key, buf);
  return buf;
 }
-let refNode = null;
+let refNode = null, refGain = null;
+function stopReference(ac) {
+ if (!refNode) return;
+ const node = refNode, g = refGain, t = ac.currentTime;
+ refNode = null; refGain = null;
+ try {
+  if (g) { g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(g.gain.value, t); g.gain.linearRampToValueAtTime(0, t + 0.08); }
+  node.stop(t + 0.1);
+ } catch (e) { try { node.stop(); } catch (e2) {} }
+}
 
 /* ── reference tone v2: a real steel-string guitar, pitch-corrected ──
    Samples: FluidR3_GM acoustic_guitar_steel (CC-BY 3.0), one every three semitones,
@@ -578,7 +587,7 @@ function rateCurve(s, base) {
 async function playReference(hz) {
  if (!hz) return;
  const ac = await ensureAudio();
- if (refNode) { try { refNode.stop(); } catch (e) {} refNode = null; }
+ stopReference(ac);
  let s = null, buf = null;
  try { await loadSampleIndex(); s = nearestSample(hz); if (s) buf = await getSampleBuffer(ac, s); } catch (e) { buf = null; }
  if (!buf) return playReferenceKS(hz);
@@ -594,19 +603,23 @@ async function playReference(hz) {
  const pr = ac.createBiquadFilter(); pr.type = "peaking"; pr.frequency.value = 2800; pr.Q.value = 0.9; pr.gain.value = 2.5;
  const air = ac.createBiquadFilter(); air.type = "highshelf"; air.frequency.value = 5000; air.gain.value = 3.5;
  const amp = ac.createGain();
+ const dur = buf.duration / base;
  amp.gain.setValueAtTime(0, t);
  amp.gain.linearRampToValueAtTime(0.9, t + 0.004);
+ // the sample file ends before the string has fully died: ease it out instead of chopping
+ amp.gain.setValueAtTime(0.9, t + Math.max(0.1, dur - 0.6));
+ amp.gain.linearRampToValueAtTime(0, t + dur - 0.01);
  src.connect(hp); hp.connect(boom); boom.connect(pr); pr.connect(air); air.connect(amp); amp.connect(ac.destination);
- src.start(t); refNode = src;
- src.onended = () => { if (refNode === src) refNode = null; };
- refUntil = performance.now() + (buf.duration / base) * 1000 * 0.5;
+ src.start(t); refNode = src; refGain = amp;
+ src.onended = () => { if (refNode === src) { refNode = null; refGain = null; } };
+ refUntil = performance.now() + dur * 1000 * 0.5;
 }
 
 /* fallback: the original Karplus-Strong voice */
 async function playReferenceKS(hz) {
  if (!hz) return;
  const ac = await ensureAudio(), t = ac.currentTime;
- if (refNode) { try { refNode.stop(); } catch (e) {} refNode = null; }
+ stopReference(ac);
  const buf = ksBuffer(ac, hz);
  const src = ac.createBufferSource(); src.buffer = buf;
  const hp = ac.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 34;
@@ -620,9 +633,11 @@ async function playReferenceKS(hz) {
  amp.gain.setValueAtTime(0, t);
  amp.gain.linearRampToValueAtTime(1.0, t + 0.004);
  src.connect(hp); hp.connect(b1); b1.connect(b2); b2.connect(pr); pr.connect(lp);
+ amp.gain.setValueAtTime(1.0, t + Math.max(0.1, buf.duration - 0.3));
+ amp.gain.linearRampToValueAtTime(0, t + buf.duration - 0.01);
  lp.connect(amp); amp.connect(ac.destination);
- src.start(t); refNode = src;
- src.onended = () => { if (refNode === src) refNode = null; };
+ src.start(t); refNode = src; refGain = amp;
+ src.onended = () => { if (refNode === src) { refNode = null; refGain = null; } };
  refUntil = performance.now() + buf.duration * 1000 * 0.5;
 }
 
