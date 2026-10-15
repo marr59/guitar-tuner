@@ -520,11 +520,106 @@ function ksBuffer(ac, freq) {
  ksCache.set(key, buf);
  return buf;
 }
-let refNode = null;
+let refNode = null, refGain = null;
+function stopReference(ac) {
+ if (!refNode) return;
+ const node = refNode, g = refGain, t = ac.currentTime;
+ refNode = null; refGain = null;
+ try {
+  if (g) { g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(g.gain.value, t); g.gain.linearRampToValueAtTime(0, t + 0.08); }
+  node.stop(t + 0.1);
+ } catch (e) { try { node.stop(); } catch (e2) {} }
+}
+
+/* ── reference tone v2: a real steel-string guitar, pitch-corrected ──
+   Samples: FluidR3_GM acoustic_guitar_steel (CC-BY 3.0), one every three semitones,
+   E1..Db5. The nearest sample is played at the exact ratio target/nominal, so the
+   timbre never shifts by more than 1.5 semitones.
+   A sampled string is NOT in tune with itself: the attack sits 10-16 cents sharp and
+   the note settles over ~2 s. samples/index.json carries each sample's drift track,
+   measured with detectAgainst() above, and the player cancels it point by point with
+   a playbackRate curve — the tone is pitch-exact for its whole length, attack included.
+   If a sample is missing (first launch offline), the Karplus-Strong synth below plays. */
+const SAMPLE_BASE = "./samples/";
+let sampleIndex = null, sampleIndexP = null;
+const sampleBufs = new Map();
+function loadSampleIndex() {
+ if (!sampleIndexP) sampleIndexP = fetch(SAMPLE_BASE + "index.json")
+   .then(r => r.ok ? r.json() : null)
+   .then(j => { sampleIndex = j && j.samples ? j.samples : null; return sampleIndex; })
+   .catch(() => null);
+ return sampleIndexP;
+}
+function nearestSample(hz) {
+ if (!sampleIndex) return null;
+ const midi = 69 + 12 * Math.log2(hz / 440);
+ let best = null;
+ for (const s of sampleIndex) { const d = Math.abs(s.midi - midi); if (!best || d < best.d) best = { s, d }; }
+ return best && best.d <= 2.6 ? best.s : null;
+}
+function getSampleBuffer(ac, s) {
+ if (sampleBufs.has(s.name)) return sampleBufs.get(s.name);
+ const p = fetch(SAMPLE_BASE + s.name + ".mp3").then(r => r.ok ? r.arrayBuffer() : null)
+   .then(ab => ab ? ac.decodeAudioData(ab) : null).catch(() => null)
+   .then(b => { if (!b) sampleBufs.delete(s.name); return b; });
+ sampleBufs.set(s.name, p);
+ return p;
+}
+// warm the cache after load so the first tap is instant and the service worker has every file
+function warmSamples() {
+ loadSampleIndex().then(async idx => {
+  if (!idx) return;
+  for (const s of idx) { try { await fetch(SAMPLE_BASE + s.name + ".mp3"); } catch (e) {} }
+ });
+}
+(window.requestIdleCallback || (f => setTimeout(f, 1500)))(warmSamples);
+
+// playbackRate curve in OUTPUT time: output second j maps to source second j*base
+function rateCurve(s, base) {
+ const n = s.track.length, out = new Float32Array(n);
+ for (let j = 0; j < n; j++) {
+  const i = Math.min(n - 1, Math.round(j * base));
+  out[j] = base / Math.pow(2, s.track[i] / 1200);
+ }
+ return out;
+}
+
 async function playReference(hz) {
  if (!hz) return;
+ const ac = await ensureAudio();
+ stopReference(ac);
+ let s = null, buf = null;
+ try { await loadSampleIndex(); s = nearestSample(hz); if (s) buf = await getSampleBuffer(ac, s); } catch (e) { buf = null; }
+ if (!buf) return playReferenceKS(hz);
+ const t = ac.currentTime;
+ const base = hz / s.nominalHz;
+ const src = ac.createBufferSource(); src.buffer = buf;
+ const curve = rateCurve(s, base);
+ src.playbackRate.setValueAtTime(curve[0], t);
+ src.playbackRate.setValueCurveAtTime(curve, t, curve.length * s.hop);
+ // voicing: tame the boxy 125 Hz body boom on low strings, add pick/wind presence
+ const hp = ac.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 62;
+ const boom = ac.createBiquadFilter(); boom.type = "peaking"; boom.frequency.value = 125; boom.Q.value = 1.1; boom.gain.value = -4.5;
+ const pr = ac.createBiquadFilter(); pr.type = "peaking"; pr.frequency.value = 2800; pr.Q.value = 0.9; pr.gain.value = 2.5;
+ const air = ac.createBiquadFilter(); air.type = "highshelf"; air.frequency.value = 5000; air.gain.value = 3.5;
+ const amp = ac.createGain();
+ const dur = buf.duration / base;
+ amp.gain.setValueAtTime(0, t);
+ amp.gain.linearRampToValueAtTime(0.9, t + 0.004);
+ // the sample file ends before the string has fully died: ease it out instead of chopping
+ amp.gain.setValueAtTime(0.9, t + Math.max(0.1, dur - 0.6));
+ amp.gain.linearRampToValueAtTime(0, t + dur - 0.01);
+ src.connect(hp); hp.connect(boom); boom.connect(pr); pr.connect(air); air.connect(amp); amp.connect(ac.destination);
+ src.start(t); refNode = src; refGain = amp;
+ src.onended = () => { if (refNode === src) { refNode = null; refGain = null; } };
+ refUntil = performance.now() + dur * 1000 * 0.5;
+}
+
+/* fallback: the original Karplus-Strong voice */
+async function playReferenceKS(hz) {
+ if (!hz) return;
  const ac = await ensureAudio(), t = ac.currentTime;
- if (refNode) { try { refNode.stop(); } catch (e) {} refNode = null; }
+ stopReference(ac);
  const buf = ksBuffer(ac, hz);
  const src = ac.createBufferSource(); src.buffer = buf;
  const hp = ac.createBiquadFilter(); hp.type = "highpass"; hp.frequency.value = 34;
@@ -538,9 +633,11 @@ async function playReference(hz) {
  amp.gain.setValueAtTime(0, t);
  amp.gain.linearRampToValueAtTime(1.0, t + 0.004);
  src.connect(hp); hp.connect(b1); b1.connect(b2); b2.connect(pr); pr.connect(lp);
+ amp.gain.setValueAtTime(1.0, t + Math.max(0.1, buf.duration - 0.3));
+ amp.gain.linearRampToValueAtTime(0, t + buf.duration - 0.01);
  lp.connect(amp); amp.connect(ac.destination);
- src.start(t); refNode = src;
- src.onended = () => { if (refNode === src) refNode = null; };
+ src.start(t); refNode = src; refGain = amp;
+ src.onended = () => { if (refNode === src) { refNode = null; refGain = null; } };
  refUntil = performance.now() + buf.duration * 1000 * 0.5;
 }
 

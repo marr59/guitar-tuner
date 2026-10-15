@@ -3,11 +3,13 @@
    Rationale: the site is deployed with `git pull`, so a cache-first shell would
    pin users to an old build. Network-first keeps them current when online and
    still works fully offline (which matters in a rehearsal room or basement). */
-const VERSION = "v58";
+const VERSION = "v60";
 const CACHE = "tuner-" + VERSION;
 const SHELL = [
   "./", "./index.html", "./tunings.json", "./manifest.webmanifest",
-  "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"
+  "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png",
+  "./samples/index.json",
+  ...["E1","G1","Bb1","Db2","E2","G2","Bb2","Db3","E3","G3","Bb3","Db4","E4","G4","Bb4","Db5"].map(n => "./samples/" + n + ".mp3")
 ];
 
 self.addEventListener("install", e => {
