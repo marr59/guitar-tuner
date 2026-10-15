@@ -23,7 +23,7 @@ Pick a song, see the tuning it was recorded in, retune, play. No account, no sig
 - **Experimental tunings preserved** — Soundgarden's six-strings-of-E "Mind Riot", Sonic Youth's unison and out-of-order sets, Joni Mitchell's open tunings
 - **Russian alt scene** — Психея, [AMATORY], Stigmata, Lumen, Jane Air and others, largely undocumented in English-language sources
 - **Nordic metal in depth** — Stam1na and Mokoma on seven-string A D A D G B E, Turmion Kätilöt, Kalmah, Insomnium, Before the Dawn and the rest of the Finnish catalogue, song by song rather than band by band
-- **Plucked-string reference tones** — tap a string to hear its target pitch
+- **Real guitar reference tones** — tap a string to hear its target pitch, played by a sampled steel-string acoustic and corrected to the exact frequency
 - **Auto-advance** — tune a string and it moves to the next, in whichever direction you're working
 - **Any string count** — 4 to 8 strings; the library holds 409 six-string, 130 seven-string and 33 eight-string sets
 - **Custom tunings** you can build, name, rename and delete
@@ -61,13 +61,13 @@ The difference function also yields an aperiodicity figure, which becomes a conf
 
 Below a threshold of 0.55 the reading is discarded and the needle **holds its last position** rather than darting around. Combined with a median filter over recent readings and an exponential glide rendered at 60fps independently of the analysis rate, that is what makes the display feel calm instead of nervous.
 
-### Reference tones are physically modelled
+### Reference tones are a real guitar, corrected to pitch
 
-Tapping a string plays its target pitch. The first version stacked five sine partials under one shared envelope and sounded like a whistle, because real strings don't decay uniformly: high harmonics die far faster than low ones.
+Tapping a string plays its target pitch. Three generations of this: a stack of sine partials (sounded like a whistle), then a Karplus-Strong plucked string — a filtered noise burst in a fractional delay line, comb-filtered at the pick position, voiced through a light body EQ, zero bytes of audio assets. That version is still in the code as the offline fallback.
 
-The current version is a Karplus-Strong plucked string — a filtered noise burst circulating through a delay line, comb-filtered at the pick position, voiced through a light body EQ. It sounds like a string because it is simulating one, and it costs zero bytes of audio assets.
+The current voice is a sampled steel-string acoustic (FluidR3 General MIDI soundfont, CC-BY 3.0, 16 notes every three semitones from E1 to D♭5, ~300 KB, cached by the service worker). The nearest sample plays at the exact ratio target/nominal, so timbre never shifts by more than 1.5 semitones. An A/B against the synthesis was not close.
 
-One catch worth recording: the delay line length has to be **fractional**. Rounding it to whole samples put the pitch up to 15.7 cents off, which is worse than useless in a tuner since you would tune your guitar to a lie. A first-order allpass section supplies the fractional part and brings the error under 0.1 cents. Verified by feeding the synthesised output back through the app's own detector.
+The catch, and it is the same catch as before: a reference tone that is off by a few cents makes you tune your guitar to a lie. A sampled string is **not in tune with itself** — the attack sits 10–16 cents sharp and the note settles over about two seconds, which is physics, not a defect. So `samples/index.json` carries each sample's drift track, measured every 25 ms with the app's own detector, and the player cancels it point by point with a `playbackRate` curve. The result is checked by simulating that playback and measuring it with the same detector (`node tools/verify_samples.cjs`): across F♯1–C5, including drop tunings, the tone stays within a cent of target for its whole length, attack included.
 
 ### Auto-advance follows the player
 
@@ -184,3 +184,5 @@ Entries live in `tunings.json`. Include the strings low to high, the source you 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+Reference-tone samples in `samples/` are rendered from the FluidR3_GM soundfont (acoustic_guitar_steel) via [gleitz/midi-js-soundfonts](https://github.com/gleitz/midi-js-soundfonts), licensed [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/).
